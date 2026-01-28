@@ -1,0 +1,54 @@
+{
+  "mod_elements": [
+    {
+      "name": "TestEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/potion/TestEffectMobEffect.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "effect.jimsmineshaft.test_effect": "Test Effect"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/jimsmineshaft.mixins.json",
+      "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftMod.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModMobEffects.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "jimsmineshaft",
+    "modName": "jimsmineshaft",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.4",
+    "modElementsPackage": "net.mcreator.jimsmineshaft"
+  },
+  "mcreatorVersion": 202500228610
+}
