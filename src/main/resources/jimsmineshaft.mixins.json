@@ -3,7 +3,10 @@
   "package": "net.mcreator.jimsmineshaft.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [],
-  "client": [],
+  "client": [
+    "PlayerAnimationMixin",
+    "PlayerAnimationRendererMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   },
