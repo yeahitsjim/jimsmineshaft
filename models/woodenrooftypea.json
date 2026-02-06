@@ -1,0 +1,41 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"2": "WoodenRoofTypeA",
+		"particle": "WoodenRoofTypeA"
+	},
+	"elements": [
+		{
+			"from": [5.5, 6, 0],
+			"to": [10.5, 10, 16],
+			"rotation": {"angle": 0, "axis": "x", "origin": [7, 6, 16]},
+			"faces": {
+				"north": {"uv": [2, 9, 0, 7], "rotation": 180, "texture": "#2"},
+				"east": {"uv": [2, 0, 4, 7], "rotation": 90, "texture": "#2"},
+				"south": {"uv": [4, 7, 2, 9], "texture": "#2"},
+				"west": {"uv": [6, 0, 8, 7], "rotation": 270, "texture": "#2"},
+				"up": {"uv": [4, 0, 6, 7], "texture": "#2"},
+				"down": {"uv": [0, 0, 2, 7], "rotation": 180, "texture": "#2"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0.75, 5.75, 0]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0.5, 0, 0]
+		},
+		"firstperson_righthand": {
+			"translation": [1, 2, 0]
+		},
+		"ground": {
+			"translation": [0, 3.5, 0]
+		},
+		"gui": {
+			"rotation": [12, 40, -7]
+		}
+	}
+}

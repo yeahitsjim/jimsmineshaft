@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jimsmineshaft:block/wooden_support_top_type_a"
+    },
+    "facing=east": {
+      "model": "jimsmineshaft:block/wooden_support_top_type_a",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jimsmineshaft:block/wooden_support_top_type_a",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jimsmineshaft:block/wooden_support_top_type_a",
+      "y": 270
+    }
+  }
+}

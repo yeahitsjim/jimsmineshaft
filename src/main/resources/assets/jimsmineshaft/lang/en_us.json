@@ -1,4 +1,18 @@
 {
   "effect.jimsmineshaft.test_effect": "Test Effect",
-  "item.jimsmineshaft.test_sync_the_second": "Test Sync The Second"
+  "item.jimsmineshaft.test_sync_the_second": "Test Sync The Second",
+  "item.jimsmineshaft.wooden_support_type_a": "Wooden Support Type A 1",
+  "item.jimsmineshaft.wooden_support_top_type_a": "Wooden Support Top Type A 1",
+  "item.jimsmineshaft.wooden_roof_type_a": "Wooden Support Top Type A 1",
+  "item.jimsmineshaft.wooden_support_top_light_type_a": "Wooden Support Top Type A 1",
+  "item.jimsmineshaft.wooden_support_type_b": "Wooden Support Type B 1",
+  "item.jimsmineshaft.wooden_support_corner_type_b": "Wooden Support Corner Type B",
+  "item.jimsmineshaft.wooden_support_corner_type_b_2": "Wooden Support Corner Type B_2",
+  "item.jimsmineshaft.wooden_wall_type_b": "Wooden Wall Type B",
+  "item_group.jimsmineshaft.jims_mineshaft": "Jims Mineshaft",
+  "item.jimsmineshaft.wooden_roof_type_b": "Wooden Roof Type B",
+  "item.jimsmineshaft.wooden_support_plain_type_b": "Wooden Support Plain Type B",
+  "item.jimsmineshaft.wooden_support_full_type_c": "Wooden Support Full Type C",
+  "item.jimsmineshaft.wooden_roof_type_c": "Wooden Roof Type C",
+  "item.jimsmineshaft.jimsminedimension": "Jimsminedimension Portal Igniter"
 }

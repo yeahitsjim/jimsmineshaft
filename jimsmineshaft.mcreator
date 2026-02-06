@@ -20,36 +20,445 @@
       "registry_name": "test_sync_the_second",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/item/TestSyncTheSecondItem.java",
           "src/main/resources/assets/jimsmineshaft/models/item/test_sync_the_second.json",
-          "src/main/resources/assets/jimsmineshaft/items/test_sync_the_second.json"
+          "src/main/resources/assets/jimsmineshaft/items/test_sync_the_second.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/TestSyncTheSecondItem.java"
+        ]
+      }
+    },
+    {
+      "name": "WoodenSupportTypeA",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_support_type_a",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_support_type_a.json",
+          "src/main/resources/assets/jimsmineshaft/items/wooden_support_type_a.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/wooden_support_type_a.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/wooden_support_type_a.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenSupportTypeABlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/wooden_support_type_a.json"
+        ]
+      }
+    },
+    {
+      "name": "WoodenSupportTopTypeA",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_support_top_type_a",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/blockstates/wooden_support_top_type_a.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/wooden_support_top_type_a.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/wooden_support_top_type_a.json",
+          "src/main/resources/assets/jimsmineshaft/items/wooden_support_top_type_a.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenSupportTopTypeABlock.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_support_top_type_a.json"
+        ]
+      }
+    },
+    {
+      "name": "WoodenRoofTypeA",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_roof_type_a",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/wooden_roof_type_a.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_roof_type_a.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/wooden_roof_type_a.json",
+          "src/main/resources/assets/jimsmineshaft/items/wooden_roof_type_a.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenRoofTypeABlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/wooden_roof_type_a.json"
+        ]
+      }
+    },
+    {
+      "name": "WoodenSupportTopLightTypeA",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_support_top_light_type_a",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/wooden_support_top_light_type_a.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_support_top_light_type_a.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/wooden_support_top_light_type_a.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenSupportTopLightTypeABlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/block/wooden_support_top_light_type_a.json",
+          "src/main/resources/assets/jimsmineshaft/items/wooden_support_top_light_type_a.json"
+        ]
+      }
+    },
+    {
+      "name": "WoodenSupportTypeB",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_support_type_b",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/wooden_support_type_b.json",
+          "src/main/resources/assets/jimsmineshaft/items/wooden_support_type_b.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenSupportTypeBBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/wooden_support_type_b.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_support_type_b.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/wooden_support_type_b.json"
+        ]
+      }
+    },
+    {
+      "name": "WoodenSupportCornerTypeB",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_support_corner_type_b",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/wooden_support_corner_type_b.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/wooden_support_corner_type_b.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_support_corner_type_b.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/wooden_support_corner_type_b.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/wooden_support_corner_type_b.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenSupportCornerTypeBBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "WoodenSupportCornerTypeB2",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_support_corner_type_b_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/wooden_support_corner_type_b_2.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenSupportCornerTypeB2Block.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/wooden_support_corner_type_b_2.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/wooden_support_corner_type_b_2.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/wooden_support_corner_type_b_2.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_support_corner_type_b_2.json"
+        ]
+      }
+    },
+    {
+      "name": "WoodenWallTypeB",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_wall_type_b",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/blockstates/wooden_wall_type_b.json",
+          "src/main/resources/assets/jimsmineshaft/items/wooden_wall_type_b.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenWallTypeBBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/wooden_wall_type_b.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_wall_type_b.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/wooden_wall_type_b.json"
+        ]
+      }
+    },
+    {
+      "name": "JimsMineshaft",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jims_mineshaft",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "WoodenRoofTypeB",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_roof_type_b",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenRoofTypeBBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/block/wooden_roof_type_b.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/wooden_roof_type_b.json",
+          "src/main/resources/assets/jimsmineshaft/items/wooden_roof_type_b.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_roof_type_b.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/wooden_roof_type_b.json"
+        ]
+      }
+    },
+    {
+      "name": "WoodenSupportPlainTypeB",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_support_plain_type_b",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/wooden_support_plain_type_b.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/wooden_support_plain_type_b.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenSupportPlainTypeBBlock.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_support_plain_type_b.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/wooden_support_plain_type_b.json",
+          "src/main/resources/assets/jimsmineshaft/items/wooden_support_plain_type_b.json"
+        ]
+      }
+    },
+    {
+      "name": "WoodenSupportFullTypeC",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_support_full_type_c",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/wooden_support_full_type_c.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_support_full_type_c.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/wooden_support_full_type_c.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/wooden_support_full_type_c.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/wooden_support_full_type_c.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenSupportFullTypeCBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "WoodenRoofTypeC",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_roof_type_c",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_roof_type_c.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/wooden_roof_type_c.json",
+          "src/main/resources/assets/jimsmineshaft/items/wooden_roof_type_c.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/wooden_roof_type_c.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/wooden_roof_type_c.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenRoofTypeCBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Jimsminedimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jimsminedimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/world/dimension/JimsminedimensionDimension.java",
+          "src/main/java/net/mcreator/jimsmineshaft/item/JimsminedimensionItem.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/jimsminedimension.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/jimsminedimension_portal.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/jimsminedimension_portal_ns.json",
+          "src/main/resources/data/jimsmineshaft/dimension_type/jimsminedimension.json",
+          "src/main/resources/assets/jimsmineshaft/items/jimsminedimension.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/jimsminedimension_portal_ew.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/JimsminedimensionPortalBlock.java",
+          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/JimsminedimensionTeleporter.java",
+          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/JimsminedimensionPortalShape.java",
+          "src/main/resources/data/jimsmineshaft/dimension/jimsminedimension.json"
+        ]
+      }
+    },
+    {
+      "name": "Generatemine",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generatemine",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/GeneratemineProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GenerateShaft",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_shaft",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/GenerateShaftProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Checkgenerationside",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "checkgenerationside",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "direction",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CheckgenerationsideProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CheckGenerationCoords",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_generation_coords",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "jsonobject",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CheckGenerationCoordsProcedure.java"
         ]
       }
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "currentX",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "currentY",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "currentZ",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "currentDirection",
+      "type": "direction",
+      "scope": "map",
+      "value": "Direction.NORTH"
+    },
+    {
+      "name": "filledSpaces",
+      "type": "jsonobject",
+      "scope": "global",
+      "value": "new com.google.gson.JsonObject()"
+    },
+    {
+      "name": "lastGeneratedStructure",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "totalTokensRemaining",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "variantCount",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "currentVariant",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "levelTokens",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "cuurentCoords",
+      "type": "jsonobject",
+      "scope": "global",
+      "value": "new com.google.gson.JsonObject()"
+    }
+  ],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.STONE#0"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
       "effect.jimsmineshaft.test_effect": "Test Effect",
-      "item.jimsmineshaft.test_sync_the_second": "Test Sync The Second"
+      "item.jimsmineshaft.test_sync_the_second": "Test Sync The Second",
+      "item.jimsmineshaft.wooden_support_type_a": "Wooden Support Type A 1",
+      "item.jimsmineshaft.wooden_support_top_type_a": "Wooden Support Top Type A 1",
+      "item.jimsmineshaft.wooden_roof_type_a": "Wooden Support Top Type A 1",
+      "item.jimsmineshaft.wooden_support_top_light_type_a": "Wooden Support Top Type A 1",
+      "item.jimsmineshaft.wooden_support_type_b": "Wooden Support Type B 1",
+      "item.jimsmineshaft.wooden_support_corner_type_b": "Wooden Support Corner Type B",
+      "item.jimsmineshaft.wooden_support_corner_type_b_2": "Wooden Support Corner Type B_2",
+      "item.jimsmineshaft.wooden_wall_type_b": "Wooden Wall Type B",
+      "item_group.jimsmineshaft.jims_mineshaft": "Jims Mineshaft",
+      "item.jimsmineshaft.wooden_roof_type_b": "Wooden Roof Type B",
+      "item.jimsmineshaft.wooden_support_plain_type_b": "Wooden Support Plain Type B",
+      "item.jimsmineshaft.wooden_support_full_type_c": "Wooden Support Full Type C",
+      "item.jimsmineshaft.wooden_roof_type_c": "Wooden Roof Type C",
+      "item.jimsmineshaft.jimsminedimension": "Jimsminedimension Portal Igniter"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModTabs.java",
-      "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationMixin.java",
-      "src/main/java/net/mcreator/jimsmineshaft/network/LoadPlayerAnimationMessage.java",
+      "src/main/java/net/mcreator/jimsmineshaft/network/JimsmineshaftModVariables.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/jimsmineshaft/network/PlayPlayerAnimationMessage.java",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftModPlayerAnimationAPI.java",
       "src/main/resources/jimsmineshaft.mixins.json",
-      "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationRendererMixin.java",
       "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftMod.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModTabs.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModMobEffects.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModBlocks.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModItems.java"
     ]
   },

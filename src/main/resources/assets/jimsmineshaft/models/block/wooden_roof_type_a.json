@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/woodenrooftypea",
+  "textures": {
+    "all": "jimsmineshaft:block/woodenrooftypea",
+    "particle": "jimsmineshaft:block/woodenrooftypea",
+    "2": "jimsmineshaft:block/woodenrooftypea"
+  },
+  "render_type": "solid"
+}
