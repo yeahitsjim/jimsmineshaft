@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/iron_siding",
+  "textures": {
+    "all": "jimsmineshaft:block/iron_siding_barred_1",
+    "particle": "jimsmineshaft:block/iron_siding",
+    "0": "jimsmineshaft:block/iron_siding_barred_1"
+  },
+  "render_type": "cutout"
+}

@@ -25,6 +25,39 @@
           "src/main/resources/assets/jimsmineshaft/items/test_sync_the_second.json"
         ]
       }
+    },
+    {
+      "name": "IronSiding",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_siding",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/iron_siding.json",
+          "src/main/resources/assets/jimsmineshaft/items/iron_siding.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/iron_siding.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/IronSidingBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/block/iron_siding.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/iron_siding.json"
+        ]
+      },
+      "path": "~/Level 2 Blocks"
+    },
+    {
+      "name": "IronSidingStates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_siding_states",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/iron_siding_states_blockstate_0.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/iron_siding_states_blockstate_1.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/iron_siding_states_blockstate_2.json"
+        ]
+      },
+      "path": "~/Level 2 Blocks"
     }
   ],
   "variable_elements": [],
@@ -34,28 +67,30 @@
   "language_map": {
     "en_us": {
       "effect.jimsmineshaft.test_effect": "Test Effect",
-      "item.jimsmineshaft.test_sync_the_second": "Test Sync The Second"
+      "item.jimsmineshaft.test_sync_the_second": "Test Sync The Second",
+      "item.jimsmineshaft.iron_siding": "Iron Siding"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModTabs.java",
-      "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationMixin.java",
-      "src/main/java/net/mcreator/jimsmineshaft/network/LoadPlayerAnimationMessage.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/jimsmineshaft/network/PlayPlayerAnimationMessage.java",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftModPlayerAnimationAPI.java",
-      "src/main/resources/jimsmineshaft.mixins.json",
-      "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationRendererMixin.java",
       "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModTabs.java",
+      "src/main/resources/jimsmineshaft.mixins.json",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModMobEffects.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModBlocks.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModItems.java"
     ]
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Level 2 Blocks",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "jimsmineshaft",
