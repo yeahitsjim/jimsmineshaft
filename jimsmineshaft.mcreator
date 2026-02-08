@@ -264,40 +264,6 @@
       }
     },
     {
-      "name": "Generatemine",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "generatemine",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/GeneratemineProcedure.java"
-        ]
-      }
-    },
-    {
       "name": "GenerateShaft",
       "type": "procedure",
       "compiles": true,
@@ -305,6 +271,10 @@
       "registry_name": "generate_shaft",
       "metadata": {
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "world",
             "type": "world"
@@ -352,27 +322,28 @@
           "src/main/java/net/mcreator/jimsmineshaft/procedures/CheckGenerationCoordsProcedure.java"
         ]
       }
+    },
+    {
+      "name": "PickRoom",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pick_room",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PickRoomProcedure.java"
+        ],
+        "return_type": "string"
+      }
     }
   ],
   "variable_elements": [
-    {
-      "name": "currentX",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
-    {
-      "name": "currentY",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
-    {
-      "name": "currentZ",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
     {
       "name": "currentDirection",
       "type": "direction",
@@ -398,7 +369,7 @@
       "value": "0"
     },
     {
-      "name": "variantCount",
+      "name": "variantTokens",
       "type": "number",
       "scope": "map",
       "value": "0"
@@ -420,6 +391,12 @@
       "type": "jsonobject",
       "scope": "global",
       "value": "new com.google.gson.JsonObject()"
+    },
+    {
+      "name": "workingRoomIsBit",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
     }
   ],
   "sound_elements": [],
@@ -451,12 +428,12 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/jimsmineshaft/network/JimsmineshaftModVariables.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/jimsmineshaft.mixins.json",
-      "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftMod.java",
+      "src/main/java/net/mcreator/jimsmineshaft/network/JimsmineshaftModVariables.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModTabs.java",
+      "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftMod.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModMobEffects.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModBlocks.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModItems.java"

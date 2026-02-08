@@ -99,15 +99,13 @@ public class JimsmineshaftModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "jimsmineshaft_mapvars";
-		public double currentX = 0;
-		public double currentY = 0;
-		public double currentZ = 0;
 		public Direction currentDirection = Direction.NORTH;
 		public String lastGeneratedStructure = "\"\"";
 		public double totalTokensRemaining = 0;
-		public double variantCount = 0;
+		public double variantTokens = 0;
 		public String currentVariant = "\"\"";
 		public double levelTokens = 0;
+		public boolean workingRoomIsBit = false;
 
 		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			MapVariables data = new MapVariables();
@@ -116,28 +114,24 @@ public class JimsmineshaftModVariables {
 		}
 
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
-			currentX = nbt.getDouble("currentX");
-			currentY = nbt.getDouble("currentY");
-			currentZ = nbt.getDouble("currentZ");
 			currentDirection = Direction.from3DDataValue(nbt.getInt("currentDirection"));
 			lastGeneratedStructure = nbt.getString("lastGeneratedStructure");
 			totalTokensRemaining = nbt.getDouble("totalTokensRemaining");
-			variantCount = nbt.getDouble("variantCount");
+			variantTokens = nbt.getDouble("variantTokens");
 			currentVariant = nbt.getString("currentVariant");
 			levelTokens = nbt.getDouble("levelTokens");
+			workingRoomIsBit = nbt.getBoolean("workingRoomIsBit");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
-			nbt.putDouble("currentX", currentX);
-			nbt.putDouble("currentY", currentY);
-			nbt.putDouble("currentZ", currentZ);
 			nbt.putInt("currentDirection", currentDirection.get3DDataValue());
 			nbt.putString("lastGeneratedStructure", lastGeneratedStructure);
 			nbt.putDouble("totalTokensRemaining", totalTokensRemaining);
-			nbt.putDouble("variantCount", variantCount);
+			nbt.putDouble("variantTokens", variantTokens);
 			nbt.putString("currentVariant", currentVariant);
 			nbt.putDouble("levelTokens", levelTokens);
+			nbt.putBoolean("workingRoomIsBit", workingRoomIsBit);
 			return nbt;
 		}
 
