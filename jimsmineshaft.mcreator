@@ -341,6 +341,81 @@
         ],
         "return_type": "string"
       }
+    },
+    {
+      "name": "GenerateShaftMEGAPROCEDURE",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_shaft_megaprocedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/GenerateShaftMEGAPROCEDUREProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SpawnRoom",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_room",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SpawnRoomProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GenerateShaftMEGAPROCEDUREsave",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_shaft_megaprocedur_esave",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/GenerateShaftMEGAPROCEDUREsaveProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GenerateShaftMEGAPROCEDUREsave2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_shaft_megaprocedur_esave_2",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/GenerateShaftMEGAPROCEDUREsave2Procedure.java"
+        ]
+      }
+    },
+    {
+      "name": "WoeMineshaftBeUponThe",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "woe_mineshaft_be_upon_the",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/woe_mineshaft_be_upon_the.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/WoeMineshaftBeUponTheItem.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/woe_mineshaft_be_upon_the.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -423,17 +498,19 @@
       "item.jimsmineshaft.wooden_support_plain_type_b": "Wooden Support Plain Type B",
       "item.jimsmineshaft.wooden_support_full_type_c": "Wooden Support Full Type C",
       "item.jimsmineshaft.wooden_roof_type_c": "Wooden Roof Type C",
-      "item.jimsmineshaft.jimsminedimension": "Jimsminedimension Portal Igniter"
+      "item.jimsmineshaft.jimsminedimension": "Jimsminedimension Portal Igniter",
+      "item.jimsmineshaft.woe_mineshaft_be_upon_the": "WOE MINESHAFT BE UPON THEE",
+      "item.jimsmineshaft.woe_mineshaft_be_upon_the.description_0": "Use with caution"
     }
   },
   "metadata": {
     "files": [
-      "src/main/resources/pack.mcmeta",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/jimsmineshaft.mixins.json",
       "src/main/java/net/mcreator/jimsmineshaft/network/JimsmineshaftModVariables.java",
-      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModTabs.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/jimsmineshaft.mixins.json",
       "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftMod.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModTabs.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModMobEffects.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModBlocks.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModItems.java"

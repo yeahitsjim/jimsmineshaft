@@ -5,8 +5,8 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
@@ -36,7 +36,7 @@ public class GenerateShaftProcedure {
 		Direction workingDirection = Direction.NORTH;
 		com.google.gson.JsonObject workingCoords = new com.google.gson.JsonObject();
 		String workingRoomPick = "";
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.STICK) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.TWISTING_VINES.asItem()) {
 			JimsmineshaftModVariables.MapVariables.get(world).totalTokensRemaining = 50;
 			JimsmineshaftModVariables.MapVariables.get(world).syncData(world);
 			JimsmineshaftModVariables.MapVariables.get(world).levelTokens = 25;
@@ -48,8 +48,7 @@ public class GenerateShaftProcedure {
 			JimsmineshaftModVariables.cuurentCoords.addProperty("z", (entity.getZ()));
 			if (0 < JimsmineshaftModVariables.MapVariables.get(world).totalTokensRemaining) {
 				if (0 < JimsmineshaftModVariables.MapVariables.get(world).levelTokens) {
-					workingDirection = CheckgenerationsideProcedure.execute(world);
-					JimsmineshaftModVariables.MapVariables.get(world).lastGeneratedStructure = "variantashaftmain";
+					JimsmineshaftModVariables.MapVariables.get(world).lastGeneratedStructure = "mainelevator";
 					JimsmineshaftModVariables.MapVariables.get(world).syncData(world);
 					JimsmineshaftModVariables.MapVariables.get(world).currentVariant = "a";
 					JimsmineshaftModVariables.MapVariables.get(world).syncData(world);
@@ -60,6 +59,7 @@ public class GenerateShaftProcedure {
 						JimsmineshaftModVariables.MapVariables.get(world).syncData(world);
 						JimsmineshaftModVariables.MapVariables.get(world).levelTokens = JimsmineshaftModVariables.MapVariables.get(world).totalTokensRemaining - 1;
 						JimsmineshaftModVariables.MapVariables.get(world).syncData(world);
+						workingDirection = CheckgenerationsideProcedure.execute(world);
 						workingCoords = CheckGenerationCoordsProcedure.execute(world);
 						if (!world.isClientSide() && world.getServer() != null)
 							world.getServer().getPlayerList()

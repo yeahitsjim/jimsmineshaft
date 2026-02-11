@@ -34,6 +34,7 @@ public class JimsmineshaftModTabs {
 				tabData.accept(JimsmineshaftModBlocks.WOODEN_SUPPORT_PLAIN_TYPE_B.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.WOODEN_SUPPORT_FULL_TYPE_C.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.WOODEN_ROOF_TYPE_C.get().asItem());
+				tabData.accept(JimsmineshaftModItems.WOE_MINESHAFT_BE_UPON_THE.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

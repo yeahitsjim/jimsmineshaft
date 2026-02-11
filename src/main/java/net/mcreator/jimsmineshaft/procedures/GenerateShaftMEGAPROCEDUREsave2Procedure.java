@@ -1,0 +1,42 @@
+package net.mcreator.jimsmineshaft.procedures;
+
+import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
+
+import net.minecraft.core.Direction;
+
+import javax.annotation.Nullable;
+
+@EventBusSubscriber
+public class GenerateShaftMEGAPROCEDUREsave2Procedure {
+	@SubscribeEvent
+	public static void onRightClickItem(PlayerInteractEvent.RightClickItem event) {
+		if (event.getHand() != event.getEntity().getUsedItemHand())
+			return;
+		execute(event);
+	}
+
+	public static void execute() {
+		execute(null);
+	}
+
+	private static void execute(@Nullable Event event) {
+		com.google.gson.JsonObject workingCoords = new com.google.gson.JsonObject();
+		Direction workingDirection = Direction.NORTH;
+		Direction usableDirection = Direction.NORTH;
+		boolean isEndBit = false;
+		boolean repeatRoom = false;
+		String workingRoomPick = "";
+		String selectedRoom = "";
+		double workingX = 0;
+		double workingY = 0;
+		double workingZ = 0;
+		double letsGoGambling = 0;
+		double repeatGambling = 0;
+		double roomPickGambling = 0;
+		double variantGambling = 0;
+		double gambling1 = 0;
+	}
+}

@@ -1,6 +1,7 @@
 package net.mcreator.jimsmineshaft.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 
 import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
@@ -9,6 +10,8 @@ public class CheckGenerationCoordsProcedure {
 	public static com.google.gson.JsonObject execute(LevelAccessor world) {
 		boolean isEndBit = false;
 		com.google.gson.JsonObject workingCoords = new com.google.gson.JsonObject();
+		if (!world.isClientSide() && world.getServer() != null)
+			world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("CheckGenerationCoords called"), false);
 		isEndBit = false;
 		if ((JimsmineshaftModVariables.MapVariables.get(world).lastGeneratedStructure).equals("variantbbit1")) {
 			if (Direction.NORTH == JimsmineshaftModVariables.MapVariables.get(world).currentDirection) {
@@ -570,6 +573,8 @@ public class CheckGenerationCoordsProcedure {
 				return workingCoords;
 			}
 		}
+		if (!world.isClientSide() && world.getServer() != null)
+			world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u00A7c\u00A7ICheckgenerationcoords error, unable to find structure picked"), false);
 		return workingCoords;
 	}
 }
