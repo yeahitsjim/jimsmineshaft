@@ -1,6 +1,7 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.network.chat.Component;
 
 public class CallproceduretestProcedure {
 	public static com.google.gson.JsonObject execute(LevelAccessor world, double testNumber) {

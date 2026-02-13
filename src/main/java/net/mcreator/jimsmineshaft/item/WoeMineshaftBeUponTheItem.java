@@ -1,5 +1,11 @@
 package net.mcreator.jimsmineshaft.item;
 
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+
 public class WoeMineshaftBeUponTheItem extends Item {
 	public WoeMineshaftBeUponTheItem(Item.Properties properties) {
 		super(properties);

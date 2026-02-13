@@ -796,22 +796,39 @@
     "en_us": {
       "effect.jimsmineshaft.test_effect": "Test Effect",
       "item.jimsmineshaft.test_sync_the_second": "Test Sync The Second",
-      "item.jimsmineshaft.woe_mineshaft_be_upon_the.description_0": "Use with caution"
+      "item.jimsmineshaft.woe_mineshaft_be_upon_the.description_0": "Use with caution",
+      "item.jimsmineshaft.iron_siding_corner": "Iron Siding Corner",
+      "item.jimsmineshaft.rotten_planks": "Rotten Planks",
+      "item.jimsmineshaft.rotten_support_beam": "Rotten Support Beam",
+      "item.jimsmineshaft.iron_siding": "Iron Siding",
+      "item.jimsmineshaft.wooden_support_corner_type_b": "Wooden Support Corner Type B",
+      "item.jimsmineshaft.woe_mineshaft_be_upon_the": "do not use this its the old trigger",
+      "item.jimsmineshaft.wooden_support_full_type_c": "Wooden Support Full Type C",
+      "item.jimsmineshaft.wooden_support_top_type_a": "Wooden Support Top Type A 1",
+      "item.jimsmineshaft.wooden_support_plain_type_b": "Wooden Support Plain Type B",
+      "item.jimsmineshaft.jimsminedimension": "Jimsminedimension Portal Igniter",
+      "item_group.jimsmineshaft.jims_mineshaft": "Jims Mineshaft",
+      "item.jimsmineshaft.wooden_support_corner_type_b_2": "Wooden Support Corner Type B_2",
+      "item.jimsmineshaft.wooden_wall_type_b": "Wooden Wall Type B",
+      "item.jimsmineshaft.woe_mineshaft_be_upon_the_2": "WOE MINESHAFT BE UPON THEE",
+      "item.jimsmineshaft.wooden_support_type_a": "Wooden Support Type A 1",
+      "item.jimsmineshaft.wooden_support_top_light_type_a": "Wooden Support Top Type A 1",
+      "item.jimsmineshaft.wooden_support_type_b": "Wooden Support Type B 1",
+      "item.jimsmineshaft.wooden_roof_type_a": "Wooden Support Top Type A 1",
+      "item.jimsmineshaft.wooden_roof_type_c": "Wooden Roof Type C",
+      "item.jimsmineshaft.wooden_roof_type_b": "Wooden Roof Type B"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModTabs.java",
-      "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationMixin.java",
-      "src/main/java/net/mcreator/jimsmineshaft/network/LoadPlayerAnimationMessage.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/jimsmineshaft/network/PlayPlayerAnimationMessage.java",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftModPlayerAnimationAPI.java",
-      "src/main/resources/jimsmineshaft.mixins.json",
-      "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationRendererMixin.java",
       "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/jimsmineshaft/network/JimsmineshaftModVariables.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModTabs.java",
+      "src/main/resources/jimsmineshaft.mixins.json",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModMobEffects.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModBlocks.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModItems.java"
     ]
   },

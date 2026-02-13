@@ -1,7 +1,17 @@
 package net.mcreator.jimsmineshaft.item;
 
-public class JimsminedimensionItem extends Item {
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.core.BlockPos;
 
+import net.mcreator.jimsmineshaft.block.JimsminedimensionPortalBlock;
+
+public class JimsminedimensionItem extends Item {
 	public JimsminedimensionItem(Item.Properties properties) {
 		super(properties
 
@@ -21,13 +31,11 @@ public class JimsminedimensionItem extends Item {
 			int y = pos.getY();
 			int z = pos.getZ();
 			boolean success = false;
-
 			if (world.isEmptyBlock(pos) && true) {
 				JimsminedimensionPortalBlock.portalSpawn(world, pos);
 				itemstack.hurtAndBreak(1, entity, LivingEntity.getSlotForHand(context.getHand()));
 				success = true;
 			}
-
 			return success ? InteractionResult.SUCCESS : InteractionResult.FAIL;
 		}
 	}
