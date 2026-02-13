@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/woodensupporttypeb",
+  "textures": {
+    "all": "jimsmineshaft:block/texturewoodensupportcornertypeb_2",
+    "particle": "jimsmineshaft:block/texturewoodensupportcornertypeb_2",
+    "0": "jimsmineshaft:block/texturewoodensupportcornertypeb_2"
+  },
+  "render_type": "solid"
+}

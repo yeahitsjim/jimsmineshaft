@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/woodensupporttoplighttypea",
+  "textures": {
+    "all": "jimsmineshaft:block/texturewoodensupporttoplighttypeapsexportg",
+    "particle": "jimsmineshaft:block/texturewoodensupporttoplighttypeapsexportg",
+    "4": "jimsmineshaft:block/texturewoodensupporttoplighttypeapsexportg"
+  },
+  "render_type": "solid"
+}

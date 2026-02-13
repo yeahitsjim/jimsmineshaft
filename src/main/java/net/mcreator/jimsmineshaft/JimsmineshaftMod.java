@@ -18,6 +18,7 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
 import net.mcreator.jimsmineshaft.init.JimsmineshaftModTabs;
 import net.mcreator.jimsmineshaft.init.JimsmineshaftModMobEffects;
 import net.mcreator.jimsmineshaft.init.JimsmineshaftModItems;
@@ -46,6 +47,7 @@ public class JimsmineshaftMod {
 		JimsmineshaftModItems.REGISTRY.register(modEventBus);
 
 		JimsmineshaftModTabs.REGISTRY.register(modEventBus);
+		JimsmineshaftModVariables.ATTACHMENT_TYPES.register(modEventBus);
 
 		JimsmineshaftModMobEffects.REGISTRY.register(modEventBus);
 
