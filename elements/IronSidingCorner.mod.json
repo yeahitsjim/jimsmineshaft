@@ -2,14 +2,14 @@
   "_fv": 79,
   "_type": "block",
   "definition": {
-    "texture": "iron_siding",
+    "texture": "iron_siding_corner",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "iron_siding:default",
+    "customModelName": "iron_siding_corner:default",
     "rotationMode": 4,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -45,7 +45,7 @@
       }
     ],
     "customProperties": [],
-    "name": "Iron Siding",
+    "name": "Iron Siding Corner",
     "specialInformation": {
       "fixedValue": []
     },
@@ -62,7 +62,7 @@
         "value": "BUILDING_BLOCKS"
       }
     ],
-    "destroyTool": "pickaxe",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },

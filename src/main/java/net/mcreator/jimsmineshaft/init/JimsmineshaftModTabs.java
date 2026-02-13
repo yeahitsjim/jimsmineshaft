@@ -26,6 +26,9 @@ public class JimsmineshaftModTabs {
 			}
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(JimsmineshaftModBlocks.IRON_SIDING.get().asItem());
+			tabData.accept(JimsmineshaftModBlocks.IRON_SIDING_CORNER.get().asItem());
+			tabData.accept(JimsmineshaftModBlocks.ROTTEN_PLANKS.get().asItem());
+			tabData.accept(JimsmineshaftModBlocks.ROTTEN_SUPPORT_BEAM.get().asItem());
 		}
 	}
 }

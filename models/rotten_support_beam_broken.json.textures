@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "rotten_support_beam_broken"
+      },
+      "name": "default"
+    }
+  }
+}

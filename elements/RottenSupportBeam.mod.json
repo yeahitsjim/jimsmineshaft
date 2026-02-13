@@ -2,15 +2,15 @@
   "_fv": 79,
   "_type": "block",
   "definition": {
-    "texture": "iron_siding",
+    "texture": "rotten_support_beam",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "iron_siding:default",
-    "rotationMode": 4,
+    "customModelName": "rotten_support_beam:default",
+    "rotationMode": 2,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -22,37 +22,28 @@
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "CUTOUT",
+    "transparencyType": "SOLID",
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 0.0,
+        "mx": 6.0,
         "my": 0.0,
-        "mz": 14.0,
-        "Mx": 16.0,
+        "mz": 12.0,
+        "Mx": 10.0,
         "My": 16.0,
         "Mz": 16.0,
         "subtract": false
-      },
-      {
-        "mx": 3.0,
-        "my": 0.0,
-        "mz": 14.0,
-        "Mx": 13.0,
-        "My": 16.0,
-        "Mz": 16.0,
-        "subtract": true
       }
     ],
     "customProperties": [],
-    "name": "Iron Siding",
+    "name": "Rotten Support Beam",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 10.0,
+    "hardness": 3.0,
     "resistance": 10.0,
     "hasGravity": false,
-    "isWaterloggable": true,
+    "isWaterloggable": false,
     "hasBlockItem": true,
     "maxStackSize": 64,
     "rarity": "COMMON",
@@ -62,7 +53,7 @@
         "value": "BUILDING_BLOCKS"
       }
     ],
-    "destroyTool": "pickaxe",
+    "destroyTool": "axe",
     "customDrop": {
       "value": ""
     },
@@ -98,7 +89,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "METAL"
+      "value": "WOOD"
     },
     "breakSound": {
       "value": ""

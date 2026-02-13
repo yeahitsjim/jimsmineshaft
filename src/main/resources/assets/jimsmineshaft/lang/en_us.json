@@ -1,5 +1,8 @@
 {
   "effect.jimsmineshaft.test_effect": "Test Effect",
   "item.jimsmineshaft.test_sync_the_second": "Test Sync The Second",
-  "item.jimsmineshaft.iron_siding": "Iron Siding"
+  "item.jimsmineshaft.iron_siding": "Iron Siding",
+  "item.jimsmineshaft.iron_siding_corner": "Iron Siding Corner",
+  "item.jimsmineshaft.rotten_planks": "Rotten Planks",
+  "item.jimsmineshaft.rotten_support_beam": "Rotten Support Beam"
 }

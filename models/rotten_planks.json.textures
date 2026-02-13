@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "rotten_planks_cleaner"
+      },
+      "name": "default"
+    },
+    "rotted": {
+      "map": {
+        "0": "rotten_planks"
+      },
+      "name": "rotted"
+    }
+  }
+}

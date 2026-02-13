@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "iron_siding_corner"
+      },
+      "name": "default"
+    }
+  }
+}

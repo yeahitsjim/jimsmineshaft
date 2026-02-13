@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jimsmineshaft:block/iron_siding_corner"
+    },
+    "facing=east": {
+      "model": "jimsmineshaft:block/iron_siding_corner",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jimsmineshaft:block/iron_siding_corner",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jimsmineshaft:block/iron_siding_corner",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "jimsmineshaft:block/iron_siding_corner",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "jimsmineshaft:block/iron_siding_corner",
+      "x": 90
+    }
+  }
+}

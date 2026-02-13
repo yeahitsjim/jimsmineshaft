@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/rotten_planks",
+  "textures": {
+    "all": "jimsmineshaft:block/rotten_planks",
+    "particle": "jimsmineshaft:block/rotten_planks_cleaner",
+    "0": "jimsmineshaft:block/rotten_planks"
+  },
+  "render_type": "cutout"
+}
