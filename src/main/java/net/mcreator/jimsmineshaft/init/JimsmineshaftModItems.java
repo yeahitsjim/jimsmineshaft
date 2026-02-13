@@ -12,6 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.jimsmineshaft.item.WoeMineshaftBeUponTheItem;
+import net.mcreator.jimsmineshaft.item.WoeMineshaftBeUponThe2Item;
 import net.mcreator.jimsmineshaft.item.TestSyncTheSecondItem;
 import net.mcreator.jimsmineshaft.item.JimsminedimensionItem;
 import net.mcreator.jimsmineshaft.JimsmineshaftMod;
@@ -35,6 +36,7 @@ public class JimsmineshaftModItems {
 	public static final DeferredItem<Item> WOODEN_ROOF_TYPE_C = block(JimsmineshaftModBlocks.WOODEN_ROOF_TYPE_C);
 	public static final DeferredItem<Item> JIMSMINEDIMENSION = register("jimsminedimension", JimsminedimensionItem::new);
 	public static final DeferredItem<Item> WOE_MINESHAFT_BE_UPON_THE = register("woe_mineshaft_be_upon_the", WoeMineshaftBeUponTheItem::new);
+	public static final DeferredItem<Item> WOE_MINESHAFT_BE_UPON_THE_2 = register("woe_mineshaft_be_upon_the_2", WoeMineshaftBeUponThe2Item::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

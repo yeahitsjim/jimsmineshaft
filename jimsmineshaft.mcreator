@@ -264,116 +264,15 @@
       }
     },
     {
-      "name": "GenerateShaft",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "generate_shaft",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/GenerateShaftProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "Checkgenerationside",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "checkgenerationside",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "return_type": "direction",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/CheckgenerationsideProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "CheckGenerationCoords",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "check_generation_coords",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "return_type": "jsonobject",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/CheckGenerationCoordsProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "PickRoom",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pick_room",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/PickRoomProcedure.java"
-        ],
-        "return_type": "string"
-      }
-    },
-    {
       "name": "GenerateShaftMEGAPROCEDURE",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
       "registry_name": "generate_shaft_megaprocedure",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/GenerateShaftMEGAPROCEDUREProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "SpawnRoom",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "spawn_room",
-      "metadata": {
         "dependencies": [],
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SpawnRoomProcedure.java"
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/GenerateShaftMEGAPROCEDUREProcedure.java"
         ]
       }
     },
@@ -384,7 +283,16 @@
       "locked_code": false,
       "registry_name": "generate_shaft_megaprocedur_esave",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/GenerateShaftMEGAPROCEDUREsaveProcedure.java"
         ]
@@ -414,6 +322,287 @@
           "src/main/resources/assets/jimsmineshaft/items/woe_mineshaft_be_upon_the.json",
           "src/main/java/net/mcreator/jimsmineshaft/item/WoeMineshaftBeUponTheItem.java",
           "src/main/resources/assets/jimsmineshaft/models/item/woe_mineshaft_be_upon_the.json"
+        ]
+      }
+    },
+    {
+      "name": "GenCheckDirection",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gen_check_direction",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/GenCheckDirectionProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CallableGenerateShaft",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "callable_generate_shaft",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CallableGenerateShaftProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GenerateShaftMEGAPROCEDUREduplicate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_shaft_megaprocedur_eduplicate",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "CallableGenerateShaftProcSave",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "callable_generate_shaft_proc_save",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CallableGenerateShaftProcSaveProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TestProcedureforPluginsNShit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_procedurefor_plugins_n_shit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/TestProcedureforPluginsNShitProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GSMP2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gsmp_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/GSMP2Procedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GSMPpickCoords",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gsm_ppick_coords",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/GSMPpickCoordsProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GSMPpickRoom",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gsm_ppick_room",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "pc_localWorkingRoomIsBitpass",
+            "type": "logic"
+          },
+          {
+            "name": "pr_variantTokenspass",
+            "type": "number"
+          },
+          {
+            "name": "pr_localCurrentVariantpass",
+            "type": "string"
+          },
+          {
+            "name": "pr_localLastGeneratedStructurepass",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/GSMPpickRoomProcedure.java"
+        ],
+        "return_type": "jsonobject"
+      }
+    },
+    {
+      "name": "GSMPplaceRoom",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gsm_pplace_room",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "pr_x",
+            "type": "number"
+          },
+          {
+            "name": "pr_y",
+            "type": "number"
+          },
+          {
+            "name": "pr_z",
+            "type": "number"
+          },
+          {
+            "name": "pr_workingRoomPick",
+            "type": "string"
+          },
+          {
+            "name": "prwd",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/GSMPplaceRoomProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Callproceduretest",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "callproceduretest",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "testNumber",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CallproceduretestProcedure.java"
+        ],
+        "return_type": "jsonobject"
+      }
+    },
+    {
+      "name": "GSMPpickCoords2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gsm_ppick_coords_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "pc_currentxpass",
+            "type": "number"
+          },
+          {
+            "name": "pc_currentypass",
+            "type": "number"
+          },
+          {
+            "name": "pc_currentzpass",
+            "type": "number"
+          },
+          {
+            "name": "pc_currentDirectionpass",
+            "type": "string"
+          },
+          {
+            "name": "pc_lastGeneratedStructurepass",
+            "type": "string"
+          },
+          {
+            "name": "pc_wdpass",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "jsonobject",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/GSMPpickCoords2Procedure.java"
+        ]
+      }
+    },
+    {
+      "name": "WoeMineshaftBeUponThe2",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "woe_mineshaft_be_upon_the_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/item/WoeMineshaftBeUponThe2Item.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/woe_mineshaft_be_upon_the_2.json",
+          "src/main/resources/assets/jimsmineshaft/items/woe_mineshaft_be_upon_the_2.json"
         ]
       }
     }
@@ -499,8 +688,9 @@
       "item.jimsmineshaft.wooden_support_full_type_c": "Wooden Support Full Type C",
       "item.jimsmineshaft.wooden_roof_type_c": "Wooden Roof Type C",
       "item.jimsmineshaft.jimsminedimension": "Jimsminedimension Portal Igniter",
-      "item.jimsmineshaft.woe_mineshaft_be_upon_the": "WOE MINESHAFT BE UPON THEE",
-      "item.jimsmineshaft.woe_mineshaft_be_upon_the.description_0": "Use with caution"
+      "item.jimsmineshaft.woe_mineshaft_be_upon_the": "do not use this its the old trigger",
+      "item.jimsmineshaft.woe_mineshaft_be_upon_the.description_0": "Use with caution",
+      "item.jimsmineshaft.woe_mineshaft_be_upon_the_2": "WOE MINESHAFT BE UPON THEE"
     }
   },
   "metadata": {

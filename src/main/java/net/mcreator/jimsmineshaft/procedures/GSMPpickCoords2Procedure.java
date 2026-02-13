@@ -1,0 +1,969 @@
+package net.mcreator.jimsmineshaft.procedures;
+
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.network.chat.Component;
+import net.minecraft.core.Direction;
+
+import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
+
+public class GSMPpickCoords2Procedure {
+	public static com.google.gson.JsonObject execute(LevelAccessor world, double pc_currentxpass, double pc_currentypass, double pc_currentzpass, String pc_currentDirectionpass, String pc_lastGeneratedStructurepass, String pc_wdpass) {
+		if (pc_currentDirectionpass == null || pc_lastGeneratedStructurepass == null || pc_wdpass == null)
+			return new com.google.gson.JsonObject();
+		boolean repeatRoom = false;
+		boolean workingDirectionChangeBoolean = false;
+		double currentSavedBranchCount = 0;
+		double repeatGambling = 0;
+		double roomPickGambling = 0;
+		double variantGambling = 0;
+		double branchOddsGambling = 0;
+		double gambling1 = 0;
+		double letsGoGambling = 0;
+		double localVariantTokens = 0;
+		double pc_currentx = 0;
+		double pc_currenty = 0;
+		double pc_currentz = 0;
+		Direction workingDirection = Direction.NORTH;
+		Direction localCurrentDirection = Direction.NORTH;
+		Direction pc_currentDirection = Direction.NORTH;
+		String stringWorkingDirection = "";
+		String workingRoomPick = "";
+		String localLastGeneratedStructure = "";
+		String stringCurrentDirection = "";
+		String selectedRoom = "";
+		String localCurrentVariant = "";
+		com.google.gson.JsonObject pc_filledSpaces = new com.google.gson.JsonObject();
+		pc_currentx = pc_currentxpass;
+		pc_currenty = pc_currentypass;
+		pc_currentz = pc_currentzpass;
+		pc_filledSpaces.addProperty("x", pc_currentx);
+		pc_filledSpaces.addProperty("y", pc_currenty);
+		pc_filledSpaces.addProperty("z", pc_currentz);
+		localLastGeneratedStructure = pc_lastGeneratedStructurepass;
+		if ((pc_currentDirectionpass).equals("north")) {
+			pc_currentDirection = Direction.NORTH;
+		}
+		if ((pc_currentDirectionpass).equals("east")) {
+			pc_currentDirection = Direction.EAST;
+		}
+		if ((pc_currentDirectionpass).equals("west")) {
+			pc_currentDirection = Direction.WEST;
+		}
+		if ((pc_currentDirectionpass).equals("south")) {
+			pc_currentDirection = Direction.SOUTH;
+		}
+		if ((pc_wdpass).equals("north")) {
+			workingDirection = Direction.NORTH;
+		}
+		if ((pc_wdpass).equals("east")) {
+			workingDirection = Direction.EAST;
+		}
+		if ((pc_wdpass).equals("west")) {
+			workingDirection = Direction.WEST;
+		}
+		if ((pc_wdpass).equals("south")) {
+			workingDirection = Direction.SOUTH;
+		}
+		if (!world.isClientSide() && world.getServer() != null)
+			world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("Working direction: " + workingDirection)), false);
+		if (!world.isClientSide() && world.getServer() != null)
+			world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("Current direction: " + pc_currentDirection)), false);
+		if ((localLastGeneratedStructure).equals("variantbbit1")) {
+			if (Direction.NORTH == workingDirection) {
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentx + 5));
+				}
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 5));
+				}
+				if (Direction.EAST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 1));
+				}
+			}
+			if (Direction.WEST == workingDirection) {
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+				}
+				if (Direction.SOUTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 5));
+				}
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx - 1));
+				}
+			}
+			if (Direction.SOUTH == workingDirection) {
+				if (Direction.SOUTH == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 12));
+				}
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 1));
+				}
+				if (Direction.EAST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentz + 5));
+				}
+			}
+			if (Direction.EAST == workingDirection) {
+				if (Direction.EAST == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+				}
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 5));
+				}
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentz + 1));
+				}
+			}
+		}
+		if ((localLastGeneratedStructure).equals("variantbbit2")) {
+			if (Direction.NORTH == workingDirection) {
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentx + 5));
+				}
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 5));
+				}
+				if (Direction.EAST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 1));
+				}
+			}
+			if (Direction.WEST == workingDirection) {
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+				}
+				if (Direction.SOUTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 5));
+				}
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx - 1));
+				}
+			}
+			if (Direction.SOUTH == workingDirection) {
+				if (Direction.SOUTH == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 12));
+				}
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 1));
+				}
+				if (Direction.EAST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentz + 5));
+				}
+			}
+			if (Direction.EAST == workingDirection) {
+				if (Direction.EAST == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+				}
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 5));
+				}
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentz + 1));
+				}
+			}
+		}
+		if ((localLastGeneratedStructure).equals("variantbbit3")) {
+			if (Direction.NORTH == workingDirection) {
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentx + 5));
+				}
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 5));
+				}
+				if (Direction.EAST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 1));
+				}
+			}
+			if (Direction.WEST == workingDirection) {
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+				}
+				if (Direction.SOUTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 5));
+				}
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx - 1));
+				}
+			}
+			if (Direction.SOUTH == workingDirection) {
+				if (Direction.SOUTH == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 12));
+				}
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 1));
+				}
+				if (Direction.EAST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentz + 5));
+				}
+			}
+			if (Direction.EAST == workingDirection) {
+				if (Direction.EAST == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+				}
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 5));
+				}
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 1));
+				}
+			}
+		}
+		if ((localLastGeneratedStructure).equals("variantbbit4")) {
+			if (Direction.NORTH == workingDirection) {
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentx + 5));
+				}
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 5));
+				}
+				if (Direction.EAST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 1));
+				}
+			}
+			if (Direction.WEST == workingDirection) {
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+				}
+				if (Direction.SOUTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 5));
+				}
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx - 1));
+				}
+			}
+			if (Direction.SOUTH == workingDirection) {
+				if (Direction.SOUTH == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 12));
+				}
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 1));
+				}
+				if (Direction.EAST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentz + 5));
+				}
+			}
+			if (Direction.EAST == workingDirection) {
+				if (Direction.EAST == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+				}
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 5));
+				}
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 1));
+				}
+			}
+		}
+		if ((localLastGeneratedStructure).equals("variantcbit1")) {
+			if (Direction.NORTH == workingDirection) {
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentx + 5));
+				}
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 5));
+				}
+				if (Direction.EAST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 1));
+				}
+			}
+			if (Direction.WEST == workingDirection) {
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+				}
+				if (Direction.SOUTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 5));
+				}
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx - 1));
+				}
+			}
+			if (Direction.SOUTH == workingDirection) {
+				if (Direction.SOUTH == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 12));
+				}
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 1));
+				}
+				if (Direction.EAST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentz + 5));
+				}
+			}
+			if (Direction.EAST == workingDirection) {
+				if (Direction.EAST == JimsmineshaftModVariables.MapVariables.get(world).currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+				}
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 5));
+				}
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 1));
+				}
+			}
+		}
+		if ((localLastGeneratedStructure).equals("variantcbit2")) {
+			if (Direction.NORTH == workingDirection) {
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentx + 5));
+				}
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 5));
+				}
+				if (Direction.DOWN == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 1));
+				}
+			}
+			if (Direction.WEST == workingDirection) {
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+				}
+				if (Direction.SOUTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 5));
+				}
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx - 1));
+				}
+			}
+			if (Direction.SOUTH == workingDirection) {
+				if (Direction.SOUTH == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 12));
+				}
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 1));
+				}
+				if (Direction.EAST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentz + 5));
+				}
+			}
+			if (Direction.EAST == workingDirection) {
+				if (Direction.EAST == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+				}
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 5));
+				}
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 1));
+				}
+			}
+		}
+		if ((localLastGeneratedStructure).equals("variantcbit3")) {
+			if (Direction.NORTH == workingDirection) {
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentx + 5));
+				}
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 5));
+				}
+				if (Direction.EAST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 1));
+				}
+			}
+			if (Direction.WEST == workingDirection) {
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+				}
+				if (Direction.SOUTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 5));
+				}
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx - 1));
+				}
+			}
+			if (Direction.SOUTH == workingDirection) {
+				if (Direction.SOUTH == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 12));
+				}
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 1));
+				}
+				if (Direction.EAST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentz + 5));
+				}
+			}
+			if (Direction.EAST == workingDirection) {
+				if (Direction.EAST == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+				}
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 5));
+				}
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 1));
+				}
+			}
+		}
+		if ((localLastGeneratedStructure).equals("variantcbit4")) {
+			if (Direction.NORTH == workingDirection) {
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentx + 5));
+				}
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 5));
+				}
+				if (Direction.EAST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 1));
+				}
+			}
+			if (Direction.WEST == workingDirection) {
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+				}
+				if (Direction.SOUTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 5));
+				}
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx - 1));
+				}
+			}
+			if (Direction.SOUTH == workingDirection) {
+				if (Direction.SOUTH == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 12));
+				}
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 1));
+				}
+				if (Direction.EAST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentz + 5));
+				}
+			}
+			if (Direction.EAST == workingDirection) {
+				if (Direction.DOWN == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+				}
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 5));
+				}
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 1));
+				}
+			}
+		}
+		if ((localLastGeneratedStructure).equals("mainelevator")) {
+			if (Direction.NORTH == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.remove("y");
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("x", (pc_currentx + 1));
+				pc_filledSpaces.addProperty("y", pc_currenty);
+				pc_filledSpaces.addProperty("z", (pc_currentz - 14));
+			}
+			if (Direction.WEST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.remove("y");
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("x", (pc_currentx - 14));
+				pc_filledSpaces.addProperty("y", (pc_currenty - 0));
+				pc_filledSpaces.addProperty("z", (pc_currentz - 1));
+			}
+			if (Direction.SOUTH == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.remove("y");
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("x", (pc_currentx - 1));
+				pc_filledSpaces.addProperty("y", (pc_currenty - 0));
+				pc_filledSpaces.addProperty("z", (pc_currentz + 14));
+			}
+			if (Direction.EAST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.remove("y");
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("x", (pc_currentx + 14));
+				pc_filledSpaces.addProperty("y", (pc_currenty - 0));
+				pc_filledSpaces.addProperty("z", (pc_currentz + 1));
+			}
+		}
+		if ((localLastGeneratedStructure).equals("variantabitmain")) {
+			if (Direction.NORTH == workingDirection) {
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentx + 12));
+				}
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 12));
+				}
+				if (Direction.DOWN == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 1));
+				}
+			}
+			if (Direction.WEST == workingDirection) {
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 12));
+				}
+				if (Direction.SOUTH == localCurrentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 12));
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 12));
+				}
+				if (Direction.NORTH == localCurrentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx - 1));
+				}
+			}
+			if (Direction.SOUTH == workingDirection) {
+				if (Direction.SOUTH == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 12));
+				}
+				if (Direction.WEST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 1));
+				}
+				if (Direction.EAST == pc_currentDirection) {
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz + 12));
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentz + 12));
+				}
+			}
+			if (Direction.EAST == workingDirection) {
+				if (Direction.EAST == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 12));
+				}
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 12));
+					pc_filledSpaces.remove("z");
+					pc_filledSpaces.addProperty("z", (pc_currentz - 12));
+				}
+				if (Direction.NORTH == pc_currentDirection) {
+					pc_filledSpaces.remove("x");
+					pc_filledSpaces.addProperty("x", (pc_currentx + 1));
+				}
+			}
+		}
+		if ((localLastGeneratedStructure).equals("variantashaftmain")) {
+			if (Direction.NORTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz - 20));
+			}
+			if (Direction.WEST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx - 20));
+			}
+			if (Direction.SOUTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz + 20));
+			}
+			if (Direction.EAST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx + 20));
+			}
+		}
+		if ((localLastGeneratedStructure).equals("variantashaftmainnonlit")) {
+			if (Direction.NORTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz - 20));
+			}
+			if (Direction.WEST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx - 20));
+			}
+			if (Direction.SOUTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz + 20));
+			}
+			if (Direction.EAST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx + 20));
+			}
+		}
+		if ((localLastGeneratedStructure).equals("variantbshaft1")) {
+			if (Direction.NORTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz - 21));
+			}
+			if (Direction.WEST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx - 21));
+			}
+			if (Direction.SOUTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz + 21));
+			}
+			if (Direction.EAST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx + 21));
+			}
+		}
+		if ((localLastGeneratedStructure).equals("variantbshaft2")) {
+			if (Direction.NORTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz - 21));
+			}
+			if (Direction.WEST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx - 21));
+			}
+			if (Direction.SOUTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz + 21));
+			}
+			if (Direction.EAST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx + 21));
+			}
+		}
+		if ((localLastGeneratedStructure).equals("variantbshaft3")) {
+			if (Direction.NORTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz - 21));
+			}
+			if (Direction.WEST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx - 21));
+			}
+			if (Direction.SOUTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz + 21));
+			}
+			if (Direction.EAST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx + 21));
+			}
+		}
+		if ((localLastGeneratedStructure).equals("variantbshaft4")) {
+			if (Direction.NORTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz - 21));
+			}
+			if (Direction.WEST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx - 21));
+			}
+			if (Direction.SOUTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz + 21));
+			}
+			if (Direction.EAST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx + 21));
+			}
+		}
+		if ((localLastGeneratedStructure).equals("variantbshaft5")) {
+			if (Direction.NORTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz - 21));
+			}
+			if (Direction.WEST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx - 21));
+			}
+			if (Direction.SOUTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz + 21));
+			}
+			if (Direction.EAST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx + 21));
+			}
+		}
+		if ((localLastGeneratedStructure).equals("variantcshaft1")) {
+			if (Direction.NORTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz - 21));
+			}
+			if (Direction.WEST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx - 21));
+			}
+			if (Direction.SOUTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz + 21));
+			}
+			if (Direction.EAST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx + 21));
+			}
+		}
+		if ((localLastGeneratedStructure).equals("variantcshaft1")) {
+			if (Direction.NORTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz - 21));
+			}
+			if (Direction.WEST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx - 21));
+			}
+			if (Direction.SOUTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz + 21));
+			}
+			if (Direction.EAST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx + 21));
+			}
+		}
+		if ((localLastGeneratedStructure).equals("variantcshaft2")) {
+			if (Direction.NORTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz - 21));
+			}
+			if (Direction.WEST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx - 21));
+			}
+			if (Direction.SOUTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz + 21));
+			}
+			if (Direction.EAST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx + 21));
+			}
+		}
+		if ((localLastGeneratedStructure).equals("variantcshaft3")) {
+			if (Direction.NORTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz - 21));
+			}
+			if (Direction.WEST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx - 21));
+			}
+			if (Direction.SOUTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz + 21));
+			}
+			if (Direction.EAST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx + 21));
+			}
+		}
+		if ((localLastGeneratedStructure).equals("variantcshaft4")) {
+			if (Direction.NORTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz - 21));
+			}
+			if (Direction.WEST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx - 21));
+			}
+			if (Direction.SOUTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz + 21));
+			}
+			if (Direction.EAST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx + 21));
+			}
+		}
+		if ((localLastGeneratedStructure).equals("variantcshaft5")) {
+			if (Direction.NORTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz - 21));
+			}
+			if (Direction.WEST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx - 21));
+			}
+			if (Direction.SOUTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz + 21));
+			}
+			if (Direction.EAST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx + 21));
+			}
+		}
+		if ((localLastGeneratedStructure).equals("variantbroom1")) {
+			if (Direction.NORTH == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz - 21));
+				pc_filledSpaces.addProperty("x", (pc_currentx + 1));
+			}
+			if (Direction.WEST == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx - 21));
+				pc_filledSpaces.addProperty("z", (pc_currentz - 1));
+			}
+			if (Direction.SOUTH == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("z", (pc_currentz + 21));
+				pc_filledSpaces.addProperty("x", (pc_currentx - 1));
+			}
+			if (Direction.EAST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("x", (pc_currentx + 21));
+				pc_filledSpaces.addProperty("z", (pc_currentz + 1));
+			}
+		}
+		if ((localLastGeneratedStructure).equals("variantbroom2")) {
+			if (Direction.NORTH == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("z", (pc_currentz - 21));
+				pc_filledSpaces.addProperty("x", (pc_currentx + 1));
+			}
+			if (Direction.WEST == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("x", (pc_currentx - 21));
+				pc_filledSpaces.addProperty("z", (pc_currentz - 1));
+			}
+			if (Direction.DOWN == workingDirection) {
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.addProperty("z", (pc_currentz + 21));
+				pc_filledSpaces.addProperty("x", (pc_currentx - 1));
+			}
+			if (Direction.EAST == workingDirection) {
+				pc_filledSpaces.remove("x");
+				pc_filledSpaces.remove("z");
+				pc_filledSpaces.addProperty("x", (pc_currentx + 21));
+				pc_filledSpaces.addProperty("z", (pc_currentz + 1));
+			}
+		}
+		return pc_filledSpaces;
+	}
+}

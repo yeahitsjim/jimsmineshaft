@@ -8,9 +8,13 @@
     "guiTexture": "",
     "customProperties": {},
     "states": [],
-    "name": "do not use this its the old trigger",
+    "name": "WOE MINESHAFT BE UPON THEE",
     "rarity": "COMMON",
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:JimsMineshaft"
+      }
+    ],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
