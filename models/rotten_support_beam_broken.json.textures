@@ -5,6 +5,12 @@
         "0": "rotten_support_beam_broken"
       },
       "name": "default"
+    },
+    "stripped": {
+      "map": {
+        "0": "stripped_rotten_support_beam_broken"
+      },
+      "name": "stripped"
     }
   }
 }

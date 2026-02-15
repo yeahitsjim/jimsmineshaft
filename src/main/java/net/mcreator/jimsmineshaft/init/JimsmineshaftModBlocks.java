@@ -21,11 +21,16 @@ import net.mcreator.jimsmineshaft.block.WoodenSupportCornerTypeB2Block;
 import net.mcreator.jimsmineshaft.block.WoodenRoofTypeCBlock;
 import net.mcreator.jimsmineshaft.block.WoodenRoofTypeBBlock;
 import net.mcreator.jimsmineshaft.block.WoodenRoofTypeABlock;
+import net.mcreator.jimsmineshaft.block.TiltedCorruptedSupportBeamBlock;
+import net.mcreator.jimsmineshaft.block.StrippedRottenSupportBeamBlock;
+import net.mcreator.jimsmineshaft.block.SteelShelfBlock;
 import net.mcreator.jimsmineshaft.block.RottenSupportBeamBlock;
 import net.mcreator.jimsmineshaft.block.RottenPlanksBlock;
+import net.mcreator.jimsmineshaft.block.OldCabinetBlock;
 import net.mcreator.jimsmineshaft.block.JimsminedimensionPortalBlock;
 import net.mcreator.jimsmineshaft.block.IronSidingCornerBlock;
 import net.mcreator.jimsmineshaft.block.IronSidingBlock;
+import net.mcreator.jimsmineshaft.block.CorruptedSupportBeamBlock;
 import net.mcreator.jimsmineshaft.JimsmineshaftMod;
 
 import java.util.function.Function;
@@ -49,6 +54,11 @@ public class JimsmineshaftModBlocks {
 	public static final DeferredBlock<Block> WOODEN_ROOF_TYPE_A = register("wooden_roof_type_a", WoodenRoofTypeABlock::new);
 	public static final DeferredBlock<Block> WOODEN_ROOF_TYPE_C = register("wooden_roof_type_c", WoodenRoofTypeCBlock::new);
 	public static final DeferredBlock<Block> WOODEN_ROOF_TYPE_B = register("wooden_roof_type_b", WoodenRoofTypeBBlock::new);
+	public static final DeferredBlock<Block> STRIPPED_ROTTEN_SUPPORT_BEAM = register("stripped_rotten_support_beam", StrippedRottenSupportBeamBlock::new);
+	public static final DeferredBlock<Block> CORRUPTED_SUPPORT_BEAM = register("corrupted_support_beam", CorruptedSupportBeamBlock::new);
+	public static final DeferredBlock<Block> TILTED_CORRUPTED_SUPPORT_BEAM = register("tilted_corrupted_support_beam", TiltedCorruptedSupportBeamBlock::new);
+	public static final DeferredBlock<Block> STEEL_SHELF = register("steel_shelf", SteelShelfBlock::new);
+	public static final DeferredBlock<Block> OLD_CABINET = register("old_cabinet", OldCabinetBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

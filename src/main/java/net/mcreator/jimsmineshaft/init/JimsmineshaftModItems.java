@@ -41,6 +41,11 @@ public class JimsmineshaftModItems {
 	public static final DeferredItem<Item> WOODEN_ROOF_TYPE_A = block(JimsmineshaftModBlocks.WOODEN_ROOF_TYPE_A);
 	public static final DeferredItem<Item> WOODEN_ROOF_TYPE_C = block(JimsmineshaftModBlocks.WOODEN_ROOF_TYPE_C);
 	public static final DeferredItem<Item> WOODEN_ROOF_TYPE_B = block(JimsmineshaftModBlocks.WOODEN_ROOF_TYPE_B);
+	public static final DeferredItem<Item> STRIPPED_ROTTEN_SUPPORT_BEAM = block(JimsmineshaftModBlocks.STRIPPED_ROTTEN_SUPPORT_BEAM);
+	public static final DeferredItem<Item> CORRUPTED_SUPPORT_BEAM = block(JimsmineshaftModBlocks.CORRUPTED_SUPPORT_BEAM);
+	public static final DeferredItem<Item> TILTED_CORRUPTED_SUPPORT_BEAM = block(JimsmineshaftModBlocks.TILTED_CORRUPTED_SUPPORT_BEAM);
+	public static final DeferredItem<Item> STEEL_SHELF = block(JimsmineshaftModBlocks.STEEL_SHELF);
+	public static final DeferredItem<Item> OLD_CABINET = block(JimsmineshaftModBlocks.OLD_CABINET);
 
 	// Start of user code block custom items
 	// End of user code block custom items

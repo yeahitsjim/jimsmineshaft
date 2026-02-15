@@ -720,6 +720,109 @@
           "src/main/java/net/mcreator/jimsmineshaft/procedures/CallableGenerateShaftProcedure.java"
         ]
       }
+    },
+    {
+      "name": "StrippedRottenSupportBeam",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_rotten_support_beam",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/StrippedRottenSupportBeamBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/stripped_rotten_support_beam.json",
+          "src/main/resources/assets/jimsmineshaft/items/stripped_rotten_support_beam.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/stripped_rotten_support_beam.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/stripped_rotten_support_beam.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/stripped_rotten_support_beam.json"
+        ]
+      },
+      "path": "~/Level 2 Blocks"
+    },
+    {
+      "name": "StrippedRottenSupportBeamStates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_rotten_support_beam_states",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/stripped_rotten_support_beam_states_blockstate_0.json"
+        ]
+      },
+      "path": "~/Level 2 Blocks"
+    },
+    {
+      "name": "CorruptedSupportBeam",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corrupted_support_beam",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/CorruptedSupportBeamBlock.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/corrupted_support_beam.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/corrupted_support_beam.json",
+          "src/main/resources/assets/jimsmineshaft/items/corrupted_support_beam.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/corrupted_support_beam.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/corrupted_support_beam.json"
+        ]
+      },
+      "path": "~/Level 3 Blocks"
+    },
+    {
+      "name": "TiltedCorruptedSupportBeam",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tilted_corrupted_support_beam",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/blockstates/tilted_corrupted_support_beam.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/tilted_corrupted_support_beam.json",
+          "src/main/resources/assets/jimsmineshaft/items/tilted_corrupted_support_beam.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/tilted_corrupted_support_beam.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/tilted_corrupted_support_beam.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/TiltedCorruptedSupportBeamBlock.java"
+        ]
+      },
+      "path": "~/Level 3 Blocks"
+    },
+    {
+      "name": "SteelShelf",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steel_shelf",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/steel_shelf.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/SteelShelfBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/block/steel_shelf.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/steel_shelf.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/steel_shelf.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/steel_shelf.json"
+        ]
+      },
+      "path": "~/ExtraDetails"
+    },
+    {
+      "name": "OldCabinet",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "old_cabinet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/old_cabinet.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/OldCabinetBlock.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/old_cabinet.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/old_cabinet.json",
+          "src/main/resources/assets/jimsmineshaft/items/old_cabinet.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/old_cabinet.json"
+        ]
+      },
+      "path": "~/ExtraDetails"
     }
   ],
   "variable_elements": [
@@ -781,6 +884,7 @@
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:StrippedRottenSupportBeam",
       "~CUSTOM:RottenSupportBeam",
       "~CUSTOM:RottenPlanks"
     ],
@@ -791,7 +895,32 @@
       "~Blocks.STONE#0"
     ]
   },
-  "tab_element_order": {},
+  "tab_element_order": {
+    "CUSTOM:JimsMineshaft": [
+      "WoeMineshaftBeUponThe2",
+      "WoodenSupportTypeA",
+      "WoodenRoofTypeA",
+      "WoodenSupportTopTypeA",
+      "WoodenSupportTopLightTypeA",
+      "WoodenSupportPlainTypeB",
+      "WoodenSupportTypeB",
+      "WoodenSupportCornerTypeB2",
+      "WoodenSupportCornerTypeB",
+      "WoodenWallTypeB",
+      "WoodenRoofTypeB",
+      "WoodenSupportFullTypeC",
+      "WoodenRoofTypeC",
+      "IronSiding",
+      "IronSidingCorner",
+      "RottenPlanks",
+      "RottenSupportBeam",
+      "StrippedRottenSupportBeam",
+      "CorruptedSupportBeam",
+      "TiltedCorruptedSupportBeam",
+      "SteelShelf",
+      "OldCabinet"
+    ]
+  },
   "language_map": {
     "en_us": {
       "effect.jimsmineshaft.test_effect": "Test Effect",
@@ -816,7 +945,12 @@
       "item.jimsmineshaft.wooden_support_type_b": "Wooden Support Type B 1",
       "item.jimsmineshaft.wooden_roof_type_a": "Wooden Support Top Type A 1",
       "item.jimsmineshaft.wooden_roof_type_c": "Wooden Roof Type C",
-      "item.jimsmineshaft.wooden_roof_type_b": "Wooden Roof Type B"
+      "item.jimsmineshaft.wooden_roof_type_b": "Wooden Roof Type B",
+      "item.jimsmineshaft.stripped_rotten_support_beam": "Stripped Rotten Support Beam",
+      "item.jimsmineshaft.corrupted_support_beam": "Corrupted Support Beam",
+      "item.jimsmineshaft.tilted_corrupted_support_beam": "Tilted Corrupted Support Beam",
+      "item.jimsmineshaft.steel_shelf": "Steel Shelf",
+      "item.jimsmineshaft.old_cabinet": "Old Cabinet"
     }
   },
   "metadata": {
@@ -837,6 +971,14 @@
     "children": [
       {
         "name": "Level 2 Blocks",
+        "children": []
+      },
+      {
+        "name": "Level 3 Blocks",
+        "children": []
+      },
+      {
+        "name": "ExtraDetails",
         "children": []
       }
     ]

@@ -59,7 +59,7 @@
     "immuneToFire": false,
     "creativeTabs": [
       {
-        "value": "BUILDING_BLOCKS"
+        "value": "CUSTOM:JimsMineshaft"
       }
     ],
     "destroyTool": "Not specified",

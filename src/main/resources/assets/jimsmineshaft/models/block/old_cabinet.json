@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/old_cabinet",
+  "textures": {
+    "all": "jimsmineshaft:block/old_cabinet",
+    "particle": "jimsmineshaft:block/old_cabinet",
+    "0": "jimsmineshaft:block/old_cabinet"
+  },
+  "render_type": "solid"
+}

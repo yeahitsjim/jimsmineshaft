@@ -1,0 +1,22 @@
+{
+  "_fv": 79,
+  "_type": "blockstates",
+  "definition": {
+    "block": "StrippedRottenSupportBeam",
+    "blockstateList": [
+      {
+        "texture": "stripped_rotten_support_beam_broken",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "rotten_support_beam_broken:stripped",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

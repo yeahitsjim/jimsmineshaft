@@ -21,5 +21,10 @@
   "item.jimsmineshaft.wooden_support_type_b": "Wooden Support Type B 1",
   "item.jimsmineshaft.wooden_roof_type_a": "Wooden Support Top Type A 1",
   "item.jimsmineshaft.wooden_roof_type_c": "Wooden Roof Type C",
-  "item.jimsmineshaft.wooden_roof_type_b": "Wooden Roof Type B"
+  "item.jimsmineshaft.wooden_roof_type_b": "Wooden Roof Type B",
+  "item.jimsmineshaft.stripped_rotten_support_beam": "Stripped Rotten Support Beam",
+  "item.jimsmineshaft.corrupted_support_beam": "Corrupted Support Beam",
+  "item.jimsmineshaft.tilted_corrupted_support_beam": "Tilted Corrupted Support Beam",
+  "item.jimsmineshaft.steel_shelf": "Steel Shelf",
+  "item.jimsmineshaft.old_cabinet": "Old Cabinet"
 }

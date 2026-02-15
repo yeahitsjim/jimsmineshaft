@@ -2,15 +2,15 @@
   "_fv": 79,
   "_type": "block",
   "definition": {
-    "texture": "iron_siding",
+    "texture": "old_cabinet",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "iron_siding:default",
-    "rotationMode": 4,
+    "customModelName": "old_cabinet:default",
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -22,37 +22,91 @@
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "CUTOUT",
+    "transparencyType": "SOLID",
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 0.0,
-        "my": 0.0,
+        "mx": 14.0,
+        "my": 2.0,
+        "mz": 1.0,
+        "Mx": 15.0,
+        "My": 30.0,
+        "Mz": 15.0,
+        "subtract": false
+      },
+      {
+        "mx": 1.0,
+        "my": 2.0,
+        "mz": 1.0,
+        "Mx": 2.0,
+        "My": 30.0,
+        "Mz": 15.0,
+        "subtract": false
+      },
+      {
+        "mx": 2.0,
+        "my": 2.0,
         "mz": 14.0,
+        "Mx": 14.0,
+        "My": 30.0,
+        "Mz": 15.0,
+        "subtract": false
+      },
+      {
+        "mx": 0.0,
+        "my": 30.0,
+        "mz": 0.0,
         "Mx": 16.0,
-        "My": 16.0,
+        "My": 32.0,
         "Mz": 16.0,
         "subtract": false
       },
       {
-        "mx": 3.0,
+        "mx": 0.0,
         "my": 0.0,
-        "mz": 14.0,
-        "Mx": 13.0,
-        "My": 16.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 2.0,
         "Mz": 16.0,
-        "subtract": true
+        "subtract": false
+      },
+      {
+        "mx": 2.0,
+        "my": 15.0,
+        "mz": 1.0,
+        "Mx": 14.0,
+        "My": 17.0,
+        "Mz": 14.0,
+        "subtract": false
+      },
+      {
+        "mx": 2.0,
+        "my": 7.0,
+        "mz": 1.0,
+        "Mx": 14.0,
+        "My": 9.0,
+        "Mz": 14.0,
+        "subtract": false
+      },
+      {
+        "mx": 2.0,
+        "my": 23.0,
+        "mz": 1.0,
+        "Mx": 14.0,
+        "My": 25.0,
+        "Mz": 14.0,
+        "subtract": false
       }
     ],
     "customProperties": [],
-    "name": "Iron Siding",
+    "name": "Old Cabinet",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 10.0,
+    "hardness": 3.0,
     "resistance": 10.0,
     "hasGravity": false,
-    "isWaterloggable": true,
+    "isWaterloggable": false,
     "hasBlockItem": true,
     "maxStackSize": 64,
     "rarity": "COMMON",
@@ -62,7 +116,7 @@
         "value": "CUSTOM:JimsMineshaft"
       }
     ],
-    "destroyTool": "pickaxe",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },
@@ -98,7 +152,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "METAL"
+      "value": "WOOD"
     },
     "breakSound": {
       "value": ""
