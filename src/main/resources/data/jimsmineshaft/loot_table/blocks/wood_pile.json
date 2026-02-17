@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "jimsmineshaft:blocks/wood_pile",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "jimsmineshaft:wood_pile"
+        }
+      ]
+    }
+  ]
+}

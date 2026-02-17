@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "rotten_cabinet"
+      },
+      "name": "default"
+    }
+  }
+}

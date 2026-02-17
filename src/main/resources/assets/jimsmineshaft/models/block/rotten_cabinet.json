@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/rotten_cabinet",
+  "textures": {
+    "all": "jimsmineshaft:block/rotten_cabinet",
+    "particle": "jimsmineshaft:block/rotten_cabinet",
+    "0": "jimsmineshaft:block/rotten_cabinet"
+  },
+  "render_type": "solid"
+}

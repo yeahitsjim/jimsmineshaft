@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "jimsmineshaft:blocks/rusted_minecart",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "jimsmineshaft:rusted_minecart"
+        }
+      ]
+    }
+  ]
+}

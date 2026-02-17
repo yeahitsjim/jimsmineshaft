@@ -46,6 +46,9 @@ public class JimsmineshaftModItems {
 	public static final DeferredItem<Item> TILTED_CORRUPTED_SUPPORT_BEAM = block(JimsmineshaftModBlocks.TILTED_CORRUPTED_SUPPORT_BEAM);
 	public static final DeferredItem<Item> STEEL_SHELF = block(JimsmineshaftModBlocks.STEEL_SHELF);
 	public static final DeferredItem<Item> OLD_CABINET = block(JimsmineshaftModBlocks.OLD_CABINET);
+	public static final DeferredItem<Item> ROTTEN_CABINET = block(JimsmineshaftModBlocks.ROTTEN_CABINET);
+	public static final DeferredItem<Item> WOOD_PILE = block(JimsmineshaftModBlocks.WOOD_PILE);
+	public static final DeferredItem<Item> RUSTED_MINECART = block(JimsmineshaftModBlocks.RUSTED_MINECART);
 
 	// Start of user code block custom items
 	// End of user code block custom items

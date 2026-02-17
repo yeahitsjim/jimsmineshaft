@@ -823,6 +823,73 @@
         ]
       },
       "path": "~/ExtraDetails"
+    },
+    {
+      "name": "RottenCabinet",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rotten_cabinet",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/rotten_cabinet.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RottenCabinetBlock.java",
+          "src/main/resources/assets/jimsmineshaft/items/rotten_cabinet.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/rotten_cabinet.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/rotten_cabinet.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/rotten_cabinet.json"
+        ]
+      },
+      "path": "~/ExtraDetails"
+    },
+    {
+      "name": "WoodPile",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wood_pile",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wood_pile.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/wood_pile.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/WoodPileBlock.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/wood_pile.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/wood_pile.json",
+          "src/main/resources/assets/jimsmineshaft/items/wood_pile.json"
+        ]
+      },
+      "path": "~/ExtraDetails"
+    },
+    {
+      "name": "RustedMinecart",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rusted_minecart",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/rusted_minecart.json",
+          "src/main/resources/assets/jimsmineshaft/items/rusted_minecart.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/rusted_minecart.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/rusted_minecart.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RustedMinecartBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/block/rusted_minecart.json"
+        ]
+      },
+      "path": "~/ExtraDetails"
+    },
+    {
+      "name": "RustedMinecartBlockStates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rusted_minecart_block_states",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/rusted_minecart_block_states_blockstate_0.json"
+        ]
+      },
+      "path": "~/ExtraDetails"
     }
   ],
   "variable_elements": [
@@ -884,6 +951,7 @@
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:WoodPile",
       "~CUSTOM:StrippedRottenSupportBeam",
       "~CUSTOM:RottenSupportBeam",
       "~CUSTOM:RottenPlanks"
@@ -918,7 +986,10 @@
       "CorruptedSupportBeam",
       "TiltedCorruptedSupportBeam",
       "SteelShelf",
-      "OldCabinet"
+      "OldCabinet",
+      "RottenCabinet",
+      "WoodPile",
+      "RustedMinecart"
     ]
   },
   "language_map": {
@@ -950,7 +1021,10 @@
       "item.jimsmineshaft.corrupted_support_beam": "Corrupted Support Beam",
       "item.jimsmineshaft.tilted_corrupted_support_beam": "Tilted Corrupted Support Beam",
       "item.jimsmineshaft.steel_shelf": "Steel Shelf",
-      "item.jimsmineshaft.old_cabinet": "Old Cabinet"
+      "item.jimsmineshaft.old_cabinet": "Old Cabinet",
+      "item.jimsmineshaft.rotten_cabinet": "Rotten Cabinet",
+      "item.jimsmineshaft.wood_pile": "Wood Pile",
+      "item.jimsmineshaft.rusted_minecart": "Rusted Minecart"
     }
   },
   "metadata": {

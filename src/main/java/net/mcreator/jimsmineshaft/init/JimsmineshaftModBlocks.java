@@ -21,11 +21,14 @@ import net.mcreator.jimsmineshaft.block.WoodenSupportCornerTypeB2Block;
 import net.mcreator.jimsmineshaft.block.WoodenRoofTypeCBlock;
 import net.mcreator.jimsmineshaft.block.WoodenRoofTypeBBlock;
 import net.mcreator.jimsmineshaft.block.WoodenRoofTypeABlock;
+import net.mcreator.jimsmineshaft.block.WoodPileBlock;
 import net.mcreator.jimsmineshaft.block.TiltedCorruptedSupportBeamBlock;
 import net.mcreator.jimsmineshaft.block.StrippedRottenSupportBeamBlock;
 import net.mcreator.jimsmineshaft.block.SteelShelfBlock;
+import net.mcreator.jimsmineshaft.block.RustedMinecartBlock;
 import net.mcreator.jimsmineshaft.block.RottenSupportBeamBlock;
 import net.mcreator.jimsmineshaft.block.RottenPlanksBlock;
+import net.mcreator.jimsmineshaft.block.RottenCabinetBlock;
 import net.mcreator.jimsmineshaft.block.OldCabinetBlock;
 import net.mcreator.jimsmineshaft.block.JimsminedimensionPortalBlock;
 import net.mcreator.jimsmineshaft.block.IronSidingCornerBlock;
@@ -59,6 +62,9 @@ public class JimsmineshaftModBlocks {
 	public static final DeferredBlock<Block> TILTED_CORRUPTED_SUPPORT_BEAM = register("tilted_corrupted_support_beam", TiltedCorruptedSupportBeamBlock::new);
 	public static final DeferredBlock<Block> STEEL_SHELF = register("steel_shelf", SteelShelfBlock::new);
 	public static final DeferredBlock<Block> OLD_CABINET = register("old_cabinet", OldCabinetBlock::new);
+	public static final DeferredBlock<Block> ROTTEN_CABINET = register("rotten_cabinet", RottenCabinetBlock::new);
+	public static final DeferredBlock<Block> WOOD_PILE = register("wood_pile", WoodPileBlock::new);
+	public static final DeferredBlock<Block> RUSTED_MINECART = register("rusted_minecart", RustedMinecartBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

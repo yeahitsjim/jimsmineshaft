@@ -26,5 +26,8 @@
   "item.jimsmineshaft.corrupted_support_beam": "Corrupted Support Beam",
   "item.jimsmineshaft.tilted_corrupted_support_beam": "Tilted Corrupted Support Beam",
   "item.jimsmineshaft.steel_shelf": "Steel Shelf",
-  "item.jimsmineshaft.old_cabinet": "Old Cabinet"
+  "item.jimsmineshaft.old_cabinet": "Old Cabinet",
+  "item.jimsmineshaft.rotten_cabinet": "Rotten Cabinet",
+  "item.jimsmineshaft.wood_pile": "Wood Pile",
+  "item.jimsmineshaft.rusted_minecart": "Rusted Minecart"
 }
