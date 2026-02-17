@@ -47,6 +47,7 @@ public class JimsmineshaftModTabs {
 				tabData.accept(JimsmineshaftModBlocks.ROTTEN_CABINET.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.WOOD_PILE.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.RUSTED_MINECART.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.STACKABLE_STEEL_SHELF.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

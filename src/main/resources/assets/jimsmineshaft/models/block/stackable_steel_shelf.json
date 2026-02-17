@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/stackable_steel_shelf",
+  "textures": {
+    "all": "jimsmineshaft:block/stackable_steel_shelf",
+    "particle": "jimsmineshaft:block/stackable_steel_shelf",
+    "0": "jimsmineshaft:block/stackable_steel_shelf"
+  },
+  "render_type": "solid"
+}

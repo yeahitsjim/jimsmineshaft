@@ -890,6 +890,42 @@
         ]
       },
       "path": "~/ExtraDetails"
+    },
+    {
+      "name": "StackableSteelShelf",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stackable_steel_shelf",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/stackable_steel_shelf.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/stackable_steel_shelf.json",
+          "src/main/resources/assets/jimsmineshaft/items/stackable_steel_shelf.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/stackable_steel_shelf.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/StackableSteelShelfBlock.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/stackable_steel_shelf.json"
+        ]
+      },
+      "path": "~/ExtraDetails"
+    },
+    {
+      "name": "WallSupportedWoodenShelf",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wall_supported_wooden_shelf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wall_supported_wooden_shelf.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/wall_supported_wooden_shelf.json",
+          "src/main/resources/assets/jimsmineshaft/items/wall_supported_wooden_shelf.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/WallSupportedWoodenShelfBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/block/wall_supported_wooden_shelf.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/wall_supported_wooden_shelf.json"
+        ]
+      },
+      "path": "~/ExtraDetails"
     }
   ],
   "variable_elements": [
@@ -989,7 +1025,8 @@
       "OldCabinet",
       "RottenCabinet",
       "WoodPile",
-      "RustedMinecart"
+      "RustedMinecart",
+      "StackableSteelShelf"
     ]
   },
   "language_map": {
@@ -1024,7 +1061,9 @@
       "item.jimsmineshaft.old_cabinet": "Old Cabinet",
       "item.jimsmineshaft.rotten_cabinet": "Rotten Cabinet",
       "item.jimsmineshaft.wood_pile": "Wood Pile",
-      "item.jimsmineshaft.rusted_minecart": "Rusted Minecart"
+      "item.jimsmineshaft.rusted_minecart": "Rusted Minecart",
+      "item.jimsmineshaft.stackable_steel_shelf": "Stackable Steel Shelf",
+      "item.jimsmineshaft.wall_supported_wooden_shelf": "Wall Supported Wooden Shelf"
     }
   },
   "metadata": {

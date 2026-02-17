@@ -22,9 +22,11 @@ import net.mcreator.jimsmineshaft.block.WoodenRoofTypeCBlock;
 import net.mcreator.jimsmineshaft.block.WoodenRoofTypeBBlock;
 import net.mcreator.jimsmineshaft.block.WoodenRoofTypeABlock;
 import net.mcreator.jimsmineshaft.block.WoodPileBlock;
+import net.mcreator.jimsmineshaft.block.WallSupportedWoodenShelfBlock;
 import net.mcreator.jimsmineshaft.block.TiltedCorruptedSupportBeamBlock;
 import net.mcreator.jimsmineshaft.block.StrippedRottenSupportBeamBlock;
 import net.mcreator.jimsmineshaft.block.SteelShelfBlock;
+import net.mcreator.jimsmineshaft.block.StackableSteelShelfBlock;
 import net.mcreator.jimsmineshaft.block.RustedMinecartBlock;
 import net.mcreator.jimsmineshaft.block.RottenSupportBeamBlock;
 import net.mcreator.jimsmineshaft.block.RottenPlanksBlock;
@@ -65,6 +67,8 @@ public class JimsmineshaftModBlocks {
 	public static final DeferredBlock<Block> ROTTEN_CABINET = register("rotten_cabinet", RottenCabinetBlock::new);
 	public static final DeferredBlock<Block> WOOD_PILE = register("wood_pile", WoodPileBlock::new);
 	public static final DeferredBlock<Block> RUSTED_MINECART = register("rusted_minecart", RustedMinecartBlock::new);
+	public static final DeferredBlock<Block> STACKABLE_STEEL_SHELF = register("stackable_steel_shelf", StackableSteelShelfBlock::new);
+	public static final DeferredBlock<Block> WALL_SUPPORTED_WOODEN_SHELF = register("wall_supported_wooden_shelf", WallSupportedWoodenShelfBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "missing": "rotten_planks_cleaner"
+      },
+      "name": "default"
+    }
+  }
+}
