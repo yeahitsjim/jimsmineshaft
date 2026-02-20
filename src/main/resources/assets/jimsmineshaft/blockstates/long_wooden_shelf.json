@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jimsmineshaft:block/long_wooden_shelf"
+    },
+    "facing=east": {
+      "model": "jimsmineshaft:block/long_wooden_shelf",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jimsmineshaft:block/long_wooden_shelf",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jimsmineshaft:block/long_wooden_shelf",
+      "y": 270
+    }
+  }
+}

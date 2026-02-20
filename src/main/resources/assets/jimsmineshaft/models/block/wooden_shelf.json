@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/wooden_shelf",
+  "textures": {
+    "all": "jimsmineshaft:block/wooden_shelf",
+    "particle": "jimsmineshaft:block/wooden_shelf",
+    "0": "jimsmineshaft:block/wooden_shelf"
+  },
+  "render_type": "solid"
+}
