@@ -18,6 +18,7 @@ import net.mcreator.jimsmineshaft.block.WoodenSupportPlainTypeBBlock;
 import net.mcreator.jimsmineshaft.block.WoodenSupportFullTypeCBlock;
 import net.mcreator.jimsmineshaft.block.WoodenSupportCornerTypeBBlock;
 import net.mcreator.jimsmineshaft.block.WoodenSupportCornerTypeB2Block;
+import net.mcreator.jimsmineshaft.block.WoodenShaftLiningBlock;
 import net.mcreator.jimsmineshaft.block.WoodenRoofTypeCBlock;
 import net.mcreator.jimsmineshaft.block.WoodenRoofTypeBBlock;
 import net.mcreator.jimsmineshaft.block.WoodenRoofTypeABlock;
@@ -69,6 +70,7 @@ public class JimsmineshaftModBlocks {
 	public static final DeferredBlock<Block> RUSTED_MINECART = register("rusted_minecart", RustedMinecartBlock::new);
 	public static final DeferredBlock<Block> STACKABLE_STEEL_SHELF = register("stackable_steel_shelf", StackableSteelShelfBlock::new);
 	public static final DeferredBlock<Block> WALL_SUPPORTED_WOODEN_SHELF = register("wall_supported_wooden_shelf", WallSupportedWoodenShelfBlock::new);
+	public static final DeferredBlock<Block> WOODEN_SHAFT_LINING = register("wooden_shaft_lining", WoodenShaftLiningBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

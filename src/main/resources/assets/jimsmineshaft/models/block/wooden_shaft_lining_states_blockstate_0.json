@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/shaft_lining_corner",
+  "textures": {
+    "all": "jimsmineshaft:block/shaft_lining",
+    "particle": "jimsmineshaft:block/shaft_lining",
+    "0": "jimsmineshaft:block/shaft_lining"
+  },
+  "render_type": "solid"
+}

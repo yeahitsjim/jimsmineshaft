@@ -926,6 +926,39 @@
         ]
       },
       "path": "~/ExtraDetails"
+    },
+    {
+      "name": "WoodenShaftLining",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_shaft_lining",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/wooden_shaft_lining.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_shaft_lining.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/wooden_shaft_lining.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/wooden_shaft_lining.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenShaftLiningBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/block/wooden_shaft_lining.json"
+        ]
+      },
+      "path": "~/ExtraDetails"
+    },
+    {
+      "name": "WoodenShaftLiningStates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_shaft_lining_states",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/wooden_shaft_lining_states_blockstate_0.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/wooden_shaft_lining_states_blockstate_1.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/wooden_shaft_lining_states_blockstate_2.json"
+        ]
+      },
+      "path": "~/ExtraDetails"
     }
   ],
   "variable_elements": [
@@ -1026,7 +1059,8 @@
       "RottenCabinet",
       "WoodPile",
       "RustedMinecart",
-      "StackableSteelShelf"
+      "StackableSteelShelf",
+      "WoodenShaftLining"
     ]
   },
   "language_map": {
@@ -1063,7 +1097,8 @@
       "item.jimsmineshaft.wood_pile": "Wood Pile",
       "item.jimsmineshaft.rusted_minecart": "Rusted Minecart",
       "item.jimsmineshaft.stackable_steel_shelf": "Stackable Steel Shelf",
-      "item.jimsmineshaft.wall_supported_wooden_shelf": "Wall Supported Wooden Shelf"
+      "item.jimsmineshaft.wall_supported_wooden_shelf": "Wall Supported Wooden Shelf",
+      "item.jimsmineshaft.wooden_shaft_lining": "Wooden Shaft Lining"
     }
   },
   "metadata": {

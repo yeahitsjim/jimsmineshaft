@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "1": "stackable_steel_shelf"
+        "0": "shaft_lining"
       },
       "name": "default"
     }

@@ -2,14 +2,14 @@
   "_fv": 79,
   "_type": "block",
   "definition": {
-    "texture": "stackable_steel_shelf",
+    "texture": "shaft_lining",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "stackable_steel_shelf:default",
+    "customModelName": "shaft_lining:default",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -26,210 +26,48 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 1.0,
-        "my": 3.0,
-        "mz": 2.0,
-        "Mx": 2.0,
-        "My": 4.0,
-        "Mz": 12.0,
-        "subtract": false
-      },
-      {
-        "mx": 14.0,
-        "my": 3.0,
-        "mz": 2.0,
-        "Mx": 15.0,
-        "My": 4.0,
-        "Mz": 12.0,
-        "subtract": false
-      },
-      {
-        "mx": 14.0,
-        "my": 11.0,
-        "mz": 2.0,
-        "Mx": 15.0,
-        "My": 12.0,
-        "Mz": 12.0,
-        "subtract": false
-      },
-      {
-        "mx": 1.0,
-        "my": 11.0,
-        "mz": 2.0,
-        "Mx": 2.0,
-        "My": 12.0,
-        "Mz": 12.0,
-        "subtract": false
-      },
-      {
-        "mx": 1.0,
-        "my": 3.0,
-        "mz": 20.0,
-        "Mx": 2.0,
-        "My": 4.0,
-        "Mz": 30.0,
-        "subtract": false
-      },
-      {
-        "mx": 14.0,
-        "my": 3.0,
-        "mz": 20.0,
-        "Mx": 15.0,
-        "My": 4.0,
-        "Mz": 30.0,
-        "subtract": false
-      },
-      {
-        "mx": 14.0,
-        "my": 11.0,
-        "mz": 20.0,
-        "Mx": 15.0,
-        "My": 12.0,
-        "Mz": 30.0,
-        "subtract": false
-      },
-      {
-        "mx": 1.0,
-        "my": 11.0,
-        "mz": 20.0,
-        "Mx": 2.0,
-        "My": 12.0,
-        "Mz": 30.0,
-        "subtract": false
-      },
-      {
-        "mx": 2.0,
-        "my": 13.0,
-        "mz": 1.0,
-        "Mx": 14.0,
-        "My": 14.0,
-        "Mz": 2.0,
-        "subtract": false
-      },
-      {
-        "mx": 2.0,
-        "my": 13.0,
-        "mz": 30.0,
-        "Mx": 14.0,
-        "My": 14.0,
-        "Mz": 31.0,
-        "subtract": false
-      },
-      {
-        "mx": 2.0,
-        "my": 5.0,
-        "mz": 30.0,
-        "Mx": 14.0,
-        "My": 6.0,
-        "Mz": 31.0,
-        "subtract": false
-      },
-      {
-        "mx": 2.0,
-        "my": 5.0,
-        "mz": 1.0,
-        "Mx": 14.0,
-        "My": 6.0,
-        "Mz": 2.0,
+        "mx": 7.0,
+        "my": 0.0,
+        "mz": 13.0,
+        "Mx": 9.0,
+        "My": 16.0,
+        "Mz": 14.0,
         "subtract": false
       },
       {
         "mx": 0.0,
-        "my": 15.0,
-        "mz": 2.0,
+        "my": 0.0,
+        "mz": 14.0,
+        "Mx": 16.0,
+        "My": 2.0,
+        "Mz": 16.0,
+        "subtract": false
+      },
+      {
+        "mx": 0.0,
+        "my": 14.0,
+        "mz": 14.0,
         "Mx": 16.0,
         "My": 16.0,
-        "Mz": 30.0,
-        "subtract": false
-      },
-      {
-        "mx": 2.0,
-        "my": 15.0,
-        "mz": 0.0,
-        "Mx": 14.0,
-        "My": 16.0,
-        "Mz": 2.0,
-        "subtract": false
-      },
-      {
-        "mx": 2.0,
-        "my": 15.0,
-        "mz": 30.0,
-        "Mx": 14.0,
-        "My": 16.0,
-        "Mz": 32.0,
+        "Mz": 16.0,
         "subtract": false
       },
       {
         "mx": 0.0,
         "my": 7.0,
-        "mz": 2.0,
+        "mz": 14.0,
         "Mx": 16.0,
-        "My": 8.0,
-        "Mz": 30.0,
-        "subtract": false
-      },
-      {
-        "mx": 2.0,
-        "my": 7.0,
-        "mz": 0.0,
-        "Mx": 14.0,
-        "My": 8.0,
-        "Mz": 2.0,
-        "subtract": false
-      },
-      {
-        "mx": 2.0,
-        "my": 7.0,
-        "mz": 30.0,
-        "Mx": 14.0,
-        "My": 8.0,
-        "Mz": 32.0,
-        "subtract": false
-      },
-      {
-        "mx": 14.0,
-        "my": 0.0,
-        "mz": 0.0,
-        "Mx": 16.0,
-        "My": 16.0,
-        "Mz": 2.0,
-        "subtract": false
-      },
-      {
-        "mx": 0.0,
-        "my": 0.0,
-        "mz": 0.0,
-        "Mx": 2.0,
-        "My": 16.0,
-        "Mz": 2.0,
-        "subtract": false
-      },
-      {
-        "mx": 0.0,
-        "my": 0.0,
-        "mz": 30.0,
-        "Mx": 2.0,
-        "My": 16.0,
-        "Mz": 32.0,
-        "subtract": false
-      },
-      {
-        "mx": 14.0,
-        "my": 0.0,
-        "mz": 30.0,
-        "Mx": 16.0,
-        "My": 16.0,
-        "Mz": 32.0,
+        "My": 9.0,
+        "Mz": 16.0,
         "subtract": false
       }
     ],
     "customProperties": [],
-    "name": "Stackable Steel Shelf",
+    "name": "Wooden Shaft Lining",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 1.0,
+    "hardness": 3.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -278,7 +116,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "METAL"
+      "value": "WOOD"
     },
     "breakSound": {
       "value": ""

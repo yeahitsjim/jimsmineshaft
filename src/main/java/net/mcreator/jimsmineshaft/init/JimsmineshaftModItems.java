@@ -51,6 +51,7 @@ public class JimsmineshaftModItems {
 	public static final DeferredItem<Item> RUSTED_MINECART = block(JimsmineshaftModBlocks.RUSTED_MINECART);
 	public static final DeferredItem<Item> STACKABLE_STEEL_SHELF = block(JimsmineshaftModBlocks.STACKABLE_STEEL_SHELF);
 	public static final DeferredItem<Item> WALL_SUPPORTED_WOODEN_SHELF = block(JimsmineshaftModBlocks.WALL_SUPPORTED_WOODEN_SHELF);
+	public static final DeferredItem<Item> WOODEN_SHAFT_LINING = block(JimsmineshaftModBlocks.WOODEN_SHAFT_LINING);
 
 	// Start of user code block custom items
 	// End of user code block custom items
