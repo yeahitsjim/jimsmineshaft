@@ -38,6 +38,8 @@ public class JimsmineshaftModTabs {
 				tabData.accept(JimsmineshaftModBlocks.IRON_SIDING.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.IRON_SIDING_CORNER.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.ROTTEN_PLANKS.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.ROTTEN_PLANK_STAIRS.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.ROTTEN_PLANK_SLAB.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.ROTTEN_SUPPORT_BEAM.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.STRIPPED_ROTTEN_SUPPORT_BEAM.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.CORRUPTED_SUPPORT_BEAM.get().asItem());
@@ -51,6 +53,10 @@ public class JimsmineshaftModTabs {
 				tabData.accept(JimsmineshaftModBlocks.WOODEN_SHAFT_LINING.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.WOODEN_SHELF.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.LONG_WOODEN_SHELF.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.FENCED_CORRUPTED_SUPPORT_BEAM.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.CORRUPTED_SUPPORT_BAR.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.IRON_SUPPORT.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_SUPPORT.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

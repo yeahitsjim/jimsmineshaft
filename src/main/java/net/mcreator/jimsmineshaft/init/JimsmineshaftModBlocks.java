@@ -30,15 +30,21 @@ import net.mcreator.jimsmineshaft.block.StrippedRottenSupportBeamBlock;
 import net.mcreator.jimsmineshaft.block.SteelShelfBlock;
 import net.mcreator.jimsmineshaft.block.StackableSteelShelfBlock;
 import net.mcreator.jimsmineshaft.block.RustedMinecartBlock;
+import net.mcreator.jimsmineshaft.block.RustedIronSupportBlock;
 import net.mcreator.jimsmineshaft.block.RottenSupportBeamBlock;
 import net.mcreator.jimsmineshaft.block.RottenPlanksBlock;
+import net.mcreator.jimsmineshaft.block.RottenPlankStairsBlock;
+import net.mcreator.jimsmineshaft.block.RottenPlankSlabBlock;
 import net.mcreator.jimsmineshaft.block.RottenCabinetBlock;
 import net.mcreator.jimsmineshaft.block.OldCabinetBlock;
 import net.mcreator.jimsmineshaft.block.LongWoodenShelfBlock;
 import net.mcreator.jimsmineshaft.block.JimsminedimensionPortalBlock;
+import net.mcreator.jimsmineshaft.block.IronSupportBlock;
 import net.mcreator.jimsmineshaft.block.IronSidingCornerBlock;
 import net.mcreator.jimsmineshaft.block.IronSidingBlock;
+import net.mcreator.jimsmineshaft.block.FencedCorruptedSupportBeamBlock;
 import net.mcreator.jimsmineshaft.block.CorruptedSupportBeamBlock;
+import net.mcreator.jimsmineshaft.block.CorruptedSupportBarBlock;
 import net.mcreator.jimsmineshaft.JimsmineshaftMod;
 
 import java.util.function.Function;
@@ -75,6 +81,12 @@ public class JimsmineshaftModBlocks {
 	public static final DeferredBlock<Block> WOODEN_SHAFT_LINING = register("wooden_shaft_lining", WoodenShaftLiningBlock::new);
 	public static final DeferredBlock<Block> WOODEN_SHELF = register("wooden_shelf", WoodenShelfBlock::new);
 	public static final DeferredBlock<Block> LONG_WOODEN_SHELF = register("long_wooden_shelf", LongWoodenShelfBlock::new);
+	public static final DeferredBlock<Block> FENCED_CORRUPTED_SUPPORT_BEAM = register("fenced_corrupted_support_beam", FencedCorruptedSupportBeamBlock::new);
+	public static final DeferredBlock<Block> CORRUPTED_SUPPORT_BAR = register("corrupted_support_bar", CorruptedSupportBarBlock::new);
+	public static final DeferredBlock<Block> ROTTEN_PLANK_SLAB = register("rotten_plank_slab", RottenPlankSlabBlock::new);
+	public static final DeferredBlock<Block> ROTTEN_PLANK_STAIRS = register("rotten_plank_stairs", RottenPlankStairsBlock::new);
+	public static final DeferredBlock<Block> IRON_SUPPORT = register("iron_support", IronSupportBlock::new);
+	public static final DeferredBlock<Block> RUSTED_IRON_SUPPORT = register("rusted_iron_support", RustedIronSupportBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

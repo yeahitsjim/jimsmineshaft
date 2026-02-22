@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/corrupted_support_bar",
+  "textures": {
+    "all": "jimsmineshaft:block/corrupted_support_bar",
+    "particle": "jimsmineshaft:block/corrupted_support_bar",
+    "1": "jimsmineshaft:block/corrupted_support_bar"
+  },
+  "render_type": "solid"
+}

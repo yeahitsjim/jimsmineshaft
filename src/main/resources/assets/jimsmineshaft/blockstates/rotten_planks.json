@@ -91,6 +91,52 @@
     "facing=down,blockstate=3": {
       "model": "jimsmineshaft:block/rotten_planks_states_blockstate_2",
       "x": 90
+    },
+    "facing=north,blockstate=4": {
+      "model": "jimsmineshaft:block/rotten_planks_states_blockstate_3"
+    },
+    "facing=east,blockstate=4": {
+      "model": "jimsmineshaft:block/rotten_planks_states_blockstate_3",
+      "y": 90
+    },
+    "facing=south,blockstate=4": {
+      "model": "jimsmineshaft:block/rotten_planks_states_blockstate_3",
+      "y": 180
+    },
+    "facing=west,blockstate=4": {
+      "model": "jimsmineshaft:block/rotten_planks_states_blockstate_3",
+      "y": 270
+    },
+    "facing=up,blockstate=4": {
+      "model": "jimsmineshaft:block/rotten_planks_states_blockstate_3",
+      "x": 270
+    },
+    "facing=down,blockstate=4": {
+      "model": "jimsmineshaft:block/rotten_planks_states_blockstate_3",
+      "x": 90
+    },
+    "facing=north,blockstate=5": {
+      "model": "jimsmineshaft:block/rotten_planks_states_blockstate_4"
+    },
+    "facing=east,blockstate=5": {
+      "model": "jimsmineshaft:block/rotten_planks_states_blockstate_4",
+      "y": 90
+    },
+    "facing=south,blockstate=5": {
+      "model": "jimsmineshaft:block/rotten_planks_states_blockstate_4",
+      "y": 180
+    },
+    "facing=west,blockstate=5": {
+      "model": "jimsmineshaft:block/rotten_planks_states_blockstate_4",
+      "y": 270
+    },
+    "facing=up,blockstate=5": {
+      "model": "jimsmineshaft:block/rotten_planks_states_blockstate_4",
+      "x": 270
+    },
+    "facing=down,blockstate=5": {
+      "model": "jimsmineshaft:block/rotten_planks_states_blockstate_4",
+      "x": 90
     }
   }
 }

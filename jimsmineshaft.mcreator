@@ -35,8 +35,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/jimsmineshaft/models/block/rotten_planks_states_blockstate_2.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/rotten_planks_states_blockstate_4.json",
           "src/main/resources/assets/jimsmineshaft/models/block/rotten_planks_states_blockstate_1.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/rotten_planks_states_blockstate_0.json"
+          "src/main/resources/assets/jimsmineshaft/models/block/rotten_planks_states_blockstate_0.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/rotten_planks_states_blockstate_3.json"
         ]
       },
       "path": "~/Level 2 Blocks"
@@ -995,6 +997,118 @@
         ]
       },
       "path": "~/ExtraDetails"
+    },
+    {
+      "name": "FencedCorruptedSupportBeam",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fenced_corrupted_support_beam",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/FencedCorruptedSupportBeamBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/fenced_corrupted_support_beam.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/fenced_corrupted_support_beam.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/fenced_corrupted_support_beam.json",
+          "src/main/resources/assets/jimsmineshaft/items/fenced_corrupted_support_beam.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/fenced_corrupted_support_beam.json"
+        ]
+      },
+      "path": "~/Level 3 Blocks"
+    },
+    {
+      "name": "CorruptedSupportBar",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corrupted_support_bar",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/corrupted_support_bar.json",
+          "src/main/resources/assets/jimsmineshaft/items/corrupted_support_bar.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CorruptedSupportBarBlock.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/corrupted_support_bar.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/corrupted_support_bar.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/corrupted_support_bar.json"
+        ]
+      },
+      "path": "~/Level 3 Blocks"
+    },
+    {
+      "name": "RottenPlankSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rotten_plank_slab",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/RottenPlankSlabBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/block/rotten_plank_slab_full.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/rotten_plank_slab.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/rotten_plank_slab.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/rotten_plank_slab_top.json",
+          "src/main/resources/assets/jimsmineshaft/items/rotten_plank_slab.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/rotten_plank_slab.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/rotten_plank_slab.json"
+        ]
+      },
+      "path": "~/Level 2 Blocks"
+    },
+    {
+      "name": "RottenPlankStairs",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rotten_plank_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/rotten_plank_stairs.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/rotten_plank_stairs.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/rotten_plank_stairs_outer.json",
+          "src/main/resources/assets/jimsmineshaft/items/rotten_plank_stairs.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/rotten_plank_stairs.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RottenPlankStairsBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/rotten_plank_stairs.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/rotten_plank_stairs_inner.json"
+        ]
+      },
+      "path": "~/Level 2 Blocks"
+    },
+    {
+      "name": "IronSupport",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_support",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/iron_support.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/iron_support.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/iron_support.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/iron_support.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/IronSupportBlock.java",
+          "src/main/resources/assets/jimsmineshaft/items/iron_support.json"
+        ]
+      },
+      "path": "~/Level 3 Blocks"
+    },
+    {
+      "name": "RustedIronSupport",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rusted_iron_support",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/RustedIronSupportBlock.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/rusted_iron_support.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/rusted_iron_support.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/rusted_iron_support.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/rusted_iron_support.json",
+          "src/main/resources/assets/jimsmineshaft/items/rusted_iron_support.json"
+        ]
+      },
+      "path": "~/Level 3 Blocks"
     }
   ],
   "variable_elements": [
@@ -1056,6 +1170,8 @@
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:RottenPlankStairs",
+      "~CUSTOM:RottenPlankSlab",
       "~CUSTOM:WoodPile",
       "~CUSTOM:StrippedRottenSupportBeam",
       "~CUSTOM:RottenSupportBeam",
@@ -1066,6 +1182,12 @@
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
       "~Blocks.STONE#0"
+    ],
+    "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:RottenPlankStairs"
+    ],
+    "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:RottenPlankSlab"
     ]
   },
   "tab_element_order": {
@@ -1086,6 +1208,8 @@
       "IronSiding",
       "IronSidingCorner",
       "RottenPlanks",
+      "RottenPlankStairs",
+      "RottenPlankSlab",
       "RottenSupportBeam",
       "StrippedRottenSupportBeam",
       "CorruptedSupportBeam",
@@ -1098,7 +1222,11 @@
       "StackableSteelShelf",
       "WoodenShaftLining",
       "WoodenShelf",
-      "LongWoodenShelf"
+      "LongWoodenShelf",
+      "FencedCorruptedSupportBeam",
+      "CorruptedSupportBar",
+      "IronSupport",
+      "RustedIronSupport"
     ]
   },
   "language_map": {
@@ -1138,7 +1266,13 @@
       "item.jimsmineshaft.wall_supported_wooden_shelf": "Wall Supported Wooden Shelf",
       "item.jimsmineshaft.wooden_shaft_lining": "Wooden Shaft Lining",
       "item.jimsmineshaft.wooden_shelf": "Wooden Shelf",
-      "item.jimsmineshaft.long_wooden_shelf": "Long Wooden Shelf"
+      "item.jimsmineshaft.long_wooden_shelf": "Long Wooden Shelf",
+      "item.jimsmineshaft.fenced_corrupted_support_beam": "Fenced Corrupted Support Beam",
+      "item.jimsmineshaft.corrupted_support_bar": "Corrupted Support Bar",
+      "item.jimsmineshaft.rotten_plank_slab": "Rotten Plank Slab",
+      "item.jimsmineshaft.rotten_plank_stairs": "Rotten Plank Stairs",
+      "item.jimsmineshaft.iron_support": "Iron Support",
+      "item.jimsmineshaft.rusted_iron_support": "Rusted Iron Support"
     }
   },
   "metadata": {

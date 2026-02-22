@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/iron_support",
+  "textures": {
+    "all": "jimsmineshaft:block/rusted_iron_support",
+    "particle": "jimsmineshaft:block/rusted_iron_support",
+    "0": "jimsmineshaft:block/rusted_iron_support"
+  },
+  "render_type": "cutout"
+}

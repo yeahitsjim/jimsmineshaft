@@ -1,0 +1,10 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "particle": "jimsmineshaft:block/rotten_planks_cleaner",
+    "bottom": "jimsmineshaft:block/rotten_planks_cleaner",
+    "top": "jimsmineshaft:block/rotten_planks_cleaner",
+    "side": "jimsmineshaft:block/rotten_planks_cleaner"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jimsmineshaft:block/corrupted_support_bar"
+    },
+    "facing=east": {
+      "model": "jimsmineshaft:block/corrupted_support_bar",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jimsmineshaft:block/corrupted_support_bar",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jimsmineshaft:block/corrupted_support_bar",
+      "y": 270
+    }
+  }
+}

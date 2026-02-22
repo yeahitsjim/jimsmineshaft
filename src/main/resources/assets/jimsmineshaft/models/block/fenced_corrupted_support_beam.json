@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/corrupted_support_with_fencing",
+  "textures": {
+    "all": "jimsmineshaft:block/corrupted_support_with_fencing",
+    "particle": "jimsmineshaft:block/corrupted_support_with_fencing",
+    "1": "jimsmineshaft:block/corrupted_support_with_fencing"
+  },
+  "render_type": "solid"
+}

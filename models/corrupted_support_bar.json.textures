@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "corrupted_support_bar"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -54,6 +54,12 @@ public class JimsmineshaftModItems {
 	public static final DeferredItem<Item> WOODEN_SHAFT_LINING = block(JimsmineshaftModBlocks.WOODEN_SHAFT_LINING);
 	public static final DeferredItem<Item> WOODEN_SHELF = block(JimsmineshaftModBlocks.WOODEN_SHELF);
 	public static final DeferredItem<Item> LONG_WOODEN_SHELF = block(JimsmineshaftModBlocks.LONG_WOODEN_SHELF);
+	public static final DeferredItem<Item> FENCED_CORRUPTED_SUPPORT_BEAM = block(JimsmineshaftModBlocks.FENCED_CORRUPTED_SUPPORT_BEAM);
+	public static final DeferredItem<Item> CORRUPTED_SUPPORT_BAR = block(JimsmineshaftModBlocks.CORRUPTED_SUPPORT_BAR);
+	public static final DeferredItem<Item> ROTTEN_PLANK_SLAB = block(JimsmineshaftModBlocks.ROTTEN_PLANK_SLAB);
+	public static final DeferredItem<Item> ROTTEN_PLANK_STAIRS = block(JimsmineshaftModBlocks.ROTTEN_PLANK_STAIRS);
+	public static final DeferredItem<Item> IRON_SUPPORT = block(JimsmineshaftModBlocks.IRON_SUPPORT);
+	public static final DeferredItem<Item> RUSTED_IRON_SUPPORT = block(JimsmineshaftModBlocks.RUSTED_IRON_SUPPORT);
 
 	// Start of user code block custom items
 	// End of user code block custom items
