@@ -1109,6 +1109,24 @@
         ]
       },
       "path": "~/Level 3 Blocks"
+    },
+    {
+      "name": "CanaryCage",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "canary_cage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/canary_cage.json",
+          "src/main/resources/assets/jimsmineshaft/items/canary_cage.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CanaryCageBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/canary_cage.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/canary_cage.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/canary_cage.json"
+        ]
+      },
+      "path": "~/Artifacts"
     }
   ],
   "variable_elements": [
@@ -1226,7 +1244,8 @@
       "FencedCorruptedSupportBeam",
       "CorruptedSupportBar",
       "IronSupport",
-      "RustedIronSupport"
+      "RustedIronSupport",
+      "CanaryCage"
     ]
   },
   "language_map": {
@@ -1272,7 +1291,8 @@
       "item.jimsmineshaft.rotten_plank_slab": "Rotten Plank Slab",
       "item.jimsmineshaft.rotten_plank_stairs": "Rotten Plank Stairs",
       "item.jimsmineshaft.iron_support": "Iron Support",
-      "item.jimsmineshaft.rusted_iron_support": "Rusted Iron Support"
+      "item.jimsmineshaft.rusted_iron_support": "Rusted Iron Support",
+      "item.jimsmineshaft.canary_cage": "Canary Cage"
     }
   },
   "metadata": {
@@ -1301,6 +1321,10 @@
       },
       {
         "name": "ExtraDetails",
+        "children": []
+      },
+      {
+        "name": "Artifacts",
         "children": []
       }
     ]

@@ -60,6 +60,7 @@ public class JimsmineshaftModItems {
 	public static final DeferredItem<Item> ROTTEN_PLANK_STAIRS = block(JimsmineshaftModBlocks.ROTTEN_PLANK_STAIRS);
 	public static final DeferredItem<Item> IRON_SUPPORT = block(JimsmineshaftModBlocks.IRON_SUPPORT);
 	public static final DeferredItem<Item> RUSTED_IRON_SUPPORT = block(JimsmineshaftModBlocks.RUSTED_IRON_SUPPORT);
+	public static final DeferredItem<Item> CANARY_CAGE = block(JimsmineshaftModBlocks.CANARY_CAGE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

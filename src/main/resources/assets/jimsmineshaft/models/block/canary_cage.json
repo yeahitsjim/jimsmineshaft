@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/canary_cage",
+  "textures": {
+    "all": "jimsmineshaft:block/canary_cage",
+    "particle": "jimsmineshaft:block/canary_cage",
+    "0": "jimsmineshaft:block/canary_cage"
+  },
+  "render_type": "solid"
+}

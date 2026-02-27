@@ -57,6 +57,7 @@ public class JimsmineshaftModTabs {
 				tabData.accept(JimsmineshaftModBlocks.CORRUPTED_SUPPORT_BAR.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.IRON_SUPPORT.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_SUPPORT.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.CANARY_CAGE.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
