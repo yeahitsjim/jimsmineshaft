@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jimsmineshaft:block/raw_copper_drilled_north_dynamite"
+    },
+    "facing=east": {
+      "model": "jimsmineshaft:block/raw_copper_drilled_north_dynamite",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jimsmineshaft:block/raw_copper_drilled_north_dynamite",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jimsmineshaft:block/raw_copper_drilled_north_dynamite",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "jimsmineshaft:block/railthing",
+    "up": "jimsmineshaft:block/railthing",
+    "north": "jimsmineshaft:block/railthing",
+    "east": "jimsmineshaft:block/railthing",
+    "south": "jimsmineshaft:block/railthing",
+    "west": "jimsmineshaft:block/railthing",
+    "particle": "jimsmineshaft:block/railthing"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "F",
+    "keyBindingName": "Open Spawner GUI",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "OpenSpawnerGUIOnKeyPressed"
+    }
+  }
+}

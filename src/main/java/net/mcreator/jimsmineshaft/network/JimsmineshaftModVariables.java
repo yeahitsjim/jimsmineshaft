@@ -5,6 +5,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
+import net.neoforged.neoforge.common.util.INBTSerializable;
 import net.neoforged.neoforge.attachment.AttachmentType;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -14,6 +15,7 @@ import net.minecraft.world.level.saveddata.SavedData;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -28,19 +30,59 @@ import net.minecraft.core.Direction;
 
 import net.mcreator.jimsmineshaft.JimsmineshaftMod;
 
+import java.util.function.Supplier;
+
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class JimsmineshaftModVariables {
 	public static final DeferredRegister<AttachmentType<?>> ATTACHMENT_TYPES = DeferredRegister.create(NeoForgeRegistries.Keys.ATTACHMENT_TYPES, JimsmineshaftMod.MODID);
+	public static final Supplier<AttachmentType<PlayerVariables>> PLAYER_VARIABLES = ATTACHMENT_TYPES.register("player_variables", () -> AttachmentType.serializable(() -> new PlayerVariables()).build());
 	public static com.google.gson.JsonObject filledSpaces = new com.google.gson.JsonObject();
 	public static com.google.gson.JsonObject cuurentCoords = new com.google.gson.JsonObject();
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		JimsmineshaftMod.addNetworkMessage(SavedDataSyncMessage.TYPE, SavedDataSyncMessage.STREAM_CODEC, SavedDataSyncMessage::handleData);
+		JimsmineshaftMod.addNetworkMessage(PlayerVariablesSyncMessage.TYPE, PlayerVariablesSyncMessage.STREAM_CODEC, PlayerVariablesSyncMessage::handleData);
 	}
 
 	@EventBusSubscriber
 	public static class EventBusVariableHandlers {
+		@SubscribeEvent
+		public static void onPlayerLoggedInSyncPlayerVariables(PlayerEvent.PlayerLoggedInEvent event) {
+			if (event.getEntity() instanceof ServerPlayer player)
+				player.getData(PLAYER_VARIABLES).syncPlayerVariables(event.getEntity());
+		}
+
+		@SubscribeEvent
+		public static void onPlayerRespawnedSyncPlayerVariables(PlayerEvent.PlayerRespawnEvent event) {
+			if (event.getEntity() instanceof ServerPlayer player)
+				player.getData(PLAYER_VARIABLES).syncPlayerVariables(event.getEntity());
+		}
+
+		@SubscribeEvent
+		public static void onPlayerChangedDimensionSyncPlayerVariables(PlayerEvent.PlayerChangedDimensionEvent event) {
+			if (event.getEntity() instanceof ServerPlayer player)
+				player.getData(PLAYER_VARIABLES).syncPlayerVariables(event.getEntity());
+		}
+
+		@SubscribeEvent
+		public static void clonePlayer(PlayerEvent.Clone event) {
+			PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
+			PlayerVariables clone = new PlayerVariables();
+			clone.playerInvValue = original.playerInvValue;
+			clone.playerHoldingDrill = original.playerHoldingDrill;
+			clone.playerDrillMode = original.playerDrillMode;
+			clone.playerCantOpenDrill = original.playerCantOpenDrill;
+			clone.playerDrillMoveCloser = original.playerDrillMoveCloser;
+			clone.drillX = original.drillX;
+			clone.drillY = original.drillY;
+			clone.drillZ = original.drillZ;
+			clone.playerIsDrilling = original.playerIsDrilling;
+			if (!event.isWasDeath()) {
+			}
+			event.getEntity().setData(PLAYER_VARIABLES, clone);
+		}
+
 		@SubscribeEvent
 		public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
 			if (event.getEntity() instanceof ServerPlayer player) {
@@ -106,6 +148,11 @@ public class JimsmineshaftModVariables {
 		public String lastGeneratedStructure = "\"\"";
 		public double variantTokens = 0;
 		public double totalTokensRemaining = 0;
+		public String SBselectedShaft = "\"\"";
+		public double SB_x = 0;
+		public double SB_y = 0;
+		public double SB_z = 0;
+		public boolean doBlockSpawning = false;
 
 		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			MapVariables data = new MapVariables();
@@ -121,6 +168,11 @@ public class JimsmineshaftModVariables {
 			lastGeneratedStructure = nbt.getString("lastGeneratedStructure");
 			variantTokens = nbt.getDouble("variantTokens");
 			totalTokensRemaining = nbt.getDouble("totalTokensRemaining");
+			SBselectedShaft = nbt.getString("SBselectedShaft");
+			SB_x = nbt.getDouble("SB_x");
+			SB_y = nbt.getDouble("SB_y");
+			SB_z = nbt.getDouble("SB_z");
+			doBlockSpawning = nbt.getBoolean("doBlockSpawning");
 		}
 
 		@Override
@@ -132,6 +184,11 @@ public class JimsmineshaftModVariables {
 			nbt.putString("lastGeneratedStructure", lastGeneratedStructure);
 			nbt.putDouble("variantTokens", variantTokens);
 			nbt.putDouble("totalTokensRemaining", totalTokensRemaining);
+			nbt.putString("SBselectedShaft", SBselectedShaft);
+			nbt.putDouble("SB_x", SB_x);
+			nbt.putDouble("SB_y", SB_y);
+			nbt.putDouble("SB_z", SB_z);
+			nbt.putBoolean("doBlockSpawning", doBlockSpawning);
 			return nbt;
 		}
 
@@ -185,6 +242,75 @@ public class JimsmineshaftModVariables {
 					else
 						WorldVariables.clientSide.read(message.data.save(new CompoundTag(), context.player().registryAccess()), context.player().registryAccess());
 				}).exceptionally(e -> {
+					context.connection().disconnect(Component.literal(e.getMessage()));
+					return null;
+				});
+			}
+		}
+	}
+
+	public static class PlayerVariables implements INBTSerializable<CompoundTag> {
+		public double playerInvValue = 0;
+		public boolean playerHoldingDrill = false;
+		public boolean playerDrillMode = false;
+		public boolean playerCantOpenDrill = false;
+		public boolean playerDrillMoveCloser = false;
+		public double drillX = 0;
+		public double drillY = 0;
+		public double drillZ = 0;
+		public boolean playerIsDrilling = false;
+
+		@Override
+		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
+			CompoundTag nbt = new CompoundTag();
+			nbt.putDouble("playerInvValue", playerInvValue);
+			nbt.putBoolean("playerHoldingDrill", playerHoldingDrill);
+			nbt.putBoolean("playerDrillMode", playerDrillMode);
+			nbt.putBoolean("playerCantOpenDrill", playerCantOpenDrill);
+			nbt.putBoolean("playerDrillMoveCloser", playerDrillMoveCloser);
+			nbt.putDouble("drillX", drillX);
+			nbt.putDouble("drillY", drillY);
+			nbt.putDouble("drillZ", drillZ);
+			nbt.putBoolean("playerIsDrilling", playerIsDrilling);
+			return nbt;
+		}
+
+		@Override
+		public void deserializeNBT(HolderLookup.Provider lookupProvider, CompoundTag nbt) {
+			playerInvValue = nbt.getDouble("playerInvValue");
+			playerHoldingDrill = nbt.getBoolean("playerHoldingDrill");
+			playerDrillMode = nbt.getBoolean("playerDrillMode");
+			playerCantOpenDrill = nbt.getBoolean("playerCantOpenDrill");
+			playerDrillMoveCloser = nbt.getBoolean("playerDrillMoveCloser");
+			drillX = nbt.getDouble("drillX");
+			drillY = nbt.getDouble("drillY");
+			drillZ = nbt.getDouble("drillZ");
+			playerIsDrilling = nbt.getBoolean("playerIsDrilling");
+		}
+
+		public void syncPlayerVariables(Entity entity) {
+			if (entity instanceof ServerPlayer serverPlayer)
+				PacketDistributor.sendToPlayer(serverPlayer, new PlayerVariablesSyncMessage(this));
+		}
+	}
+
+	public record PlayerVariablesSyncMessage(PlayerVariables data) implements CustomPacketPayload {
+		public static final Type<PlayerVariablesSyncMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(JimsmineshaftMod.MODID, "player_variables_sync"));
+		public static final StreamCodec<RegistryFriendlyByteBuf, PlayerVariablesSyncMessage> STREAM_CODEC = StreamCodec
+				.of((RegistryFriendlyByteBuf buffer, PlayerVariablesSyncMessage message) -> buffer.writeNbt(message.data().serializeNBT(buffer.registryAccess())), (RegistryFriendlyByteBuf buffer) -> {
+					PlayerVariablesSyncMessage message = new PlayerVariablesSyncMessage(new PlayerVariables());
+					message.data.deserializeNBT(buffer.registryAccess(), buffer.readNbt());
+					return message;
+				});
+
+		@Override
+		public Type<PlayerVariablesSyncMessage> type() {
+			return TYPE;
+		}
+
+		public static void handleData(final PlayerVariablesSyncMessage message, final IPayloadContext context) {
+			if (context.flow() == PacketFlow.CLIENTBOUND && message.data != null) {
+				context.enqueueWork(() -> context.player().getData(PLAYER_VARIABLES).deserializeNBT(context.player().registryAccess(), message.data.serializeNBT(context.player().registryAccess()))).exceptionally(e -> {
 					context.connection().disconnect(Component.literal(e.getMessage()));
 					return null;
 				});

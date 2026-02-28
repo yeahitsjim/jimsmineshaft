@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "texturerawcopperdrilledeastbroken",
+        "2": "textureuh"
+      },
+      "name": "default"
+    }
+  }
+}

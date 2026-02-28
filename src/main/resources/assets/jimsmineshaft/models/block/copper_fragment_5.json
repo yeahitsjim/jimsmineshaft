@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/copperfragment5",
+  "textures": {
+    "all": "jimsmineshaft:block/texturecopperfragment5",
+    "particle": "jimsmineshaft:block/texturecopperfragment5",
+    "0": "jimsmineshaft:block/texturecopperfragment5"
+  },
+  "render_type": "solid"
+}

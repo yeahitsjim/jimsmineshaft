@@ -1,0 +1,406 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 350,
+    "height": 190,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_main_lit",
+          "text": "A Lit",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftmainlit"
+          },
+          "width": 66,
+          "height": 20,
+          "x": 15,
+          "y": 25,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_a_non_lit",
+          "text": "A Non Lit",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftmainnonlit"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 15,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_a_bit",
+          "text": "A Bit",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftmainbit"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 15,
+          "y": 81,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_shaft1",
+          "text": "B Shaft1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftB1"
+          },
+          "width": 66,
+          "height": 20,
+          "x": 107,
+          "y": 25,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_shaft_2",
+          "text": "B Shaft 2",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftB2"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 107,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_shaft_3",
+          "text": "B Shaft 3",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftB3"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 107,
+          "y": 80,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_shaft_4",
+          "text": "B Shaft 4",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftB4"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 107,
+          "y": 109,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_shaft_5",
+          "text": "B Shaft 5",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftB5"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 107,
+          "y": 138,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_bit_1",
+          "text": "B Bit 1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftBbit1"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 15,
+          "y": 109,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_bit_2",
+          "text": "B bit 2",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftBbit2"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 15,
+          "y": 139,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_bit_3",
+          "text": "B Bit 3",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftBbit3"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 15,
+          "y": 170,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_bit_4",
+          "text": "B Bit 4",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftBbit4"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 15,
+          "y": 201,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_c_shaft_1",
+          "text": "C Shaft 1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftC1"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 107,
+          "y": 170,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_c_shaft_2",
+          "text": "C Shaft 2",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftC2"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 107,
+          "y": 201,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_c_shaft_3",
+          "text": "C Shaft 3",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftC3"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 203,
+          "y": 25,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_c_shaft_4",
+          "text": "C Shaft 4",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftC4"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 203,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_c_shaft_5",
+          "text": "C Shaft 5",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftC5"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 203,
+          "y": 80,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_c_bit_1",
+          "text": "C Bit 1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftCbit1"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 203,
+          "y": 109,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_c_bit_2",
+          "text": "C Bit 2",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftCbit2"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 203,
+          "y": 138,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_c_bit_3",
+          "text": "C Bit 3",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftCbit3"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 203,
+          "y": 170,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_c_bit_4",
+          "text": "C Bit 4",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftCbit4"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 203,
+          "y": 201,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_resetpos",
+          "text": "ResetPos",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "LeftClickSpawner"
+          },
+          "width": 67,
+          "height": 20,
+          "x": 302,
+          "y": 201,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_room_1",
+          "text": "B Room 1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftBRoom1"
+          },
+          "width": 66,
+          "height": 20,
+          "x": 302,
+          "y": 25,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_room_2",
+          "text": "B Room 2",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftBRoom2"
+          },
+          "width": 66,
+          "height": 20,
+          "x": 302,
+          "y": 52,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

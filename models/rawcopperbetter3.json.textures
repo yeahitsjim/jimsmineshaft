@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "copper3"
+      },
+      "name": "default"
+    }
+  }
+}
