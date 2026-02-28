@@ -3,6 +3,7 @@ package net.mcreator.jimsmineshaft.block;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
@@ -21,7 +22,7 @@ public class CanaryCageBlock extends Block {
 	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
 
 	public CanaryCageBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.METAL).strength(5f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(properties.sound(SoundType.METAL).strength(5f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape().offsetType(Block.OffsetType.XZ));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -42,7 +43,8 @@ public class CanaryCageBlock extends Block {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return switch (state.getValue(FACING)) {
+		Vec3 offset = state.getOffset(pos);
+		return (switch (state.getValue(FACING)) {
 			default -> Shapes.or(box(2, 0, 6, 14, 1, 10), box(3, 0, 10, 13, 1, 12), box(4, 0, 12, 12, 1, 13), box(6, 0, 13, 10, 1, 14), box(6, 0, 2, 10, 1, 3), box(3, 0, 4, 13, 1, 6), box(4, 0, 3, 12, 1, 4), box(2, 10, 6, 14, 12, 10),
 					box(3, 10, 10, 13, 12, 12), box(4, 10, 12, 12, 12, 13), box(6, 10, 13, 10, 12, 14), box(6, 10, 2, 10, 12, 3), box(3, 10, 4, 13, 12, 6), box(4, 10, 3, 12, 12, 4), box(4, 12, 5, 12, 13, 11), box(5, 12, 11, 11, 13, 12),
 					box(5, 12, 4, 11, 13, 5), box(7, 14, 7, 9, 15, 9), box(9, 13, 7, 10, 14, 9), box(6, 13, 7, 7, 14, 9), box(6, 1, 12, 7, 10, 13), box(9, 1, 12, 10, 8, 13), box(12, 1, 9, 13, 10, 10), box(12, 1, 6, 13, 10, 7),
@@ -59,7 +61,7 @@ public class CanaryCageBlock extends Block {
 					box(4, 10, 3, 6, 12, 13), box(3, 10, 4, 4, 12, 12), box(2, 10, 6, 3, 12, 10), box(13, 10, 6, 14, 12, 10), box(10, 10, 3, 12, 12, 13), box(12, 10, 4, 13, 12, 12), box(5, 12, 4, 11, 13, 12), box(4, 12, 5, 5, 13, 11),
 					box(11, 12, 5, 12, 13, 11), box(7, 14, 7, 9, 15, 9), box(7, 13, 9, 9, 14, 10), box(7, 13, 6, 9, 14, 7), box(3, 1, 6, 4, 10, 7), box(3, 1, 9, 4, 8, 10), box(6, 1, 12, 7, 10, 13), box(9, 1, 12, 10, 10, 13),
 					box(12, 1, 9, 13, 10, 10), box(12, 1, 6, 13, 10, 7), box(9, 1, 3, 10, 6, 4), box(9, 6, 4, 10, 10, 5), box(6, 1, 3, 7, 10, 4), box(4, 1, 4, 5, 10, 5), box(4, 1, 11, 5, 9, 12), box(11, 2, 11, 12, 10, 12), box(11, 1, 4, 12, 10, 5));
-		};
+		}).move(offset.x, offset.y, offset.z);
 	}
 
 	@Override

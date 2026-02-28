@@ -1127,6 +1127,24 @@
         ]
       },
       "path": "~/Artifacts"
+    },
+    {
+      "name": "CandleHolder",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "candle_holder",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/candle_holder.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/candle_holder.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CandleHolderBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/candle_holder.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/candle_holder.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/candle_holder.json"
+        ]
+      },
+      "path": "~/Artifacts"
     }
   ],
   "variable_elements": [
@@ -1245,7 +1263,8 @@
       "CorruptedSupportBar",
       "IronSupport",
       "RustedIronSupport",
-      "CanaryCage"
+      "CanaryCage",
+      "CandleHolder"
     ]
   },
   "language_map": {
@@ -1292,7 +1311,8 @@
       "item.jimsmineshaft.rotten_plank_stairs": "Rotten Plank Stairs",
       "item.jimsmineshaft.iron_support": "Iron Support",
       "item.jimsmineshaft.rusted_iron_support": "Rusted Iron Support",
-      "item.jimsmineshaft.canary_cage": "Canary Cage"
+      "item.jimsmineshaft.canary_cage": "Canary Cage",
+      "item.jimsmineshaft.candle_holder": "Candle Holder"
     }
   },
   "metadata": {

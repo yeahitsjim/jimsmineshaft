@@ -364,7 +364,7 @@
     "creativePickItem": {
       "value": ""
     },
-    "offsetType": "NONE",
+    "offsetType": "XZ",
     "aiPathNodeType": "DEFAULT",
     "ignitedByLava": false,
     "flammability": 0,
