@@ -34,19 +34,6 @@ public class JimsmineshaftModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping PLACE_DRILL = new KeyMapping("key.jimsmineshaft.place_drill", GLFW.GLFW_KEY_P, "key.categories.misc") {
-		private boolean isDownOld = false;
-
-		@Override
-		public void setDown(boolean isDown) {
-			super.setDown(isDown);
-			if (isDownOld != isDown && isDown) {
-				PacketDistributor.sendToServer(new PlaceDrillMessage(0, 0));
-				PlaceDrillMessage.pressAction(Minecraft.getInstance().player, 0, 0);
-			}
-			isDownOld = isDown;
-		}
-	};
 	public static final KeyMapping SHIFT_KEY = new KeyMapping("key.jimsmineshaft.shift_key", GLFW.GLFW_KEY_LEFT_SHIFT, "key.categories.misc") {
 		private boolean isDownOld = false;
 
@@ -60,12 +47,25 @@ public class JimsmineshaftModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping PLACE_DRILL = new KeyMapping("key.jimsmineshaft.place_drill", GLFW.GLFW_KEY_P, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				PacketDistributor.sendToServer(new PlaceDrillMessage(0, 0));
+				PlaceDrillMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(OPEN_SPAWNER_GUI);
-		event.register(PLACE_DRILL);
 		event.register(SHIFT_KEY);
+		event.register(PLACE_DRILL);
 	}
 
 	@EventBusSubscriber({Dist.CLIENT})
@@ -74,8 +74,8 @@ public class JimsmineshaftModKeyMappings {
 		public static void onClientTick(ClientTickEvent.Post event) {
 			if (Minecraft.getInstance().screen == null) {
 				OPEN_SPAWNER_GUI.consumeClick();
-				PLACE_DRILL.consumeClick();
 				SHIFT_KEY.consumeClick();
+				PLACE_DRILL.consumeClick();
 			}
 		}
 	}

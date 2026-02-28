@@ -1,13 +1,4 @@
 {
-  "pickupbit1": {
-    "subtitle": "subtitles.pickupbit1",
-    "sounds": [
-      {
-        "name": "jimsmineshaft:pickup1",
-        "stream": false
-      }
-    ]
-  },
   "pickupbit2": {
     "subtitle": "subtitles.pickupbit2",
     "sounds": [
@@ -17,11 +8,11 @@
       }
     ]
   },
-  "pickupbit3": {
-    "subtitle": "subtitles.pickupbit3",
+  "pickupbit1": {
+    "subtitle": "subtitles.pickupbit1",
     "sounds": [
       {
-        "name": "jimsmineshaft:pickup3",
+        "name": "jimsmineshaft:pickup1",
         "stream": false
       }
     ]
@@ -35,56 +26,119 @@
       }
     ]
   },
-  "pickup5": {
-    "subtitle": "subtitles.pickup5",
+  "pickupbit3": {
+    "subtitle": "subtitles.pickupbit3",
     "sounds": [
       {
-        "name": "jimsmineshaft:pickup5",
+        "name": "jimsmineshaft:pickup3",
         "stream": false
       }
     ]
   },
-  "pickup6": {
-    "subtitle": "subtitles.pickup6",
+  "banging3": {
+    "subtitle": "subtitles.banging3",
     "sounds": [
       {
-        "name": "jimsmineshaft:pickup6",
+        "name": "jimsmineshaft:bang3",
         "stream": false
       }
     ]
   },
-  "pickup7": {
-    "subtitle": "subtitles.pickup7",
+  "banging2": {
+    "subtitle": "subtitles.banging2",
     "sounds": [
       {
-        "name": "jimsmineshaft:pickup7",
+        "name": "jimsmineshaft:bang2",
         "stream": false
       }
     ]
   },
-  "pickup8": {
-    "subtitle": "subtitles.pickup8",
+  "banging5": {
+    "subtitle": "subtitles.banging5",
     "sounds": [
       {
-        "name": "jimsmineshaft:pickup8",
+        "name": "jimsmineshaft:bang5",
         "stream": false
       }
     ]
   },
-  "pickup9": {
-    "subtitle": "subtitles.pickup9",
+  "banging4": {
+    "subtitle": "subtitles.banging4",
     "sounds": [
       {
-        "name": "jimsmineshaft:pickup9",
+        "name": "jimsmineshaft:bang4",
         "stream": false
       }
     ]
   },
-  "pickup10": {
-    "subtitle": "subtitles.pickup10",
+  "pressuredrill2": {
+    "subtitle": "subtitles.pressuredrill2",
     "sounds": [
       {
-        "name": "jimsmineshaft:pickup10",
+        "name": "jimsmineshaft:pressuredrill2",
+        "stream": false
+      }
+    ]
+  },
+  "banging": {
+    "subtitle": "subtitles.banging",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:bang1",
+        "stream": false
+      }
+    ]
+  },
+  "rock3": {
+    "subtitle": "subtitles.rock3",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:rock3",
+        "stream": false
+      }
+    ]
+  },
+  "rock1": {
+    "subtitle": "subtitles.rock1",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:rock1",
+        "stream": false
+      }
+    ]
+  },
+  "rock2": {
+    "subtitle": "subtitles.rock2",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:rock2",
+        "stream": false
+      }
+    ]
+  },
+  "pressuredrillstereo": {
+    "subtitle": "subtitles.pressuredrillstereo",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:pressuredrillstereo2",
+        "stream": false
+      }
+    ]
+  },
+  "pressuredrilling": {
+    "subtitle": "subtitles.pressuredrilling",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:pressuredrill",
+        "stream": false
+      }
+    ]
+  },
+  "pickup15": {
+    "subtitle": "subtitles.pickup15",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:pickup15",
         "stream": false
       }
     ]
@@ -125,38 +179,11 @@
       }
     ]
   },
-  "pickup15": {
-    "subtitle": "subtitles.pickup15",
+  "pickup10": {
+    "subtitle": "subtitles.pickup10",
     "sounds": [
       {
-        "name": "jimsmineshaft:pickup15",
-        "stream": false
-      }
-    ]
-  },
-  "pressuredrilling": {
-    "subtitle": "subtitles.pressuredrilling",
-    "sounds": [
-      {
-        "name": "jimsmineshaft:pressuredrill",
-        "stream": false
-      }
-    ]
-  },
-  "pressuredrill2": {
-    "subtitle": "subtitles.pressuredrill2",
-    "sounds": [
-      {
-        "name": "jimsmineshaft:pressuredrill2",
-        "stream": false
-      }
-    ]
-  },
-  "pressuredrillstereo": {
-    "subtitle": "subtitles.pressuredrillstereo",
-    "sounds": [
-      {
-        "name": "jimsmineshaft:pressuredrillstereo2",
+        "name": "jimsmineshaft:pickup10",
         "stream": false
       }
     ]
@@ -170,74 +197,47 @@
       }
     ]
   },
-  "banging": {
-    "subtitle": "subtitles.banging",
+  "pickup8": {
+    "subtitle": "subtitles.pickup8",
     "sounds": [
       {
-        "name": "jimsmineshaft:bang1",
+        "name": "jimsmineshaft:pickup8",
         "stream": false
       }
     ]
   },
-  "banging2": {
-    "subtitle": "subtitles.banging2",
+  "pickup9": {
+    "subtitle": "subtitles.pickup9",
     "sounds": [
       {
-        "name": "jimsmineshaft:bang2",
+        "name": "jimsmineshaft:pickup9",
         "stream": false
       }
     ]
   },
-  "banging3": {
-    "subtitle": "subtitles.banging3",
+  "pickup5": {
+    "subtitle": "subtitles.pickup5",
     "sounds": [
       {
-        "name": "jimsmineshaft:bang3",
+        "name": "jimsmineshaft:pickup5",
         "stream": false
       }
     ]
   },
-  "banging4": {
-    "subtitle": "subtitles.banging4",
+  "pickup6": {
+    "subtitle": "subtitles.pickup6",
     "sounds": [
       {
-        "name": "jimsmineshaft:bang4",
+        "name": "jimsmineshaft:pickup6",
         "stream": false
       }
     ]
   },
-  "banging5": {
-    "subtitle": "subtitles.banging5",
+  "pickup7": {
+    "subtitle": "subtitles.pickup7",
     "sounds": [
       {
-        "name": "jimsmineshaft:bang5",
-        "stream": false
-      }
-    ]
-  },
-  "rock1": {
-    "subtitle": "subtitles.rock1",
-    "sounds": [
-      {
-        "name": "jimsmineshaft:rock1",
-        "stream": false
-      }
-    ]
-  },
-  "rock2": {
-    "subtitle": "subtitles.rock2",
-    "sounds": [
-      {
-        "name": "jimsmineshaft:rock2",
-        "stream": false
-      }
-    ]
-  },
-  "rock3": {
-    "subtitle": "subtitles.rock3",
-    "sounds": [
-      {
-        "name": "jimsmineshaft:rock3",
+        "name": "jimsmineshaft:pickup7",
         "stream": false
       }
     ]

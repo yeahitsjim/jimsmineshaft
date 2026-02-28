@@ -19,11 +19,11 @@ import net.mcreator.jimsmineshaft.client.renderer.CopperDrilledEastRenderer;
 public class JimsmineshaftModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
+		event.registerEntityRenderer(JimsmineshaftModEntities.THECART.get(), ThecartRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.PRESSURE_DRILL.get(), PressureDrillRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.PRESSURE_DRILL_FOLDED.get(), PressureDrillFoldedRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.HOLE_ENTITY.get(), HoleEntityRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.COPPER_DRILLED_NORTH.get(), CopperDrilledNorthRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.COPPER_DRILLED_EAST.get(), CopperDrilledEastRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.THECART.get(), ThecartRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.COPPER_DRILLED_NORTH.get(), CopperDrilledNorthRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.HOLE_ENTITY.get(), HoleEntityRenderer::new);
 	}
 }

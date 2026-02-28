@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/rusted_minecart",
+  "textures": {
+    "all": "jimsmineshaft:block/rusted_cart",
+    "particle": "jimsmineshaft:block/rusted_cart",
+    "0": "jimsmineshaft:block/rusted_cart"
+  },
+  "render_type": "solid"
+}

@@ -24,8 +24,8 @@ import java.util.Map;
 
 public class JimsmineshaftModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(Registries.MENU, JimsmineshaftMod.MODID);
-	public static final DeferredHolder<MenuType<?>, MenuType<ShaftbuilderGUIMenu>> SHAFTBUILDER_GUI = REGISTRY.register("shaftbuilder_gui", () -> IMenuTypeExtension.create(ShaftbuilderGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<CartGUIMenu>> CART_GUI = REGISTRY.register("cart_gui", () -> IMenuTypeExtension.create(CartGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<ShaftbuilderGUIMenu>> SHAFTBUILDER_GUI = REGISTRY.register("shaftbuilder_gui", () -> IMenuTypeExtension.create(ShaftbuilderGUIMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

@@ -1,12 +1,9 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.jimsmineshaft.init.JimsmineshaftModBlocks;
+import net.neoforged.bus.api.Event;
 
 public class CopperShardBlockDestroyedByExplosionProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		world.setBlock(BlockPos.containing(x, y, z), JimsmineshaftModBlocks.COPPER_SHARD.get().defaultBlockState(), 3);
+		world.setBlock(BlockPos.containing(x, y, z), JimsmineshaftModItems.DELETED_MOD_ELEMENT.get().defaultBlockState(), 3);
 	}
 }

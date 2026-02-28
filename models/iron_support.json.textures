@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "iron_support"
+      },
+      "name": "default"
+    },
+    "rusted": {
+      "map": {
+        "0": "rusted_iron_support"
+      },
+      "name": "rusted"
+    }
+  }
+}

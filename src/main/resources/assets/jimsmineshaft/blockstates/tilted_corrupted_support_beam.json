@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jimsmineshaft:block/tilted_corrupted_support_beam"
+    },
+    "facing=east": {
+      "model": "jimsmineshaft:block/tilted_corrupted_support_beam",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jimsmineshaft:block/tilted_corrupted_support_beam",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jimsmineshaft:block/tilted_corrupted_support_beam",
+      "y": 270
+    }
+  }
+}

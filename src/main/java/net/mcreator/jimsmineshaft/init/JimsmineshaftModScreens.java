@@ -15,8 +15,8 @@ import net.mcreator.jimsmineshaft.client.gui.CartGUIScreen;
 public class JimsmineshaftModScreens {
 	@SubscribeEvent
 	public static void clientLoad(RegisterMenuScreensEvent event) {
-		event.register(JimsmineshaftModMenus.SHAFTBUILDER_GUI.get(), ShaftbuilderGUIScreen::new);
 		event.register(JimsmineshaftModMenus.CART_GUI.get(), CartGUIScreen::new);
+		event.register(JimsmineshaftModMenus.SHAFTBUILDER_GUI.get(), ShaftbuilderGUIScreen::new);
 	}
 
 	public interface ScreenAccessor {

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "canary_cage"
+      },
+      "name": "default"
+    }
+  }
+}
