@@ -1337,12 +1337,17 @@
   },
   "metadata": {
     "files": [
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftMod.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftMod.java",
+      "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftModPlayerAnimationAPI.java",
+      "src/main/resources/jimsmineshaft.mixins.json",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationRendererMixin.java",
       "src/main/java/net/mcreator/jimsmineshaft/network/JimsmineshaftModVariables.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModTabs.java",
-      "src/main/resources/jimsmineshaft.mixins.json",
+      "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationMixin.java",
+      "src/main/java/net/mcreator/jimsmineshaft/network/LoadPlayerAnimationMessage.java",
+      "src/main/java/net/mcreator/jimsmineshaft/network/PlayPlayerAnimationMessage.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModMobEffects.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModBlocks.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModItems.java"
