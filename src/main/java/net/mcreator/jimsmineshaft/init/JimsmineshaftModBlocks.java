@@ -45,6 +45,7 @@ import net.mcreator.jimsmineshaft.block.IronSidingBlock;
 import net.mcreator.jimsmineshaft.block.FencedCorruptedSupportBeamBlock;
 import net.mcreator.jimsmineshaft.block.CorruptedSupportBeamBlock;
 import net.mcreator.jimsmineshaft.block.CorruptedSupportBarBlock;
+import net.mcreator.jimsmineshaft.block.CanteenBlock;
 import net.mcreator.jimsmineshaft.block.CandleHolderBlock;
 import net.mcreator.jimsmineshaft.block.CanaryCageBlock;
 import net.mcreator.jimsmineshaft.JimsmineshaftMod;
@@ -91,6 +92,7 @@ public class JimsmineshaftModBlocks {
 	public static final DeferredBlock<Block> RUSTED_IRON_SUPPORT = register("rusted_iron_support", RustedIronSupportBlock::new);
 	public static final DeferredBlock<Block> CANARY_CAGE = register("canary_cage", CanaryCageBlock::new);
 	public static final DeferredBlock<Block> CANDLE_HOLDER = register("candle_holder", CandleHolderBlock::new);
+	public static final DeferredBlock<Block> CANTEEN = register("canteen", CanteenBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

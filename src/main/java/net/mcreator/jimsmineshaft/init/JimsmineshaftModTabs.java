@@ -59,6 +59,7 @@ public class JimsmineshaftModTabs {
 				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_SUPPORT.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.CANARY_CAGE.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.CANDLE_HOLDER.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.CANTEEN.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

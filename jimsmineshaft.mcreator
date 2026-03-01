@@ -1145,6 +1145,24 @@
         ]
       },
       "path": "~/Artifacts"
+    },
+    {
+      "name": "Canteen",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "canteen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/CanteenBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/canteen.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/canteen.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/canteen.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/canteen.json",
+          "src/main/resources/assets/jimsmineshaft/items/canteen.json"
+        ]
+      },
+      "path": "~/Artifacts"
     }
   ],
   "variable_elements": [
@@ -1264,7 +1282,8 @@
       "IronSupport",
       "RustedIronSupport",
       "CanaryCage",
-      "CandleHolder"
+      "CandleHolder",
+      "Canteen"
     ]
   },
   "language_map": {
@@ -1312,7 +1331,8 @@
       "item.jimsmineshaft.iron_support": "Iron Support",
       "item.jimsmineshaft.rusted_iron_support": "Rusted Iron Support",
       "item.jimsmineshaft.canary_cage": "Canary Cage",
-      "item.jimsmineshaft.candle_holder": "Candle Holder"
+      "item.jimsmineshaft.candle_holder": "Candle Holder",
+      "item.jimsmineshaft.canteen": "Canteen"
     }
   },
   "metadata": {

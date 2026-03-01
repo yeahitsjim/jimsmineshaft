@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/canteen",
+  "textures": {
+    "all": "jimsmineshaft:block/canteen",
+    "particle": "jimsmineshaft:block/canteen",
+    "0": "jimsmineshaft:block/canteen"
+  },
+  "render_type": "solid"
+}

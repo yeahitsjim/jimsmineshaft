@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jimsmineshaft:block/canteen"
+    },
+    "facing=east": {
+      "model": "jimsmineshaft:block/canteen",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jimsmineshaft:block/canteen",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jimsmineshaft:block/canteen",
+      "y": 270
+    }
+  }
+}
