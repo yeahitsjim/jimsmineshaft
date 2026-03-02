@@ -1163,6 +1163,21 @@
         ]
       },
       "path": "~/Artifacts"
+    },
+    {
+      "name": "FireAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/fire_axe.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/fire_axe.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/FireAxeItem.java"
+        ]
+      },
+      "path": "~/Weapons"
     }
   ],
   "variable_elements": [
@@ -1242,6 +1257,12 @@
     ],
     "BLOCKS:minecraft:slabs": [
       "~CUSTOM:RottenPlankSlab"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:FireAxe"
+    ],
+    "ITEMS:jimsmineshaft:fire_axe_repair_items": [
+      "~Items.IRON_NUGGET"
     ]
   },
   "tab_element_order": {
@@ -1283,7 +1304,8 @@
       "RustedIronSupport",
       "CanaryCage",
       "CandleHolder",
-      "Canteen"
+      "Canteen",
+      "FireAxe"
     ]
   },
   "language_map": {
@@ -1332,7 +1354,8 @@
       "item.jimsmineshaft.rusted_iron_support": "Rusted Iron Support",
       "item.jimsmineshaft.canary_cage": "Canary Cage",
       "item.jimsmineshaft.candle_holder": "Candle Holder",
-      "item.jimsmineshaft.canteen": "Canteen"
+      "item.jimsmineshaft.canteen": "Canteen",
+      "item.jimsmineshaft.fire_axe": "Fire Axe"
     }
   },
   "metadata": {
@@ -1365,6 +1388,10 @@
       },
       {
         "name": "Artifacts",
+        "children": []
+      },
+      {
+        "name": "Weapons",
         "children": []
       }
     ]

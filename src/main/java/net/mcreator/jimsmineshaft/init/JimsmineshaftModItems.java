@@ -15,6 +15,7 @@ import net.mcreator.jimsmineshaft.item.WoeMineshaftBeUponTheItem;
 import net.mcreator.jimsmineshaft.item.WoeMineshaftBeUponThe2Item;
 import net.mcreator.jimsmineshaft.item.TestSyncTheSecondItem;
 import net.mcreator.jimsmineshaft.item.JimsminedimensionItem;
+import net.mcreator.jimsmineshaft.item.FireAxeItem;
 import net.mcreator.jimsmineshaft.JimsmineshaftMod;
 
 import java.util.function.Function;
@@ -63,6 +64,7 @@ public class JimsmineshaftModItems {
 	public static final DeferredItem<Item> CANARY_CAGE = block(JimsmineshaftModBlocks.CANARY_CAGE);
 	public static final DeferredItem<Item> CANDLE_HOLDER = block(JimsmineshaftModBlocks.CANDLE_HOLDER);
 	public static final DeferredItem<Item> CANTEEN = block(JimsmineshaftModBlocks.CANTEEN);
+	public static final DeferredItem<Item> FIRE_AXE = register("fire_axe", FireAxeItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
