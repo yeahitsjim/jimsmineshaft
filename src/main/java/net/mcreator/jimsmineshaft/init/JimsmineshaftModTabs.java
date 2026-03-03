@@ -61,6 +61,7 @@ public class JimsmineshaftModTabs {
 				tabData.accept(JimsmineshaftModBlocks.CANDLE_HOLDER.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.CANTEEN.get().asItem());
 				tabData.accept(JimsmineshaftModItems.FIRE_AXE.get());
+				tabData.accept(JimsmineshaftModItems.OLD_KNIFE.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
