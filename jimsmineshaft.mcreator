@@ -1193,6 +1193,21 @@
         ]
       },
       "path": "~/Weapons"
+    },
+    {
+      "name": "RustyPickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rusty_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/item/RustyPickaxeItem.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/rusty_pickaxe.json",
+          "src/main/resources/assets/jimsmineshaft/items/rusty_pickaxe.json"
+        ]
+      },
+      "path": "~/Weapons"
     }
   ],
   "variable_elements": [
@@ -1284,6 +1299,9 @@
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:OldKnife"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:RustyPickaxe"
     ]
   },
   "tab_element_order": {
@@ -1327,7 +1345,8 @@
       "CandleHolder",
       "Canteen",
       "FireAxe",
-      "OldKnife"
+      "OldKnife",
+      "RustyPickaxe"
     ]
   },
   "language_map": {
@@ -1378,7 +1397,8 @@
       "item.jimsmineshaft.candle_holder": "Candle Holder",
       "item.jimsmineshaft.canteen": "Canteen",
       "item.jimsmineshaft.fire_axe": "Fire Axe",
-      "item.jimsmineshaft.old_knife": "Old Knife"
+      "item.jimsmineshaft.old_knife": "Old Knife",
+      "item.jimsmineshaft.rusty_pickaxe": "Rusty Pickaxe"
     }
   },
   "metadata": {

@@ -14,6 +14,7 @@ import net.minecraft.world.item.BlockItem;
 import net.mcreator.jimsmineshaft.item.WoeMineshaftBeUponTheItem;
 import net.mcreator.jimsmineshaft.item.WoeMineshaftBeUponThe2Item;
 import net.mcreator.jimsmineshaft.item.TestSyncTheSecondItem;
+import net.mcreator.jimsmineshaft.item.RustyPickaxeItem;
 import net.mcreator.jimsmineshaft.item.OldKnifeItem;
 import net.mcreator.jimsmineshaft.item.JimsminedimensionItem;
 import net.mcreator.jimsmineshaft.item.FireAxeItem;
@@ -67,6 +68,7 @@ public class JimsmineshaftModItems {
 	public static final DeferredItem<Item> CANTEEN = block(JimsmineshaftModBlocks.CANTEEN);
 	public static final DeferredItem<Item> FIRE_AXE = register("fire_axe", FireAxeItem::new);
 	public static final DeferredItem<Item> OLD_KNIFE = register("old_knife", OldKnifeItem::new);
+	public static final DeferredItem<Item> RUSTY_PICKAXE = register("rusty_pickaxe", RustyPickaxeItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
