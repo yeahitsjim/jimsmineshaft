@@ -1208,6 +1208,21 @@
         ]
       },
       "path": "~/Weapons"
+    },
+    {
+      "name": "SmallPickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/small_pickaxe.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/SmallPickaxeItem.java",
+          "src/main/resources/assets/jimsmineshaft/items/small_pickaxe.json"
+        ]
+      },
+      "path": "~/Weapons"
     }
   ],
   "variable_elements": [
@@ -1301,6 +1316,7 @@
       "~CUSTOM:OldKnife"
     ],
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:SmallPickaxe",
       "~CUSTOM:RustyPickaxe"
     ]
   },
@@ -1346,7 +1362,8 @@
       "Canteen",
       "FireAxe",
       "OldKnife",
-      "RustyPickaxe"
+      "RustyPickaxe",
+      "SmallPickaxe"
     ]
   },
   "language_map": {
@@ -1398,7 +1415,8 @@
       "item.jimsmineshaft.canteen": "Canteen",
       "item.jimsmineshaft.fire_axe": "Fire Axe",
       "item.jimsmineshaft.old_knife": "Old Knife",
-      "item.jimsmineshaft.rusty_pickaxe": "Rusty Pickaxe"
+      "item.jimsmineshaft.rusty_pickaxe": "Rusty Pickaxe",
+      "item.jimsmineshaft.small_pickaxe": "Small Pickaxe"
     }
   },
   "metadata": {

@@ -63,6 +63,7 @@ public class JimsmineshaftModTabs {
 				tabData.accept(JimsmineshaftModItems.FIRE_AXE.get());
 				tabData.accept(JimsmineshaftModItems.OLD_KNIFE.get());
 				tabData.accept(JimsmineshaftModItems.RUSTY_PICKAXE.get());
+				tabData.accept(JimsmineshaftModItems.SMALL_PICKAXE.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "jimsmineshaft:rusty_pickaxe"
+    "jimsmineshaft:rusty_pickaxe",
+    "jimsmineshaft:small_pickaxe"
   ]
 }
