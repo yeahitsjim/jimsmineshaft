@@ -25,32 +25,294 @@
           "src/main/resources/assets/jimsmineshaft/items/test_sync_the_second.json"
         ]
       }
+    },
+    {
+      "name": "StalkerDisplayCondition0",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_display_condition_0",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerDisplayCondition0Procedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Stalker",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/stalker_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/StalkerRenderer.java",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/StalkerEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "StalkerDisplayCondition1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_display_condition_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerDisplayCondition1Procedure.java"
+        ]
+      }
+    },
+    {
+      "name": "StalkerDisplayCondition2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_display_condition_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerDisplayCondition2Procedure.java"
+        ]
+      }
+    },
+    {
+      "name": "StalkerOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerOnEntityTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "StalkerPlaybackConditionTransformed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_playback_condition_transformed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerPlaybackConditionTransformedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "StalkerPlaybackConditionTransformAnimation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_playback_condition_transform_animation",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerPlaybackConditionTransformAnimationProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "StalkerPlaybackConditionImpaleStartPose",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_playback_condition_impale_start_pose",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerPlaybackConditionImpaleStartPoseProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "StalkerPlaybackConditionImpaleSuccess",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_playback_condition_impale_success",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerPlaybackConditionImpaleSuccessProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "StalkerPoseSetPacketReceivedByClient",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_pose_set_packet_received_by_client",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "inboundString",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerPoseSetPacketReceivedByClientProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "StalkerPoseSetPacket",
+      "type": "packet",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_pose_set_packet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/network/StalkerPoseSetPacketMessage.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "stalker.emerge",
+      "files": [
+        "stalker_emerge"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "stalker_growl_1",
+      "files": [
+        "stalker_growl_1"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "stalker_impale",
+      "files": [
+        "stalker_impale"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    }
+  ],
   "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
     "en_us": {
       "effect.jimsmineshaft.test_effect": "Test Effect",
-      "item.jimsmineshaft.test_sync_the_second": "Test Sync The Second"
+      "item.jimsmineshaft.test_sync_the_second": "Test Sync The Second",
+      "entity.jimsmineshaft.stalker": "Stalker (HEAVY WIP dont judge)",
+      "item.jimsmineshaft.stalker_spawn_egg": "Stalker (HEAVY WIP dont judge) Spawn Egg",
+      "subtitles.stalker.emerge": "",
+      "subtitles.stalker_growl_1": "",
+      "subtitles.stalker_impale": ""
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModSounds.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModTabs.java",
-      "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationMixin.java",
       "src/main/java/net/mcreator/jimsmineshaft/network/LoadPlayerAnimationMessage.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/jimsmineshaft/network/PlayPlayerAnimationMessage.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModModels.java",
       "src/main/resources/pack.mcmeta",
+      "src/main/resources/assets/jimsmineshaft/sounds.json",
+      "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationRendererMixin.java",
+      "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationMixin.java",
+      "src/main/java/net/mcreator/jimsmineshaft/network/PlayPlayerAnimationMessage.java",
       "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftModPlayerAnimationAPI.java",
       "src/main/resources/jimsmineshaft.mixins.json",
-      "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationRendererMixin.java",
       "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftMod.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModMobEffects.java",
-      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModItems.java"
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModItems.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModEntityRenderers.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModEntities.java"
     ]
   },
   "foldersRoot": {

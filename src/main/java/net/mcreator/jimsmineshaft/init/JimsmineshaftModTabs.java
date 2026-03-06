@@ -24,6 +24,8 @@ public class JimsmineshaftModTabs {
 			if (tabData.hasPermissions()) {
 				tabData.accept(JimsmineshaftModItems.TEST_SYNC_THE_SECOND.get());
 			}
+		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+			tabData.accept(JimsmineshaftModItems.STALKER_SPAWN_EGG.get());
 		}
 	}
 }

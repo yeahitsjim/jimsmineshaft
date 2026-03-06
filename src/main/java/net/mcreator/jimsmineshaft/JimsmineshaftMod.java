@@ -19,8 +19,10 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.jimsmineshaft.init.JimsmineshaftModTabs;
+import net.mcreator.jimsmineshaft.init.JimsmineshaftModSounds;
 import net.mcreator.jimsmineshaft.init.JimsmineshaftModMobEffects;
 import net.mcreator.jimsmineshaft.init.JimsmineshaftModItems;
+import net.mcreator.jimsmineshaft.init.JimsmineshaftModEntities;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
@@ -39,9 +41,10 @@ public class JimsmineshaftMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+		JimsmineshaftModSounds.REGISTRY.register(modEventBus);
 
 		JimsmineshaftModItems.REGISTRY.register(modEventBus);
-
+		JimsmineshaftModEntities.REGISTRY.register(modEventBus);
 		JimsmineshaftModTabs.REGISTRY.register(modEventBus);
 
 		JimsmineshaftModMobEffects.REGISTRY.register(modEventBus);

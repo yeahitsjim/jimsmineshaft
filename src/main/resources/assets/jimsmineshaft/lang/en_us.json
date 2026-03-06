@@ -1,4 +1,9 @@
 {
   "effect.jimsmineshaft.test_effect": "Test Effect",
-  "item.jimsmineshaft.test_sync_the_second": "Test Sync The Second"
+  "item.jimsmineshaft.test_sync_the_second": "Test Sync The Second",
+  "entity.jimsmineshaft.stalker": "Stalker (HEAVY WIP dont judge)",
+  "item.jimsmineshaft.stalker_spawn_egg": "Stalker (HEAVY WIP dont judge) Spawn Egg",
+  "subtitles.stalker.emerge": "",
+  "subtitles.stalker_growl_1": "",
+  "subtitles.stalker_impale": ""
 }

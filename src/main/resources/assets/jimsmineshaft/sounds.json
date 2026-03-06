@@ -1,0 +1,26 @@
+{
+  "stalker.emerge": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:stalker_emerge",
+        "stream": false
+      }
+    ]
+  },
+  "stalker_growl_1": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:stalker_growl_1",
+        "stream": false
+      }
+    ]
+  },
+  "stalker_impale": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:stalker_impale",
+        "stream": false
+      }
+    ]
+  }
+}
