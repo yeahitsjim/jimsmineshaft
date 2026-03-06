@@ -1,6 +1,20 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.jimsmineshaft.init.JimsmineshaftModBlocks;
 
 public class RawCopper210BlockDestroyedByPlayerProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -17,7 +31,7 @@ public class RawCopper210BlockDestroyedByPlayerProcedure {
 		letsgogambling = Mth.nextInt(RandomSource.create(), 1, 5);
 		if (letsgogambling == 1) {
 			if (world instanceof ServerLevel _level) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(JimsmineshaftModItems.DELETED_MOD_ELEMENT.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(JimsmineshaftModBlocks.COPPER_FRAGMENT_1.get()));
 				entityToSpawn.setPickUpDelay(10);
 				_level.addFreshEntity(entityToSpawn);
 			}
@@ -31,7 +45,7 @@ public class RawCopper210BlockDestroyedByPlayerProcedure {
 		}
 		if (letsgogambling == 2) {
 			if (world instanceof ServerLevel _level) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(JimsmineshaftModItems.DELETED_MOD_ELEMENT.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(JimsmineshaftModBlocks.COPPER_FRAGMENT_2.get()));
 				entityToSpawn.setPickUpDelay(10);
 				_level.addFreshEntity(entityToSpawn);
 			}
@@ -45,7 +59,7 @@ public class RawCopper210BlockDestroyedByPlayerProcedure {
 		}
 		if (letsgogambling == 3) {
 			if (world instanceof ServerLevel _level) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(JimsmineshaftModItems.DELETED_MOD_ELEMENT.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(JimsmineshaftModBlocks.COPPER_FRAGMENT_3.get()));
 				entityToSpawn.setPickUpDelay(10);
 				_level.addFreshEntity(entityToSpawn);
 			}
@@ -59,7 +73,7 @@ public class RawCopper210BlockDestroyedByPlayerProcedure {
 		}
 		if (letsgogambling == 4) {
 			if (world instanceof ServerLevel _level) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(JimsmineshaftModItems.DELETED_MOD_ELEMENT.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(JimsmineshaftModBlocks.COPPER_FRAGMENT_4.get()));
 				entityToSpawn.setPickUpDelay(10);
 				_level.addFreshEntity(entityToSpawn);
 			}
@@ -73,7 +87,7 @@ public class RawCopper210BlockDestroyedByPlayerProcedure {
 		}
 		if (letsgogambling == 5) {
 			if (world instanceof ServerLevel _level) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(JimsmineshaftModItems.DELETED_MOD_ELEMENT.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(JimsmineshaftModBlocks.COPPER_FRAGMENT_5.get()));
 				entityToSpawn.setPickUpDelay(10);
 				_level.addFreshEntity(entityToSpawn);
 			}

@@ -1,6 +1,21 @@
 package net.mcreator.jimsmineshaft.procedures;
 
+import net.neoforged.neoforge.event.entity.EntityJoinLevelEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
+
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.jimsmineshaft.init.JimsmineshaftModBlocks;
+import net.mcreator.jimsmineshaft.entity.CopperDrilledNorthEntity;
+import net.mcreator.jimsmineshaft.JimsmineshaftMod;
+
+import javax.annotation.Nullable;
 
 @EventBusSubscriber
 public class CopperDrilledNorthPlaybackConditionProcedure {
@@ -266,8 +281,8 @@ public class CopperDrilledNorthPlaybackConditionProcedure {
 																																																if (!entity.level().isClientSide())
 																																																	entity.discard();
 																																																world.setBlock(BlockPos.containing(x, y, z),
-																																																		JimsmineshaftModItems.DELETED_MOD_ELEMENT.get()
-																																																				.defaultBlockState(),
+																																																		JimsmineshaftModBlocks.RAW_COPPER_DRILLED_NORTH
+																																																				.get().defaultBlockState(),
 																																																		3);
 																																															});
 																																														});
