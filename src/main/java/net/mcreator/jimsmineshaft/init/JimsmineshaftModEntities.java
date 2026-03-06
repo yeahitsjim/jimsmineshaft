@@ -21,6 +21,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.jimsmineshaft.entity.ThecartEntity;
+import net.mcreator.jimsmineshaft.entity.StalkerEntity;
 import net.mcreator.jimsmineshaft.entity.PressureDrillFoldedEntity;
 import net.mcreator.jimsmineshaft.entity.PressureDrillEntity;
 import net.mcreator.jimsmineshaft.entity.HoleEntityEntity;
@@ -60,38 +61,22 @@ public class JimsmineshaftModEntities {
 			EntityType.Builder.<CopperDrilledEastEntity>of(CopperDrilledEastEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
 					.sized(0.6f, 1.8f));
-	public static final DeferredHolder<EntityType<?>, EntityType<CopperDrilledNorthEntity>> COPPER_DRILLED_NORTH = register("copper_drilled_north",
-			EntityType.Builder.<CopperDrilledNorthEntity>of(CopperDrilledNorthEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
-
-					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<HoleEntityEntity>> HOLE_ENTITY = register("hole_entity",
 			EntityType.Builder.<HoleEntityEntity>of(HoleEntityEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
 					.sized(0.5f, 0.5f));
-	public static final DeferredHolder<EntityType<?>, EntityType<Cart2Entity>> CART_2 = register("cart_2",
-			EntityType.Builder.<Cart2Entity>of(Cart2Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
-
-					.sized(0.6f, 1.8f));
-	public static final DeferredHolder<EntityType<?>, EntityType<Cart3Entity>> CART_3 = register("cart_3",
-			EntityType.Builder.<Cart3Entity>of(Cart3Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
-
-					.sized(0.6f, 1.8f));
-	public static final DeferredHolder<EntityType<?>, EntityType<Cart4Entity>> CART_4 = register("cart_4",
-			EntityType.Builder.<Cart4Entity>of(Cart4Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
-
-					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<ElevatorEntity>> ELEVATOR = register("elevator",
 			EntityType.Builder.<ElevatorEntity>of(ElevatorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
 					.sized(5f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<ElevatorBoundingBoxEntity>> ELEVATOR_BOUNDING_BOX = register("elevator_bounding_box",
 			EntityType.Builder.<ElevatorBoundingBoxEntity>of(ElevatorBoundingBoxEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().ridingOffset(-0.6f).sized(5f, 0.2f));
-	public static final DeferredHolder<EntityType<?>, EntityType<ElevatorSeat1Entity>> ELEVATOR_SEAT_1 = register("elevator_seat_1",
-			EntityType.Builder.<ElevatorSeat1Entity>of(ElevatorSeat1Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+	public static final DeferredHolder<EntityType<?>, EntityType<ElevatorSeat5Entity>> ELEVATOR_SEAT_5 = register("elevator_seat_5",
+			EntityType.Builder.<ElevatorSeat5Entity>of(ElevatorSeat5Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
 					.sized(0.4f, 0.7f));
-	public static final DeferredHolder<EntityType<?>, EntityType<ElevatorSeat2Entity>> ELEVATOR_SEAT_2 = register("elevator_seat_2",
-			EntityType.Builder.<ElevatorSeat2Entity>of(ElevatorSeat2Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+	public static final DeferredHolder<EntityType<?>, EntityType<ElevatorSeat6Entity>> ELEVATOR_SEAT_6 = register("elevator_seat_6",
+			EntityType.Builder.<ElevatorSeat6Entity>of(ElevatorSeat6Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
 					.sized(0.4f, 0.7f));
 	public static final DeferredHolder<EntityType<?>, EntityType<ElevatorSeat3Entity>> ELEVATOR_SEAT_3 = register("elevator_seat_3",
@@ -102,14 +87,6 @@ public class JimsmineshaftModEntities {
 			EntityType.Builder.<ElevatorSeat4Entity>of(ElevatorSeat4Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
 					.sized(0.4f, 0.7f));
-	public static final DeferredHolder<EntityType<?>, EntityType<ElevatorSeat5Entity>> ELEVATOR_SEAT_5 = register("elevator_seat_5",
-			EntityType.Builder.<ElevatorSeat5Entity>of(ElevatorSeat5Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
-
-					.sized(0.4f, 0.7f));
-	public static final DeferredHolder<EntityType<?>, EntityType<ElevatorSeat6Entity>> ELEVATOR_SEAT_6 = register("elevator_seat_6",
-			EntityType.Builder.<ElevatorSeat6Entity>of(ElevatorSeat6Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
-
-					.sized(0.4f, 0.7f));
 	public static final DeferredHolder<EntityType<?>, EntityType<ElevatorSeat7Entity>> ELEVATOR_SEAT_7 = register("elevator_seat_7",
 			EntityType.Builder.<ElevatorSeat7Entity>of(ElevatorSeat7Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
@@ -118,6 +95,34 @@ public class JimsmineshaftModEntities {
 			EntityType.Builder.<ElevatorSeat8Entity>of(ElevatorSeat8Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
 					.sized(0.4f, 0.7f));
+	public static final DeferredHolder<EntityType<?>, EntityType<Cart4Entity>> CART_4 = register("cart_4",
+			EntityType.Builder.<Cart4Entity>of(Cart4Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<Cart3Entity>> CART_3 = register("cart_3",
+			EntityType.Builder.<Cart3Entity>of(Cart3Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<Cart2Entity>> CART_2 = register("cart_2",
+			EntityType.Builder.<Cart2Entity>of(Cart2Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<ElevatorSeat1Entity>> ELEVATOR_SEAT_1 = register("elevator_seat_1",
+			EntityType.Builder.<ElevatorSeat1Entity>of(ElevatorSeat1Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.4f, 0.7f));
+	public static final DeferredHolder<EntityType<?>, EntityType<ElevatorSeat2Entity>> ELEVATOR_SEAT_2 = register("elevator_seat_2",
+			EntityType.Builder.<ElevatorSeat2Entity>of(ElevatorSeat2Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.4f, 0.7f));
+	public static final DeferredHolder<EntityType<?>, EntityType<CopperDrilledNorthEntity>> COPPER_DRILLED_NORTH = register("copper_drilled_north",
+			EntityType.Builder.<CopperDrilledNorthEntity>of(CopperDrilledNorthEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<StalkerEntity>> STALKER = register("stalker",
+			EntityType.Builder.<StalkerEntity>of(StalkerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.8f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -128,9 +133,9 @@ public class JimsmineshaftModEntities {
 	@SubscribeEvent(priority = EventPriority.HIGHEST)
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
 		event.registerEntity(Capabilities.ItemHandler.ENTITY, THECART.get(), (living, context) -> living.getCombinedInventory());
-		event.registerEntity(Capabilities.ItemHandler.ENTITY, CART_2.get(), (living, context) -> living.getCombinedInventory());
-		event.registerEntity(Capabilities.ItemHandler.ENTITY, CART_3.get(), (living, context) -> living.getCombinedInventory());
 		event.registerEntity(Capabilities.ItemHandler.ENTITY, CART_4.get(), (living, context) -> living.getCombinedInventory());
+		event.registerEntity(Capabilities.ItemHandler.ENTITY, CART_3.get(), (living, context) -> living.getCombinedInventory());
+		event.registerEntity(Capabilities.ItemHandler.ENTITY, CART_2.get(), (living, context) -> living.getCombinedInventory());
 	}
 
 	@SubscribeEvent
@@ -139,21 +144,22 @@ public class JimsmineshaftModEntities {
 		PressureDrillEntity.init(event);
 		PressureDrillFoldedEntity.init(event);
 		CopperDrilledEastEntity.init(event);
-		CopperDrilledNorthEntity.init(event);
 		HoleEntityEntity.init(event);
-		Cart2Entity.init(event);
-		Cart3Entity.init(event);
-		Cart4Entity.init(event);
 		ElevatorEntity.init(event);
 		ElevatorBoundingBoxEntity.init(event);
-		ElevatorSeat1Entity.init(event);
-		ElevatorSeat2Entity.init(event);
-		ElevatorSeat3Entity.init(event);
-		ElevatorSeat4Entity.init(event);
 		ElevatorSeat5Entity.init(event);
 		ElevatorSeat6Entity.init(event);
+		ElevatorSeat3Entity.init(event);
+		ElevatorSeat4Entity.init(event);
 		ElevatorSeat7Entity.init(event);
 		ElevatorSeat8Entity.init(event);
+		Cart4Entity.init(event);
+		Cart3Entity.init(event);
+		Cart2Entity.init(event);
+		ElevatorSeat1Entity.init(event);
+		ElevatorSeat2Entity.init(event);
+		CopperDrilledNorthEntity.init(event);
+		StalkerEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -162,20 +168,21 @@ public class JimsmineshaftModEntities {
 		event.put(PRESSURE_DRILL.get(), PressureDrillEntity.createAttributes().build());
 		event.put(PRESSURE_DRILL_FOLDED.get(), PressureDrillFoldedEntity.createAttributes().build());
 		event.put(COPPER_DRILLED_EAST.get(), CopperDrilledEastEntity.createAttributes().build());
-		event.put(COPPER_DRILLED_NORTH.get(), CopperDrilledNorthEntity.createAttributes().build());
 		event.put(HOLE_ENTITY.get(), HoleEntityEntity.createAttributes().build());
-		event.put(CART_2.get(), Cart2Entity.createAttributes().build());
-		event.put(CART_3.get(), Cart3Entity.createAttributes().build());
-		event.put(CART_4.get(), Cart4Entity.createAttributes().build());
 		event.put(ELEVATOR.get(), ElevatorEntity.createAttributes().build());
 		event.put(ELEVATOR_BOUNDING_BOX.get(), ElevatorBoundingBoxEntity.createAttributes().build());
-		event.put(ELEVATOR_SEAT_1.get(), ElevatorSeat1Entity.createAttributes().build());
-		event.put(ELEVATOR_SEAT_2.get(), ElevatorSeat2Entity.createAttributes().build());
-		event.put(ELEVATOR_SEAT_3.get(), ElevatorSeat3Entity.createAttributes().build());
-		event.put(ELEVATOR_SEAT_4.get(), ElevatorSeat4Entity.createAttributes().build());
 		event.put(ELEVATOR_SEAT_5.get(), ElevatorSeat5Entity.createAttributes().build());
 		event.put(ELEVATOR_SEAT_6.get(), ElevatorSeat6Entity.createAttributes().build());
+		event.put(ELEVATOR_SEAT_3.get(), ElevatorSeat3Entity.createAttributes().build());
+		event.put(ELEVATOR_SEAT_4.get(), ElevatorSeat4Entity.createAttributes().build());
 		event.put(ELEVATOR_SEAT_7.get(), ElevatorSeat7Entity.createAttributes().build());
 		event.put(ELEVATOR_SEAT_8.get(), ElevatorSeat8Entity.createAttributes().build());
+		event.put(CART_4.get(), Cart4Entity.createAttributes().build());
+		event.put(CART_3.get(), Cart3Entity.createAttributes().build());
+		event.put(CART_2.get(), Cart2Entity.createAttributes().build());
+		event.put(ELEVATOR_SEAT_1.get(), ElevatorSeat1Entity.createAttributes().build());
+		event.put(ELEVATOR_SEAT_2.get(), ElevatorSeat2Entity.createAttributes().build());
+		event.put(COPPER_DRILLED_NORTH.get(), CopperDrilledNorthEntity.createAttributes().build());
+		event.put(STALKER.get(), StalkerEntity.createAttributes().build());
 	}
 }

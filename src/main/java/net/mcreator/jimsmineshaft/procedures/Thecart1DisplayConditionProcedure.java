@@ -1,6 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.entity.Entity;
+import net.neoforged.bus.api.Event;
 
 public class Thecart1DisplayConditionProcedure {
 	public static boolean execute(Entity entity) {

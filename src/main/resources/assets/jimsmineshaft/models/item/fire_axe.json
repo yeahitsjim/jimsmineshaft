@@ -1,0 +1,7 @@
+{
+  "parent": "jimsmineshaft:custom/fire_axe",
+  "textures": {
+    "0": "jimsmineshaft:block/fire_ax",
+    "particle": "jimsmineshaft:item/fire_ax"
+  }
+}

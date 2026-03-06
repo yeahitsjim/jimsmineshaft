@@ -53,6 +53,15 @@
       }
     ]
   },
+  "cartstep1": {
+    "subtitle": "subtitles.cartstep1",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:cartstep1",
+        "stream": false
+      }
+    ]
+  },
   "banging5": {
     "subtitle": "subtitles.banging5",
     "sounds": [
@@ -197,6 +206,15 @@
       }
     ]
   },
+  "elevatoropen": {
+    "subtitle": "subtitles.elevatoropen",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevatoropen",
+        "stream": false
+      }
+    ]
+  },
   "pickup8": {
     "subtitle": "subtitles.pickup8",
     "sounds": [
@@ -242,11 +260,20 @@
       }
     ]
   },
-  "cartstep1": {
-    "subtitle": "subtitles.cartstep1",
+  "cartthud2": {
+    "subtitle": "subtitles.cartthud2",
     "sounds": [
       {
-        "name": "jimsmineshaft:cartstep1",
+        "name": "jimsmineshaft:metalthud2",
+        "stream": false
+      }
+    ]
+  },
+  "elevatorclose": {
+    "subtitle": "subtitles.elevatorclose",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevatorclose",
         "stream": false
       }
     ]
@@ -260,29 +287,26 @@
       }
     ]
   },
-  "cartthud2": {
-    "subtitle": "subtitles.cartthud2",
+  "stalker_impale": {
     "sounds": [
       {
-        "name": "jimsmineshaft:metalthud2",
+        "name": "jimsmineshaft:stalker_impale",
         "stream": false
       }
     ]
   },
-  "elevatoropen": {
-    "subtitle": "subtitles.elevatoropen",
+  "stalker_growl_1": {
     "sounds": [
       {
-        "name": "jimsmineshaft:elevatoropen",
+        "name": "jimsmineshaft:stalker_growl_1",
         "stream": false
       }
     ]
   },
-  "elevatorclose": {
-    "subtitle": "subtitles.elevatorclose",
+  "stalker.emerge": {
     "sounds": [
       {
-        "name": "jimsmineshaft:elevatorclose",
+        "name": "jimsmineshaft:stalker_emerge",
         "stream": false
       }
     ]

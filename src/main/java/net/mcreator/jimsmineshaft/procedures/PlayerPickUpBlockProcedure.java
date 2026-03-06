@@ -1,20 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.neoforge.event.entity.player.ItemEntityPickupEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
-
-import net.minecraft.world.item.component.CustomData;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
-import net.minecraft.network.chat.Component;
-import net.minecraft.core.component.DataComponents;
-
-import net.mcreator.jimsmineshaft.init.JimsmineshaftModBlocks;
-
-import javax.annotation.Nullable;
 
 @EventBusSubscriber
 public class PlayerPickUpBlockProcedure {
@@ -28,7 +14,7 @@ public class PlayerPickUpBlockProcedure {
 	}
 
 	private static void execute(@Nullable Event event, ItemStack itemstack) {
-		if (JimsmineshaftModBlocks.COPPER_FRAGMENT_1.get().asItem() == itemstack.getItem()) {
+		if (JimsmineshaftModItems.DELETED_MOD_ELEMENT.get() == itemstack.getItem()) {
 			{
 				final String _tagName = "value";
 				final double _tagValue = (Mth.nextDouble(RandomSource.create(), 23, 25));
@@ -37,7 +23,7 @@ public class PlayerPickUpBlockProcedure {
 			itemstack.set(DataComponents.CUSTOM_NAME,
 					Component.literal(("Copper fragment \u00A72\u00A7l$" + new java.text.DecimalFormat("##.##").format(itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("value")))));
 		}
-		if (JimsmineshaftModBlocks.COPPER_FRAGMENT_2.get().asItem() == itemstack.getItem()) {
+		if (JimsmineshaftModItems.DELETED_MOD_ELEMENT.get() == itemstack.getItem()) {
 			{
 				final String _tagName = "value";
 				final double _tagValue = (Mth.nextDouble(RandomSource.create(), 30, 32.5));
@@ -46,7 +32,7 @@ public class PlayerPickUpBlockProcedure {
 			itemstack.set(DataComponents.CUSTOM_NAME,
 					Component.literal(("Copper fragment \u00A72\u00A7l$" + new java.text.DecimalFormat("##.##").format(itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("value")))));
 		}
-		if (JimsmineshaftModBlocks.COPPER_FRAGMENT_3.get().asItem() == itemstack.getItem()) {
+		if (JimsmineshaftModItems.DELETED_MOD_ELEMENT.get() == itemstack.getItem()) {
 			{
 				final String _tagName = "value";
 				final double _tagValue = (Mth.nextDouble(RandomSource.create(), 21, 23));
@@ -55,7 +41,7 @@ public class PlayerPickUpBlockProcedure {
 			itemstack.set(DataComponents.CUSTOM_NAME,
 					Component.literal(("Copper fragment \u00A72\u00A7l$" + new java.text.DecimalFormat("##.##").format(itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("value")))));
 		}
-		if (JimsmineshaftModBlocks.COPPER_FRAGMENT_4.get().asItem() == itemstack.getItem()) {
+		if (JimsmineshaftModItems.DELETED_MOD_ELEMENT.get() == itemstack.getItem()) {
 			{
 				final String _tagName = "value";
 				final double _tagValue = (Mth.nextDouble(RandomSource.create(), 33, 35));
@@ -64,7 +50,7 @@ public class PlayerPickUpBlockProcedure {
 			itemstack.set(DataComponents.CUSTOM_NAME,
 					Component.literal(("Copper fragment \u00A72\u00A7l$" + new java.text.DecimalFormat("##.##").format(itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("value")))));
 		}
-		if (JimsmineshaftModBlocks.COPPER_FRAGMENT_5.get().asItem() == itemstack.getItem()) {
+		if (JimsmineshaftModItems.DELETED_MOD_ELEMENT.get() == itemstack.getItem()) {
 			{
 				final String _tagName = "value";
 				final double _tagValue = (Mth.nextDouble(RandomSource.create(), 37, 39));
@@ -82,7 +68,7 @@ public class PlayerPickUpBlockProcedure {
 			itemstack.set(DataComponents.CUSTOM_NAME,
 					Component.literal(("Chalcopyrite Stack \u00A72\u00A7l$" + new java.text.DecimalFormat("##.##").format(itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("value")))));
 		}
-		if (JimsmineshaftModBlocks.COPPER_SHARD_DOUBLE.get().asItem() == itemstack.getItem()) {
+		if (JimsmineshaftModItems.DELETED_MOD_ELEMENT.get() == itemstack.getItem()) {
 			{
 				final String _tagName = "value";
 				final double _tagValue = (Mth.nextDouble(RandomSource.create(), 940, 960));
@@ -91,7 +77,7 @@ public class PlayerPickUpBlockProcedure {
 			itemstack.set(DataComponents.CUSTOM_NAME,
 					Component.literal(("Chalcopyrite Stack\u00A72\u00A7l$" + new java.text.DecimalFormat("##.##").format(itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("value")))));
 		}
-		if (JimsmineshaftModBlocks.COPPER_SHARD_TRIPLE.get().asItem() == itemstack.getItem()) {
+		if (JimsmineshaftModItems.DELETED_MOD_ELEMENT.get() == itemstack.getItem()) {
 			{
 				final String _tagName = "value";
 				final double _tagValue = (Mth.nextDouble(RandomSource.create(), 1410, 1430));

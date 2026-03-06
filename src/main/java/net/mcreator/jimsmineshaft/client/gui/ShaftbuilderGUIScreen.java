@@ -1,21 +1,5 @@
 package net.mcreator.jimsmineshaft.client.gui;
 
-import net.neoforged.neoforge.network.PacketDistributor;
-
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.Button;
-import net.minecraft.client.gui.GuiGraphics;
-
-import net.mcreator.jimsmineshaft.world.inventory.ShaftbuilderGUIMenu;
-import net.mcreator.jimsmineshaft.network.ShaftbuilderGUIButtonMessage;
-import net.mcreator.jimsmineshaft.init.JimsmineshaftModScreens;
-
-import com.mojang.blaze3d.systems.RenderSystem;
-
 public class ShaftbuilderGUIScreen extends AbstractContainerScreen<ShaftbuilderGUIMenu> implements JimsmineshaftModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
@@ -121,48 +105,18 @@ public class ShaftbuilderGUIScreen extends AbstractContainerScreen<ShaftbuilderG
 		}).bounds(this.leftPos + -24, this.topPos + 56, 51, 20).build();
 		this.addRenderableWidget(button_a_bit);
 		button_b_shaft1 = Button.builder(Component.translatable("gui.jimsmineshaft.shaftbuilder_gui.button_b_shaft1"), e -> {
-			int x = ShaftbuilderGUIScreen.this.x;
-			int y = ShaftbuilderGUIScreen.this.y;
-			if (true) {
-				PacketDistributor.sendToServer(new ShaftbuilderGUIButtonMessage(3, x, y, z));
-				ShaftbuilderGUIButtonMessage.handleButtonAction(entity, 3, x, y, z);
-			}
 		}).bounds(this.leftPos + 68, this.topPos + 0, 66, 20).build();
 		this.addRenderableWidget(button_b_shaft1);
 		button_b_shaft_2 = Button.builder(Component.translatable("gui.jimsmineshaft.shaftbuilder_gui.button_b_shaft_2"), e -> {
-			int x = ShaftbuilderGUIScreen.this.x;
-			int y = ShaftbuilderGUIScreen.this.y;
-			if (true) {
-				PacketDistributor.sendToServer(new ShaftbuilderGUIButtonMessage(4, x, y, z));
-				ShaftbuilderGUIButtonMessage.handleButtonAction(entity, 4, x, y, z);
-			}
 		}).bounds(this.leftPos + 68, this.topPos + 27, 71, 20).build();
 		this.addRenderableWidget(button_b_shaft_2);
 		button_b_shaft_3 = Button.builder(Component.translatable("gui.jimsmineshaft.shaftbuilder_gui.button_b_shaft_3"), e -> {
-			int x = ShaftbuilderGUIScreen.this.x;
-			int y = ShaftbuilderGUIScreen.this.y;
-			if (true) {
-				PacketDistributor.sendToServer(new ShaftbuilderGUIButtonMessage(5, x, y, z));
-				ShaftbuilderGUIButtonMessage.handleButtonAction(entity, 5, x, y, z);
-			}
 		}).bounds(this.leftPos + 68, this.topPos + 55, 71, 20).build();
 		this.addRenderableWidget(button_b_shaft_3);
 		button_b_shaft_4 = Button.builder(Component.translatable("gui.jimsmineshaft.shaftbuilder_gui.button_b_shaft_4"), e -> {
-			int x = ShaftbuilderGUIScreen.this.x;
-			int y = ShaftbuilderGUIScreen.this.y;
-			if (true) {
-				PacketDistributor.sendToServer(new ShaftbuilderGUIButtonMessage(6, x, y, z));
-				ShaftbuilderGUIButtonMessage.handleButtonAction(entity, 6, x, y, z);
-			}
 		}).bounds(this.leftPos + 68, this.topPos + 84, 71, 20).build();
 		this.addRenderableWidget(button_b_shaft_4);
 		button_b_shaft_5 = Button.builder(Component.translatable("gui.jimsmineshaft.shaftbuilder_gui.button_b_shaft_5"), e -> {
-			int x = ShaftbuilderGUIScreen.this.x;
-			int y = ShaftbuilderGUIScreen.this.y;
-			if (true) {
-				PacketDistributor.sendToServer(new ShaftbuilderGUIButtonMessage(7, x, y, z));
-				ShaftbuilderGUIButtonMessage.handleButtonAction(entity, 7, x, y, z);
-			}
 		}).bounds(this.leftPos + 68, this.topPos + 113, 71, 20).build();
 		this.addRenderableWidget(button_b_shaft_5);
 		button_b_bit_1 = Button.builder(Component.translatable("gui.jimsmineshaft.shaftbuilder_gui.button_b_bit_1"), e -> {

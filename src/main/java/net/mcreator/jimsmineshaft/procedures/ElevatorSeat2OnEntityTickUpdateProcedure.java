@@ -1,14 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.AABB;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerPlayer;
-
-import net.mcreator.jimsmineshaft.entity.ElevatorEntity;
-
-import java.util.Comparator;
+import net.neoforged.bus.api.Event;
 
 public class ElevatorSeat2OnEntityTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {

@@ -9,6 +9,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
 import net.mcreator.jimsmineshaft.client.renderer.ThecartRenderer;
+import net.mcreator.jimsmineshaft.client.renderer.StalkerRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.PressureDrillRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.PressureDrillFoldedRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.HoleEntityRenderer;
@@ -36,20 +37,21 @@ public class JimsmineshaftModEntityRenderers {
 		event.registerEntityRenderer(JimsmineshaftModEntities.PRESSURE_DRILL.get(), PressureDrillRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.PRESSURE_DRILL_FOLDED.get(), PressureDrillFoldedRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.COPPER_DRILLED_EAST.get(), CopperDrilledEastRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.COPPER_DRILLED_NORTH.get(), CopperDrilledNorthRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.HOLE_ENTITY.get(), HoleEntityRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.CART_2.get(), Cart2Renderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.CART_3.get(), Cart3Renderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.CART_4.get(), Cart4Renderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.ELEVATOR.get(), ElevatorRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.ELEVATOR_BOUNDING_BOX.get(), ElevatorBoundingBoxRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.ELEVATOR_SEAT_1.get(), ElevatorSeat1Renderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.ELEVATOR_SEAT_2.get(), ElevatorSeat2Renderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.ELEVATOR_SEAT_3.get(), ElevatorSeat3Renderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.ELEVATOR_SEAT_4.get(), ElevatorSeat4Renderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.ELEVATOR_SEAT_5.get(), ElevatorSeat5Renderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.ELEVATOR_SEAT_6.get(), ElevatorSeat6Renderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.ELEVATOR_SEAT_3.get(), ElevatorSeat3Renderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.ELEVATOR_SEAT_4.get(), ElevatorSeat4Renderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.ELEVATOR_SEAT_7.get(), ElevatorSeat7Renderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.ELEVATOR_SEAT_8.get(), ElevatorSeat8Renderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.CART_4.get(), Cart4Renderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.CART_3.get(), Cart3Renderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.CART_2.get(), Cart2Renderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.ELEVATOR_SEAT_1.get(), ElevatorSeat1Renderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.ELEVATOR_SEAT_2.get(), ElevatorSeat2Renderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.COPPER_DRILLED_NORTH.get(), CopperDrilledNorthRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.STALKER.get(), StalkerRenderer::new);
 	}
 }
