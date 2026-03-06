@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/iron_siding_corner",
+  "textures": {
+    "all": "jimsmineshaft:block/iron_siding_corner",
+    "particle": "jimsmineshaft:block/iron_siding_corner",
+    "0": "jimsmineshaft:block/iron_siding_corner"
+  },
+  "render_type": "cutout"
+}

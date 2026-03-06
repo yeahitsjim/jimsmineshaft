@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/shaft_lining_with_stone_corner",
+  "textures": {
+    "all": "jimsmineshaft:block/shaft_lining_with_stone",
+    "particle": "jimsmineshaft:block/shaft_lining",
+    "1": "jimsmineshaft:block/shaft_lining_with_stone"
+  },
+  "render_type": "solid"
+}

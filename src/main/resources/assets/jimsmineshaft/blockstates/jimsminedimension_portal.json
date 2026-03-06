@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "jimsmineshaft:block/jimsminedimension_portal_ew"
+    },
+    "axis=x": {
+      "model": "jimsmineshaft:block/jimsminedimension_portal_ns"
+    }
+  }
+}

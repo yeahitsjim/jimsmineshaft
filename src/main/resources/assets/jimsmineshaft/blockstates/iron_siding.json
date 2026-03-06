@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jimsmineshaft:block/iron_siding"
+    },
+    "facing=east": {
+      "model": "jimsmineshaft:block/iron_siding",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jimsmineshaft:block/iron_siding",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jimsmineshaft:block/iron_siding",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "jimsmineshaft:block/iron_siding",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "jimsmineshaft:block/iron_siding",
+      "x": 90
+    }
+  }
+}

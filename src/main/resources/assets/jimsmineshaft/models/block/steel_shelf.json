@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/steel_shelf",
+  "textures": {
+    "all": "jimsmineshaft:block/steel_shelf",
+    "particle": "jimsmineshaft:block/steel_shelf",
+    "0": "jimsmineshaft:block/steel_shelf"
+  },
+  "render_type": "cutout"
+}

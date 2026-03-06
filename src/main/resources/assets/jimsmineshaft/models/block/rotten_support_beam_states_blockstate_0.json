@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/rotten_support_beam_broken",
+  "textures": {
+    "all": "jimsmineshaft:block/rotten_support_beam_broken",
+    "particle": "jimsmineshaft:block/rotten_support_beam",
+    "0": "jimsmineshaft:block/rotten_support_beam_broken"
+  },
+  "render_type": "solid"
+}

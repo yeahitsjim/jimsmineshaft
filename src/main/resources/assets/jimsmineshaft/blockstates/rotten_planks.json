@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jimsmineshaft:block/rotten_planks"
+    },
+    "facing=east": {
+      "model": "jimsmineshaft:block/rotten_planks",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jimsmineshaft:block/rotten_planks",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jimsmineshaft:block/rotten_planks",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "jimsmineshaft:block/rotten_planks",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "jimsmineshaft:block/rotten_planks",
+      "x": 90
+    }
+  }
+}

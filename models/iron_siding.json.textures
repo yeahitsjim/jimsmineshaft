@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "iron_siding"
+      },
+      "name": "default"
+    },
+    "barred1": {
+      "map": {
+        "0": "iron_siding_barred_1"
+      },
+      "name": "barred1"
+    },
+    "barred2": {
+      "map": {
+        "0": "iron_siding_barred_2"
+      },
+      "name": "barred2"
+    },
+    "barred3": {
+      "map": {
+        "0": "iron_siding_barred_3"
+      },
+      "name": "barred3"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/old_wood_pile",
+  "textures": {
+    "all": "jimsmineshaft:block/old_wood_pile",
+    "particle": "jimsmineshaft:block/old_wood_pile",
+    "0": "jimsmineshaft:block/old_wood_pile"
+  },
+  "render_type": "solid"
+}

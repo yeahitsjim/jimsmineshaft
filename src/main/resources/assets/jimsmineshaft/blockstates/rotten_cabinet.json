@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jimsmineshaft:block/rotten_cabinet"
+    },
+    "facing=east": {
+      "model": "jimsmineshaft:block/rotten_cabinet",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jimsmineshaft:block/rotten_cabinet",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jimsmineshaft:block/rotten_cabinet",
+      "y": 270
+    }
+  }
+}

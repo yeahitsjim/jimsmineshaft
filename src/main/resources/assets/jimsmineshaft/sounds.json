@@ -1,8 +1,8 @@
 {
-  "stalker.emerge": {
+  "stalker_impale": {
     "sounds": [
       {
-        "name": "jimsmineshaft:stalker_emerge",
+        "name": "jimsmineshaft:stalker_impale",
         "stream": false
       }
     ]
@@ -15,10 +15,10 @@
       }
     ]
   },
-  "stalker_impale": {
+  "stalker.emerge": {
     "sounds": [
       {
-        "name": "jimsmineshaft:stalker_impale",
+        "name": "jimsmineshaft:stalker_emerge",
         "stream": false
       }
     ]

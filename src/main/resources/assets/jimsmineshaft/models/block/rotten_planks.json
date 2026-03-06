@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "jimsmineshaft:block/rotten_planks_cleaner",
+    "up": "jimsmineshaft:block/rotten_planks_cleaner",
+    "north": "jimsmineshaft:block/rotten_planks_cleaner",
+    "east": "jimsmineshaft:block/rotten_planks_cleaner",
+    "south": "jimsmineshaft:block/rotten_planks_cleaner",
+    "west": "jimsmineshaft:block/rotten_planks_cleaner",
+    "particle": "jimsmineshaft:block/rotten_planks_cleaner"
+  },
+  "render_type": "cutout"
+}

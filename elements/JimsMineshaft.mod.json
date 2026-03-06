@@ -1,0 +1,11 @@
+{
+  "_fv": 79,
+  "_type": "tab",
+  "definition": {
+    "name": "Jims Mineshaft",
+    "icon": {
+      "value": "CUSTOM:TestSyncTheSecond"
+    },
+    "showSearch": true
+  }
+}

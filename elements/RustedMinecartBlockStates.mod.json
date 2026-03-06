@@ -1,0 +1,22 @@
+{
+  "_fv": 79,
+  "_type": "blockstates",
+  "definition": {
+    "block": "RustedMinecart",
+    "blockstateList": [
+      {
+        "texture": "rusted_cart",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "rusted_minecart_1:default",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

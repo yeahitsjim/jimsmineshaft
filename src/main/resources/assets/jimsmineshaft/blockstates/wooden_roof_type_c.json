@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jimsmineshaft:block/wooden_roof_type_c"
+    },
+    "facing=east": {
+      "model": "jimsmineshaft:block/wooden_roof_type_c",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jimsmineshaft:block/wooden_roof_type_c",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jimsmineshaft:block/wooden_roof_type_c",
+      "y": 270
+    }
+  }
+}

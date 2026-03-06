@@ -1,0 +1,48 @@
+{
+  "_fv": 79,
+  "_type": "blockstates",
+  "definition": {
+    "block": "IronSiding",
+    "blockstateList": [
+      {
+        "texture": "iron_siding_barred_1",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "iron_siding:barred1",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "iron_siding_barred_2",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "iron_siding:barred2",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "iron_siding_barred_3",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "iron_siding:barred3",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

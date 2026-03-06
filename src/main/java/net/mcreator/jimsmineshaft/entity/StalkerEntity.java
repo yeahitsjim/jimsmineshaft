@@ -1,46 +1,17 @@
 package net.mcreator.jimsmineshaft.entity;
 
-import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
-
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.npc.Villager;
-import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
-import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
-import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
-import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
-import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.AnimationState;
-import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.syncher.SynchedEntityData;
-import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.nbt.Tag;
 import net.minecraft.network.syncher.EntityDataAccessor;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.core.registries.BuiltInRegistries;
-
-import net.mcreator.jimsmineshaft.procedures.StalkerPlaybackConditionTransformedProcedure;
-import net.mcreator.jimsmineshaft.procedures.StalkerPlaybackConditionTransformAnimationProcedure;
-import net.mcreator.jimsmineshaft.procedures.StalkerPlaybackConditionImpaleSuccessProcedure;
-import net.mcreator.jimsmineshaft.procedures.StalkerPlaybackConditionImpaleStartPoseProcedure;
-import net.mcreator.jimsmineshaft.procedures.StalkerOnEntityTickUpdateProcedure;
-import net.mcreator.jimsmineshaft.procedures.StalkerDisplayCondition0Procedure;
 
 public class StalkerEntity extends Monster {
+
 	public static final EntityDataAccessor<Integer> DATA_transition = SynchedEntityData.defineId(StalkerEntity.class, EntityDataSerializers.INT);
 	public static final EntityDataAccessor<String> DATA_pose = SynchedEntityData.defineId(StalkerEntity.class, EntityDataSerializers.STRING);
 	public static final EntityDataAccessor<String> DATA_attack = SynchedEntityData.defineId(StalkerEntity.class, EntityDataSerializers.STRING);
 	public static final EntityDataAccessor<Integer> DATA_attackTicks = SynchedEntityData.defineId(StalkerEntity.class, EntityDataSerializers.INT);
 	public static final EntityDataAccessor<Boolean> DATA_transformed = SynchedEntityData.defineId(StalkerEntity.class, EntityDataSerializers.BOOLEAN);
 	public static final EntityDataAccessor<String> DATA_lastPose = SynchedEntityData.defineId(StalkerEntity.class, EntityDataSerializers.STRING);
+
 	public final AnimationState animationState1 = new AnimationState();
 	public final AnimationState animationState2 = new AnimationState();
 	public final AnimationState animationState4 = new AnimationState();
@@ -50,7 +21,9 @@ public class StalkerEntity extends Monster {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
+
 		setPersistenceRequired();
+
 	}
 
 	@Override
@@ -67,7 +40,9 @@ public class StalkerEntity extends Monster {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
+
 		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.5, false) {
+
 			@Override
 			protected boolean canPerformAttack(LivingEntity entity) {
 				return this.isTimeToAttack() && this.mob.distanceToSqr(entity) < (this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth()) && this.mob.getSensing().hasLineOfSight(entity);
@@ -80,7 +55,11 @@ public class StalkerEntity extends Monster {
 				double z = StalkerEntity.this.getZ();
 				Entity entity = StalkerEntity.this;
 				Level world = StalkerEntity.this.level();
-				return super.canUse() && StalkerPlaybackConditionTransformedProcedure.execute(entity);
+				return super.canUse() &&
+
+						StalkerPlaybackConditionTransformedProcedure.execute(entity)
+
+				;
 			}
 
 			@Override
@@ -90,11 +69,16 @@ public class StalkerEntity extends Monster {
 				double z = StalkerEntity.this.getZ();
 				Entity entity = StalkerEntity.this;
 				Level world = StalkerEntity.this.level();
-				return super.canContinueToUse() && StalkerPlaybackConditionTransformedProcedure.execute(entity);
+				return super.canContinueToUse() &&
+
+						StalkerPlaybackConditionTransformedProcedure.execute(entity)
+
+				;
 			}
 
 		});
 		this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1, false) {
+
 			@Override
 			protected boolean canPerformAttack(LivingEntity entity) {
 				return this.isTimeToAttack() && this.mob.distanceToSqr(entity) < (this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth()) && this.mob.getSensing().hasLineOfSight(entity);
@@ -107,7 +91,11 @@ public class StalkerEntity extends Monster {
 				double z = StalkerEntity.this.getZ();
 				Entity entity = StalkerEntity.this;
 				Level world = StalkerEntity.this.level();
-				return super.canUse() && StalkerDisplayCondition0Procedure.execute(entity);
+				return super.canUse() &&
+
+						StalkerDisplayCondition0Procedure.execute(entity)
+
+				;
 			}
 
 			@Override
@@ -117,7 +105,11 @@ public class StalkerEntity extends Monster {
 				double z = StalkerEntity.this.getZ();
 				Entity entity = StalkerEntity.this;
 				Level world = StalkerEntity.this.level();
-				return super.canContinueToUse() && StalkerDisplayCondition0Procedure.execute(entity);
+				return super.canContinueToUse() &&
+
+						StalkerDisplayCondition0Procedure.execute(entity)
+
+				;
 			}
 
 		});
@@ -126,6 +118,7 @@ public class StalkerEntity extends Monster {
 		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
 		this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, Player.class, false, false));
 		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, Villager.class, false, false));
+
 	}
 
 	@Override
@@ -174,18 +167,13 @@ public class StalkerEntity extends Monster {
 	@Override
 	public void tick() {
 		super.tick();
+
 		if (this.level().isClientSide()) {
 			this.animationState1.animateWhen(StalkerPlaybackConditionTransformedProcedure.execute(this), this.tickCount);
 			this.animationState2.animateWhen(StalkerPlaybackConditionTransformAnimationProcedure.execute(this), this.tickCount);
 			this.animationState4.animateWhen(StalkerPlaybackConditionImpaleStartPoseProcedure.execute(this), this.tickCount);
 			this.animationState5.animateWhen(StalkerPlaybackConditionImpaleSuccessProcedure.execute(this), this.tickCount);
 		}
-	}
-
-	@Override
-	public void baseTick() {
-		super.baseTick();
-		StalkerOnEntityTickUpdateProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	public static void init(RegisterSpawnPlacementsEvent event) {
@@ -198,7 +186,10 @@ public class StalkerEntity extends Monster {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 32);
+
 		builder = builder.add(Attributes.STEP_HEIGHT, 0.6);
+
 		return builder;
 	}
+
 }

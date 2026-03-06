@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jimsmineshaft:block/wood_pile"
+    },
+    "facing=east": {
+      "model": "jimsmineshaft:block/wood_pile",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jimsmineshaft:block/wood_pile",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jimsmineshaft:block/wood_pile",
+      "y": 270
+    }
+  }
+}

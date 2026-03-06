@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jimsmineshaft:block/rusted_iron_support"
+    },
+    "facing=east": {
+      "model": "jimsmineshaft:block/rusted_iron_support",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jimsmineshaft:block/rusted_iron_support",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jimsmineshaft:block/rusted_iron_support",
+      "y": 270
+    }
+  }
+}

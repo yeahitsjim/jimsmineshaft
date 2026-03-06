@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/wall_supported_wooden_shelf",
+  "textures": {
+    "all": "jimsmineshaft:block/rotten_planks_cleaner",
+    "particle": "jimsmineshaft:block/rotten_planks_cleaner",
+    "missing": "jimsmineshaft:block/rotten_planks_cleaner"
+  },
+  "render_type": "solid"
+}

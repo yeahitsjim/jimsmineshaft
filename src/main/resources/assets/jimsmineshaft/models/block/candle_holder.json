@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/candle_holder",
+  "textures": {
+    "all": "jimsmineshaft:block/candle_holder",
+    "particle": "jimsmineshaft:block/candle_holder",
+    "0": "jimsmineshaft:block/candle_holder"
+  },
+  "render_type": "solid"
+}
