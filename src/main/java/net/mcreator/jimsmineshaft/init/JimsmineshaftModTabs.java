@@ -67,7 +67,6 @@ public class JimsmineshaftModTabs {
 				tabData.accept(JimsmineshaftModBlocks.RAW_COPPER_25.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.RAW_COPPER_24.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.RAW_COPPER_23.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.RAW_COPPER_22.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.COPPER_SHARD.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.NEW_SUSPICIOUS_GRAVEL.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.RAW_COPPER_DRILLED_NORTH_DYNAMITE.get().asItem());
@@ -103,6 +102,21 @@ public class JimsmineshaftModTabs {
 				tabData.accept(JimsmineshaftModBlocks.STACKABLE_STEEL_SHELF.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.RUSTED_MINECART.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.STRIPPED_ROTTEN_SUPPORT_BEAM.get().asItem());
+				tabData.accept(JimsmineshaftModItems.CART_2_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModItems.CART_3_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModItems.CART_4_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModBlocks.CART_RAIL.get().asItem());
+				tabData.accept(JimsmineshaftModItems.ELEVATOR_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModItems.ELEVATOR_BOUNDING_BOX_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModBlocks.ELEVATOR_FRONT.get().asItem());
+				tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_1_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_2_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_3_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_4_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_5_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_6_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_7_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_8_SPAWN_EGG.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
@@ -120,6 +134,19 @@ public class JimsmineshaftModTabs {
 			tabData.accept(JimsmineshaftModItems.COPPER_DRILLED_EAST_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.COPPER_DRILLED_NORTH_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.HOLE_ENTITY_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.CART_2_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.CART_3_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.CART_4_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.ELEVATOR_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.ELEVATOR_BOUNDING_BOX_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_1_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_2_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_3_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_4_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_5_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_6_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_7_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_8_SPAWN_EGG.get());
 		}
 	}
 }

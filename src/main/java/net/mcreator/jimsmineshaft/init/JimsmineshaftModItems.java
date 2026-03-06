@@ -113,6 +113,21 @@ public class JimsmineshaftModItems {
 	public static final DeferredItem<Item> STACKABLE_STEEL_SHELF = block(JimsmineshaftModBlocks.STACKABLE_STEEL_SHELF);
 	public static final DeferredItem<Item> RUSTED_MINECART = block(JimsmineshaftModBlocks.RUSTED_MINECART);
 	public static final DeferredItem<Item> STRIPPED_ROTTEN_SUPPORT_BEAM = block(JimsmineshaftModBlocks.STRIPPED_ROTTEN_SUPPORT_BEAM);
+	public static final DeferredItem<Item> CART_2_SPAWN_EGG = register("cart_2_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.CART_2.get(), properties));
+	public static final DeferredItem<Item> CART_3_SPAWN_EGG = register("cart_3_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.CART_3.get(), properties));
+	public static final DeferredItem<Item> CART_4_SPAWN_EGG = register("cart_4_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.CART_4.get(), properties));
+	public static final DeferredItem<Item> CART_RAIL = block(JimsmineshaftModBlocks.CART_RAIL);
+	public static final DeferredItem<Item> ELEVATOR_SPAWN_EGG = register("elevator_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.ELEVATOR.get(), properties));
+	public static final DeferredItem<Item> ELEVATOR_BOUNDING_BOX_SPAWN_EGG = register("elevator_bounding_box_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.ELEVATOR_BOUNDING_BOX.get(), properties));
+	public static final DeferredItem<Item> ELEVATOR_FRONT = block(JimsmineshaftModBlocks.ELEVATOR_FRONT);
+	public static final DeferredItem<Item> ELEVATOR_SEAT_1_SPAWN_EGG = register("elevator_seat_1_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.ELEVATOR_SEAT_1.get(), properties));
+	public static final DeferredItem<Item> ELEVATOR_SEAT_2_SPAWN_EGG = register("elevator_seat_2_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.ELEVATOR_SEAT_2.get(), properties));
+	public static final DeferredItem<Item> ELEVATOR_SEAT_3_SPAWN_EGG = register("elevator_seat_3_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.ELEVATOR_SEAT_3.get(), properties));
+	public static final DeferredItem<Item> ELEVATOR_SEAT_4_SPAWN_EGG = register("elevator_seat_4_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.ELEVATOR_SEAT_4.get(), properties));
+	public static final DeferredItem<Item> ELEVATOR_SEAT_5_SPAWN_EGG = register("elevator_seat_5_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.ELEVATOR_SEAT_5.get(), properties));
+	public static final DeferredItem<Item> ELEVATOR_SEAT_6_SPAWN_EGG = register("elevator_seat_6_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.ELEVATOR_SEAT_6.get(), properties));
+	public static final DeferredItem<Item> ELEVATOR_SEAT_7_SPAWN_EGG = register("elevator_seat_7_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.ELEVATOR_SEAT_7.get(), properties));
+	public static final DeferredItem<Item> ELEVATOR_SEAT_8_SPAWN_EGG = register("elevator_seat_8_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.ELEVATOR_SEAT_8.get(), properties));
 
 	// Start of user code block custom items
 	// End of user code block custom items

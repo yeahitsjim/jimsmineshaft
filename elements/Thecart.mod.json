@@ -2,7 +2,7 @@
   "_fv": 79,
   "_type": "livingentity",
   "definition": {
-    "mobName": "TheCart",
+    "mobName": "The Cart",
     "mobLabel": "",
     "mobModelName": "ModeltheCart",
     "mobModelTexture": "texturecart1.png",
@@ -21,8 +21,137 @@
     "boundingBoxScale": {
       "fixedValue": 1.0
     },
-    "modelLayers": [],
-    "animations": [],
+    "modelLayers": [
+      {
+        "model": "ModelcartPhase2",
+        "texture": "texturecartrock2.png",
+        "disableHurtOverlay": false,
+        "glow": false,
+        "condition": {
+          "name": "ThecartDisplayCondition"
+        }
+      },
+      {
+        "model": "ModelcartPhase1",
+        "texture": "texturecartrock2.png",
+        "disableHurtOverlay": false,
+        "glow": false,
+        "condition": {
+          "name": "Thecart1DisplayCondition"
+        }
+      },
+      {
+        "model": "ModelcartPhase3",
+        "texture": "texturecartrock2.png",
+        "disableHurtOverlay": false,
+        "glow": false,
+        "condition": {
+          "name": "Thecart3DisplayCondition"
+        }
+      },
+      {
+        "model": "ModelcartPhase4",
+        "texture": "texturecartrock2.png",
+        "disableHurtOverlay": false,
+        "glow": false,
+        "condition": {
+          "name": "Thecart4DisplayCondition"
+        }
+      },
+      {
+        "model": "ModelcartPhase5",
+        "texture": "texturecartrock2.png",
+        "disableHurtOverlay": false,
+        "glow": false,
+        "condition": {
+          "name": "Thecart5DisplayCondition"
+        }
+      },
+      {
+        "model": "ModelcartPhase6",
+        "texture": "texturecartrock2.png",
+        "disableHurtOverlay": false,
+        "glow": false,
+        "condition": {
+          "name": "Thecart6DisplayCondition"
+        }
+      },
+      {
+        "model": "ModelcartPhase7",
+        "texture": "texturecartrock2.png",
+        "disableHurtOverlay": false,
+        "glow": false,
+        "condition": {
+          "name": "Thecart7DisplayCondition"
+        }
+      },
+      {
+        "model": "ModelcartPhase8",
+        "texture": "texturecartrock2.png",
+        "disableHurtOverlay": false,
+        "glow": false,
+        "condition": {
+          "name": "Thecart8DisplayCondition"
+        }
+      },
+      {
+        "model": "ModelcartPhase9",
+        "texture": "texturecartrock2.png",
+        "disableHurtOverlay": false,
+        "glow": false,
+        "condition": {
+          "name": "Thecart9DisplayCondition"
+        }
+      },
+      {
+        "model": "ModelcartPhase10",
+        "texture": "texturecartrock2.png",
+        "disableHurtOverlay": false,
+        "glow": false,
+        "condition": {
+          "name": "Thecart10DisplayCondition"
+        }
+      },
+      {
+        "model": "ModelcartPhase11",
+        "texture": "texturecartrock2.png",
+        "disableHurtOverlay": false,
+        "glow": false,
+        "condition": {
+          "name": "Thecart11DisplayCondition"
+        }
+      },
+      {
+        "model": "ModelcartPhase12",
+        "texture": "texturecartrock2.png",
+        "disableHurtOverlay": false,
+        "glow": false,
+        "condition": {
+          "name": "Thecart12DisplayCondition"
+        }
+      }
+    ],
+    "animations": [
+      {
+        "animation": {
+          "value": "CUSTOM:theCartAnimation.shake"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "ThecartPlaybackCondition"
+        },
+        "walking": false,
+        "amplitude": 1.0
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:Animationscartpushagain.move"
+        },
+        "speed": 1.0,
+        "walking": true,
+        "amplitude": 1.0
+      }
+    ],
     "modelWidth": 0.6,
     "modelHeight": 1.8,
     "modelShadowSize": 0.5,
@@ -75,7 +204,7 @@
     "armorBaseValue": 0.0,
     "trackingRange": 64,
     "followRange": 16,
-    "health": 10,
+    "health": 999,
     "xpAmount": 0,
     "waterMob": false,
     "breatheUnderwater": {
@@ -86,9 +215,9 @@
     },
     "flyingMob": false,
     "guiBoundTo": "CartGUI",
-    "inventorySize": 9,
+    "inventorySize": 114,
     "inventoryStackSize": 1,
-    "disableCollisions": false,
+    "disableCollisions": true,
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
@@ -118,12 +247,18 @@
       "value": ""
     },
     "stepSound": {
-      "value": ""
+      "value": "CUSTOM:cartstep1"
     },
     "raidCelebrationSound": {
       "value": ""
     },
     "entityDataEntries": [],
+    "whenMobIsHurt": {
+      "name": "ThecartEntityIsHurt"
+    },
+    "onMobTickUpdate": {
+      "name": "ThecartOnEntityTickUpdate"
+    },
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"></block></xml>",

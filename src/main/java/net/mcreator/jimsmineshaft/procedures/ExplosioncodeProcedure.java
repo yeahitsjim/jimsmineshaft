@@ -1,6 +1,7 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 
 public class ExplosioncodeProcedure {
 	public static void execute(LevelAccessor world, double passX, double passY, double passZ) {

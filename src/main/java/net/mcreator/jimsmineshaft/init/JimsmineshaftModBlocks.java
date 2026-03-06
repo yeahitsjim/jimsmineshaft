@@ -65,6 +65,7 @@ import net.mcreator.jimsmineshaft.block.IronSupportBlock;
 import net.mcreator.jimsmineshaft.block.IronSidingCornerBlock;
 import net.mcreator.jimsmineshaft.block.IronSidingBlock;
 import net.mcreator.jimsmineshaft.block.FencedCorruptedSupportBeamBlock;
+import net.mcreator.jimsmineshaft.block.ElevatorFrontBlock;
 import net.mcreator.jimsmineshaft.block.CorruptedSupportBeamBlock;
 import net.mcreator.jimsmineshaft.block.CorruptedSupportBarBlock;
 import net.mcreator.jimsmineshaft.block.CopperShardTripleBlock;
@@ -80,6 +81,7 @@ import net.mcreator.jimsmineshaft.block.CopperChunkTypeDBlock;
 import net.mcreator.jimsmineshaft.block.CopperChunkTypeCBlock;
 import net.mcreator.jimsmineshaft.block.CopperChunkTypeBBlock;
 import net.mcreator.jimsmineshaft.block.CopperChunkTypeABlock;
+import net.mcreator.jimsmineshaft.block.CartRailBlock;
 import net.mcreator.jimsmineshaft.block.CanaryCageBlock;
 import net.mcreator.jimsmineshaft.JimsmineshaftMod;
 
@@ -159,6 +161,8 @@ public class JimsmineshaftModBlocks {
 	public static final DeferredBlock<Block> STACKABLE_STEEL_SHELF = register("stackable_steel_shelf", StackableSteelShelfBlock::new);
 	public static final DeferredBlock<Block> RUSTED_MINECART = register("rusted_minecart", RustedMinecartBlock::new);
 	public static final DeferredBlock<Block> STRIPPED_ROTTEN_SUPPORT_BEAM = register("stripped_rotten_support_beam", StrippedRottenSupportBeamBlock::new);
+	public static final DeferredBlock<Block> CART_RAIL = register("cart_rail", CartRailBlock::new);
+	public static final DeferredBlock<Block> ELEVATOR_FRONT = register("elevator_front", ElevatorFrontBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

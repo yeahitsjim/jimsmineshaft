@@ -1,5 +1,14 @@
 package net.mcreator.jimsmineshaft.item;
 
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemUseAnimation;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
+
 public class StructureSpawnerItem extends Item {
 	public StructureSpawnerItem(Item.Properties properties) {
 		super(properties);

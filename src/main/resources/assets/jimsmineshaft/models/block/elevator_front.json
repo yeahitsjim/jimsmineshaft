@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/elevatorfront",
+  "textures": {
+    "all": "jimsmineshaft:block/blankltexture",
+    "particle": "jimsmineshaft:block/blankltexture",
+    "0": "jimsmineshaft:block/blankltexture"
+  },
+  "render_type": "translucent"
+}

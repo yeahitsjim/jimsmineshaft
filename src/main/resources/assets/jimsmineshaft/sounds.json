@@ -241,5 +241,50 @@
         "stream": false
       }
     ]
+  },
+  "cartstep1": {
+    "subtitle": "subtitles.cartstep1",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:cartstep1",
+        "stream": false
+      }
+    ]
+  },
+  "cartthud1": {
+    "subtitle": "subtitles.cartthud1",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:metalthud1",
+        "stream": false
+      }
+    ]
+  },
+  "cartthud2": {
+    "subtitle": "subtitles.cartthud2",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:metalthud2",
+        "stream": false
+      }
+    ]
+  },
+  "elevatoropen": {
+    "subtitle": "subtitles.elevatoropen",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevatoropen",
+        "stream": false
+      }
+    ]
+  },
+  "elevatorclose": {
+    "subtitle": "subtitles.elevatorclose",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevatorclose",
+        "stream": false
+      }
+    ]
   }
 }
