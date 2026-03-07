@@ -1,0 +1,8 @@
+{
+  "parent": "jimsmineshaft:custom/dynamitebox2",
+  "textures": {
+    "0": "jimsmineshaft:block/texturedynamitebox",
+    "missing": "jimsmineshaft:block/texturedynamitestick",
+    "particle": "jimsmineshaft:item/texturedynamitebox"
+  }
+}

@@ -23,6 +23,7 @@ import net.mcreator.jimsmineshaft.init.JimsmineshaftModTabs;
 import net.mcreator.jimsmineshaft.init.JimsmineshaftModSounds;
 import net.mcreator.jimsmineshaft.init.JimsmineshaftModParticleTypes;
 import net.mcreator.jimsmineshaft.init.JimsmineshaftModMobEffects;
+import net.mcreator.jimsmineshaft.init.JimsmineshaftModMenus;
 import net.mcreator.jimsmineshaft.init.JimsmineshaftModItems;
 import net.mcreator.jimsmineshaft.init.JimsmineshaftModEntities;
 import net.mcreator.jimsmineshaft.init.JimsmineshaftModBlocks;
@@ -54,7 +55,7 @@ public class JimsmineshaftMod {
 		JimsmineshaftModVariables.ATTACHMENT_TYPES.register(modEventBus);
 
 		JimsmineshaftModMobEffects.REGISTRY.register(modEventBus);
-
+		JimsmineshaftModMenus.REGISTRY.register(modEventBus);
 		JimsmineshaftModParticleTypes.REGISTRY.register(modEventBus);
 
 		// Start of user code block mod init

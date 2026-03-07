@@ -8,15 +8,6 @@
       }
     ]
   },
-  "batterycharge": {
-    "subtitle": "subtitles.batterycharge",
-    "sounds": [
-      {
-        "name": "jimsmineshaft:batteryzap",
-        "stream": false
-      }
-    ]
-  },
   "bigdoor": {
     "subtitle": "subtitles.bigdoor",
     "sounds": [
@@ -35,6 +26,15 @@
       }
     ]
   },
+  "batterycharge": {
+    "subtitle": "subtitles.batterycharge",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:batteryzap",
+        "stream": false
+      }
+    ]
+  },
   "batterylevelbeep": {
     "subtitle": "subtitles.batterylevelbeep",
     "sounds": [
@@ -49,6 +49,318 @@
     "sounds": [
       {
         "name": "jimsmineshaft:flashlighton",
+        "stream": false
+      }
+    ]
+  },
+  "pickupbit2": {
+    "subtitle": "subtitles.pickupbit2",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:pickup2",
+        "stream": false
+      }
+    ]
+  },
+  "pickupbit1": {
+    "subtitle": "subtitles.pickupbit1",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:pickup1",
+        "stream": false
+      }
+    ]
+  },
+  "pickupbit4": {
+    "subtitle": "subtitles.pickupbit4",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:pickup4",
+        "stream": false
+      }
+    ]
+  },
+  "pickupbit3": {
+    "subtitle": "subtitles.pickupbit3",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:pickup3",
+        "stream": false
+      }
+    ]
+  },
+  "stalker_growl_1": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:stalker_growl_1",
+        "stream": false
+      }
+    ]
+  },
+  "banging3": {
+    "subtitle": "subtitles.banging3",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:bang3",
+        "stream": false
+      }
+    ]
+  },
+  "banging2": {
+    "subtitle": "subtitles.banging2",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:bang2",
+        "stream": false
+      }
+    ]
+  },
+  "cartstep1": {
+    "subtitle": "subtitles.cartstep1",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:cartstep1",
+        "stream": false
+      }
+    ]
+  },
+  "banging5": {
+    "subtitle": "subtitles.banging5",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:bang5",
+        "stream": false
+      }
+    ]
+  },
+  "banging4": {
+    "subtitle": "subtitles.banging4",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:bang4",
+        "stream": false
+      }
+    ]
+  },
+  "pressuredrill2": {
+    "subtitle": "subtitles.pressuredrill2",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:pressuredrill2",
+        "stream": false
+      }
+    ]
+  },
+  "banging": {
+    "subtitle": "subtitles.banging",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:bang1",
+        "stream": false
+      }
+    ]
+  },
+  "rock3": {
+    "subtitle": "subtitles.rock3",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:rock3",
+        "stream": false
+      }
+    ]
+  },
+  "rock1": {
+    "subtitle": "subtitles.rock1",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:rock1",
+        "stream": false
+      }
+    ]
+  },
+  "rock2": {
+    "subtitle": "subtitles.rock2",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:rock2",
+        "stream": false
+      }
+    ]
+  },
+  "pressuredrillstereo": {
+    "subtitle": "subtitles.pressuredrillstereo",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:pressuredrillstereo2",
+        "stream": false
+      }
+    ]
+  },
+  "pressuredrilling": {
+    "subtitle": "subtitles.pressuredrilling",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:pressuredrill",
+        "stream": false
+      }
+    ]
+  },
+  "pickup15": {
+    "subtitle": "subtitles.pickup15",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:pickup15",
+        "stream": false
+      }
+    ]
+  },
+  "pickup11": {
+    "subtitle": "subtitles.pickup11",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:pickup11",
+        "stream": false
+      }
+    ]
+  },
+  "pickup12": {
+    "subtitle": "subtitles.pickup12",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:pickup12",
+        "stream": false
+      }
+    ]
+  },
+  "pickup13": {
+    "subtitle": "subtitles.pickup13",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:pickup13",
+        "stream": false
+      }
+    ]
+  },
+  "pickup14": {
+    "subtitle": "subtitles.pickup14",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:pickup14",
+        "stream": false
+      }
+    ]
+  },
+  "pickup10": {
+    "subtitle": "subtitles.pickup10",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:pickup10",
+        "stream": false
+      }
+    ]
+  },
+  "pressuredrillshortened": {
+    "subtitle": "subtitles.pressuredrillshortened",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:pressuredrillshortened",
+        "stream": false
+      }
+    ]
+  },
+  "elevatoropen": {
+    "subtitle": "subtitles.elevatoropen",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevatoropen",
+        "stream": false
+      }
+    ]
+  },
+  "pickup8": {
+    "subtitle": "subtitles.pickup8",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:pickup8",
+        "stream": false
+      }
+    ]
+  },
+  "pickup9": {
+    "subtitle": "subtitles.pickup9",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:pickup9",
+        "stream": false
+      }
+    ]
+  },
+  "pickup5": {
+    "subtitle": "subtitles.pickup5",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:pickup5",
+        "stream": false
+      }
+    ]
+  },
+  "stalker_impale": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:stalker_impale",
+        "stream": false
+      }
+    ]
+  },
+  "pickup6": {
+    "subtitle": "subtitles.pickup6",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:pickup6",
+        "stream": false
+      }
+    ]
+  },
+  "pickup7": {
+    "subtitle": "subtitles.pickup7",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:pickup7",
+        "stream": false
+      }
+    ]
+  },
+  "cartthud2": {
+    "subtitle": "subtitles.cartthud2",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:metalthud2",
+        "stream": false
+      }
+    ]
+  },
+  "elevatorclose": {
+    "subtitle": "subtitles.elevatorclose",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevatorclose",
+        "stream": false
+      }
+    ]
+  },
+  "cartthud1": {
+    "subtitle": "subtitles.cartthud1",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:metalthud1",
+        "stream": false
+      }
+    ]
+  },
+  "stalker.emerge": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:stalker_emerge",
         "stream": false
       }
     ]

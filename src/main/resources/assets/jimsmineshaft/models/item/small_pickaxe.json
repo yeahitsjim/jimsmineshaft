@@ -1,0 +1,7 @@
+{
+  "parent": "jimsmineshaft:custom/small_pickaxe",
+  "textures": {
+    "0": "jimsmineshaft:block/small_pickaxe",
+    "particle": "jimsmineshaft:item/small_pickaxe"
+  }
+}

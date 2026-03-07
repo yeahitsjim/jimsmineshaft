@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jimsmineshaft:block/pressure_drill_holdable"
+    },
+    "facing=east": {
+      "model": "jimsmineshaft:block/pressure_drill_holdable",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jimsmineshaft:block/pressure_drill_holdable",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jimsmineshaft:block/pressure_drill_holdable",
+      "y": 270
+    }
+  }
+}

@@ -71,6 +71,21 @@ public class JimsmineshaftModVariables {
 			PlayerVariables clone = new PlayerVariables();
 			clone.maxbattery = original.maxbattery;
 			clone.batterylife = original.batterylife;
+			clone.drillX = original.drillX;
+			clone.drillY = original.drillY;
+			clone.playerDrillMode = original.playerDrillMode;
+			clone.drillZ = original.drillZ;
+			clone.nearElevator = original.nearElevator;
+			clone.playerDrillMoveCloser = original.playerDrillMoveCloser;
+			clone.throwAwayVariable = original.throwAwayVariable;
+			clone.playerCantOpenDrill = original.playerCantOpenDrill;
+			clone.playerIsDrilling = original.playerIsDrilling;
+			clone.inElevator = original.inElevator;
+			clone.LookingInventoryValue = original.LookingInventoryValue;
+			clone.cartPushing = original.cartPushing;
+			clone.playerInvValue = original.playerInvValue;
+			clone.elevatorPlace = original.elevatorPlace;
+			clone.playerHoldingDrill = original.playerHoldingDrill;
 			if (!event.isWasDeath()) {
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
@@ -141,6 +156,12 @@ public class JimsmineshaftModVariables {
 		public String lastGeneratedStructure = "\"\"";
 		public double variantTokens = 0;
 		public double totalTokensRemaining = 0;
+		public String SBselectedShaft = "\"\"";
+		public double totalPlayers = 0;
+		public double SB_z = 0;
+		public double SB_x = 0;
+		public double SB_y = 0;
+		public boolean doBlockSpawning = false;
 
 		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			MapVariables data = new MapVariables();
@@ -156,6 +177,12 @@ public class JimsmineshaftModVariables {
 			lastGeneratedStructure = nbt.getString("lastGeneratedStructure");
 			variantTokens = nbt.getDouble("variantTokens");
 			totalTokensRemaining = nbt.getDouble("totalTokensRemaining");
+			SBselectedShaft = nbt.getString("SBselectedShaft");
+			totalPlayers = nbt.getDouble("totalPlayers");
+			SB_z = nbt.getDouble("SB_z");
+			SB_x = nbt.getDouble("SB_x");
+			SB_y = nbt.getDouble("SB_y");
+			doBlockSpawning = nbt.getBoolean("doBlockSpawning");
 		}
 
 		@Override
@@ -167,6 +194,12 @@ public class JimsmineshaftModVariables {
 			nbt.putString("lastGeneratedStructure", lastGeneratedStructure);
 			nbt.putDouble("variantTokens", variantTokens);
 			nbt.putDouble("totalTokensRemaining", totalTokensRemaining);
+			nbt.putString("SBselectedShaft", SBselectedShaft);
+			nbt.putDouble("totalPlayers", totalPlayers);
+			nbt.putDouble("SB_z", SB_z);
+			nbt.putDouble("SB_x", SB_x);
+			nbt.putDouble("SB_y", SB_y);
+			nbt.putBoolean("doBlockSpawning", doBlockSpawning);
 			return nbt;
 		}
 
@@ -230,12 +263,42 @@ public class JimsmineshaftModVariables {
 	public static class PlayerVariables implements INBTSerializable<CompoundTag> {
 		public double maxbattery = 100.0;
 		public double batterylife = 100.0;
+		public double drillX = 0;
+		public double drillY = 0;
+		public boolean playerDrillMode = false;
+		public double drillZ = 0;
+		public boolean nearElevator = false;
+		public boolean playerDrillMoveCloser = false;
+		public double throwAwayVariable = 0;
+		public boolean playerCantOpenDrill = false;
+		public boolean playerIsDrilling = false;
+		public boolean inElevator = false;
+		public double LookingInventoryValue = 0;
+		public boolean cartPushing = false;
+		public double playerInvValue = 0;
+		public double elevatorPlace = 0;
+		public boolean playerHoldingDrill = false;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putDouble("maxbattery", maxbattery);
 			nbt.putDouble("batterylife", batterylife);
+			nbt.putDouble("drillX", drillX);
+			nbt.putDouble("drillY", drillY);
+			nbt.putBoolean("playerDrillMode", playerDrillMode);
+			nbt.putDouble("drillZ", drillZ);
+			nbt.putBoolean("nearElevator", nearElevator);
+			nbt.putBoolean("playerDrillMoveCloser", playerDrillMoveCloser);
+			nbt.putDouble("throwAwayVariable", throwAwayVariable);
+			nbt.putBoolean("playerCantOpenDrill", playerCantOpenDrill);
+			nbt.putBoolean("playerIsDrilling", playerIsDrilling);
+			nbt.putBoolean("inElevator", inElevator);
+			nbt.putDouble("LookingInventoryValue", LookingInventoryValue);
+			nbt.putBoolean("cartPushing", cartPushing);
+			nbt.putDouble("playerInvValue", playerInvValue);
+			nbt.putDouble("elevatorPlace", elevatorPlace);
+			nbt.putBoolean("playerHoldingDrill", playerHoldingDrill);
 			return nbt;
 		}
 
@@ -243,6 +306,21 @@ public class JimsmineshaftModVariables {
 		public void deserializeNBT(HolderLookup.Provider lookupProvider, CompoundTag nbt) {
 			maxbattery = nbt.getDouble("maxbattery");
 			batterylife = nbt.getDouble("batterylife");
+			drillX = nbt.getDouble("drillX");
+			drillY = nbt.getDouble("drillY");
+			playerDrillMode = nbt.getBoolean("playerDrillMode");
+			drillZ = nbt.getDouble("drillZ");
+			nearElevator = nbt.getBoolean("nearElevator");
+			playerDrillMoveCloser = nbt.getBoolean("playerDrillMoveCloser");
+			throwAwayVariable = nbt.getDouble("throwAwayVariable");
+			playerCantOpenDrill = nbt.getBoolean("playerCantOpenDrill");
+			playerIsDrilling = nbt.getBoolean("playerIsDrilling");
+			inElevator = nbt.getBoolean("inElevator");
+			LookingInventoryValue = nbt.getDouble("LookingInventoryValue");
+			cartPushing = nbt.getBoolean("cartPushing");
+			playerInvValue = nbt.getDouble("playerInvValue");
+			elevatorPlace = nbt.getDouble("elevatorPlace");
+			playerHoldingDrill = nbt.getBoolean("playerHoldingDrill");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

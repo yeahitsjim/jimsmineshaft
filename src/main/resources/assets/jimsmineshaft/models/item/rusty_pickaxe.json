@@ -1,0 +1,7 @@
+{
+  "parent": "jimsmineshaft:custom/rusty_pickaxe",
+  "textures": {
+    "0": "jimsmineshaft:block/rusty_pickaxe",
+    "particle": "jimsmineshaft:item/rusty_pickaxe"
+  }
+}

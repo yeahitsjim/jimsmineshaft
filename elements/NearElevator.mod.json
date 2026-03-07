@@ -1,0 +1,38 @@
+{
+  "_fv": 79,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_right_click_in_elevator_to_join",
+          "text": {
+            "fixedValue": "RIGHT CLICK TO JOIN ELEVATOR"
+          },
+          "color": {
+            "value": -3355444,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 145,
+          "y": 182,
+          "locked": false
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "NearElevatorDisplayOverlayIngame"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

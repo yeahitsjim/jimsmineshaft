@@ -1,7 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 
 import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
@@ -64,15 +63,11 @@ public class GSMPpickCoords2Procedure {
 		if ((pc_wdpass).equals("south")) {
 			workingDirection = Direction.SOUTH;
 		}
-		if (!world.isClientSide() && world.getServer() != null)
-			world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("Working direction: " + workingDirection)), false);
-		if (!world.isClientSide() && world.getServer() != null)
-			world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("Current direction: " + pc_currentDirection)), false);
 		if ((localLastGeneratedStructure).equals("variantbbit1")) {
 			if (Direction.NORTH == workingDirection) {
 				if (Direction.NORTH == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
-					pc_filledSpaces.addProperty("z", (pc_currentx + 5));
+					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
 				}
 				if (Direction.WEST == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
@@ -102,7 +97,7 @@ public class GSMPpickCoords2Procedure {
 			if (Direction.SOUTH == workingDirection) {
 				if (Direction.SOUTH == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
-					pc_filledSpaces.addProperty("z", (pc_currentz + 12));
+					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
 				}
 				if (Direction.WEST == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
@@ -112,7 +107,7 @@ public class GSMPpickCoords2Procedure {
 					pc_filledSpaces.remove("z");
 					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
 					pc_filledSpaces.remove("x");
-					pc_filledSpaces.addProperty("x", (pc_currentz + 5));
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
 				}
 			}
 			if (Direction.EAST == workingDirection) {
@@ -128,7 +123,7 @@ public class GSMPpickCoords2Procedure {
 				}
 				if (Direction.NORTH == pc_currentDirection) {
 					pc_filledSpaces.remove("x");
-					pc_filledSpaces.addProperty("x", (pc_currentz + 1));
+					pc_filledSpaces.addProperty("x", (pc_currentx + 1));
 				}
 			}
 		}
@@ -136,7 +131,7 @@ public class GSMPpickCoords2Procedure {
 			if (Direction.NORTH == workingDirection) {
 				if (Direction.NORTH == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
-					pc_filledSpaces.addProperty("z", (pc_currentx + 5));
+					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
 				}
 				if (Direction.WEST == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
@@ -166,7 +161,7 @@ public class GSMPpickCoords2Procedure {
 			if (Direction.SOUTH == workingDirection) {
 				if (Direction.SOUTH == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
-					pc_filledSpaces.addProperty("z", (pc_currentz + 12));
+					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
 				}
 				if (Direction.WEST == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
@@ -176,7 +171,7 @@ public class GSMPpickCoords2Procedure {
 					pc_filledSpaces.remove("z");
 					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
 					pc_filledSpaces.remove("x");
-					pc_filledSpaces.addProperty("x", (pc_currentz + 5));
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
 				}
 			}
 			if (Direction.EAST == workingDirection) {
@@ -192,7 +187,7 @@ public class GSMPpickCoords2Procedure {
 				}
 				if (Direction.NORTH == pc_currentDirection) {
 					pc_filledSpaces.remove("x");
-					pc_filledSpaces.addProperty("x", (pc_currentz + 1));
+					pc_filledSpaces.addProperty("x", (pc_currentx + 1));
 				}
 			}
 		}
@@ -200,7 +195,7 @@ public class GSMPpickCoords2Procedure {
 			if (Direction.NORTH == workingDirection) {
 				if (Direction.NORTH == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
-					pc_filledSpaces.addProperty("z", (pc_currentx + 5));
+					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
 				}
 				if (Direction.WEST == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
@@ -230,7 +225,7 @@ public class GSMPpickCoords2Procedure {
 			if (Direction.SOUTH == workingDirection) {
 				if (Direction.SOUTH == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
-					pc_filledSpaces.addProperty("z", (pc_currentz + 12));
+					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
 				}
 				if (Direction.WEST == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
@@ -240,7 +235,7 @@ public class GSMPpickCoords2Procedure {
 					pc_filledSpaces.remove("z");
 					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
 					pc_filledSpaces.remove("x");
-					pc_filledSpaces.addProperty("x", (pc_currentz + 5));
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
 				}
 			}
 			if (Direction.EAST == workingDirection) {
@@ -264,7 +259,7 @@ public class GSMPpickCoords2Procedure {
 			if (Direction.NORTH == workingDirection) {
 				if (Direction.NORTH == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
-					pc_filledSpaces.addProperty("z", (pc_currentx + 5));
+					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
 				}
 				if (Direction.WEST == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
@@ -294,7 +289,7 @@ public class GSMPpickCoords2Procedure {
 			if (Direction.SOUTH == workingDirection) {
 				if (Direction.SOUTH == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
-					pc_filledSpaces.addProperty("z", (pc_currentz + 12));
+					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
 				}
 				if (Direction.WEST == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
@@ -304,7 +299,7 @@ public class GSMPpickCoords2Procedure {
 					pc_filledSpaces.remove("z");
 					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
 					pc_filledSpaces.remove("x");
-					pc_filledSpaces.addProperty("x", (pc_currentz + 5));
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
 				}
 			}
 			if (Direction.EAST == workingDirection) {
@@ -328,7 +323,7 @@ public class GSMPpickCoords2Procedure {
 			if (Direction.NORTH == workingDirection) {
 				if (Direction.NORTH == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
-					pc_filledSpaces.addProperty("z", (pc_currentx + 5));
+					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
 				}
 				if (Direction.WEST == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
@@ -358,7 +353,7 @@ public class GSMPpickCoords2Procedure {
 			if (Direction.SOUTH == workingDirection) {
 				if (Direction.SOUTH == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
-					pc_filledSpaces.addProperty("z", (pc_currentz + 12));
+					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
 				}
 				if (Direction.WEST == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
@@ -368,7 +363,7 @@ public class GSMPpickCoords2Procedure {
 					pc_filledSpaces.remove("z");
 					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
 					pc_filledSpaces.remove("x");
-					pc_filledSpaces.addProperty("x", (pc_currentz + 5));
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
 				}
 			}
 			if (Direction.EAST == workingDirection) {
@@ -392,7 +387,7 @@ public class GSMPpickCoords2Procedure {
 			if (Direction.NORTH == workingDirection) {
 				if (Direction.NORTH == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
-					pc_filledSpaces.addProperty("z", (pc_currentx + 5));
+					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
 				}
 				if (Direction.WEST == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
@@ -422,7 +417,7 @@ public class GSMPpickCoords2Procedure {
 			if (Direction.SOUTH == workingDirection) {
 				if (Direction.SOUTH == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
-					pc_filledSpaces.addProperty("z", (pc_currentz + 12));
+					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
 				}
 				if (Direction.WEST == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
@@ -456,7 +451,7 @@ public class GSMPpickCoords2Procedure {
 			if (Direction.NORTH == workingDirection) {
 				if (Direction.NORTH == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
-					pc_filledSpaces.addProperty("z", (pc_currentx + 5));
+					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
 				}
 				if (Direction.WEST == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
@@ -486,7 +481,7 @@ public class GSMPpickCoords2Procedure {
 			if (Direction.SOUTH == workingDirection) {
 				if (Direction.SOUTH == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
-					pc_filledSpaces.addProperty("z", (pc_currentz + 12));
+					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
 				}
 				if (Direction.WEST == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
@@ -496,7 +491,7 @@ public class GSMPpickCoords2Procedure {
 					pc_filledSpaces.remove("z");
 					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
 					pc_filledSpaces.remove("x");
-					pc_filledSpaces.addProperty("x", (pc_currentz + 5));
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
 				}
 			}
 			if (Direction.EAST == workingDirection) {
@@ -520,7 +515,7 @@ public class GSMPpickCoords2Procedure {
 			if (Direction.NORTH == workingDirection) {
 				if (Direction.NORTH == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
-					pc_filledSpaces.addProperty("z", (pc_currentx + 5));
+					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
 				}
 				if (Direction.WEST == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
@@ -550,7 +545,7 @@ public class GSMPpickCoords2Procedure {
 			if (Direction.SOUTH == workingDirection) {
 				if (Direction.SOUTH == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
-					pc_filledSpaces.addProperty("z", (pc_currentz + 12));
+					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
 				}
 				if (Direction.WEST == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
@@ -560,7 +555,7 @@ public class GSMPpickCoords2Procedure {
 					pc_filledSpaces.remove("z");
 					pc_filledSpaces.addProperty("z", (pc_currentz + 5));
 					pc_filledSpaces.remove("x");
-					pc_filledSpaces.addProperty("x", (pc_currentz + 5));
+					pc_filledSpaces.addProperty("x", (pc_currentx + 5));
 				}
 			}
 			if (Direction.EAST == workingDirection) {
@@ -618,7 +613,7 @@ public class GSMPpickCoords2Procedure {
 			if (Direction.NORTH == workingDirection) {
 				if (Direction.NORTH == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
-					pc_filledSpaces.addProperty("z", (pc_currentx + 12));
+					pc_filledSpaces.addProperty("z", (pc_currentz + 12));
 				}
 				if (Direction.WEST == pc_currentDirection) {
 					pc_filledSpaces.remove("z");
@@ -658,7 +653,7 @@ public class GSMPpickCoords2Procedure {
 					pc_filledSpaces.remove("z");
 					pc_filledSpaces.addProperty("z", (pc_currentz + 12));
 					pc_filledSpaces.remove("x");
-					pc_filledSpaces.addProperty("x", (pc_currentz + 12));
+					pc_filledSpaces.addProperty("x", (pc_currentx + 12));
 				}
 			}
 			if (Direction.EAST == workingDirection) {

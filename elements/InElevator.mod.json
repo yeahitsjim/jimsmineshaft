@@ -1,0 +1,38 @@
+{
+  "_fv": 79,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_press_p_to_start_elevator",
+          "text": {
+            "fixedValue": "PRESS P TO START ELEVATOR"
+          },
+          "color": {
+            "value": -26368,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 149,
+          "y": 180,
+          "locked": false
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "InElevatorDisplayOverlayIngame"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

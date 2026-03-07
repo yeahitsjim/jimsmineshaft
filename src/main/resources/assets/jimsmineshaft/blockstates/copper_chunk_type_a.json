@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jimsmineshaft:block/copper_chunk_type_a"
+    },
+    "facing=east": {
+      "model": "jimsmineshaft:block/copper_chunk_type_a",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jimsmineshaft:block/copper_chunk_type_a",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jimsmineshaft:block/copper_chunk_type_a",
+      "y": 270
+    }
+  }
+}

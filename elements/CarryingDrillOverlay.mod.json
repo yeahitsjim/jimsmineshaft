@@ -1,0 +1,38 @@
+{
+  "_fv": 79,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_press_p_to_place_drill",
+          "text": {
+            "fixedValue": "Press P to place drill"
+          },
+          "color": {
+            "value": -3355444,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 159,
+          "y": 141,
+          "locked": false
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "CarryingDrillOverlayDisplayOverlayIngame"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

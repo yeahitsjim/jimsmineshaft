@@ -80,7 +80,13 @@
         "subtract": false
       }
     ],
-    "customProperties": [],
+    "customProperties": [
+      {
+        "name": "CUSTOM:placed",
+        "type": "logic",
+        "value": true
+      }
+    ],
     "name": "Wooden Support Corner Type B",
     "specialInformation": {
       "fixedValue": []
@@ -160,7 +166,7 @@
     "vibrationSensitivityRadius": {
       "fixedValue": 7.0
     },
-    "hasInventory": false,
+    "hasInventory": true,
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 99,
@@ -176,6 +182,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "NewStoneBlockAdded"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [],
