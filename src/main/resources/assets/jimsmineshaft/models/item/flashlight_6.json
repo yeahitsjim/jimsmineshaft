@@ -1,0 +1,7 @@
+{
+  "parent": "jimsmineshaft:custom/flashlight",
+  "textures": {
+    "0": "jimsmineshaft:block/flashlighton10on",
+    "particle": "minecraft:item/blaze_rod"
+  }
+}

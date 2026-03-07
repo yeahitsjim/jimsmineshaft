@@ -1,0 +1,88 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"parent": "battery",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "battery",
+		"particle": "battery"
+	},
+	"elements": [
+		{
+			"from": [6, 2, -1.5],
+			"to": [10, 6, 2.5],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 4, 4.5]},
+			"faces": {
+				"north": {"uv": [12, 0, 14, 2], "texture": "#0"},
+				"east": {"uv": [12, 2, 14, 4], "texture": "#0"},
+				"south": {"uv": [4, 12, 6, 14], "texture": "#0"},
+				"west": {"uv": [12, 4, 14, 6], "texture": "#0"},
+				"up": {"uv": [8, 14, 6, 12], "texture": "#0"},
+				"down": {"uv": [14, 6, 12, 8], "texture": "#0"}
+			}
+		},
+		{
+			"from": [4, 0, 0.5],
+			"to": [12, 8, 16.5],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 4, 4.5]},
+			"faces": {
+				"north": {"uv": [4, 8, 8, 12], "texture": "#0"},
+				"east": {"uv": [0, 8, 4, 16], "rotation": 270, "texture": "#0"},
+				"south": {"uv": [8, 8, 12, 12], "texture": "#0"},
+				"west": {"uv": [0, 8, 4, 16], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [4, 16, 0, 8], "texture": "#0"},
+				"down": {"uv": [4, 8, 0, 16], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [95.75, 0, 0],
+			"translation": [0, 0.75, 1.5],
+			"scale": [0.1, 0.1, 0.1]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [95.75, 0, 0],
+			"translation": [0, 0.75, 1.5],
+			"scale": [0.1, 0.1, 0.1]
+		},
+		"firstperson_righthand": {
+			"rotation": [95.75, 0, 0],
+			"translation": [-2, 2.5, 1.5],
+			"scale": [0.1, 0.1, 0.10586]
+		},
+		"firstperson_lefthand": {
+			"rotation": [95.75, 0, 0],
+			"translation": [-2, 2.5, 1.5],
+			"scale": [0.1, 0.1, 0.10586]
+		},
+		"ground": {
+			"rotation": [95.75, 0, 0],
+			"translation": [0, 0.75, 1.5],
+			"scale": [0.1, 0.1, 0.1]
+		},
+		"gui": {
+			"rotation": [66.25, -46.98, 6.23],
+			"translation": [0, 0.75, 1.5],
+			"scale": [0.73867, 0.725, 0.72891]
+		},
+		"fixed": {
+			"rotation": [95.75, 0, 0],
+			"translation": [0, 0.75, 1.5],
+			"scale": [0.1, 0.1, 0.1]
+		},
+		"on_shelf": {
+			"rotation": [95.75, 0, 0],
+			"translation": [0, 0.75, 1.5],
+			"scale": [0.1, 0.1, 0.1]
+		}
+	},
+	"groups": [
+		{
+			"name": "group",
+			"origin": [6.5, 0.5, 7.5],
+			"color": 0,
+			"children": [0, 1]
+		}
+	]
+}

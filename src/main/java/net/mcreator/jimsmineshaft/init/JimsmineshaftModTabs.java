@@ -62,6 +62,8 @@ public class JimsmineshaftModTabs {
 				tabData.accept(JimsmineshaftModBlocks.CANTEEN.get().asItem());
 				tabData.accept(JimsmineshaftModItems.FIRE_AXE.get());
 				tabData.accept(JimsmineshaftModItems.OLD_KNIFE.get());
+				tabData.accept(JimsmineshaftModItems.FLASHLIGHT.get());
+				tabData.accept(JimsmineshaftModItems.BATTERY.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
@@ -72,6 +74,18 @@ public class JimsmineshaftModTabs {
 			}
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(JimsmineshaftModItems.JIMSMINEDIMENSION.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+			tabData.accept(JimsmineshaftModItems.BIG_IRON_GATE_FRAME_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.BIG_IRON_GATE_RIGHT_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.BIG_IRON_GATE_LEFT_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.BIG_GATE_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.LEFTGATE_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.RIGHTGATE_SPAWN_EGG.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+			tabData.accept(JimsmineshaftModItems.MINING_GOON_SET_HELMET.get());
+			tabData.accept(JimsmineshaftModItems.MINING_GOON_SET_CHESTPLATE.get());
+			tabData.accept(JimsmineshaftModItems.MINING_GOON_SET_LEGGINGS.get());
+			tabData.accept(JimsmineshaftModItems.MINING_GOON_SET_BOOTS.get());
 		}
 	}
 }

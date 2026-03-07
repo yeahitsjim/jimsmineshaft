@@ -6,17 +6,27 @@ package net.mcreator.jimsmineshaft.init;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.client.event.RegisterRangeSelectItemModelPropertyEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.jimsmineshaft.item.WoeMineshaftBeUponTheItem;
 import net.mcreator.jimsmineshaft.item.WoeMineshaftBeUponThe2Item;
 import net.mcreator.jimsmineshaft.item.TestSyncTheSecondItem;
 import net.mcreator.jimsmineshaft.item.OldKnifeItem;
+import net.mcreator.jimsmineshaft.item.MiningGoonSetItem;
 import net.mcreator.jimsmineshaft.item.JimsminedimensionItem;
+import net.mcreator.jimsmineshaft.item.FlashlightItem;
 import net.mcreator.jimsmineshaft.item.FireAxeItem;
+import net.mcreator.jimsmineshaft.item.BatteryItem;
 import net.mcreator.jimsmineshaft.JimsmineshaftMod;
 
 import java.util.function.Function;
@@ -67,6 +77,20 @@ public class JimsmineshaftModItems {
 	public static final DeferredItem<Item> CANTEEN = block(JimsmineshaftModBlocks.CANTEEN);
 	public static final DeferredItem<Item> FIRE_AXE = register("fire_axe", FireAxeItem::new);
 	public static final DeferredItem<Item> OLD_KNIFE = register("old_knife", OldKnifeItem::new);
+	public static final DeferredItem<Item> FLASHLIGHT = register("flashlight", FlashlightItem::new);
+	public static final DeferredItem<Item> FLASHLIGHTENTITY_SPAWN_EGG = register("flashlightentity_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.FLASHLIGHTENTITY.get(), properties));
+	public static final DeferredItem<Item> LIGHTBLOCK = block(JimsmineshaftModBlocks.LIGHTBLOCK);
+	public static final DeferredItem<Item> BATTERY = register("battery", BatteryItem::new);
+	public static final DeferredItem<Item> BIG_IRON_GATE_FRAME_SPAWN_EGG = register("big_iron_gate_frame_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.BIG_IRON_GATE_FRAME.get(), properties));
+	public static final DeferredItem<Item> BIG_IRON_GATE_RIGHT_SPAWN_EGG = register("big_iron_gate_right_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.BIG_IRON_GATE_RIGHT.get(), properties));
+	public static final DeferredItem<Item> BIG_IRON_GATE_LEFT_SPAWN_EGG = register("big_iron_gate_left_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.BIG_IRON_GATE_LEFT.get(), properties));
+	public static final DeferredItem<Item> BIG_GATE_SPAWN_EGG = register("big_gate_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.BIG_GATE.get(), properties));
+	public static final DeferredItem<Item> LEFTGATE_SPAWN_EGG = register("leftgate_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.LEFTGATE.get(), properties));
+	public static final DeferredItem<Item> RIGHTGATE_SPAWN_EGG = register("rightgate_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.RIGHTGATE.get(), properties));
+	public static final DeferredItem<Item> MINING_GOON_SET_HELMET = register("mining_goon_set_helmet", MiningGoonSetItem.Helmet::new);
+	public static final DeferredItem<Item> MINING_GOON_SET_CHESTPLATE = register("mining_goon_set_chestplate", MiningGoonSetItem.Chestplate::new);
+	public static final DeferredItem<Item> MINING_GOON_SET_LEGGINGS = register("mining_goon_set_leggings", MiningGoonSetItem.Leggings::new);
+	public static final DeferredItem<Item> MINING_GOON_SET_BOOTS = register("mining_goon_set_boots", MiningGoonSetItem.Boots::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
@@ -80,5 +104,14 @@ public class JimsmineshaftModItems {
 
 	private static DeferredItem<Item> block(DeferredHolder<Block, Block> block, Item.Properties properties) {
 		return REGISTRY.registerItem(block.getId().getPath(), prop -> new BlockItem(block.get(), prop), properties);
+	}
+
+	@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+	public static class ItemsClientSideHandler {
+		@SubscribeEvent
+		@OnlyIn(Dist.CLIENT)
+		public static void registerItemModelProperties(RegisterRangeSelectItemModelPropertyEvent event) {
+			event.register(ResourceLocation.parse("jimsmineshaft:flashlight/flashlightonfull"), FlashlightItem.FlashlightonfullProperty.MAP_CODEC);
+		}
 	}
 }

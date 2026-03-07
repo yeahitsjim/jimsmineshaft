@@ -38,6 +38,7 @@ import net.mcreator.jimsmineshaft.block.RottenPlankSlabBlock;
 import net.mcreator.jimsmineshaft.block.RottenCabinetBlock;
 import net.mcreator.jimsmineshaft.block.OldCabinetBlock;
 import net.mcreator.jimsmineshaft.block.LongWoodenShelfBlock;
+import net.mcreator.jimsmineshaft.block.LightblockBlock;
 import net.mcreator.jimsmineshaft.block.JimsminedimensionPortalBlock;
 import net.mcreator.jimsmineshaft.block.IronSupportBlock;
 import net.mcreator.jimsmineshaft.block.IronSidingCornerBlock;
@@ -93,6 +94,7 @@ public class JimsmineshaftModBlocks {
 	public static final DeferredBlock<Block> CANARY_CAGE = register("canary_cage", CanaryCageBlock::new);
 	public static final DeferredBlock<Block> CANDLE_HOLDER = register("candle_holder", CandleHolderBlock::new);
 	public static final DeferredBlock<Block> CANTEEN = register("canteen", CanteenBlock::new);
+	public static final DeferredBlock<Block> LIGHTBLOCK = register("lightblock", LightblockBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

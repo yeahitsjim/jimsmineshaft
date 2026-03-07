@@ -1,0 +1,56 @@
+{
+  "buttonclick": {
+    "subtitle": "subtitles.buttonclick",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:buttonclick",
+        "stream": false
+      }
+    ]
+  },
+  "batterycharge": {
+    "subtitle": "subtitles.batterycharge",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:batteryzap",
+        "stream": false
+      }
+    ]
+  },
+  "bigdoor": {
+    "subtitle": "subtitles.bigdoor",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:3x3door",
+        "stream": false
+      }
+    ]
+  },
+  "thud": {
+    "subtitle": "subtitles.thud",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:thud",
+        "stream": false
+      }
+    ]
+  },
+  "batterylevelbeep": {
+    "subtitle": "subtitles.batterylevelbeep",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:batterylevelbeep",
+        "stream": false
+      }
+    ]
+  },
+  "lighton": {
+    "subtitle": "subtitles.lighton",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:flashlighton",
+        "stream": false
+      }
+    ]
+  }
+}

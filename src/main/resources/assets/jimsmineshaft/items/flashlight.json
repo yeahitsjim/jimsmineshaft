@@ -1,0 +1,137 @@
+{
+  "model": {
+    "type": "jimsmineshaft:legacy_overrides",
+    "overrides": [
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "jimsmineshaft:flashlight/flashlightonfull"
+            },
+            "value": 0
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "jimsmineshaft:item/flashlight_0"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "jimsmineshaft:flashlight/flashlightonfull"
+            },
+            "value": 1
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "jimsmineshaft:item/flashlight_1"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "jimsmineshaft:flashlight/flashlightonfull"
+            },
+            "value": 2
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "jimsmineshaft:item/flashlight_2"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "jimsmineshaft:flashlight/flashlightonfull"
+            },
+            "value": 3
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "jimsmineshaft:item/flashlight_3"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "jimsmineshaft:flashlight/flashlightonfull"
+            },
+            "value": 4
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "jimsmineshaft:item/flashlight_4"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "jimsmineshaft:flashlight/flashlightonfull"
+            },
+            "value": 5
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "jimsmineshaft:item/flashlight_5"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "jimsmineshaft:flashlight/flashlightonfull"
+            },
+            "value": 6
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "jimsmineshaft:item/flashlight_6"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "jimsmineshaft:flashlight/flashlightonfull"
+            },
+            "value": 7
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "jimsmineshaft:item/flashlight_7"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "jimsmineshaft:flashlight/flashlightonfull"
+            },
+            "value": 8
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "jimsmineshaft:item/flashlight_8"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "jimsmineshaft:item/flashlight"
+    }
+  }
+}
