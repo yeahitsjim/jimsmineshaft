@@ -1,0 +1,16 @@
+package net.mcreator.jimsmineshaft.procedures;
+
+import net.neoforged.bus.api.Event;
+
+public class CopperShardOnTickUpdateProcedure {
+	public static void execute(LevelAccessor world, double x, double y, double z) {
+		if (JimsmineshaftModBlocks.COPPER_SHARD.get() == (world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock()) {
+			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x, y - 1, z), JimsmineshaftModItems.DELETED_MOD_ELEMENT.get().defaultBlockState(), 3);
+		}
+		if (JimsmineshaftModItems.DELETED_MOD_ELEMENT.get() == (world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock()) {
+			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x, y - 1, z), JimsmineshaftModBlocks.COPPER_SHARD_TRIPLE.get().defaultBlockState(), 3);
+		}
+	}
+}

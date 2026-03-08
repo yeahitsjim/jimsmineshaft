@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/copperchunkb",
+  "textures": {
+    "all": "jimsmineshaft:block/texturecopperchunkb",
+    "particle": "jimsmineshaft:block/texturecopperchunkb",
+    "0": "jimsmineshaft:block/texturecopperchunkb"
+  },
+  "render_type": "solid"
+}

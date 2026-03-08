@@ -1,37 +1,15 @@
 package net.mcreator.jimsmineshaft.block;
 
-import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraft.world.phys.shapes.Shapes;
-import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.level.material.Fluids;
-import net.minecraft.world.level.material.FluidState;
-import net.minecraft.world.level.block.state.properties.EnumProperty;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.SimpleWaterloggedBlock;
-import net.minecraft.world.level.block.Rotation;
-import net.minecraft.world.level.block.Mirror;
-import net.minecraft.world.level.block.HorizontalDirectionalBlock;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.ScheduledTickAccess;
-import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.util.RandomSource;
-import net.minecraft.core.Direction;
-import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
-public class WoodenSupportFullTypeCBlock extends Block implements SimpleWaterloggedBlock {
+public class WoodenSupportFullTypeCBlock extends Block implements SimpleWaterloggedBlock, EntityBlock {
 	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
+	public static final BooleanProperty PLACED = BooleanProperty.create("placed");
 
 	public WoodenSupportFullTypeCBlock(BlockBehaviour.Properties properties) {
 		super(properties.sound(SoundType.WOOD).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(PLACED, true).setValue(WATERLOGGED, false));
 	}
 
 	@Override
@@ -62,13 +40,13 @@ public class WoodenSupportFullTypeCBlock extends Block implements SimpleWaterlog
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		super.createBlockStateDefinition(builder);
-		builder.add(FACING, WATERLOGGED);
+		builder.add(FACING, PLACED, WATERLOGGED);
 	}
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
 		boolean flag = context.getLevel().getFluidState(context.getClickedPos()).getType() == Fluids.WATER;
-		return super.getStateForPlacement(context).setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(WATERLOGGED, flag);
+		return super.getStateForPlacement(context).setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(PLACED, true).setValue(WATERLOGGED, flag);
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {
@@ -90,5 +68,55 @@ public class WoodenSupportFullTypeCBlock extends Block implements SimpleWaterlog
 			scheduledTickAccess.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
 		}
 		return super.updateShape(state, world, scheduledTickAccess, currentPos, facing, facingPos, facingState, random);
+	}
+
+	@Override
+	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+		super.onPlace(blockstate, world, pos, oldState, moving);
+		NewStoneBlockAddedProcedure.execute();
+	}
+
+	@Override
+	public MenuProvider getMenuProvider(BlockState state, Level worldIn, BlockPos pos) {
+		BlockEntity tileEntity = worldIn.getBlockEntity(pos);
+		return tileEntity instanceof MenuProvider menuProvider ? menuProvider : null;
+	}
+
+	@Override
+	public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
+		return new WoodenSupportFullTypeCBlockEntity(pos, state);
+	}
+
+	@Override
+	public boolean triggerEvent(BlockState state, Level world, BlockPos pos, int eventID, int eventParam) {
+		super.triggerEvent(state, world, pos, eventID, eventParam);
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		return blockEntity != null && blockEntity.triggerEvent(eventID, eventParam);
+	}
+
+	@Override
+	public void onRemove(BlockState state, Level world, BlockPos pos, BlockState newState, boolean isMoving) {
+		if (state.getBlock() != newState.getBlock()) {
+			BlockEntity blockEntity = world.getBlockEntity(pos);
+			if (blockEntity instanceof WoodenSupportFullTypeCBlockEntity be) {
+				Containers.dropContents(world, pos, be);
+				world.updateNeighbourForOutputSignal(pos, this);
+			}
+			super.onRemove(state, world, pos, newState, isMoving);
+		}
+	}
+
+	@Override
+	public boolean hasAnalogOutputSignal(BlockState state) {
+		return true;
+	}
+
+	@Override
+	public int getAnalogOutputSignal(BlockState blockState, Level world, BlockPos pos) {
+		BlockEntity tileentity = world.getBlockEntity(pos);
+		if (tileentity instanceof WoodenSupportFullTypeCBlockEntity be)
+			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);
+		else
+			return 0;
 	}
 }

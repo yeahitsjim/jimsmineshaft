@@ -21,10 +21,13 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
 import net.mcreator.jimsmineshaft.init.JimsmineshaftModTabs;
 import net.mcreator.jimsmineshaft.init.JimsmineshaftModSounds;
+import net.mcreator.jimsmineshaft.init.JimsmineshaftModParticleTypes;
 import net.mcreator.jimsmineshaft.init.JimsmineshaftModMobEffects;
+import net.mcreator.jimsmineshaft.init.JimsmineshaftModMenus;
 import net.mcreator.jimsmineshaft.init.JimsmineshaftModItems;
 import net.mcreator.jimsmineshaft.init.JimsmineshaftModEntities;
 import net.mcreator.jimsmineshaft.init.JimsmineshaftModBlocks;
+import net.mcreator.jimsmineshaft.init.JimsmineshaftModBlockEntities;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
@@ -45,13 +48,15 @@ public class JimsmineshaftMod {
 		modEventBus.addListener(this::registerNetworking);
 		JimsmineshaftModSounds.REGISTRY.register(modEventBus);
 		JimsmineshaftModBlocks.REGISTRY.register(modEventBus);
-
+		JimsmineshaftModBlockEntities.REGISTRY.register(modEventBus);
 		JimsmineshaftModItems.REGISTRY.register(modEventBus);
 		JimsmineshaftModEntities.REGISTRY.register(modEventBus);
 		JimsmineshaftModTabs.REGISTRY.register(modEventBus);
 		JimsmineshaftModVariables.ATTACHMENT_TYPES.register(modEventBus);
 
 		JimsmineshaftModMobEffects.REGISTRY.register(modEventBus);
+		JimsmineshaftModMenus.REGISTRY.register(modEventBus);
+		JimsmineshaftModParticleTypes.REGISTRY.register(modEventBus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

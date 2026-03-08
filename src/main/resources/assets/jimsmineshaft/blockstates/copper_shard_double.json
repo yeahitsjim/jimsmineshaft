@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jimsmineshaft:block/copper_shard_double"
+    },
+    "facing=east": {
+      "model": "jimsmineshaft:block/copper_shard_double",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jimsmineshaft:block/copper_shard_double",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jimsmineshaft:block/copper_shard_double",
+      "y": 270
+    }
+  }
+}

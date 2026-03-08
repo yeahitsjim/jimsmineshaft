@@ -1,0 +1,7 @@
+{
+  "parent": "jimsmineshaft:custom/detonatorblockpushed",
+  "textures": {
+    "1": "jimsmineshaft:block/texturedetonatorwitharmsdone",
+    "particle": "jimsmineshaft:item/texturedetonatorwitharmsdone"
+  }
+}

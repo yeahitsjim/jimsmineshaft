@@ -1,6 +1,20 @@
 {
   "replace": false,
   "values": [
-    "jimsmineshaft:iron_siding"
+    "jimsmineshaft:raw_copper_22",
+    "jimsmineshaft:raw_copper_23",
+    "jimsmineshaft:raw_copper_drilled_north",
+    "jimsmineshaft:raw_copper_24",
+    "jimsmineshaft:raw_copper_25",
+    "jimsmineshaft:raw_copper_26",
+    "jimsmineshaft:raw_copper_27",
+    "jimsmineshaft:raw_copper_28",
+    "jimsmineshaft:raw_copper_drilled_east",
+    "jimsmineshaft:raw_copper_29",
+    "jimsmineshaft:iron_siding",
+    "jimsmineshaft:raw_copper_drilled_east_dynamite",
+    "jimsmineshaft:raw_copper_210",
+    "jimsmineshaft:raw_copper_drilled_north_dynamite",
+    "jimsmineshaft:raw_copper_2"
   ]
 }

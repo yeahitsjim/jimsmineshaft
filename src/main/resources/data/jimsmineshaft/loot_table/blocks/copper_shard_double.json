@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "jimsmineshaft:blocks/copper_shard_double",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "jimsmineshaft:copper_shard_double"
+        }
+      ]
+    }
+  ]
+}

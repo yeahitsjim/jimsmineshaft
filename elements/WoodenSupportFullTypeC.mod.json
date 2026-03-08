@@ -44,7 +44,13 @@
         "subtract": false
       }
     ],
-    "customProperties": [],
+    "customProperties": [
+      {
+        "name": "CUSTOM:placed",
+        "type": "logic",
+        "value": true
+      }
+    ],
     "name": "Wooden Support Full Type C",
     "specialInformation": {
       "fixedValue": []
@@ -124,7 +130,7 @@
     "vibrationSensitivityRadius": {
       "fixedValue": 7.0
     },
-    "hasInventory": false,
+    "hasInventory": true,
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 99,
@@ -140,6 +146,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onBlockAdded": {
+      "name": "NewStoneBlockAdded"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [],
