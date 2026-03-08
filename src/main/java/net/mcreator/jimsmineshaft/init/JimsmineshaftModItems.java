@@ -13,6 +13,7 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.jimsmineshaft.item.WoeMineshaftBeUponTheItem;
 import net.mcreator.jimsmineshaft.item.WoeMineshaftBeUponThe2Item;
+import net.mcreator.jimsmineshaft.item.TommyGunItem;
 import net.mcreator.jimsmineshaft.item.TestSyncTheSecondItem;
 import net.mcreator.jimsmineshaft.item.SmallPickaxeItem;
 import net.mcreator.jimsmineshaft.item.RustyPickaxeItem;
@@ -71,6 +72,7 @@ public class JimsmineshaftModItems {
 	public static final DeferredItem<Item> OLD_KNIFE = register("old_knife", OldKnifeItem::new);
 	public static final DeferredItem<Item> RUSTY_PICKAXE = register("rusty_pickaxe", RustyPickaxeItem::new);
 	public static final DeferredItem<Item> SMALL_PICKAXE = register("small_pickaxe", SmallPickaxeItem::new);
+	public static final DeferredItem<Item> TOMMY_GUN = register("tommy_gun", TommyGunItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

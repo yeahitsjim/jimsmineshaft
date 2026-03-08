@@ -1223,6 +1223,54 @@
         ]
       },
       "path": "~/Weapons"
+    },
+    {
+      "name": "TommyGun",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tommy_gun",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/tommy_gun.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/TommyGunItem.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/tommy_gun.json"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "Gun",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gun",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/GunOverlay.java"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "GunDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gun_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/GunDisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Weapons"
     }
   ],
   "variable_elements": [
@@ -1363,7 +1411,8 @@
       "FireAxe",
       "OldKnife",
       "RustyPickaxe",
-      "SmallPickaxe"
+      "SmallPickaxe",
+      "TommyGun"
     ]
   },
   "language_map": {
@@ -1416,7 +1465,8 @@
       "item.jimsmineshaft.fire_axe": "Fire Axe",
       "item.jimsmineshaft.old_knife": "Old Knife",
       "item.jimsmineshaft.rusty_pickaxe": "Rusty Pickaxe",
-      "item.jimsmineshaft.small_pickaxe": "Small Pickaxe"
+      "item.jimsmineshaft.small_pickaxe": "Small Pickaxe",
+      "item.jimsmineshaft.tommy_gun": "Tommy Gun"
     }
   },
   "metadata": {
