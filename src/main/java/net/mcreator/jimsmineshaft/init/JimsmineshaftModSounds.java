@@ -17,4 +17,7 @@ public class JimsmineshaftModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> STALKER_IMPALE = REGISTRY.register("stalker_impale", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "stalker_impale")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> STALKER_GROWL_1 = REGISTRY.register("stalker_growl_1", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "stalker_growl_1")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> STALKER_EMERGE = REGISTRY.register("stalker.emerge", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "stalker.emerge")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> STALKER_STAB = REGISTRY.register("stalker_stab", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "stalker_stab")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> FLINTLOCK_PISTOL_FIRE = REGISTRY.register("flintlock_pistol_fire",
+			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "flintlock_pistol_fire")));
 }

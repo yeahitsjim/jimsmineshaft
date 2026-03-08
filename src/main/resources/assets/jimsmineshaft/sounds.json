@@ -22,5 +22,21 @@
         "stream": false
       }
     ]
+  },
+  "stalker_stab": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:stalker_stab",
+        "stream": false
+      }
+    ]
+  },
+  "flintlock_pistol_fire": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:flintlock_pistol_fire",
+        "stream": false
+      }
+    ]
   }
 }

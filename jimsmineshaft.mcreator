@@ -1450,6 +1450,185 @@
           "src/main/java/net/mcreator/jimsmineshaft/procedures/CallableGenerateShaftProcedure.java"
         ]
       }
+    },
+    {
+      "name": "StalkerPlaybackConditionImpaleFail",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_playback_condition_impale_fail",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerPlaybackConditionImpaleFailProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "IronBullet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_bullet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/item/IronBulletItem.java",
+          "src/main/resources/assets/jimsmineshaft/items/iron_bullet.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/iron_bullet.json"
+        ]
+      }
+    },
+    {
+      "name": "FlintlockPistolPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_pistol_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/FlintlockPistolPlayerFinishesUsingItemProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "FlintlockPistol",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_pistol",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/flintlock_pistol.json",
+          "src/main/resources/assets/jimsmineshaft/items/flintlock_pistol.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/FlintlockPistolItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BulletProjectileWhileProjectileFlyingTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet_projectile_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/BulletProjectileWhileProjectileFlyingTickProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "BulletProjectileProjectileHitsLivingEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet_projectile_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/BulletProjectileProjectileHitsLivingEntityProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "BulletProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/entity/BulletProjectileEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "FlintlockPistolEntitySwingsItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_pistol_entity_swings_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/FlintlockPistolEntitySwingsItemProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1532,6 +1711,22 @@
       ],
       "category": "hostile",
       "subtitle": ""
+    },
+    {
+      "name": "stalker_stab",
+      "files": [
+        "stalker_stab"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "flintlock_pistol_fire",
+      "files": [
+        "flintlock_pistol_fire"
+      ],
+      "category": "player",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
@@ -1580,23 +1775,84 @@
       "subtitles.stalker_growl_1": "",
       "subtitles.stalker_impale": "",
       "subtitles.stalker.emerge": "",
-      "item.jimsmineshaft.woe_mineshaft_be_upon_the.description_0": "Use with caution"
+      "item.jimsmineshaft.woe_mineshaft_be_upon_the.description_0": "Use with caution",
+      "entity.jimsmineshaft.stalker": "Stalker",
+      "item.jimsmineshaft.stalker_spawn_egg": "Stalker Spawn Egg",
+      "item.jimsmineshaft.canteen": "Canteen",
+      "item.jimsmineshaft.woe_mineshaft_be_upon_the": "do not use this its the old trigger",
+      "item.jimsmineshaft.wooden_support_top_type_a": "Wooden Support Top Type A 1",
+      "item.jimsmineshaft.rusty_pickaxe": "Rusty Pickaxe",
+      "item.jimsmineshaft.small_pickaxe": "Small Pickaxe",
+      "item.jimsmineshaft.old_cabinet": "Old Cabinet",
+      "item.jimsmineshaft.wooden_support_plain_type_b": "Wooden Support Plain Type B",
+      "item.jimsmineshaft.tilted_corrupted_support_beam": "Tilted Corrupted Support Beam",
+      "item_group.jimsmineshaft.jims_mineshaft": "Jims Mineshaft",
+      "item.jimsmineshaft.wooden_support_corner_type_b_2": "Wooden Support Corner Type B_2",
+      "item.jimsmineshaft.wooden_wall_type_b": "Wooden Wall Type B",
+      "item.jimsmineshaft.rotten_support_beam": "Rotten Support Beam",
+      "item.jimsmineshaft.rusted_minecart": "Rusted Minecart",
+      "item.jimsmineshaft.rotten_plank_slab": "Rotten Plank Slab",
+      "item.jimsmineshaft.iron_siding_corner": "Iron Siding Corner",
+      "item.jimsmineshaft.corrupted_support_beam": "Corrupted Support Beam",
+      "item.jimsmineshaft.wooden_support_type_a": "Wooden Support Type A 1",
+      "item.jimsmineshaft.wooden_support_type_b": "Wooden Support Type B 1",
+      "item.jimsmineshaft.steel_shelf": "Steel Shelf",
+      "item.jimsmineshaft.rotten_planks": "Rotten Planks",
+      "item.jimsmineshaft.wooden_roof_type_a": "Wooden Support Top Type A 1",
+      "item.jimsmineshaft.stackable_steel_shelf": "Stackable Steel Shelf",
+      "item.jimsmineshaft.wooden_roof_type_c": "Wooden Roof Type C",
+      "item.jimsmineshaft.wooden_roof_type_b": "Wooden Roof Type B",
+      "item.jimsmineshaft.wooden_support_corner_type_b": "Wooden Support Corner Type B",
+      "item.jimsmineshaft.wooden_support_full_type_c": "Wooden Support Full Type C",
+      "item.jimsmineshaft.iron_support": "Iron Support",
+      "item.jimsmineshaft.old_knife": "Old Knife",
+      "item.jimsmineshaft.candle_holder": "Candle Holder",
+      "item.jimsmineshaft.rotten_plank_stairs": "Rotten Plank Stairs",
+      "item.jimsmineshaft.fire_axe": "Fire Axe",
+      "item.jimsmineshaft.iron_siding": "Iron Siding",
+      "item.jimsmineshaft.fenced_corrupted_support_beam": "Fenced Corrupted Support Beam",
+      "item.jimsmineshaft.jimsminedimension": "Jimsminedimension Portal Igniter",
+      "item.jimsmineshaft.wooden_shaft_lining": "Wooden Shaft Lining",
+      "item.jimsmineshaft.woe_mineshaft_be_upon_the_2": "WOE MINESHAFT BE UPON THEE",
+      "item.jimsmineshaft.stripped_rotten_support_beam": "Stripped Rotten Support Beam",
+      "item.jimsmineshaft.canary_cage": "Canary Cage",
+      "item.jimsmineshaft.wooden_shelf": "Wooden Shelf",
+      "item.jimsmineshaft.long_wooden_shelf": "Long Wooden Shelf",
+      "item.jimsmineshaft.wooden_support_top_light_type_a": "Wooden Support Top Type A 1",
+      "item.jimsmineshaft.rotten_cabinet": "Rotten Cabinet",
+      "item.jimsmineshaft.wood_pile": "Wood Pile",
+      "item.jimsmineshaft.corrupted_support_bar": "Corrupted Support Bar",
+      "item.jimsmineshaft.wall_supported_wooden_shelf": "Wall Supported Wooden Shelf",
+      "item.jimsmineshaft.rusted_iron_support": "Rusted Iron Support",
+      "subtitles.stalker_stab": "",
+      "item.jimsmineshaft.iron_bullet": "Iron Bullet",
+      "subtitles.flintlock_pistol_fire": "",
+      "item.jimsmineshaft.flintlock_pistol.description_1": "Left click to shoot",
+      "item.jimsmineshaft.flintlock_pistol": "Flintlock Pistol",
+      "item.jimsmineshaft.flintlock_pistol.description_0": "Can be loaded with §eIron Bullets §r"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModSounds.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModTabs.java",
-      "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationMixin.java",
       "src/main/java/net/mcreator/jimsmineshaft/network/LoadPlayerAnimationMessage.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/jimsmineshaft/network/PlayPlayerAnimationMessage.java",
+      "src/main/java/net/mcreator/jimsmineshaft/network/JimsmineshaftModVariables.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModModels.java",
       "src/main/resources/pack.mcmeta",
+      "src/main/resources/assets/jimsmineshaft/sounds.json",
+      "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationRendererMixin.java",
+      "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationMixin.java",
+      "src/main/java/net/mcreator/jimsmineshaft/network/PlayPlayerAnimationMessage.java",
       "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftModPlayerAnimationAPI.java",
       "src/main/resources/jimsmineshaft.mixins.json",
-      "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationRendererMixin.java",
       "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftMod.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModMobEffects.java",
-      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModItems.java"
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModBlocks.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModItems.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModEntityRenderers.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModEntities.java"
     ]
   },
   "foldersRoot": {

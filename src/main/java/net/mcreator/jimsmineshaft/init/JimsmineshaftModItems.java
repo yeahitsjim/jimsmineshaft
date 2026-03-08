@@ -19,6 +19,8 @@ import net.mcreator.jimsmineshaft.item.SmallPickaxeItem;
 import net.mcreator.jimsmineshaft.item.RustyPickaxeItem;
 import net.mcreator.jimsmineshaft.item.OldKnifeItem;
 import net.mcreator.jimsmineshaft.item.JimsminedimensionItem;
+import net.mcreator.jimsmineshaft.item.IronBulletItem;
+import net.mcreator.jimsmineshaft.item.FlintlockPistolItem;
 import net.mcreator.jimsmineshaft.item.FireAxeItem;
 import net.mcreator.jimsmineshaft.JimsmineshaftMod;
 
@@ -73,6 +75,8 @@ public class JimsmineshaftModItems {
 	public static final DeferredItem<Item> CORRUPTED_SUPPORT_BAR = block(JimsmineshaftModBlocks.CORRUPTED_SUPPORT_BAR);
 	public static final DeferredItem<Item> WALL_SUPPORTED_WOODEN_SHELF = block(JimsmineshaftModBlocks.WALL_SUPPORTED_WOODEN_SHELF);
 	public static final DeferredItem<Item> RUSTED_IRON_SUPPORT = block(JimsmineshaftModBlocks.RUSTED_IRON_SUPPORT);
+	public static final DeferredItem<Item> IRON_BULLET = register("iron_bullet", IronBulletItem::new);
+	public static final DeferredItem<Item> FLINTLOCK_PISTOL = register("flintlock_pistol", FlintlockPistolItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

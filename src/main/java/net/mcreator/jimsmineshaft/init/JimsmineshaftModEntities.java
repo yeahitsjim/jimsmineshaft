@@ -18,6 +18,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.jimsmineshaft.entity.StalkerEntity;
+import net.mcreator.jimsmineshaft.entity.BulletProjectileEntity;
 import net.mcreator.jimsmineshaft.JimsmineshaftMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
@@ -27,6 +28,8 @@ public class JimsmineshaftModEntities {
 			EntityType.Builder.<StalkerEntity>of(StalkerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.8f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<BulletProjectileEntity>> BULLET_PROJECTILE = register("bullet_projectile",
+			EntityType.Builder.<BulletProjectileEntity>of(BulletProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

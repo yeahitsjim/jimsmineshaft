@@ -22,6 +22,7 @@ public class JimsmineshaftModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, JimsmineshaftMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> JIMS_MINESHAFT = REGISTRY.register("jims_mineshaft",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.jimsmineshaft.jims_mineshaft")).icon(() -> new ItemStack(JimsmineshaftModItems.TEST_SYNC_THE_SECOND.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(JimsmineshaftModItems.STALKER_SPAWN_EGG.get());
 				tabData.accept(JimsmineshaftModBlocks.CANTEEN.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.WOODEN_SUPPORT_TOP_TYPE_A.get().asItem());
 				tabData.accept(JimsmineshaftModItems.RUSTY_PICKAXE.get());
@@ -64,6 +65,8 @@ public class JimsmineshaftModTabs {
 				tabData.accept(JimsmineshaftModBlocks.WOOD_PILE.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.CORRUPTED_SUPPORT_BAR.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_SUPPORT.get().asItem());
+				tabData.accept(JimsmineshaftModItems.IRON_BULLET.get());
+				tabData.accept(JimsmineshaftModItems.FLINTLOCK_PISTOL.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
@@ -72,8 +75,6 @@ public class JimsmineshaftModTabs {
 			if (tabData.hasPermissions()) {
 				tabData.accept(JimsmineshaftModItems.TEST_SYNC_THE_SECOND.get());
 			}
-		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
-			tabData.accept(JimsmineshaftModItems.STALKER_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(JimsmineshaftModItems.JIMSMINEDIMENSION.get());
 		}
