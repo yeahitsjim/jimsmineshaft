@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "jimsmineshaft:block/stone",
+    "up": "jimsmineshaft:block/stone",
+    "north": "jimsmineshaft:block/stone",
+    "east": "jimsmineshaft:block/stone",
+    "south": "jimsmineshaft:block/stone",
+    "west": "jimsmineshaft:block/stone",
+    "particle": "jimsmineshaft:block/stone"
+  },
+  "render_type": "solid"
+}

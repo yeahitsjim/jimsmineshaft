@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "P",
+    "keyBindingName": "Place Drill",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "PlaceDrillOnKeyPressed"
+    }
+  }
+}

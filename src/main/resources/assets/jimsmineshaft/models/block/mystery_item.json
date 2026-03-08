@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "jimsmineshaft:block/mysteryore",
+    "up": "jimsmineshaft:block/mysteryore",
+    "north": "jimsmineshaft:block/mysteryore",
+    "east": "jimsmineshaft:block/mysteryore",
+    "south": "jimsmineshaft:block/mysteryore",
+    "west": "jimsmineshaft:block/mysteryore",
+    "particle": "jimsmineshaft:block/mysteryore"
+  },
+  "render_type": "solid"
+}

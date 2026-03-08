@@ -1225,21 +1225,6 @@
       "path": "~/Weapons"
     },
     {
-      "name": "TommyGun",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tommy_gun",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/jimsmineshaft/items/tommy_gun.json",
-          "src/main/java/net/mcreator/jimsmineshaft/item/TommyGunItem.java",
-          "src/main/resources/assets/jimsmineshaft/models/item/tommy_gun.json"
-        ]
-      },
-      "path": "~/Weapons"
-    },
-    {
       "name": "Gun",
       "type": "overlay",
       "compiles": true,
@@ -1271,6 +1256,5859 @@
         ]
       },
       "path": "~/Weapons"
+    },
+    {
+      "name": "TommyGun",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tommy_gun",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/tommy_gun.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/TommyGunItem.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/tommy_gun.json"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "DetonatorBlockItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "detonator_block_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/detonator_block_item.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/DetonatorBlockItemItem.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/detonator_block_item.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "FlintlockPistolPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_pistol_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/FlintlockPistolPlayerFinishesUsingItemProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "BigGatePlaybackclosedCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_gate_playbackclosed_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/BigGatePlaybackclosedConditionProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PressureDrillActivatePlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pressure_drill_activate_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PressureDrillActivatePlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "RawCopperDrilledEast",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_drilled_east",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_drilled_east.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_drilled_east.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_drilled_east.json",
+          "src/main/resources/assets/jimsmineshaft/items/raw_copper_drilled_east.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_drilled_east.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopperDrilledEastBlock.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "RawCopper24BlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_24_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RawCopper24BlockDestroyedByPlayerProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "RightClickLoot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "right_click_loot",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RightClickLootProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "CheckBlockPlacement",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_block_placement",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x_pass2",
+            "type": "number"
+          },
+          {
+            "name": "y_pass2",
+            "type": "number"
+          },
+          {
+            "name": "z_pass2",
+            "type": "number"
+          },
+          {
+            "name": "CBP_direction",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "jsonobject",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CheckBlockPlacementProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "OpenSpawnerGUI",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_spawner_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/network/OpenSpawnerGUIMessage.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "ElevatorBoundingBoxOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_bounding_box_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ElevatorBoundingBoxOnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "RightClickSpawner2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "right_click_spawner_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RightClickSpawner2Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "CopperChunkTypeB",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_chunk_type_b",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/copper_chunk_type_b.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/copper_chunk_type_b.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CopperChunkTypeBBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/copper_chunk_type_b.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperChunkTypeBBlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/copper_chunk_type_b.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_chunk_type_b.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "DrillModeOverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drill_mode_overlay_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/DrillModeOverlayDisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "CopperChunkTypeC",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_chunk_type_c",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/blockstates/copper_chunk_type_c.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/copper_chunk_type_c.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CopperChunkTypeCBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/copper_chunk_type_c.json",
+          "src/main/resources/assets/jimsmineshaft/items/copper_chunk_type_c.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperChunkTypeCBlockEntity.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_chunk_type_c.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "CopperChunkTypeD",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_chunk_type_d",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperChunkTypeDBlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/copper_chunk_type_d.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_chunk_type_d.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/copper_chunk_type_d.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/copper_chunk_type_d.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CopperChunkTypeDBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/block/copper_chunk_type_d.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "CopperChunkTypeE",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_chunk_type_e",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_chunk_type_e.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/copper_chunk_type_e.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/copper_chunk_type_e.json",
+          "src/main/resources/assets/jimsmineshaft/items/copper_chunk_type_e.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CopperChunkTypeEBlock.java",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperChunkTypeEBlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/copper_chunk_type_e.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "PressureDrillFoldedOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pressure_drill_folded_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PressureDrillFoldedOnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "ShiftKey",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shift_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/network/ShiftKeyMessage.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "StalkerPoseSetPacket",
+      "type": "packet",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_pose_set_packet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/network/StalkerPoseSetPacketMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "CopperChunkTypeA",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_chunk_type_a",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/copper_chunk_type_a.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperChunkTypeABlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/copper_chunk_type_a.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/copper_chunk_type_a.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/copper_chunk_type_a.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CopperChunkTypeABlock.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_chunk_type_a.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "PlayerSetDrill",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_set_drill",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PlayerSetDrillProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "CopperDrilledEastPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_drilled_east_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CopperDrilledEastPlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "DetonatorExplosionProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "detonator_explosion_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstackPass",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/DetonatorExplosionProcProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "RightClickSpawner",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "right_click_spawner",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RightClickSpawnerProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Thecart8DisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thecart_8_display_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Thecart8DisplayConditionProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "FlashlightRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/FlashlightRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CancelCopperSuffocation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cancel_copper_suffocation",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CancelCopperSuffocationProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "DynamiteBoxItemIsDroppedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dynamite_box_item_is_dropped_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/DynamiteBoxItemIsDroppedByPlayerProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "Thecart",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thecart",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/ThecartRenderer.java",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/ThecartEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/thecart_spawn_egg.json"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "RawCopperDrilledEastDynamite",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_drilled_east_dynamite",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_drilled_east_dynamite.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_drilled_east_dynamite.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopperDrilledEastDynamiteBlock.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_drilled_east_dynamite.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_drilled_east_dynamite.json",
+          "src/main/resources/assets/jimsmineshaft/items/raw_copper_drilled_east_dynamite.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "Mainoverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mainoverlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/MainoverlayOverlay.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "BigGateClosePlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_gate_close_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/BigGateClosePlaybackConditionProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PressureDrill",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pressure_drill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/PressureDrillRenderer.java",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/PressureDrillEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/pressure_drill_spawn_egg.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "IronBullet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_bullet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/iron_bullet.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/IronBulletItem.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/iron_bullet.json"
+        ]
+      }
+    },
+    {
+      "name": "FlintlockPistol",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_pistol",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/flintlock_pistol.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/FlintlockPistolItem.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/flintlock_pistol.json"
+        ]
+      }
+    },
+    {
+      "name": "CancelHoleEntitySuffocation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cancel_hole_entity_suffocation",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CancelHoleEntitySuffocationProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "ReturnDynamiteCount",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_dynamite_count",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ReturnDynamiteCountProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "RawCopper2",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/raw_copper_2.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_2.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_2.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopper2Block.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_2.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper2BlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_2.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "HoleEntityEntityIsHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hole_entity_entity_is_hurt",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/HoleEntityEntityIsHurtProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "RawCopper26BlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_26_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RawCopper26BlockDestroyedByPlayerProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "StalkerPoseSetPacketReceivedByClient",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_pose_set_packet_received_by_client",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "inboundString",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerPoseSetPacketReceivedByClientProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "MoveCloserDisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "move_closer_display_condition",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/MoveCloserDisplayConditionProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "MysteryRailOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystery_rail_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/MysteryRailOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "PressureDrillOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pressure_drill_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PressureDrillOnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "ShiftKeyLeaveDrill",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shift_key_leave_drill",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ShiftKeyLeaveDrillProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "Stalker",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/stalker_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/StalkerRenderer.java",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/StalkerEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "Woemineshaftfullmemefortotem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "woemineshaftfullmemefortotem",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/woemineshaftfullmemefortotem.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/woemineshaftfullmemefortotem.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/WoemineshaftfullmemefortotemItem.java"
+        ]
+      }
+    },
+    {
+      "name": "NearElevatorDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "near_elevator_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/NearElevatorDisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "NewStrippedDarkOakLog",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "new_stripped_dark_oak_log",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/NewStrippedDarkOakLogBlock.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/new_stripped_dark_oak_log.json",
+          "src/main/resources/assets/jimsmineshaft/items/new_stripped_dark_oak_log.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/new_stripped_dark_oak_log.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/new_stripped_dark_oak_log.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/new_stripped_dark_oak_log.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/NewStrippedDarkOakLogBlockEntity.java"
+        ]
+      },
+      "path": "~/Level 1 Blocks"
+    },
+    {
+      "name": "StalkerDisplayCondition0",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_display_condition_0",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerDisplayCondition0Procedure.java"
+        ]
+      }
+    },
+    {
+      "name": "StalkerDisplayCondition1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_display_condition_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerDisplayCondition1Procedure.java"
+        ]
+      }
+    },
+    {
+      "name": "RawCopper28BlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_28_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RawCopper28BlockDestroyedByPlayerProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "ThecartRightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thecart_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ThecartRightClickedOnEntityProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "StalkerDisplayCondition2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_display_condition_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerDisplayCondition2Procedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CopperShard",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_shard",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/copper_shard.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/copper_shard.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CopperShardBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/copper_shard.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_shard.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/copper_shard.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "PlayerPickUpBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_pick_up_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PlayerPickUpBlockProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "CopperShardDoubleOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_shard_double_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CopperShardDoubleOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "CopperChunkTypeAOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_chunk_type_a_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CopperChunkTypeAOnBlockRightClickedProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "CopperShardDoubleBlockDestroyedByExplosion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_shard_double_block_destroyed_by_explosion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CopperShardDoubleBlockDestroyedByExplosionProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "StalkerPlaybackConditionTransformed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_playback_condition_transformed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerPlaybackConditionTransformedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SetShaftmainbit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaftmainbit",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftmainbitProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "StructureSpawner",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "structure_spawner",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/structure_spawner.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/StructureSpawnerItem.java",
+          "src/main/resources/assets/jimsmineshaft/items/structure_spawner.json"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "PressureDrillFolded",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pressure_drill_folded",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/PressureDrillFoldedRenderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/pressure_drill_folded_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/PressureDrillFoldedEntity.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "CopperChunkTypeBOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_chunk_type_b_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CopperChunkTypeBOnBlockRightClickedProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "BigIronGateFrame",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_iron_gate_frame",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/big_iron_gate_frame_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/BigIronGateFrameEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/BigIronGateFrameRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "CopperChunkTypeDOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_chunk_type_d_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CopperChunkTypeDOnBlockRightClickedProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "CopperDrilledEast",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_drilled_east",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/copper_drilled_east_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/CopperDrilledEastRenderer.java",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/CopperDrilledEastEntity.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "FlintlockPistolEntitySwingsItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_pistol_entity_swings_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/FlintlockPistolEntitySwingsItemProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CartGUIThisGUIIsClosed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cart_gui_this_gui_is_closed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CartGUIThisGUIIsClosedProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "BigIronGateLeftRightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_iron_gate_left_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/BigIronGateLeftRightClickedOnEntityProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Thecart4DisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thecart_4_display_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Thecart4DisplayConditionProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "BigIronGateFrameOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_iron_gate_frame_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/BigIronGateFrameOnEntityTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Thecart7DisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thecart_7_display_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Thecart7DisplayConditionProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "Thecart1DisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thecart_1_display_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Thecart1DisplayConditionProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "ElevatorOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ElevatorOnInitialEntitySpawnProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "SetShaftBRoom2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_b_room_2",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftBRoom2Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetShaftBRoom1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_b_room_1",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftBRoom1Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "GSMP3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gsmp_3",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/GSMP3Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "CopperShardTriple",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_shard_triple",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/CopperShardTripleBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/copper_shard_triple.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_shard_triple.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/copper_shard_triple.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/copper_shard_triple.json",
+          "src/main/resources/assets/jimsmineshaft/items/copper_shard_triple.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "Battery",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "battery",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/item/BatteryItem.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/battery.json",
+          "src/main/resources/assets/jimsmineshaft/items/battery.json"
+        ]
+      }
+    },
+    {
+      "name": "CopperShardTripleBlockDestroyedByExplosion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_shard_triple_block_destroyed_by_explosion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CopperShardTripleBlockDestroyedByExplosionProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "RawCopper210BlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_210_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RawCopper210BlockDestroyedByPlayerProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "ElevatoroverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevatoroverlay_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ElevatoroverlayDisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "FlashlightItemInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/FlashlightItemInInventoryTickProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PlaceDrillOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "place_drill_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PlaceDrillOnKeyPressedProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "MysteryItem",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystery_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/MysteryItemBlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/mystery_item.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/mystery_item.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/mystery_item.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/mystery_item.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/MysteryItemBlock.java",
+          "src/main/resources/assets/jimsmineshaft/items/mystery_item.json"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "FlashlightPropertyValueProvider",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight_property_value_provider",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/FlashlightPropertyValueProviderProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "BulletProjectileWhileProjectileFlyingTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet_projectile_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/BulletProjectileWhileProjectileFlyingTickProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ElevatorSeat8OnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_seat_8_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ElevatorSeat8OnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "RightClickWithDrill",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "right_click_with_drill",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RightClickWithDrillProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "BigGatePlaybackcloseCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_gate_playbackclose_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/BigGatePlaybackcloseConditionProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "BigGateOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_gate_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/BigGateOnEntityTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "HoleEntity",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hole_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/HoleEntityRenderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/hole_entity_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/HoleEntityEntity.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "FlashlightentityOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlightentity_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/FlashlightentityOnEntityTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "InElevatorDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "in_elevator_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/InElevatorDisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "SetShaftmainnonlit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaftmainnonlit",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftmainnonlitProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "PlaceDrill",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "place_drill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/network/PlaceDrillMessage.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "Thecart9DisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thecart_9_display_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Thecart9DisplayConditionProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "CartRail",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cart_rail",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/cart_rail.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/cart_rail.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CartRailBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/cart_rail.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/cart_rail.json",
+          "src/main/resources/assets/jimsmineshaft/items/cart_rail.json"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "CopperFragment1OnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_fragment_1_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CopperFragment1OnBlockRightClickedProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "MoveCloserOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "move_closer_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/MoveCloserOverlayOverlay.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "Elevator",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/elevator_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/ElevatorEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/ElevatorRenderer.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "DetonatorBlockPushed",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "detonator_block_pushed",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/detonator_block_pushed.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/detonator_block_pushed.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/DetonatorBlockPushedItem.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "PressureDrillOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pressure_drill_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PressureDrillOnInitialEntitySpawnProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "FlashlightItemInHandTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/FlashlightItemInHandTickProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Engagespawning",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "engagespawning",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/command/EngagespawningCommand.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "CopperDrilledNorthPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_drilled_north_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CopperDrilledNorthPlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "Thecart11DisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thecart_11_display_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Thecart11DisplayConditionProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "ObjectSpawner",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "object_spawner",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ObjectSpawnerProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "ActivateElevatoreOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "activate_elevatore_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ActivateElevatoreOnKeyPressedProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "CopperDrilledNorthOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_drilled_north_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CopperDrilledNorthOnInitialEntitySpawnProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "BigGatePlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_gate_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/BigGatePlaybackConditionProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ElevatorBoundingBox",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_bounding_box",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/ElevatorBoundingBoxRenderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/elevator_bounding_box_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/ElevatorBoundingBoxEntity.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "BatteryRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "battery_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/BatteryRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ElevatorSeat5OnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_seat_5_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ElevatorSeat5OnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "CopperShardOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_shard_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CopperShardOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "RawCopperDrilledNorthOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_drilled_north_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RawCopperDrilledNorthOnBlockRightClickedProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "ElevatorClosePlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_close_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ElevatorClosePlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "SetSpawnObjectsTrue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_spawn_objects_true",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetSpawnObjectsTrueProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "DetonatorBlockItemRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "detonator_block_item_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/DetonatorBlockItemRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "NewStoneBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "new_stone_block_added",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/NewStoneBlockAddedProcedure.java"
+        ]
+      },
+      "path": "~/Level 1 Blocks"
+    },
+    {
+      "name": "ElevatorFront",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_front",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/elevator_front.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/ElevatorFrontBlock.java",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/ElevatorFrontBlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/elevator_front.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/elevator_front.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/elevator_front.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/elevator_front.json"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "Lightparticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightparticle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/particle/LightparticleParticle.java",
+          "src/main/resources/assets/jimsmineshaft/particles/lightparticle.json"
+        ]
+      }
+    },
+    {
+      "name": "RawCopper25BlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_25_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RawCopper25BlockDestroyedByPlayerProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "ActivateElevatore",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "activate_elevatore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/network/ActivateElevatoreMessage.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "ElevatorSeat5",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_seat_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/entity/ElevatorSeat5Entity.java",
+          "src/main/resources/assets/jimsmineshaft/items/elevator_seat_5_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/ElevatorSeat5Renderer.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "ElevatorSeat6",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_seat_6",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/entity/ElevatorSeat6Entity.java",
+          "src/main/resources/assets/jimsmineshaft/items/elevator_seat_6_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/ElevatorSeat6Renderer.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "ElevatorSeat3",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_seat_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/entity/ElevatorSeat3Entity.java",
+          "src/main/resources/assets/jimsmineshaft/items/elevator_seat_3_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/ElevatorSeat3Renderer.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "Flashlight",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/flashlight_3.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/flashlight_6.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/FlashlightItem.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/flashlight.json",
+          "src/main/resources/assets/jimsmineshaft/items/flashlight.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/flashlight_0.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/flashlight_1.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/flashlight_4.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/flashlight_5.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/flashlight_8.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/flashlight_2.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/flashlight_7.json"
+        ]
+      }
+    },
+    {
+      "name": "ElevatorSeat4",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_seat_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/elevator_seat_4_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/ElevatorSeat4Entity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/ElevatorSeat4Renderer.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "ElevatorSeat7",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_seat_7",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/ElevatorSeat7Renderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/elevator_seat_7_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/ElevatorSeat7Entity.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "BigIronGateLeft",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_iron_gate_left",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/BigIronGateLeftRenderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/big_iron_gate_left_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/BigIronGateLeftEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "CopperShardBlockDestroyedByExplosion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_shard_block_destroyed_by_explosion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CopperShardBlockDestroyedByExplosionProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "ElevatorSeat8",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_seat_8",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/elevator_seat_8_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/ElevatorSeat8Renderer.java",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/ElevatorSeat8Entity.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "CopperFragment5",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_fragment_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/CopperFragment5Block.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/copper_fragment_5.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/copper_fragment_5.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_fragment_5.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperFragment5BlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/copper_fragment_5.json",
+          "src/main/resources/assets/jimsmineshaft/items/copper_fragment_5.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "RawCopper2BlockDestroyedByExplosion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_2_block_destroyed_by_explosion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RawCopper2BlockDestroyedByExplosionProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "CopperFragment1",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_fragment_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperFragment1BlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/copper_fragment_1.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_fragment_1.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/copper_fragment_1.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/copper_fragment_1.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/copper_fragment_1.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CopperFragment1Block.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "CopperFragment2",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_fragment_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/blockstates/copper_fragment_2.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperFragment2BlockEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CopperFragment2Block.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_fragment_2.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/copper_fragment_2.json",
+          "src/main/resources/assets/jimsmineshaft/items/copper_fragment_2.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/copper_fragment_2.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "CopperFragment3",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_fragment_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/copper_fragment_3.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/copper_fragment_3.json",
+          "src/main/resources/assets/jimsmineshaft/items/copper_fragment_3.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CopperFragment3Block.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/copper_fragment_3.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperFragment3BlockEntity.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_fragment_3.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "CopperFragment4",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_fragment_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperFragment4BlockEntity.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_fragment_4.json",
+          "src/main/resources/assets/jimsmineshaft/items/copper_fragment_4.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/copper_fragment_4.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/copper_fragment_4.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/copper_fragment_4.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CopperFragment4Block.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "StalkerPlaybackConditionImpaleFail",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_playback_condition_impale_fail",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerPlaybackConditionImpaleFailProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "LeftClickSpawner",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "left_click_spawner",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeftClickSpawnerProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "RawCopper23BlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_23_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RawCopper23BlockDestroyedByPlayerProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "LightblockBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightblock_block_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/LightblockBlockAddedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "StalkerOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerOnEntityTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ElevatorSeat4OnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_seat_4_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ElevatorSeat4OnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "ElevatorSeat3OnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_seat_3_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ElevatorSeat3OnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "MysteryRail",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystery_rail",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/mystery_rail.json",
+          "src/main/resources/assets/jimsmineshaft/items/mystery_rail.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/mystery_rail.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/mystery_rail.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/MysteryRailBlockEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/block/MysteryRailBlock.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/mystery_rail.json"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Thecart3DisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thecart_3_display_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Thecart3DisplayConditionProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "RawCopper27BlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_27_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RawCopper27BlockDestroyedByPlayerProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "Cart4",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cart_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/Cart4Renderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/cart_4_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/Cart4Entity.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "PickUpLoot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pick_up_loot",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PickUpLootProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "RawCopper210",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_210",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_210.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopper210Block.java",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper210BlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_210.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_210.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_210.json",
+          "src/main/resources/assets/jimsmineshaft/items/raw_copper_210.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "Opentrue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "opentrue",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/OpentrueProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PressureDrillHoldable",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pressure_drill_holdable",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/PressureDrillHoldableBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/block/pressure_drill_holdable.json",
+          "src/main/resources/assets/jimsmineshaft/items/pressure_drill_holdable.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/pressure_drill_holdable.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/pressure_drill_holdable.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/pressure_drill_holdable.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "SetShaftBbit4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_bbit_4",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftBbit4Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Cart3",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cart_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/cart_3_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/Cart3Renderer.java",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/Cart3Entity.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "SetShaftBbit3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_bbit_3",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftBbit3Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Cart2",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cart_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/entity/Cart2Entity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/Cart2Renderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/cart_2_spawn_egg.json"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "Thecart6DisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thecart_6_display_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Thecart6DisplayConditionProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "SetShaftBbit2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_bbit_2",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftBbit2Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetShaftBbit1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_bbit_1",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftBbit1Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Rightgate",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rightgate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/entity/RightgateEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/RightgateRenderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/rightgate_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "ElevatorSeat1",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_seat_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/ElevatorSeat1Renderer.java",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/ElevatorSeat1Entity.java",
+          "src/main/resources/assets/jimsmineshaft/items/elevator_seat_1_spawn_egg.json"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "ReturnInvValue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_inv_value",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ReturnInvValueProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "ElevatorSeat2",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_seat_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/ElevatorSeat2Renderer.java",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/ElevatorSeat2Entity.java",
+          "src/main/resources/assets/jimsmineshaft/items/elevator_seat_2_spawn_egg.json"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "ElevatorSeat2OnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_seat_2_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ElevatorSeat2OnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "PlayerJoinGameSetVariables",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_join_game_set_variables",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PlayerJoinGameSetVariablesProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "ElevatorRightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ElevatorRightClickedOnEntityProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "Leftgate",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leftgate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/leftgate_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/LeftgateEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/LeftgateRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "BulletProjectileProjectileHitsLivingEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet_projectile_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/BulletProjectileProjectileHitsLivingEntityProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "StalkerPlaybackConditionTransformAnimation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_playback_condition_transform_animation",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerPlaybackConditionTransformAnimationProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PlayerTickElevator",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_tick_elevator",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PlayerTickElevatorProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "Rightclicks2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rightclicks_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Rightclicks2Procedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CopperMined",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_mined",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CopperMinedProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "PressureDrillRightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pressure_drill_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PressureDrillRightClickedOnEntityProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "ElevatorSeat1OnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_seat_1_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ElevatorSeat1OnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "InventoryValueCalculation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "inventory_value_calculation",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/InventoryValueCalculationProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "CopperShardDouble",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_shard_double",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/copper_shard_double.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/copper_shard_double.json",
+          "src/main/resources/assets/jimsmineshaft/items/copper_shard_double.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CopperShardDoubleBlock.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_shard_double.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/copper_shard_double.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "RawCopper29",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_29",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/raw_copper_29.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_29.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper29BlockEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopper29Block.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_29.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_29.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_29.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "RawCopper28",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_28",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_28.json",
+          "src/main/resources/assets/jimsmineshaft/items/raw_copper_28.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_28.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopper28Block.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_28.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper28BlockEntity.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_28.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "RawCopper27",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_27",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_27.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_27.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_27.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopper27Block.java",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper27BlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/raw_copper_27.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_27.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "RawCopper26",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_26",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_26.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper26BlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_26.json",
+          "src/main/resources/assets/jimsmineshaft/items/raw_copper_26.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_26.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_26.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopper26Block.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "RawCopper25",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_25",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/raw_copper_25.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_25.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopper25Block.java",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper25BlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_25.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_25.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_25.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "RawCopper2BlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_2_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RawCopper2BlockDestroyedByPlayerProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "RawCopper24",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_24",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_24.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper24BlockEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopper24Block.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_24.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_24.json",
+          "src/main/resources/assets/jimsmineshaft/items/raw_copper_24.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_24.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "RawCopper23",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_23",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_23.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_23.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper23BlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_23.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopper23Block.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_23.json",
+          "src/main/resources/assets/jimsmineshaft/items/raw_copper_23.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "RawCopper22",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_22",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_22.json",
+          "src/main/resources/assets/jimsmineshaft/items/raw_copper_22.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_22.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper22BlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_22.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopper22Block.java",
+          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_22.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "Thecart12DisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thecart_12_display_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Thecart12DisplayConditionProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "ElevatorSeat6OnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_seat_6_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ElevatorSeat6OnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "InElevator",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "in_elevator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/InElevatorOverlay.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "ThecartPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thecart_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ThecartPlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "NewSuspiciousGravel",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "new_suspicious_gravel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/NewSuspiciousGravelBlock.java",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/NewSuspiciousGravelBlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/new_suspicious_gravel.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/new_suspicious_gravel.json",
+          "src/main/resources/assets/jimsmineshaft/items/new_suspicious_gravel.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/new_suspicious_gravel.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/new_suspicious_gravel.json"
+        ]
+      },
+      "path": "~/Level 1 Blocks"
+    },
+    {
+      "name": "RawCopperDrilledNorthDynamite",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_drilled_north_dynamite",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_drilled_north_dynamite.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_drilled_north_dynamite.json",
+          "src/main/resources/assets/jimsmineshaft/items/raw_copper_drilled_north_dynamite.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopperDrilledNorthDynamiteBlock.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_drilled_north_dynamite.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_drilled_north_dynamite.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "PressureDrillFoldedModelOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pressure_drill_folded_model_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PressureDrillFoldedModelOnBlockRightClickedProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "BulletProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/entity/BulletProjectileEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "ElevatorOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ElevatorOnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "CopperChunkTypeEOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_chunk_type_e_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CopperChunkTypeEOnBlockRightClickedProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "CopperChunkTypeCOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_chunk_type_c_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CopperChunkTypeCOnBlockRightClickedProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "StalkerPlaybackConditionImpaleSuccess",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_playback_condition_impale_success",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerPlaybackConditionImpaleSuccessProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TestNBTvalue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_nb_tvalue",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/TestNBTvalueProcedure.java"
+        ]
+      },
+      "path": "~/Level 1 Blocks"
+    },
+    {
+      "name": "Anynewblockadded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anynewblockadded",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/AnynewblockaddedProcedure.java"
+        ]
+      },
+      "path": "~/Level 1 Blocks"
+    },
+    {
+      "name": "SetShaftCbit1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_cbit_1",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftCbit1Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "ElevatorPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ElevatorPlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "Thecart10DisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thecart_10_display_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Thecart10DisplayConditionProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "NewStone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "new_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/new_stone.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/new_stone.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/new_stone.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/NewStoneBlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/new_stone.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/NewStoneBlock.java",
+          "src/main/resources/assets/jimsmineshaft/items/new_stone.json"
+        ]
+      },
+      "path": "~/Level 1 Blocks"
+    },
+    {
+      "name": "PressureDrillFoldedModel",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pressure_drill_folded_model",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/pressure_drill_folded_model.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/PressureDrillFoldedModelBlock.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/pressure_drill_folded_model.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/pressure_drill_folded_model.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/pressure_drill_folded_model.json",
+          "src/main/resources/assets/jimsmineshaft/items/pressure_drill_folded_model.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "RawCopperDrilledEastOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_drilled_east_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RawCopperDrilledEastOnBlockRightClickedProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "RawCopperDrilledNorthDynamiteBlockDestroyedByExplosion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_drilled_north_dynamite_block_destroyed_by_explosion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RawCopperDrilledNorthDynamiteBlockDestroyedByExplosionProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "CopperShardOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_shard_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CopperShardOnBlockRightClickedProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "ThecartOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thecart_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ThecartOnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "CartGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cart_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/network/CartGUISlotMessage.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/gui/CartGUIScreen.java",
+          "src/main/java/net/mcreator/jimsmineshaft/world/inventory/CartGUIMenu.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "ReturnCartValue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_cart_value",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ReturnCartValueProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "SBpickCoords",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_bpick_coords",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "SB_x",
+            "type": "number"
+          },
+          {
+            "name": "SB_y",
+            "type": "number"
+          },
+          {
+            "name": "SB_z",
+            "type": "number"
+          },
+          {
+            "name": "SB_currentDirection",
+            "type": "string"
+          },
+          {
+            "name": "SB_lastGen",
+            "type": "string"
+          },
+          {
+            "name": "SB_wDirection",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SBpickCoordsProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "CantUseDrillDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cant_use_drill_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CantUseDrillDisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "SetShaftCbit3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_cbit_3",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftCbit3Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "BigIronGateRight",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_iron_gate_right",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/BigIronGateRightRenderer.java",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/BigIronGateRightEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/big_iron_gate_right_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "SetShaftCbit2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_cbit_2",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftCbit2Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "BigGate",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/big_gate_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/BigGateRenderer.java",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/BigGateEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "SetShaftCbit4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_cbit_4",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftCbit4Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "HoleEntityOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hole_entity_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/HoleEntityOnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "DynamiteBox",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dynamite_box",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/dynamite_box.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/dynamite_box.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/DynamiteBoxItem.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "CopperDrilledNorthOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_drilled_north_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CopperDrilledNorthOnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "ThecartDisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thecart_display_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ThecartDisplayConditionProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "StalkerPlaybackConditionImpaleStartPose",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_playback_condition_impale_start_pose",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerPlaybackConditionImpaleStartPoseProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Rcopperlayer4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcopperlayer_4",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Rcopperlayer4Procedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "Rcopperlayer2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcopperlayer_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Rcopperlayer2Procedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "Rcopperlayer3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcopperlayer_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Rcopperlayer3Procedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "MiningGoonSet",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mining_goon_set",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/mining_goon_set_leggings.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/MiningGoonSetItem.java",
+          "src/main/resources/assets/jimsmineshaft/items/mining_goon_set_boots.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/mining_goon_set_helmet.json",
+          "src/main/resources/assets/jimsmineshaft/equipment/mining_goon_set.json",
+          "src/main/resources/assets/jimsmineshaft/items/mining_goon_set_chestplate.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/mining_goon_set_boots.json",
+          "src/main/resources/assets/jimsmineshaft/items/mining_goon_set_helmet.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/mining_goon_set_chestplate.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/mining_goon_set_leggings.json"
+        ]
+      }
+    },
+    {
+      "name": "Rcopperlayer1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcopperlayer_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Rcopperlayer1Procedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "CarryingDrillOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carrying_drill_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/CarryingDrillOverlayOverlay.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "RawCopperDrilledNorthBlockDestroyedByExplosion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_drilled_north_block_destroyed_by_explosion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RawCopperDrilledNorthBlockDestroyedByExplosionProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "CopperDrilledNorth",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_drilled_north",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/CopperDrilledNorthRenderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/copper_drilled_north_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/CopperDrilledNorthEntity.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "CartGUIWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cart_gui_while_this_gui_is_open_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CartGUIWhileThisGUIIsOpenTickProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "Flashlightentity",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlightentity",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/neoforge/biome_modifier/flashlightentity_biome_modifier.json",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/FlashlightentityRenderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/flashlightentity_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/FlashlightentityEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "PressureDrillHoldableBlockValidPlacementCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pressure_drill_holdable_block_valid_placement_condition",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PressureDrillHoldableBlockValidPlacementConditionProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "ElevatorEntityIsHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ElevatorEntityIsHurtProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "BigIronGateRightOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_iron_gate_right_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/BigIronGateRightOnEntityTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PressureDrillPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pressure_drill_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PressureDrillPlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "DynamiteBoxStatusDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dynamite_box_status_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/DynamiteBoxStatusDisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "RawCopper29BlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_29_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RawCopper29BlockDestroyedByPlayerProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "SetShaftmainlit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaftmainlit",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftmainlitProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "CantUseDrill",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cant_use_drill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/CantUseDrillOverlay.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "RawCopperDrilledNorth",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_drilled_north",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_drilled_north.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_drilled_north.json",
+          "src/main/resources/assets/jimsmineshaft/items/raw_copper_drilled_north.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_drilled_north.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopperDrilledNorthBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_drilled_north.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "SetShaftC3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_c_3",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftC3Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetShaftC4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_c_4",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftC4Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetShaftC5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_c_5",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftC5Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "NearElevator",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "near_elevator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/NearElevatorOverlay.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "SetShaftC1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_c_1",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftC1Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Thecart5DisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thecart_5_display_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Thecart5DisplayConditionProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "SetShaftC2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_c_2",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftC2Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Lightblock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/lightblock.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/lightblock.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/LightblockBlockEntity.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/lightblock.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/LightblockBlock.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/lightblock.json",
+          "src/main/resources/assets/jimsmineshaft/items/lightblock.json"
+        ]
+      }
+    },
+    {
+      "name": "ElevatorSeat7OnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_seat_7_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ElevatorSeat7OnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "HoleEntityRightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hole_entity_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/HoleEntityRightClickedOnEntityProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "OpenSpawnerGUIOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_spawner_gui_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/OpenSpawnerGUIOnKeyPressedProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "CarryingDrillOverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carrying_drill_overlay_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CarryingDrillOverlayDisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "CopperShardTripleOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_shard_triple_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CopperShardTripleOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "Explosioncode",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosioncode",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "passX",
+            "type": "number"
+          },
+          {
+            "name": "passY",
+            "type": "number"
+          },
+          {
+            "name": "passZ",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ExplosioncodeProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "ThecartEntityIsHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thecart_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ThecartEntityIsHurtProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "ShaftbuilderGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shaftbuilder_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/network/ShaftbuilderGUIButtonMessage.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/gui/ShaftbuilderGUIScreen.java",
+          "src/main/java/net/mcreator/jimsmineshaft/world/inventory/ShaftbuilderGUIMenu.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "RawCopper22BlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_22_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RawCopper22BlockDestroyedByPlayerProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "SetShaftB2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_b_2",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftB2Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "NewGravel",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "new_gravel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/new_gravel.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/new_gravel.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/new_gravel.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/NewGravelBlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/new_gravel.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/new_gravel.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/NewGravelBlock.java"
+        ]
+      },
+      "path": "~/Level 1 Blocks"
+    },
+    {
+      "name": "SetShaftB3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_b_3",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftB3Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetShaftB4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_b_4",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftB4Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetShaftB5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_b_5",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftB5Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "DrillModeOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drill_mode_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/DrillModeOverlayOverlay.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "RawCopperDrilledEastBlockDestroyedByExplosion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_drilled_east_block_destroyed_by_explosion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RawCopperDrilledEastBlockDestroyedByExplosionProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "SetShaftB1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_b_1",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftB1Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "RawCopperDrilledEastDynamiteBlockDestroyedByExplosion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_copper_drilled_east_dynamite_block_destroyed_by_explosion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RawCopperDrilledEastDynamiteBlockDestroyedByExplosionProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "GSMP2callable",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gsmp_2callable",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "levelTokens",
+            "type": "number"
+          },
+          {
+            "name": "totalTokens",
+            "type": "number"
+          },
+          {
+            "name": "variantTokensPass",
+            "type": "number"
+          },
+          {
+            "name": "xPass",
+            "type": "number"
+          },
+          {
+            "name": "yPass",
+            "type": "number"
+          },
+          {
+            "name": "zPass",
+            "type": "number"
+          },
+          {
+            "name": "LGSPass",
+            "type": "string"
+          },
+          {
+            "name": "currentDirectionPass",
+            "type": "string"
+          },
+          {
+            "name": "currentVariantPass",
+            "type": "string"
+          },
+          {
+            "name": "workingDirectionPass",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/GSMP2callableProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [
@@ -1327,9 +7165,492 @@
       "type": "number",
       "scope": "map",
       "value": "0"
+    },
+    {
+      "name": "drillX",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "drillY",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "playerDrillMode",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "drillZ",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "nearElevator",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "SBselectedShaft",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "totalPlayers",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "playerDrillMoveCloser",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "maxbattery",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "throwAwayVariable",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SB_z",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "playerCantOpenDrill",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "playerIsDrilling",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "inElevator",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "batterylife",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "LookingInventoryValue",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "cartPushing",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "SB_x",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "SB_y",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "doBlockSpawning",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "playerInvValue",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "elevatorPlace",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "playerHoldingDrill",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "buttonclick",
+      "files": [
+        "buttonclick"
+      ],
+      "category": "player",
+      "subtitle": "button click"
+    },
+    {
+      "name": "pickupbit2",
+      "files": [
+        "pickup2"
+      ],
+      "category": "neutral",
+      "subtitle": "Picks up bit"
+    },
+    {
+      "name": "pickupbit1",
+      "files": [
+        "pickup1"
+      ],
+      "category": "neutral",
+      "subtitle": "Picks up bit"
+    },
+    {
+      "name": "pickupbit4",
+      "files": [
+        "pickup4"
+      ],
+      "category": "neutral",
+      "subtitle": "Picks up bit"
+    },
+    {
+      "name": "pickupbit3",
+      "files": [
+        "pickup3"
+      ],
+      "category": "neutral",
+      "subtitle": "Picks up bit"
+    },
+    {
+      "name": "bigdoor",
+      "files": [
+        "3x3door"
+      ],
+      "category": "player",
+      "subtitle": "big door go OPEN SEASAME "
+    },
+    {
+      "name": "stalker_growl_1",
+      "files": [
+        "stalker_growl_1"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "banging3",
+      "files": [
+        "bang3"
+      ],
+      "category": "neutral",
+      "subtitle": "Banging"
+    },
+    {
+      "name": "banging2",
+      "files": [
+        "bang2"
+      ],
+      "category": "neutral",
+      "subtitle": "Banging"
+    },
+    {
+      "name": "cartstep1",
+      "files": [
+        "cartstep1"
+      ],
+      "category": "neutral",
+      "subtitle": "Cart Moves"
+    },
+    {
+      "name": "banging5",
+      "files": [
+        "bang5"
+      ],
+      "category": "neutral",
+      "subtitle": "Banging"
+    },
+    {
+      "name": "banging4",
+      "files": [
+        "bang4"
+      ],
+      "category": "neutral",
+      "subtitle": "Banging"
+    },
+    {
+      "name": "pressuredrill2",
+      "files": [
+        "pressuredrill2"
+      ],
+      "category": "neutral",
+      "subtitle": "Loud drilling sound"
+    },
+    {
+      "name": "banging",
+      "files": [
+        "bang1"
+      ],
+      "category": "neutral",
+      "subtitle": "Banging"
+    },
+    {
+      "name": "batterycharge",
+      "files": [
+        "batteryzap"
+      ],
+      "category": "player",
+      "subtitle": "battery charge"
+    },
+    {
+      "name": "batterylevelbeep",
+      "files": [
+        "batterylevelbeep"
+      ],
+      "category": "player",
+      "subtitle": "Battery Alert"
+    },
+    {
+      "name": "rock3",
+      "files": [
+        "rock3"
+      ],
+      "category": "neutral",
+      "subtitle": "Rock Falling"
+    },
+    {
+      "name": "rock1",
+      "files": [
+        "rock1"
+      ],
+      "category": "neutral",
+      "subtitle": "Rock falling"
+    },
+    {
+      "name": "rock2",
+      "files": [
+        "rock2"
+      ],
+      "category": "neutral",
+      "subtitle": "Rock falling"
+    },
+    {
+      "name": "stalker_stab",
+      "files": [
+        "stalker_stab"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "pressuredrillstereo",
+      "files": [
+        "pressuredrillstereo2"
+      ],
+      "category": "neutral",
+      "subtitle": "Loud Drilling Sounds"
+    },
+    {
+      "name": "pressuredrilling",
+      "files": [
+        "pressuredrill"
+      ],
+      "category": "neutral",
+      "subtitle": "Loud Drilling Sounds"
+    },
+    {
+      "name": "pickup15",
+      "files": [
+        "pickup15"
+      ],
+      "category": "neutral",
+      "subtitle": "Picks up bit"
+    },
+    {
+      "name": "lighton",
+      "files": [
+        "flashlighton"
+      ],
+      "category": "player",
+      "subtitle": "light ambience"
+    },
+    {
+      "name": "pickup11",
+      "files": [
+        "pickup11"
+      ],
+      "category": "neutral",
+      "subtitle": "Picks up bit"
+    },
+    {
+      "name": "pickup12",
+      "files": [
+        "pickup12"
+      ],
+      "category": "neutral",
+      "subtitle": "Picks up bit"
+    },
+    {
+      "name": "pickup13",
+      "files": [
+        "pickup13"
+      ],
+      "category": "neutral",
+      "subtitle": "Picks up bit"
+    },
+    {
+      "name": "pickup14",
+      "files": [
+        "pickup14"
+      ],
+      "category": "neutral",
+      "subtitle": "Picks up bit"
+    },
+    {
+      "name": "pickup10",
+      "files": [
+        "pickup10"
+      ],
+      "category": "neutral",
+      "subtitle": "Picks up bit"
+    },
+    {
+      "name": "pressuredrillshortened",
+      "files": [
+        "pressuredrillshortened"
+      ],
+      "category": "neutral",
+      "subtitle": "LOUD DRILLING"
+    },
+    {
+      "name": "elevatoropen",
+      "files": [
+        "elevatoropen"
+      ],
+      "category": "neutral",
+      "subtitle": "Elevator Door Opens"
+    },
+    {
+      "name": "pickup8",
+      "files": [
+        "pickup8"
+      ],
+      "category": "neutral",
+      "subtitle": "Picks up bit"
+    },
+    {
+      "name": "pickup9",
+      "files": [
+        "pickup9"
+      ],
+      "category": "neutral",
+      "subtitle": "Picks up bit"
+    },
+    {
+      "name": "flintlock_pistol_fire",
+      "files": [
+        "flintlock_pistol_fire"
+      ],
+      "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "stalker_impale",
+      "files": [
+        "stalker_impale"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "thud",
+      "files": [
+        "thud"
+      ],
+      "category": "player",
+      "subtitle": "thud"
+    },
+    {
+      "name": "pickup5",
+      "files": [
+        "pickup5"
+      ],
+      "category": "neutral",
+      "subtitle": "Picks up bit"
+    },
+    {
+      "name": "pickup6",
+      "files": [
+        "pickup6"
+      ],
+      "category": "neutral",
+      "subtitle": "Picks up bit"
+    },
+    {
+      "name": "pickup7",
+      "files": [
+        "pickup7"
+      ],
+      "category": "neutral",
+      "subtitle": "Picks up bit"
+    },
+    {
+      "name": "cartthud2",
+      "files": [
+        "metalthud2"
+      ],
+      "category": "neutral",
+      "subtitle": "Metallic Thud"
+    },
+    {
+      "name": "elevatorclose",
+      "files": [
+        "elevatorclose"
+      ],
+      "category": "neutral",
+      "subtitle": "Elevator Door Closes"
+    },
+    {
+      "name": "cartthud1",
+      "files": [
+        "metalthud1"
+      ],
+      "category": "neutral",
+      "subtitle": "Metallic Thud"
+    },
+    {
+      "name": "stalker.emerge",
+      "files": [
+        "stalker_emerge"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    }
+  ],
   "tag_elements": {
     "BLOCKS:minecraft:mineable/axe": [
       "~CUSTOM:RottenPlankStairs",
@@ -1340,6 +7661,20 @@
       "~CUSTOM:RottenPlanks"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:RawCopperDrilledNorth",
+      "~CUSTOM:RawCopperDrilledNorthDynamite",
+      "~CUSTOM:RawCopper22",
+      "~CUSTOM:RawCopper23",
+      "~CUSTOM:RawCopper24",
+      "~CUSTOM:RawCopper25",
+      "~CUSTOM:RawCopper26",
+      "~CUSTOM:RawCopper27",
+      "~CUSTOM:RawCopper28",
+      "~CUSTOM:RawCopper29",
+      "~CUSTOM:RawCopper210",
+      "~CUSTOM:RawCopper2",
+      "~CUSTOM:RawCopperDrilledEastDynamite",
+      "~CUSTOM:RawCopperDrilledEast",
       "~CUSTOM:IronSiding"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
@@ -1366,6 +7701,18 @@
     "ITEMS:minecraft:pickaxes": [
       "~CUSTOM:SmallPickaxe",
       "~CUSTOM:RustyPickaxe"
+    ],
+    "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:MiningGoonSet.helmet"
+    ],
+    "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:MiningGoonSet.body"
+    ],
+    "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:MiningGoonSet.legs"
+    ],
+    "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:MiningGoonSet.boots"
     ]
   },
   "tab_element_order": {
@@ -1412,7 +7759,71 @@
       "OldKnife",
       "RustyPickaxe",
       "SmallPickaxe",
-      "TommyGun"
+      "TommyGun",
+      "DetonatorBlockItem",
+      "RawCopperDrilledEast",
+      "CopperChunkTypeB",
+      "CopperChunkTypeC",
+      "CopperChunkTypeD",
+      "CopperChunkTypeE",
+      "CopperChunkTypeA",
+      "Thecart",
+      "RawCopperDrilledEastDynamite",
+      "PressureDrill",
+      "IronBullet",
+      "FlintlockPistol",
+      "RawCopper2",
+      "Stalker",
+      "NewStrippedDarkOakLog",
+      "CopperShard",
+      "StructureSpawner",
+      "PressureDrillFolded",
+      "CopperDrilledEast",
+      "CopperShardTriple",
+      "Battery",
+      "MysteryItem",
+      "HoleEntity",
+      "CartRail",
+      "Elevator",
+      "DetonatorBlockPushed",
+      "ElevatorBoundingBox",
+      "ElevatorFront",
+      "ElevatorSeat5",
+      "ElevatorSeat6",
+      "ElevatorSeat3",
+      "Flashlight",
+      "ElevatorSeat4",
+      "ElevatorSeat7",
+      "ElevatorSeat8",
+      "CopperFragment5",
+      "CopperFragment1",
+      "CopperFragment2",
+      "CopperFragment3",
+      "CopperFragment4",
+      "MysteryRail",
+      "Cart4",
+      "RawCopper210",
+      "PressureDrillHoldable",
+      "Cart3",
+      "Cart2",
+      "ElevatorSeat1",
+      "ElevatorSeat2",
+      "CopperShardDouble",
+      "RawCopper29",
+      "RawCopper28",
+      "RawCopper27",
+      "RawCopper26",
+      "RawCopper25",
+      "RawCopper24",
+      "RawCopper23",
+      "NewSuspiciousGravel",
+      "RawCopperDrilledNorthDynamite",
+      "NewStone",
+      "PressureDrillFoldedModel",
+      "DynamiteBox",
+      "CopperDrilledNorth",
+      "RawCopperDrilledNorth",
+      "NewGravel"
     ]
   },
   "language_map": {
@@ -1466,7 +7877,11 @@
       "item.jimsmineshaft.old_knife": "Old Knife",
       "item.jimsmineshaft.rusty_pickaxe": "Rusty Pickaxe",
       "item.jimsmineshaft.small_pickaxe": "Small Pickaxe",
-      "item.jimsmineshaft.tommy_gun": "Tommy Gun"
+      "subtitles.flintlock_pistol_fire": "",
+      "subtitles.stalker_growl_1": "",
+      "subtitles.stalker_impale": "",
+      "subtitles.stalker.emerge": "",
+      "subtitles.stalker_stab": ""
     }
   },
   "metadata": {
@@ -1486,6 +7901,26 @@
     "name": "~",
     "children": [
       {
+        "name": "Cart and Rail",
+        "children": []
+      },
+      {
+        "name": "ExtraDetails",
+        "children": []
+      },
+      {
+        "name": "Procedures",
+        "children": []
+      },
+      {
+        "name": "Level 1 Blocks",
+        "children": []
+      },
+      {
+        "name": "Loot Work",
+        "children": []
+      },
+      {
         "name": "Level 2 Blocks",
         "children": []
       },
@@ -1494,15 +7929,15 @@
         "children": []
       },
       {
-        "name": "ExtraDetails",
-        "children": []
-      },
-      {
         "name": "Artifacts",
         "children": []
       },
       {
         "name": "Weapons",
+        "children": []
+      },
+      {
+        "name": "Procedures Old",
         "children": []
       }
     ]

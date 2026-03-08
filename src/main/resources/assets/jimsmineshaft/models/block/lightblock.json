@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "jimsmineshaft:block/lightblock",
+    "up": "jimsmineshaft:block/lightblock",
+    "north": "jimsmineshaft:block/lightblock",
+    "east": "jimsmineshaft:block/lightblock",
+    "south": "jimsmineshaft:block/lightblock",
+    "west": "jimsmineshaft:block/lightblock",
+    "particle": "jimsmineshaft:block/lightblock"
+  },
+  "render_type": "translucent"
+}

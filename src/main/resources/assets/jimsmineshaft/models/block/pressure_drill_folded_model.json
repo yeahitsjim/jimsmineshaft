@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/pressuredrillmodel3",
+  "textures": {
+    "all": "jimsmineshaft:block/texturepressuredrillmodel",
+    "particle": "jimsmineshaft:block/texturepressuredrillmodel",
+    "0": "jimsmineshaft:block/texturepressuredrillmodel"
+  },
+  "render_type": "solid"
+}

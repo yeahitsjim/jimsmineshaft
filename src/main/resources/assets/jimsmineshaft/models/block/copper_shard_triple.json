@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/coppershardmegatall",
+  "textures": {
+    "all": "jimsmineshaft:block/coppershard",
+    "particle": "minecraft:block/copper_ore",
+    "1": "jimsmineshaft:block/coppershard"
+  },
+  "render_type": "solid"
+}
