@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "candle_holder_with_candle"
+      },
+      "name": "default"
+    }
+  }
+}

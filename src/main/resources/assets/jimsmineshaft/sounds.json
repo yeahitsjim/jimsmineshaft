@@ -311,11 +311,11 @@
       }
     ]
   },
-  "stalkercrack": {
-    "subtitle": "subtitles.stalkercrack",
+  "stalkerscream1": {
+    "subtitle": "subtitles.stalkerscream1",
     "sounds": [
       {
-        "name": "jimsmineshaft:crack",
+        "name": "jimsmineshaft:stalkerscream1",
         "stream": false
       }
     ]
@@ -338,11 +338,81 @@
       }
     ]
   },
-  "stalkerscream1": {
-    "subtitle": "subtitles.stalkerscream1",
+  "stalkercrack": {
+    "subtitle": "subtitles.stalkercrack",
     "sounds": [
       {
-        "name": "jimsmineshaft:stalkerscream1",
+        "name": "jimsmineshaft:crack",
+        "stream": false
+      }
+    ]
+  },
+  "buttonclick": {
+    "subtitle": "subtitles.buttonclick",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:buttonclick",
+        "stream": false
+      }
+    ]
+  },
+  "flintlock_pistol_fire": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:flintlock_pistol_fire",
+        "stream": false
+      }
+    ]
+  },
+  "bigdoor": {
+    "subtitle": "subtitles.bigdoor",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:3x3door",
+        "stream": false
+      }
+    ]
+  },
+  "thud": {
+    "subtitle": "subtitles.thud",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:thud",
+        "stream": false
+      }
+    ]
+  },
+  "stalker_stab": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:stalker_stab",
+        "stream": false
+      }
+    ]
+  },
+  "batterycharge": {
+    "subtitle": "subtitles.batterycharge",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:batteryzap",
+        "stream": false
+      }
+    ]
+  },
+  "batterylevelbeep": {
+    "subtitle": "subtitles.batterylevelbeep",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:batterylevelbeep",
+        "stream": false
+      }
+    ]
+  },
+  "lighton": {
+    "subtitle": "subtitles.lighton",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:flashlighton",
         "stream": false
       }
     ]

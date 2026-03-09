@@ -1,8 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.jimsmineshaft.entity.StalkerInsides2Entity;
+import net.neoforged.bus.api.Event;
 
 public class InsidesWalkAnimationPlaybackConditionProcedure {
 	public static boolean execute(Entity entity) {

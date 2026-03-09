@@ -1,32 +1,19 @@
 package net.mcreator.jimsmineshaft.entity;
 
-import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
-
-import net.minecraft.world.level.ServerLevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
-import net.minecraft.world.entity.SpawnGroupData;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.EntitySpawnReason;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.AnimationState;
-import net.minecraft.world.DifficultyInstance;
-
-import net.mcreator.jimsmineshaft.procedures.PlayerStalkierOnInitialEntitySpawnProcedure;
-
-import javax.annotation.Nullable;
+import net.minecraft.nbt.Tag;
+import net.minecraft.network.syncher.EntityDataAccessor;
 
 public class PlayerStalkierEntity extends Monster {
+
 	public final AnimationState animationState0 = new AnimationState();
 
 	public PlayerStalkierEntity(EntityType<PlayerStalkierEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
+
 		setPersistenceRequired();
+
 	}
 
 	@Override
@@ -41,15 +28,9 @@ public class PlayerStalkierEntity extends Monster {
 	}
 
 	@Override
-	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, EntitySpawnReason reason, @Nullable SpawnGroupData livingdata) {
-		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata);
-		PlayerStalkierOnInitialEntitySpawnProcedure.execute(world, this.getX(), this.getY(), this.getZ(), this);
-		return retval;
-	}
-
-	@Override
 	public void tick() {
 		super.tick();
+
 		if (this.level().isClientSide()) {
 			this.animationState0.animateWhen(true, this.tickCount);
 		}
@@ -78,7 +59,10 @@ public class PlayerStalkierEntity extends Monster {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
+
 		builder = builder.add(Attributes.STEP_HEIGHT, 0.6);
+
 		return builder;
 	}
+
 }

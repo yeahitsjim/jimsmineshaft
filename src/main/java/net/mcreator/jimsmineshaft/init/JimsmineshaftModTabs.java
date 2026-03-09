@@ -123,9 +123,22 @@ public class JimsmineshaftModTabs {
 				tabData.accept(JimsmineshaftModItems.OLD_KNIFE.get());
 				tabData.accept(JimsmineshaftModBlocks.CANDLE_HOLDER.get().asItem());
 				tabData.accept(JimsmineshaftModItems.FIRE_AXE.get());
-				tabData.accept(JimsmineshaftModItems.SKIN_STEALER_ENTITY_SPAWN_EGG.get());
 				tabData.accept(JimsmineshaftModItems.STALKER_INSIDES_SPAWN_EGG.get());
 				tabData.accept(JimsmineshaftModItems.STALKER_INSIDES_2_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModItems.SKIN_STEALER_ENTITY_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_CROSS_SUPPORT.get().asItem());
+				tabData.accept(JimsmineshaftModItems.FLASHLIGHT.get());
+				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_RAILING.get().asItem());
+				tabData.accept(JimsmineshaftModItems.BATTERY.get());
+				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_CATWALK_WALL_SUPPORT.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_CATWALK.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_CATWALK_SUPPORTED.get().asItem());
+				tabData.accept(JimsmineshaftModItems.TOMMY_GUN.get());
+				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_STAIRS.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_SUPPORT_COOL.get().asItem());
+				tabData.accept(JimsmineshaftModItems.IRON_BULLET.get());
+				tabData.accept(JimsmineshaftModItems.FLINTLOCK_PISTOL.get());
+				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_RAILING_CORNER.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
@@ -157,8 +170,18 @@ public class JimsmineshaftModTabs {
 			tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_1_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_2_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.COPPER_DRILLED_NORTH_SPAWN_EGG.get());
-			tabData.accept(JimsmineshaftModItems.STALKER_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.PLAYER_STALKIER_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.BIG_IRON_GATE_LEFT_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.BIG_IRON_GATE_RIGHT_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.BIG_GATE_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.RIGHTGATE_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.BIG_IRON_GATE_FRAME_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.LEFTGATE_SPAWN_EGG.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+			tabData.accept(JimsmineshaftModItems.MINING_GOON_SET_HELMET.get());
+			tabData.accept(JimsmineshaftModItems.MINING_GOON_SET_CHESTPLATE.get());
+			tabData.accept(JimsmineshaftModItems.MINING_GOON_SET_LEGGINGS.get());
+			tabData.accept(JimsmineshaftModItems.MINING_GOON_SET_BOOTS.get());
 		}
 	}
 }

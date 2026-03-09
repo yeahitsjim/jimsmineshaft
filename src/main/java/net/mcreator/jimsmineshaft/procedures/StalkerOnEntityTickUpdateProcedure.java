@@ -1,27 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.neoforge.network.PacketDistributor;
-
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.damagesource.DamageTypes;
-import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.jimsmineshaft.network.StalkerPoseSetPacketMessage;
-import net.mcreator.jimsmineshaft.entity.StalkerEntity;
+import net.neoforged.bus.api.Event;
 
 public class StalkerOnEntityTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -109,17 +88,27 @@ public class StalkerOnEntityTickUpdateProcedure {
 						if (!world.isClientSide()) {
 							if (world instanceof Level _level) {
 								if (!_level.isClientSide()) {
-									_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:stalker_impale")), SoundSource.HOSTILE, 1,
+									_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:stalker_stab")), SoundSource.HOSTILE, 1,
 											(float) Mth.nextDouble(RandomSource.create(), 0.8, 1.2));
 								} else {
-									_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:stalker_impale")), SoundSource.HOSTILE, 1, (float) Mth.nextDouble(RandomSource.create(), 0.8, 1.2),
-											false);
+									_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:stalker_stab")), SoundSource.HOSTILE, 1, (float) Mth.nextDouble(RandomSource.create(), 0.8, 1.2), false);
 								}
 							}
 						}
 						if (Math.sqrt(
 								Math.pow(entity.getX() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX(), 2) + Math.pow(entity.getY() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY(), 2)
 										+ Math.pow(entity.getZ() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ(), 2)) < 5) {
+							if (!world.isClientSide()) {
+								if (world instanceof Level _level) {
+									if (!_level.isClientSide()) {
+										_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:stalker_impale")), SoundSource.HOSTILE, 1,
+												(float) Mth.nextDouble(RandomSource.create(), 0.8, 1.2));
+									} else {
+										_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:stalker_impale")), SoundSource.HOSTILE, 1, (float) Mth.nextDouble(RandomSource.create(), 0.8, 1.2),
+												false);
+									}
+								}
+							}
 							if (entity instanceof StalkerEntity _datEntSetS)
 								_datEntSetS.getEntityData().set(StalkerEntity.DATA_pose, "impale_hit");
 							entity.getPersistentData().putString("ImpaleEntity", ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getStringUUID()));
@@ -131,11 +120,11 @@ public class StalkerOnEntityTickUpdateProcedure {
 											+ Math.pow(entity.getZ() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ(), 2)));
 						} else {
 							if (entity instanceof StalkerEntity _datEntSetS)
-								_datEntSetS.getEntityData().set(StalkerEntity.DATA_attack, "");
+								_datEntSetS.getEntityData().set(StalkerEntity.DATA_attack, "impale_fail");
 							if (entity instanceof StalkerEntity _datEntSetS)
-								_datEntSetS.getEntityData().set(StalkerEntity.DATA_pose, "");
+								_datEntSetS.getEntityData().set(StalkerEntity.DATA_pose, "impale_fail");
 							if (entity instanceof StalkerEntity _datEntSetI)
-								_datEntSetI.getEntityData().set(StalkerEntity.DATA_attackTicks, -30);
+								_datEntSetI.getEntityData().set(StalkerEntity.DATA_attackTicks, 0);
 						}
 					}
 					if ((entity instanceof StalkerEntity _datEntS ? _datEntS.getEntityData().get(StalkerEntity.DATA_pose) : "").equals("impale_hit")) {
@@ -181,6 +170,14 @@ public class StalkerOnEntityTickUpdateProcedure {
 							_datEntSetS.getEntityData().set(StalkerEntity.DATA_attack, "");
 					}
 				}
+				if ((entity instanceof StalkerEntity _datEntS ? _datEntS.getEntityData().get(StalkerEntity.DATA_attack) : "").equals("impale_fail")) {
+					if ((entity instanceof StalkerEntity _datEntI ? _datEntI.getEntityData().get(StalkerEntity.DATA_attackTicks) : 0) == 20) {
+						if (entity instanceof StalkerEntity _datEntSetS)
+							_datEntSetS.getEntityData().set(StalkerEntity.DATA_pose, "");
+						if (entity instanceof StalkerEntity _datEntSetS)
+							_datEntSetS.getEntityData().set(StalkerEntity.DATA_attack, "");
+					}
+				}
 			} else {
 				if (entity instanceof StalkerEntity _datEntSetS)
 					_datEntSetS.getEntityData().set(StalkerEntity.DATA_attack, "");
@@ -196,7 +193,7 @@ public class StalkerOnEntityTickUpdateProcedure {
 				}
 				if ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof LivingEntity) {
 					if (Math.sqrt(Math.pow(entity.getX() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX(), 2) + Math.pow(entity.getY() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY(), 2)
-							+ Math.pow(entity.getZ() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ(), 2)) < 6.7) {
+							+ Math.pow(entity.getZ() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ(), 2)) < 6) {
 						if (entity instanceof StalkerEntity _datEntSetS)
 							_datEntSetS.getEntityData().set(StalkerEntity.DATA_attack, "impale");
 					}

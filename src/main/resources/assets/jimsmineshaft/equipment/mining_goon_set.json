@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "jimsmineshaft:mining_goon_set"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "jimsmineshaft:mining_goon_set"
+      }
+    ]
+  }
+}

@@ -1,31 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
-
-import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
-import net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings;
-import net.minecraft.world.level.block.Rotation;
-import net.minecraft.world.level.block.Mirror;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
-import net.minecraft.core.Direction;
-import net.minecraft.core.BlockPos;
-import net.minecraft.client.Minecraft;
-
-import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
-import net.mcreator.jimsmineshaft.init.JimsmineshaftModItems;
-
-import javax.annotation.Nullable;
 
 @EventBusSubscriber
 public class GSMP2Procedure {
@@ -76,7 +51,7 @@ public class GSMP2Procedure {
 		double localLevelTokens = 0;
 		if (JimsmineshaftModItems.WOE_MINESHAFT_BE_UPON_THE_2.get() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) {
 			if (world.isClientSide())
-				Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(JimsmineshaftModItems.WOEMINESHAFTFULLMEMEFORTOTEM.get()));
+				Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(JimsmineshaftModItems.DELETED_MOD_ELEMENT.get()));
 			currentSavedBranchCount = 0;
 			localFilledSpaces.addProperty("x", x);
 			localFilledSpaces.addProperty("y", (y - 48));
@@ -177,24 +152,6 @@ public class GSMP2Procedure {
 							if (!world.isClientSide() && world.getServer() != null)
 								world.getServer().getPlayerList()
 										.broadcastSystemMessage(Component.literal(("Total Tokens remaining: " + new java.text.DecimalFormat("##.##").format(JimsmineshaftModVariables.MapVariables.get(world).totalTokensRemaining))), false);
-							GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave0.get("variantTokensPass").getAsDouble(), branchSave0.get("xPass").getAsDouble(), branchSave0.get("yPass").getAsDouble(),
-									branchSave0.get("zPass").getAsDouble(), branchSave0.get("lastGeneratedStructurePass").getAsString(), branchSave0.get("currentDirectionPass").getAsString(), branchSave0.get("currentVariantPass").getAsString(),
-									branchSave0.get("workingDirectionPass").getAsString());
-							GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave1.get("variantTokensPass").getAsDouble(), branchSave1.get("xPass").getAsDouble(), branchSave1.get("yPass").getAsDouble(),
-									branchSave1.get("zPass").getAsDouble(), branchSave1.get("lastGeneratedStructurePass").getAsString(), branchSave1.get("currentDirectionPass").getAsString(), branchSave1.get("currentVariantPass").getAsString(),
-									branchSave1.get("workingDirectionPass").getAsString());
-							GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave2.get("variantTokensPass").getAsDouble(), branchSave2.get("xPass").getAsDouble(), branchSave2.get("yPass").getAsDouble(),
-									branchSave2.get("zPass").getAsDouble(), branchSave2.get("lastGeneratedStructurePass").getAsString(), branchSave2.get("currentDirectionPass").getAsString(), branchSave2.get("currentVariantPass").getAsString(),
-									branchSave2.get("workingDirectionPass").getAsString());
-							GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave3.get("variantTokensPass").getAsDouble(), branchSave3.get("xPass").getAsDouble(), branchSave3.get("yPass").getAsDouble(),
-									branchSave3.get("zPass").getAsDouble(), branchSave3.get("lastGeneratedStructurePass").getAsString(), branchSave3.get("currentDirectionPass").getAsString(), branchSave3.get("currentVariantPass").getAsString(),
-									branchSave3.get("workingDirectionPass").getAsString());
-							GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave4.get("variantTokensPass").getAsDouble(), branchSave4.get("xPass").getAsDouble(), branchSave4.get("yPass").getAsDouble(),
-									branchSave4.get("zPass").getAsDouble(), branchSave4.get("lastGeneratedStructurePass").getAsString(), branchSave4.get("currentDirectionPass").getAsString(), branchSave3.get("currentVariantPass").getAsString(),
-									branchSave4.get("workingDirectionPass").getAsString());
-							GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave5.get("variantTokensPass").getAsDouble(), branchSave5.get("xPass").getAsDouble(), branchSave5.get("yPass").getAsDouble(),
-									branchSave5.get("zPass").getAsDouble(), branchSave5.get("lastGeneratedStructurePass").getAsString(), branchSave5.get("currentDirectionPass").getAsString(), branchSave5.get("currentVariantPass").getAsString(),
-									branchSave5.get("workingDirectionPass").getAsString());
 						}
 						localTotalTokens = localTotalTokens - 1;
 						localVariantTokens = localVariantTokens - 1;
@@ -436,8 +393,7 @@ public class GSMP2Procedure {
 						localCurrentDirection = workingDirection;
 						letsGoGambling = 1;
 						selectedRoom = "null";
-						returnedPickRoomJSON = GSMPpickRoomProcedure.execute(world, JimsmineshaftModVariables.MapVariables.get(world).workingRoomIsBit, localVariantTokens, localFilledSpaces.get("x").getAsDouble(),
-								localFilledSpaces.get("y").getAsDouble(), localFilledSpaces.get("z").getAsDouble(), workingDirection + "", localCurrentVariant, lastGeneratedStructure);
+						returnedPickRoomJSON = GSMPpickRoomProcedure.execute(world, JimsmineshaftModVariables.MapVariables.get(world).workingRoomIsBit, localVariantTokens, localCurrentVariant, lastGeneratedStructure);
 						workingRoomPick = returnedPickRoomJSON.get("workingRoomPick").getAsString();
 						localCurrentVariant = returnedPickRoomJSON.get("currentVariant").getAsString();
 						if ((workingRoomPick).equals("null")) {
@@ -448,84 +404,21 @@ public class GSMP2Procedure {
 								break;
 							}
 							if (currentSavedBranchCount == 1) {
-								GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave0.get("variantTokensPass").getAsDouble(), branchSave0.get("xPass").getAsDouble(), branchSave0.get("yPass").getAsDouble(),
-										branchSave0.get("zPass").getAsDouble(), branchSave0.get("lastGeneratedStructurePass").getAsString(), branchSave0.get("currentDirectionPass").getAsString(), branchSave0.get("currentVariantPass").getAsString(),
-										branchSave0.get("workingDirectionPass").getAsString());
 								break;
 							}
 							if (currentSavedBranchCount == 2) {
-								GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave0.get("variantTokensPass").getAsDouble(), branchSave0.get("xPass").getAsDouble(), branchSave0.get("yPass").getAsDouble(),
-										branchSave0.get("zPass").getAsDouble(), branchSave0.get("lastGeneratedStructurePass").getAsString(), branchSave0.get("currentDirectionPass").getAsString(), branchSave0.get("currentVariantPass").getAsString(),
-										branchSave0.get("workingDirectionPass").getAsString());
-								GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave1.get("variantTokensPass").getAsDouble(), branchSave1.get("xPass").getAsDouble(), branchSave1.get("yPass").getAsDouble(),
-										branchSave1.get("zPass").getAsDouble(), branchSave1.get("lastGeneratedStructurePass").getAsString(), branchSave1.get("currentDirectionPass").getAsString(), branchSave1.get("currentVariantPass").getAsString(),
-										branchSave1.get("workingDirectionPass").getAsString());
 								break;
 							}
 							if (currentSavedBranchCount == 3) {
-								GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave0.get("variantTokensPass").getAsDouble(), branchSave0.get("xPass").getAsDouble(), branchSave0.get("yPass").getAsDouble(),
-										branchSave0.get("zPass").getAsDouble(), branchSave0.get("lastGeneratedStructurePass").getAsString(), branchSave0.get("currentDirectionPass").getAsString(), branchSave0.get("currentVariantPass").getAsString(),
-										branchSave0.get("workingDirectionPass").getAsString());
-								GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave1.get("variantTokensPass").getAsDouble(), branchSave1.get("xPass").getAsDouble(), branchSave1.get("yPass").getAsDouble(),
-										branchSave1.get("zPass").getAsDouble(), branchSave1.get("lastGeneratedStructurePass").getAsString(), branchSave1.get("currentDirectionPass").getAsString(), branchSave1.get("currentVariantPass").getAsString(),
-										branchSave1.get("workingDirectionPass").getAsString());
-								GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave2.get("variantTokensPass").getAsDouble(), branchSave2.get("xPass").getAsDouble(), branchSave2.get("yPass").getAsDouble(),
-										branchSave2.get("zPass").getAsDouble(), branchSave2.get("lastGeneratedStructurePass").getAsString(), branchSave2.get("currentDirectionPass").getAsString(), branchSave2.get("currentVariantPass").getAsString(),
-										branchSave2.get("workingDirectionPass").getAsString());
 								break;
 							}
 							if (currentSavedBranchCount == 4) {
-								GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave0.get("variantTokensPass").getAsDouble(), branchSave0.get("xPass").getAsDouble(), branchSave0.get("yPass").getAsDouble(),
-										branchSave0.get("zPass").getAsDouble(), branchSave0.get("lastGeneratedStructurePass").getAsString(), branchSave0.get("currentDirectionPass").getAsString(), branchSave0.get("currentVariantPass").getAsString(),
-										branchSave0.get("workingDirectionPass").getAsString());
-								GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave1.get("variantTokensPass").getAsDouble(), branchSave1.get("xPass").getAsDouble(), branchSave1.get("yPass").getAsDouble(),
-										branchSave1.get("zPass").getAsDouble(), branchSave1.get("lastGeneratedStructurePass").getAsString(), branchSave1.get("currentDirectionPass").getAsString(), branchSave1.get("currentVariantPass").getAsString(),
-										branchSave1.get("workingDirectionPass").getAsString());
-								GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave2.get("variantTokensPass").getAsDouble(), branchSave2.get("xPass").getAsDouble(), branchSave2.get("yPass").getAsDouble(),
-										branchSave2.get("zPass").getAsDouble(), branchSave2.get("lastGeneratedStructurePass").getAsString(), branchSave2.get("currentDirectionPass").getAsString(), branchSave2.get("currentVariantPass").getAsString(),
-										branchSave2.get("workingDirectionPass").getAsString());
-								GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave3.get("variantTokensPass").getAsDouble(), branchSave3.get("xPass").getAsDouble(), branchSave3.get("yPass").getAsDouble(),
-										branchSave3.get("zPass").getAsDouble(), branchSave3.get("lastGeneratedStructurePass").getAsString(), branchSave3.get("currentDirectionPass").getAsString(), branchSave3.get("currentVariantPass").getAsString(),
-										branchSave3.get("workingDirectionPass").getAsString());
 								break;
 							}
 							if (currentSavedBranchCount == 5) {
-								GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave0.get("variantTokensPass").getAsDouble(), branchSave0.get("xPass").getAsDouble(), branchSave0.get("yPass").getAsDouble(),
-										branchSave0.get("zPass").getAsDouble(), branchSave0.get("lastGeneratedStructurePass").getAsString(), branchSave0.get("currentDirectionPass").getAsString(), branchSave0.get("currentVariantPass").getAsString(),
-										branchSave0.get("workingDirectionPass").getAsString());
-								GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave1.get("variantTokensPass").getAsDouble(), branchSave1.get("xPass").getAsDouble(), branchSave1.get("yPass").getAsDouble(),
-										branchSave1.get("zPass").getAsDouble(), branchSave1.get("lastGeneratedStructurePass").getAsString(), branchSave1.get("currentDirectionPass").getAsString(), branchSave1.get("currentVariantPass").getAsString(),
-										branchSave1.get("workingDirectionPass").getAsString());
-								GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave2.get("variantTokensPass").getAsDouble(), branchSave2.get("xPass").getAsDouble(), branchSave2.get("yPass").getAsDouble(),
-										branchSave2.get("zPass").getAsDouble(), branchSave2.get("lastGeneratedStructurePass").getAsString(), branchSave2.get("currentDirectionPass").getAsString(), branchSave2.get("currentVariantPass").getAsString(),
-										branchSave2.get("workingDirectionPass").getAsString());
-								GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave3.get("variantTokensPass").getAsDouble(), branchSave3.get("xPass").getAsDouble(), branchSave3.get("yPass").getAsDouble(),
-										branchSave3.get("zPass").getAsDouble(), branchSave3.get("lastGeneratedStructurePass").getAsString(), branchSave3.get("currentDirectionPass").getAsString(), branchSave3.get("currentVariantPass").getAsString(),
-										branchSave3.get("workingDirectionPass").getAsString());
-								GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave4.get("variantTokensPass").getAsDouble(), branchSave4.get("xPass").getAsDouble(), branchSave4.get("yPass").getAsDouble(),
-										branchSave4.get("zPass").getAsDouble(), branchSave4.get("lastGeneratedStructurePass").getAsString(), branchSave4.get("currentDirectionPass").getAsString(), branchSave3.get("currentVariantPass").getAsString(),
-										branchSave4.get("workingDirectionPass").getAsString());
 								break;
 							}
 							if (currentSavedBranchCount == 6) {
-								GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave0.get("variantTokensPass").getAsDouble(), branchSave0.get("xPass").getAsDouble(), branchSave0.get("yPass").getAsDouble(),
-										branchSave0.get("zPass").getAsDouble(), branchSave0.get("lastGeneratedStructurePass").getAsString(), branchSave0.get("currentDirectionPass").getAsString(), branchSave0.get("currentVariantPass").getAsString(),
-										branchSave0.get("workingDirectionPass").getAsString());
-								GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave1.get("variantTokensPass").getAsDouble(), branchSave1.get("xPass").getAsDouble(), branchSave1.get("yPass").getAsDouble(),
-										branchSave1.get("zPass").getAsDouble(), branchSave1.get("lastGeneratedStructurePass").getAsString(), branchSave1.get("currentDirectionPass").getAsString(), branchSave1.get("currentVariantPass").getAsString(),
-										branchSave1.get("workingDirectionPass").getAsString());
-								GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave2.get("variantTokensPass").getAsDouble(), branchSave2.get("xPass").getAsDouble(), branchSave2.get("yPass").getAsDouble(),
-										branchSave2.get("zPass").getAsDouble(), branchSave2.get("lastGeneratedStructurePass").getAsString(), branchSave2.get("currentDirectionPass").getAsString(), branchSave2.get("currentVariantPass").getAsString(),
-										branchSave2.get("workingDirectionPass").getAsString());
-								GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave3.get("variantTokensPass").getAsDouble(), branchSave3.get("xPass").getAsDouble(), branchSave3.get("yPass").getAsDouble(),
-										branchSave3.get("zPass").getAsDouble(), branchSave3.get("lastGeneratedStructurePass").getAsString(), branchSave3.get("currentDirectionPass").getAsString(), branchSave3.get("currentVariantPass").getAsString(),
-										branchSave3.get("workingDirectionPass").getAsString());
-								GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave4.get("variantTokensPass").getAsDouble(), branchSave4.get("xPass").getAsDouble(), branchSave4.get("yPass").getAsDouble(),
-										branchSave4.get("zPass").getAsDouble(), branchSave4.get("lastGeneratedStructurePass").getAsString(), branchSave4.get("currentDirectionPass").getAsString(), branchSave3.get("currentVariantPass").getAsString(),
-										branchSave4.get("workingDirectionPass").getAsString());
-								GSMP2callableProcedure.execute(world, localLevelTokens, localTotalTokens, branchSave5.get("variantTokensPass").getAsDouble(), branchSave5.get("xPass").getAsDouble(), branchSave5.get("yPass").getAsDouble(),
-										branchSave5.get("zPass").getAsDouble(), branchSave5.get("lastGeneratedStructurePass").getAsString(), branchSave5.get("currentDirectionPass").getAsString(), branchSave5.get("currentVariantPass").getAsString(),
-										branchSave5.get("workingDirectionPass").getAsString());
 								break;
 							}
 						}

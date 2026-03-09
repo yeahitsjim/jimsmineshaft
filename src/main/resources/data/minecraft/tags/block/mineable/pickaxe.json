@@ -1,7 +1,9 @@
 {
   "replace": false,
   "values": [
+    "jimsmineshaft:rusted_iron_railing",
     "jimsmineshaft:raw_copper_22",
+    "jimsmineshaft:rusted_iron_stairs",
     "jimsmineshaft:raw_copper_23",
     "jimsmineshaft:raw_copper_drilled_north",
     "jimsmineshaft:raw_copper_24",
@@ -12,8 +14,14 @@
     "jimsmineshaft:raw_copper_drilled_east",
     "jimsmineshaft:raw_copper_29",
     "jimsmineshaft:iron_siding",
+    "jimsmineshaft:rusted_iron_catwalk_wall_support",
     "jimsmineshaft:raw_copper_drilled_east_dynamite",
+    "jimsmineshaft:rusted_iron_catwalk",
     "jimsmineshaft:raw_copper_210",
+    "jimsmineshaft:rusted_iron_cross_support",
+    "jimsmineshaft:rusted_iron_railing_corner",
+    "jimsmineshaft:rusted_iron_support_cool",
+    "jimsmineshaft:rusted_iron_catwalk_supported",
     "jimsmineshaft:raw_copper_drilled_north_dynamite",
     "jimsmineshaft:raw_copper_2"
   ]

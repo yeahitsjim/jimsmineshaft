@@ -50,8 +50,17 @@ public class JimsmineshaftModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> STALKER_IMPALE = REGISTRY.register("stalker_impale", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "stalker_impale")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> STALKER_GROWL_1 = REGISTRY.register("stalker_growl_1", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "stalker_growl_1")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> STALKER_EMERGE = REGISTRY.register("stalker.emerge", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "stalker.emerge")));
-	public static final DeferredHolder<SoundEvent, SoundEvent> STALKERCRACK = REGISTRY.register("stalkercrack", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "stalkercrack")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> STALKERSCREAM1 = REGISTRY.register("stalkerscream1", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "stalkerscream1")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> STALKERRIP1 = REGISTRY.register("stalkerrip1", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "stalkerrip1")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> STALKERRIP2 = REGISTRY.register("stalkerrip2", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "stalkerrip2")));
-	public static final DeferredHolder<SoundEvent, SoundEvent> STALKERSCREAM1 = REGISTRY.register("stalkerscream1", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "stalkerscream1")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> STALKERCRACK = REGISTRY.register("stalkercrack", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "stalkercrack")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> BUTTONCLICK = REGISTRY.register("buttonclick", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "buttonclick")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> FLINTLOCK_PISTOL_FIRE = REGISTRY.register("flintlock_pistol_fire",
+			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "flintlock_pistol_fire")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> BIGDOOR = REGISTRY.register("bigdoor", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "bigdoor")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> THUD = REGISTRY.register("thud", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "thud")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> STALKER_STAB = REGISTRY.register("stalker_stab", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "stalker_stab")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> BATTERYCHARGE = REGISTRY.register("batterycharge", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "batterycharge")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> BATTERYLEVELBEEP = REGISTRY.register("batterylevelbeep", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "batterylevelbeep")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> LIGHTON = REGISTRY.register("lighton", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "lighton")));
 }

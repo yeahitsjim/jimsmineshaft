@@ -96,6 +96,6 @@ public class Modelstalker extends EntityModel<LivingEntityRenderState> {
 		float netHeadYaw = state.yRot;
 		float headPitch = state.xRot;
 
+		this.body.yRot = netHeadYaw / (180F / (float) Math.PI);
 	}
-
 }

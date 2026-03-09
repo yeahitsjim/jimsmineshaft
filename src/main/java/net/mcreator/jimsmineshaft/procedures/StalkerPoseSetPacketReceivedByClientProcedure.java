@@ -1,19 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.AABB;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.jimsmineshaft.entity.StalkerEntity;
-
-import java.util.regex.Pattern;
-import java.util.Comparator;
+import net.neoforged.bus.api.Event;
 
 public class StalkerPoseSetPacketReceivedByClientProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, String inboundString) {
@@ -41,13 +28,6 @@ public class StalkerPoseSetPacketReceivedByClientProcedure {
 					if (pose_a == 1) {
 						if (stalker instanceof StalkerEntity) {
 							stalker.getPersistentData().putString("ClientPose", stringiterator);
-							if (world instanceof Level _level) {
-								if (!_level.isClientSide()) {
-									_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("entity.bee.hurt")), SoundSource.BLOCKS, 1, 1);
-								} else {
-									_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("entity.bee.hurt")), SoundSource.BLOCKS, 1, 1, false);
-								}
-							}
 						}
 					}
 					pose_a = pose_a + 1;
@@ -70,24 +50,10 @@ public class StalkerPoseSetPacketReceivedByClientProcedure {
 					if (pose_a == 1) {
 						if (stalker instanceof StalkerEntity) {
 							stalker.getPersistentData().putString("ClientPose", stringiterator);
-							if (world instanceof Level _level) {
-								if (!_level.isClientSide()) {
-									_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("entity.bee.hurt")), SoundSource.BLOCKS, 1, 1);
-								} else {
-									_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("entity.bee.hurt")), SoundSource.BLOCKS, 1, 1, false);
-								}
-							}
 						}
 					}
 					pose_a = pose_a + 1;
 				}
-			}
-		}
-		if (world instanceof Level _level) {
-			if (!_level.isClientSide()) {
-				_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("block.netherite_block.break")), SoundSource.BLOCKS, 1, 1);
-			} else {
-				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("block.netherite_block.break")), SoundSource.BLOCKS, 1, 1, false);
 			}
 		}
 	}

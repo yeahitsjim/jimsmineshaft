@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jimsmineshaft:block/rusted_iron_railing_corner"
+    },
+    "facing=east": {
+      "model": "jimsmineshaft:block/rusted_iron_railing_corner",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jimsmineshaft:block/rusted_iron_railing_corner",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jimsmineshaft:block/rusted_iron_railing_corner",
+      "y": 270
+    }
+  }
+}

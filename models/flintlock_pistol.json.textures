@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "flintlock_pistol_texture"
+      },
+      "name": "default"
+    }
+  }
+}

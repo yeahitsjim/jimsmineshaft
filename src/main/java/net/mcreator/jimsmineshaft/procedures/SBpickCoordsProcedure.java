@@ -1,11 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.core.Direction;
-
-import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
+import net.neoforged.bus.api.Event;
 
 public class SBpickCoordsProcedure {
 	public static void execute(LevelAccessor world, double SB_x, double SB_y, double SB_z, String SB_currentDirection, String SB_lastGen, String SB_wDirection) {
@@ -964,12 +959,6 @@ public class SBpickCoordsProcedure {
 				pc_filledSpaces.addProperty("z", (pc_currentz + 1));
 			}
 		}
-		JimsmineshaftModVariables.MapVariables.get(world).SB_x = pc_filledSpaces.get("x").getAsDouble();
-		JimsmineshaftModVariables.MapVariables.get(world).syncData(world);
-		JimsmineshaftModVariables.MapVariables.get(world).SB_y = pc_filledSpaces.get("y").getAsDouble();
-		JimsmineshaftModVariables.MapVariables.get(world).syncData(world);
-		JimsmineshaftModVariables.MapVariables.get(world).SB_z = pc_filledSpaces.get("z").getAsDouble();
-		JimsmineshaftModVariables.MapVariables.get(world).syncData(world);
 		JimsmineshaftModVariables.filledSpaces.addProperty("x", pc_filledSpaces.get("x").getAsDouble());
 		JimsmineshaftModVariables.filledSpaces.addProperty("y", pc_filledSpaces.get("y").getAsDouble());
 		JimsmineshaftModVariables.filledSpaces.addProperty("z", pc_filledSpaces.get("z").getAsDouble());

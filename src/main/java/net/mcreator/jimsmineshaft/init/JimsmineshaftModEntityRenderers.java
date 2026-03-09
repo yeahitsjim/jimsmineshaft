@@ -8,15 +8,20 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
+
 import net.mcreator.jimsmineshaft.client.renderer.ThecartRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.StalkerRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.StalkerInsidesRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.StalkerInsides2Renderer;
 import net.mcreator.jimsmineshaft.client.renderer.SkinStealerEntityRenderer;
+import net.mcreator.jimsmineshaft.client.renderer.RightgateRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.PressureDrillRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.PressureDrillFoldedRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.PlayerStalkierRenderer;
+import net.mcreator.jimsmineshaft.client.renderer.LeftgateRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.HoleEntityRenderer;
+import net.mcreator.jimsmineshaft.client.renderer.FlashlightentityRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.ElevatorSeat8Renderer;
 import net.mcreator.jimsmineshaft.client.renderer.ElevatorSeat7Renderer;
 import net.mcreator.jimsmineshaft.client.renderer.ElevatorSeat6Renderer;
@@ -32,6 +37,10 @@ import net.mcreator.jimsmineshaft.client.renderer.CopperDrilledEastRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.Cart4Renderer;
 import net.mcreator.jimsmineshaft.client.renderer.Cart3Renderer;
 import net.mcreator.jimsmineshaft.client.renderer.Cart2Renderer;
+import net.mcreator.jimsmineshaft.client.renderer.BigIronGateRightRenderer;
+import net.mcreator.jimsmineshaft.client.renderer.BigIronGateLeftRenderer;
+import net.mcreator.jimsmineshaft.client.renderer.BigIronGateFrameRenderer;
+import net.mcreator.jimsmineshaft.client.renderer.BigGateRenderer;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class JimsmineshaftModEntityRenderers {
@@ -57,9 +66,17 @@ public class JimsmineshaftModEntityRenderers {
 		event.registerEntityRenderer(JimsmineshaftModEntities.ELEVATOR_SEAT_2.get(), ElevatorSeat2Renderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.COPPER_DRILLED_NORTH.get(), CopperDrilledNorthRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.STALKER.get(), StalkerRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.SKIN_STEALER_ENTITY.get(), SkinStealerEntityRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.PLAYER_STALKIER.get(), PlayerStalkierRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.STALKER_INSIDES.get(), StalkerInsidesRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.PLAYER_STALKIER.get(), PlayerStalkierRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.STALKER_INSIDES_2.get(), StalkerInsides2Renderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.SKIN_STEALER_ENTITY.get(), SkinStealerEntityRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.BIG_IRON_GATE_LEFT.get(), BigIronGateLeftRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.BIG_IRON_GATE_RIGHT.get(), BigIronGateRightRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.BIG_GATE.get(), BigGateRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.BULLET_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.RIGHTGATE.get(), RightgateRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.BIG_IRON_GATE_FRAME.get(), BigIronGateFrameRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.FLASHLIGHTENTITY.get(), FlashlightentityRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.LEFTGATE.get(), LeftgateRenderer::new);
 	}
 }

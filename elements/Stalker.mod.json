@@ -2,7 +2,7 @@
   "_fv": 79,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Stalker (HEAVY WIP dont judge)",
+    "mobName": "Stalker",
     "mobLabel": "",
     "mobModelName": "Modelstalker",
     "mobModelTexture": "nothing.png",
@@ -116,6 +116,17 @@
         },
         "walking": false,
         "amplitude": 1.0
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:stalkerAnimation.impale_fail"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "StalkerPlaybackConditionImpaleFail"
+        },
+        "walking": false,
+        "amplitude": 1.0
       }
     ],
     "modelWidth": 0.7999999999999999,
@@ -133,7 +144,7 @@
     },
     "creativeTabs": [
       {
-        "value": "MISC"
+        "value": "CUSTOM:JimsMineshaft"
       }
     ],
     "isBoss": false,

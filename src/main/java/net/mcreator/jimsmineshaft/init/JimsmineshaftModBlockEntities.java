@@ -44,6 +44,7 @@ import net.mcreator.jimsmineshaft.block.entity.NewStoneBlockEntity;
 import net.mcreator.jimsmineshaft.block.entity.NewGravelBlockEntity;
 import net.mcreator.jimsmineshaft.block.entity.MysteryRailBlockEntity;
 import net.mcreator.jimsmineshaft.block.entity.MysteryItemBlockEntity;
+import net.mcreator.jimsmineshaft.block.entity.LightblockBlockEntity;
 import net.mcreator.jimsmineshaft.block.entity.ElevatorFrontBlockEntity;
 import net.mcreator.jimsmineshaft.block.entity.CopperFragment5BlockEntity;
 import net.mcreator.jimsmineshaft.block.entity.CopperFragment4BlockEntity;
@@ -106,6 +107,7 @@ public class JimsmineshaftModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<NewSuspiciousGravelBlockEntity>> NEW_SUSPICIOUS_GRAVEL = register("new_suspicious_gravel", JimsmineshaftModBlocks.NEW_SUSPICIOUS_GRAVEL, NewSuspiciousGravelBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<NewStoneBlockEntity>> NEW_STONE = register("new_stone", JimsmineshaftModBlocks.NEW_STONE, NewStoneBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<NewGravelBlockEntity>> NEW_GRAVEL = register("new_gravel", JimsmineshaftModBlocks.NEW_GRAVEL, NewGravelBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<LightblockBlockEntity>> LIGHTBLOCK = register("lightblock", JimsmineshaftModBlocks.LIGHTBLOCK, LightblockBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -154,5 +156,6 @@ public class JimsmineshaftModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, NEW_SUSPICIOUS_GRAVEL.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, NEW_STONE.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, NEW_GRAVEL.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, LIGHTBLOCK.get(), SidedInvWrapper::new);
 	}
 }

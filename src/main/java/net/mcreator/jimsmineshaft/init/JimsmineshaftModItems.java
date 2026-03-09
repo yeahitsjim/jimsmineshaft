@@ -6,26 +6,38 @@ package net.mcreator.jimsmineshaft.init;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.client.event.RegisterRangeSelectItemModelPropertyEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.jimsmineshaft.item.WoemineshaftfullmemefortotemItem;
 import net.mcreator.jimsmineshaft.item.WoeMineshaftBeUponTheItem;
 import net.mcreator.jimsmineshaft.item.WoeMineshaftBeUponThe2Item;
+import net.mcreator.jimsmineshaft.item.TommyGunItem;
 import net.mcreator.jimsmineshaft.item.TestSyncTheSecondItem;
 import net.mcreator.jimsmineshaft.item.StructureSpawnerItem;
 import net.mcreator.jimsmineshaft.item.SmallPickaxeItem;
 import net.mcreator.jimsmineshaft.item.RustyPickaxeItem;
 import net.mcreator.jimsmineshaft.item.OldKnifeItem;
+import net.mcreator.jimsmineshaft.item.MiningGoonSetItem;
 import net.mcreator.jimsmineshaft.item.Level1DimensionItem;
 import net.mcreator.jimsmineshaft.item.JimsminedimensionItem;
+import net.mcreator.jimsmineshaft.item.IronBulletItem;
+import net.mcreator.jimsmineshaft.item.FlintlockPistolItem;
+import net.mcreator.jimsmineshaft.item.FlashlightItem;
 import net.mcreator.jimsmineshaft.item.FireAxeItem;
 import net.mcreator.jimsmineshaft.item.DynamiteBoxItem;
 import net.mcreator.jimsmineshaft.item.DetonatorBlockPushedItem;
 import net.mcreator.jimsmineshaft.item.DetonatorBlockItemItem;
+import net.mcreator.jimsmineshaft.item.BatteryItem;
 import net.mcreator.jimsmineshaft.JimsmineshaftMod;
 
 import java.util.function.Function;
@@ -140,11 +152,36 @@ public class JimsmineshaftModItems {
 	public static final DeferredItem<Item> CANDLE_HOLDER = block(JimsmineshaftModBlocks.CANDLE_HOLDER);
 	public static final DeferredItem<Item> STALKER_SPAWN_EGG = register("stalker_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.STALKER.get(), properties));
 	public static final DeferredItem<Item> FIRE_AXE = register("fire_axe", FireAxeItem::new);
-	public static final DeferredItem<Item> LEVEL_1_DIMENSION = register("level_1_dimension", Level1DimensionItem::new);
-	public static final DeferredItem<Item> SKIN_STEALER_ENTITY_SPAWN_EGG = register("skin_stealer_entity_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.SKIN_STEALER_ENTITY.get(), properties));
-	public static final DeferredItem<Item> PLAYER_STALKIER_SPAWN_EGG = register("player_stalkier_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.PLAYER_STALKIER.get(), properties));
 	public static final DeferredItem<Item> STALKER_INSIDES_SPAWN_EGG = register("stalker_insides_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.STALKER_INSIDES.get(), properties));
+	public static final DeferredItem<Item> LEVEL_1_DIMENSION = register("level_1_dimension", Level1DimensionItem::new);
+	public static final DeferredItem<Item> PLAYER_STALKIER_SPAWN_EGG = register("player_stalkier_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.PLAYER_STALKIER.get(), properties));
 	public static final DeferredItem<Item> STALKER_INSIDES_2_SPAWN_EGG = register("stalker_insides_2_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.STALKER_INSIDES_2.get(), properties));
+	public static final DeferredItem<Item> SKIN_STEALER_ENTITY_SPAWN_EGG = register("skin_stealer_entity_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.SKIN_STEALER_ENTITY.get(), properties));
+	public static final DeferredItem<Item> RUSTED_IRON_CROSS_SUPPORT = block(JimsmineshaftModBlocks.RUSTED_IRON_CROSS_SUPPORT);
+	public static final DeferredItem<Item> FLASHLIGHT = register("flashlight", FlashlightItem::new);
+	public static final DeferredItem<Item> BIG_IRON_GATE_LEFT_SPAWN_EGG = register("big_iron_gate_left_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.BIG_IRON_GATE_LEFT.get(), properties));
+	public static final DeferredItem<Item> RUSTED_IRON_RAILING = block(JimsmineshaftModBlocks.RUSTED_IRON_RAILING);
+	public static final DeferredItem<Item> BATTERY = register("battery", BatteryItem::new);
+	public static final DeferredItem<Item> RUSTED_IRON_CATWALK_WALL_SUPPORT = block(JimsmineshaftModBlocks.RUSTED_IRON_CATWALK_WALL_SUPPORT);
+	public static final DeferredItem<Item> BIG_IRON_GATE_RIGHT_SPAWN_EGG = register("big_iron_gate_right_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.BIG_IRON_GATE_RIGHT.get(), properties));
+	public static final DeferredItem<Item> LIGHTBLOCK = block(JimsmineshaftModBlocks.LIGHTBLOCK);
+	public static final DeferredItem<Item> BIG_GATE_SPAWN_EGG = register("big_gate_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.BIG_GATE.get(), properties));
+	public static final DeferredItem<Item> RUSTED_IRON_CATWALK = block(JimsmineshaftModBlocks.RUSTED_IRON_CATWALK);
+	public static final DeferredItem<Item> RUSTED_IRON_CATWALK_SUPPORTED = block(JimsmineshaftModBlocks.RUSTED_IRON_CATWALK_SUPPORTED);
+	public static final DeferredItem<Item> TOMMY_GUN = register("tommy_gun", TommyGunItem::new);
+	public static final DeferredItem<Item> RUSTED_IRON_STAIRS = block(JimsmineshaftModBlocks.RUSTED_IRON_STAIRS);
+	public static final DeferredItem<Item> RUSTED_IRON_SUPPORT_COOL = block(JimsmineshaftModBlocks.RUSTED_IRON_SUPPORT_COOL);
+	public static final DeferredItem<Item> RIGHTGATE_SPAWN_EGG = register("rightgate_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.RIGHTGATE.get(), properties));
+	public static final DeferredItem<Item> BIG_IRON_GATE_FRAME_SPAWN_EGG = register("big_iron_gate_frame_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.BIG_IRON_GATE_FRAME.get(), properties));
+	public static final DeferredItem<Item> MINING_GOON_SET_HELMET = register("mining_goon_set_helmet", MiningGoonSetItem.Helmet::new);
+	public static final DeferredItem<Item> MINING_GOON_SET_CHESTPLATE = register("mining_goon_set_chestplate", MiningGoonSetItem.Chestplate::new);
+	public static final DeferredItem<Item> MINING_GOON_SET_LEGGINGS = register("mining_goon_set_leggings", MiningGoonSetItem.Leggings::new);
+	public static final DeferredItem<Item> MINING_GOON_SET_BOOTS = register("mining_goon_set_boots", MiningGoonSetItem.Boots::new);
+	public static final DeferredItem<Item> IRON_BULLET = register("iron_bullet", IronBulletItem::new);
+	public static final DeferredItem<Item> FLINTLOCK_PISTOL = register("flintlock_pistol", FlintlockPistolItem::new);
+	public static final DeferredItem<Item> RUSTED_IRON_RAILING_CORNER = block(JimsmineshaftModBlocks.RUSTED_IRON_RAILING_CORNER);
+	public static final DeferredItem<Item> FLASHLIGHTENTITY_SPAWN_EGG = register("flashlightentity_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.FLASHLIGHTENTITY.get(), properties));
+	public static final DeferredItem<Item> LEFTGATE_SPAWN_EGG = register("leftgate_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.LEFTGATE.get(), properties));
 
 	// Start of user code block custom items
 	// End of user code block custom items
@@ -158,5 +195,14 @@ public class JimsmineshaftModItems {
 
 	private static DeferredItem<Item> block(DeferredHolder<Block, Block> block, Item.Properties properties) {
 		return REGISTRY.registerItem(block.getId().getPath(), prop -> new BlockItem(block.get(), prop), properties);
+	}
+
+	@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+	public static class ItemsClientSideHandler {
+		@SubscribeEvent
+		@OnlyIn(Dist.CLIENT)
+		public static void registerItemModelProperties(RegisterRangeSelectItemModelPropertyEvent event) {
+			event.register(ResourceLocation.parse("jimsmineshaft:flashlight/flashlightonfull"), FlashlightItem.FlashlightonfullProperty.MAP_CODEC);
+		}
 	}
 }

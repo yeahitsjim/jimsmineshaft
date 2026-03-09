@@ -1,22 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.level.block.state.properties.Property;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.component.CustomData;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.Component;
-import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.core.component.DataComponents;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.jimsmineshaft.init.JimsmineshaftModItems;
-import net.mcreator.jimsmineshaft.init.JimsmineshaftModBlocks;
+import net.neoforged.bus.api.Event;
 
 public class RawCopperDrilledEastOnBlockRightClickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -31,7 +15,7 @@ public class RawCopperDrilledEastOnBlockRightClickedProcedure {
 		double coord3x = 0;
 		double coord2x = 0;
 		double coord3y = 0;
-		if (JimsmineshaftModItems.DYNAMITE_BOX.get() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) {
+		if (JimsmineshaftModItems.DELETED_MOD_ELEMENT.get() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("coordCount") >= 0) {
 				{
 					final String _tagName = "coordCount";

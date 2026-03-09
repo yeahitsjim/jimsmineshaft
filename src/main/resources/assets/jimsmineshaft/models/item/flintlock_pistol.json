@@ -1,0 +1,7 @@
+{
+  "parent": "jimsmineshaft:custom/flintlock_pistol",
+  "textures": {
+    "0": "jimsmineshaft:block/flintlock_pistol_texture",
+    "particle": "jimsmineshaft:item/iron_bullet"
+  }
+}
