@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/rusted_iron_railing_corner",
+  "textures": {
+    "all": "jimsmineshaft:block/rusted_iron_railing",
+    "particle": "jimsmineshaft:block/rusted_iron_railing",
+    "1": "jimsmineshaft:block/rusted_iron_railing"
+  },
+  "render_type": "solid"
+}

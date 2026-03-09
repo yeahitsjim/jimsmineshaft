@@ -1,6 +1,14 @@
 {
   "replace": false,
   "values": [
-    "jimsmineshaft:iron_siding"
+    "jimsmineshaft:rusted_iron_railing",
+    "jimsmineshaft:rusted_iron_stairs",
+    "jimsmineshaft:rusted_iron_catwalk",
+    "jimsmineshaft:rusted_iron_cross_support",
+    "jimsmineshaft:rusted_iron_support_cool",
+    "jimsmineshaft:rusted_iron_railing_corner",
+    "jimsmineshaft:iron_siding",
+    "jimsmineshaft:rusted_iron_catwalk_wall_support",
+    "jimsmineshaft:rusted_iron_catwalk_supported"
   ]
 }

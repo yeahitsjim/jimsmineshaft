@@ -43,5 +43,13 @@
   "item.jimsmineshaft.rusted_iron_support": "Rusted Iron Support",
   "item.jimsmineshaft.canary_cage": "Canary Cage",
   "item.jimsmineshaft.candle_holder": "Candle Holder",
-  "item.jimsmineshaft.canteen": "Canteen"
+  "item.jimsmineshaft.canteen": "Canteen",
+  "item.jimsmineshaft.rusted_iron_stairs": "Rusted Iron Stairs",
+  "item.jimsmineshaft.rusted_iron_catwalk": "Rusted Iron Catwalk",
+  "item.jimsmineshaft.rusted_iron_railing": "Rusted Iron Railing",
+  "item.jimsmineshaft.rusted_iron_railing_corner": "Rusted Iron Railing Corner",
+  "item.jimsmineshaft.rusted_iron_support_cool": "Rusted Iron Support",
+  "item.jimsmineshaft.rusted_iron_cross_support": "Rusted Iron Cross Support",
+  "item.jimsmineshaft.rusted_iron_catwalk_supported": "Rusted Iron Catwalk Supported",
+  "item.jimsmineshaft.rusted_iron_catwalk_wall_support": "Rusted Iron Catwalk Wall Support"
 }

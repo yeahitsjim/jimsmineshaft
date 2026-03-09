@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "rusted_iron_catwalk_wall_support"
+      },
+      "name": "default"
+    }
+  }
+}

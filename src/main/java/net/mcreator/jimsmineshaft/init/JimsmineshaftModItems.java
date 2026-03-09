@@ -63,6 +63,14 @@ public class JimsmineshaftModItems {
 	public static final DeferredItem<Item> CANARY_CAGE = block(JimsmineshaftModBlocks.CANARY_CAGE);
 	public static final DeferredItem<Item> CANDLE_HOLDER = block(JimsmineshaftModBlocks.CANDLE_HOLDER);
 	public static final DeferredItem<Item> CANTEEN = block(JimsmineshaftModBlocks.CANTEEN);
+	public static final DeferredItem<Item> RUSTED_IRON_STAIRS = block(JimsmineshaftModBlocks.RUSTED_IRON_STAIRS);
+	public static final DeferredItem<Item> RUSTED_IRON_CATWALK = block(JimsmineshaftModBlocks.RUSTED_IRON_CATWALK);
+	public static final DeferredItem<Item> RUSTED_IRON_RAILING = block(JimsmineshaftModBlocks.RUSTED_IRON_RAILING);
+	public static final DeferredItem<Item> RUSTED_IRON_RAILING_CORNER = block(JimsmineshaftModBlocks.RUSTED_IRON_RAILING_CORNER);
+	public static final DeferredItem<Item> RUSTED_IRON_SUPPORT_COOL = block(JimsmineshaftModBlocks.RUSTED_IRON_SUPPORT_COOL);
+	public static final DeferredItem<Item> RUSTED_IRON_CROSS_SUPPORT = block(JimsmineshaftModBlocks.RUSTED_IRON_CROSS_SUPPORT);
+	public static final DeferredItem<Item> RUSTED_IRON_CATWALK_SUPPORTED = block(JimsmineshaftModBlocks.RUSTED_IRON_CATWALK_SUPPORTED);
+	public static final DeferredItem<Item> RUSTED_IRON_CATWALK_WALL_SUPPORT = block(JimsmineshaftModBlocks.RUSTED_IRON_CATWALK_WALL_SUPPORT);
 
 	// Start of user code block custom items
 	// End of user code block custom items

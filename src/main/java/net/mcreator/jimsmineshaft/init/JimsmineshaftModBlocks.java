@@ -30,7 +30,15 @@ import net.mcreator.jimsmineshaft.block.StrippedRottenSupportBeamBlock;
 import net.mcreator.jimsmineshaft.block.SteelShelfBlock;
 import net.mcreator.jimsmineshaft.block.StackableSteelShelfBlock;
 import net.mcreator.jimsmineshaft.block.RustedMinecartBlock;
+import net.mcreator.jimsmineshaft.block.RustedIronSupportCoolBlock;
 import net.mcreator.jimsmineshaft.block.RustedIronSupportBlock;
+import net.mcreator.jimsmineshaft.block.RustedIronStairsBlock;
+import net.mcreator.jimsmineshaft.block.RustedIronRailingCornerBlock;
+import net.mcreator.jimsmineshaft.block.RustedIronRailingBlock;
+import net.mcreator.jimsmineshaft.block.RustedIronCrossSupportBlock;
+import net.mcreator.jimsmineshaft.block.RustedIronCatwalkWallSupportBlock;
+import net.mcreator.jimsmineshaft.block.RustedIronCatwalkSupportedBlock;
+import net.mcreator.jimsmineshaft.block.RustedIronCatwalkBlock;
 import net.mcreator.jimsmineshaft.block.RottenSupportBeamBlock;
 import net.mcreator.jimsmineshaft.block.RottenPlanksBlock;
 import net.mcreator.jimsmineshaft.block.RottenPlankStairsBlock;
@@ -93,6 +101,14 @@ public class JimsmineshaftModBlocks {
 	public static final DeferredBlock<Block> CANARY_CAGE = register("canary_cage", CanaryCageBlock::new);
 	public static final DeferredBlock<Block> CANDLE_HOLDER = register("candle_holder", CandleHolderBlock::new);
 	public static final DeferredBlock<Block> CANTEEN = register("canteen", CanteenBlock::new);
+	public static final DeferredBlock<Block> RUSTED_IRON_STAIRS = register("rusted_iron_stairs", RustedIronStairsBlock::new);
+	public static final DeferredBlock<Block> RUSTED_IRON_CATWALK = register("rusted_iron_catwalk", RustedIronCatwalkBlock::new);
+	public static final DeferredBlock<Block> RUSTED_IRON_RAILING = register("rusted_iron_railing", RustedIronRailingBlock::new);
+	public static final DeferredBlock<Block> RUSTED_IRON_RAILING_CORNER = register("rusted_iron_railing_corner", RustedIronRailingCornerBlock::new);
+	public static final DeferredBlock<Block> RUSTED_IRON_SUPPORT_COOL = register("rusted_iron_support_cool", RustedIronSupportCoolBlock::new);
+	public static final DeferredBlock<Block> RUSTED_IRON_CROSS_SUPPORT = register("rusted_iron_cross_support", RustedIronCrossSupportBlock::new);
+	public static final DeferredBlock<Block> RUSTED_IRON_CATWALK_SUPPORTED = register("rusted_iron_catwalk_supported", RustedIronCatwalkSupportedBlock::new);
+	public static final DeferredBlock<Block> RUSTED_IRON_CATWALK_WALL_SUPPORT = register("rusted_iron_catwalk_wall_support", RustedIronCatwalkWallSupportBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
