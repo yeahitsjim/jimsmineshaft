@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "jimsmineshaft:blocks/pressure_drill_folded_model",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "jimsmineshaft:pressure_drill_folded_model"
+        }
+      ]
+    }
+  ]
+}

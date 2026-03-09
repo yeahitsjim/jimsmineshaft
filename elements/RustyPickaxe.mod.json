@@ -1,0 +1,36 @@
+{
+  "_fv": 79,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Pickaxe",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "rusty_pickaxe",
+    "customModelName": "rusty_pickaxe:default",
+    "blockingModelName": "Normal blocking",
+    "guiTexture": "",
+    "name": "Rusty Pickaxe",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:JimsMineshaft"
+      }
+    ],
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
+    "usageCount": 100,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "blockDropsTier": "IRON",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

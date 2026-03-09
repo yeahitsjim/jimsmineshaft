@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/pressuredrillholdable4",
+  "textures": {
+    "all": "jimsmineshaft:block/texturepressuredrillholdable",
+    "particle": "jimsmineshaft:block/texturepressuredrillholdable",
+    "0": "jimsmineshaft:block/texturepressuredrillholdable4"
+  },
+  "render_type": "solid"
+}

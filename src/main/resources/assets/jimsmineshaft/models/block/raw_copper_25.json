@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/rawcopperbetter5",
+  "textures": {
+    "all": "jimsmineshaft:block/copper4",
+    "particle": "minecraft:block/copper_ore",
+    "1": "jimsmineshaft:block/copper5"
+  },
+  "render_type": "solid"
+}

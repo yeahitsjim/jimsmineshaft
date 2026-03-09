@@ -1,0 +1,7 @@
+{
+  "parent": "jimsmineshaft:custom/battery",
+  "textures": {
+    "0": "jimsmineshaft:block/battery",
+    "particle": "minecraft:item/candle"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "jimsmineshaft:custom/knife",
+  "textures": {
+    "0": "jimsmineshaft:block/knife",
+    "particle": "jimsmineshaft:item/knife"
+  }
+}

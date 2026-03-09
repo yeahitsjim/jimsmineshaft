@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "tommy_gun"
+      },
+      "name": "default"
+    }
+  }
+}

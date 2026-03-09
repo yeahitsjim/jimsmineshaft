@@ -1,0 +1,10 @@
+{
+  "parent": "jimsmineshaft:custom/rawcopperdrilledeastdynamite",
+  "textures": {
+    "all": "jimsmineshaft:block/texturerawcopperdrilledeastbroken",
+    "particle": "minecraft:block/copper_ore",
+    "1": "jimsmineshaft:block/texturerawcopperdrilledeastbroken",
+    "2": "jimsmineshaft:block/textureuh"
+  },
+  "render_type": "solid"
+}

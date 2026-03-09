@@ -1,0 +1,58 @@
+{
+  "mappings": {
+    "flashlighton40": {
+      "map": {
+        "0": "flashlighton40"
+      },
+      "name": "flashlighton40"
+    },
+    "flashlighton10off": {
+      "map": {
+        "0": "flashlighton10off"
+      },
+      "name": "flashlighton10off"
+    },
+    "default": {
+      "map": {
+        "0": "flashlightoff"
+      },
+      "name": "default"
+    },
+    "flashlighton20": {
+      "map": {
+        "0": "flashlighton20"
+      },
+      "name": "flashlighton20"
+    },
+    "flashlighton10": {
+      "map": {
+        "0": "flashlighton10on"
+      },
+      "name": "flashlighton10"
+    },
+    "flashlightdead": {
+      "map": {
+        "0": "flashlightdead"
+      },
+      "name": "flashlightdead"
+    },
+    "flashlightonfull": {
+      "map": {
+        "0": "flashlightonfull"
+      },
+      "name": "flashlightonfull"
+    },
+    "flashlighton80": {
+      "map": {
+        "0": "flashlighton80"
+      },
+      "name": "flashlighton80"
+    },
+    "flashlighton60": {
+      "map": {
+        "0": "flashlighton60"
+      },
+      "name": "flashlighton60"
+    }
+  }
+}
