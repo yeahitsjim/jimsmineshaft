@@ -21,9 +21,13 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.jimsmineshaft.entity.ThecartEntity;
+import net.mcreator.jimsmineshaft.entity.StalkerInsidesEntity;
+import net.mcreator.jimsmineshaft.entity.StalkerInsides2Entity;
 import net.mcreator.jimsmineshaft.entity.StalkerEntity;
+import net.mcreator.jimsmineshaft.entity.SkinStealerEntityEntity;
 import net.mcreator.jimsmineshaft.entity.PressureDrillFoldedEntity;
 import net.mcreator.jimsmineshaft.entity.PressureDrillEntity;
+import net.mcreator.jimsmineshaft.entity.PlayerStalkierEntity;
 import net.mcreator.jimsmineshaft.entity.HoleEntityEntity;
 import net.mcreator.jimsmineshaft.entity.ElevatorSeat8Entity;
 import net.mcreator.jimsmineshaft.entity.ElevatorSeat7Entity;
@@ -123,6 +127,22 @@ public class JimsmineshaftModEntities {
 			EntityType.Builder.<StalkerEntity>of(StalkerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.8f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<SkinStealerEntityEntity>> SKIN_STEALER_ENTITY = register("skin_stealer_entity",
+			EntityType.Builder.<SkinStealerEntityEntity>of(SkinStealerEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<PlayerStalkierEntity>> PLAYER_STALKIER = register("player_stalkier",
+			EntityType.Builder.<PlayerStalkierEntity>of(PlayerStalkierEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<StalkerInsidesEntity>> STALKER_INSIDES = register("stalker_insides",
+			EntityType.Builder.<StalkerInsidesEntity>of(StalkerInsidesEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.02f, 0.03f));
+	public static final DeferredHolder<EntityType<?>, EntityType<StalkerInsides2Entity>> STALKER_INSIDES_2 = register("stalker_insides_2",
+			EntityType.Builder.<StalkerInsides2Entity>of(StalkerInsides2Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.1f, 0.1f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -160,6 +180,10 @@ public class JimsmineshaftModEntities {
 		ElevatorSeat2Entity.init(event);
 		CopperDrilledNorthEntity.init(event);
 		StalkerEntity.init(event);
+		SkinStealerEntityEntity.init(event);
+		PlayerStalkierEntity.init(event);
+		StalkerInsidesEntity.init(event);
+		StalkerInsides2Entity.init(event);
 	}
 
 	@SubscribeEvent
@@ -184,5 +208,9 @@ public class JimsmineshaftModEntities {
 		event.put(ELEVATOR_SEAT_2.get(), ElevatorSeat2Entity.createAttributes().build());
 		event.put(COPPER_DRILLED_NORTH.get(), CopperDrilledNorthEntity.createAttributes().build());
 		event.put(STALKER.get(), StalkerEntity.createAttributes().build());
+		event.put(SKIN_STEALER_ENTITY.get(), SkinStealerEntityEntity.createAttributes().build());
+		event.put(PLAYER_STALKIER.get(), PlayerStalkierEntity.createAttributes().build());
+		event.put(STALKER_INSIDES.get(), StalkerInsidesEntity.createAttributes().build());
+		event.put(STALKER_INSIDES_2.get(), StalkerInsides2Entity.createAttributes().build());
 	}
 }

@@ -10,8 +10,12 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.mcreator.jimsmineshaft.client.renderer.ThecartRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.StalkerRenderer;
+import net.mcreator.jimsmineshaft.client.renderer.StalkerInsidesRenderer;
+import net.mcreator.jimsmineshaft.client.renderer.StalkerInsides2Renderer;
+import net.mcreator.jimsmineshaft.client.renderer.SkinStealerEntityRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.PressureDrillRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.PressureDrillFoldedRenderer;
+import net.mcreator.jimsmineshaft.client.renderer.PlayerStalkierRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.HoleEntityRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.ElevatorSeat8Renderer;
 import net.mcreator.jimsmineshaft.client.renderer.ElevatorSeat7Renderer;
@@ -53,5 +57,9 @@ public class JimsmineshaftModEntityRenderers {
 		event.registerEntityRenderer(JimsmineshaftModEntities.ELEVATOR_SEAT_2.get(), ElevatorSeat2Renderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.COPPER_DRILLED_NORTH.get(), CopperDrilledNorthRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.STALKER.get(), StalkerRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.SKIN_STEALER_ENTITY.get(), SkinStealerEntityRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.PLAYER_STALKIER.get(), PlayerStalkierRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.STALKER_INSIDES.get(), StalkerInsidesRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.STALKER_INSIDES_2.get(), StalkerInsides2Renderer::new);
 	}
 }

@@ -60,6 +60,7 @@ import net.mcreator.jimsmineshaft.block.NewGravelBlock;
 import net.mcreator.jimsmineshaft.block.MysteryRailBlock;
 import net.mcreator.jimsmineshaft.block.MysteryItemBlock;
 import net.mcreator.jimsmineshaft.block.LongWoodenShelfBlock;
+import net.mcreator.jimsmineshaft.block.Level1DimensionPortalBlock;
 import net.mcreator.jimsmineshaft.block.JimsminedimensionPortalBlock;
 import net.mcreator.jimsmineshaft.block.IronSupportBlock;
 import net.mcreator.jimsmineshaft.block.IronSidingCornerBlock;
@@ -167,6 +168,7 @@ public class JimsmineshaftModBlocks {
 	public static final DeferredBlock<Block> NEW_GRAVEL = register("new_gravel", NewGravelBlock::new);
 	public static final DeferredBlock<Block> CANTEEN = register("canteen", CanteenBlock::new);
 	public static final DeferredBlock<Block> CANDLE_HOLDER = register("candle_holder", CandleHolderBlock::new);
+	public static final DeferredBlock<Block> LEVEL_1_DIMENSION_PORTAL = register("level_1_dimension_portal", Level1DimensionPortalBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

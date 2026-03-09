@@ -123,6 +123,9 @@ public class JimsmineshaftModTabs {
 				tabData.accept(JimsmineshaftModItems.OLD_KNIFE.get());
 				tabData.accept(JimsmineshaftModBlocks.CANDLE_HOLDER.get().asItem());
 				tabData.accept(JimsmineshaftModItems.FIRE_AXE.get());
+				tabData.accept(JimsmineshaftModItems.SKIN_STEALER_ENTITY_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModItems.STALKER_INSIDES_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModItems.STALKER_INSIDES_2_SPAWN_EGG.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
@@ -133,6 +136,7 @@ public class JimsmineshaftModTabs {
 			}
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(JimsmineshaftModItems.JIMSMINEDIMENSION.get());
+			tabData.accept(JimsmineshaftModItems.LEVEL_1_DIMENSION.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(JimsmineshaftModItems.THECART_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.PRESSURE_DRILL_SPAWN_EGG.get());
@@ -154,6 +158,7 @@ public class JimsmineshaftModTabs {
 			tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_2_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.COPPER_DRILLED_NORTH_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.STALKER_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.PLAYER_STALKIER_SPAWN_EGG.get());
 		}
 	}
 }

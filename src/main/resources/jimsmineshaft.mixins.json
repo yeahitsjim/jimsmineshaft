@@ -2,7 +2,9 @@
   "required": true,
   "package": "net.mcreator.jimsmineshaft.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [],
+  "mixins": [
+    "NoiseGeneratorSettingsMixin"
+  ],
   "client": [
     "PlayerAnimationMixin",
     "PlayerAnimationRendererMixin"

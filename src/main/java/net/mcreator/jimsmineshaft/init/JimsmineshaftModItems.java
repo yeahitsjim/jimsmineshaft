@@ -20,6 +20,7 @@ import net.mcreator.jimsmineshaft.item.StructureSpawnerItem;
 import net.mcreator.jimsmineshaft.item.SmallPickaxeItem;
 import net.mcreator.jimsmineshaft.item.RustyPickaxeItem;
 import net.mcreator.jimsmineshaft.item.OldKnifeItem;
+import net.mcreator.jimsmineshaft.item.Level1DimensionItem;
 import net.mcreator.jimsmineshaft.item.JimsminedimensionItem;
 import net.mcreator.jimsmineshaft.item.FireAxeItem;
 import net.mcreator.jimsmineshaft.item.DynamiteBoxItem;
@@ -139,6 +140,11 @@ public class JimsmineshaftModItems {
 	public static final DeferredItem<Item> CANDLE_HOLDER = block(JimsmineshaftModBlocks.CANDLE_HOLDER);
 	public static final DeferredItem<Item> STALKER_SPAWN_EGG = register("stalker_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.STALKER.get(), properties));
 	public static final DeferredItem<Item> FIRE_AXE = register("fire_axe", FireAxeItem::new);
+	public static final DeferredItem<Item> LEVEL_1_DIMENSION = register("level_1_dimension", Level1DimensionItem::new);
+	public static final DeferredItem<Item> SKIN_STEALER_ENTITY_SPAWN_EGG = register("skin_stealer_entity_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.SKIN_STEALER_ENTITY.get(), properties));
+	public static final DeferredItem<Item> PLAYER_STALKIER_SPAWN_EGG = register("player_stalkier_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.PLAYER_STALKIER.get(), properties));
+	public static final DeferredItem<Item> STALKER_INSIDES_SPAWN_EGG = register("stalker_insides_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.STALKER_INSIDES.get(), properties));
+	public static final DeferredItem<Item> STALKER_INSIDES_2_SPAWN_EGG = register("stalker_insides_2_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.STALKER_INSIDES_2.get(), properties));
 
 	// Start of user code block custom items
 	// End of user code block custom items

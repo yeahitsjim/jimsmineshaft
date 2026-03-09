@@ -202,5 +202,19 @@
   "item.jimsmineshaft.candle_holder": "Candle Holder",
   "entity.jimsmineshaft.stalker": "Stalker (HEAVY WIP dont judge)",
   "item.jimsmineshaft.stalker_spawn_egg": "Stalker (HEAVY WIP dont judge) Spawn Egg",
-  "item.jimsmineshaft.fire_axe": "Fire Axe"
+  "item.jimsmineshaft.fire_axe": "Fire Axe",
+  "biome.jimsmineshaft.level_1_test_biome": "Level 1  Biome",
+  "item.jimsmineshaft.level_1_dimension": "Level 1 Dimension Portal Igniter",
+  "item.jimsmineshaft.skin_stealer_entity_spawn_egg": "Skin Stealer Entity Spawn Egg",
+  "entity.jimsmineshaft.skin_stealer_entity": "Skin Stealer Entity",
+  "entity.jimsmineshaft.player_stalkier": "Player Stalker",
+  "item.jimsmineshaft.player_stalkier_spawn_egg": "Player Stalker Spawn Egg",
+  "entity.jimsmineshaft.stalker_insides": "Stalker Insides",
+  "item.jimsmineshaft.stalker_insides_spawn_egg": "Stalker Insides Spawn Egg",
+  "entity.jimsmineshaft.stalker_insides_2": "Stalker Insides 2",
+  "item.jimsmineshaft.stalker_insides_2_spawn_egg": "Stalker Insides 2 Spawn Egg",
+  "subtitles.stalkercrack": "Skin tears",
+  "subtitles.stalkerrip1": "Flesh rips",
+  "subtitles.stalkerrip2": "Flesh Rips",
+  "subtitles.stalkerscream1": "Stalker Screams"
 }

@@ -6447,6 +6447,431 @@
           "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerDisplayCondition2Procedure.java"
         ]
       }
+    },
+    {
+      "name": "Level1TestBiome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_1_test_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/worldgen/configured_feature/level_1_test_biome_tree.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/level_1_test_biome_tree.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/biome/level_1_test_biome.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Level1Dimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_1_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/world/dimension/Level1DimensionDimension.java",
+          "src/main/resources/assets/jimsmineshaft/models/block/level_1_dimension_portal_ew.json",
+          "src/main/resources/data/jimsmineshaft/dimension_type/level_1_dimension.json",
+          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level1DimensionTeleporter.java",
+          "src/main/resources/assets/jimsmineshaft/items/level_1_dimension.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/Level1DimensionItem.java",
+          "src/main/resources/data/jimsmineshaft/dimension/level_1_dimension.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/level_1_dimension_portal_ns.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/level_1_dimension_portal.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/level_1_dimension.json",
+          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level1DimensionPortalShape.java",
+          "src/main/java/net/mcreator/jimsmineshaft/block/Level1DimensionPortalBlock.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Level1DimensionPlayerEntersDimension",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_1_dimension_player_enters_dimension",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Level1DimensionPlayerEntersDimensionProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "SkinStealerEntityOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skin_stealer_entity_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealerEntityOnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "SkinStealerEntity",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skin_stealer_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/SkinStealerEntityRenderer.java",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/SkinStealerEntityEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/skin_stealer_entity_spawn_egg.json"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "SkinStealerEntityOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skin_stealer_entity_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealerEntityOnInitialEntitySpawnProcedure.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "PlayerStalkier",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_stalkier",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/player_stalkier_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/PlayerStalkierEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/PlayerStalkierRenderer.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "SkinStealerEntityEntityIsHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skin_stealer_entity_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealerEntityEntityIsHurtProcedure.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "PlayerStalkierOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_stalkier_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PlayerStalkierOnInitialEntitySpawnProcedure.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "SkinStealerEntityWalkPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skin_stealer_entity_walk_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealerEntityWalkPlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "SkinStealeranimationPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skin_stealeranimation_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealeranimationPlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "StalkerInsides",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_insides",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/entity/StalkerInsidesEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/stalker_insides_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/StalkerInsidesRenderer.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "StalkerInsidesOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_insides_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerInsidesOnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "InsidesAnimationPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "insides_animation_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/InsidesAnimationPlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "InsidesWalkAnimationPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "insides_walk_animation_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/InsidesWalkAnimationPlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "StalkerInsidesDisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_insides_display_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerInsidesDisplayConditionProcedure.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "StalkerInsides2",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_insides_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/stalker_insides_2_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/StalkerInsides2Renderer.java",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/StalkerInsides2Entity.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "StalkerInsides2OnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_insides_2_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerInsides2OnInitialEntitySpawnProcedure.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "BloodParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_particle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/particles/blood_particle.json",
+          "src/main/java/net/mcreator/jimsmineshaft/client/particle/BloodParticleParticle.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
     }
   ],
   "variable_elements": [
@@ -6911,6 +7336,38 @@
       ],
       "category": "hostile",
       "subtitle": ""
+    },
+    {
+      "name": "stalkercrack",
+      "files": [
+        "crack"
+      ],
+      "category": "neutral",
+      "subtitle": "Skin tears"
+    },
+    {
+      "name": "stalkerrip1",
+      "files": [
+        "rip1"
+      ],
+      "category": "neutral",
+      "subtitle": "Flesh rips"
+    },
+    {
+      "name": "stalkerrip2",
+      "files": [
+        "rip2"
+      ],
+      "category": "neutral",
+      "subtitle": "Flesh Rips"
+    },
+    {
+      "name": "stalkerscream1",
+      "files": [
+        "stalkerscream1"
+      ],
+      "category": "hostile",
+      "subtitle": "Stalker Screams"
     }
   ],
   "tag_elements": {
@@ -6940,6 +7397,8 @@
       "~CUSTOM:IronSiding"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.DIRT#0",
+      "~Blocks.GRASS",
       "~Blocks.STONE#0"
     ],
     "BLOCKS:minecraft:stairs": [
@@ -7067,7 +7526,10 @@
       "SmallPickaxe",
       "OldKnife",
       "CandleHolder",
-      "FireAxe"
+      "FireAxe",
+      "SkinStealerEntity",
+      "StalkerInsides",
+      "StalkerInsides2"
     ]
   },
   "language_map": {
@@ -7275,7 +7737,21 @@
       "item.jimsmineshaft.candle_holder": "Candle Holder",
       "entity.jimsmineshaft.stalker": "Stalker (HEAVY WIP dont judge)",
       "item.jimsmineshaft.stalker_spawn_egg": "Stalker (HEAVY WIP dont judge) Spawn Egg",
-      "item.jimsmineshaft.fire_axe": "Fire Axe"
+      "item.jimsmineshaft.fire_axe": "Fire Axe",
+      "biome.jimsmineshaft.level_1_test_biome": "Level 1  Biome",
+      "item.jimsmineshaft.level_1_dimension": "Level 1 Dimension Portal Igniter",
+      "item.jimsmineshaft.skin_stealer_entity_spawn_egg": "Skin Stealer Entity Spawn Egg",
+      "entity.jimsmineshaft.skin_stealer_entity": "Skin Stealer Entity",
+      "entity.jimsmineshaft.player_stalkier": "Player Stalker",
+      "item.jimsmineshaft.player_stalkier_spawn_egg": "Player Stalker Spawn Egg",
+      "entity.jimsmineshaft.stalker_insides": "Stalker Insides",
+      "item.jimsmineshaft.stalker_insides_spawn_egg": "Stalker Insides Spawn Egg",
+      "entity.jimsmineshaft.stalker_insides_2": "Stalker Insides 2",
+      "item.jimsmineshaft.stalker_insides_2_spawn_egg": "Stalker Insides 2 Spawn Egg",
+      "subtitles.stalkercrack": "Skin tears",
+      "subtitles.stalkerrip1": "Flesh rips",
+      "subtitles.stalkerrip2": "Flesh Rips",
+      "subtitles.stalkerscream1": "Stalker Screams"
     }
   },
   "metadata": {
@@ -7288,16 +7764,21 @@
       "src/main/java/net/mcreator/jimsmineshaft/network/PlayPlayerAnimationMessage.java",
       "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationMixin.java",
       "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftModPlayerAnimationAPI.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/jimsmineshaft/network/JimsmineshaftModVariables.java",
       "src/main/resources/assets/jimsmineshaft/sounds.json",
       "src/main/java/net/mcreator/jimsmineshaft/network/LoadPlayerAnimationMessage.java",
       "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftMod.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModTabs.java",
       "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationRendererMixin.java",
+      "src/main/java/net/mcreator/jimsmineshaft/mixin/NoiseGeneratorSettingsMixin.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModBiomes.java",
       "src/main/java/net/mcreator/jimsmineshaft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModScreens.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModMenus.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModKeyMappings.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModParticleTypes.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModParticles.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModMobEffects.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModBlocks.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModBlockEntities.java",
@@ -7347,6 +7828,14 @@
       },
       {
         "name": "Weapons",
+        "children": []
+      },
+      {
+        "name": "Dimensions and Biomes",
+        "children": []
+      },
+      {
+        "name": "Skin Stealer Mechanic",
         "children": []
       }
     ]

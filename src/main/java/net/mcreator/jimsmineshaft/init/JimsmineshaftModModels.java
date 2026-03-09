@@ -9,10 +9,14 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
 import net.mcreator.jimsmineshaft.client.model.ModeltheCart;
+import net.mcreator.jimsmineshaft.client.model.ModelstalkerInsides;
 import net.mcreator.jimsmineshaft.client.model.Modelstalker;
 import net.mcreator.jimsmineshaft.client.model.ModelrawCopperDrilledNorth_Converted;
 import net.mcreator.jimsmineshaft.client.model.ModelrawCopperDrilledNorth4;
 import net.mcreator.jimsmineshaft.client.model.ModelrawCopperDrilledEast;
+import net.mcreator.jimsmineshaft.client.model.ModelplayerStalker3;
+import net.mcreator.jimsmineshaft.client.model.ModelplayerStalker;
+import net.mcreator.jimsmineshaft.client.model.ModelplayerModelWide4;
 import net.mcreator.jimsmineshaft.client.model.ModelnorthHole;
 import net.mcreator.jimsmineshaft.client.model.Modeldetonator;
 import net.mcreator.jimsmineshaft.client.model.ModelcartVariant3;
@@ -50,6 +54,7 @@ public class JimsmineshaftModModels {
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(Modeldetonator.LAYER_LOCATION, Modeldetonator::createBodyLayer);
 		event.registerLayerDefinition(ModelcartPhase1.LAYER_LOCATION, ModelcartPhase1::createBodyLayer);
+		event.registerLayerDefinition(ModelplayerStalker3.LAYER_LOCATION, ModelplayerStalker3::createBodyLayer);
 		event.registerLayerDefinition(ModelcartPhase12.LAYER_LOCATION, ModelcartPhase12::createBodyLayer);
 		event.registerLayerDefinition(ModelElevator3.LAYER_LOCATION, ModelElevator3::createBodyLayer);
 		event.registerLayerDefinition(ModelrawCopperDrilledEast.LAYER_LOCATION, ModelrawCopperDrilledEast::createBodyLayer);
@@ -61,6 +66,8 @@ public class JimsmineshaftModModels {
 		event.registerLayerDefinition(ModelrawCopperDrilledNorth4.LAYER_LOCATION, ModelrawCopperDrilledNorth4::createBodyLayer);
 		event.registerLayerDefinition(ModelcartPhase6.LAYER_LOCATION, ModelcartPhase6::createBodyLayer);
 		event.registerLayerDefinition(ModelcartVariant3.LAYER_LOCATION, ModelcartVariant3::createBodyLayer);
+		event.registerLayerDefinition(ModelplayerStalker.LAYER_LOCATION, ModelplayerStalker::createBodyLayer);
+		event.registerLayerDefinition(ModelplayerModelWide4.LAYER_LOCATION, ModelplayerModelWide4::createBodyLayer);
 		event.registerLayerDefinition(ModelPressureDrillBlockFolded3.LAYER_LOCATION, ModelPressureDrillBlockFolded3::createBodyLayer);
 		event.registerLayerDefinition(ModelcartPhase8.LAYER_LOCATION, ModelcartPhase8::createBodyLayer);
 		event.registerLayerDefinition(ModelcartPhase11.LAYER_LOCATION, ModelcartPhase11::createBodyLayer);
@@ -77,6 +84,7 @@ public class JimsmineshaftModModels {
 		event.registerLayerDefinition(ModeltheCart.LAYER_LOCATION, ModeltheCart::createBodyLayer);
 		event.registerLayerDefinition(ModelcartRocks1.LAYER_LOCATION, ModelcartRocks1::createBodyLayer);
 		event.registerLayerDefinition(ModelPressureDrillBlockFolded.LAYER_LOCATION, ModelPressureDrillBlockFolded::createBodyLayer);
+		event.registerLayerDefinition(ModelstalkerInsides.LAYER_LOCATION, ModelstalkerInsides::createBodyLayer);
 		event.registerLayerDefinition(ModelcartPhase10.LAYER_LOCATION, ModelcartPhase10::createBodyLayer);
 		event.registerLayerDefinition(ModelcartPhase7.LAYER_LOCATION, ModelcartPhase7::createBodyLayer);
 		event.registerLayerDefinition(ModelcartVariant2.LAYER_LOCATION, ModelcartVariant2::createBodyLayer);
