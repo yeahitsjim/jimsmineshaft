@@ -16,29 +16,29 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.jimsmineshaft.procedures.TommyGunRangedItemShootsProjectileProcedure;
-import net.mcreator.jimsmineshaft.procedures.TommyGunEntitySwingsItemProcedure;
 import net.mcreator.jimsmineshaft.procedures.TommyGunCanUseRangedItemProcedure;
+import net.mcreator.jimsmineshaft.procedures.GreaseGunRangedItemShootsProjectileProcedure;
+import net.mcreator.jimsmineshaft.procedures.GreaseGunEntitySwingsItemProcedure;
 import net.mcreator.jimsmineshaft.entity.BulletProjectileEntity;
 
 import java.util.List;
 
-public class TommyGunItem extends Item {
-	public TommyGunItem(Item.Properties properties) {
+public class GreaseGunItem extends Item {
+	public GreaseGunItem(Item.Properties properties) {
 		super(properties.stacksTo(1));
 	}
 
 	@Override
 	public int getUseDuration(ItemStack itemstack, LivingEntity livingEntity) {
-		return 8;
+		return 1;
 	}
 
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.translatable("item.jimsmineshaft.tommy_gun.description_0"));
-		list.add(Component.translatable("item.jimsmineshaft.tommy_gun.description_1"));
+		list.add(Component.translatable("item.jimsmineshaft.grease_gun.description_0"));
+		list.add(Component.translatable("item.jimsmineshaft.grease_gun.description_1"));
 	}
 
 	@Override
@@ -55,7 +55,7 @@ public class TommyGunItem extends Item {
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity, InteractionHand hand) {
 		boolean retval = super.onEntitySwing(itemstack, entity, hand);
-		TommyGunEntitySwingsItemProcedure.execute(entity, itemstack);
+		GreaseGunEntitySwingsItemProcedure.execute(entity, itemstack);
 		return retval;
 	}
 
@@ -76,7 +76,7 @@ public class TommyGunItem extends Item {
 						stack.shrink(1);
 					}
 				}
-				TommyGunRangedItemShootsProjectileProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
+				GreaseGunRangedItemShootsProjectileProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
 			}
 			entity.releaseUsingItem();
 		}

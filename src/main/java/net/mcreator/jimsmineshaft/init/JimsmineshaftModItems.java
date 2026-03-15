@@ -36,6 +36,7 @@ import net.mcreator.jimsmineshaft.item.Level1DimensionItem;
 import net.mcreator.jimsmineshaft.item.LargeGateItem;
 import net.mcreator.jimsmineshaft.item.JimsminedimensionItem;
 import net.mcreator.jimsmineshaft.item.IronBulletItem;
+import net.mcreator.jimsmineshaft.item.GreaseGunItem;
 import net.mcreator.jimsmineshaft.item.FlintlockPistolItem;
 import net.mcreator.jimsmineshaft.item.FlashlightItem;
 import net.mcreator.jimsmineshaft.item.FireAxeItem;
@@ -170,7 +171,6 @@ public class JimsmineshaftModItems {
 	public static final DeferredItem<Item> LIGHTBLOCK = block(JimsmineshaftModBlocks.LIGHTBLOCK);
 	public static final DeferredItem<Item> RUSTED_IRON_CATWALK = block(JimsmineshaftModBlocks.RUSTED_IRON_CATWALK);
 	public static final DeferredItem<Item> RUSTED_IRON_CATWALK_SUPPORTED = block(JimsmineshaftModBlocks.RUSTED_IRON_CATWALK_SUPPORTED);
-	public static final DeferredItem<Item> TOMMY_GUN = register("tommy_gun", TommyGunItem::new);
 	public static final DeferredItem<Item> RUSTED_IRON_STAIRS = block(JimsmineshaftModBlocks.RUSTED_IRON_STAIRS);
 	public static final DeferredItem<Item> RUSTED_IRON_SUPPORT_COOL = block(JimsmineshaftModBlocks.RUSTED_IRON_SUPPORT_COOL);
 	public static final DeferredItem<Item> IRON_BULLET = register("iron_bullet", IronBulletItem::new);
@@ -197,6 +197,9 @@ public class JimsmineshaftModItems {
 	public static final DeferredItem<Item> SMALL_SLIDE_UP_GATE_ENTITY_SPAWN_EGG = register("small_slide_up_gate_entity_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.SMALL_SLIDE_UP_GATE_ENTITY.get(), properties));
 	public static final DeferredItem<Item> LARGE_GATE = register("large_gate", LargeGateItem::new);
 	public static final DeferredItem<Item> SMALL_SLIDE_UP_GATE = register("small_slide_up_gate", SmallSlideUpGateItem::new);
+	public static final DeferredItem<Item> TOMMY_GUN = register("tommy_gun", TommyGunItem::new);
+	public static final DeferredItem<Item> GREASE_GUN = register("grease_gun", GreaseGunItem::new);
+	public static final DeferredItem<Item> BOTTLE = block(JimsmineshaftModBlocks.BOTTLE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

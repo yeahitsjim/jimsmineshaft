@@ -6874,26 +6874,6 @@
       "path": "~/Skin Stealer Mechanic"
     },
     {
-      "name": "GunDisplayOverlayIngame",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gun_display_overlay_ingame",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/GunDisplayOverlayIngameProcedure.java"
-        ]
-      },
-      "path": "~/Weapons"
-    },
-    {
       "name": "FlintlockPistolPlayerFinishesUsingItem",
       "type": "procedure",
       "compiles": true,
@@ -7233,19 +7213,6 @@
       "path": "~/Tumbler Room"
     },
     {
-      "name": "Gun",
-      "type": "overlay",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gun",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/client/screens/GunOverlay.java"
-        ]
-      },
-      "path": "~/Weapons"
-    },
-    {
       "name": "RustedIronCatwalkSupported",
       "type": "block",
       "compiles": true,
@@ -7338,21 +7305,6 @@
           "src/main/java/net/mcreator/jimsmineshaft/procedures/OpentrueProcedure.java"
         ]
       }
-    },
-    {
-      "name": "TommyGun",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tommy_gun",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/item/TommyGunItem.java",
-          "src/main/resources/assets/jimsmineshaft/models/item/tommy_gun.json",
-          "src/main/resources/assets/jimsmineshaft/items/tommy_gun.json"
-        ]
-      },
-      "path": "~/Weapons"
     },
     {
       "name": "RustedIronStairs",
@@ -8636,6 +8588,198 @@
         ]
       },
       "path": "~/SprintSystem"
+    },
+    {
+      "name": "TommyGun",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tommy_gun",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/tommy_gun.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/tommy_gun.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/TommyGunItem.java"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "TommyGunRangedItemShootsProjectile",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tommy_gun_ranged_item_shoots_projectile",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/TommyGunRangedItemShootsProjectileProcedure.java"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "TommyGunCanUseRangedItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tommy_gun_can_use_ranged_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/TommyGunCanUseRangedItemProcedure.java"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "TommyGunEntitySwingsItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tommy_gun_entity_swings_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/TommyGunEntitySwingsItemProcedure.java"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "GreaseGun",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grease_gun",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/grease_gun.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/grease_gun.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/GreaseGunItem.java"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "GreaseGunEntitySwingsItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grease_gun_entity_swings_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/GreaseGunEntitySwingsItemProcedure.java"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "GreaseGunRangedItemShootsProjectile",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grease_gun_ranged_item_shoots_projectile",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/GreaseGunRangedItemShootsProjectileProcedure.java"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "Bottle",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bottle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/bottle.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/bottle.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/bottle.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/BottleBlock.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/bottle.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/bottle.json"
+        ]
+      },
+      "path": "~/Artifacts"
     }
   ],
   "variable_elements": [
@@ -9228,6 +9372,14 @@
       ],
       "category": "player",
       "subtitle": "small door"
+    },
+    {
+      "name": "entity.tommy_gun.shoot",
+      "files": [
+        "tommy_gun"
+      ],
+      "category": "player",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
@@ -9425,13 +9577,15 @@
       "RustedIronCatwalkWallSupport",
       "RustedIronCatwalk",
       "RustedIronCatwalkSupported",
-      "TommyGun",
       "RustedIronStairs",
       "RustedIronSupportCool",
       "IronBullet",
       "FlintlockPistol",
       "RustedIronRailingCorner",
-      "Stalker"
+      "Stalker",
+      "TommyGun",
+      "GreaseGun",
+      "Bottle"
     ]
   },
   "language_map": {
@@ -9630,7 +9784,6 @@
       "item.jimsmineshaft.lightblock": "Lightblock",
       "item.jimsmineshaft.rusted_iron_catwalk": "Rusted Iron Catwalk",
       "item.jimsmineshaft.rusted_iron_catwalk_supported": "Rusted Iron Catwalk Supported",
-      "item.jimsmineshaft.tommy_gun": "Tommy Gun",
       "item.jimsmineshaft.rusted_iron_stairs": "Rusted Iron Stairs",
       "item.jimsmineshaft.rusted_iron_support_cool": "Rusted Iron Support",
       "item.jimsmineshaft.iron_bullet": "Iron Bullet",
@@ -9669,36 +9822,44 @@
       "subtitles.thud": "thud",
       "subtitles.bigdoor": "big door",
       "gui.jimsmineshaft.mainoverlay.label_c_to_interact": " to interact",
-      "subtitles.smalldoor": "small door"
+      "subtitles.smalldoor": "small door",
+      "item.jimsmineshaft.tommy_gun.description_0": "Crouch+Left Click to reload",
+      "item.jimsmineshaft.tommy_gun": "Tommy Gun",
+      "item.jimsmineshaft.tommy_gun.description_1": "Hold Right Click to shoot",
+      "item.jimsmineshaft.grease_gun": "Grease Gun",
+      "item.jimsmineshaft.grease_gun.description_0": "Crouch+Left Click to reload",
+      "item.jimsmineshaft.grease_gun.description_1": "Hold Right Click to shoot",
+      "item.jimsmineshaft.bottle": "Bottle",
+      "subtitles.entity.tommy_gun.shoot": ""
     }
   },
   "metadata": {
     "files": [
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/resources/jimsmineshaft.mixins.json",
-      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModModels.java",
-      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModTabs.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/assets/jimsmineshaft/sounds.json",
-      "src/main/java/net/mcreator/jimsmineshaft/network/JimsmineshaftModVariables.java",
-      "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftMod.java",
-      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModSounds.java",
-      "src/main/java/net/mcreator/jimsmineshaft/mixin/NoiseGeneratorSettingsMixin.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/resources/assets/jimsmineshaft/sounds.json",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModTabs.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/jimsmineshaft/network/JimsmineshaftModVariables.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModModels.java",
+      "src/main/resources/jimsmineshaft.mixins.json",
+      "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftMod.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModBiomes.java",
-      "src/main/java/net/mcreator/jimsmineshaft/network/MenuStateUpdateMessage.java",
-      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModMenus.java",
+      "src/main/java/net/mcreator/jimsmineshaft/mixin/NoiseGeneratorSettingsMixin.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModScreens.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModMenus.java",
+      "src/main/java/net/mcreator/jimsmineshaft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/jimsmineshaft/client/renderer/item/LegacyOverrideSelectItemModel.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModKeyMappings.java",
-      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModParticleTypes.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModParticles.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModParticleTypes.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModMobEffects.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModBlocks.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModBlockEntities.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModItems.java",
-      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModEntities.java",
-      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModEntityRenderers.java"
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModEntityRenderers.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModEntities.java"
     ]
   },
   "foldersRoot": {

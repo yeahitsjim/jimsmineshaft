@@ -425,5 +425,13 @@
         "stream": false
       }
     ]
+  },
+  "entity.tommy_gun.shoot": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:tommy_gun",
+        "stream": false
+      }
+    ]
   }
 }

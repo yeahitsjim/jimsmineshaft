@@ -64,4 +64,6 @@ public class JimsmineshaftModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> THUD = REGISTRY.register("thud", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "thud")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> BIGDOOR = REGISTRY.register("bigdoor", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "bigdoor")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> SMALLDOOR = REGISTRY.register("smalldoor", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "smalldoor")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> ENTITY_TOMMY_GUN_SHOOT = REGISTRY.register("entity.tommy_gun.shoot",
+			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "entity.tommy_gun.shoot")));
 }

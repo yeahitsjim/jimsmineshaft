@@ -95,6 +95,7 @@ import net.mcreator.jimsmineshaft.block.CartRailBlock;
 import net.mcreator.jimsmineshaft.block.CanteenBlock;
 import net.mcreator.jimsmineshaft.block.CandleHolderBlock;
 import net.mcreator.jimsmineshaft.block.CanaryCageBlock;
+import net.mcreator.jimsmineshaft.block.BottleBlock;
 import net.mcreator.jimsmineshaft.JimsmineshaftMod;
 
 import java.util.function.Function;
@@ -187,6 +188,7 @@ public class JimsmineshaftModBlocks {
 	public static final DeferredBlock<Block> RUSTED_IRON_STAIRS = register("rusted_iron_stairs", RustedIronStairsBlock::new);
 	public static final DeferredBlock<Block> RUSTED_IRON_SUPPORT_COOL = register("rusted_iron_support_cool", RustedIronSupportCoolBlock::new);
 	public static final DeferredBlock<Block> RUSTED_IRON_RAILING_CORNER = register("rusted_iron_railing_corner", RustedIronRailingCornerBlock::new);
+	public static final DeferredBlock<Block> BOTTLE = register("bottle", BottleBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

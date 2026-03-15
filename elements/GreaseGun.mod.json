@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 1,
-    "texture": "tommy_gun",
-    "customModelName": "tommy_gun:default",
+    "texture": "greese_gun",
+    "customModelName": "grease_gun:default",
     "guiTexture": "",
     "customProperties": {},
     "states": [],
-    "name": "Tommy Gun",
+    "name": "Grease Gun",
     "rarity": "COMMON",
     "creativeTabs": [
       {
@@ -17,7 +17,7 @@
     ],
     "stackSize": 1,
     "enchantability": 0,
-    "useDuration": 8,
+    "useDuration": 1,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -41,7 +41,7 @@
     "inventorySize": 1,
     "inventoryStackSize": 60,
     "onEntitySwing": {
-      "name": "TommyGunEntitySwingsItem"
+      "name": "GreaseGunEntitySwingsItem"
     },
     "enableRanged": true,
     "shootConstantly": true,
@@ -51,7 +51,7 @@
     },
     "projectileDisableAmmoCheck": true,
     "onRangedItemUsed": {
-      "name": "TommyGunRangedItemShootsProjectile"
+      "name": "GreaseGunRangedItemShootsProjectile"
     },
     "rangedUseCondition": {
       "name": "TommyGunCanUseRangedItem"
