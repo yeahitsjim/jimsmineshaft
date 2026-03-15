@@ -10,6 +10,7 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
+import net.mcreator.jimsmineshaft.client.renderer.VisionRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.ThecartRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.StalkerRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.StalkerInsidesRenderer;
@@ -45,6 +46,8 @@ import net.mcreator.jimsmineshaft.client.renderer.BigGateRenderer;
 public class JimsmineshaftModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
+		event.registerEntityRenderer(JimsmineshaftModEntities.STALKER.get(), StalkerRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.BULLET_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.THECART.get(), ThecartRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.PRESSURE_DRILL.get(), PressureDrillRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.PRESSURE_DRILL_FOLDED.get(), PressureDrillFoldedRenderer::new);
@@ -61,20 +64,19 @@ public class JimsmineshaftModEntityRenderers {
 		event.registerEntityRenderer(JimsmineshaftModEntities.CART_4.get(), Cart4Renderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.CART_3.get(), Cart3Renderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.CART_2.get(), Cart2Renderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.RIGHTGATE.get(), RightgateRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.ELEVATOR_SEAT_1.get(), ElevatorSeat1Renderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.ELEVATOR_SEAT_2.get(), ElevatorSeat2Renderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.LEFTGATE.get(), LeftgateRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.BIG_GATE.get(), BigGateRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.COPPER_DRILLED_NORTH.get(), CopperDrilledNorthRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.STALKER.get(), StalkerRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.FLASHLIGHTENTITY.get(), FlashlightentityRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.VISION.get(), VisionRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.STALKER_INSIDES.get(), StalkerInsidesRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.SMALL_SIDE_OPEN_GATE_ENTITY.get(), SmallSideOpenGateEntityRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.PLAYER_STALKIER.get(), PlayerStalkierRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.STALKER_INSIDES_2.get(), StalkerInsides2Renderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.SKIN_STEALER_ENTITY.get(), SkinStealerEntityRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.BULLET_PROJECTILE.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.FLASHLIGHTENTITY.get(), FlashlightentityRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.LEFTGATE.get(), LeftgateRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.BIG_GATE.get(), BigGateRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.RIGHTGATE.get(), RightgateRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.SMALL_SIDE_OPEN_GATE_ENTITY.get(), SmallSideOpenGateEntityRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.SMALL_SLIDE_UP_GATE_ENTITY.get(), SmallSlideUpGateEntityRenderer::new);
 	}
 }

@@ -15,7 +15,7 @@ import net.mcreator.jimsmineshaft.client.particle.BloodParticleParticle;
 public class JimsmineshaftModParticles {
 	@SubscribeEvent
 	public static void registerParticles(RegisterParticleProvidersEvent event) {
-		event.registerSpriteSet(JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get(), BloodParticleParticle::provider);
 		event.registerSpriteSet(JimsmineshaftModParticleTypes.LIGHTPARTICLE.get(), LightparticleParticle::provider);
+		event.registerSpriteSet(JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get(), BloodParticleParticle::provider);
 	}
 }

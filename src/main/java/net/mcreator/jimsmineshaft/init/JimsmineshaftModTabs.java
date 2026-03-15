@@ -22,42 +22,51 @@ public class JimsmineshaftModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, JimsmineshaftMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> JIMS_MINESHAFT = REGISTRY.register("jims_mineshaft",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.jimsmineshaft.jims_mineshaft")).icon(() -> new ItemStack(JimsmineshaftModItems.TEST_SYNC_THE_SECOND.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(JimsmineshaftModItems.WOE_MINESHAFT_BE_UPON_THE_2.get());
-				tabData.accept(JimsmineshaftModBlocks.WOODEN_SUPPORT_TYPE_A.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.WOODEN_ROOF_TYPE_A.get().asItem());
+				tabData.accept(JimsmineshaftModItems.STALKER_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModBlocks.CANTEEN.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.WOODEN_SUPPORT_TOP_TYPE_A.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.WOODEN_SUPPORT_TOP_LIGHT_TYPE_A.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.WOODEN_SUPPORT_PLAIN_TYPE_B.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.WOODEN_SUPPORT_TYPE_B.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.WOODEN_SUPPORT_CORNER_TYPE_B_2.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.WOODEN_SUPPORT_CORNER_TYPE_B.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.WOODEN_WALL_TYPE_B.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.WOODEN_ROOF_TYPE_B.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.WOODEN_SUPPORT_FULL_TYPE_C.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.WOODEN_ROOF_TYPE_C.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.IRON_SIDING.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.IRON_SIDING_CORNER.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.ROTTEN_PLANKS.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.ROTTEN_PLANK_STAIRS.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.ROTTEN_PLANK_SLAB.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.ROTTEN_SUPPORT_BEAM.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.STRIPPED_ROTTEN_SUPPORT_BEAM.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.CORRUPTED_SUPPORT_BEAM.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.TILTED_CORRUPTED_SUPPORT_BEAM.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.STEEL_SHELF.get().asItem());
+				tabData.accept(JimsmineshaftModItems.RUSTY_PICKAXE.get());
+				tabData.accept(JimsmineshaftModItems.SMALL_PICKAXE.get());
 				tabData.accept(JimsmineshaftModBlocks.OLD_CABINET.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.ROTTEN_CABINET.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.WOOD_PILE.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.WOODEN_SUPPORT_PLAIN_TYPE_B.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.TILTED_CORRUPTED_SUPPORT_BEAM.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.WOODEN_SUPPORT_CORNER_TYPE_B_2.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.WOODEN_WALL_TYPE_B.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.ROTTEN_SUPPORT_BEAM.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.RUSTED_MINECART.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.ROTTEN_PLANK_SLAB.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.IRON_SIDING_CORNER.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.CORRUPTED_SUPPORT_BEAM.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.WOODEN_SUPPORT_TYPE_A.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.WOODEN_SUPPORT_TYPE_B.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.STEEL_SHELF.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.ROTTEN_PLANKS.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.WOODEN_ROOF_TYPE_A.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.STACKABLE_STEEL_SHELF.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.WOODEN_ROOF_TYPE_C.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.WOODEN_ROOF_TYPE_B.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.WOODEN_SUPPORT_CORNER_TYPE_B.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.WOODEN_SUPPORT_FULL_TYPE_C.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.IRON_SUPPORT.get().asItem());
+				tabData.accept(JimsmineshaftModItems.OLD_KNIFE.get());
+				tabData.accept(JimsmineshaftModBlocks.CANDLE_HOLDER.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.ROTTEN_PLANK_STAIRS.get().asItem());
+				tabData.accept(JimsmineshaftModItems.FIRE_AXE.get());
+				tabData.accept(JimsmineshaftModBlocks.IRON_SIDING.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.FENCED_CORRUPTED_SUPPORT_BEAM.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.WOODEN_SHAFT_LINING.get().asItem());
+				tabData.accept(JimsmineshaftModItems.WOE_MINESHAFT_BE_UPON_THE_2.get());
+				tabData.accept(JimsmineshaftModBlocks.STRIPPED_ROTTEN_SUPPORT_BEAM.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.CANARY_CAGE.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.WOODEN_SHELF.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.LONG_WOODEN_SHELF.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.FENCED_CORRUPTED_SUPPORT_BEAM.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.WOODEN_SUPPORT_TOP_LIGHT_TYPE_A.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.ROTTEN_CABINET.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.WOOD_PILE.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.CORRUPTED_SUPPORT_BAR.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.IRON_SUPPORT.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_SUPPORT.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.CANARY_CAGE.get().asItem());
+				tabData.accept(JimsmineshaftModItems.IRON_BULLET.get());
+				tabData.accept(JimsmineshaftModItems.FLINTLOCK_PISTOL.get());
 				tabData.accept(JimsmineshaftModItems.DETONATOR_BLOCK_ITEM.get());
 				tabData.accept(JimsmineshaftModBlocks.RAW_COPPER_DRILLED_EAST.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.COPPER_CHUNK_TYPE_B.get().asItem());
@@ -75,6 +84,7 @@ public class JimsmineshaftModTabs {
 				tabData.accept(JimsmineshaftModItems.PRESSURE_DRILL_FOLDED_SPAWN_EGG.get());
 				tabData.accept(JimsmineshaftModItems.COPPER_DRILLED_EAST_SPAWN_EGG.get());
 				tabData.accept(JimsmineshaftModBlocks.COPPER_SHARD_TRIPLE.get().asItem());
+				tabData.accept(JimsmineshaftModItems.BATTERY.get());
 				tabData.accept(JimsmineshaftModBlocks.MYSTERY_ITEM.get().asItem());
 				tabData.accept(JimsmineshaftModItems.HOLE_ENTITY_SPAWN_EGG.get());
 				tabData.accept(JimsmineshaftModBlocks.CART_RAIL.get().asItem());
@@ -85,6 +95,7 @@ public class JimsmineshaftModTabs {
 				tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_5_SPAWN_EGG.get());
 				tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_6_SPAWN_EGG.get());
 				tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_3_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModItems.FLASHLIGHT.get());
 				tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_4_SPAWN_EGG.get());
 				tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_7_SPAWN_EGG.get());
 				tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_8_SPAWN_EGG.get());
@@ -117,29 +128,18 @@ public class JimsmineshaftModTabs {
 				tabData.accept(JimsmineshaftModItems.COPPER_DRILLED_NORTH_SPAWN_EGG.get());
 				tabData.accept(JimsmineshaftModBlocks.RAW_COPPER_DRILLED_NORTH.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.NEW_GRAVEL.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.CANTEEN.get().asItem());
-				tabData.accept(JimsmineshaftModItems.RUSTY_PICKAXE.get());
-				tabData.accept(JimsmineshaftModItems.SMALL_PICKAXE.get());
-				tabData.accept(JimsmineshaftModItems.OLD_KNIFE.get());
-				tabData.accept(JimsmineshaftModBlocks.CANDLE_HOLDER.get().asItem());
-				tabData.accept(JimsmineshaftModItems.FIRE_AXE.get());
 				tabData.accept(JimsmineshaftModItems.STALKER_INSIDES_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_CROSS_SUPPORT.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_CATWALK_WALL_SUPPORT.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_STAIRS.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_SUPPORT_COOL.get().asItem());
 				tabData.accept(JimsmineshaftModItems.STALKER_INSIDES_2_SPAWN_EGG.get());
 				tabData.accept(JimsmineshaftModItems.SKIN_STEALER_ENTITY_SPAWN_EGG.get());
-				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_CROSS_SUPPORT.get().asItem());
-				tabData.accept(JimsmineshaftModItems.FLASHLIGHT.get());
 				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_RAILING.get().asItem());
-				tabData.accept(JimsmineshaftModItems.BATTERY.get());
-				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_CATWALK_WALL_SUPPORT.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_CATWALK.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_CATWALK_SUPPORTED.get().asItem());
 				tabData.accept(JimsmineshaftModItems.TOMMY_GUN.get());
-				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_STAIRS.get().asItem());
-				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_SUPPORT_COOL.get().asItem());
-				tabData.accept(JimsmineshaftModItems.IRON_BULLET.get());
-				tabData.accept(JimsmineshaftModItems.FLINTLOCK_PISTOL.get());
 				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_RAILING_CORNER.get().asItem());
-				tabData.accept(JimsmineshaftModItems.STALKER_SPAWN_EGG.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
@@ -171,6 +171,7 @@ public class JimsmineshaftModTabs {
 			tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_1_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_2_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.COPPER_DRILLED_NORTH_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.VISION_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.PLAYER_STALKIER_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(JimsmineshaftModItems.MINING_GOON_SET_HELMET.get());
@@ -186,8 +187,8 @@ public class JimsmineshaftModTabs {
 			tabData.accept(JimsmineshaftModItems.MINING_VETERAN_SET_LEGGINGS.get());
 			tabData.accept(JimsmineshaftModItems.MINING_VETERAN_SET_BOOTS.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-			tabData.accept(JimsmineshaftModItems.SMALL_SIDE_OPEN_GATE.get());
 			tabData.accept(JimsmineshaftModItems.LARGE_GATE.get());
+			tabData.accept(JimsmineshaftModItems.SMALL_SIDE_OPEN_GATE.get());
 			tabData.accept(JimsmineshaftModItems.SMALL_SLIDE_UP_GATE.get());
 		}
 	}

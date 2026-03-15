@@ -61,10 +61,6 @@ import net.mcreator.jimsmineshaft.JimsmineshaftMod;
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class JimsmineshaftModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, JimsmineshaftMod.MODID);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<WoodenSupportCornerTypeBBlockEntity>> WOODEN_SUPPORT_CORNER_TYPE_B = register("wooden_support_corner_type_b", JimsmineshaftModBlocks.WOODEN_SUPPORT_CORNER_TYPE_B,
-			WoodenSupportCornerTypeBBlockEntity::new);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<WoodenSupportFullTypeCBlockEntity>> WOODEN_SUPPORT_FULL_TYPE_C = register("wooden_support_full_type_c", JimsmineshaftModBlocks.WOODEN_SUPPORT_FULL_TYPE_C,
-			WoodenSupportFullTypeCBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<WoodenSupportTopTypeABlockEntity>> WOODEN_SUPPORT_TOP_TYPE_A = register("wooden_support_top_type_a", JimsmineshaftModBlocks.WOODEN_SUPPORT_TOP_TYPE_A,
 			WoodenSupportTopTypeABlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<WoodenSupportPlainTypeBBlockEntity>> WOODEN_SUPPORT_PLAIN_TYPE_B = register("wooden_support_plain_type_b", JimsmineshaftModBlocks.WOODEN_SUPPORT_PLAIN_TYPE_B,
@@ -73,12 +69,16 @@ public class JimsmineshaftModBlockEntities {
 			WoodenSupportCornerTypeB2BlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<WoodenWallTypeBBlockEntity>> WOODEN_WALL_TYPE_B = register("wooden_wall_type_b", JimsmineshaftModBlocks.WOODEN_WALL_TYPE_B, WoodenWallTypeBBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<WoodenSupportTypeABlockEntity>> WOODEN_SUPPORT_TYPE_A = register("wooden_support_type_a", JimsmineshaftModBlocks.WOODEN_SUPPORT_TYPE_A, WoodenSupportTypeABlockEntity::new);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<WoodenSupportTopLightTypeABlockEntity>> WOODEN_SUPPORT_TOP_LIGHT_TYPE_A = register("wooden_support_top_light_type_a", JimsmineshaftModBlocks.WOODEN_SUPPORT_TOP_LIGHT_TYPE_A,
-			WoodenSupportTopLightTypeABlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<WoodenSupportTypeBBlockEntity>> WOODEN_SUPPORT_TYPE_B = register("wooden_support_type_b", JimsmineshaftModBlocks.WOODEN_SUPPORT_TYPE_B, WoodenSupportTypeBBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<WoodenRoofTypeABlockEntity>> WOODEN_ROOF_TYPE_A = register("wooden_roof_type_a", JimsmineshaftModBlocks.WOODEN_ROOF_TYPE_A, WoodenRoofTypeABlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<WoodenRoofTypeCBlockEntity>> WOODEN_ROOF_TYPE_C = register("wooden_roof_type_c", JimsmineshaftModBlocks.WOODEN_ROOF_TYPE_C, WoodenRoofTypeCBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<WoodenRoofTypeBBlockEntity>> WOODEN_ROOF_TYPE_B = register("wooden_roof_type_b", JimsmineshaftModBlocks.WOODEN_ROOF_TYPE_B, WoodenRoofTypeBBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<WoodenSupportCornerTypeBBlockEntity>> WOODEN_SUPPORT_CORNER_TYPE_B = register("wooden_support_corner_type_b", JimsmineshaftModBlocks.WOODEN_SUPPORT_CORNER_TYPE_B,
+			WoodenSupportCornerTypeBBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<WoodenSupportFullTypeCBlockEntity>> WOODEN_SUPPORT_FULL_TYPE_C = register("wooden_support_full_type_c", JimsmineshaftModBlocks.WOODEN_SUPPORT_FULL_TYPE_C,
+			WoodenSupportFullTypeCBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<WoodenSupportTopLightTypeABlockEntity>> WOODEN_SUPPORT_TOP_LIGHT_TYPE_A = register("wooden_support_top_light_type_a", JimsmineshaftModBlocks.WOODEN_SUPPORT_TOP_LIGHT_TYPE_A,
+			WoodenSupportTopLightTypeABlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CopperChunkTypeBBlockEntity>> COPPER_CHUNK_TYPE_B = register("copper_chunk_type_b", JimsmineshaftModBlocks.COPPER_CHUNK_TYPE_B, CopperChunkTypeBBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CopperChunkTypeCBlockEntity>> COPPER_CHUNK_TYPE_C = register("copper_chunk_type_c", JimsmineshaftModBlocks.COPPER_CHUNK_TYPE_C, CopperChunkTypeCBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CopperChunkTypeDBlockEntity>> COPPER_CHUNK_TYPE_D = register("copper_chunk_type_d", JimsmineshaftModBlocks.COPPER_CHUNK_TYPE_D, CopperChunkTypeDBlockEntity::new);
@@ -106,8 +106,8 @@ public class JimsmineshaftModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<RawCopper22BlockEntity>> RAW_COPPER_22 = register("raw_copper_22", JimsmineshaftModBlocks.RAW_COPPER_22, RawCopper22BlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<NewSuspiciousGravelBlockEntity>> NEW_SUSPICIOUS_GRAVEL = register("new_suspicious_gravel", JimsmineshaftModBlocks.NEW_SUSPICIOUS_GRAVEL, NewSuspiciousGravelBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<NewStoneBlockEntity>> NEW_STONE = register("new_stone", JimsmineshaftModBlocks.NEW_STONE, NewStoneBlockEntity::new);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<NewGravelBlockEntity>> NEW_GRAVEL = register("new_gravel", JimsmineshaftModBlocks.NEW_GRAVEL, NewGravelBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<LightblockBlockEntity>> LIGHTBLOCK = register("lightblock", JimsmineshaftModBlocks.LIGHTBLOCK, LightblockBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<NewGravelBlockEntity>> NEW_GRAVEL = register("new_gravel", JimsmineshaftModBlocks.NEW_GRAVEL, NewGravelBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -117,18 +117,18 @@ public class JimsmineshaftModBlockEntities {
 
 	@SubscribeEvent
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
-		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, WOODEN_SUPPORT_CORNER_TYPE_B.get(), SidedInvWrapper::new);
-		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, WOODEN_SUPPORT_FULL_TYPE_C.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, WOODEN_SUPPORT_TOP_TYPE_A.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, WOODEN_SUPPORT_PLAIN_TYPE_B.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, WOODEN_SUPPORT_CORNER_TYPE_B_2.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, WOODEN_WALL_TYPE_B.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, WOODEN_SUPPORT_TYPE_A.get(), SidedInvWrapper::new);
-		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, WOODEN_SUPPORT_TOP_LIGHT_TYPE_A.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, WOODEN_SUPPORT_TYPE_B.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, WOODEN_ROOF_TYPE_A.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, WOODEN_ROOF_TYPE_C.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, WOODEN_ROOF_TYPE_B.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, WOODEN_SUPPORT_CORNER_TYPE_B.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, WOODEN_SUPPORT_FULL_TYPE_C.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, WOODEN_SUPPORT_TOP_LIGHT_TYPE_A.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, COPPER_CHUNK_TYPE_B.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, COPPER_CHUNK_TYPE_C.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, COPPER_CHUNK_TYPE_D.get(), SidedInvWrapper::new);
@@ -155,7 +155,7 @@ public class JimsmineshaftModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, RAW_COPPER_22.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, NEW_SUSPICIOUS_GRAVEL.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, NEW_STONE.get(), SidedInvWrapper::new);
-		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, NEW_GRAVEL.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, LIGHTBLOCK.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, NEW_GRAVEL.get(), SidedInvWrapper::new);
 	}
 }

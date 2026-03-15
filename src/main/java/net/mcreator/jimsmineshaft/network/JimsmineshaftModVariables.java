@@ -75,20 +75,21 @@ public class JimsmineshaftModVariables {
 			clone.drillZ = original.drillZ;
 			clone.nearElevator = original.nearElevator;
 			clone.playerDrillMoveCloser = original.playerDrillMoveCloser;
+			clone.maxbattery = original.maxbattery;
 			clone.throwAwayVariable = original.throwAwayVariable;
 			clone.playerCantOpenDrill = original.playerCantOpenDrill;
 			clone.playerIsDrilling = original.playerIsDrilling;
 			clone.inElevator = original.inElevator;
+			clone.batterylife = original.batterylife;
 			clone.LookingInventoryValue = original.LookingInventoryValue;
 			clone.cartPushing = original.cartPushing;
 			clone.playerInvValue = original.playerInvValue;
 			clone.elevatorPlace = original.elevatorPlace;
 			clone.playerHoldingDrill = original.playerHoldingDrill;
-			clone.maxbattery = original.maxbattery;
-			clone.batterylife = original.batterylife;
 			clone.stamina = original.stamina;
 			clone.staminamax = original.staminamax;
 			if (!event.isWasDeath()) {
+				clone.analogScreenInx = original.analogScreenInx;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -269,17 +270,18 @@ public class JimsmineshaftModVariables {
 		public double drillZ = 0;
 		public boolean nearElevator = false;
 		public boolean playerDrillMoveCloser = false;
+		public double maxbattery = 100.0;
 		public double throwAwayVariable = 0;
 		public boolean playerCantOpenDrill = false;
 		public boolean playerIsDrilling = false;
 		public boolean inElevator = false;
+		public double batterylife = 100.0;
 		public double LookingInventoryValue = 0;
 		public boolean cartPushing = false;
 		public double playerInvValue = 0;
 		public double elevatorPlace = 0;
 		public boolean playerHoldingDrill = false;
-		public double maxbattery = 100.0;
-		public double batterylife = 100.0;
+		public String analogScreenInx = "\"\"";
 		public double stamina = 100.0;
 		public double staminamax = 100.0;
 
@@ -292,17 +294,18 @@ public class JimsmineshaftModVariables {
 			nbt.putDouble("drillZ", drillZ);
 			nbt.putBoolean("nearElevator", nearElevator);
 			nbt.putBoolean("playerDrillMoveCloser", playerDrillMoveCloser);
+			nbt.putDouble("maxbattery", maxbattery);
 			nbt.putDouble("throwAwayVariable", throwAwayVariable);
 			nbt.putBoolean("playerCantOpenDrill", playerCantOpenDrill);
 			nbt.putBoolean("playerIsDrilling", playerIsDrilling);
 			nbt.putBoolean("inElevator", inElevator);
+			nbt.putDouble("batterylife", batterylife);
 			nbt.putDouble("LookingInventoryValue", LookingInventoryValue);
 			nbt.putBoolean("cartPushing", cartPushing);
 			nbt.putDouble("playerInvValue", playerInvValue);
 			nbt.putDouble("elevatorPlace", elevatorPlace);
 			nbt.putBoolean("playerHoldingDrill", playerHoldingDrill);
-			nbt.putDouble("maxbattery", maxbattery);
-			nbt.putDouble("batterylife", batterylife);
+			nbt.putString("analogScreenInx", analogScreenInx);
 			nbt.putDouble("stamina", stamina);
 			nbt.putDouble("staminamax", staminamax);
 			return nbt;
@@ -316,17 +319,18 @@ public class JimsmineshaftModVariables {
 			drillZ = nbt.getDouble("drillZ");
 			nearElevator = nbt.getBoolean("nearElevator");
 			playerDrillMoveCloser = nbt.getBoolean("playerDrillMoveCloser");
+			maxbattery = nbt.getDouble("maxbattery");
 			throwAwayVariable = nbt.getDouble("throwAwayVariable");
 			playerCantOpenDrill = nbt.getBoolean("playerCantOpenDrill");
 			playerIsDrilling = nbt.getBoolean("playerIsDrilling");
 			inElevator = nbt.getBoolean("inElevator");
+			batterylife = nbt.getDouble("batterylife");
 			LookingInventoryValue = nbt.getDouble("LookingInventoryValue");
 			cartPushing = nbt.getBoolean("cartPushing");
 			playerInvValue = nbt.getDouble("playerInvValue");
 			elevatorPlace = nbt.getDouble("elevatorPlace");
 			playerHoldingDrill = nbt.getBoolean("playerHoldingDrill");
-			maxbattery = nbt.getDouble("maxbattery");
-			batterylife = nbt.getDouble("batterylife");
+			analogScreenInx = nbt.getString("analogScreenInx");
 			stamina = nbt.getDouble("stamina");
 			staminamax = nbt.getDouble("staminamax");
 		}

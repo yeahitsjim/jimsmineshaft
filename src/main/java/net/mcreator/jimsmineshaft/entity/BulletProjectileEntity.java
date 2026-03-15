@@ -91,6 +91,7 @@ public class BulletProjectileEntity extends AbstractArrow implements ItemSupplie
 	@Override
 	public void tick() {
 		super.tick();
+		BulletProjectileWhileProjectileFlyingTickProcedure.execute();
 		if (this.isInGround())
 			this.discard();
 	}

@@ -59,36 +59,36 @@ public class MainoverlayOverlay {
 			if (InteractdisplayProcedure.execute(world, x, y, z)) {
 				event.getGuiGraphics().blit(RenderType::guiTextured, ResourceLocation.parse("jimsmineshaft:textures/screens/e.png"), w / 2 + -8, h - 68, 0, 0, 16, 16, 16, 16);
 			}
-			if (Staminabar1Procedure.execute(entity)) {
+			if (Staminabar1Procedure.execute()) {
 				event.getGuiGraphics().blit(RenderType::guiTextured, ResourceLocation.parse("jimsmineshaft:textures/screens/staminabarleft.png"), 6, h - 16, 0, 0, 9, 10, 9, 10);
 			}
-			if (Staminabar2Procedure.execute(entity)) {
+			if (Staminabar2Procedure.execute()) {
 				event.getGuiGraphics().blit(RenderType::guiTextured, ResourceLocation.parse("jimsmineshaft:textures/screens/staminabar.png"), 15, h - 16, 0, 0, 9, 10, 9, 10);
 			}
-			if (Staminabar3Procedure.execute(entity)) {
+			if (Staminabar3Procedure.execute()) {
 				event.getGuiGraphics().blit(RenderType::guiTextured, ResourceLocation.parse("jimsmineshaft:textures/screens/staminabar.png"), 24, h - 16, 0, 0, 9, 10, 9, 10);
 			}
-			if (Staminabar4Procedure.execute(entity)) {
+			if (Staminabar4Procedure.execute()) {
 				event.getGuiGraphics().blit(RenderType::guiTextured, ResourceLocation.parse("jimsmineshaft:textures/screens/staminabar.png"), 33, h - 16, 0, 0, 9, 10, 9, 10);
 			}
-			if (Staminabar5Procedure.execute(entity)) {
+			if (Staminabar5Procedure.execute()) {
 				event.getGuiGraphics().blit(RenderType::guiTextured, ResourceLocation.parse("jimsmineshaft:textures/screens/staminabar.png"), 42, h - 16, 0, 0, 9, 10, 9, 10);
 			}
-			if (Staminabar6Procedure.execute(entity)) {
+			if (Staminabar6Procedure.execute()) {
 				event.getGuiGraphics().blit(RenderType::guiTextured, ResourceLocation.parse("jimsmineshaft:textures/screens/staminabar.png"), 51, h - 16, 0, 0, 9, 10, 9, 10);
 			}
-			if (Staminabar7Procedure.execute(entity)) {
+			if (Staminabar7Procedure.execute()) {
 				event.getGuiGraphics().blit(RenderType::guiTextured, ResourceLocation.parse("jimsmineshaft:textures/screens/staminabar.png"), 60, h - 16, 0, 0, 9, 10, 9, 10);
 			}
-			if (Staminabar8Procedure.execute(entity)) {
+			if (Staminabar8Procedure.execute()) {
 				event.getGuiGraphics().blit(RenderType::guiTextured, ResourceLocation.parse("jimsmineshaft:textures/screens/staminabar.png"), 69, h - 16, 0, 0, 9, 10, 9, 10);
 			}
-			if (Staminabar10Procedure.execute(entity)) {
+			if (Staminabar10Procedure.execute()) {
 				event.getGuiGraphics().blit(RenderType::guiTextured, ResourceLocation.parse("jimsmineshaft:textures/screens/staminabarright.png"), 87, h - 16, 0, 0, 9, 10, 9, 10);
 			}
 			event.getGuiGraphics().blit(RenderType::guiTextured, ResourceLocation.parse("jimsmineshaft:textures/screens/staminabaroutline.png"), 6, h - 16, 0, 0, 90, 10, 90, 10);
 
-			if (Staminabar9Procedure.execute(entity)) {
+			if (Staminabar9Procedure.execute()) {
 				event.getGuiGraphics().blit(RenderType::guiTextured, ResourceLocation.parse("jimsmineshaft:textures/screens/staminabar.png"), 78, h - 16, 0, 0, 9, 10, 9, 10);
 			}
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,

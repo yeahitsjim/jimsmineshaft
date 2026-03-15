@@ -1,4 +1,53 @@
 {
+  "stalker_impale": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:stalker_impale",
+        "stream": false
+      }
+    ]
+  },
+  "stalker_growl_1": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:stalker_growl_1",
+        "stream": false
+      }
+    ]
+  },
+  "stalker.emerge": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:stalker_emerge",
+        "stream": false
+      }
+    ]
+  },
+  "flintlock_pistol_fire": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:flintlock_pistol_fire",
+        "stream": false
+      }
+    ]
+  },
+  "stalker_stab": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:stalker_stab",
+        "stream": false
+      }
+    ]
+  },
+  "buttonclick": {
+    "subtitle": "subtitles.buttonclick",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:buttonclick",
+        "stream": false
+      }
+    ]
+  },
   "pickupbit2": {
     "subtitle": "subtitles.pickupbit2",
     "sounds": [
@@ -31,6 +80,15 @@
     "sounds": [
       {
         "name": "jimsmineshaft:pickup3",
+        "stream": false
+      }
+    ]
+  },
+  "bigdoor": {
+    "subtitle": "subtitles.bigdoor",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:3x3door",
         "stream": false
       }
     ]
@@ -98,6 +156,24 @@
       }
     ]
   },
+  "batterycharge": {
+    "subtitle": "subtitles.batterycharge",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:batteryzap",
+        "stream": false
+      }
+    ]
+  },
+  "batterylevelbeep": {
+    "subtitle": "subtitles.batterylevelbeep",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:batterylevelbeep",
+        "stream": false
+      }
+    ]
+  },
   "rock3": {
     "subtitle": "subtitles.rock3",
     "sounds": [
@@ -148,6 +224,15 @@
     "sounds": [
       {
         "name": "jimsmineshaft:pickup15",
+        "stream": false
+      }
+    ]
+  },
+  "lighton": {
+    "subtitle": "subtitles.lighton",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:flashlighton",
         "stream": false
       }
     ]
@@ -233,6 +318,15 @@
       }
     ]
   },
+  "thud": {
+    "subtitle": "subtitles.thud",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:thud",
+        "stream": false
+      }
+    ]
+  },
   "pickup5": {
     "subtitle": "subtitles.pickup5",
     "sounds": [
@@ -287,26 +381,30 @@
       }
     ]
   },
-  "stalker_impale": {
+  "vision_stare_calm": {
     "sounds": [
       {
-        "name": "jimsmineshaft:stalker_impale",
+        "name": "jimsmineshaft:shadow_guy_stare_calm",
         "stream": false
       }
     ]
   },
-  "stalker_growl_1": {
+  "vision_stare_angry": {
     "sounds": [
       {
-        "name": "jimsmineshaft:stalker_growl_1",
+        "name": "jimsmineshaft:shadow_guy_stare_angry_1",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:shadow_guy_stare_angry_2",
         "stream": false
       }
     ]
   },
-  "stalker.emerge": {
+  "vision_glitch": {
     "sounds": [
       {
-        "name": "jimsmineshaft:stalker_emerge",
+        "name": "jimsmineshaft:shadow_guy_glitch",
         "stream": false
       }
     ]
@@ -316,6 +414,15 @@
     "sounds": [
       {
         "name": "jimsmineshaft:stalkerscream1",
+        "stream": false
+      }
+    ]
+  },
+  "smalldoor": {
+    "subtitle": "subtitles.smalldoor",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:smalldoormono",
         "stream": false
       }
     ]
@@ -343,85 +450,6 @@
     "sounds": [
       {
         "name": "jimsmineshaft:crack",
-        "stream": false
-      }
-    ]
-  },
-  "buttonclick": {
-    "subtitle": "subtitles.buttonclick",
-    "sounds": [
-      {
-        "name": "jimsmineshaft:buttonclick",
-        "stream": false
-      }
-    ]
-  },
-  "flintlock_pistol_fire": {
-    "sounds": [
-      {
-        "name": "jimsmineshaft:flintlock_pistol_fire",
-        "stream": false
-      }
-    ]
-  },
-  "stalker_stab": {
-    "sounds": [
-      {
-        "name": "jimsmineshaft:stalker_stab",
-        "stream": false
-      }
-    ]
-  },
-  "batterycharge": {
-    "subtitle": "subtitles.batterycharge",
-    "sounds": [
-      {
-        "name": "jimsmineshaft:batteryzap",
-        "stream": false
-      }
-    ]
-  },
-  "batterylevelbeep": {
-    "subtitle": "subtitles.batterylevelbeep",
-    "sounds": [
-      {
-        "name": "jimsmineshaft:batterylevelbeep",
-        "stream": false
-      }
-    ]
-  },
-  "lighton": {
-    "subtitle": "subtitles.lighton",
-    "sounds": [
-      {
-        "name": "jimsmineshaft:flashlighton",
-        "stream": false
-      }
-    ]
-  },
-  "thud": {
-    "subtitle": "subtitles.thud",
-    "sounds": [
-      {
-        "name": "jimsmineshaft:thudmono",
-        "stream": false
-      }
-    ]
-  },
-  "bigdoor": {
-    "subtitle": "subtitles.bigdoor",
-    "sounds": [
-      {
-        "name": "jimsmineshaft:3x3doormono",
-        "stream": false
-      }
-    ]
-  },
-  "smalldoor": {
-    "subtitle": "subtitles.smalldoor",
-    "sounds": [
-      {
-        "name": "jimsmineshaft:smalldoormono",
         "stream": false
       }
     ]

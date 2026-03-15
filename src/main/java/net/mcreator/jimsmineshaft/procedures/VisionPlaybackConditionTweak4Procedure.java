@@ -1,0 +1,13 @@
+package net.mcreator.jimsmineshaft.procedures;
+
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.jimsmineshaft.entity.VisionEntity;
+
+public class VisionPlaybackConditionTweak4Procedure {
+	public static boolean execute(Entity entity) {
+		if (entity == null)
+			return false;
+		return (entity instanceof VisionEntity _datEntI ? _datEntI.getEntityData().get(VisionEntity.DATA_tweakPose) : 0) == 4;
+	}
+}
