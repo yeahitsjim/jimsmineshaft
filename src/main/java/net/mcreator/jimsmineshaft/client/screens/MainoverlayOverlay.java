@@ -16,6 +16,16 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.CoreShaders;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.jimsmineshaft.procedures.Staminabar9Procedure;
+import net.mcreator.jimsmineshaft.procedures.Staminabar8Procedure;
+import net.mcreator.jimsmineshaft.procedures.Staminabar7Procedure;
+import net.mcreator.jimsmineshaft.procedures.Staminabar6Procedure;
+import net.mcreator.jimsmineshaft.procedures.Staminabar5Procedure;
+import net.mcreator.jimsmineshaft.procedures.Staminabar4Procedure;
+import net.mcreator.jimsmineshaft.procedures.Staminabar3Procedure;
+import net.mcreator.jimsmineshaft.procedures.Staminabar2Procedure;
+import net.mcreator.jimsmineshaft.procedures.Staminabar1Procedure;
+import net.mcreator.jimsmineshaft.procedures.Staminabar10Procedure;
 import net.mcreator.jimsmineshaft.procedures.ReturnInvValueProcedure;
 import net.mcreator.jimsmineshaft.procedures.InteractdisplayProcedure;
 
@@ -48,6 +58,38 @@ public class MainoverlayOverlay {
 		if (true) {
 			if (InteractdisplayProcedure.execute(world, x, y, z)) {
 				event.getGuiGraphics().blit(RenderType::guiTextured, ResourceLocation.parse("jimsmineshaft:textures/screens/e.png"), w / 2 + -8, h - 68, 0, 0, 16, 16, 16, 16);
+			}
+			if (Staminabar1Procedure.execute(entity)) {
+				event.getGuiGraphics().blit(RenderType::guiTextured, ResourceLocation.parse("jimsmineshaft:textures/screens/staminabarleft.png"), 15, h - 25, 0, 0, 9, 10, 9, 10);
+			}
+			if (Staminabar2Procedure.execute(entity)) {
+				event.getGuiGraphics().blit(RenderType::guiTextured, ResourceLocation.parse("jimsmineshaft:textures/screens/staminabar.png"), 24, h - 25, 0, 0, 9, 10, 9, 10);
+			}
+			if (Staminabar3Procedure.execute(entity)) {
+				event.getGuiGraphics().blit(RenderType::guiTextured, ResourceLocation.parse("jimsmineshaft:textures/screens/staminabar.png"), 33, h - 25, 0, 0, 9, 10, 9, 10);
+			}
+			if (Staminabar4Procedure.execute(entity)) {
+				event.getGuiGraphics().blit(RenderType::guiTextured, ResourceLocation.parse("jimsmineshaft:textures/screens/staminabar.png"), 42, h - 25, 0, 0, 9, 10, 9, 10);
+			}
+			if (Staminabar5Procedure.execute(entity)) {
+				event.getGuiGraphics().blit(RenderType::guiTextured, ResourceLocation.parse("jimsmineshaft:textures/screens/staminabar.png"), 51, h - 25, 0, 0, 9, 10, 9, 10);
+			}
+			if (Staminabar6Procedure.execute(entity)) {
+				event.getGuiGraphics().blit(RenderType::guiTextured, ResourceLocation.parse("jimsmineshaft:textures/screens/staminabar.png"), 60, h - 25, 0, 0, 9, 10, 9, 10);
+			}
+			if (Staminabar7Procedure.execute(entity)) {
+				event.getGuiGraphics().blit(RenderType::guiTextured, ResourceLocation.parse("jimsmineshaft:textures/screens/staminabar.png"), 69, h - 25, 0, 0, 9, 10, 9, 10);
+			}
+			if (Staminabar8Procedure.execute(entity)) {
+				event.getGuiGraphics().blit(RenderType::guiTextured, ResourceLocation.parse("jimsmineshaft:textures/screens/staminabar.png"), 78, h - 25, 0, 0, 9, 10, 9, 10);
+			}
+			if (Staminabar10Procedure.execute(entity)) {
+				event.getGuiGraphics().blit(RenderType::guiTextured, ResourceLocation.parse("jimsmineshaft:textures/screens/staminabarright.png"), 96, h - 25, 0, 0, 9, 10, 9, 10);
+			}
+			event.getGuiGraphics().blit(RenderType::guiTextured, ResourceLocation.parse("jimsmineshaft:textures/screens/staminabaroutline.png"), 15, h - 25, 0, 0, 90, 10, 90, 10);
+
+			if (Staminabar9Procedure.execute(entity)) {
+				event.getGuiGraphics().blit(RenderType::guiTextured, ResourceLocation.parse("jimsmineshaft:textures/screens/staminabar.png"), 87, h - 25, 0, 0, 9, 10, 9, 10);
 			}
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 

@@ -16,11 +16,13 @@ public class FlashlightRightclickedProcedure {
 		if (entity == null)
 			return;
 		if (!entity.isShiftKeyDown()) {
-			if (world instanceof Level _level) {
-				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:buttonclick")), SoundSource.PLAYERS, 1, 1);
-				} else {
-					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:buttonclick")), SoundSource.PLAYERS, 1, 1, false);
+			if (world.isClientSide()) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:buttonclick")), SoundSource.PLAYERS, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:buttonclick")), SoundSource.PLAYERS, 1, 1, false);
+					}
 				}
 			}
 			if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("flashlighton") == 0) {

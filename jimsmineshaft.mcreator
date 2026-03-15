@@ -8413,6 +8413,229 @@
         ]
       },
       "path": "~/Gates"
+    },
+    {
+      "name": "StaminaProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stamina_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StaminaProcedureProcedure.java"
+        ]
+      },
+      "path": "~/SprintSystem"
+    },
+    {
+      "name": "Staminabar1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staminabar_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar1Procedure.java"
+        ]
+      },
+      "path": "~/SprintSystem"
+    },
+    {
+      "name": "Staminabar2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staminabar_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar2Procedure.java"
+        ]
+      },
+      "path": "~/SprintSystem"
+    },
+    {
+      "name": "Staminabar3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staminabar_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar3Procedure.java"
+        ]
+      },
+      "path": "~/SprintSystem"
+    },
+    {
+      "name": "Staminabar4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staminabar_4",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar4Procedure.java"
+        ]
+      },
+      "path": "~/SprintSystem"
+    },
+    {
+      "name": "Staminabar5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staminabar_5",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar5Procedure.java"
+        ]
+      },
+      "path": "~/SprintSystem"
+    },
+    {
+      "name": "Staminabar6",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staminabar_6",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar6Procedure.java"
+        ]
+      },
+      "path": "~/SprintSystem"
+    },
+    {
+      "name": "Staminabar7",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staminabar_7",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar7Procedure.java"
+        ]
+      },
+      "path": "~/SprintSystem"
+    },
+    {
+      "name": "Staminabar8",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staminabar_8",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar8Procedure.java"
+        ]
+      },
+      "path": "~/SprintSystem"
+    },
+    {
+      "name": "Staminabar9",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staminabar_9",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar9Procedure.java"
+        ]
+      },
+      "path": "~/SprintSystem"
+    },
+    {
+      "name": "Staminabar10",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staminabar_10",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar10Procedure.java"
+        ]
+      },
+      "path": "~/SprintSystem"
     }
   ],
   "variable_elements": [
@@ -8604,6 +8827,18 @@
     },
     {
       "name": "batterylife",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "stamina",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "staminamax",
       "type": "number",
       "scope": "player_persistent",
       "value": "100.0"
@@ -9524,6 +9759,10 @@
       {
         "name": "Gates",
         "children": []
+      },
+      {
+        "name": "SprintSystem",
+        "children": []
       }
     ]
   },
@@ -9538,8 +9777,11 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "nexus_compiler"
+    ],
     "currentGenerator": "neoforge-1.21.4",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.jimsmineshaft"
   },
   "mcreatorVersion": 202500228610

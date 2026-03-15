@@ -86,6 +86,8 @@ public class JimsmineshaftModVariables {
 			clone.playerHoldingDrill = original.playerHoldingDrill;
 			clone.maxbattery = original.maxbattery;
 			clone.batterylife = original.batterylife;
+			clone.stamina = original.stamina;
+			clone.staminamax = original.staminamax;
 			if (!event.isWasDeath()) {
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
@@ -278,6 +280,8 @@ public class JimsmineshaftModVariables {
 		public boolean playerHoldingDrill = false;
 		public double maxbattery = 100.0;
 		public double batterylife = 100.0;
+		public double stamina = 100.0;
+		public double staminamax = 100.0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -299,6 +303,8 @@ public class JimsmineshaftModVariables {
 			nbt.putBoolean("playerHoldingDrill", playerHoldingDrill);
 			nbt.putDouble("maxbattery", maxbattery);
 			nbt.putDouble("batterylife", batterylife);
+			nbt.putDouble("stamina", stamina);
+			nbt.putDouble("staminamax", staminamax);
 			return nbt;
 		}
 
@@ -321,6 +327,8 @@ public class JimsmineshaftModVariables {
 			playerHoldingDrill = nbt.getBoolean("playerHoldingDrill");
 			maxbattery = nbt.getDouble("maxbattery");
 			batterylife = nbt.getDouble("batterylife");
+			stamina = nbt.getDouble("stamina");
+			staminamax = nbt.getDouble("staminamax");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

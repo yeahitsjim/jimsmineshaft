@@ -25,12 +25,12 @@ public class FlashlightItemInInventoryTickProcedure {
 		if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("newitem") == 0) {
 			{
 				final String _tagName = "batterylife";
-				final double _tagValue = 100;
+				final double _tagValue = 1000;
 				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			{
 				final String _tagName = "maxbattery";
-				final double _tagValue = 100;
+				final double _tagValue = 1000;
 				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			{
@@ -55,11 +55,13 @@ public class FlashlightItemInInventoryTickProcedure {
 							CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
 						}
 					} else {
-						if (world instanceof Level _level) {
-							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:lighton")), SoundSource.PLAYERS, (float) 0.1, 1);
-							} else {
-								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:lighton")), SoundSource.PLAYERS, (float) 0.1, 1, false);
+						if (world.isClientSide()) {
+							if (world instanceof Level _level) {
+								if (!_level.isClientSide()) {
+									_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:lighton")), SoundSource.PLAYERS, (float) 0.1, 1);
+								} else {
+									_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:lighton")), SoundSource.PLAYERS, (float) 0.1, 1, false);
+								}
 							}
 						}
 						{
@@ -84,6 +86,36 @@ public class FlashlightItemInInventoryTickProcedure {
 						if (world.isEmptyBlock(BlockPos.containing(lightX, lightY, lightZ))) {
 							if (!world.isClientSide()) {
 								world.setBlock(BlockPos.containing(lightX, lightY, lightZ), JimsmineshaftModBlocks.LIGHTBLOCK.get().defaultBlockState(), 3);
+							}
+						}
+						if (world.isEmptyBlock(BlockPos.containing(lightX, lightY + 1, lightZ))) {
+							if (!world.isClientSide()) {
+								world.setBlock(BlockPos.containing(lightX, lightY + 1, lightZ), JimsmineshaftModBlocks.LIGHTBLOCK.get().defaultBlockState(), 3);
+							}
+						}
+						if (world.isEmptyBlock(BlockPos.containing(lightX, lightY - 1, lightZ))) {
+							if (!world.isClientSide()) {
+								world.setBlock(BlockPos.containing(lightX, lightY - 1, lightZ), JimsmineshaftModBlocks.LIGHTBLOCK.get().defaultBlockState(), 3);
+							}
+						}
+						if (world.isEmptyBlock(BlockPos.containing(lightX, lightY, lightZ - 1))) {
+							if (!world.isClientSide()) {
+								world.setBlock(BlockPos.containing(lightX, lightY, lightZ - 1), JimsmineshaftModBlocks.LIGHTBLOCK.get().defaultBlockState(), 3);
+							}
+						}
+						if (world.isEmptyBlock(BlockPos.containing(lightX, lightY, lightZ + 1))) {
+							if (!world.isClientSide()) {
+								world.setBlock(BlockPos.containing(lightX, lightY, lightZ + 1), JimsmineshaftModBlocks.LIGHTBLOCK.get().defaultBlockState(), 3);
+							}
+						}
+						if (world.isEmptyBlock(BlockPos.containing(lightX + 1, lightY, lightZ))) {
+							if (!world.isClientSide()) {
+								world.setBlock(BlockPos.containing(lightX + 1, lightY, lightZ), JimsmineshaftModBlocks.LIGHTBLOCK.get().defaultBlockState(), 3);
+							}
+						}
+						if (world.isEmptyBlock(BlockPos.containing(lightX - 1, lightY, lightZ))) {
+							if (!world.isClientSide()) {
+								world.setBlock(BlockPos.containing(lightX - 1, lightY, lightZ), JimsmineshaftModBlocks.LIGHTBLOCK.get().defaultBlockState(), 3);
 							}
 						}
 						lightA = lightA + 1;
@@ -115,11 +147,13 @@ public class FlashlightItemInInventoryTickProcedure {
 					} else {
 						if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("batterylife") > itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("maxbattery") * 0.6) {
 							if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("flashlightstate") == 1) {
-								if (world instanceof Level _level) {
-									if (!_level.isClientSide()) {
-										_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, (float) 1.2);
-									} else {
-										_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, (float) 1.2, false);
+								if (world.isClientSide()) {
+									if (world instanceof Level _level) {
+										if (!_level.isClientSide()) {
+											_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, (float) 1.2);
+										} else {
+											_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, (float) 1.2, false);
+										}
 									}
 								}
 							}
@@ -131,11 +165,13 @@ public class FlashlightItemInInventoryTickProcedure {
 						} else {
 							if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("batterylife") > itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("maxbattery") * 0.4) {
 								if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("flashlightstate") == 2) {
-									if (world instanceof Level _level) {
-										if (!_level.isClientSide()) {
-											_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, 1);
-										} else {
-											_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, 1, false);
+									if (world.isClientSide()) {
+										if (world instanceof Level _level) {
+											if (!_level.isClientSide()) {
+												_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, 1);
+											} else {
+												_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, 1, false);
+											}
 										}
 									}
 								}
@@ -148,11 +184,13 @@ public class FlashlightItemInInventoryTickProcedure {
 								if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("batterylife") > itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("maxbattery")
 										* 0.2) {
 									if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("flashlightstate") == 3) {
-										if (world instanceof Level _level) {
-											if (!_level.isClientSide()) {
-												_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, (float) 0.8);
-											} else {
-												_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, (float) 0.8, false);
+										if (world.isClientSide()) {
+											if (world instanceof Level _level) {
+												if (!_level.isClientSide()) {
+													_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, (float) 0.8);
+												} else {
+													_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, (float) 0.8, false);
+												}
 											}
 										}
 									}
@@ -165,11 +203,13 @@ public class FlashlightItemInInventoryTickProcedure {
 									if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("batterylife") > itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("maxbattery")
 											* 0.1) {
 										if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("flashlightstate") == 4) {
-											if (world instanceof Level _level) {
-												if (!_level.isClientSide()) {
-													_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, (float) 0.6);
-												} else {
-													_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, (float) 0.6, false);
+											if (world.isClientSide()) {
+												if (world instanceof Level _level) {
+													if (!_level.isClientSide()) {
+														_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, (float) 0.6);
+													} else {
+														_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, (float) 0.6, false);
+													}
 												}
 											}
 										}
@@ -180,11 +220,13 @@ public class FlashlightItemInInventoryTickProcedure {
 										}
 									} else {
 										if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("flashlightstate") == 5) {
-											if (world instanceof Level _level) {
-												if (!_level.isClientSide()) {
-													_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, (float) 0.4);
-												} else {
-													_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, (float) 0.4, false);
+											if (world.isClientSide()) {
+												if (world instanceof Level _level) {
+													if (!_level.isClientSide()) {
+														_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, (float) 0.4);
+													} else {
+														_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, (float) 0.4, false);
+													}
 												}
 											}
 										}

@@ -91,6 +91,160 @@
           "y": 175,
           "locked": false
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabarleft.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Staminabar1"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 15,
+          "y": 215,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabar.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Staminabar2"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 215,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabar.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Staminabar3"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 33,
+          "y": 215,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabar.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Staminabar4"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 42,
+          "y": 215,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabar.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Staminabar5"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 51,
+          "y": 215,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabar.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Staminabar6"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 60,
+          "y": 215,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabar.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Staminabar7"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 69,
+          "y": 215,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabar.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Staminabar8"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 78,
+          "y": 215,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "staminabar.png",
+          "spritesCount": 1,
+          "displayCondition": {
+            "name": "Staminabar9"
+          },
+          "spriteIndex": {
+            "fixedValue": 0.0
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 87,
+          "y": 215,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabarright.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Staminabar10"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 96,
+          "y": 215,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabaroutline.png",
+          "use1Xscale": false,
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 15,
+          "y": 215,
+          "locked": false
+        }
       }
     ],
     "baseTexture": "",
@@ -100,7 +254,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }

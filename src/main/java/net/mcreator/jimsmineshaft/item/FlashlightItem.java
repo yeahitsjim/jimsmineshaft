@@ -21,7 +21,7 @@ import com.mojang.serialization.MapCodec;
 
 public class FlashlightItem extends Item {
 	public FlashlightItem(Item.Properties properties) {
-		super(properties);
+		super(properties.stacksTo(1));
 	}
 
 	@Override
