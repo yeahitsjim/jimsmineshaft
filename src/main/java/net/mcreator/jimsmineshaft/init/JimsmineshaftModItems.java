@@ -166,6 +166,7 @@ public class JimsmineshaftModItems {
 	public static final DeferredItem<Item> RAW_COPPER_DRILLED_NORTH = block(JimsmineshaftModBlocks.RAW_COPPER_DRILLED_NORTH, new Item.Properties().stacksTo(1));
 	public static final DeferredItem<Item> LIGHTBLOCK = block(JimsmineshaftModBlocks.LIGHTBLOCK);
 	public static final DeferredItem<Item> NEW_GRAVEL = block(JimsmineshaftModBlocks.NEW_GRAVEL);
+	public static final DeferredItem<Item> VISION_SPAWN_EGG = register("vision_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.VISION.get(), properties));
 
 	// Start of user code block custom items
 	// End of user code block custom items

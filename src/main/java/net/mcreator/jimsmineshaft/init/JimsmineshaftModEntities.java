@@ -20,6 +20,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 
+import net.mcreator.jimsmineshaft.entity.VisionEntity;
 import net.mcreator.jimsmineshaft.entity.ThecartEntity;
 import net.mcreator.jimsmineshaft.entity.StalkerEntity;
 import net.mcreator.jimsmineshaft.entity.RightgateEntity;
@@ -157,6 +158,10 @@ public class JimsmineshaftModEntities {
 			EntityType.Builder.<FlashlightentityEntity>of(FlashlightentityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.ridingOffset(-0.6f).sized(0.1f, 0.1f));
+	public static final DeferredHolder<EntityType<?>, EntityType<VisionEntity>> VISION = register("vision",
+			EntityType.Builder.<VisionEntity>of(VisionEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(1.1f, 2f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -201,6 +206,7 @@ public class JimsmineshaftModEntities {
 		BigGateEntity.init(event);
 		CopperDrilledNorthEntity.init(event);
 		FlashlightentityEntity.init(event);
+		VisionEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -232,5 +238,6 @@ public class JimsmineshaftModEntities {
 		event.put(BIG_GATE.get(), BigGateEntity.createAttributes().build());
 		event.put(COPPER_DRILLED_NORTH.get(), CopperDrilledNorthEntity.createAttributes().build());
 		event.put(FLASHLIGHTENTITY.get(), FlashlightentityEntity.createAttributes().build());
+		event.put(VISION.get(), VisionEntity.createAttributes().build());
 	}
 }

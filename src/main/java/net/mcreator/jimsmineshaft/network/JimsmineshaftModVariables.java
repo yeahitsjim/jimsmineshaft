@@ -87,6 +87,7 @@ public class JimsmineshaftModVariables {
 			clone.elevatorPlace = original.elevatorPlace;
 			clone.playerHoldingDrill = original.playerHoldingDrill;
 			if (!event.isWasDeath()) {
+				clone.analogScreenInx = original.analogScreenInx;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -278,6 +279,7 @@ public class JimsmineshaftModVariables {
 		public double playerInvValue = 0;
 		public double elevatorPlace = 0;
 		public boolean playerHoldingDrill = false;
+		public String analogScreenInx = "\"\"";
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -299,6 +301,7 @@ public class JimsmineshaftModVariables {
 			nbt.putDouble("playerInvValue", playerInvValue);
 			nbt.putDouble("elevatorPlace", elevatorPlace);
 			nbt.putBoolean("playerHoldingDrill", playerHoldingDrill);
+			nbt.putString("analogScreenInx", analogScreenInx);
 			return nbt;
 		}
 
@@ -321,6 +324,7 @@ public class JimsmineshaftModVariables {
 			playerInvValue = nbt.getDouble("playerInvValue");
 			elevatorPlace = nbt.getDouble("elevatorPlace");
 			playerHoldingDrill = nbt.getBoolean("playerHoldingDrill");
+			analogScreenInx = nbt.getString("analogScreenInx");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

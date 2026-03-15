@@ -59,4 +59,7 @@ public class JimsmineshaftModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> CARTTHUD2 = REGISTRY.register("cartthud2", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "cartthud2")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> ELEVATORCLOSE = REGISTRY.register("elevatorclose", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "elevatorclose")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> CARTTHUD1 = REGISTRY.register("cartthud1", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "cartthud1")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> VISION_STARE_CALM = REGISTRY.register("vision_stare_calm", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "vision_stare_calm")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> VISION_STARE_ANGRY = REGISTRY.register("vision_stare_angry", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "vision_stare_angry")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> VISION_GLITCH = REGISTRY.register("vision_glitch", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "vision_glitch")));
 }

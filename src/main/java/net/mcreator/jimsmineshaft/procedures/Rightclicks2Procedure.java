@@ -1,6 +1,23 @@
 package net.mcreator.jimsmineshaft.procedures;
 
+import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
+
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.AABB;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.InteractionHand;
+
+import net.mcreator.jimsmineshaft.entity.BigIronGateFrameEntity;
+import net.mcreator.jimsmineshaft.entity.BigGateEntity;
+
+import javax.annotation.Nullable;
+
+import java.util.Comparator;
 
 @EventBusSubscriber
 public class Rightclicks2Procedure {

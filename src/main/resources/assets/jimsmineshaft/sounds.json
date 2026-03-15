@@ -380,5 +380,33 @@
         "stream": false
       }
     ]
+  },
+  "vision_stare_calm": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:shadow_guy_stare_calm",
+        "stream": false
+      }
+    ]
+  },
+  "vision_stare_angry": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:shadow_guy_stare_angry_1",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:shadow_guy_stare_angry_2",
+        "stream": false
+      }
+    ]
+  },
+  "vision_glitch": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:shadow_guy_glitch",
+        "stream": false
+      }
+    ]
   }
 }
