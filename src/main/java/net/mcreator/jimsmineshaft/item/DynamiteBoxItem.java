@@ -1,5 +1,11 @@
 package net.mcreator.jimsmineshaft.item;
 
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.player.Player;
+
+import net.mcreator.jimsmineshaft.procedures.DynamiteBoxItemIsDroppedByPlayerProcedure;
+
 public class DynamiteBoxItem extends Item {
 	public DynamiteBoxItem(Item.Properties properties) {
 		super(properties.stacksTo(1));

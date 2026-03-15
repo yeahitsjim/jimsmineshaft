@@ -1,6 +1,15 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.particles.SimpleParticleType;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.jimsmineshaft.init.JimsmineshaftModParticleTypes;
+import net.mcreator.jimsmineshaft.init.JimsmineshaftModBlocks;
+import net.mcreator.jimsmineshaft.JimsmineshaftMod;
 
 public class FlashlightentityOnEntityTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -26,7 +35,7 @@ public class FlashlightentityOnEntityTickUpdateProcedure {
 					if (distanceSq <= 1.0) {
 						if (world.isEmptyBlock(BlockPos.containing(x + xi, y + i, z + zi))) {
 							if (!world.isClientSide()) {
-								world.setBlock(BlockPos.containing(x + xi, y + i, z + zi), JimsmineshaftModItems.DELETED_MOD_ELEMENT.get().defaultBlockState(), 3);
+								world.setBlock(BlockPos.containing(x + xi, y + i, z + zi), JimsmineshaftModBlocks.LIGHTBLOCK.get().defaultBlockState(), 3);
 							}
 						}
 					}

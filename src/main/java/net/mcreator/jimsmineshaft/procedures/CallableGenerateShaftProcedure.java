@@ -1,6 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.core.Direction;
 
 public class CallableGenerateShaftProcedure {
 	public static void execute() {

@@ -24,6 +24,8 @@ import net.mcreator.jimsmineshaft.entity.ThecartEntity;
 import net.mcreator.jimsmineshaft.entity.StalkerInsidesEntity;
 import net.mcreator.jimsmineshaft.entity.StalkerInsides2Entity;
 import net.mcreator.jimsmineshaft.entity.StalkerEntity;
+import net.mcreator.jimsmineshaft.entity.SmallSlideUpGateEntityEntity;
+import net.mcreator.jimsmineshaft.entity.SmallSideOpenGateEntityEntity;
 import net.mcreator.jimsmineshaft.entity.SkinStealerEntityEntity;
 import net.mcreator.jimsmineshaft.entity.RightgateEntity;
 import net.mcreator.jimsmineshaft.entity.PressureDrillFoldedEntity;
@@ -48,9 +50,6 @@ import net.mcreator.jimsmineshaft.entity.Cart4Entity;
 import net.mcreator.jimsmineshaft.entity.Cart3Entity;
 import net.mcreator.jimsmineshaft.entity.Cart2Entity;
 import net.mcreator.jimsmineshaft.entity.BulletProjectileEntity;
-import net.mcreator.jimsmineshaft.entity.BigIronGateRightEntity;
-import net.mcreator.jimsmineshaft.entity.BigIronGateLeftEntity;
-import net.mcreator.jimsmineshaft.entity.BigIronGateFrameEntity;
 import net.mcreator.jimsmineshaft.entity.BigGateEntity;
 import net.mcreator.jimsmineshaft.JimsmineshaftMod;
 
@@ -151,32 +150,28 @@ public class JimsmineshaftModEntities {
 			EntityType.Builder.<SkinStealerEntityEntity>of(SkinStealerEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 1.8f));
-	public static final DeferredHolder<EntityType<?>, EntityType<BigIronGateLeftEntity>> BIG_IRON_GATE_LEFT = register("big_iron_gate_left",
-			EntityType.Builder.<BigIronGateLeftEntity>of(BigIronGateLeftEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
-
-					.sized(1.5f, 5f));
-	public static final DeferredHolder<EntityType<?>, EntityType<BigIronGateRightEntity>> BIG_IRON_GATE_RIGHT = register("big_iron_gate_right",
-			EntityType.Builder.<BigIronGateRightEntity>of(BigIronGateRightEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
-
-					.sized(1.5f, 5f));
-	public static final DeferredHolder<EntityType<?>, EntityType<BigGateEntity>> BIG_GATE = register("big_gate",
-			EntityType.Builder.<BigGateEntity>of(BigGateEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
-
-					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<BulletProjectileEntity>> BULLET_PROJECTILE = register("bullet_projectile",
 			EntityType.Builder.<BulletProjectileEntity>of(BulletProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final DeferredHolder<EntityType<?>, EntityType<RightgateEntity>> RIGHTGATE = register("rightgate",
-			EntityType.Builder.<RightgateEntity>of(RightgateEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().ridingOffset(-0.6f).sized(1.5f, 5f));
-	public static final DeferredHolder<EntityType<?>, EntityType<BigIronGateFrameEntity>> BIG_IRON_GATE_FRAME = register("big_iron_gate_frame",
-			EntityType.Builder.<BigIronGateFrameEntity>of(BigIronGateFrameEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
-
-					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<FlashlightentityEntity>> FLASHLIGHTENTITY = register("flashlightentity",
 			EntityType.Builder.<FlashlightentityEntity>of(FlashlightentityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.ridingOffset(-0.6f).sized(0.1f, 0.1f));
 	public static final DeferredHolder<EntityType<?>, EntityType<LeftgateEntity>> LEFTGATE = register("leftgate",
-			EntityType.Builder.<LeftgateEntity>of(LeftgateEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().ridingOffset(-0.6f).sized(1.5f, 5f));
+			EntityType.Builder.<LeftgateEntity>of(LeftgateEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().ridingOffset(-0.6f).sized(1.7f, 5.6f));
+	public static final DeferredHolder<EntityType<?>, EntityType<BigGateEntity>> BIG_GATE = register("big_gate",
+			EntityType.Builder.<BigGateEntity>of(BigGateEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<RightgateEntity>> RIGHTGATE = register("rightgate",
+			EntityType.Builder.<RightgateEntity>of(RightgateEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().ridingOffset(-0.6f).sized(1.7f, 5.6f));
+	public static final DeferredHolder<EntityType<?>, EntityType<SmallSideOpenGateEntityEntity>> SMALL_SIDE_OPEN_GATE_ENTITY = register("small_side_open_gate_entity",
+			EntityType.Builder.<SmallSideOpenGateEntityEntity>of(SmallSideOpenGateEntityEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<SmallSlideUpGateEntityEntity>> SMALL_SLIDE_UP_GATE_ENTITY = register("small_slide_up_gate_entity",
+			EntityType.Builder.<SmallSlideUpGateEntityEntity>of(SmallSlideUpGateEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -218,13 +213,12 @@ public class JimsmineshaftModEntities {
 		PlayerStalkierEntity.init(event);
 		StalkerInsides2Entity.init(event);
 		SkinStealerEntityEntity.init(event);
-		BigIronGateLeftEntity.init(event);
-		BigIronGateRightEntity.init(event);
-		BigGateEntity.init(event);
-		RightgateEntity.init(event);
-		BigIronGateFrameEntity.init(event);
 		FlashlightentityEntity.init(event);
 		LeftgateEntity.init(event);
+		BigGateEntity.init(event);
+		RightgateEntity.init(event);
+		SmallSideOpenGateEntityEntity.init(event);
+		SmallSlideUpGateEntityEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -253,12 +247,11 @@ public class JimsmineshaftModEntities {
 		event.put(PLAYER_STALKIER.get(), PlayerStalkierEntity.createAttributes().build());
 		event.put(STALKER_INSIDES_2.get(), StalkerInsides2Entity.createAttributes().build());
 		event.put(SKIN_STEALER_ENTITY.get(), SkinStealerEntityEntity.createAttributes().build());
-		event.put(BIG_IRON_GATE_LEFT.get(), BigIronGateLeftEntity.createAttributes().build());
-		event.put(BIG_IRON_GATE_RIGHT.get(), BigIronGateRightEntity.createAttributes().build());
-		event.put(BIG_GATE.get(), BigGateEntity.createAttributes().build());
-		event.put(RIGHTGATE.get(), RightgateEntity.createAttributes().build());
-		event.put(BIG_IRON_GATE_FRAME.get(), BigIronGateFrameEntity.createAttributes().build());
 		event.put(FLASHLIGHTENTITY.get(), FlashlightentityEntity.createAttributes().build());
 		event.put(LEFTGATE.get(), LeftgateEntity.createAttributes().build());
+		event.put(BIG_GATE.get(), BigGateEntity.createAttributes().build());
+		event.put(RIGHTGATE.get(), RightgateEntity.createAttributes().build());
+		event.put(SMALL_SIDE_OPEN_GATE_ENTITY.get(), SmallSideOpenGateEntityEntity.createAttributes().build());
+		event.put(SMALL_SLIDE_UP_GATE_ENTITY.get(), SmallSlideUpGateEntityEntity.createAttributes().build());
 	}
 }

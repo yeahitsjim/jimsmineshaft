@@ -1,6 +1,10 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.jimsmineshaft.init.JimsmineshaftModItems;
 
 public class DynamiteBoxStatusDisplayOverlayIngameProcedure {
 	public static boolean execute(Entity entity) {

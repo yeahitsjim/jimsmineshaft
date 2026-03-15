@@ -16,7 +16,7 @@
             "value": -16777216,
             "falpha": 0.0
           },
-          "anchorPoint": "CENTER",
+          "anchorPoint": "BOTTOM_CENTER",
           "x": 123,
           "y": 204,
           "locked": false
@@ -34,7 +34,7 @@
             "value": -16777216,
             "falpha": 0.0
           },
-          "anchorPoint": "CENTER",
+          "anchorPoint": "BOTTOM_CENTER",
           "x": 122,
           "y": 204,
           "locked": false
@@ -52,9 +52,43 @@
             "value": -29184,
             "falpha": 0.0
           },
-          "anchorPoint": "CENTER",
+          "anchorPoint": "BOTTOM_CENTER",
           "x": 123,
           "y": 203,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "e.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Interactdisplay"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 205,
+          "y": 172,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_c_to_interact",
+          "text": {
+            "fixedValue": " to interact"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Interactdisplay"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 219,
+          "y": 175,
           "locked": false
         }
       }

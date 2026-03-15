@@ -1,39 +1,53 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.AABB;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.InteractionHand;
 
-@EventBusSubscriber
+import net.mcreator.jimsmineshaft.entity.SmallSlideUpGateEntityEntity;
+import net.mcreator.jimsmineshaft.entity.SmallSideOpenGateEntityEntity;
+import net.mcreator.jimsmineshaft.entity.BigGateEntity;
+
+import java.util.Comparator;
+
 public class Rightclicks2Procedure {
-	@SubscribeEvent
-	public static void onRightClickEntity(PlayerInteractEvent.EntityInteract event) {
-		if (event.getHand() != InteractionHand.MAIN_HAND)
-			return;
-		execute(event, event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getTarget());
-	}
-
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		execute(null, world, x, y, z, entity);
-	}
-
-	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (!world.getEntitiesOfClass(BigIronGateFrameEntity.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(7 / 2d), e -> true).isEmpty()) {
-			if (entity instanceof LivingEntity _entity)
-				_entity.swing(InteractionHand.MAIN_HAND, true);
-			if ((findEntityInWorldRange(world, BigIronGateFrameEntity.class, x, y, z, 7)).getPersistentData().getBoolean("open") == false) {
-				(findEntityInWorldRange(world, BigIronGateFrameEntity.class, x, y, z, 7)).getPersistentData().putBoolean("open", true);
-			} else {
-				(findEntityInWorldRange(world, BigIronGateFrameEntity.class, x, y, z, 7)).getPersistentData().putBoolean("open", false);
-			}
-		}
 		if (!world.getEntitiesOfClass(BigGateEntity.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(7 / 2d), e -> true).isEmpty()) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.swing(InteractionHand.MAIN_HAND, true);
-			if ((findEntityInWorldRange(world, BigGateEntity.class, x, y, z, 7)).getPersistentData().getBoolean("open") == false) {
-				(findEntityInWorldRange(world, BigGateEntity.class, x, y, z, 7)).getPersistentData().putBoolean("open", true);
+			if (((findEntityInWorldRange(world, BigGateEntity.class, x, y, z, 7)) instanceof BigGateEntity _datEntL3 && _datEntL3.getEntityData().get(BigGateEntity.DATA_open)) == false) {
+				if ((findEntityInWorldRange(world, BigGateEntity.class, x, y, z, 7)) instanceof BigGateEntity _datEntSetL)
+					_datEntSetL.getEntityData().set(BigGateEntity.DATA_open, true);
 			} else {
-				(findEntityInWorldRange(world, BigGateEntity.class, x, y, z, 7)).getPersistentData().putBoolean("open", false);
+				if ((findEntityInWorldRange(world, BigGateEntity.class, x, y, z, 7)) instanceof BigGateEntity _datEntSetL)
+					_datEntSetL.getEntityData().set(BigGateEntity.DATA_open, false);
+			}
+		}
+		if (!world.getEntitiesOfClass(SmallSlideUpGateEntityEntity.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(7 / 2d), e -> true).isEmpty()) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.swing(InteractionHand.MAIN_HAND, true);
+			if (((findEntityInWorldRange(world, SmallSlideUpGateEntityEntity.class, x, y, z, 7)) instanceof SmallSlideUpGateEntityEntity _datEntL11 && _datEntL11.getEntityData().get(SmallSlideUpGateEntityEntity.DATA_open)) == false) {
+				if ((findEntityInWorldRange(world, SmallSlideUpGateEntityEntity.class, x, y, z, 7)) instanceof SmallSlideUpGateEntityEntity _datEntSetL)
+					_datEntSetL.getEntityData().set(SmallSlideUpGateEntityEntity.DATA_open, true);
+			} else {
+				if ((findEntityInWorldRange(world, SmallSlideUpGateEntityEntity.class, x, y, z, 7)) instanceof SmallSlideUpGateEntityEntity _datEntSetL)
+					_datEntSetL.getEntityData().set(SmallSlideUpGateEntityEntity.DATA_open, false);
+			}
+		}
+		if (!world.getEntitiesOfClass(SmallSideOpenGateEntityEntity.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(7 / 2d), e -> true).isEmpty()) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.swing(InteractionHand.MAIN_HAND, true);
+			if (((findEntityInWorldRange(world, SmallSideOpenGateEntityEntity.class, x, y, z, 7)) instanceof SmallSideOpenGateEntityEntity _datEntL19 && _datEntL19.getEntityData().get(SmallSideOpenGateEntityEntity.DATA_open)) == false) {
+				if ((findEntityInWorldRange(world, SmallSideOpenGateEntityEntity.class, x, y, z, 7)) instanceof SmallSideOpenGateEntityEntity _datEntSetL)
+					_datEntSetL.getEntityData().set(SmallSideOpenGateEntityEntity.DATA_open, true);
+			} else {
+				if ((findEntityInWorldRange(world, SmallSideOpenGateEntityEntity.class, x, y, z, 7)) instanceof SmallSideOpenGateEntityEntity _datEntSetL)
+					_datEntSetL.getEntityData().set(SmallSideOpenGateEntityEntity.DATA_open, false);
 			}
 		}
 	}

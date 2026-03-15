@@ -81,11 +81,7 @@
       "value": -1,
       "falpha": 0.0
     },
-    "creativeTabs": [
-      {
-        "value": "MISC"
-      }
-    ],
+    "creativeTabs": [],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
@@ -107,7 +103,7 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Mob",
+    "mobBehaviourType": "Creature",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 3,
     "attackKnockback": 0.0,
@@ -153,10 +149,10 @@
       "value": ""
     },
     "hurtSound": {
-      "value": "entity.generic.hurt"
+      "value": ""
     },
     "deathSound": {
-      "value": "entity.generic.death"
+      "value": ""
     },
     "stepSound": {
       "value": ""
@@ -164,7 +160,26 @@
     "raidCelebrationSound": {
       "value": ""
     },
-    "entityDataEntries": [],
+    "entityDataEntries": [
+      {
+        "name": "open",
+        "type": "logic",
+        "value": false
+      },
+      {
+        "name": "opening",
+        "type": "logic",
+        "value": false
+      },
+      {
+        "name": "opening2",
+        "type": "logic",
+        "value": false
+      }
+    ],
+    "onRightClickedOn": {
+      "name": "BigGateRightClickedOnEntity"
+    },
     "onMobTickUpdate": {
       "name": "BigGateOnEntityTickUpdate"
     },

@@ -57,10 +57,10 @@ public class JimsmineshaftModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> BUTTONCLICK = REGISTRY.register("buttonclick", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "buttonclick")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> FLINTLOCK_PISTOL_FIRE = REGISTRY.register("flintlock_pistol_fire",
 			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "flintlock_pistol_fire")));
-	public static final DeferredHolder<SoundEvent, SoundEvent> BIGDOOR = REGISTRY.register("bigdoor", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "bigdoor")));
-	public static final DeferredHolder<SoundEvent, SoundEvent> THUD = REGISTRY.register("thud", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "thud")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> STALKER_STAB = REGISTRY.register("stalker_stab", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "stalker_stab")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> BATTERYCHARGE = REGISTRY.register("batterycharge", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "batterycharge")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> BATTERYLEVELBEEP = REGISTRY.register("batterylevelbeep", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "batterylevelbeep")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> LIGHTON = REGISTRY.register("lighton", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "lighton")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> THUD = REGISTRY.register("thud", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "thud")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> BIGDOOR = REGISTRY.register("bigdoor", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "bigdoor")));
 }

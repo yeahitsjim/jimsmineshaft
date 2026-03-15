@@ -1,6 +1,12 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
+import net.minecraft.network.chat.Component;
+import net.minecraft.core.Direction;
+
+import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
 
 public class GSMP2callableProcedure {
 	public static void execute(LevelAccessor world, double levelTokens, double totalTokens, double variantTokensPass, double xPass, double yPass, double zPass, String LGSPass, String currentDirectionPass, String currentVariantPass,
@@ -413,7 +419,8 @@ public class GSMP2callableProcedure {
 					localCurrentDirection = workingDirection;
 					letsGoGambling = 1;
 					selectedRoom = "null";
-					returnedPickRoomJSON = GSMPpickRoomProcedure.execute(world, JimsmineshaftModVariables.MapVariables.get(world).workingRoomIsBit, localVariantTokens, localCurrentVariant, lastGeneratedStructure);
+					returnedPickRoomJSON = GSMPpickRoomProcedure.execute(world, JimsmineshaftModVariables.MapVariables.get(world).workingRoomIsBit, localVariantTokens, localFilledSpaces.get("x").getAsDouble(),
+							localFilledSpaces.get("y").getAsDouble(), localFilledSpaces.get("z").getAsDouble(), workingDirection + "", localCurrentVariant, lastGeneratedStructure);
 					workingRoomPick = returnedPickRoomJSON.get("workingRoomPick").getAsString();
 					localCurrentVariant = returnedPickRoomJSON.get("currentVariant").getAsString();
 					if ((workingRoomPick).equals("null")) {

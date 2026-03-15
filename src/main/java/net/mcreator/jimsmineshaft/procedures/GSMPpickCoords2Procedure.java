@@ -1,6 +1,9 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.core.Direction;
+
+import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
 
 public class GSMPpickCoords2Procedure {
 	public static com.google.gson.JsonObject execute(LevelAccessor world, double pc_currentxpass, double pc_currentypass, double pc_currentzpass, String pc_currentDirectionpass, String pc_lastGeneratedStructurepass, String pc_wdpass) {

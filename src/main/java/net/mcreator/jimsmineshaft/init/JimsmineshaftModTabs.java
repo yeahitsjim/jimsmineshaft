@@ -139,6 +139,7 @@ public class JimsmineshaftModTabs {
 				tabData.accept(JimsmineshaftModItems.IRON_BULLET.get());
 				tabData.accept(JimsmineshaftModItems.FLINTLOCK_PISTOL.get());
 				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_RAILING_CORNER.get().asItem());
+				tabData.accept(JimsmineshaftModItems.STALKER_SPAWN_EGG.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
@@ -171,17 +172,23 @@ public class JimsmineshaftModTabs {
 			tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_2_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.COPPER_DRILLED_NORTH_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.PLAYER_STALKIER_SPAWN_EGG.get());
-			tabData.accept(JimsmineshaftModItems.BIG_IRON_GATE_LEFT_SPAWN_EGG.get());
-			tabData.accept(JimsmineshaftModItems.BIG_IRON_GATE_RIGHT_SPAWN_EGG.get());
-			tabData.accept(JimsmineshaftModItems.BIG_GATE_SPAWN_EGG.get());
-			tabData.accept(JimsmineshaftModItems.RIGHTGATE_SPAWN_EGG.get());
-			tabData.accept(JimsmineshaftModItems.BIG_IRON_GATE_FRAME_SPAWN_EGG.get());
-			tabData.accept(JimsmineshaftModItems.LEFTGATE_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(JimsmineshaftModItems.MINING_GOON_SET_HELMET.get());
 			tabData.accept(JimsmineshaftModItems.MINING_GOON_SET_CHESTPLATE.get());
 			tabData.accept(JimsmineshaftModItems.MINING_GOON_SET_LEGGINGS.get());
 			tabData.accept(JimsmineshaftModItems.MINING_GOON_SET_BOOTS.get());
+			tabData.accept(JimsmineshaftModItems.MINING_ELITE_SET_HELMET.get());
+			tabData.accept(JimsmineshaftModItems.MINING_ELITE_SET_CHESTPLATE.get());
+			tabData.accept(JimsmineshaftModItems.MINING_ELITE_SET_LEGGINGS.get());
+			tabData.accept(JimsmineshaftModItems.MINING_ELITE_SET_BOOTS.get());
+			tabData.accept(JimsmineshaftModItems.MINING_VETERAN_SET_HELMET.get());
+			tabData.accept(JimsmineshaftModItems.MINING_VETERAN_SET_CHESTPLATE.get());
+			tabData.accept(JimsmineshaftModItems.MINING_VETERAN_SET_LEGGINGS.get());
+			tabData.accept(JimsmineshaftModItems.MINING_VETERAN_SET_BOOTS.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+			tabData.accept(JimsmineshaftModItems.SMALL_SIDE_OPEN_GATE.get());
+			tabData.accept(JimsmineshaftModItems.LARGE_GATE.get());
+			tabData.accept(JimsmineshaftModItems.SMALL_SLIDE_UP_GATE.get());
 		}
 	}
 }

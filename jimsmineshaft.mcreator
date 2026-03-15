@@ -34,11 +34,11 @@
       "registry_name": "rotten_planks_states",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/block/rotten_planks_states_blockstate_3.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/rotten_planks_states_blockstate_2.json",
           "src/main/resources/assets/jimsmineshaft/models/block/rotten_planks_states_blockstate_4.json",
           "src/main/resources/assets/jimsmineshaft/models/block/rotten_planks_states_blockstate_0.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/rotten_planks_states_blockstate_2.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/rotten_planks_states_blockstate_1.json"
+          "src/main/resources/assets/jimsmineshaft/models/block/rotten_planks_states_blockstate_1.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/rotten_planks_states_blockstate_3.json"
         ]
       },
       "path": "~/Level 2 Blocks"
@@ -51,12 +51,12 @@
       "registry_name": "iron_siding_corner",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/IronSidingCornerBlock.java",
-          "src/main/resources/assets/jimsmineshaft/models/item/iron_siding_corner.json",
           "src/main/resources/assets/jimsmineshaft/items/iron_siding_corner.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/iron_siding_corner.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/iron_siding_corner.json",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/iron_siding_corner.json"
+          "src/main/java/net/mcreator/jimsmineshaft/block/IronSidingCornerBlock.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/iron_siding_corner.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/iron_siding_corner.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/iron_siding_corner.json"
         ]
       },
       "path": "~/Level 2 Blocks"
@@ -69,12 +69,12 @@
       "registry_name": "rotten_planks",
       "metadata": {
         "files": [
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/rotten_planks.json",
           "src/main/resources/assets/jimsmineshaft/models/item/rotten_planks.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/rotten_planks.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/rotten_planks.json",
-          "src/main/resources/assets/jimsmineshaft/items/rotten_planks.json",
           "src/main/resources/assets/jimsmineshaft/models/block/rotten_planks.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/RottenPlanksBlock.java"
+          "src/main/java/net/mcreator/jimsmineshaft/block/RottenPlanksBlock.java",
+          "src/main/resources/assets/jimsmineshaft/items/rotten_planks.json"
         ]
       },
       "path": "~/Level 2 Blocks"
@@ -87,12 +87,12 @@
       "registry_name": "rotten_support_beam",
       "metadata": {
         "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/rotten_support_beam.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/rotten_support_beam.json",
           "src/main/resources/assets/jimsmineshaft/items/rotten_support_beam.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/rotten_support_beam.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/RottenSupportBeamBlock.java",
           "src/main/resources/assets/jimsmineshaft/models/item/rotten_support_beam.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/rotten_support_beam.json"
+          "src/main/resources/assets/jimsmineshaft/blockstates/rotten_support_beam.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RottenSupportBeamBlock.java"
         ]
       },
       "path": "~/Level 2 Blocks"
@@ -105,9 +105,9 @@
       "registry_name": "iron_siding_states",
       "metadata": {
         "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/iron_siding_states_blockstate_0.json",
           "src/main/resources/assets/jimsmineshaft/models/block/iron_siding_states_blockstate_2.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/iron_siding_states_blockstate_1.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/iron_siding_states_blockstate_0.json"
+          "src/main/resources/assets/jimsmineshaft/models/block/iron_siding_states_blockstate_1.json"
         ]
       },
       "path": "~/Level 2 Blocks"
@@ -133,12 +133,12 @@
       "registry_name": "iron_siding",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/block/iron_siding.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/IronSidingBlock.java",
-          "src/main/resources/assets/jimsmineshaft/models/item/iron_siding.json",
           "src/main/resources/assets/jimsmineshaft/items/iron_siding.json",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/iron_siding.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/iron_siding.json"
+          "src/main/resources/assets/jimsmineshaft/blockstates/iron_siding.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/iron_siding.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/iron_siding.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/iron_siding.json"
         ]
       },
       "path": "~/Level 2 Blocks"
@@ -173,13 +173,13 @@
       "registry_name": "wooden_support_corner_type_b",
       "metadata": {
         "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/wooden_support_corner_type_b.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/wooden_support_corner_type_b.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenSupportCornerTypeBBlock.java",
           "src/main/java/net/mcreator/jimsmineshaft/block/entity/WoodenSupportCornerTypeBBlockEntity.java",
-          "src/main/resources/assets/jimsmineshaft/items/wooden_support_corner_type_b.json",
           "src/main/resources/assets/jimsmineshaft/models/item/wooden_support_corner_type_b.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_support_corner_type_b.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/wooden_support_corner_type_b.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/wooden_support_corner_type_b.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenSupportCornerTypeBBlock.java"
+          "src/main/resources/assets/jimsmineshaft/items/wooden_support_corner_type_b.json"
         ]
       }
     },
@@ -191,9 +191,9 @@
       "registry_name": "woe_mineshaft_be_upon_the",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/items/woe_mineshaft_be_upon_the.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/woe_mineshaft_be_upon_the.json",
           "src/main/java/net/mcreator/jimsmineshaft/item/WoeMineshaftBeUponTheItem.java",
-          "src/main/resources/assets/jimsmineshaft/models/item/woe_mineshaft_be_upon_the.json"
+          "src/main/resources/assets/jimsmineshaft/items/woe_mineshaft_be_upon_the.json"
         ]
       }
     },
@@ -205,13 +205,13 @@
       "registry_name": "wooden_support_full_type_c",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/items/wooden_support_full_type_c.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_support_full_type_c.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/wooden_support_full_type_c.json",
           "src/main/resources/assets/jimsmineshaft/models/item/wooden_support_full_type_c.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/wooden_support_full_type_c.json",
           "src/main/resources/assets/jimsmineshaft/models/block/wooden_support_full_type_c.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/entity/WoodenSupportFullTypeCBlockEntity.java",
-          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenSupportFullTypeCBlock.java"
+          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenSupportFullTypeCBlock.java",
+          "src/main/resources/assets/jimsmineshaft/items/wooden_support_full_type_c.json"
         ]
       }
     },
@@ -224,12 +224,12 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/jimsmineshaft/blockstates/wooden_support_top_type_a.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/wooden_support_top_type_a.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/WoodenSupportTopTypeABlockEntity.java",
-          "src/main/resources/assets/jimsmineshaft/models/block/wooden_support_top_type_a.json",
-          "src/main/resources/assets/jimsmineshaft/items/wooden_support_top_type_a.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/WoodenSupportTopTypeABlock.java",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_support_top_type_a.json"
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_support_top_type_a.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/wooden_support_top_type_a.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/wooden_support_top_type_a.json",
+          "src/main/resources/assets/jimsmineshaft/items/wooden_support_top_type_a.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/WoodenSupportTopTypeABlockEntity.java"
         ]
       }
     },
@@ -297,13 +297,13 @@
       "registry_name": "wooden_support_plain_type_b",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/WoodenSupportPlainTypeBBlockEntity.java",
-          "src/main/resources/assets/jimsmineshaft/models/block/wooden_support_plain_type_b.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_support_plain_type_b.json",
+          "src/main/resources/assets/jimsmineshaft/items/wooden_support_plain_type_b.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/wooden_support_plain_type_b.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/WoodenSupportPlainTypeBBlock.java",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_support_plain_type_b.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/wooden_support_plain_type_b.json",
-          "src/main/resources/assets/jimsmineshaft/items/wooden_support_plain_type_b.json"
+          "src/main/resources/assets/jimsmineshaft/models/block/wooden_support_plain_type_b.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/WoodenSupportPlainTypeBBlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/wooden_support_plain_type_b.json"
         ]
       }
     },
@@ -333,18 +333,18 @@
       "registry_name": "jimsminedimension",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/world/dimension/JimsminedimensionDimension.java",
           "src/main/java/net/mcreator/jimsmineshaft/item/JimsminedimensionItem.java",
-          "src/main/resources/assets/jimsmineshaft/models/item/jimsminedimension.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/jimsminedimension_portal.json",
+          "src/main/resources/data/jimsmineshaft/dimension/jimsminedimension.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/jimsminedimension_portal_ew.json",
+          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/JimsminedimensionTeleporter.java",
+          "src/main/java/net/mcreator/jimsmineshaft/block/JimsminedimensionPortalBlock.java",
           "src/main/resources/assets/jimsmineshaft/models/block/jimsminedimension_portal_ns.json",
+          "src/main/java/net/mcreator/jimsmineshaft/world/dimension/JimsminedimensionDimension.java",
+          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/JimsminedimensionPortalShape.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/jimsminedimension_portal.json",
           "src/main/resources/data/jimsmineshaft/dimension_type/jimsminedimension.json",
           "src/main/resources/assets/jimsmineshaft/items/jimsminedimension.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/jimsminedimension_portal_ew.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/JimsminedimensionPortalBlock.java",
-          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/JimsminedimensionTeleporter.java",
-          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/JimsminedimensionPortalShape.java",
-          "src/main/resources/data/jimsmineshaft/dimension/jimsminedimension.json"
+          "src/main/resources/assets/jimsmineshaft/models/item/jimsminedimension.json"
         ]
       }
     },
@@ -366,13 +366,13 @@
       "registry_name": "wooden_support_corner_type_b_2",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/items/wooden_support_corner_type_b_2.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenSupportCornerTypeB2Block.java",
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/WoodenSupportCornerTypeB2BlockEntity.java",
           "src/main/resources/assets/jimsmineshaft/blockstates/wooden_support_corner_type_b_2.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenSupportCornerTypeB2Block.java",
+          "src/main/resources/assets/jimsmineshaft/items/wooden_support_corner_type_b_2.json",
           "src/main/resources/assets/jimsmineshaft/models/block/wooden_support_corner_type_b_2.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/wooden_support_corner_type_b_2.json",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_support_corner_type_b_2.json"
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/WoodenSupportCornerTypeB2BlockEntity.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_support_corner_type_b_2.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/wooden_support_corner_type_b_2.json"
         ]
       }
     },
@@ -384,13 +384,13 @@
       "registry_name": "wooden_wall_type_b",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/blockstates/wooden_wall_type_b.json",
-          "src/main/resources/assets/jimsmineshaft/items/wooden_wall_type_b.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenWallTypeBBlock.java",
-          "src/main/resources/assets/jimsmineshaft/models/item/wooden_wall_type_b.json",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_wall_type_b.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/WoodenWallTypeBBlockEntity.java",
           "src/main/resources/assets/jimsmineshaft/models/block/wooden_wall_type_b.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/WoodenWallTypeBBlockEntity.java"
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_wall_type_b.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/wooden_wall_type_b.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/wooden_wall_type_b.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenWallTypeBBlock.java",
+          "src/main/resources/assets/jimsmineshaft/items/wooden_wall_type_b.json"
         ]
       }
     },
@@ -402,9 +402,9 @@
       "registry_name": "woe_mineshaft_be_upon_the_2",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/item/WoeMineshaftBeUponThe2Item.java",
+          "src/main/resources/assets/jimsmineshaft/items/woe_mineshaft_be_upon_the_2.json",
           "src/main/resources/assets/jimsmineshaft/models/item/woe_mineshaft_be_upon_the_2.json",
-          "src/main/resources/assets/jimsmineshaft/items/woe_mineshaft_be_upon_the_2.json"
+          "src/main/java/net/mcreator/jimsmineshaft/item/WoeMineshaftBeUponThe2Item.java"
         ]
       }
     },
@@ -536,13 +536,13 @@
       "registry_name": "wooden_support_type_a",
       "metadata": {
         "files": [
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_support_type_a.json",
-          "src/main/resources/assets/jimsmineshaft/items/wooden_support_type_a.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/WoodenSupportTypeABlockEntity.java",
           "src/main/resources/assets/jimsmineshaft/models/block/wooden_support_type_a.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/wooden_support_type_a.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/WoodenSupportTypeABlock.java",
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/WoodenSupportTypeABlockEntity.java",
-          "src/main/resources/assets/jimsmineshaft/models/item/wooden_support_type_a.json"
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_support_type_a.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/wooden_support_type_a.json",
+          "src/main/resources/assets/jimsmineshaft/items/wooden_support_type_a.json"
         ]
       }
     },
@@ -564,12 +564,12 @@
       "registry_name": "wooden_support_top_light_type_a",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/WoodenSupportTopLightTypeABlockEntity.java",
-          "src/main/resources/assets/jimsmineshaft/models/item/wooden_support_top_light_type_a.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_support_top_light_type_a.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/wooden_support_top_light_type_a.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/wooden_support_top_light_type_a.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/WoodenSupportTopLightTypeABlock.java",
-          "src/main/resources/assets/jimsmineshaft/models/block/wooden_support_top_light_type_a.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/WoodenSupportTopLightTypeABlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/wooden_support_top_light_type_a.json",
           "src/main/resources/assets/jimsmineshaft/items/wooden_support_top_light_type_a.json"
         ]
       }
@@ -582,13 +582,13 @@
       "registry_name": "wooden_support_type_b",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/block/wooden_support_type_b.json",
-          "src/main/resources/assets/jimsmineshaft/items/wooden_support_type_b.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenSupportTypeBBlock.java",
-          "src/main/resources/assets/jimsmineshaft/models/item/wooden_support_type_b.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/wooden_support_type_b.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/entity/WoodenSupportTypeBBlockEntity.java",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_support_type_b.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/wooden_support_type_b.json"
+          "src/main/resources/assets/jimsmineshaft/items/wooden_support_type_b.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/wooden_support_type_b.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenSupportTypeBBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/wooden_support_type_b.json"
         ]
       }
     },
@@ -687,13 +687,13 @@
       "registry_name": "wooden_roof_type_a",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/block/wooden_roof_type_a.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_roof_type_a.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/wooden_roof_type_a.json",
-          "src/main/resources/assets/jimsmineshaft/items/wooden_roof_type_a.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenRoofTypeABlock.java",
           "src/main/resources/assets/jimsmineshaft/models/item/wooden_roof_type_a.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/WoodenRoofTypeABlockEntity.java"
+          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenRoofTypeABlock.java",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/WoodenRoofTypeABlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/wooden_roof_type_a.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/wooden_roof_type_a.json"
         ]
       }
     },
@@ -705,13 +705,13 @@
       "registry_name": "wooden_roof_type_c",
       "metadata": {
         "files": [
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_roof_type_c.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/wooden_roof_type_c.json",
-          "src/main/resources/assets/jimsmineshaft/items/wooden_roof_type_c.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenRoofTypeCBlock.java",
           "src/main/resources/assets/jimsmineshaft/blockstates/wooden_roof_type_c.json",
+          "src/main/resources/assets/jimsmineshaft/items/wooden_roof_type_c.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/wooden_roof_type_c.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/entity/WoodenRoofTypeCBlockEntity.java",
           "src/main/resources/assets/jimsmineshaft/models/block/wooden_roof_type_c.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenRoofTypeCBlock.java"
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_roof_type_c.json"
         ]
       }
     },
@@ -723,13 +723,13 @@
       "registry_name": "wooden_roof_type_b",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenRoofTypeBBlock.java",
-          "src/main/resources/assets/jimsmineshaft/models/block/wooden_roof_type_b.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/wooden_roof_type_b.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/WoodenRoofTypeBBlockEntity.java",
           "src/main/resources/assets/jimsmineshaft/items/wooden_roof_type_b.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/WoodenRoofTypeBBlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/wooden_roof_type_b.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_roof_type_b.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/wooden_roof_type_b.json"
+          "src/main/resources/assets/jimsmineshaft/blockstates/wooden_roof_type_b.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/wooden_roof_type_b.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenRoofTypeBBlock.java"
         ]
       }
     },
@@ -754,11 +754,11 @@
       "registry_name": "stripped_rotten_support_beam",
       "metadata": {
         "files": [
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/stripped_rotten_support_beam.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/stripped_rotten_support_beam.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/stripped_rotten_support_beam.json",
           "src/main/resources/assets/jimsmineshaft/items/stripped_rotten_support_beam.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/StrippedRottenSupportBeamBlock.java",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/stripped_rotten_support_beam.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/stripped_rotten_support_beam.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/stripped_rotten_support_beam.json",
           "src/main/resources/assets/jimsmineshaft/models/item/stripped_rotten_support_beam.json"
         ]
       },
@@ -786,10 +786,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/jimsmineshaft/items/corrupted_support_beam.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/corrupted_support_beam.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/CorruptedSupportBeamBlock.java",
           "src/main/resources/assets/jimsmineshaft/models/item/corrupted_support_beam.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/corrupted_support_beam.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/corrupted_support_beam.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CorruptedSupportBeamBlock.java",
           "src/main/resources/assets/jimsmineshaft/models/block/corrupted_support_beam.json"
         ]
       },
@@ -803,12 +803,12 @@
       "registry_name": "tilted_corrupted_support_beam",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/TiltedCorruptedSupportBeamBlock.java",
           "src/main/resources/assets/jimsmineshaft/models/block/tilted_corrupted_support_beam.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/tilted_corrupted_support_beam.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/tilted_corrupted_support_beam.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/tilted_corrupted_support_beam.json",
           "src/main/resources/assets/jimsmineshaft/items/tilted_corrupted_support_beam.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/TiltedCorruptedSupportBeamBlock.java"
+          "src/main/resources/assets/jimsmineshaft/models/item/tilted_corrupted_support_beam.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/tilted_corrupted_support_beam.json"
         ]
       },
       "path": "~/Level 3 Blocks"
@@ -821,11 +821,11 @@
       "registry_name": "steel_shelf",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/SteelShelfBlock.java",
           "src/main/resources/assets/jimsmineshaft/models/item/steel_shelf.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/steel_shelf.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/steel_shelf.json",
           "src/main/resources/assets/jimsmineshaft/models/block/steel_shelf.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/SteelShelfBlock.java",
           "src/main/resources/assets/jimsmineshaft/items/steel_shelf.json"
         ]
       },
@@ -839,12 +839,12 @@
       "registry_name": "old_cabinet",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/items/old_cabinet.json",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/old_cabinet.json",
           "src/main/resources/assets/jimsmineshaft/models/item/old_cabinet.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/OldCabinetBlock.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/old_cabinet.json",
           "src/main/resources/assets/jimsmineshaft/models/block/old_cabinet.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/old_cabinet.json"
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/old_cabinet.json",
+          "src/main/resources/assets/jimsmineshaft/items/old_cabinet.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/OldCabinetBlock.java"
         ]
       },
       "path": "~/ExtraDetails"
@@ -858,11 +858,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/block/RottenCabinetBlock.java",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/rotten_cabinet.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/rotten_cabinet.json",
           "src/main/resources/assets/jimsmineshaft/models/item/rotten_cabinet.json",
           "src/main/resources/assets/jimsmineshaft/items/rotten_cabinet.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/rotten_cabinet.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/rotten_cabinet.json"
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/rotten_cabinet.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/rotten_cabinet.json"
         ]
       },
       "path": "~/ExtraDetails"
@@ -875,12 +875,12 @@
       "registry_name": "wood_pile",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/item/wood_pile.json",
           "src/main/resources/assets/jimsmineshaft/models/block/wood_pile.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/WoodPileBlock.java",
-          "src/main/resources/assets/jimsmineshaft/blockstates/wood_pile.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/wood_pile.json",
-          "src/main/resources/assets/jimsmineshaft/items/wood_pile.json"
+          "src/main/resources/assets/jimsmineshaft/models/item/wood_pile.json",
+          "src/main/resources/assets/jimsmineshaft/items/wood_pile.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/wood_pile.json"
         ]
       },
       "path": "~/ExtraDetails"
@@ -893,12 +893,12 @@
       "registry_name": "rusted_minecart",
       "metadata": {
         "files": [
+          "src/main/resources/assets/jimsmineshaft/items/rusted_minecart.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/RustedMinecartBlock.java",
           "src/main/resources/assets/jimsmineshaft/models/item/rusted_minecart.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/rusted_minecart.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/rusted_minecart.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/rusted_minecart.json",
-          "src/main/resources/assets/jimsmineshaft/items/rusted_minecart.json"
+          "src/main/resources/assets/jimsmineshaft/blockstates/rusted_minecart.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/rusted_minecart.json"
         ]
       },
       "path": "~/ExtraDetails"
@@ -924,12 +924,12 @@
       "registry_name": "stackable_steel_shelf",
       "metadata": {
         "files": [
+          "src/main/resources/assets/jimsmineshaft/items/stackable_steel_shelf.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/StackableSteelShelfBlock.java",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/stackable_steel_shelf.json",
           "src/main/resources/assets/jimsmineshaft/models/block/stackable_steel_shelf.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/stackable_steel_shelf.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/stackable_steel_shelf.json",
-          "src/main/resources/assets/jimsmineshaft/items/stackable_steel_shelf.json"
+          "src/main/resources/assets/jimsmineshaft/models/item/stackable_steel_shelf.json"
         ]
       },
       "path": "~/ExtraDetails"
@@ -942,12 +942,12 @@
       "registry_name": "wall_supported_wooden_shelf",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/block/wall_supported_wooden_shelf.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wall_supported_wooden_shelf.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/wall_supported_wooden_shelf.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/WallSupportedWoodenShelfBlock.java",
-          "src/main/resources/assets/jimsmineshaft/items/wall_supported_wooden_shelf.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/wall_supported_wooden_shelf.json",
           "src/main/resources/assets/jimsmineshaft/models/item/wall_supported_wooden_shelf.json",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wall_supported_wooden_shelf.json"
+          "src/main/java/net/mcreator/jimsmineshaft/block/WallSupportedWoodenShelfBlock.java",
+          "src/main/resources/assets/jimsmineshaft/items/wall_supported_wooden_shelf.json"
         ]
       },
       "path": "~/ExtraDetails"
@@ -960,12 +960,12 @@
       "registry_name": "wooden_shaft_lining",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/item/wooden_shaft_lining.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/WoodenShaftLiningBlock.java",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_shaft_lining.json",
           "src/main/resources/assets/jimsmineshaft/items/wooden_shaft_lining.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/wooden_shaft_lining.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_shaft_lining.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/wooden_shaft_lining.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/wooden_shaft_lining.json"
+          "src/main/resources/assets/jimsmineshaft/models/item/wooden_shaft_lining.json"
         ]
       },
       "path": "~/ExtraDetails"
@@ -978,8 +978,8 @@
       "registry_name": "wooden_shaft_lining_states",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/block/wooden_shaft_lining_states_blockstate_1.json",
           "src/main/resources/assets/jimsmineshaft/models/block/wooden_shaft_lining_states_blockstate_2.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/wooden_shaft_lining_states_blockstate_1.json",
           "src/main/resources/assets/jimsmineshaft/models/block/wooden_shaft_lining_states_blockstate_0.json"
         ]
       },
@@ -993,12 +993,12 @@
       "registry_name": "wooden_shelf",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenShelfBlock.java",
-          "src/main/resources/assets/jimsmineshaft/blockstates/wooden_shelf.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/wooden_shelf.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/wooden_shelf.json",
+          "src/main/resources/assets/jimsmineshaft/items/wooden_shelf.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/WoodenShelfBlock.java",
           "src/main/resources/assets/jimsmineshaft/models/item/wooden_shelf.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/wooden_shelf.json",
-          "src/main/resources/assets/jimsmineshaft/items/wooden_shelf.json"
+          "src/main/resources/assets/jimsmineshaft/models/block/wooden_shelf.json"
         ]
       },
       "path": "~/ExtraDetails"
@@ -1011,11 +1011,11 @@
       "registry_name": "long_wooden_shelf",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/block/long_wooden_shelf.json",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/long_wooden_shelf.json",
-          "src/main/resources/assets/jimsmineshaft/items/long_wooden_shelf.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/long_wooden_shelf.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/LongWoodenShelfBlock.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/long_wooden_shelf.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/long_wooden_shelf.json",
+          "src/main/resources/assets/jimsmineshaft/items/long_wooden_shelf.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/long_wooden_shelf.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/long_wooden_shelf.json"
         ]
       },
@@ -1029,12 +1029,12 @@
       "registry_name": "fenced_corrupted_support_beam",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/FencedCorruptedSupportBeamBlock.java",
-          "src/main/resources/assets/jimsmineshaft/items/fenced_corrupted_support_beam.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/fenced_corrupted_support_beam.json",
+          "src/main/resources/assets/jimsmineshaft/items/fenced_corrupted_support_beam.json",
           "src/main/resources/assets/jimsmineshaft/models/item/fenced_corrupted_support_beam.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/fenced_corrupted_support_beam.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/fenced_corrupted_support_beam.json"
+          "src/main/resources/assets/jimsmineshaft/models/block/fenced_corrupted_support_beam.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/FencedCorruptedSupportBeamBlock.java"
         ]
       },
       "path": "~/Level 3 Blocks"
@@ -1047,12 +1047,12 @@
       "registry_name": "corrupted_support_bar",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/block/corrupted_support_bar.json",
+          "src/main/resources/assets/jimsmineshaft/items/corrupted_support_bar.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/corrupted_support_bar.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/corrupted_support_bar.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/corrupted_support_bar.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/CorruptedSupportBarBlock.java",
-          "src/main/resources/assets/jimsmineshaft/blockstates/corrupted_support_bar.json",
-          "src/main/resources/assets/jimsmineshaft/items/corrupted_support_bar.json"
+          "src/main/resources/assets/jimsmineshaft/models/item/corrupted_support_bar.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/corrupted_support_bar.json"
         ]
       },
       "path": "~/Level 3 Blocks"
@@ -1065,14 +1065,14 @@
       "registry_name": "rotten_plank_slab",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/block/rotten_plank_slab.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/rotten_plank_slab.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/rotten_plank_slab.json",
           "src/main/resources/assets/jimsmineshaft/items/rotten_plank_slab.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/RottenPlankSlabBlock.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/rotten_plank_slab.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/rotten_plank_slab.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/rotten_plank_slab.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/rotten_plank_slab.json",
           "src/main/resources/assets/jimsmineshaft/models/block/rotten_plank_slab_top.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/rotten_plank_slab_full.json",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/rotten_plank_slab.json"
+          "src/main/resources/assets/jimsmineshaft/models/block/rotten_plank_slab_full.json"
         ]
       },
       "path": "~/Level 2 Blocks"
@@ -1085,13 +1085,13 @@
       "registry_name": "rotten_plank_stairs",
       "metadata": {
         "files": [
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/rotten_plank_stairs.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/RottenPlankStairsBlock.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/rotten_plank_stairs.json",
           "src/main/resources/assets/jimsmineshaft/models/block/rotten_plank_stairs.json",
           "src/main/resources/assets/jimsmineshaft/items/rotten_plank_stairs.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/rotten_plank_stairs_outer.json",
           "src/main/resources/assets/jimsmineshaft/models/item/rotten_plank_stairs.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/rotten_plank_stairs.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/rotten_plank_stairs_outer.json",
           "src/main/resources/assets/jimsmineshaft/models/block/rotten_plank_stairs_inner.json"
         ]
       },
@@ -1105,12 +1105,12 @@
       "registry_name": "iron_support",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/items/iron_support.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/iron_support.json",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/iron_support.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/iron_support.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/IronSupportBlock.java",
-          "src/main/resources/assets/jimsmineshaft/models/item/iron_support.json"
+          "src/main/resources/assets/jimsmineshaft/models/item/iron_support.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/iron_support.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/iron_support.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/iron_support.json",
+          "src/main/resources/assets/jimsmineshaft/items/iron_support.json"
         ]
       },
       "path": "~/Level 3 Blocks"
@@ -1123,12 +1123,12 @@
       "registry_name": "rusted_iron_support",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/blockstates/rusted_iron_support.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RustedIronSupportBlock.java",
           "src/main/resources/assets/jimsmineshaft/models/block/rusted_iron_support.json",
           "src/main/resources/assets/jimsmineshaft/items/rusted_iron_support.json",
           "src/main/resources/assets/jimsmineshaft/models/item/rusted_iron_support.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/RustedIronSupportBlock.java",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/rusted_iron_support.json"
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/rusted_iron_support.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/rusted_iron_support.json"
         ]
       },
       "path": "~/Level 3 Blocks"
@@ -1141,12 +1141,12 @@
       "registry_name": "canary_cage",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/CanaryCageBlock.java",
           "src/main/resources/assets/jimsmineshaft/models/block/canary_cage.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/canary_cage.json",
           "src/main/resources/assets/jimsmineshaft/items/canary_cage.json",
           "src/main/resources/assets/jimsmineshaft/models/item/canary_cage.json",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/canary_cage.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/canary_cage.json"
+          "src/main/java/net/mcreator/jimsmineshaft/block/CanaryCageBlock.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/canary_cage.json"
         ]
       },
       "path": "~/Artifacts"
@@ -1159,9 +1159,9 @@
       "registry_name": "detonator_block_item",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/item/detonator_block_item.json",
+          "src/main/resources/assets/jimsmineshaft/items/detonator_block_item.json",
           "src/main/java/net/mcreator/jimsmineshaft/item/DetonatorBlockItemItem.java",
-          "src/main/resources/assets/jimsmineshaft/items/detonator_block_item.json"
+          "src/main/resources/assets/jimsmineshaft/models/item/detonator_block_item.json"
         ]
       },
       "path": "~/Loot Work"
@@ -1194,12 +1194,12 @@
       "registry_name": "raw_copper_drilled_east",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopperDrilledEastBlock.java",
-          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_drilled_east.json",
           "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_drilled_east.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_drilled_east.json",
+          "src/main/resources/assets/jimsmineshaft/items/raw_copper_drilled_east.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_drilled_east.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_drilled_east.json",
-          "src/main/resources/assets/jimsmineshaft/items/raw_copper_drilled_east.json"
+          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopperDrilledEastBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_drilled_east.json"
         ]
       },
       "path": "~/Loot Work"
@@ -1385,13 +1385,13 @@
       "registry_name": "copper_chunk_type_b",
       "metadata": {
         "files": [
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_chunk_type_b.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/CopperChunkTypeBBlock.java",
           "src/main/resources/assets/jimsmineshaft/models/block/copper_chunk_type_b.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperChunkTypeBBlockEntity.java",
-          "src/main/resources/assets/jimsmineshaft/items/copper_chunk_type_b.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CopperChunkTypeBBlock.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_chunk_type_b.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/copper_chunk_type_b.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/copper_chunk_type_b.json"
+          "src/main/resources/assets/jimsmineshaft/models/item/copper_chunk_type_b.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperChunkTypeBBlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/copper_chunk_type_b.json"
         ]
       },
       "path": "~/Loot Work"
@@ -1424,13 +1424,13 @@
       "registry_name": "copper_chunk_type_c",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/CopperChunkTypeCBlock.java",
           "src/main/resources/assets/jimsmineshaft/blockstates/copper_chunk_type_c.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperChunkTypeCBlockEntity.java",
           "src/main/resources/assets/jimsmineshaft/models/item/copper_chunk_type_c.json",
           "src/main/resources/assets/jimsmineshaft/models/block/copper_chunk_type_c.json",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_chunk_type_c.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperChunkTypeCBlockEntity.java",
-          "src/main/java/net/mcreator/jimsmineshaft/block/CopperChunkTypeCBlock.java",
-          "src/main/resources/assets/jimsmineshaft/items/copper_chunk_type_c.json"
+          "src/main/resources/assets/jimsmineshaft/items/copper_chunk_type_c.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_chunk_type_c.json"
         ]
       },
       "path": "~/Loot Work"
@@ -1443,13 +1443,13 @@
       "registry_name": "copper_chunk_type_d",
       "metadata": {
         "files": [
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_chunk_type_d.json",
           "src/main/resources/assets/jimsmineshaft/models/block/copper_chunk_type_d.json",
           "src/main/resources/assets/jimsmineshaft/items/copper_chunk_type_d.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/copper_chunk_type_d.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/CopperChunkTypeDBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/copper_chunk_type_d.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperChunkTypeDBlockEntity.java",
-          "src/main/resources/assets/jimsmineshaft/models/item/copper_chunk_type_d.json"
+          "src/main/resources/assets/jimsmineshaft/blockstates/copper_chunk_type_d.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_chunk_type_d.json"
         ]
       },
       "path": "~/Loot Work"
@@ -1462,13 +1462,13 @@
       "registry_name": "copper_chunk_type_e",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperChunkTypeEBlockEntity.java",
-          "src/main/resources/assets/jimsmineshaft/items/copper_chunk_type_e.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/copper_chunk_type_e.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_chunk_type_e.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/copper_chunk_type_e.json",
+          "src/main/resources/assets/jimsmineshaft/items/copper_chunk_type_e.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/copper_chunk_type_e.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/CopperChunkTypeEBlock.java",
-          "src/main/resources/assets/jimsmineshaft/models/item/copper_chunk_type_e.json"
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperChunkTypeEBlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/models/block/copper_chunk_type_e.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CopperChunkTypeEBlock.java"
         ]
       },
       "path": "~/Loot Work"
@@ -1529,13 +1529,13 @@
       "registry_name": "copper_chunk_type_a",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/CopperChunkTypeABlock.java",
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperChunkTypeABlockEntity.java",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_chunk_type_a.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/copper_chunk_type_a.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/copper_chunk_type_a.json",
           "src/main/resources/assets/jimsmineshaft/items/copper_chunk_type_a.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/copper_chunk_type_a.json"
+          "src/main/java/net/mcreator/jimsmineshaft/block/CopperChunkTypeABlock.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_chunk_type_a.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperChunkTypeABlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/copper_chunk_type_a.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/copper_chunk_type_a.json"
         ]
       },
       "path": "~/Loot Work"
@@ -1710,9 +1710,9 @@
       "registry_name": "thecart",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/ThecartRenderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/thecart_spawn_egg.json",
           "src/main/java/net/mcreator/jimsmineshaft/entity/ThecartEntity.java",
-          "src/main/resources/assets/jimsmineshaft/items/thecart_spawn_egg.json"
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/ThecartRenderer.java"
         ]
       },
       "path": "~/Cart and Rail"
@@ -1725,12 +1725,12 @@
       "registry_name": "raw_copper_drilled_east_dynamite",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_drilled_east_dynamite.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_drilled_east_dynamite.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopperDrilledEastDynamiteBlock.java",
-          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_drilled_east_dynamite.json",
           "src/main/resources/assets/jimsmineshaft/items/raw_copper_drilled_east_dynamite.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_drilled_east_dynamite.json"
+          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_drilled_east_dynamite.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_drilled_east_dynamite.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_drilled_east_dynamite.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopperDrilledEastDynamiteBlock.java"
         ]
       },
       "path": "~/Loot Work"
@@ -1757,8 +1757,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/entity/PressureDrillEntity.java",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/PressureDrillRenderer.java",
-          "src/main/resources/assets/jimsmineshaft/items/pressure_drill_spawn_egg.json"
+          "src/main/resources/assets/jimsmineshaft/items/pressure_drill_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/PressureDrillRenderer.java"
         ]
       },
       "path": "~/Loot Work"
@@ -1814,12 +1814,12 @@
       "registry_name": "raw_copper_2",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_2.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_2.json",
-          "src/main/resources/assets/jimsmineshaft/items/raw_copper_2.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_2.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper2BlockEntity.java",
           "src/main/java/net/mcreator/jimsmineshaft/block/RawCopper2Block.java",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_2.json",
+          "src/main/resources/assets/jimsmineshaft/items/raw_copper_2.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_2.json",
           "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_2.json"
         ]
       },
@@ -1967,8 +1967,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/jimsmineshaft/models/item/woemineshaftfullmemefortotem.json",
-          "src/main/resources/assets/jimsmineshaft/items/woemineshaftfullmemefortotem.json",
-          "src/main/java/net/mcreator/jimsmineshaft/item/WoemineshaftfullmemefortotemItem.java"
+          "src/main/java/net/mcreator/jimsmineshaft/item/WoemineshaftfullmemefortotemItem.java",
+          "src/main/resources/assets/jimsmineshaft/items/woemineshaftfullmemefortotem.json"
         ]
       }
     },
@@ -2001,12 +2001,12 @@
       "metadata": {
         "files": [
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/new_stripped_dark_oak_log.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/NewStrippedDarkOakLogBlockEntity.java",
-          "src/main/resources/assets/jimsmineshaft/models/block/new_stripped_dark_oak_log.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/new_stripped_dark_oak_log.json",
+          "src/main/resources/assets/jimsmineshaft/items/new_stripped_dark_oak_log.json",
           "src/main/resources/assets/jimsmineshaft/models/item/new_stripped_dark_oak_log.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/NewStrippedDarkOakLogBlock.java",
-          "src/main/resources/assets/jimsmineshaft/items/new_stripped_dark_oak_log.json"
+          "src/main/resources/assets/jimsmineshaft/blockstates/new_stripped_dark_oak_log.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/new_stripped_dark_oak_log.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/NewStrippedDarkOakLogBlockEntity.java"
         ]
       },
       "path": "~/Level 1 Blocks"
@@ -2064,11 +2064,11 @@
       "registry_name": "copper_shard",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/CopperShardBlock.java",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_shard.json",
           "src/main/resources/assets/jimsmineshaft/models/item/copper_shard.json",
-          "src/main/resources/assets/jimsmineshaft/items/copper_shard.json",
           "src/main/resources/assets/jimsmineshaft/models/block/copper_shard.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/CopperShardBlock.java",
+          "src/main/resources/assets/jimsmineshaft/items/copper_shard.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/copper_shard.json"
         ]
       },
@@ -2213,9 +2213,9 @@
       "registry_name": "structure_spawner",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/item/structure_spawner.json",
           "src/main/java/net/mcreator/jimsmineshaft/item/StructureSpawnerItem.java",
-          "src/main/resources/assets/jimsmineshaft/items/structure_spawner.json"
+          "src/main/resources/assets/jimsmineshaft/items/structure_spawner.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/structure_spawner.json"
         ]
       },
       "path": "~/Procedures"
@@ -2305,9 +2305,9 @@
       "registry_name": "copper_drilled_east",
       "metadata": {
         "files": [
+          "src/main/resources/assets/jimsmineshaft/items/copper_drilled_east_spawn_egg.json",
           "src/main/java/net/mcreator/jimsmineshaft/client/renderer/CopperDrilledEastRenderer.java",
-          "src/main/java/net/mcreator/jimsmineshaft/entity/CopperDrilledEastEntity.java",
-          "src/main/resources/assets/jimsmineshaft/items/copper_drilled_east_spawn_egg.json"
+          "src/main/java/net/mcreator/jimsmineshaft/entity/CopperDrilledEastEntity.java"
         ]
       },
       "path": "~/Loot Work"
@@ -2482,12 +2482,12 @@
       "registry_name": "copper_shard_triple",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/blockstates/copper_shard_triple.json",
           "src/main/resources/assets/jimsmineshaft/models/item/copper_shard_triple.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/copper_shard_triple.json",
           "src/main/resources/assets/jimsmineshaft/items/copper_shard_triple.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/copper_shard_triple.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CopperShardTripleBlock.java",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_shard_triple.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/CopperShardTripleBlock.java"
+          "src/main/resources/assets/jimsmineshaft/models/block/copper_shard_triple.json"
         ]
       },
       "path": "~/Loot Work"
@@ -2611,13 +2611,13 @@
       "registry_name": "mystery_item",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/block/mystery_item.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/mystery_item.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/MysteryItemBlock.java",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/mystery_item.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/mystery_item.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/mystery_item.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/mystery_item.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/entity/MysteryItemBlockEntity.java",
-          "src/main/resources/assets/jimsmineshaft/items/mystery_item.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/mystery_item.json"
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/mystery_item.json",
+          "src/main/resources/assets/jimsmineshaft/items/mystery_item.json"
         ]
       },
       "path": "~/Procedures"
@@ -2775,12 +2775,12 @@
       "registry_name": "cart_rail",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/CartRailBlock.java",
           "src/main/resources/assets/jimsmineshaft/items/cart_rail.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/cart_rail.json",
           "src/main/resources/assets/jimsmineshaft/models/block/cart_rail.json",
           "src/main/resources/assets/jimsmineshaft/models/item/cart_rail.json",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/cart_rail.json"
+          "src/main/java/net/mcreator/jimsmineshaft/block/CartRailBlock.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/cart_rail.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/cart_rail.json"
         ]
       },
       "path": "~/Cart and Rail"
@@ -2837,8 +2837,8 @@
       "registry_name": "elevator",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/entity/ElevatorEntity.java",
           "src/main/resources/assets/jimsmineshaft/items/elevator_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/ElevatorEntity.java",
           "src/main/java/net/mcreator/jimsmineshaft/client/renderer/ElevatorRenderer.java"
         ]
       },
@@ -2853,8 +2853,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/jimsmineshaft/models/item/detonator_block_pushed.json",
-          "src/main/java/net/mcreator/jimsmineshaft/item/DetonatorBlockPushedItem.java",
-          "src/main/resources/assets/jimsmineshaft/items/detonator_block_pushed.json"
+          "src/main/resources/assets/jimsmineshaft/items/detonator_block_pushed.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/DetonatorBlockPushedItem.java"
         ]
       },
       "path": "~/Loot Work"
@@ -3040,8 +3040,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/client/renderer/ElevatorBoundingBoxRenderer.java",
-          "src/main/java/net/mcreator/jimsmineshaft/entity/ElevatorBoundingBoxEntity.java",
-          "src/main/resources/assets/jimsmineshaft/items/elevator_bounding_box_spawn_egg.json"
+          "src/main/resources/assets/jimsmineshaft/items/elevator_bounding_box_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/ElevatorBoundingBoxEntity.java"
         ]
       },
       "path": "~/Cart and Rail"
@@ -3231,12 +3231,12 @@
       "registry_name": "elevator_front",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/item/elevator_front.json",
           "src/main/resources/assets/jimsmineshaft/models/block/elevator_front.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/elevator_front.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/ElevatorFrontBlockEntity.java",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/elevator_front.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/ElevatorFrontBlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/elevator_front.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/ElevatorFrontBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/elevator_front.json",
           "src/main/resources/assets/jimsmineshaft/items/elevator_front.json"
         ]
       },
@@ -3294,9 +3294,9 @@
       "registry_name": "elevator_seat_5",
       "metadata": {
         "files": [
+          "src/main/resources/assets/jimsmineshaft/items/elevator_seat_5_spawn_egg.json",
           "src/main/java/net/mcreator/jimsmineshaft/entity/ElevatorSeat5Entity.java",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/ElevatorSeat5Renderer.java",
-          "src/main/resources/assets/jimsmineshaft/items/elevator_seat_5_spawn_egg.json"
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/ElevatorSeat5Renderer.java"
         ]
       },
       "path": "~/Cart and Rail"
@@ -3309,9 +3309,9 @@
       "registry_name": "elevator_seat_6",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/ElevatorSeat6Renderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/elevator_seat_6_spawn_egg.json",
           "src/main/java/net/mcreator/jimsmineshaft/entity/ElevatorSeat6Entity.java",
-          "src/main/resources/assets/jimsmineshaft/items/elevator_seat_6_spawn_egg.json"
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/ElevatorSeat6Renderer.java"
         ]
       },
       "path": "~/Cart and Rail"
@@ -3324,8 +3324,8 @@
       "registry_name": "elevator_seat_3",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/entity/ElevatorSeat3Entity.java",
           "src/main/java/net/mcreator/jimsmineshaft/client/renderer/ElevatorSeat3Renderer.java",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/ElevatorSeat3Entity.java",
           "src/main/resources/assets/jimsmineshaft/items/elevator_seat_3_spawn_egg.json"
         ]
       },
@@ -3354,9 +3354,9 @@
       "registry_name": "elevator_seat_7",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/entity/ElevatorSeat7Entity.java",
           "src/main/java/net/mcreator/jimsmineshaft/client/renderer/ElevatorSeat7Renderer.java",
-          "src/main/resources/assets/jimsmineshaft/items/elevator_seat_7_spawn_egg.json",
-          "src/main/java/net/mcreator/jimsmineshaft/entity/ElevatorSeat7Entity.java"
+          "src/main/resources/assets/jimsmineshaft/items/elevator_seat_7_spawn_egg.json"
         ]
       },
       "path": "~/Cart and Rail"
@@ -3400,8 +3400,8 @@
       "registry_name": "elevator_seat_8",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/items/elevator_seat_8_spawn_egg.json",
           "src/main/java/net/mcreator/jimsmineshaft/client/renderer/ElevatorSeat8Renderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/elevator_seat_8_spawn_egg.json",
           "src/main/java/net/mcreator/jimsmineshaft/entity/ElevatorSeat8Entity.java"
         ]
       },
@@ -3415,13 +3415,13 @@
       "registry_name": "copper_fragment_5",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperFragment5BlockEntity.java",
-          "src/main/resources/assets/jimsmineshaft/models/block/copper_fragment_5.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/CopperFragment5Block.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/copper_fragment_5.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_fragment_5.json",
-          "src/main/resources/assets/jimsmineshaft/items/copper_fragment_5.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/copper_fragment_5.json",
           "src/main/resources/assets/jimsmineshaft/models/item/copper_fragment_5.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/copper_fragment_5.json"
+          "src/main/java/net/mcreator/jimsmineshaft/block/CopperFragment5Block.java",
+          "src/main/resources/assets/jimsmineshaft/items/copper_fragment_5.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperFragment5BlockEntity.java"
         ]
       },
       "path": "~/Loot Work"
@@ -3465,12 +3465,12 @@
       "registry_name": "copper_fragment_1",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/items/copper_fragment_1.json",
           "src/main/resources/assets/jimsmineshaft/models/item/copper_fragment_1.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperFragment1BlockEntity.java",
-          "src/main/resources/assets/jimsmineshaft/models/block/copper_fragment_1.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_fragment_1.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/CopperFragment1Block.java",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperFragment1BlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/copper_fragment_1.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/copper_fragment_1.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/copper_fragment_1.json"
         ]
       },
@@ -3484,13 +3484,13 @@
       "registry_name": "copper_fragment_2",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/CopperFragment2Block.java",
-          "src/main/resources/assets/jimsmineshaft/models/block/copper_fragment_2.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/copper_fragment_2.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperFragment2BlockEntity.java",
-          "src/main/resources/assets/jimsmineshaft/models/item/copper_fragment_2.json",
           "src/main/resources/assets/jimsmineshaft/items/copper_fragment_2.json",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_fragment_2.json"
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_fragment_2.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/copper_fragment_2.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/copper_fragment_2.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CopperFragment2Block.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/copper_fragment_2.json"
         ]
       },
       "path": "~/Loot Work"
@@ -3503,13 +3503,13 @@
       "registry_name": "copper_fragment_3",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/items/copper_fragment_3.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/CopperFragment3Block.java",
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperFragment3BlockEntity.java",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_fragment_3.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/copper_fragment_3.json",
+          "src/main/resources/assets/jimsmineshaft/items/copper_fragment_3.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/copper_fragment_3.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_fragment_3.json",
           "src/main/resources/assets/jimsmineshaft/models/item/copper_fragment_3.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/copper_fragment_3.json"
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperFragment3BlockEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CopperFragment3Block.java"
         ]
       },
       "path": "~/Loot Work"
@@ -3523,12 +3523,12 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/block/CopperFragment4Block.java",
-          "src/main/resources/assets/jimsmineshaft/models/item/copper_fragment_4.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_fragment_4.json",
-          "src/main/resources/assets/jimsmineshaft/items/copper_fragment_4.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/copper_fragment_4.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/entity/CopperFragment4BlockEntity.java",
-          "src/main/resources/assets/jimsmineshaft/models/block/copper_fragment_4.json"
+          "src/main/resources/assets/jimsmineshaft/models/item/copper_fragment_4.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/copper_fragment_4.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/copper_fragment_4.json",
+          "src/main/resources/assets/jimsmineshaft/items/copper_fragment_4.json"
         ]
       },
       "path": "~/Loot Work"
@@ -3657,12 +3657,12 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/jimsmineshaft/blockstates/mystery_rail.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/MysteryRailBlockEntity.java",
-          "src/main/resources/assets/jimsmineshaft/models/item/mystery_rail.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/mystery_rail.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/MysteryRailBlock.java",
-          "src/main/resources/assets/jimsmineshaft/items/mystery_rail.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/MysteryRailBlockEntity.java",
           "src/main/resources/assets/jimsmineshaft/models/block/mystery_rail.json",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/mystery_rail.json"
+          "src/main/resources/assets/jimsmineshaft/models/item/mystery_rail.json",
+          "src/main/resources/assets/jimsmineshaft/items/mystery_rail.json"
         ]
       },
       "path": "~/Procedures"
@@ -3726,9 +3726,9 @@
       "registry_name": "cart_4",
       "metadata": {
         "files": [
+          "src/main/resources/assets/jimsmineshaft/items/cart_4_spawn_egg.json",
           "src/main/java/net/mcreator/jimsmineshaft/client/renderer/Cart4Renderer.java",
-          "src/main/java/net/mcreator/jimsmineshaft/entity/Cart4Entity.java",
-          "src/main/resources/assets/jimsmineshaft/items/cart_4_spawn_egg.json"
+          "src/main/java/net/mcreator/jimsmineshaft/entity/Cart4Entity.java"
         ]
       },
       "path": "~/Cart and Rail"
@@ -3776,13 +3776,13 @@
       "registry_name": "raw_copper_210",
       "metadata": {
         "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_210.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_210.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_210.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper210BlockEntity.java",
-          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_210.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_210.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_210.json",
+          "src/main/resources/assets/jimsmineshaft/items/raw_copper_210.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/RawCopper210Block.java",
-          "src/main/resources/assets/jimsmineshaft/items/raw_copper_210.json"
+          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_210.json"
         ]
       },
       "path": "~/Loot Work"
@@ -3795,12 +3795,12 @@
       "registry_name": "pressure_drill_holdable",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/PressureDrillHoldableBlock.java",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/pressure_drill_holdable.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/pressure_drill_holdable.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/pressure_drill_holdable.json",
           "src/main/resources/assets/jimsmineshaft/models/block/pressure_drill_holdable.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/pressure_drill_holdable.json",
           "src/main/resources/assets/jimsmineshaft/items/pressure_drill_holdable.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/PressureDrillHoldableBlock.java"
+          "src/main/resources/assets/jimsmineshaft/models/item/pressure_drill_holdable.json"
         ]
       },
       "path": "~/Loot Work"
@@ -3939,9 +3939,9 @@
       "registry_name": "elevator_seat_1",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/ElevatorSeat1Renderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/elevator_seat_1_spawn_egg.json",
           "src/main/java/net/mcreator/jimsmineshaft/entity/ElevatorSeat1Entity.java",
-          "src/main/resources/assets/jimsmineshaft/items/elevator_seat_1_spawn_egg.json"
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/ElevatorSeat1Renderer.java"
         ]
       },
       "path": "~/Cart and Rail"
@@ -3975,8 +3975,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/client/renderer/ElevatorSeat2Renderer.java",
-          "src/main/resources/assets/jimsmineshaft/items/elevator_seat_2_spawn_egg.json",
-          "src/main/java/net/mcreator/jimsmineshaft/entity/ElevatorSeat2Entity.java"
+          "src/main/java/net/mcreator/jimsmineshaft/entity/ElevatorSeat2Entity.java",
+          "src/main/resources/assets/jimsmineshaft/items/elevator_seat_2_spawn_egg.json"
         ]
       },
       "path": "~/Cart and Rail"
@@ -4217,11 +4217,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/jimsmineshaft/models/item/copper_shard_double.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/copper_shard_double.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/CopperShardDoubleBlock.java",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_shard_double.json",
-          "src/main/resources/assets/jimsmineshaft/items/copper_shard_double.json",
           "src/main/resources/assets/jimsmineshaft/models/block/copper_shard_double.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/copper_shard_double.json"
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_shard_double.json",
+          "src/main/resources/assets/jimsmineshaft/items/copper_shard_double.json"
         ]
       },
       "path": "~/Loot Work"
@@ -4234,13 +4234,13 @@
       "registry_name": "raw_copper_29",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_29.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_29.json",
           "src/main/resources/assets/jimsmineshaft/items/raw_copper_29.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_29.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_29.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/RawCopper29Block.java",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_29.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper29BlockEntity.java"
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper29BlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_29.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_29.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_29.json"
         ]
       },
       "path": "~/Loot Work"
@@ -4253,13 +4253,13 @@
       "registry_name": "raw_copper_28",
       "metadata": {
         "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_28.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper28BlockEntity.java",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_28.json",
           "src/main/resources/assets/jimsmineshaft/items/raw_copper_28.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper28BlockEntity.java",
           "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_28.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_28.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/RawCopper28Block.java",
-          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_28.json"
+          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_28.json"
         ]
       },
       "path": "~/Loot Work"
@@ -4272,12 +4272,12 @@
       "registry_name": "raw_copper_27",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_27.json",
-          "src/main/resources/assets/jimsmineshaft/items/raw_copper_27.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopper27Block.java",
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper27BlockEntity.java",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_27.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_27.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper27BlockEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopper27Block.java",
           "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_27.json",
+          "src/main/resources/assets/jimsmineshaft/items/raw_copper_27.json",
           "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_27.json"
         ]
       },
@@ -4291,13 +4291,13 @@
       "registry_name": "raw_copper_26",
       "metadata": {
         "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_26.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper26BlockEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopper26Block.java",
           "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_26.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_26.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_26.json",
-          "src/main/resources/assets/jimsmineshaft/items/raw_copper_26.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper26BlockEntity.java",
-          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_26.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopper26Block.java"
+          "src/main/resources/assets/jimsmineshaft/items/raw_copper_26.json"
         ]
       },
       "path": "~/Loot Work"
@@ -4310,13 +4310,13 @@
       "registry_name": "raw_copper_25",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper25BlockEntity.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_25.json",
           "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_25.json",
-          "src/main/resources/assets/jimsmineshaft/items/raw_copper_25.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_25.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopper25Block.java",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper25BlockEntity.java",
           "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_25.json",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_25.json"
+          "src/main/resources/assets/jimsmineshaft/items/raw_copper_25.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopper25Block.java"
         ]
       },
       "path": "~/Loot Work"
@@ -4360,13 +4360,13 @@
       "registry_name": "raw_copper_24",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper24BlockEntity.java",
-          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_24.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopper24Block.java",
-          "src/main/resources/assets/jimsmineshaft/items/raw_copper_24.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_24.json",
+          "src/main/resources/assets/jimsmineshaft/items/raw_copper_24.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopper24Block.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_24.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_24.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_24.json"
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper24BlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_24.json"
         ]
       },
       "path": "~/Loot Work"
@@ -4379,13 +4379,13 @@
       "registry_name": "raw_copper_23",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper23BlockEntity.java",
-          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_23.json",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_23.json",
           "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_23.json",
-          "src/main/resources/assets/jimsmineshaft/items/raw_copper_23.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_23.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper23BlockEntity.java",
           "src/main/java/net/mcreator/jimsmineshaft/block/RawCopper23Block.java",
-          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_23.json"
+          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_23.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_23.json",
+          "src/main/resources/assets/jimsmineshaft/items/raw_copper_23.json"
         ]
       },
       "path": "~/Loot Work"
@@ -4398,13 +4398,13 @@
       "registry_name": "raw_copper_22",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopper22Block.java",
-          "src/main/resources/assets/jimsmineshaft/items/raw_copper_22.json",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_22.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_22.json",
           "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_22.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper22BlockEntity.java",
           "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_22.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/RawCopper22BlockEntity.java"
+          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopper22Block.java",
+          "src/main/resources/assets/jimsmineshaft/items/raw_copper_22.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_22.json"
         ]
       },
       "path": "~/Loot Work"
@@ -4505,13 +4505,13 @@
       "registry_name": "new_suspicious_gravel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/block/new_suspicious_gravel.json",
-          "src/main/resources/assets/jimsmineshaft/items/new_suspicious_gravel.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/NewSuspiciousGravelBlockEntity.java",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/new_suspicious_gravel.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/new_suspicious_gravel.json",
           "src/main/resources/assets/jimsmineshaft/models/item/new_suspicious_gravel.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/NewSuspiciousGravelBlockEntity.java",
           "src/main/java/net/mcreator/jimsmineshaft/block/NewSuspiciousGravelBlock.java",
-          "src/main/resources/assets/jimsmineshaft/blockstates/new_suspicious_gravel.json"
+          "src/main/resources/assets/jimsmineshaft/models/block/new_suspicious_gravel.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/new_suspicious_gravel.json",
+          "src/main/resources/assets/jimsmineshaft/items/new_suspicious_gravel.json"
         ]
       },
       "path": "~/Level 1 Blocks"
@@ -4524,10 +4524,10 @@
       "registry_name": "raw_copper_drilled_north_dynamite",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_drilled_north_dynamite.json",
           "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_drilled_north_dynamite.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopperDrilledNorthDynamiteBlock.java",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_drilled_north_dynamite.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RawCopperDrilledNorthDynamiteBlock.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_drilled_north_dynamite.json",
           "src/main/resources/assets/jimsmineshaft/items/raw_copper_drilled_north_dynamite.json",
           "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_drilled_north_dynamite.json"
         ]
@@ -4783,13 +4783,13 @@
       "registry_name": "new_stone",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/blockstates/new_stone.json",
           "src/main/resources/assets/jimsmineshaft/models/block/new_stone.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/new_stone.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/NewStoneBlockEntity.java",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/new_stone.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/new_stone.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/NewStoneBlockEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/block/NewStoneBlock.java",
           "src/main/resources/assets/jimsmineshaft/items/new_stone.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/NewStoneBlock.java"
+          "src/main/resources/assets/jimsmineshaft/models/item/new_stone.json"
         ]
       },
       "path": "~/Level 1 Blocks"
@@ -4802,11 +4802,11 @@
       "registry_name": "pressure_drill_folded_model",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/blockstates/pressure_drill_folded_model.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/pressure_drill_folded_model.json",
-          "src/main/resources/assets/jimsmineshaft/items/pressure_drill_folded_model.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/PressureDrillFoldedModelBlock.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/pressure_drill_folded_model.json",
           "src/main/resources/assets/jimsmineshaft/models/item/pressure_drill_folded_model.json",
+          "src/main/resources/assets/jimsmineshaft/items/pressure_drill_folded_model.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/pressure_drill_folded_model.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/pressure_drill_folded_model.json"
         ]
       },
@@ -4952,9 +4952,9 @@
       "registry_name": "cart_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/world/inventory/CartGUIMenu.java",
+          "src/main/java/net/mcreator/jimsmineshaft/network/CartGUISlotMessage.java",
           "src/main/java/net/mcreator/jimsmineshaft/client/gui/CartGUIScreen.java",
-          "src/main/java/net/mcreator/jimsmineshaft/network/CartGUISlotMessage.java"
+          "src/main/java/net/mcreator/jimsmineshaft/world/inventory/CartGUIMenu.java"
         ]
       },
       "path": "~/Cart and Rail"
@@ -5126,9 +5126,9 @@
       "registry_name": "dynamite_box",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/item/dynamite_box.json",
           "src/main/java/net/mcreator/jimsmineshaft/item/DynamiteBoxItem.java",
-          "src/main/resources/assets/jimsmineshaft/items/dynamite_box.json"
+          "src/main/resources/assets/jimsmineshaft/items/dynamite_box.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/dynamite_box.json"
         ]
       },
       "path": "~/Loot Work"
@@ -5304,8 +5304,8 @@
       "registry_name": "copper_drilled_north",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/entity/CopperDrilledNorthEntity.java",
           "src/main/resources/assets/jimsmineshaft/items/copper_drilled_north_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/CopperDrilledNorthEntity.java",
           "src/main/java/net/mcreator/jimsmineshaft/client/renderer/CopperDrilledNorthRenderer.java"
         ]
       },
@@ -5495,12 +5495,12 @@
       "registry_name": "raw_copper_drilled_north",
       "metadata": {
         "files": [
+          "src/main/resources/assets/jimsmineshaft/items/raw_copper_drilled_north.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_drilled_north.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/RawCopperDrilledNorthBlock.java",
           "src/main/resources/assets/jimsmineshaft/models/item/raw_copper_drilled_north.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_drilled_north.json",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/raw_copper_drilled_north.json",
-          "src/main/resources/assets/jimsmineshaft/items/raw_copper_drilled_north.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_drilled_north.json"
+          "src/main/resources/assets/jimsmineshaft/blockstates/raw_copper_drilled_north.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/raw_copper_drilled_north.json"
         ]
       },
       "path": "~/Loot Work"
@@ -5839,9 +5839,9 @@
       "registry_name": "shaftbuilder_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/world/inventory/ShaftbuilderGUIMenu.java",
           "src/main/java/net/mcreator/jimsmineshaft/network/ShaftbuilderGUIButtonMessage.java",
-          "src/main/java/net/mcreator/jimsmineshaft/client/gui/ShaftbuilderGUIScreen.java"
+          "src/main/java/net/mcreator/jimsmineshaft/client/gui/ShaftbuilderGUIScreen.java",
+          "src/main/java/net/mcreator/jimsmineshaft/world/inventory/ShaftbuilderGUIMenu.java"
         ]
       },
       "path": "~/Procedures"
@@ -5904,13 +5904,13 @@
       "registry_name": "new_gravel",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/NewGravelBlock.java",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/new_gravel.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/new_gravel.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/new_gravel.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/new_gravel.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/NewGravelBlockEntity.java",
           "src/main/resources/assets/jimsmineshaft/items/new_gravel.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/NewGravelBlockEntity.java"
+          "src/main/resources/assets/jimsmineshaft/models/item/new_gravel.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/new_gravel.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/new_gravel.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/new_gravel.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/NewGravelBlock.java"
         ]
       },
       "path": "~/Level 1 Blocks"
@@ -6167,12 +6167,12 @@
       "registry_name": "canteen",
       "metadata": {
         "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/canteen.json",
           "src/main/resources/assets/jimsmineshaft/items/canteen.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/canteen.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/CanteenBlock.java",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/canteen.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/canteen.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/canteen.json"
+          "src/main/resources/assets/jimsmineshaft/models/item/canteen.json"
         ]
       },
       "path": "~/Artifacts"
@@ -6219,9 +6219,9 @@
       "registry_name": "small_pickaxe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/items/small_pickaxe.json",
           "src/main/java/net/mcreator/jimsmineshaft/item/SmallPickaxeItem.java",
-          "src/main/resources/assets/jimsmineshaft/models/item/small_pickaxe.json"
+          "src/main/resources/assets/jimsmineshaft/models/item/small_pickaxe.json",
+          "src/main/resources/assets/jimsmineshaft/items/small_pickaxe.json"
         ]
       },
       "path": "~/Weapons"
@@ -6234,9 +6234,9 @@
       "registry_name": "old_knife",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/item/old_knife.json",
+          "src/main/resources/assets/jimsmineshaft/items/old_knife.json",
           "src/main/java/net/mcreator/jimsmineshaft/item/OldKnifeItem.java",
-          "src/main/resources/assets/jimsmineshaft/items/old_knife.json"
+          "src/main/resources/assets/jimsmineshaft/models/item/old_knife.json"
         ]
       },
       "path": "~/Weapons"
@@ -6249,12 +6249,12 @@
       "registry_name": "candle_holder",
       "metadata": {
         "files": [
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/candle_holder.json",
           "src/main/resources/assets/jimsmineshaft/models/item/candle_holder.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/candle_holder.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/candle_holder.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/candle_holder.json",
           "src/main/resources/assets/jimsmineshaft/items/candle_holder.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/CandleHolderBlock.java"
+          "src/main/resources/assets/jimsmineshaft/blockstates/candle_holder.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CandleHolderBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/block/candle_holder.json"
         ]
       },
       "path": "~/Artifacts"
@@ -6286,9 +6286,9 @@
       "registry_name": "stalker",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/entity/StalkerEntity.java",
           "src/main/java/net/mcreator/jimsmineshaft/client/renderer/StalkerRenderer.java",
-          "src/main/resources/assets/jimsmineshaft/items/stalker_spawn_egg.json"
+          "src/main/resources/assets/jimsmineshaft/items/stalker_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/StalkerEntity.java"
         ]
       }
     },
@@ -6301,8 +6301,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/jimsmineshaft/models/item/fire_axe.json",
-          "src/main/resources/assets/jimsmineshaft/items/fire_axe.json",
-          "src/main/java/net/mcreator/jimsmineshaft/item/FireAxeItem.java"
+          "src/main/java/net/mcreator/jimsmineshaft/item/FireAxeItem.java",
+          "src/main/resources/assets/jimsmineshaft/items/fire_axe.json"
         ]
       },
       "path": "~/Weapons"
@@ -6535,9 +6535,9 @@
       "registry_name": "level_1_test_biome",
       "metadata": {
         "files": [
+          "src/main/resources/data/jimsmineshaft/worldgen/biome/level_1_test_biome.json",
           "src/main/resources/data/jimsmineshaft/worldgen/configured_feature/level_1_test_biome_tree.json",
-          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/level_1_test_biome_tree.json",
-          "src/main/resources/data/jimsmineshaft/worldgen/biome/level_1_test_biome.json"
+          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/level_1_test_biome_tree.json"
         ]
       },
       "path": "~/Dimensions and Biomes"
@@ -6586,8 +6586,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/entity/StalkerInsidesEntity.java",
-          "src/main/resources/assets/jimsmineshaft/items/stalker_insides_spawn_egg.json",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/StalkerInsidesRenderer.java"
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/StalkerInsidesRenderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/stalker_insides_spawn_egg.json"
         ]
       },
       "path": "~/Skin Stealer Mechanic"
@@ -6669,8 +6669,8 @@
       "registry_name": "blood_particle",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/particles/blood_particle.json",
-          "src/main/java/net/mcreator/jimsmineshaft/client/particle/BloodParticleParticle.java"
+          "src/main/java/net/mcreator/jimsmineshaft/client/particle/BloodParticleParticle.java",
+          "src/main/resources/assets/jimsmineshaft/particles/blood_particle.json"
         ]
       },
       "path": "~/Skin Stealer Mechanic"
@@ -6702,18 +6702,18 @@
       "registry_name": "level_1_dimension",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/world/dimension/Level1DimensionDimension.java",
-          "src/main/resources/assets/jimsmineshaft/models/block/level_1_dimension_portal_ew.json",
-          "src/main/resources/data/jimsmineshaft/dimension_type/level_1_dimension.json",
-          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level1DimensionTeleporter.java",
-          "src/main/resources/assets/jimsmineshaft/items/level_1_dimension.json",
-          "src/main/java/net/mcreator/jimsmineshaft/item/Level1DimensionItem.java",
-          "src/main/resources/data/jimsmineshaft/dimension/level_1_dimension.json",
           "src/main/resources/assets/jimsmineshaft/models/block/level_1_dimension_portal_ns.json",
+          "src/main/resources/data/jimsmineshaft/dimension_type/level_1_dimension.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/Level1DimensionItem.java",
+          "src/main/java/net/mcreator/jimsmineshaft/world/dimension/Level1DimensionDimension.java",
           "src/main/resources/assets/jimsmineshaft/blockstates/level_1_dimension_portal.json",
           "src/main/resources/assets/jimsmineshaft/models/item/level_1_dimension.json",
+          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level1DimensionTeleporter.java",
+          "src/main/java/net/mcreator/jimsmineshaft/block/Level1DimensionPortalBlock.java",
+          "src/main/resources/data/jimsmineshaft/dimension/level_1_dimension.json",
+          "src/main/resources/assets/jimsmineshaft/items/level_1_dimension.json",
           "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level1DimensionPortalShape.java",
-          "src/main/java/net/mcreator/jimsmineshaft/block/Level1DimensionPortalBlock.java"
+          "src/main/resources/assets/jimsmineshaft/models/block/level_1_dimension_portal_ew.json"
         ]
       },
       "path": "~/Dimensions and Biomes"
@@ -6781,9 +6781,9 @@
       "registry_name": "player_stalkier",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/items/player_stalkier_spawn_egg.json",
           "src/main/java/net/mcreator/jimsmineshaft/entity/PlayerStalkierEntity.java",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/PlayerStalkierRenderer.java"
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/PlayerStalkierRenderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/player_stalkier_spawn_egg.json"
         ]
       },
       "path": "~/Skin Stealer Mechanic"
@@ -6851,9 +6851,9 @@
       "registry_name": "stalker_insides_2",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/items/stalker_insides_2_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/StalkerInsides2Entity.java",
           "src/main/java/net/mcreator/jimsmineshaft/client/renderer/StalkerInsides2Renderer.java",
-          "src/main/java/net/mcreator/jimsmineshaft/entity/StalkerInsides2Entity.java"
+          "src/main/resources/assets/jimsmineshaft/items/stalker_insides_2_spawn_egg.json"
         ]
       },
       "path": "~/Skin Stealer Mechanic"
@@ -6867,45 +6867,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/client/renderer/SkinStealerEntityRenderer.java",
-          "src/main/java/net/mcreator/jimsmineshaft/entity/SkinStealerEntityEntity.java",
-          "src/main/resources/assets/jimsmineshaft/items/skin_stealer_entity_spawn_egg.json"
+          "src/main/resources/assets/jimsmineshaft/items/skin_stealer_entity_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/SkinStealerEntityEntity.java"
         ]
       },
       "path": "~/Skin Stealer Mechanic"
-    },
-    {
-      "name": "BigGateOnEntityTickUpdate",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "big_gate_on_entity_tick_update",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/BigGateOnEntityTickUpdateProcedure.java"
-        ]
-      }
     },
     {
       "name": "GunDisplayOverlayIngame",
@@ -6926,40 +6892,6 @@
         ]
       },
       "path": "~/Weapons"
-    },
-    {
-      "name": "BigIronGateFrameOnEntityTickUpdate",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "big_iron_gate_frame_on_entity_tick_update",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/BigIronGateFrameOnEntityTickUpdateProcedure.java"
-        ]
-      }
     },
     {
       "name": "FlintlockPistolPlayerFinishesUsingItem",
@@ -6996,25 +6928,6 @@
         ],
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/FlintlockPistolPlayerFinishesUsingItemProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "BigGatePlaybackclosedCondition",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "big_gate_playbackclosed_condition",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/BigGatePlaybackclosedConditionProcedure.java"
         ]
       }
     },
@@ -7095,11 +7008,11 @@
       "registry_name": "rusted_iron_cross_support",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/RustedIronCrossSupportBlock.java",
           "src/main/resources/assets/jimsmineshaft/items/rusted_iron_cross_support.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/rusted_iron_cross_support.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/rusted_iron_cross_support.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/rusted_iron_cross_support.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/rusted_iron_cross_support.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RustedIronCrossSupportBlock.java",
           "src/main/resources/assets/jimsmineshaft/models/item/rusted_iron_cross_support.json"
         ]
       },
@@ -7113,66 +7026,18 @@
       "registry_name": "flashlight",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/item/flashlight_5.json",
           "src/main/resources/assets/jimsmineshaft/models/item/flashlight.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/flashlight_2.json",
-          "src/main/java/net/mcreator/jimsmineshaft/item/FlashlightItem.java",
-          "src/main/resources/assets/jimsmineshaft/items/flashlight.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/flashlight_7.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/flashlight_1.json",
           "src/main/resources/assets/jimsmineshaft/models/item/flashlight_3.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/flashlight_6.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/flashlight_0.json",
           "src/main/resources/assets/jimsmineshaft/models/item/flashlight_8.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/flashlight_4.json"
-        ]
-      }
-    },
-    {
-      "name": "Rightclicks2",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rightclicks_2",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/Rightclicks2Procedure.java"
-        ]
-      }
-    },
-    {
-      "name": "BigIronGateLeft",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "big_iron_gate_left",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/BigIronGateLeftRenderer.java",
-          "src/main/java/net/mcreator/jimsmineshaft/entity/BigIronGateLeftEntity.java",
-          "src/main/resources/assets/jimsmineshaft/items/big_iron_gate_left_spawn_egg.json"
+          "src/main/resources/assets/jimsmineshaft/models/item/flashlight_0.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/flashlight_6.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/flashlight_2.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/flashlight_1.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/flashlight_4.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/flashlight_7.json",
+          "src/main/resources/assets/jimsmineshaft/items/flashlight.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/flashlight_5.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/FlashlightItem.java"
         ]
       }
     },
@@ -7184,12 +7049,12 @@
       "registry_name": "rusted_iron_railing",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/item/rusted_iron_railing.json",
-          "src/main/resources/assets/jimsmineshaft/items/rusted_iron_railing.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/rusted_iron_railing.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/rusted_iron_railing.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/rusted_iron_railing.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/rusted_iron_railing.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/RustedIronRailingBlock.java",
-          "src/main/resources/assets/jimsmineshaft/blockstates/rusted_iron_railing.json"
+          "src/main/resources/assets/jimsmineshaft/models/item/rusted_iron_railing.json",
+          "src/main/resources/assets/jimsmineshaft/items/rusted_iron_railing.json"
         ]
       },
       "path": "~/Tumbler Room"
@@ -7202,9 +7067,9 @@
       "registry_name": "battery",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/item/battery.json",
           "src/main/java/net/mcreator/jimsmineshaft/item/BatteryItem.java",
-          "src/main/resources/assets/jimsmineshaft/items/battery.json"
+          "src/main/resources/assets/jimsmineshaft/items/battery.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/battery.json"
         ]
       }
     },
@@ -7235,12 +7100,12 @@
       "registry_name": "rusted_iron_catwalk_wall_support",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/item/rusted_iron_catwalk_wall_support.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/RustedIronCatwalkWallSupportBlock.java",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/rusted_iron_catwalk_wall_support.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/rusted_iron_catwalk_wall_support.json",
+          "src/main/resources/assets/jimsmineshaft/items/rusted_iron_catwalk_wall_support.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/rusted_iron_catwalk_wall_support.json",
-          "src/main/resources/assets/jimsmineshaft/items/rusted_iron_catwalk_wall_support.json"
+          "src/main/resources/assets/jimsmineshaft/models/item/rusted_iron_catwalk_wall_support.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/rusted_iron_catwalk_wall_support.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/rusted_iron_catwalk_wall_support.json"
         ]
       },
       "path": "~/Tumbler Room"
@@ -7314,20 +7179,6 @@
       }
     },
     {
-      "name": "BigIronGateRight",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "big_iron_gate_right",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/entity/BigIronGateRightEntity.java",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/BigIronGateRightRenderer.java",
-          "src/main/resources/assets/jimsmineshaft/items/big_iron_gate_right_spawn_egg.json"
-        ]
-      }
-    },
-    {
       "name": "Lightblock",
       "type": "block",
       "compiles": true,
@@ -7335,13 +7186,13 @@
       "registry_name": "lightblock",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/LightblockBlock.java",
           "src/main/java/net/mcreator/jimsmineshaft/block/entity/LightblockBlockEntity.java",
-          "src/main/resources/assets/jimsmineshaft/items/lightblock.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/lightblock.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/lightblock.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/LightblockBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/block/lightblock.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/lightblock.json",
           "src/main/resources/assets/jimsmineshaft/models/item/lightblock.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/lightblock.json"
+          "src/main/resources/assets/jimsmineshaft/items/lightblock.json"
         ]
       }
     },
@@ -7364,20 +7215,6 @@
       }
     },
     {
-      "name": "BigGate",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "big_gate",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/entity/BigGateEntity.java",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/BigGateRenderer.java",
-          "src/main/resources/assets/jimsmineshaft/items/big_gate_spawn_egg.json"
-        ]
-      }
-    },
-    {
       "name": "RustedIronCatwalk",
       "type": "block",
       "compiles": true,
@@ -7385,12 +7222,12 @@
       "registry_name": "rusted_iron_catwalk",
       "metadata": {
         "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/rusted_iron_catwalk.json",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/rusted_iron_catwalk.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/rusted_iron_catwalk.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/RustedIronCatwalkBlock.java",
           "src/main/resources/assets/jimsmineshaft/blockstates/rusted_iron_catwalk.json",
-          "src/main/resources/assets/jimsmineshaft/items/rusted_iron_catwalk.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/rusted_iron_catwalk.json"
+          "src/main/java/net/mcreator/jimsmineshaft/block/RustedIronCatwalkBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/rusted_iron_catwalk.json",
+          "src/main/resources/assets/jimsmineshaft/items/rusted_iron_catwalk.json"
         ]
       },
       "path": "~/Tumbler Room"
@@ -7416,12 +7253,12 @@
       "registry_name": "rusted_iron_catwalk_supported",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/RustedIronCatwalkSupportedBlock.java",
-          "src/main/resources/assets/jimsmineshaft/items/rusted_iron_catwalk_supported.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/rusted_iron_catwalk_supported.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/rusted_iron_catwalk_supported.json",
           "src/main/resources/assets/jimsmineshaft/models/block/rusted_iron_catwalk_supported.json",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/rusted_iron_catwalk_supported.json"
+          "src/main/resources/assets/jimsmineshaft/items/rusted_iron_catwalk_supported.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RustedIronCatwalkSupportedBlock.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/rusted_iron_catwalk_supported.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/rusted_iron_catwalk_supported.json"
         ]
       },
       "path": "~/Tumbler Room"
@@ -7511,52 +7348,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/item/TommyGunItem.java",
-          "src/main/resources/assets/jimsmineshaft/items/tommy_gun.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/tommy_gun.json"
+          "src/main/resources/assets/jimsmineshaft/models/item/tommy_gun.json",
+          "src/main/resources/assets/jimsmineshaft/items/tommy_gun.json"
         ]
       },
       "path": "~/Weapons"
-    },
-    {
-      "name": "BulletProjectileWhileProjectileFlyingTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bullet_projectile_while_projectile_flying_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "immediatesourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/BulletProjectileWhileProjectileFlyingTickProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "BigGatePlaybackCondition",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "big_gate_playback_condition",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/BigGatePlaybackConditionProcedure.java"
-        ]
-      }
     },
     {
       "name": "RustedIronStairs",
@@ -7566,12 +7362,12 @@
       "registry_name": "rusted_iron_stairs",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/items/rusted_iron_stairs.json",
           "src/main/resources/assets/jimsmineshaft/models/item/rusted_iron_stairs.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/rusted_iron_stairs.json",
           "src/main/resources/assets/jimsmineshaft/models/block/rusted_iron_stairs.json",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/rusted_iron_stairs.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/RustedIronStairsBlock.java"
+          "src/main/resources/assets/jimsmineshaft/items/rusted_iron_stairs.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RustedIronStairsBlock.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/rusted_iron_stairs.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/rusted_iron_stairs.json"
         ]
       },
       "path": "~/Tumbler Room"
@@ -7622,12 +7418,12 @@
       "registry_name": "rusted_iron_support_cool",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/block/rusted_iron_support_cool.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/RustedIronSupportCoolBlock.java",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/rusted_iron_support_cool.json",
           "src/main/resources/assets/jimsmineshaft/items/rusted_iron_support_cool.json",
           "src/main/resources/assets/jimsmineshaft/blockstates/rusted_iron_support_cool.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/rusted_iron_support_cool.json"
+          "src/main/resources/assets/jimsmineshaft/models/item/rusted_iron_support_cool.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/RustedIronSupportCoolBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/block/rusted_iron_support_cool.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/rusted_iron_support_cool.json"
         ]
       },
       "path": "~/Tumbler Room"
@@ -7641,74 +7437,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/entity/BulletProjectileEntity.java"
-        ]
-      }
-    },
-    {
-      "name": "Rightgate",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rightgate",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/entity/RightgateEntity.java",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/RightgateRenderer.java",
-          "src/main/resources/assets/jimsmineshaft/items/rightgate_spawn_egg.json"
-        ]
-      }
-    },
-    {
-      "name": "BigIronGateFrame",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "big_iron_gate_frame",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/entity/BigIronGateFrameEntity.java",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/BigIronGateFrameRenderer.java",
-          "src/main/resources/assets/jimsmineshaft/items/big_iron_gate_frame_spawn_egg.json"
-        ]
-      }
-    },
-    {
-      "name": "MiningGoonSet",
-      "type": "armor",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mining_goon_set",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/jimsmineshaft/equipment/mining_goon_set.json",
-          "src/main/resources/assets/jimsmineshaft/items/mining_goon_set_leggings.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/mining_goon_set_chestplate.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/mining_goon_set_leggings.json",
-          "src/main/java/net/mcreator/jimsmineshaft/item/MiningGoonSetItem.java",
-          "src/main/resources/assets/jimsmineshaft/items/mining_goon_set_helmet.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/mining_goon_set_boots.json",
-          "src/main/resources/assets/jimsmineshaft/items/mining_goon_set_chestplate.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/mining_goon_set_helmet.json",
-          "src/main/resources/assets/jimsmineshaft/items/mining_goon_set_boots.json"
-        ]
-      }
-    },
-    {
-      "name": "BigGateClosePlaybackCondition",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "big_gate_close_playback_condition",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/BigGateClosePlaybackConditionProcedure.java"
         ]
       }
     },
@@ -7734,9 +7462,9 @@
       "registry_name": "flintlock_pistol",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/item/FlintlockPistolItem.java",
           "src/main/resources/assets/jimsmineshaft/models/item/flintlock_pistol.json",
-          "src/main/resources/assets/jimsmineshaft/items/flintlock_pistol.json",
-          "src/main/java/net/mcreator/jimsmineshaft/item/FlintlockPistolItem.java"
+          "src/main/resources/assets/jimsmineshaft/items/flintlock_pistol.json"
         ]
       }
     },
@@ -7748,12 +7476,12 @@
       "registry_name": "rusted_iron_railing_corner",
       "metadata": {
         "files": [
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/rusted_iron_railing_corner.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/rusted_iron_railing_corner.json",
-          "src/main/resources/assets/jimsmineshaft/items/rusted_iron_railing_corner.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/rusted_iron_railing_corner.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/RustedIronRailingCornerBlock.java",
-          "src/main/resources/assets/jimsmineshaft/models/block/rusted_iron_railing_corner.json"
+          "src/main/resources/assets/jimsmineshaft/models/block/rusted_iron_railing_corner.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/rusted_iron_railing_corner.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/rusted_iron_railing_corner.json",
+          "src/main/resources/assets/jimsmineshaft/items/rusted_iron_railing_corner.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/rusted_iron_railing_corner.json"
         ]
       },
       "path": "~/Tumbler Room"
@@ -7797,6 +7525,214 @@
       }
     },
     {
+      "name": "Flashlightentity",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlightentity",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/neoforge/biome_modifier/flashlightentity_biome_modifier.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/FlashlightentityEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/flashlightentity_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/FlashlightentityRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "MiningGoonSet",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mining_goon_set",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/mining_goon_set_boots.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/mining_goon_set_chestplate.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/mining_goon_set_helmet.json",
+          "src/main/resources/assets/jimsmineshaft/items/mining_goon_set_leggings.json",
+          "src/main/resources/assets/jimsmineshaft/items/mining_goon_set_helmet.json",
+          "src/main/resources/assets/jimsmineshaft/items/mining_goon_set_chestplate.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/mining_goon_set_leggings.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/mining_goon_set_boots.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/MiningGoonSetItem.java",
+          "src/main/resources/assets/jimsmineshaft/equipment/mining_goon_set.json"
+        ]
+      }
+    },
+    {
+      "name": "MiningEliteSet",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mining_elite_set",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/equipment/mining_elite_set.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/mining_elite_set_leggings.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/mining_elite_set_boots.json",
+          "src/main/resources/assets/jimsmineshaft/items/mining_elite_set_leggings.json",
+          "src/main/resources/assets/jimsmineshaft/items/mining_elite_set_helmet.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/MiningEliteSetItem.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/mining_elite_set_helmet.json",
+          "src/main/resources/assets/jimsmineshaft/items/mining_elite_set_chestplate.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/mining_elite_set_chestplate.json",
+          "src/main/resources/assets/jimsmineshaft/items/mining_elite_set_boots.json"
+        ]
+      }
+    },
+    {
+      "name": "MiningVeteranSet",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mining_veteran_set",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/equipment/mining_veteran_set.json",
+          "src/main/resources/assets/jimsmineshaft/items/mining_veteran_set_helmet.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/MiningVeteranSetItem.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/mining_veteran_set_helmet.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/mining_veteran_set_boots.json",
+          "src/main/resources/assets/jimsmineshaft/items/mining_veteran_set_leggings.json",
+          "src/main/resources/assets/jimsmineshaft/items/mining_veteran_set_boots.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/mining_veteran_set_leggings.json",
+          "src/main/resources/assets/jimsmineshaft/items/mining_veteran_set_chestplate.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/mining_veteran_set_chestplate.json"
+        ]
+      }
+    },
+    {
+      "name": "BigGateOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_gate_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/BigGateOnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "BigGatePlaybackclosedCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_gate_playbackclosed_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/BigGatePlaybackclosedConditionProcedure.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "Rightclicks2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rightclicks_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Rightclicks2Procedure.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "BigGatePlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_gate_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/BigGatePlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "BigGateClosePlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_gate_close_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/BigGateClosePlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
       "name": "BigGatePlaybackcloseCondition",
       "type": "procedure",
       "compiles": true,
@@ -7813,22 +7749,8 @@
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/BigGatePlaybackcloseConditionProcedure.java"
         ]
-      }
-    },
-    {
-      "name": "Flashlightentity",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "flashlightentity",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/jimsmineshaft/neoforge/biome_modifier/flashlightentity_biome_modifier.json",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/FlashlightentityRenderer.java",
-          "src/main/java/net/mcreator/jimsmineshaft/entity/FlashlightentityEntity.java",
-          "src/main/resources/assets/jimsmineshaft/items/flashlightentity_spawn_egg.json"
-        ]
-      }
+      },
+      "path": "~/Gates"
     },
     {
       "name": "Leftgate",
@@ -7838,24 +7760,12 @@
       "registry_name": "leftgate",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/entity/LeftgateEntity.java",
           "src/main/resources/assets/jimsmineshaft/items/leftgate_spawn_egg.json",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/LeftgateRenderer.java",
-          "src/main/java/net/mcreator/jimsmineshaft/entity/LeftgateEntity.java"
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/LeftgateRenderer.java"
         ]
-      }
-    },
-    {
-      "name": "BigIronGateLeftRightClickedOnEntity",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "big_iron_gate_left_right_clicked_on_entity",
-      "metadata": {
-        "dependencies": [],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/BigIronGateLeftRightClickedOnEntityProcedure.java"
-        ]
-      }
+      },
+      "path": "~/Gates"
     },
     {
       "name": "BigIronGateRightOnEntityTickUpdate",
@@ -7868,12 +7778,641 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
+        "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/BigIronGateRightOnEntityTickUpdateProcedure.java"
         ]
-      }
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "BigIronGateLeftRightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_iron_gate_left_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/BigIronGateLeftRightClickedOnEntityProcedure.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "SmallSlideUpGateEntityOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_slide_up_gate_entity_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SmallSlideUpGateEntityOnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "Render",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "render",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "SmallSideOpenGateRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_side_open_gate_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SmallSideOpenGateRightclickedOnBlockProcedure.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "BigGateRightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_gate_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/BigGateRightClickedOnEntityProcedure.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "LargeGateRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "large_gate_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/LargeGateRightclickedOnBlockProcedure.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "Interactdisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "interactdisplay",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/InteractdisplayProcedure.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "Interact",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "interact",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/network/InteractMessage.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "SmallSlideUpGateRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_slide_up_gate_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SmallSlideUpGateRightclickedOnBlockProcedure.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "LeftgateRightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leftgate_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeftgateRightClickedOnEntityProcedure.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "SmallSideOpenGateEntityOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_side_open_gate_entity_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SmallSideOpenGateEntityOnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "LeftgateIsBoundingBoxSolid",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leftgate_is_bounding_box_solid",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeftgateIsBoundingBoxSolidProcedure.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "LeftgateBoundingBoxScale",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leftgate_bounding_box_scale",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeftgateBoundingBoxScaleProcedure.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "SmallSideOpenGateEntityPlaybackConditio1n",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_side_open_gate_entity_playback_conditio_1n",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SmallSideOpenGateEntityPlaybackConditio1nProcedure.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "SmallSideOpenGateEntityPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_side_open_gate_entity_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SmallSideOpenGateEntityPlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "SmallSideOpenGateEntityPlaybackCo1ndition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_side_open_gate_entity_playback_co_1ndition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SmallSideOpenGateEntityPlaybackCo1nditionProcedure.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "SmallSideOpenGateEntityPlaybackCon1dition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_side_open_gate_entity_playback_con_1dition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SmallSideOpenGateEntityPlaybackCon1ditionProcedure.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "SmallSlideUpGateEntityPlaybackConditi1on",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_slide_up_gate_entity_playback_conditi_1on",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SmallSlideUpGateEntityPlaybackConditi1onProcedure.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "SmallSlideUpGateEntityPlaybaqckCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_slide_up_gate_entity_playbaqck_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SmallSlideUpGateEntityPlaybaqckConditionProcedure.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "SmallSlideUpGateEntityPlaybackCon1dition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_slide_up_gate_entity_playback_con_1dition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SmallSlideUpGateEntityPlaybackCon1ditionProcedure.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "SmallSlideUpGateEntityPl1aybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_slide_up_gate_entity_pl_1ayback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SmallSlideUpGateEntityPl1aybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "BigGate",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/big_gate_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/BigGateEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/BigGateRenderer.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "Rightgate",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rightgate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/entity/RightgateEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/RightgateRenderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/rightgate_spawn_egg.json"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "SmallSideOpenGateEntity",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_side_open_gate_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/SmallSideOpenGateEntityRenderer.java",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/SmallSideOpenGateEntityEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/small_side_open_gate_entity_spawn_egg.json"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "SmallSideOpenGate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_side_open_gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/small_side_open_gate.json",
+          "src/main/resources/assets/jimsmineshaft/items/small_side_open_gate.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/SmallSideOpenGateItem.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "SmallSlideUpGateEntity",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_slide_up_gate_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/SmallSlideUpGateEntityRenderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/small_slide_up_gate_entity_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/SmallSlideUpGateEntityEntity.java"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "LargeGate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "large_gate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/item/LargeGateItem.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/large_gate.json",
+          "src/main/resources/assets/jimsmineshaft/items/large_gate.json"
+        ]
+      },
+      "path": "~/Gates"
+    },
+    {
+      "name": "SmallSlideUpGate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_slide_up_gate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/item/SmallSlideUpGateItem.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/small_slide_up_gate.json",
+          "src/main/resources/assets/jimsmineshaft/items/small_slide_up_gate.json"
+        ]
+      },
+      "path": "~/Gates"
     }
   ],
   "variable_elements": [
@@ -8400,22 +8939,6 @@
       "subtitle": ""
     },
     {
-      "name": "bigdoor",
-      "files": [
-        "3x3door"
-      ],
-      "category": "player",
-      "subtitle": "big door go OPEN SEASAME "
-    },
-    {
-      "name": "thud",
-      "files": [
-        "thud"
-      ],
-      "category": "player",
-      "subtitle": "thud"
-    },
-    {
       "name": "stalker_stab",
       "files": [
         "stalker_stab"
@@ -8446,6 +8969,22 @@
       ],
       "category": "player",
       "subtitle": "light ambience"
+    },
+    {
+      "name": "thud",
+      "files": [
+        "thudmono"
+      ],
+      "category": "player",
+      "subtitle": "thud"
+    },
+    {
+      "name": "bigdoor",
+      "files": [
+        "3x3doormono"
+      ],
+      "category": "player",
+      "subtitle": "big door"
     }
   ],
   "tag_elements": {
@@ -8510,15 +9049,23 @@
       "~Items.IRON_NUGGET"
     ],
     "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:MiningVeteranSet.helmet",
+      "~CUSTOM:MiningEliteSet.helmet",
       "~CUSTOM:MiningGoonSet.helmet"
     ],
     "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:MiningVeteranSet.body",
+      "~CUSTOM:MiningEliteSet.body",
       "~CUSTOM:MiningGoonSet.body"
     ],
     "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:MiningVeteranSet.legs",
+      "~CUSTOM:MiningEliteSet.legs",
       "~CUSTOM:MiningGoonSet.legs"
     ],
     "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:MiningVeteranSet.boots",
+      "~CUSTOM:MiningEliteSet.boots",
       "~CUSTOM:MiningGoonSet.boots"
     ]
   },
@@ -8640,7 +9187,8 @@
       "RustedIronSupportCool",
       "IronBullet",
       "FlintlockPistol",
-      "RustedIronRailingCorner"
+      "RustedIronRailingCorner",
+      "Stalker"
     ]
   },
   "language_map": {
@@ -8698,29 +9246,209 @@
       "subtitles.stalkerrip2": "Flesh Rips",
       "subtitles.stalkerrip1": "Flesh rips",
       "subtitles.flintlock_pistol_fire": "",
-      "subtitles.stalker_stab": ""
+      "subtitles.stalker_stab": "",
+      "item.jimsmineshaft.detonator_block_item": "Detonator",
+      "item.jimsmineshaft.raw_copper_drilled_east": "Raw Chalcopyrite Drilled (W/E)",
+      "key.jimsmineshaft.open_spawner_gui": "Open Spawner GUI",
+      "item.jimsmineshaft.copper_chunk_type_b": "Copper Bit",
+      "item.jimsmineshaft.copper_chunk_type_c": "Copper Bit",
+      "item.jimsmineshaft.copper_chunk_type_d": "Copper Bit",
+      "item.jimsmineshaft.copper_chunk_type_e": "Copper Bit",
+      "key.jimsmineshaft.shift_key": "Escape Drill",
+      "item.jimsmineshaft.copper_chunk_type_a": "Raw Copper Bit",
+      "item.jimsmineshaft.thecart_spawn_egg": "The Cart Spawn Egg",
+      "entity.jimsmineshaft.thecart": "The Cart",
+      "item.jimsmineshaft.raw_copper_drilled_east_dynamite": "Raw Chalcopyrite Drilled Dynamite (W/E)",
+      "entity.jimsmineshaft.pressure_drill": "Pressure Drill",
+      "item.jimsmineshaft.pressure_drill_spawn_egg": "Pressure Drill Spawn Egg",
+      "item.jimsmineshaft.raw_copper_2": "Raw Chalcopyrite",
+      "item.jimsmineshaft.woemineshaftfullmemefortotem": "Meme for totem effect",
+      "item.jimsmineshaft.new_stripped_dark_oak_log": "Stone",
+      "item.jimsmineshaft.copper_shard": "Copper Gangue Small Stack",
+      "item.jimsmineshaft.structure_spawner": "Room Spawner",
+      "entity.jimsmineshaft.pressure_drill_folded": "Pressure Drill Folded",
+      "item.jimsmineshaft.pressure_drill_folded_spawn_egg": "Pressure Drill Folded Spawn Egg",
+      "entity.jimsmineshaft.copper_drilled_east": "Copper Drilled N/S",
+      "item.jimsmineshaft.copper_drilled_east_spawn_egg": "Copper Drilled N/S Spawn Egg",
+      "item.jimsmineshaft.copper_shard_triple": "Copper Gangue Large Stack",
+      "item.jimsmineshaft.mystery_item": "Mystery Item Spawner",
+      "item.jimsmineshaft.hole_entity_spawn_egg": "North hole entity Spawn Egg",
+      "entity.jimsmineshaft.hole_entity": "North hole entity",
+      "key.jimsmineshaft.place_drill": "Place Drill",
+      "item.jimsmineshaft.cart_rail": "Cart Rail",
+      "gui.jimsmineshaft.move_closer_overlay.label_press_p_to_place_drill": "Move closer to block",
+      "entity.jimsmineshaft.elevator": "Elevator",
+      "item.jimsmineshaft.elevator_spawn_egg": "Elevator Spawn Egg",
+      "item.jimsmineshaft.detonator_block_pushed": "Detonator",
+      "item.jimsmineshaft.elevator_bounding_box_spawn_egg": "Elevator Floor Box Spawn Egg",
+      "entity.jimsmineshaft.elevator_bounding_box": "Elevator Floor Box",
+      "item.jimsmineshaft.elevator_front": "Elevator Front (Invisible Barrier)",
+      "key.jimsmineshaft.activate_elevatore": "Activate Elevator",
+      "item.jimsmineshaft.elevator_seat_5_spawn_egg": "Elevator Seat 5 Spawn Egg",
+      "entity.jimsmineshaft.elevator_seat_5": "Elevator Seat 5",
+      "item.jimsmineshaft.elevator_seat_6_spawn_egg": "Elevator Seat 6 Spawn Egg",
+      "entity.jimsmineshaft.elevator_seat_6": "Elevator Seat 6",
+      "entity.jimsmineshaft.elevator_seat_3": "Elevator Seat 3",
+      "item.jimsmineshaft.elevator_seat_3_spawn_egg": "Elevator Seat 3 Spawn Egg",
+      "item.jimsmineshaft.elevator_seat_4_spawn_egg": "Elevator Seat 4 Spawn Egg",
+      "entity.jimsmineshaft.elevator_seat_4": "Elevator Seat 4",
+      "item.jimsmineshaft.elevator_seat_7_spawn_egg": "Elevator Seat 7 Spawn Egg",
+      "entity.jimsmineshaft.elevator_seat_7": "Elevator Seat 7",
+      "entity.jimsmineshaft.elevator_seat_8": "Elevator Seat 8",
+      "item.jimsmineshaft.elevator_seat_8_spawn_egg": "Elevator Seat 8 Spawn Egg",
+      "item.jimsmineshaft.copper_fragment_5": "Copper Fragment",
+      "item.jimsmineshaft.copper_fragment_1": "Copper Fragment",
+      "item.jimsmineshaft.copper_fragment_2": "Copper Fragment",
+      "item.jimsmineshaft.copper_fragment_3": "Copper Fragment",
+      "item.jimsmineshaft.copper_fragment_4": "Copper Fragment",
+      "item.jimsmineshaft.mystery_rail": "Mystery Rail",
+      "entity.jimsmineshaft.cart_4": "The Cart 4",
+      "item.jimsmineshaft.cart_4_spawn_egg": "The Cart 4 Spawn Egg",
+      "item.jimsmineshaft.raw_copper_210": "Raw Chalcopyrite",
+      "item.jimsmineshaft.pressure_drill_holdable": "Pressure Drill",
+      "item.jimsmineshaft.cart_3_spawn_egg": "The Cart 3 Spawn Egg",
+      "entity.jimsmineshaft.cart_3": "The Cart 3",
+      "entity.jimsmineshaft.cart_2": "The Cart 2",
+      "item.jimsmineshaft.cart_2_spawn_egg": "The Cart 2 Spawn Egg",
+      "item.jimsmineshaft.elevator_seat_1_spawn_egg": "Elevator Seat 1 Spawn Egg",
+      "entity.jimsmineshaft.elevator_seat_1": "Elevator Seat 1",
+      "item.jimsmineshaft.elevator_seat_2_spawn_egg": "Elevator Seat 2 Spawn Egg",
+      "entity.jimsmineshaft.elevator_seat_2": "Elevator Seat 2",
+      "item.jimsmineshaft.copper_shard_double": "Copper Gangue Medium Stack",
+      "item.jimsmineshaft.raw_copper_29": "Raw Chalcopyrite",
+      "item.jimsmineshaft.raw_copper_28": "Raw Chalcopyrite",
+      "item.jimsmineshaft.raw_copper_27": "Raw Chalcopyrite",
+      "item.jimsmineshaft.raw_copper_26": "Raw Chalcopyrite",
+      "item.jimsmineshaft.raw_copper_25": "Raw Chalcopyrite",
+      "item.jimsmineshaft.raw_copper_24": "Raw Chalcopyrite",
+      "item.jimsmineshaft.raw_copper_23": "Raw Chalcopyrite",
+      "item.jimsmineshaft.raw_copper_22": "Raw Chalcopyrite",
+      "gui.jimsmineshaft.in_elevator.label_press_p_to_start_elevator": "PRESS P TO START ELEVATOR",
+      "item.jimsmineshaft.new_suspicious_gravel": "Gravel",
+      "item.jimsmineshaft.raw_copper_drilled_north_dynamite": "Raw Chalcopyrite Drilled Dynamite (N/S)",
+      "item.jimsmineshaft.new_stone": "Stone",
+      "item.jimsmineshaft.pressure_drill_folded_model": "Pressure Drill Folded Model",
+      "item.jimsmineshaft.dynamite_box": "Dynamite Box",
+      "gui.jimsmineshaft.carrying_drill_overlay.label_press_p_to_place_drill": "Press P to place drill",
+      "item.jimsmineshaft.copper_drilled_north_spawn_egg": "Copper Drilled N/S Spawn Egg",
+      "entity.jimsmineshaft.copper_drilled_north": "Copper Drilled N/S",
+      "gui.jimsmineshaft.cant_use_drill.label_press_p_to_place_drill": "Right click with empty hand",
+      "item.jimsmineshaft.raw_copper_drilled_north": "Raw Chalcopyrite Drilled (N/S)",
+      "gui.jimsmineshaft.near_elevator.label_right_click_in_elevator_to_join": "RIGHT CLICK TO JOIN ELEVATOR",
+      "gui.jimsmineshaft.shaftbuilder_gui.button_a_non_lit": "A Non Lit",
+      "gui.jimsmineshaft.shaftbuilder_gui.button_b_bit_3": "B Bit 3",
+      "gui.jimsmineshaft.shaftbuilder_gui.button_b_room_2": "B Room 2",
+      "gui.jimsmineshaft.shaftbuilder_gui.button_b_bit_2": "B bit 2",
+      "gui.jimsmineshaft.shaftbuilder_gui.button_main_lit": "A Lit",
+      "gui.jimsmineshaft.shaftbuilder_gui.button_b_bit_4": "B Bit 4",
+      "gui.jimsmineshaft.shaftbuilder_gui.button_b_room_1": "B Room 1",
+      "gui.jimsmineshaft.shaftbuilder_gui.button_c_bit_4": "C Bit 4",
+      "gui.jimsmineshaft.shaftbuilder_gui.button_c_bit_3": "C Bit 3",
+      "gui.jimsmineshaft.shaftbuilder_gui.button_c_bit_2": "C Bit 2",
+      "gui.jimsmineshaft.shaftbuilder_gui.button_c_bit_1": "C Bit 1",
+      "gui.jimsmineshaft.shaftbuilder_gui.button_resetpos": "ResetPos",
+      "gui.jimsmineshaft.shaftbuilder_gui.button_a_bit": "A Bit",
+      "gui.jimsmineshaft.shaftbuilder_gui.button_b_bit_1": "B Bit 1",
+      "gui.jimsmineshaft.shaftbuilder_gui.button_b_shaft_5": "B Shaft 5",
+      "gui.jimsmineshaft.shaftbuilder_gui.button_c_shaft_4": "C Shaft 4",
+      "gui.jimsmineshaft.shaftbuilder_gui.button_c_shaft_5": "C Shaft 5",
+      "gui.jimsmineshaft.shaftbuilder_gui.button_c_shaft_2": "C Shaft 2",
+      "gui.jimsmineshaft.shaftbuilder_gui.button_c_shaft_3": "C Shaft 3",
+      "gui.jimsmineshaft.shaftbuilder_gui.button_c_shaft_1": "C Shaft 1",
+      "gui.jimsmineshaft.shaftbuilder_gui.button_b_shaft_3": "B Shaft 3",
+      "gui.jimsmineshaft.shaftbuilder_gui.button_b_shaft_4": "B Shaft 4",
+      "gui.jimsmineshaft.shaftbuilder_gui.button_b_shaft1": "B Shaft1",
+      "gui.jimsmineshaft.shaftbuilder_gui.button_b_shaft_2": "B Shaft 2",
+      "item.jimsmineshaft.new_gravel": "Gravel",
+      "gui.jimsmineshaft.drill_mode_overlay.label_press_p_to_place_drill": "Press shift to exit",
+      "gui.jimsmineshaft.drill_mode_overlay.label_right_click_to_drill": "Right click to drill",
+      "item.jimsmineshaft.rusty_pickaxe": "Rusty Pickaxe",
+      "item.jimsmineshaft.small_pickaxe": "Small Pickaxe",
+      "item.jimsmineshaft.old_knife": "Old Knife",
+      "entity.jimsmineshaft.stalker": "Stalker",
+      "item.jimsmineshaft.stalker_spawn_egg": "Stalker Spawn Egg",
+      "item.jimsmineshaft.fire_axe": "Fire Axe",
+      "biome.jimsmineshaft.level_1_test_biome": "Level 1  Biome",
+      "entity.jimsmineshaft.stalker_insides": "Stalker Insides",
+      "item.jimsmineshaft.stalker_insides_spawn_egg": "Stalker Insides Spawn Egg",
+      "item.jimsmineshaft.level_1_dimension": "Level 1 Dimension Portal Igniter",
+      "entity.jimsmineshaft.player_stalkier": "Player Stalker",
+      "item.jimsmineshaft.player_stalkier_spawn_egg": "Player Stalker Spawn Egg",
+      "entity.jimsmineshaft.stalker_insides_2": "Stalker Insides 2",
+      "item.jimsmineshaft.stalker_insides_2_spawn_egg": "Stalker Insides 2 Spawn Egg",
+      "item.jimsmineshaft.skin_stealer_entity_spawn_egg": "Skin Stealer Entity Spawn Egg",
+      "entity.jimsmineshaft.skin_stealer_entity": "Skin Stealer Entity",
+      "item.jimsmineshaft.rusted_iron_cross_support": "Rusted Iron Cross Support",
+      "item.jimsmineshaft.flashlight": "Flashlight",
+      "item.jimsmineshaft.rusted_iron_railing": "Rusted Iron Railing",
+      "item.jimsmineshaft.battery": "Battery",
+      "item.jimsmineshaft.battery.description_0": "hold item in opposite hand and sneak right click to use on items",
+      "item.jimsmineshaft.rusted_iron_catwalk_wall_support": "Rusted Iron Catwalk Wall Support",
+      "item.jimsmineshaft.lightblock": "Lightblock",
+      "item.jimsmineshaft.rusted_iron_catwalk": "Rusted Iron Catwalk",
+      "item.jimsmineshaft.rusted_iron_catwalk_supported": "Rusted Iron Catwalk Supported",
+      "item.jimsmineshaft.tommy_gun": "Tommy Gun",
+      "item.jimsmineshaft.rusted_iron_stairs": "Rusted Iron Stairs",
+      "item.jimsmineshaft.rusted_iron_support_cool": "Rusted Iron Support",
+      "item.jimsmineshaft.iron_bullet": "Iron Bullet",
+      "item.jimsmineshaft.flintlock_pistol.description_1": "Left click to shoot",
+      "item.jimsmineshaft.flintlock_pistol": "Flintlock Pistol",
+      "item.jimsmineshaft.flintlock_pistol.description_0": "Can be loaded with §eIron Bullets §r",
+      "item.jimsmineshaft.rusted_iron_railing_corner": "Rusted Iron Railing Corner",
+      "item.jimsmineshaft.flashlightentity_spawn_egg": "Flashlightentity Spawn Egg",
+      "entity.jimsmineshaft.flashlightentity": "Flashlightentity",
+      "item.jimsmineshaft.mining_veteran_set_chestplate": "Mining Veteran Set Heavy Chestplate",
+      "item.jimsmineshaft.mining_veteran_set_helmet": "Mining Veteran Set Heavy CBRN Mask",
+      "item.jimsmineshaft.mining_veteran_set_boots": "Mining Veteran Set Heavy Sabatons",
+      "item.jimsmineshaft.mining_veteran_set_leggings": "Mining Veteran Set Heavy Greaves",
+      "item.jimsmineshaft.mining_goon_set_helmet": "Mining Goon Set Newsboy Cap",
+      "item.jimsmineshaft.mining_goon_set_leggings": "Mining Goon Set Jeans (applebottoms)",
+      "item.jimsmineshaft.mining_goon_set_chestplate": "Mining Goon Set Trench Coat",
+      "item.jimsmineshaft.mining_goon_set_boots": "Mining Goon Set Boots (with the fur)",
+      "item.jimsmineshaft.mining_elite_set_leggings": "Mining Elite Set Cargo Pants",
+      "item.jimsmineshaft.mining_elite_set_boots": "Mining Elite Set Steel Toe Boots",
+      "item.jimsmineshaft.mining_elite_set_chestplate": "Mining Elite Set Plate Vest",
+      "item.jimsmineshaft.mining_elite_set_helmet": "Mining Elite Set Brodie Helmet",
+      "item.jimsmineshaft.leftgate_spawn_egg": "Leftgate Spawn Egg",
+      "entity.jimsmineshaft.leftgate": "Leftgate",
+      "key.jimsmineshaft.interact": "Interact",
+      "entity.jimsmineshaft.big_gate": "Big Iron Gate",
+      "item.jimsmineshaft.big_gate_spawn_egg": "Big Iron Gate Spawn Egg",
+      "item.jimsmineshaft.rightgate_spawn_egg": "Rightgate Spawn Egg",
+      "entity.jimsmineshaft.rightgate": "Rightgate",
+      "item.jimsmineshaft.small_side_open_gate_entity_spawn_egg": "Small Slide Up Gate Spawn Egg",
+      "entity.jimsmineshaft.small_side_open_gate_entity": "Small Slide Up Gate",
+      "item.jimsmineshaft.small_side_open_gate": "Small Side Open Gate",
+      "entity.jimsmineshaft.small_slide_up_gate_entity": "Small Slide Up Gate",
+      "item.jimsmineshaft.small_slide_up_gate_entity_spawn_egg": "Small Slide Up Gate Spawn Egg",
+      "item.jimsmineshaft.large_gate": "Large Gate",
+      "item.jimsmineshaft.small_slide_up_gate": "Small Slide Up Gate",
+      "subtitles.thud": "thud",
+      "subtitles.bigdoor": "big door",
+      "gui.jimsmineshaft.mainoverlay.label_c_to_interact": " to interact"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModSounds.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/resources/jimsmineshaft.mixins.json",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModModels.java",
-      "src/main/java/net/mcreator/jimsmineshaft/network/PlayPlayerAnimationMessage.java",
-      "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationMixin.java",
-      "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftModPlayerAnimationAPI.java",
-      "src/main/java/net/mcreator/jimsmineshaft/network/JimsmineshaftModVariables.java",
-      "src/main/resources/assets/jimsmineshaft/sounds.json",
-      "src/main/java/net/mcreator/jimsmineshaft/network/LoadPlayerAnimationMessage.java",
-      "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftMod.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModTabs.java",
-      "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationRendererMixin.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/assets/jimsmineshaft/sounds.json",
+      "src/main/java/net/mcreator/jimsmineshaft/network/JimsmineshaftModVariables.java",
+      "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftMod.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModSounds.java",
+      "src/main/java/net/mcreator/jimsmineshaft/mixin/NoiseGeneratorSettingsMixin.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModBiomes.java",
       "src/main/java/net/mcreator/jimsmineshaft/network/MenuStateUpdateMessage.java",
-      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModScreens.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModMenus.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModScreens.java",
+      "src/main/java/net/mcreator/jimsmineshaft/client/renderer/item/LegacyOverrideSelectItemModel.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModKeyMappings.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModParticleTypes.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModParticles.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModMobEffects.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModBlocks.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModBlockEntities.java",
@@ -8782,6 +9510,10 @@
       },
       {
         "name": "Dimensions and Biomes",
+        "children": []
+      },
+      {
+        "name": "Gates",
         "children": []
       }
     ]

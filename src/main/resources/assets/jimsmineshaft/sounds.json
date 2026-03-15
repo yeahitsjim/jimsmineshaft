@@ -364,24 +364,6 @@
       }
     ]
   },
-  "bigdoor": {
-    "subtitle": "subtitles.bigdoor",
-    "sounds": [
-      {
-        "name": "jimsmineshaft:3x3door",
-        "stream": false
-      }
-    ]
-  },
-  "thud": {
-    "subtitle": "subtitles.thud",
-    "sounds": [
-      {
-        "name": "jimsmineshaft:thud",
-        "stream": false
-      }
-    ]
-  },
   "stalker_stab": {
     "sounds": [
       {
@@ -413,6 +395,24 @@
     "sounds": [
       {
         "name": "jimsmineshaft:flashlighton",
+        "stream": false
+      }
+    ]
+  },
+  "thud": {
+    "subtitle": "subtitles.thud",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:thudmono",
+        "stream": false
+      }
+    ]
+  },
+  "bigdoor": {
+    "subtitle": "subtitles.bigdoor",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:3x3doormono",
         "stream": false
       }
     ]

@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "C",
+    "keyBindingName": "Interact",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "Rightclicks2"
+    }
+  }
+}

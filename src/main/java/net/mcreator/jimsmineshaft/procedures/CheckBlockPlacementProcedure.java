@@ -1,6 +1,10 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.network.chat.Component;
+import net.minecraft.core.Direction;
+import net.minecraft.core.BlockPos;
 
 public class CheckBlockPlacementProcedure {
 	public static com.google.gson.JsonObject execute(LevelAccessor world, double x_pass2, double y_pass2, double z_pass2, String CBP_direction) {
