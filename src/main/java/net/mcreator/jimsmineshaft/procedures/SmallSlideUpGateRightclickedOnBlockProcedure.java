@@ -1,0 +1,25 @@
+package net.mcreator.jimsmineshaft.procedures;
+
+import net.neoforged.bus.api.Event;
+
+public class SmallSlideUpGateRightclickedOnBlockProcedure {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		if (entity == null)
+			return;
+		if (world instanceof ServerLevel _level) {
+			Entity entityToSpawn = JimsmineshaftModEntities.DELETED_MOD_ELEMENT.get().spawn(_level, BlockPos.containing(x, y + 1, z), EntitySpawnReason.MOB_SUMMONED);
+			if (entityToSpawn != null) {
+				entityToSpawn.setYRot(entity.getYRot() - 180);
+				entityToSpawn.setYBodyRot(entity.getYRot() - 180);
+				entityToSpawn.setYHeadRot(entity.getYRot() - 180);
+				entityToSpawn.setDeltaMovement(0, 0, 0);
+			}
+		}
+		if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(JimsmineshaftModItems.DELETED_MOD_ELEMENT.get());
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+			}
+		}
+	}
+}

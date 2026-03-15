@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/rusted_iron_stairs",
+  "textures": {
+    "all": "jimsmineshaft:block/rusted_iron_stairs",
+    "particle": "jimsmineshaft:block/rusted_iron_stairs",
+    "0": "jimsmineshaft:block/rusted_iron_stairs"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/rusted_iron_catwalk",
+  "textures": {
+    "all": "jimsmineshaft:block/newer_rusted_iron_catwalk",
+    "particle": "jimsmineshaft:block/newer_rusted_iron_catwalk",
+    "3": "jimsmineshaft:block/newer_rusted_iron_catwalk"
+  },
+  "render_type": "solid"
+}

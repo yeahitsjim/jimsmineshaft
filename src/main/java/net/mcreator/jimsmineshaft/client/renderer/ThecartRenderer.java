@@ -1,50 +1,5 @@
 package net.mcreator.jimsmineshaft.client.renderer;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
-import net.minecraft.client.renderer.entity.layers.RenderLayer;
-import net.minecraft.client.renderer.entity.MobRenderer;
-import net.minecraft.client.renderer.entity.LivingEntityRenderer;
-import net.minecraft.client.renderer.entity.EntityRendererProvider;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.MultiBufferSource;
-import net.minecraft.client.model.geom.ModelPart;
-import net.minecraft.client.model.EntityModel;
-import net.minecraft.client.Minecraft;
-
-import net.mcreator.jimsmineshaft.procedures.ThecartDisplayConditionProcedure;
-import net.mcreator.jimsmineshaft.procedures.Thecart9DisplayConditionProcedure;
-import net.mcreator.jimsmineshaft.procedures.Thecart8DisplayConditionProcedure;
-import net.mcreator.jimsmineshaft.procedures.Thecart7DisplayConditionProcedure;
-import net.mcreator.jimsmineshaft.procedures.Thecart6DisplayConditionProcedure;
-import net.mcreator.jimsmineshaft.procedures.Thecart5DisplayConditionProcedure;
-import net.mcreator.jimsmineshaft.procedures.Thecart4DisplayConditionProcedure;
-import net.mcreator.jimsmineshaft.procedures.Thecart3DisplayConditionProcedure;
-import net.mcreator.jimsmineshaft.procedures.Thecart1DisplayConditionProcedure;
-import net.mcreator.jimsmineshaft.procedures.Thecart12DisplayConditionProcedure;
-import net.mcreator.jimsmineshaft.procedures.Thecart11DisplayConditionProcedure;
-import net.mcreator.jimsmineshaft.procedures.Thecart10DisplayConditionProcedure;
-import net.mcreator.jimsmineshaft.entity.ThecartEntity;
-import net.mcreator.jimsmineshaft.client.model.animations.theCartAnimation;
-import net.mcreator.jimsmineshaft.client.model.animations.Animationscartpushagain;
-import net.mcreator.jimsmineshaft.client.model.ModeltheCart;
-import net.mcreator.jimsmineshaft.client.model.ModelcartPhase9;
-import net.mcreator.jimsmineshaft.client.model.ModelcartPhase8;
-import net.mcreator.jimsmineshaft.client.model.ModelcartPhase7;
-import net.mcreator.jimsmineshaft.client.model.ModelcartPhase6;
-import net.mcreator.jimsmineshaft.client.model.ModelcartPhase5;
-import net.mcreator.jimsmineshaft.client.model.ModelcartPhase4;
-import net.mcreator.jimsmineshaft.client.model.ModelcartPhase3;
-import net.mcreator.jimsmineshaft.client.model.ModelcartPhase2;
-import net.mcreator.jimsmineshaft.client.model.ModelcartPhase12;
-import net.mcreator.jimsmineshaft.client.model.ModelcartPhase11;
-import net.mcreator.jimsmineshaft.client.model.ModelcartPhase10;
-import net.mcreator.jimsmineshaft.client.model.ModelcartPhase1;
-
-import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.blaze3d.vertex.PoseStack;
-
 public class ThecartRenderer extends MobRenderer<ThecartEntity, LivingEntityRenderState, ModeltheCart> {
 	private ThecartEntity entity = null;
 

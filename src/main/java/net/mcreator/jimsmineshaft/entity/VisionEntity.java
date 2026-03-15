@@ -1,50 +1,15 @@
 package net.mcreator.jimsmineshaft.entity;
 
-import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
-import net.neoforged.neoforge.common.NeoForgeMod;
-
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.Explosion;
-import net.minecraft.world.entity.projectile.ThrownPotion;
-import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.ai.navigation.PathNavigation;
-import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
-import net.minecraft.world.entity.ai.control.FlyingMoveControl;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.AreaEffectCloud;
-import net.minecraft.world.entity.AnimationState;
-import net.minecraft.world.damagesource.DamageTypes;
-import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.syncher.SynchedEntityData;
-import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.nbt.Tag;
 import net.minecraft.network.syncher.EntityDataAccessor;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.jimsmineshaft.procedures.VisionPlaybackConditionTweak4Procedure;
-import net.mcreator.jimsmineshaft.procedures.VisionPlaybackConditionTweak3Procedure;
-import net.mcreator.jimsmineshaft.procedures.VisionPlaybackConditionTweak2Procedure;
-import net.mcreator.jimsmineshaft.procedures.VisionPlaybackConditionTweak1Procedure;
-import net.mcreator.jimsmineshaft.procedures.VisionPlaybackConditionSpasm2Procedure;
-import net.mcreator.jimsmineshaft.procedures.VisionPlaybackConditionSpasm1Procedure;
-import net.mcreator.jimsmineshaft.procedures.VisionOnEntityTickUpdateProcedure;
 
 public class VisionEntity extends Monster {
+
 	public static final EntityDataAccessor<Integer> DATA_tweakPose = SynchedEntityData.defineId(VisionEntity.class, EntityDataSerializers.INT);
 	public static final EntityDataAccessor<Integer> DATA_spasmPose = SynchedEntityData.defineId(VisionEntity.class, EntityDataSerializers.INT);
 	public static final EntityDataAccessor<Boolean> DATA_gone = SynchedEntityData.defineId(VisionEntity.class, EntityDataSerializers.BOOLEAN);
 	public static final EntityDataAccessor<Integer> DATA_anger = SynchedEntityData.defineId(VisionEntity.class, EntityDataSerializers.INT);
+
 	public final AnimationState animationState0 = new AnimationState();
 	public final AnimationState animationState1 = new AnimationState();
 	public final AnimationState animationState2 = new AnimationState();
@@ -56,8 +21,11 @@ public class VisionEntity extends Monster {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
+
 		setPersistenceRequired();
+
 		this.moveControl = new FlyingMoveControl(this, 10, true);
+
 	}
 
 	@Override
@@ -97,6 +65,7 @@ public class VisionEntity extends Monster {
 
 	@Override
 	public boolean causeFallDamage(float l, float d, DamageSource source) {
+
 		return false;
 	}
 
@@ -164,12 +133,13 @@ public class VisionEntity extends Monster {
 	@Override
 	public void tick() {
 		super.tick();
+
 		if (this.level().isClientSide()) {
 			this.animationState0.animateWhen(VisionPlaybackConditionTweak1Procedure.execute(this), this.tickCount);
 			this.animationState1.animateWhen(VisionPlaybackConditionTweak2Procedure.execute(this), this.tickCount);
 			this.animationState2.animateWhen(VisionPlaybackConditionTweak3Procedure.execute(this), this.tickCount);
 			this.animationState3.animateWhen(VisionPlaybackConditionTweak4Procedure.execute(this), this.tickCount);
-			this.animationState4.animateWhen(VisionPlaybackConditionSpasm1Procedure.execute(this), this.tickCount);
+			this.animationState4.animateWhen(true, this.tickCount);
 			this.animationState5.animateWhen(VisionPlaybackConditionSpasm2Procedure.execute(this), this.tickCount);
 		}
 	}
@@ -204,6 +174,7 @@ public class VisionEntity extends Monster {
 
 	public void aiStep() {
 		super.aiStep();
+
 		this.setNoGravity(true);
 	}
 
@@ -217,8 +188,12 @@ public class VisionEntity extends Monster {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 0);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 48);
+
 		builder = builder.add(Attributes.STEP_HEIGHT, 0.6);
+
 		builder = builder.add(Attributes.FLYING_SPEED, 0.3);
+
 		return builder;
 	}
+
 }

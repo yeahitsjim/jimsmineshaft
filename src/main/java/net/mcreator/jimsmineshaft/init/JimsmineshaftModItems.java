@@ -21,12 +21,19 @@ import net.minecraft.resources.ResourceLocation;
 import net.mcreator.jimsmineshaft.item.WoemineshaftfullmemefortotemItem;
 import net.mcreator.jimsmineshaft.item.WoeMineshaftBeUponTheItem;
 import net.mcreator.jimsmineshaft.item.WoeMineshaftBeUponThe2Item;
+import net.mcreator.jimsmineshaft.item.TommyGunItem;
 import net.mcreator.jimsmineshaft.item.TestSyncTheSecondItem;
 import net.mcreator.jimsmineshaft.item.StructureSpawnerItem;
+import net.mcreator.jimsmineshaft.item.SmallSlideUpGateItem;
+import net.mcreator.jimsmineshaft.item.SmallSideOpenGateItem;
 import net.mcreator.jimsmineshaft.item.SmallPickaxeItem;
 import net.mcreator.jimsmineshaft.item.RustyPickaxeItem;
 import net.mcreator.jimsmineshaft.item.OldKnifeItem;
+import net.mcreator.jimsmineshaft.item.MiningVeteranSetItem;
 import net.mcreator.jimsmineshaft.item.MiningGoonSetItem;
+import net.mcreator.jimsmineshaft.item.MiningEliteSetItem;
+import net.mcreator.jimsmineshaft.item.Level1DimensionItem;
+import net.mcreator.jimsmineshaft.item.LargeGateItem;
 import net.mcreator.jimsmineshaft.item.JimsminedimensionItem;
 import net.mcreator.jimsmineshaft.item.IronBulletItem;
 import net.mcreator.jimsmineshaft.item.FlintlockPistolItem;
@@ -107,7 +114,6 @@ public class JimsmineshaftModItems {
 	public static final DeferredItem<Item> COPPER_SHARD = block(JimsmineshaftModBlocks.COPPER_SHARD, new Item.Properties().stacksTo(1));
 	public static final DeferredItem<Item> STRUCTURE_SPAWNER = register("structure_spawner", StructureSpawnerItem::new);
 	public static final DeferredItem<Item> PRESSURE_DRILL_FOLDED_SPAWN_EGG = register("pressure_drill_folded_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.PRESSURE_DRILL_FOLDED.get(), properties));
-	public static final DeferredItem<Item> BIG_IRON_GATE_FRAME_SPAWN_EGG = register("big_iron_gate_frame_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.BIG_IRON_GATE_FRAME.get(), properties));
 	public static final DeferredItem<Item> COPPER_DRILLED_EAST_SPAWN_EGG = register("copper_drilled_east_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.COPPER_DRILLED_EAST.get(), properties));
 	public static final DeferredItem<Item> COPPER_SHARD_TRIPLE = block(JimsmineshaftModBlocks.COPPER_SHARD_TRIPLE, new Item.Properties().stacksTo(1));
 	public static final DeferredItem<Item> BATTERY = register("battery", BatteryItem::new);
@@ -124,7 +130,6 @@ public class JimsmineshaftModItems {
 	public static final DeferredItem<Item> FLASHLIGHT = register("flashlight", FlashlightItem::new);
 	public static final DeferredItem<Item> ELEVATOR_SEAT_4_SPAWN_EGG = register("elevator_seat_4_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.ELEVATOR_SEAT_4.get(), properties));
 	public static final DeferredItem<Item> ELEVATOR_SEAT_7_SPAWN_EGG = register("elevator_seat_7_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.ELEVATOR_SEAT_7.get(), properties));
-	public static final DeferredItem<Item> BIG_IRON_GATE_LEFT_SPAWN_EGG = register("big_iron_gate_left_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.BIG_IRON_GATE_LEFT.get(), properties));
 	public static final DeferredItem<Item> ELEVATOR_SEAT_8_SPAWN_EGG = register("elevator_seat_8_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.ELEVATOR_SEAT_8.get(), properties));
 	public static final DeferredItem<Item> COPPER_FRAGMENT_5 = block(JimsmineshaftModBlocks.COPPER_FRAGMENT_5, new Item.Properties().stacksTo(1));
 	public static final DeferredItem<Item> COPPER_FRAGMENT_1 = block(JimsmineshaftModBlocks.COPPER_FRAGMENT_1, new Item.Properties().stacksTo(1));
@@ -154,7 +159,6 @@ public class JimsmineshaftModItems {
 	public static final DeferredItem<Item> RAW_COPPER_DRILLED_NORTH_DYNAMITE = block(JimsmineshaftModBlocks.RAW_COPPER_DRILLED_NORTH_DYNAMITE, new Item.Properties().stacksTo(1));
 	public static final DeferredItem<Item> NEW_STONE = block(JimsmineshaftModBlocks.NEW_STONE);
 	public static final DeferredItem<Item> PRESSURE_DRILL_FOLDED_MODEL = block(JimsmineshaftModBlocks.PRESSURE_DRILL_FOLDED_MODEL);
-	public static final DeferredItem<Item> BIG_IRON_GATE_RIGHT_SPAWN_EGG = register("big_iron_gate_right_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.BIG_IRON_GATE_RIGHT.get(), properties));
 	public static final DeferredItem<Item> BIG_GATE_SPAWN_EGG = register("big_gate_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.BIG_GATE.get(), properties));
 	public static final DeferredItem<Item> DYNAMITE_BOX = register("dynamite_box", DynamiteBoxItem::new);
 	public static final DeferredItem<Item> MINING_GOON_SET_HELMET = register("mining_goon_set_helmet", MiningGoonSetItem.Helmet::new);
@@ -167,6 +171,33 @@ public class JimsmineshaftModItems {
 	public static final DeferredItem<Item> LIGHTBLOCK = block(JimsmineshaftModBlocks.LIGHTBLOCK);
 	public static final DeferredItem<Item> NEW_GRAVEL = block(JimsmineshaftModBlocks.NEW_GRAVEL);
 	public static final DeferredItem<Item> VISION_SPAWN_EGG = register("vision_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.VISION.get(), properties));
+	public static final DeferredItem<Item> STALKER_INSIDES_SPAWN_EGG = register("stalker_insides_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.STALKER_INSIDES.get(), properties));
+	public static final DeferredItem<Item> SMALL_SIDE_OPEN_GATE_ENTITY_SPAWN_EGG = register("small_side_open_gate_entity_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.SMALL_SIDE_OPEN_GATE_ENTITY.get(), properties));
+	public static final DeferredItem<Item> RUSTED_IRON_CROSS_SUPPORT = block(JimsmineshaftModBlocks.RUSTED_IRON_CROSS_SUPPORT);
+	public static final DeferredItem<Item> PLAYER_STALKIER_SPAWN_EGG = register("player_stalkier_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.PLAYER_STALKIER.get(), properties));
+	public static final DeferredItem<Item> RUSTED_IRON_CATWALK_WALL_SUPPORT = block(JimsmineshaftModBlocks.RUSTED_IRON_CATWALK_WALL_SUPPORT);
+	public static final DeferredItem<Item> LARGE_GATE = register("large_gate", LargeGateItem::new);
+	public static final DeferredItem<Item> RUSTED_IRON_STAIRS = block(JimsmineshaftModBlocks.RUSTED_IRON_STAIRS);
+	public static final DeferredItem<Item> RUSTED_IRON_SUPPORT_COOL = block(JimsmineshaftModBlocks.RUSTED_IRON_SUPPORT_COOL);
+	public static final DeferredItem<Item> STALKER_INSIDES_2_SPAWN_EGG = register("stalker_insides_2_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.STALKER_INSIDES_2.get(), properties));
+	public static final DeferredItem<Item> SKIN_STEALER_ENTITY_SPAWN_EGG = register("skin_stealer_entity_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.SKIN_STEALER_ENTITY.get(), properties));
+	public static final DeferredItem<Item> SMALL_SIDE_OPEN_GATE = register("small_side_open_gate", SmallSideOpenGateItem::new);
+	public static final DeferredItem<Item> LEVEL_1_DIMENSION = register("level_1_dimension", Level1DimensionItem::new);
+	public static final DeferredItem<Item> SMALL_SLIDE_UP_GATE_ENTITY_SPAWN_EGG = register("small_slide_up_gate_entity_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.SMALL_SLIDE_UP_GATE_ENTITY.get(), properties));
+	public static final DeferredItem<Item> RUSTED_IRON_RAILING = block(JimsmineshaftModBlocks.RUSTED_IRON_RAILING);
+	public static final DeferredItem<Item> RUSTED_IRON_CATWALK = block(JimsmineshaftModBlocks.RUSTED_IRON_CATWALK);
+	public static final DeferredItem<Item> MINING_ELITE_SET_HELMET = register("mining_elite_set_helmet", MiningEliteSetItem.Helmet::new);
+	public static final DeferredItem<Item> MINING_ELITE_SET_CHESTPLATE = register("mining_elite_set_chestplate", MiningEliteSetItem.Chestplate::new);
+	public static final DeferredItem<Item> MINING_ELITE_SET_LEGGINGS = register("mining_elite_set_leggings", MiningEliteSetItem.Leggings::new);
+	public static final DeferredItem<Item> MINING_ELITE_SET_BOOTS = register("mining_elite_set_boots", MiningEliteSetItem.Boots::new);
+	public static final DeferredItem<Item> RUSTED_IRON_CATWALK_SUPPORTED = block(JimsmineshaftModBlocks.RUSTED_IRON_CATWALK_SUPPORTED);
+	public static final DeferredItem<Item> TOMMY_GUN = register("tommy_gun", TommyGunItem::new);
+	public static final DeferredItem<Item> MINING_VETERAN_SET_HELMET = register("mining_veteran_set_helmet", MiningVeteranSetItem.Helmet::new);
+	public static final DeferredItem<Item> MINING_VETERAN_SET_CHESTPLATE = register("mining_veteran_set_chestplate", MiningVeteranSetItem.Chestplate::new);
+	public static final DeferredItem<Item> MINING_VETERAN_SET_LEGGINGS = register("mining_veteran_set_leggings", MiningVeteranSetItem.Leggings::new);
+	public static final DeferredItem<Item> MINING_VETERAN_SET_BOOTS = register("mining_veteran_set_boots", MiningVeteranSetItem.Boots::new);
+	public static final DeferredItem<Item> RUSTED_IRON_RAILING_CORNER = block(JimsmineshaftModBlocks.RUSTED_IRON_RAILING_CORNER);
+	public static final DeferredItem<Item> SMALL_SLIDE_UP_GATE = register("small_slide_up_gate", SmallSlideUpGateItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

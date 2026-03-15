@@ -408,5 +408,50 @@
         "stream": false
       }
     ]
+  },
+  "stalkerscream1": {
+    "subtitle": "subtitles.stalkerscream1",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:stalkerscream1",
+        "stream": false
+      }
+    ]
+  },
+  "smalldoor": {
+    "subtitle": "subtitles.smalldoor",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:smalldoormono",
+        "stream": false
+      }
+    ]
+  },
+  "stalkerrip1": {
+    "subtitle": "subtitles.stalkerrip1",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:rip1",
+        "stream": false
+      }
+    ]
+  },
+  "stalkerrip2": {
+    "subtitle": "subtitles.stalkerrip2",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:rip2",
+        "stream": false
+      }
+    ]
+  },
+  "stalkercrack": {
+    "subtitle": "subtitles.stalkercrack",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:crack",
+        "stream": false
+      }
+    ]
   }
 }

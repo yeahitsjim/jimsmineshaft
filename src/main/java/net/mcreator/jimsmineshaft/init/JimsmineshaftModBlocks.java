@@ -30,7 +30,15 @@ import net.mcreator.jimsmineshaft.block.StrippedRottenSupportBeamBlock;
 import net.mcreator.jimsmineshaft.block.SteelShelfBlock;
 import net.mcreator.jimsmineshaft.block.StackableSteelShelfBlock;
 import net.mcreator.jimsmineshaft.block.RustedMinecartBlock;
+import net.mcreator.jimsmineshaft.block.RustedIronSupportCoolBlock;
 import net.mcreator.jimsmineshaft.block.RustedIronSupportBlock;
+import net.mcreator.jimsmineshaft.block.RustedIronStairsBlock;
+import net.mcreator.jimsmineshaft.block.RustedIronRailingCornerBlock;
+import net.mcreator.jimsmineshaft.block.RustedIronRailingBlock;
+import net.mcreator.jimsmineshaft.block.RustedIronCrossSupportBlock;
+import net.mcreator.jimsmineshaft.block.RustedIronCatwalkWallSupportBlock;
+import net.mcreator.jimsmineshaft.block.RustedIronCatwalkSupportedBlock;
+import net.mcreator.jimsmineshaft.block.RustedIronCatwalkBlock;
 import net.mcreator.jimsmineshaft.block.RottenSupportBeamBlock;
 import net.mcreator.jimsmineshaft.block.RottenPlanksBlock;
 import net.mcreator.jimsmineshaft.block.RottenPlankStairsBlock;
@@ -61,6 +69,7 @@ import net.mcreator.jimsmineshaft.block.MysteryRailBlock;
 import net.mcreator.jimsmineshaft.block.MysteryItemBlock;
 import net.mcreator.jimsmineshaft.block.LongWoodenShelfBlock;
 import net.mcreator.jimsmineshaft.block.LightblockBlock;
+import net.mcreator.jimsmineshaft.block.Level1DimensionPortalBlock;
 import net.mcreator.jimsmineshaft.block.JimsminedimensionPortalBlock;
 import net.mcreator.jimsmineshaft.block.IronSupportBlock;
 import net.mcreator.jimsmineshaft.block.IronSidingCornerBlock;
@@ -169,6 +178,15 @@ public class JimsmineshaftModBlocks {
 	public static final DeferredBlock<Block> RAW_COPPER_DRILLED_NORTH = register("raw_copper_drilled_north", RawCopperDrilledNorthBlock::new);
 	public static final DeferredBlock<Block> LIGHTBLOCK = register("lightblock", LightblockBlock::new);
 	public static final DeferredBlock<Block> NEW_GRAVEL = register("new_gravel", NewGravelBlock::new);
+	public static final DeferredBlock<Block> RUSTED_IRON_CROSS_SUPPORT = register("rusted_iron_cross_support", RustedIronCrossSupportBlock::new);
+	public static final DeferredBlock<Block> RUSTED_IRON_CATWALK_WALL_SUPPORT = register("rusted_iron_catwalk_wall_support", RustedIronCatwalkWallSupportBlock::new);
+	public static final DeferredBlock<Block> RUSTED_IRON_STAIRS = register("rusted_iron_stairs", RustedIronStairsBlock::new);
+	public static final DeferredBlock<Block> RUSTED_IRON_SUPPORT_COOL = register("rusted_iron_support_cool", RustedIronSupportCoolBlock::new);
+	public static final DeferredBlock<Block> LEVEL_1_DIMENSION_PORTAL = register("level_1_dimension_portal", Level1DimensionPortalBlock::new);
+	public static final DeferredBlock<Block> RUSTED_IRON_RAILING = register("rusted_iron_railing", RustedIronRailingBlock::new);
+	public static final DeferredBlock<Block> RUSTED_IRON_CATWALK = register("rusted_iron_catwalk", RustedIronCatwalkBlock::new);
+	public static final DeferredBlock<Block> RUSTED_IRON_CATWALK_SUPPORTED = register("rusted_iron_catwalk_supported", RustedIronCatwalkSupportedBlock::new);
+	public static final DeferredBlock<Block> RUSTED_IRON_RAILING_CORNER = register("rusted_iron_railing_corner", RustedIronRailingCornerBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

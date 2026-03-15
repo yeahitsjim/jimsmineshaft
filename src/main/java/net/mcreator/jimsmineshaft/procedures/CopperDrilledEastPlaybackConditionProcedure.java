@@ -1,24 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.neoforge.event.entity.EntityJoinLevelEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
-
-import net.minecraft.world.level.block.state.properties.EnumProperty;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.core.Direction;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.jimsmineshaft.init.JimsmineshaftModBlocks;
-import net.mcreator.jimsmineshaft.entity.CopperDrilledEastEntity;
-import net.mcreator.jimsmineshaft.JimsmineshaftMod;
-
-import javax.annotation.Nullable;
 
 @EventBusSubscriber
 public class CopperDrilledEastPlaybackConditionProcedure {

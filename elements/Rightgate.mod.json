@@ -24,8 +24,8 @@
     },
     "modelLayers": [],
     "animations": [],
-    "modelWidth": 1.5,
-    "modelHeight": 5.0,
+    "modelWidth": 1.7000000000000002,
+    "modelHeight": 5.6000000000000005,
     "modelShadowSize": 0.0,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
@@ -37,11 +37,7 @@
       "value": -1,
       "falpha": 0.0
     },
-    "creativeTabs": [
-      {
-        "value": "MISC"
-      }
-    ],
+    "creativeTabs": [],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
@@ -63,7 +59,7 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Mob",
+    "mobBehaviourType": "Creature",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 3,
     "attackKnockback": 0.0,
@@ -109,10 +105,10 @@
       "value": ""
     },
     "hurtSound": {
-      "value": "entity.generic.hurt"
+      "value": ""
     },
     "deathSound": {
-      "value": "entity.generic.death"
+      "value": ""
     },
     "stepSound": {
       "value": ""
@@ -120,9 +116,22 @@
     "raidCelebrationSound": {
       "value": ""
     },
-    "entityDataEntries": [],
+    "entityDataEntries": [
+      {
+        "name": "open",
+        "type": "logic",
+        "value": false
+      },
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "size",
+        "type": "integer",
+        "value": 0
+      }
+    ],
     "onRightClickedOn": {
-      "name": "BigIronGateLeftRightClickedOnEntity"
+      "name": "LeftgateRightClickedOnEntity"
     },
     "onMobTickUpdate": {
       "name": "BigIronGateRightOnEntityTickUpdate"

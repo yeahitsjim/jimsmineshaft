@@ -18,7 +18,7 @@ import java.util.List;
 
 public class BatteryItem extends Item {
 	public BatteryItem(Item.Properties properties) {
-		super(properties);
+		super(properties.stacksTo(1));
 	}
 
 	@Override

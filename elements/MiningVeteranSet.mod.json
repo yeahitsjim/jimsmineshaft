@@ -1,0 +1,100 @@
+{
+  "_fv": 79,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "heavymask",
+    "enableBody": true,
+    "textureBody": "heavychastplate",
+    "enableLeggings": true,
+    "textureLeggings": "heavygreaves",
+    "enableBoots": true,
+    "textureBoots": "heavysabatons",
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ],
+    "armorTextureFile": "mininggoonset",
+    "helmetName": "Mining Veteran Set Heavy CBRN Mask",
+    "bodyName": "Mining Veteran Set Heavy Chestplate",
+    "leggingsName": "Mining Veteran Set Heavy Greaves",
+    "bootsName": "Mining Veteran Set Heavy Sabatons",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "ModelMining_Veteran_Heavy_CBRN_Mask",
+    "helmetModelPart": "Head",
+    "helmetModelTexture": "mining_veteran.png",
+    "bodyModelName": "ModelMining_Veteran_Heavy_Chestplate",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "mining_veteran.png",
+    "leggingsModelName": "ModelMining_Veteran_Heavy_Greaves",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg",
+    "leggingsModelTexture": "mining_veteran.png",
+    "bootsModelName": "ModelMining_Veteran_Heavy_Sabatons",
+    "bootsModelPartL": "LeftLeg",
+    "bootsModelPartR": "RightLeg",
+    "bootsModelTexture": "mining_veteran.png",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 33,
+    "damageValueHelmet": 6,
+    "damageValueBody": 12,
+    "damageValueLeggings": 8,
+    "damageValueBoots": 4,
+    "enchantability": 9,
+    "toughness": 2.0,
+    "knockbackResistance": 0.19999999999999998,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

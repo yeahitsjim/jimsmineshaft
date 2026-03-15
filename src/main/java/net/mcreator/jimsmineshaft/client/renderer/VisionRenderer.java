@@ -1,24 +1,5 @@
 package net.mcreator.jimsmineshaft.client.renderer;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
-import net.minecraft.client.renderer.entity.layers.RenderLayer;
-import net.minecraft.client.renderer.entity.MobRenderer;
-import net.minecraft.client.renderer.entity.LivingEntityRenderer;
-import net.minecraft.client.renderer.entity.EntityRendererProvider;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.MultiBufferSource;
-import net.minecraft.client.model.geom.ModelPart;
-
-import net.mcreator.jimsmineshaft.procedures.VisionDisplayConditionGlowProcedure;
-import net.mcreator.jimsmineshaft.entity.VisionEntity;
-import net.mcreator.jimsmineshaft.client.model.animations.shadow_manAnimation;
-import net.mcreator.jimsmineshaft.client.model.Modelshadow_man;
-
-import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.blaze3d.vertex.PoseStack;
-
 public class VisionRenderer extends MobRenderer<VisionEntity, LivingEntityRenderState, Modelshadow_man> {
 	private VisionEntity entity = null;
 
@@ -29,14 +10,8 @@ public class VisionRenderer extends MobRenderer<VisionEntity, LivingEntityRender
 
 			@Override
 			public void render(PoseStack poseStack, MultiBufferSource bufferSource, int light, LivingEntityRenderState state, float headYaw, float headPitch) {
-				Level world = entity.level();
-				double x = entity.getX();
-				double y = entity.getY();
-				double z = entity.getZ();
-				if (VisionDisplayConditionGlowProcedure.execute(entity)) {
-					VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.eyes(LAYER_TEXTURE));
-					this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(state, 0));
-				}
+				VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.eyes(LAYER_TEXTURE));
+				this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(state, 0));
 			}
 		});
 	}

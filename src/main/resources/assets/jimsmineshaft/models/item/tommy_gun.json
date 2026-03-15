@@ -1,0 +1,7 @@
+{
+  "parent": "jimsmineshaft:custom/tommy_gun",
+  "textures": {
+    "0": "jimsmineshaft:block/tommy_gun",
+    "particle": "jimsmineshaft:item/tommy_gun"
+  }
+}
