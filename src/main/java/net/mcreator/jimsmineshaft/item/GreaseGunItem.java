@@ -1,28 +1,5 @@
 package net.mcreator.jimsmineshaft.item;
 
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
-
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.Component;
-
-import net.mcreator.jimsmineshaft.procedures.TommyGunCanUseRangedItemProcedure;
-import net.mcreator.jimsmineshaft.procedures.GreaseGunRangedItemShootsProjectileProcedure;
-import net.mcreator.jimsmineshaft.procedures.GreaseGunEntitySwingsItemProcedure;
-import net.mcreator.jimsmineshaft.entity.BulletProjectileEntity;
-
-import java.util.List;
-
 public class GreaseGunItem extends Item {
 	public GreaseGunItem(Item.Properties properties) {
 		super(properties.stacksTo(1));
@@ -44,19 +21,11 @@ public class GreaseGunItem extends Item {
 	@Override
 	public InteractionResult use(Level world, Player entity, InteractionHand hand) {
 		InteractionResult ar = InteractionResult.FAIL;
-		if (TommyGunCanUseRangedItemProcedure.execute(entity.getItemInHand(hand)))
-			if (entity.getAbilities().instabuild || findAmmo(entity) != ItemStack.EMPTY) {
-				ar = InteractionResult.SUCCESS;
-				entity.startUsingItem(hand);
-			}
+		if (entity.getAbilities().instabuild || findAmmo(entity) != ItemStack.EMPTY) {
+			ar = InteractionResult.SUCCESS;
+			entity.startUsingItem(hand);
+		}
 		return ar;
-	}
-
-	@Override
-	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity, InteractionHand hand) {
-		boolean retval = super.onEntitySwing(itemstack, entity, hand);
-		GreaseGunEntitySwingsItemProcedure.execute(entity, itemstack);
-		return retval;
 	}
 
 	@Override
@@ -76,7 +45,6 @@ public class GreaseGunItem extends Item {
 						stack.shrink(1);
 					}
 				}
-				GreaseGunRangedItemShootsProjectileProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
 			}
 			entity.releaseUsingItem();
 		}

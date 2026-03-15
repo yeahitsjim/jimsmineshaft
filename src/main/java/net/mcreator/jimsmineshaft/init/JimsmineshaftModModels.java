@@ -12,6 +12,7 @@ import net.mcreator.jimsmineshaft.client.model.ModeltheCart;
 import net.mcreator.jimsmineshaft.client.model.ModelstalkerInsides;
 import net.mcreator.jimsmineshaft.client.model.Modelstalker;
 import net.mcreator.jimsmineshaft.client.model.Modelslideupgate;
+import net.mcreator.jimsmineshaft.client.model.Modelshadow_man;
 import net.mcreator.jimsmineshaft.client.model.ModelrawCopperDrilledNorth_Converted;
 import net.mcreator.jimsmineshaft.client.model.ModelrawCopperDrilledNorth4;
 import net.mcreator.jimsmineshaft.client.model.ModelrawCopperDrilledEast;
@@ -116,6 +117,7 @@ public class JimsmineshaftModModels {
 		event.registerLayerDefinition(ModelcartRocks3.LAYER_LOCATION, ModelcartRocks3::createBodyLayer);
 		event.registerLayerDefinition(ModelcartPhase5.LAYER_LOCATION, ModelcartPhase5::createBodyLayer);
 		event.registerLayerDefinition(Modelslideupgate.LAYER_LOCATION, Modelslideupgate::createBodyLayer);
+		event.registerLayerDefinition(Modelshadow_man.LAYER_LOCATION, Modelshadow_man::createBodyLayer);
 		event.registerLayerDefinition(ModelMining_Veteran_Heavy_Chestplate.LAYER_LOCATION, ModelMining_Veteran_Heavy_Chestplate::createBodyLayer);
 		event.registerLayerDefinition(ModelPressureDrill.LAYER_LOCATION, ModelPressureDrill::createBodyLayer);
 		event.registerLayerDefinition(ModeltheCart.LAYER_LOCATION, ModeltheCart::createBodyLayer);

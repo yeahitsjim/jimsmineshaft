@@ -6,6 +6,8 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
@@ -35,7 +37,11 @@ public class StaminaProcedureProcedure {
 					_vars.syncPlayerVariables(entity);
 				}
 				entity.getPersistentData().putBoolean("sprintcooldown", true);
+				if (entity instanceof LivingEntity _livingEntity3 && _livingEntity3.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED))
+					_livingEntity3.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.12);
 			} else {
+				if (entity instanceof LivingEntity _livingEntity4 && _livingEntity4.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED))
+					_livingEntity4.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.08);
 				if (entity.getPersistentData().getBoolean("sprintcooldown") == true) {
 					if (entity.getPersistentData().getBoolean("sprintoutcooldown") == true) {
 						JimsmineshaftMod.queueServerWork(70, () -> {

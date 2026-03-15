@@ -20,6 +20,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 
+import net.mcreator.jimsmineshaft.entity.VisionEntity;
 import net.mcreator.jimsmineshaft.entity.ThecartEntity;
 import net.mcreator.jimsmineshaft.entity.StalkerInsidesEntity;
 import net.mcreator.jimsmineshaft.entity.StalkerInsides2Entity;
@@ -172,6 +173,10 @@ public class JimsmineshaftModEntities {
 			EntityType.Builder.<SmallSlideUpGateEntityEntity>of(SmallSlideUpGateEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
 					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<VisionEntity>> VISION = register("vision",
+			EntityType.Builder.<VisionEntity>of(VisionEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(1.1f, 2f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -219,6 +224,7 @@ public class JimsmineshaftModEntities {
 		RightgateEntity.init(event);
 		SmallSideOpenGateEntityEntity.init(event);
 		SmallSlideUpGateEntityEntity.init(event);
+		VisionEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -253,5 +259,6 @@ public class JimsmineshaftModEntities {
 		event.put(RIGHTGATE.get(), RightgateEntity.createAttributes().build());
 		event.put(SMALL_SIDE_OPEN_GATE_ENTITY.get(), SmallSideOpenGateEntityEntity.createAttributes().build());
 		event.put(SMALL_SLIDE_UP_GATE_ENTITY.get(), SmallSlideUpGateEntityEntity.createAttributes().build());
+		event.put(VISION.get(), VisionEntity.createAttributes().build());
 	}
 }

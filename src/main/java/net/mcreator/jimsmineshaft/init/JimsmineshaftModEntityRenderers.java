@@ -10,6 +10,7 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
+import net.mcreator.jimsmineshaft.client.renderer.VisionRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.ThecartRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.StalkerRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.StalkerInsidesRenderer;
@@ -76,5 +77,6 @@ public class JimsmineshaftModEntityRenderers {
 		event.registerEntityRenderer(JimsmineshaftModEntities.RIGHTGATE.get(), RightgateRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.SMALL_SIDE_OPEN_GATE_ENTITY.get(), SmallSideOpenGateEntityRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.SMALL_SLIDE_UP_GATE_ENTITY.get(), SmallSlideUpGateEntityRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.VISION.get(), VisionRenderer::new);
 	}
 }

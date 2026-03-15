@@ -89,6 +89,7 @@ public class JimsmineshaftModVariables {
 			clone.stamina = original.stamina;
 			clone.staminamax = original.staminamax;
 			if (!event.isWasDeath()) {
+				clone.analogScreenInx = original.analogScreenInx;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -282,6 +283,7 @@ public class JimsmineshaftModVariables {
 		public double batterylife = 100.0;
 		public double stamina = 100.0;
 		public double staminamax = 100.0;
+		public String analogScreenInx = "\"\"";
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -305,6 +307,7 @@ public class JimsmineshaftModVariables {
 			nbt.putDouble("batterylife", batterylife);
 			nbt.putDouble("stamina", stamina);
 			nbt.putDouble("staminamax", staminamax);
+			nbt.putString("analogScreenInx", analogScreenInx);
 			return nbt;
 		}
 
@@ -329,6 +332,7 @@ public class JimsmineshaftModVariables {
 			batterylife = nbt.getDouble("batterylife");
 			stamina = nbt.getDouble("stamina");
 			staminamax = nbt.getDouble("staminamax");
+			analogScreenInx = nbt.getString("analogScreenInx");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

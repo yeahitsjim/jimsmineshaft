@@ -133,15 +133,15 @@ public class JimsmineshaftModTabs {
 				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_CATWALK_WALL_SUPPORT.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_CATWALK.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_CATWALK_SUPPORTED.get().asItem());
+				tabData.accept(JimsmineshaftModItems.TOMMY_GUN.get());
 				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_STAIRS.get().asItem());
 				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_SUPPORT_COOL.get().asItem());
 				tabData.accept(JimsmineshaftModItems.IRON_BULLET.get());
 				tabData.accept(JimsmineshaftModItems.FLINTLOCK_PISTOL.get());
 				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_RAILING_CORNER.get().asItem());
 				tabData.accept(JimsmineshaftModItems.STALKER_SPAWN_EGG.get());
-				tabData.accept(JimsmineshaftModItems.TOMMY_GUN.get());
-				tabData.accept(JimsmineshaftModItems.GREASE_GUN.get());
 				tabData.accept(JimsmineshaftModBlocks.BOTTLE.get().asItem());
+				tabData.accept(JimsmineshaftModItems.GREASE_GUN.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
@@ -174,6 +174,7 @@ public class JimsmineshaftModTabs {
 			tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_2_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.COPPER_DRILLED_NORTH_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.PLAYER_STALKIER_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.VISION_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(JimsmineshaftModItems.MINING_GOON_SET_HELMET.get());
 			tabData.accept(JimsmineshaftModItems.MINING_GOON_SET_CHESTPLATE.get());

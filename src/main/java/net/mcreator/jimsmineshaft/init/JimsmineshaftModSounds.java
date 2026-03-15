@@ -66,4 +66,7 @@ public class JimsmineshaftModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> SMALLDOOR = REGISTRY.register("smalldoor", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "smalldoor")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> ENTITY_TOMMY_GUN_SHOOT = REGISTRY.register("entity.tommy_gun.shoot",
 			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "entity.tommy_gun.shoot")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> VISION_STARE_CALM = REGISTRY.register("vision_stare_calm", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "vision_stare_calm")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> VISION_STARE_ANGRY = REGISTRY.register("vision_stare_angry", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "vision_stare_angry")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> VISION_GLITCH = REGISTRY.register("vision_glitch", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "vision_glitch")));
 }

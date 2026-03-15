@@ -6,6 +6,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.animal.IronGolem;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
@@ -69,7 +70,7 @@ public class StalkerEntity extends Monster {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.4, false) {
+		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.5, false) {
 			@Override
 			protected boolean canPerformAttack(LivingEntity entity) {
 				return this.isTimeToAttack() && this.mob.distanceToSqr(entity) < (this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth()) && this.mob.getSensing().hasLineOfSight(entity);
@@ -128,6 +129,7 @@ public class StalkerEntity extends Monster {
 		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
 		this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, Player.class, false, false));
 		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, Villager.class, false, false));
+		this.targetSelector.addGoal(8, new NearestAttackableTargetGoal(this, IronGolem.class, false, false));
 	}
 
 	@Override
