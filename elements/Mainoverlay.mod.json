@@ -101,8 +101,8 @@
             "name": "Staminabar1"
           },
           "anchorPoint": "BOTTOM_LEFT",
-          "x": 15,
-          "y": 215,
+          "x": 6,
+          "y": 224,
           "locked": false
         }
       },
@@ -115,8 +115,8 @@
             "name": "Staminabar2"
           },
           "anchorPoint": "BOTTOM_LEFT",
-          "x": 24,
-          "y": 215,
+          "x": 15,
+          "y": 224,
           "locked": false
         }
       },
@@ -129,8 +129,8 @@
             "name": "Staminabar3"
           },
           "anchorPoint": "BOTTOM_LEFT",
-          "x": 33,
-          "y": 215,
+          "x": 24,
+          "y": 224,
           "locked": false
         }
       },
@@ -143,8 +143,8 @@
             "name": "Staminabar4"
           },
           "anchorPoint": "BOTTOM_LEFT",
-          "x": 42,
-          "y": 215,
+          "x": 33,
+          "y": 224,
           "locked": false
         }
       },
@@ -157,8 +157,8 @@
             "name": "Staminabar5"
           },
           "anchorPoint": "BOTTOM_LEFT",
-          "x": 51,
-          "y": 215,
+          "x": 42,
+          "y": 224,
           "locked": false
         }
       },
@@ -171,8 +171,8 @@
             "name": "Staminabar6"
           },
           "anchorPoint": "BOTTOM_LEFT",
-          "x": 60,
-          "y": 215,
+          "x": 51,
+          "y": 224,
           "locked": false
         }
       },
@@ -185,8 +185,8 @@
             "name": "Staminabar7"
           },
           "anchorPoint": "BOTTOM_LEFT",
-          "x": 69,
-          "y": 215,
+          "x": 60,
+          "y": 224,
           "locked": false
         }
       },
@@ -199,8 +199,8 @@
             "name": "Staminabar8"
           },
           "anchorPoint": "BOTTOM_LEFT",
-          "x": 78,
-          "y": 215,
+          "x": 69,
+          "y": 224,
           "locked": false
         }
       },
@@ -216,8 +216,8 @@
             "fixedValue": 0.0
           },
           "anchorPoint": "BOTTOM_LEFT",
-          "x": 87,
-          "y": 215,
+          "x": 78,
+          "y": 224,
           "locked": false
         }
       },
@@ -230,8 +230,8 @@
             "name": "Staminabar10"
           },
           "anchorPoint": "BOTTOM_LEFT",
-          "x": 96,
-          "y": 215,
+          "x": 87,
+          "y": 224,
           "locked": false
         }
       },
@@ -241,8 +241,8 @@
           "image": "staminabaroutline.png",
           "use1Xscale": false,
           "anchorPoint": "BOTTOM_LEFT",
-          "x": 15,
-          "y": 215,
+          "x": 6,
+          "y": 224,
           "locked": false
         }
       }
