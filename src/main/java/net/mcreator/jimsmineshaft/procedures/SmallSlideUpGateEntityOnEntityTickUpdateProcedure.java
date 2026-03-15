@@ -126,41 +126,7 @@ public class SmallSlideUpGateEntityOnEntityTickUpdateProcedure {
 			if (entity instanceof SmallSlideUpGateEntityEntity _datEntSetL)
 				_datEntSetL.getEntityData().set(SmallSlideUpGateEntityEntity.DATA_opening2, false);
 		}
-		if (!world.getEntitiesOfClass(LeftgateEntity.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(7 / 2d), e -> true).isEmpty()
-				&& !world.getEntitiesOfClass(RightgateEntity.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(7 / 2d), e -> true).isEmpty()) {
-			if ((entity instanceof SmallSlideUpGateEntityEntity _datEntL25 && _datEntL25.getEntityData().get(SmallSlideUpGateEntityEntity.DATA_open)) == true) {
-				if ((findEntityInWorldRange(world, RightgateEntity.class, x, y, z, 7)) instanceof RightgateEntity _datEntSetL)
-					_datEntSetL.getEntityData().set(RightgateEntity.DATA_open, true);
-				if ((findEntityInWorldRange(world, LeftgateEntity.class, x, y, z, 7)) instanceof LeftgateEntity _datEntSetL)
-					_datEntSetL.getEntityData().set(LeftgateEntity.DATA_open, true);
-			} else {
-				if ((findEntityInWorldRange(world, RightgateEntity.class, x, y, z, 7)) instanceof RightgateEntity _datEntSetL)
-					_datEntSetL.getEntityData().set(RightgateEntity.DATA_open, false);
-				if ((findEntityInWorldRange(world, LeftgateEntity.class, x, y, z, 7)) instanceof LeftgateEntity _datEntSetL)
-					_datEntSetL.getEntityData().set(LeftgateEntity.DATA_open, false);
-			}
-		}
-		if (!(!world.getEntitiesOfClass(RightgateEntity.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(7 / 2d), e -> true).isEmpty())) {
-			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = JimsmineshaftModEntities.RIGHTGATE.get().spawn(_level, BlockPos.containing(entity.getX() + entity.getPersistentData().getDouble("dx"), y, entity.getZ() + entity.getPersistentData().getDouble("dz")),
-						EntitySpawnReason.MOB_SUMMONED);
-				if (entityToSpawn != null) {
-					entityToSpawn.setYRot(entity.getYRot());
-					entityToSpawn.setYBodyRot(entity.getYRot());
-					entityToSpawn.setYHeadRot(entity.getYRot());
-				}
-			}
-		} else {
-			if (!world.getEntitiesOfClass(RightgateEntity.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(7 / 2d), e -> true).isEmpty()) {
-				{
-					Entity _ent = (findEntityInWorldRange(world, RightgateEntity.class, x, y, z, 7));
-					_ent.teleportTo((entity.getX() + entity.getPersistentData().getDouble("dx")), y, (entity.getZ() + entity.getPersistentData().getDouble("dz")));
-					if (_ent instanceof ServerPlayer _serverPlayer)
-						_serverPlayer.connection.teleport((entity.getX() + entity.getPersistentData().getDouble("dx")), y, (entity.getZ() + entity.getPersistentData().getDouble("dz")), _ent.getYRot(), _ent.getXRot());
-				}
-			}
-		}
-		if (!(!world.getEntitiesOfClass(LeftgateEntity.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(7 / 2d), e -> true).isEmpty())) {
+		if (entity.getPersistentData().getDouble("spawn") == 0) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = JimsmineshaftModEntities.LEFTGATE.get().spawn(_level, BlockPos.containing(entity.getX() - entity.getPersistentData().getDouble("dx"), y, entity.getZ() - entity.getPersistentData().getDouble("dz")),
 						EntitySpawnReason.MOB_SUMMONED);
@@ -170,15 +136,7 @@ public class SmallSlideUpGateEntityOnEntityTickUpdateProcedure {
 					entityToSpawn.setYHeadRot(entity.getYRot());
 				}
 			}
-		} else {
-			if (!world.getEntitiesOfClass(LeftgateEntity.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(7 / 2d), e -> true).isEmpty()) {
-				{
-					Entity _ent = (findEntityInWorldRange(world, LeftgateEntity.class, x, y, z, 7));
-					_ent.teleportTo((entity.getX()), y, (entity.getZ()));
-					if (_ent instanceof ServerPlayer _serverPlayer)
-						_serverPlayer.connection.teleport((entity.getX()), y, (entity.getZ()), _ent.getYRot(), _ent.getXRot());
-				}
-			}
+			entity.getPersistentData().putDouble("spawn", 1);
 		}
 		if (entity instanceof Player _player) {
 			_player.getAbilities().invulnerable = true;
@@ -188,7 +146,7 @@ public class SmallSlideUpGateEntityOnEntityTickUpdateProcedure {
 			final Vec3 _center = new Vec3(x, y, z);
 			for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(5 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 				if (entityiterator instanceof Monster) {
-					if ((entity instanceof SmallSlideUpGateEntityEntity _datEntL62 && _datEntL62.getEntityData().get(SmallSlideUpGateEntityEntity.DATA_open)) == false) {
+					if ((entity instanceof SmallSlideUpGateEntityEntity _datEntL33 && _datEntL33.getEntityData().get(SmallSlideUpGateEntityEntity.DATA_open)) == false) {
 						entity.getPersistentData().putDouble("maxtime", 20);
 						if (entity.getPersistentData().getDouble("timer") < entity.getPersistentData().getDouble("maxtime")) {
 							entity.getPersistentData().putDouble("timer", (entity.getPersistentData().getDouble("timer") + 1));
@@ -213,10 +171,41 @@ public class SmallSlideUpGateEntityOnEntityTickUpdateProcedure {
 				}
 			}
 		}
+		{
+			final Vec3 _center = new Vec3(x, y, z);
+			for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(5 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
+				if (entityiterator instanceof LeftgateEntity) {
+					if ((entity instanceof SmallSlideUpGateEntityEntity _datEntL51 && _datEntL51.getEntityData().get(SmallSlideUpGateEntityEntity.DATA_open)) == true) {
+						if (entityiterator instanceof LeftgateEntity _datEntSetL)
+							_datEntSetL.getEntityData().set(LeftgateEntity.DATA_open, true);
+					} else {
+						if (entityiterator instanceof LeftgateEntity _datEntSetL)
+							_datEntSetL.getEntityData().set(LeftgateEntity.DATA_open, false);
+					}
+					{
+						Entity _ent = entityiterator;
+						_ent.teleportTo((entity.getX() - entity.getPersistentData().getDouble("dx")), y, (entity.getZ() - entity.getPersistentData().getDouble("dz")));
+						if (_ent instanceof ServerPlayer _serverPlayer)
+							_serverPlayer.connection.teleport((entity.getX() - entity.getPersistentData().getDouble("dx")), y, (entity.getZ() - entity.getPersistentData().getDouble("dz")), _ent.getYRot(), _ent.getXRot());
+					}
+				}
+				if (entityiterator instanceof RightgateEntity) {
+					if ((entity instanceof SmallSlideUpGateEntityEntity _datEntL60 && _datEntL60.getEntityData().get(SmallSlideUpGateEntityEntity.DATA_open)) == true) {
+						if (entityiterator instanceof RightgateEntity _datEntSetL)
+							_datEntSetL.getEntityData().set(RightgateEntity.DATA_open, true);
+					} else {
+						if (entityiterator instanceof RightgateEntity _datEntSetL)
+							_datEntSetL.getEntityData().set(RightgateEntity.DATA_open, false);
+					}
+					{
+						Entity _ent = entityiterator;
+						_ent.teleportTo((entity.getX() + entity.getPersistentData().getDouble("dx")), y, (entity.getZ() + entity.getPersistentData().getDouble("dz")));
+						if (_ent instanceof ServerPlayer _serverPlayer)
+							_serverPlayer.connection.teleport((entity.getX() + entity.getPersistentData().getDouble("dx")), y, (entity.getZ() + entity.getPersistentData().getDouble("dz")), _ent.getYRot(), _ent.getXRot());
+					}
+				}
+			}
+		}
 		entity.setNoGravity(true);
-	}
-
-	private static Entity findEntityInWorldRange(LevelAccessor world, Class<? extends Entity> clazz, double x, double y, double z, double range) {
-		return (Entity) world.getEntitiesOfClass(clazz, AABB.ofSize(new Vec3(x, y, z), range, range, range), e -> true).stream().sorted(Comparator.comparingDouble(e -> e.distanceToSqr(x, y, z))).findFirst().orElse(null);
 	}
 }

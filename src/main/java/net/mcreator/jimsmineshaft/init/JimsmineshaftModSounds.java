@@ -63,4 +63,5 @@ public class JimsmineshaftModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> LIGHTON = REGISTRY.register("lighton", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "lighton")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> THUD = REGISTRY.register("thud", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "thud")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> BIGDOOR = REGISTRY.register("bigdoor", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "bigdoor")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> SMALLDOOR = REGISTRY.register("smalldoor", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "smalldoor")));
 }

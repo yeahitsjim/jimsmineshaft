@@ -231,5 +231,6 @@
   "item.jimsmineshaft.small_slide_up_gate": "Small Slide Up Gate",
   "subtitles.thud": "thud",
   "subtitles.bigdoor": "big door",
-  "gui.jimsmineshaft.mainoverlay.label_c_to_interact": " to interact"
+  "gui.jimsmineshaft.mainoverlay.label_c_to_interact": " to interact",
+  "subtitles.smalldoor": "small door"
 }

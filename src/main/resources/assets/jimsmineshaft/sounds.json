@@ -416,5 +416,14 @@
         "stream": false
       }
     ]
+  },
+  "smalldoor": {
+    "subtitle": "subtitles.smalldoor",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:smalldoormono",
+        "stream": false
+      }
+    ]
   }
 }

@@ -204,7 +204,7 @@ public class BigGateOnEntityTickUpdateProcedure {
 		}
 		{
 			final Vec3 _center = new Vec3(x, y, z);
-			for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(20 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
+			for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(7 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 				if (entityiterator instanceof LeftgateEntity) {
 					if ((entity instanceof BigGateEntity _datEntL70 && _datEntL70.getEntityData().get(BigGateEntity.DATA_open)) == true) {
 						if (entityiterator instanceof LeftgateEntity _datEntSetL)
