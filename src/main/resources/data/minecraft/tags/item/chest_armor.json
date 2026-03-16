@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "jimsmineshaft:mining_goon_set_chestplate"
+    "jimsmineshaft:mining_goon_set_chestplate",
+    "jimsmineshaft:mining_elite_set_chestplate",
+    "jimsmineshaft:mining_veteran_set_chestplate"
   ]
 }

@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "jimsmineshaft:mining_goon_set_helmet"
+    "jimsmineshaft:mining_goon_set_helmet",
+    "jimsmineshaft:mining_veteran_set_helmet",
+    "jimsmineshaft:mining_elite_set_helmet"
   ]
 }

@@ -1,39 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.neoforge.event.tick.PlayerTickEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
-
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.AABB;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.EntitySpawnReason;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
-import net.mcreator.jimsmineshaft.init.JimsmineshaftModEntities;
-import net.mcreator.jimsmineshaft.entity.ElevatorSeat8Entity;
-import net.mcreator.jimsmineshaft.entity.ElevatorSeat7Entity;
-import net.mcreator.jimsmineshaft.entity.ElevatorSeat6Entity;
-import net.mcreator.jimsmineshaft.entity.ElevatorSeat5Entity;
-import net.mcreator.jimsmineshaft.entity.ElevatorSeat4Entity;
-import net.mcreator.jimsmineshaft.entity.ElevatorSeat3Entity;
-import net.mcreator.jimsmineshaft.entity.ElevatorSeat2Entity;
-import net.mcreator.jimsmineshaft.entity.ElevatorSeat1Entity;
-import net.mcreator.jimsmineshaft.entity.ElevatorEntity;
-import net.mcreator.jimsmineshaft.JimsmineshaftMod;
-
-import javax.annotation.Nullable;
-
-import java.util.Comparator;
 
 @EventBusSubscriber
 public class PlayerTickElevatorProcedure {

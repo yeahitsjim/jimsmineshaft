@@ -21,7 +21,20 @@ import com.mojang.serialization.MapCodec;
 
 public class FlashlightItem extends Item {
 	public FlashlightItem(Item.Properties properties) {
-		super(properties);
+		super(properties.stacksTo(1));
+	}
+
+	@Override
+	public InteractionResult use(Level world, Player entity, InteractionHand hand) {
+		InteractionResult ar = super.use(world, entity, hand);
+		FlashlightRightclickedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, entity.getItemInHand(hand));
+		return ar;
+	}
+
+	@Override
+	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+		super.inventoryTick(itemstack, world, entity, slot, selected);
+		FlashlightItemInInventoryTickProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
 	}
 
 	@Override

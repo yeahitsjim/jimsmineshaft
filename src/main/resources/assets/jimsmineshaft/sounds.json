@@ -417,11 +417,75 @@
       }
     ]
   },
+  "elevator7": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevator7",
+        "stream": false
+      }
+    ]
+  },
   "elevatoractivatemain": {
     "subtitle": "subtitles.elevatoractivatemain",
     "sounds": [
       {
         "name": "jimsmineshaft:elevatoractivate",
+        "stream": false
+      }
+    ]
+  },
+  "elevator6": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevator6",
+        "stream": false
+      }
+    ]
+  },
+  "elevator8": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevator8",
+        "stream": false
+      }
+    ]
+  },
+  "elevator3": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevator3",
+        "stream": false
+      }
+    ]
+  },
+  "elevator2": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevator2",
+        "stream": false
+      }
+    ]
+  },
+  "elevator5": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevator5",
+        "stream": false
+      }
+    ]
+  },
+  "elevator4": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevator4",
+        "stream": false
+      }
+    ]
+  },
+  "elevatorfinished": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevatordone",
         "stream": false
       }
     ]
@@ -442,66 +506,47 @@
       }
     ]
   },
-  "elevator2": {
+  "smalldoor": {
+    "subtitle": "subtitles.smalldoor",
     "sounds": [
       {
-        "name": "jimsmineshaft:elevator2",
+        "name": "jimsmineshaft:smalldoormono",
         "stream": false
       }
     ]
   },
-  "elevator3": {
+  "vision_stare_calm": {
     "sounds": [
       {
-        "name": "jimsmineshaft:elevator3",
+        "name": "jimsmineshaft:shadow_guy_stare_calm",
         "stream": false
       }
     ]
   },
-  "elevator4": {
+  "vision_stare_angry": {
     "sounds": [
       {
-        "name": "jimsmineshaft:elevator4",
+        "name": "jimsmineshaft:shadow_guy_stare_angry_1",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:shadow_guy_stare_angry_2",
         "stream": false
       }
     ]
   },
-  "elevator5": {
+  "entity.tommy_gun.shoot": {
     "sounds": [
       {
-        "name": "jimsmineshaft:elevator5",
+        "name": "jimsmineshaft:tommy_gun",
         "stream": false
       }
     ]
   },
-  "elevator6": {
+  "vision_glitch": {
     "sounds": [
       {
-        "name": "jimsmineshaft:elevator6",
-        "stream": false
-      }
-    ]
-  },
-  "elevator7": {
-    "sounds": [
-      {
-        "name": "jimsmineshaft:elevator7",
-        "stream": false
-      }
-    ]
-  },
-  "elevator8": {
-    "sounds": [
-      {
-        "name": "jimsmineshaft:elevator8",
-        "stream": false
-      }
-    ]
-  },
-  "elevatorfinished": {
-    "sounds": [
-      {
-        "name": "jimsmineshaft:elevatordone",
+        "name": "jimsmineshaft:shadow_guy_glitch",
         "stream": false
       }
     ]

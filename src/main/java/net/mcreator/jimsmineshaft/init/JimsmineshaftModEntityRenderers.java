@@ -10,10 +10,13 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
+import net.mcreator.jimsmineshaft.client.renderer.VisionRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.ThecartRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.StalkerRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.StalkerInsidesRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.StalkerInsides2Renderer;
+import net.mcreator.jimsmineshaft.client.renderer.SmallSlideUpGateEntityRenderer;
+import net.mcreator.jimsmineshaft.client.renderer.SmallSideOpenGateEntityRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.SkinStealerEntityRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.RightgateRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.PressureDrillRenderer;
@@ -37,9 +40,6 @@ import net.mcreator.jimsmineshaft.client.renderer.CopperDrilledEastRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.Cart4Renderer;
 import net.mcreator.jimsmineshaft.client.renderer.Cart3Renderer;
 import net.mcreator.jimsmineshaft.client.renderer.Cart2Renderer;
-import net.mcreator.jimsmineshaft.client.renderer.BigIronGateRightRenderer;
-import net.mcreator.jimsmineshaft.client.renderer.BigIronGateLeftRenderer;
-import net.mcreator.jimsmineshaft.client.renderer.BigIronGateFrameRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.BigGateRenderer;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -70,13 +70,13 @@ public class JimsmineshaftModEntityRenderers {
 		event.registerEntityRenderer(JimsmineshaftModEntities.PLAYER_STALKIER.get(), PlayerStalkierRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.STALKER_INSIDES_2.get(), StalkerInsides2Renderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.SKIN_STEALER_ENTITY.get(), SkinStealerEntityRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.BIG_IRON_GATE_LEFT.get(), BigIronGateLeftRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.BIG_IRON_GATE_RIGHT.get(), BigIronGateRightRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.BIG_GATE.get(), BigGateRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.BULLET_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.RIGHTGATE.get(), RightgateRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.BIG_IRON_GATE_FRAME.get(), BigIronGateFrameRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.FLASHLIGHTENTITY.get(), FlashlightentityRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.LEFTGATE.get(), LeftgateRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.SMALL_SIDE_OPEN_GATE_ENTITY.get(), SmallSideOpenGateEntityRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.VISION.get(), VisionRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.SMALL_SLIDE_UP_GATE_ENTITY.get(), SmallSlideUpGateEntityRenderer::new);
 	}
 }

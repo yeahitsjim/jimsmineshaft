@@ -113,6 +113,7 @@ import net.mcreator.jimsmineshaft.block.CartRailBlock;
 import net.mcreator.jimsmineshaft.block.CanteenBlock;
 import net.mcreator.jimsmineshaft.block.CandleHolderBlock;
 import net.mcreator.jimsmineshaft.block.CanaryCageBlock;
+import net.mcreator.jimsmineshaft.block.BottleBlock;
 import net.mcreator.jimsmineshaft.JimsmineshaftMod;
 
 import java.util.function.Function;
@@ -205,24 +206,25 @@ public class JimsmineshaftModBlocks {
 	public static final DeferredBlock<Block> RUSTED_IRON_STAIRS = register("rusted_iron_stairs", RustedIronStairsBlock::new);
 	public static final DeferredBlock<Block> RUSTED_IRON_SUPPORT_COOL = register("rusted_iron_support_cool", RustedIronSupportCoolBlock::new);
 	public static final DeferredBlock<Block> RUSTED_IRON_RAILING_CORNER = register("rusted_iron_railing_corner", RustedIronRailingCornerBlock::new);
-	public static final DeferredBlock<Block> ELEVATOR_CROSSBAR_SUPPORT = register("elevator_crossbar_support", ElevatorCrossbarSupportBlock::new);
+	public static final DeferredBlock<Block> MYSTERY_ORE = register("mystery_ore", MysteryOreBlock::new);
 	public static final DeferredBlock<Block> ELEVATOR_BRACE = register("elevator_brace", ElevatorBraceBlock::new);
-	public static final DeferredBlock<Block> ELEVATOR_PIPES = register("elevator_pipes", ElevatorPipesBlock::new);
 	public static final DeferredBlock<Block> ELEVATORLIGHT = register("elevatorlight", ElevatorlightBlock::new);
-	public static final DeferredBlock<Block> ELEVATOR_LINING = register("elevator_lining", ElevatorLiningBlock::new);
-	public static final DeferredBlock<Block> ELEVATOR_LINING_CORNER_LEFT = register("elevator_lining_corner_left", ElevatorLiningCornerLeftBlock::new);
-	public static final DeferredBlock<Block> ELEVATOR_LINING_CORNER_RIGHT = register("elevator_lining_corner_right", ElevatorLiningCornerRightBlock::new);
-	public static final DeferredBlock<Block> ELEVATOR_LINING_CORNER_MIDDLE = register("elevator_lining_corner_middle", ElevatorLiningCornerMiddleBlock::new);
-	public static final DeferredBlock<Block> ELEVATORLIGHTMIDBLOCK = register("elevatorlightmidblock", ElevatorlightmidblockBlock::new);
+	public static final DeferredBlock<Block> ELEVATOR_CROSSBAR_SUPPORT = register("elevator_crossbar_support", ElevatorCrossbarSupportBlock::new);
 	public static final DeferredBlock<Block> ELEVATOR_WHEEL = register("elevator_wheel", ElevatorWheelBlock::new);
 	public static final DeferredBlock<Block> FLASHLIGHTB_1 = register("flashlightb_1", Flashlightb1Block::new);
-	public static final DeferredBlock<Block> MYSTERY_ORE = register("mystery_ore", MysteryOreBlock::new);
 	public static final DeferredBlock<Block> CART_RAIL_BROKE_1 = register("cart_rail_broke_1", CartRailBroke1Block::new);
+	public static final DeferredBlock<Block> ELEVATORLIGHTMIDBLOCK = register("elevatorlightmidblock", ElevatorlightmidblockBlock::new);
 	public static final DeferredBlock<Block> CART_RAIL_BROKE_2 = register("cart_rail_broke_2", CartRailBroke2Block::new);
 	public static final DeferredBlock<Block> CART_RAIL_BROKE_3 = register("cart_rail_broke_3", CartRailBroke3Block::new);
+	public static final DeferredBlock<Block> ELEVATOR_PIPES = register("elevator_pipes", ElevatorPipesBlock::new);
+	public static final DeferredBlock<Block> ELEVATOR_LINING_CORNER_MIDDLE = register("elevator_lining_corner_middle", ElevatorLiningCornerMiddleBlock::new);
 	public static final DeferredBlock<Block> CART_RAIL_BROKE_4 = register("cart_rail_broke_4", CartRailBroke4Block::new);
 	public static final DeferredBlock<Block> CART_RAIL_BROKE_5 = register("cart_rail_broke_5", CartRailBroke5Block::new);
 	public static final DeferredBlock<Block> CART_RAIL_BROKE_6 = register("cart_rail_broke_6", CartRailBroke6Block::new);
+	public static final DeferredBlock<Block> ELEVATOR_LINING_CORNER_RIGHT = register("elevator_lining_corner_right", ElevatorLiningCornerRightBlock::new);
+	public static final DeferredBlock<Block> ELEVATOR_LINING = register("elevator_lining", ElevatorLiningBlock::new);
+	public static final DeferredBlock<Block> ELEVATOR_LINING_CORNER_LEFT = register("elevator_lining_corner_left", ElevatorLiningCornerLeftBlock::new);
+	public static final DeferredBlock<Block> BOTTLE = register("bottle", BottleBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

@@ -86,9 +86,12 @@ public class JimsmineshaftModVariables {
 			clone.playerHoldingDrill = original.playerHoldingDrill;
 			clone.maxbattery = original.maxbattery;
 			clone.batterylife = original.batterylife;
-			clone.elevatorSeatNumber = original.elevatorSeatNumber;
 			clone.darknessOverlay = original.darknessOverlay;
+			clone.elevatorSeatNumber = original.elevatorSeatNumber;
+			clone.stamina = original.stamina;
+			clone.staminamax = original.staminamax;
 			if (!event.isWasDeath()) {
+				clone.analogScreenInx = original.analogScreenInx;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -280,8 +283,11 @@ public class JimsmineshaftModVariables {
 		public boolean playerHoldingDrill = false;
 		public double maxbattery = 100.0;
 		public double batterylife = 100.0;
-		public double elevatorSeatNumber = 0;
 		public double darknessOverlay = 0;
+		public double elevatorSeatNumber = 0;
+		public String analogScreenInx = "\"\"";
+		public double stamina = 100.0;
+		public double staminamax = 100.0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -303,8 +309,11 @@ public class JimsmineshaftModVariables {
 			nbt.putBoolean("playerHoldingDrill", playerHoldingDrill);
 			nbt.putDouble("maxbattery", maxbattery);
 			nbt.putDouble("batterylife", batterylife);
-			nbt.putDouble("elevatorSeatNumber", elevatorSeatNumber);
 			nbt.putDouble("darknessOverlay", darknessOverlay);
+			nbt.putDouble("elevatorSeatNumber", elevatorSeatNumber);
+			nbt.putString("analogScreenInx", analogScreenInx);
+			nbt.putDouble("stamina", stamina);
+			nbt.putDouble("staminamax", staminamax);
 			return nbt;
 		}
 
@@ -327,8 +336,11 @@ public class JimsmineshaftModVariables {
 			playerHoldingDrill = nbt.getBoolean("playerHoldingDrill");
 			maxbattery = nbt.getDouble("maxbattery");
 			batterylife = nbt.getDouble("batterylife");
-			elevatorSeatNumber = nbt.getDouble("elevatorSeatNumber");
 			darknessOverlay = nbt.getDouble("darknessOverlay");
+			elevatorSeatNumber = nbt.getDouble("elevatorSeatNumber");
+			analogScreenInx = nbt.getString("analogScreenInx");
+			stamina = nbt.getDouble("stamina");
+			staminamax = nbt.getDouble("staminamax");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
