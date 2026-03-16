@@ -80,7 +80,7 @@ public class JimsmineshaftModEntities {
 	public static final DeferredHolder<EntityType<?>, EntityType<ElevatorEntity>> ELEVATOR = register("elevator",
 			EntityType.Builder.<ElevatorEntity>of(ElevatorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
-					.sized(5f, 1.8f));
+					.sized(5f, 3f));
 	public static final DeferredHolder<EntityType<?>, EntityType<ElevatorBoundingBoxEntity>> ELEVATOR_BOUNDING_BOX = register("elevator_bounding_box",
 			EntityType.Builder.<ElevatorBoundingBoxEntity>of(ElevatorBoundingBoxEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().ridingOffset(-0.6f).sized(5f, 0.2f));
 	public static final DeferredHolder<EntityType<?>, EntityType<ElevatorSeat5Entity>> ELEVATOR_SEAT_5 = register("elevator_seat_5",

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jimsmineshaft:block/cart_rail_broke_2"
+    },
+    "facing=east": {
+      "model": "jimsmineshaft:block/cart_rail_broke_2",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jimsmineshaft:block/cart_rail_broke_2",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jimsmineshaft:block/cart_rail_broke_2",
+      "y": 270
+    }
+  }
+}

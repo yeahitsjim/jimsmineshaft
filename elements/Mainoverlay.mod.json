@@ -9,8 +9,7 @@
         "data": {
           "name": "label_proc_return_inv_value2",
           "text": {
-            "fixedValue": "",
-            "name": "ReturnInvValue"
+            "fixedValue": ""
           },
           "color": {
             "value": -16777216,
@@ -27,8 +26,7 @@
         "data": {
           "name": "label_proc_return_inv_value1",
           "text": {
-            "fixedValue": "",
-            "name": "ReturnInvValue"
+            "fixedValue": ""
           },
           "color": {
             "value": -16777216,
@@ -53,8 +51,8 @@
             "falpha": 0.0
           },
           "anchorPoint": "CENTER",
-          "x": 123,
-          "y": 203,
+          "x": 427,
+          "y": 260,
           "locked": false
         }
       }

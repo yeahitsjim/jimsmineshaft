@@ -63,4 +63,16 @@ public class JimsmineshaftModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> BATTERYCHARGE = REGISTRY.register("batterycharge", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "batterycharge")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> BATTERYLEVELBEEP = REGISTRY.register("batterylevelbeep", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "batterylevelbeep")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> LIGHTON = REGISTRY.register("lighton", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "lighton")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> ELEVATORACTIVATEMAIN = REGISTRY.register("elevatoractivatemain",
+			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "elevatoractivatemain")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> ELEVATORACTIVATEALT = REGISTRY.register("elevatoractivatealt", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "elevatoractivatealt")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> ELEVATOR1 = REGISTRY.register("elevator1", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "elevator1")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> ELEVATOR2 = REGISTRY.register("elevator2", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "elevator2")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> ELEVATOR3 = REGISTRY.register("elevator3", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "elevator3")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> ELEVATOR4 = REGISTRY.register("elevator4", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "elevator4")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> ELEVATOR5 = REGISTRY.register("elevator5", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "elevator5")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> ELEVATOR6 = REGISTRY.register("elevator6", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "elevator6")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> ELEVATOR7 = REGISTRY.register("elevator7", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "elevator7")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> ELEVATOR8 = REGISTRY.register("elevator8", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "elevator8")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> ELEVATORFINISHED = REGISTRY.register("elevatorfinished", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "elevatorfinished")));
 }

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jimsmineshaft:block/elevatorlightmidblock"
+    },
+    "facing=east": {
+      "model": "jimsmineshaft:block/elevatorlightmidblock",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jimsmineshaft:block/elevatorlightmidblock",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jimsmineshaft:block/elevatorlightmidblock",
+      "y": 270
+    }
+  }
+}

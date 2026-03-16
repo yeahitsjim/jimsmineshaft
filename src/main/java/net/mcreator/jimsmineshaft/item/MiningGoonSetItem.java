@@ -1,12 +1,41 @@
 package net.mcreator.jimsmineshaft.item;
 
-import java.util.Map;
-import java.util.function.Consumer;
+import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
+import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
+import net.minecraft.world.item.equipment.EquipmentAssets;
+import net.minecraft.world.item.equipment.ArmorType;
+import net.minecraft.world.item.equipment.ArmorMaterial;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.tags.TagKey;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.client.resources.model.EquipmentClientInfo;
+import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.Model;
+import net.minecraft.client.model.HumanoidModel;
+import net.minecraft.client.Minecraft;
+
+import net.mcreator.jimsmineshaft.init.JimsmineshaftModItems;
+import net.mcreator.jimsmineshaft.client.model.Modelmining_gtrenchcoat;
+import net.mcreator.jimsmineshaft.client.model.Modelmining_gjeans;
+import net.mcreator.jimsmineshaft.client.model.Modelmining_ghat;
+import net.mcreator.jimsmineshaft.client.model.Modelmining_gboots;
+
+import java.util.Map;
+import java.util.Collections;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public abstract class MiningGoonSetItem extends ArmorItem {
-
 	public static ArmorMaterial ARMOR_MATERIAL = new ArmorMaterial(8, Map.of(ArmorType.BOOTS, 1, ArmorType.LEGGINGS, 3, ArmorType.CHESTPLATE, 2, ArmorType.HELMET, 1, ArmorType.BODY, 2), 9,
 			BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.EMPTY), 0f, 0f, TagKey.create(Registries.ITEM, ResourceLocation.parse("jimsmineshaft:mining_goon_set_repair_items")),
 			ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.parse("jimsmineshaft:mining_goon_set")));
@@ -31,7 +60,6 @@ public abstract class MiningGoonSetItem extends ArmorItem {
 				return ResourceLocation.parse("jimsmineshaft:textures/entities/hat.png");
 			}
 		}, JimsmineshaftModItems.MINING_GOON_SET_HELMET.get());
-
 		event.registerItem(new IClientItemExtensions() {
 			@Override
 			@OnlyIn(Dist.CLIENT)
@@ -49,7 +77,6 @@ public abstract class MiningGoonSetItem extends ArmorItem {
 				return ResourceLocation.parse("jimsmineshaft:textures/entities/mining_sety.png");
 			}
 		}, JimsmineshaftModItems.MINING_GOON_SET_CHESTPLATE.get());
-
 		event.registerItem(new IClientItemExtensions() {
 			@Override
 			@OnlyIn(Dist.CLIENT)
@@ -66,7 +93,6 @@ public abstract class MiningGoonSetItem extends ArmorItem {
 				return ResourceLocation.parse("jimsmineshaft:textures/entities/mining_sety.png");
 			}
 		}, JimsmineshaftModItems.MINING_GOON_SET_LEGGINGS.get());
-
 		event.registerItem(new IClientItemExtensions() {
 			@Override
 			@OnlyIn(Dist.CLIENT)
@@ -90,35 +116,26 @@ public abstract class MiningGoonSetItem extends ArmorItem {
 	}
 
 	public static class Helmet extends MiningGoonSetItem {
-
 		public Helmet(Item.Properties properties) {
 			super(ArmorType.HELMET, properties);
 		}
-
 	}
 
 	public static class Chestplate extends MiningGoonSetItem {
-
 		public Chestplate(Item.Properties properties) {
 			super(ArmorType.CHESTPLATE, properties);
 		}
-
 	}
 
 	public static class Leggings extends MiningGoonSetItem {
-
 		public Leggings(Item.Properties properties) {
 			super(ArmorType.LEGGINGS, properties);
 		}
-
 	}
 
 	public static class Boots extends MiningGoonSetItem {
-
 		public Boots(Item.Properties properties) {
 			super(ArmorType.BOOTS, properties);
 		}
-
 	}
-
 }
