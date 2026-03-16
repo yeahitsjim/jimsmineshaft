@@ -10096,6 +10096,42 @@
           "src/main/java/net/mcreator/jimsmineshaft/procedures/OverlayDisplayProcedure.java"
         ]
       }
+    },
+    {
+      "name": "SetSprint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_sprint",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetSprintProcedure.java"
+        ]
+      },
+      "path": "~/SprintSystem"
+    },
+    {
+      "name": "Stamina",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stamina",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/command/StaminaCommand.java"
+        ]
+      },
+      "path": "~/SprintSystem"
     }
   ],
   "variable_elements": [
