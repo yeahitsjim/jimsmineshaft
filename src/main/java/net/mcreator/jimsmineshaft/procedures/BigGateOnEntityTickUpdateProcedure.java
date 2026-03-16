@@ -1,6 +1,28 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.AABB;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EntitySpawnReason;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Direction;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.jimsmineshaft.init.JimsmineshaftModEntities;
+import net.mcreator.jimsmineshaft.entity.RightgateEntity;
+import net.mcreator.jimsmineshaft.entity.LeftgateEntity;
+import net.mcreator.jimsmineshaft.entity.BigGateEntity;
+
+import java.util.Comparator;
 
 public class BigGateOnEntityTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -97,9 +119,9 @@ public class BigGateOnEntityTickUpdateProcedure {
 			if ((entity instanceof BigGateEntity _datEntL26 && _datEntL26.getEntityData().get(BigGateEntity.DATA_opening)) == false) {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:bigdoor")), SoundSource.NEUTRAL, (float) 0.7, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:bigdoor3x3")), SoundSource.NEUTRAL, (float) 0.7, 1);
 					} else {
-						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:bigdoor")), SoundSource.NEUTRAL, (float) 0.7, 1, false);
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:bigdoor3x3")), SoundSource.NEUTRAL, (float) 0.7, 1, false);
 					}
 				}
 				if (entity instanceof BigGateEntity _datEntSetL)
@@ -113,9 +135,9 @@ public class BigGateOnEntityTickUpdateProcedure {
 			if ((entity instanceof BigGateEntity _datEntL31 && _datEntL31.getEntityData().get(BigGateEntity.DATA_opening2)) == false) {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:bigdoor")), SoundSource.NEUTRAL, (float) 0.7, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:bigdoor3x3")), SoundSource.NEUTRAL, (float) 0.7, 1);
 					} else {
-						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:bigdoor")), SoundSource.NEUTRAL, (float) 0.7, 1, false);
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:bigdoor3x3")), SoundSource.NEUTRAL, (float) 0.7, 1, false);
 					}
 				}
 				if (entity instanceof BigGateEntity _datEntSetL)

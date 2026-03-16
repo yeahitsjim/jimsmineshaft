@@ -1,6 +1,32 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.neoforged.neoforge.network.PacketDistributor;
+
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.BlockPos;
+import net.minecraft.commands.arguments.EntityAnchorArgument;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
+
+import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
+import net.mcreator.jimsmineshaft.network.FreezeClientMessage;
+import net.mcreator.jimsmineshaft.entity.VisionEntity;
+
+import java.util.UUID;
+import java.util.ArrayList;
 
 public class VisionOnEntityTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -21,8 +47,18 @@ public class VisionOnEntityTickUpdateProcedure {
 						if (entity.getPersistentData().getDouble("ScareTicks") == 35) {
 							if (target instanceof ServerPlayer player15)
 								PacketDistributor.sendToPlayer(player15, new FreezeClientMessage(""));
+							{
+								JimsmineshaftModVariables.PlayerVariables _vars = target.getData(JimsmineshaftModVariables.PLAYER_VARIABLES);
+								_vars.analogScreenInx = "alea_iacta_est";
+								_vars.syncPlayerVariables(target);
+							}
 						}
 						if (entity.getPersistentData().getDouble("ScareTicks") <= 0) {
+							{
+								JimsmineshaftModVariables.PlayerVariables _vars = target.getData(JimsmineshaftModVariables.PLAYER_VARIABLES);
+								_vars.analogScreenInx = "";
+								_vars.syncPlayerVariables(target);
+							}
 							{
 								Entity _ent = target;
 								if (!_ent.level().isClientSide() && _ent.getServer() != null) {
