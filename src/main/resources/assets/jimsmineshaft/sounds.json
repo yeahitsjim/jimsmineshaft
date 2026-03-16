@@ -453,5 +453,14 @@
         "stream": false
       }
     ]
+  },
+  "bigdoor3x3": {
+    "subtitle": "subtitles.bigdoor3x3",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:3x3doormono",
+        "stream": false
+      }
+    ]
   }
 }

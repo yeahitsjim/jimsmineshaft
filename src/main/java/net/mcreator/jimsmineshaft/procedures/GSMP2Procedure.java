@@ -436,7 +436,8 @@ public class GSMP2Procedure {
 						localCurrentDirection = workingDirection;
 						letsGoGambling = 1;
 						selectedRoom = "null";
-						returnedPickRoomJSON = GSMPpickRoomProcedure.execute(world, JimsmineshaftModVariables.MapVariables.get(world).workingRoomIsBit, localVariantTokens, localCurrentVariant, lastGeneratedStructure);
+						returnedPickRoomJSON = GSMPpickRoomProcedure.execute(world, JimsmineshaftModVariables.MapVariables.get(world).workingRoomIsBit, localVariantTokens, localFilledSpaces.get("x").getAsDouble(),
+								localFilledSpaces.get("y").getAsDouble(), localFilledSpaces.get("z").getAsDouble(), workingDirection + "", localCurrentVariant, lastGeneratedStructure);
 						workingRoomPick = returnedPickRoomJSON.get("workingRoomPick").getAsString();
 						localCurrentVariant = returnedPickRoomJSON.get("currentVariant").getAsString();
 						if ((workingRoomPick).equals("null")) {

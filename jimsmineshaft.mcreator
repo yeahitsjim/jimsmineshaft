@@ -9591,6 +9591,14 @@
       ],
       "category": "neutral",
       "subtitle": "Skin tears"
+    },
+    {
+      "name": "bigdoor3x3",
+      "files": [
+        "3x3doormono"
+      ],
+      "category": "player",
+      "subtitle": "bigdoor"
     }
   ],
   "tag_elements": {
@@ -9916,7 +9924,8 @@
       "item.jimsmineshaft.mining_veteran_set_boots": "Mining Veteran Set Heavy Sabatons",
       "item.jimsmineshaft.mining_veteran_set_leggings": "Mining Veteran Set Heavy Greaves",
       "item.jimsmineshaft.rusted_iron_railing_corner": "Rusted Iron Railing Corner",
-      "item.jimsmineshaft.small_slide_up_gate": "Small Slide Up Gate"
+      "item.jimsmineshaft.small_slide_up_gate": "Small Slide Up Gate",
+      "subtitles.bigdoor3x3": "bigdoor"
     }
   },
   "metadata": {

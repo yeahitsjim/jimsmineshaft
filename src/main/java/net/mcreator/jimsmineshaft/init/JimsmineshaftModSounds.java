@@ -67,4 +67,5 @@ public class JimsmineshaftModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> STALKERRIP1 = REGISTRY.register("stalkerrip1", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "stalkerrip1")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> STALKERRIP2 = REGISTRY.register("stalkerrip2", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "stalkerrip2")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> STALKERCRACK = REGISTRY.register("stalkercrack", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "stalkercrack")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> BIGDOOR3X3 = REGISTRY.register("bigdoor3x3", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "bigdoor3x3")));
 }
