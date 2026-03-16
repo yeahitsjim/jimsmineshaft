@@ -90,6 +90,7 @@ public class JimsmineshaftModVariables {
 			clone.staminamax = original.staminamax;
 			clone.darknessOverlay = original.darknessOverlay;
 			clone.elevatorSeatNumber = original.elevatorSeatNumber;
+			clone.overlay = original.overlay;
 			if (!event.isWasDeath()) {
 				clone.analogScreenInx = original.analogScreenInx;
 			}
@@ -284,10 +285,11 @@ public class JimsmineshaftModVariables {
 		public double elevatorPlace = 0;
 		public boolean playerHoldingDrill = false;
 		public String analogScreenInx = "\"\"";
-		public double stamina = 100.0;
-		public double staminamax = 100.0;
+		public double stamina = 300.0;
+		public double staminamax = 300.0;
 		public double darknessOverlay = 0;
 		public double elevatorSeatNumber = 0;
+		public boolean overlay = true;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -314,6 +316,7 @@ public class JimsmineshaftModVariables {
 			nbt.putDouble("staminamax", staminamax);
 			nbt.putDouble("darknessOverlay", darknessOverlay);
 			nbt.putDouble("elevatorSeatNumber", elevatorSeatNumber);
+			nbt.putBoolean("overlay", overlay);
 			return nbt;
 		}
 
@@ -341,6 +344,7 @@ public class JimsmineshaftModVariables {
 			staminamax = nbt.getDouble("staminamax");
 			darknessOverlay = nbt.getDouble("darknessOverlay");
 			elevatorSeatNumber = nbt.getDouble("elevatorSeatNumber");
+			overlay = nbt.getBoolean("overlay");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

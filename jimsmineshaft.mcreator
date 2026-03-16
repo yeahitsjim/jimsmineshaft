@@ -10017,6 +10017,85 @@
         ]
       },
       "path": "~/Cart and Rail"
+    },
+    {
+      "name": "InteractiveOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "interactive_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/InteractiveOverlayOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "DisableOverlayTrue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disable_overlay_true",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/DisableOverlayTrueProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "DisableOverlayFalse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disable_overlay_false",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/DisableOverlayFalseProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "DisableOverlay",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disable_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/command/DisableOverlayCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "OverlayDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "overlay_display",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/OverlayDisplayProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -10222,13 +10301,13 @@
       "name": "stamina",
       "type": "number",
       "scope": "player_persistent",
-      "value": "100.0"
+      "value": "300.0"
     },
     {
       "name": "staminamax",
       "type": "number",
       "scope": "player_persistent",
-      "value": "100.0"
+      "value": "300.0"
     },
     {
       "name": "darknessOverlay",
@@ -10241,6 +10320,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "overlay",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "true"
     }
   ],
   "sound_elements": [
@@ -11122,7 +11207,8 @@
       "item.jimsmineshaft.cart_rail_broke_4": "Cart Rail Broken 4",
       "item.jimsmineshaft.cart_rail_broke_5": "Cart Rail Broken 5",
       "item.jimsmineshaft.cart_rail_broke_6": "Cart Rail Broken 6",
-      "item.jimsmineshaft.elevator_lining": "Elevator Lining"
+      "item.jimsmineshaft.elevator_lining": "Elevator Lining",
+      "gui.jimsmineshaft.interactive_overlay.label_to_open": "to interact"
     }
   },
   "metadata": {

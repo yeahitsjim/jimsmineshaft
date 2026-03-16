@@ -1,0 +1,260 @@
+{
+  "_fv": 79,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_inv_value2",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnInvValue"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 123,
+          "y": 204,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_inv_value1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnInvValue"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 122,
+          "y": 204,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_inv_value",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnInvValue"
+          },
+          "color": {
+            "value": -29184,
+            "falpha": 0.0
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 123,
+          "y": 203,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "e.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Interactdisplay"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 205,
+          "y": 171,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_to_open",
+          "text": {
+            "fixedValue": "to interact"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Interactdisplay"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 225,
+          "y": 174,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabarleft.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Staminabar1"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 6,
+          "y": 224,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabar.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Staminabar2"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 15,
+          "y": 224,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabar.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Staminabar3"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 224,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabar.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Staminabar4"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 33,
+          "y": 224,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabar.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Staminabar5"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 42,
+          "y": 224,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabar.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Staminabar6"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 51,
+          "y": 224,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabar.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Staminabar7"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 60,
+          "y": 224,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabar.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Staminabar8"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 69,
+          "y": 224,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabar.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Staminabar9"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 78,
+          "y": 224,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "rightstaminabarrrrr.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Staminabar10"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 87,
+          "y": 224,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabaroutline.png",
+          "use1Xscale": false,
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 6,
+          "y": 224,
+          "locked": false
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "OverlayDisplay"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

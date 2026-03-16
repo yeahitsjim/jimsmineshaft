@@ -275,5 +275,6 @@
   "item.jimsmineshaft.cart_rail_broke_4": "Cart Rail Broken 4",
   "item.jimsmineshaft.cart_rail_broke_5": "Cart Rail Broken 5",
   "item.jimsmineshaft.cart_rail_broke_6": "Cart Rail Broken 6",
-  "item.jimsmineshaft.elevator_lining": "Elevator Lining"
+  "item.jimsmineshaft.elevator_lining": "Elevator Lining",
+  "gui.jimsmineshaft.interactive_overlay.label_to_open": "to interact"
 }

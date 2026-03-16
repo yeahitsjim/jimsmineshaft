@@ -38,7 +38,7 @@ public class StaminaProcedureProcedure {
 				}
 				entity.getPersistentData().putBoolean("sprintcooldown", true);
 				if (entity instanceof LivingEntity _livingEntity3 && _livingEntity3.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED))
-					_livingEntity3.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.12);
+					_livingEntity3.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.13);
 			} else {
 				if (entity instanceof LivingEntity _livingEntity4 && _livingEntity4.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED))
 					_livingEntity4.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.08);
