@@ -36,6 +36,7 @@ import net.mcreator.jimsmineshaft.item.Level1DimensionItem;
 import net.mcreator.jimsmineshaft.item.LargeGateItem;
 import net.mcreator.jimsmineshaft.item.JimsminedimensionItem;
 import net.mcreator.jimsmineshaft.item.IronBulletItem;
+import net.mcreator.jimsmineshaft.item.GreaseGunItem;
 import net.mcreator.jimsmineshaft.item.FlintlockPistolItem;
 import net.mcreator.jimsmineshaft.item.FlashlightItem;
 import net.mcreator.jimsmineshaft.item.FireAxeItem;
@@ -198,6 +199,26 @@ public class JimsmineshaftModItems {
 	public static final DeferredItem<Item> MINING_VETERAN_SET_BOOTS = register("mining_veteran_set_boots", MiningVeteranSetItem.Boots::new);
 	public static final DeferredItem<Item> RUSTED_IRON_RAILING_CORNER = block(JimsmineshaftModBlocks.RUSTED_IRON_RAILING_CORNER);
 	public static final DeferredItem<Item> SMALL_SLIDE_UP_GATE = register("small_slide_up_gate", SmallSlideUpGateItem::new);
+	public static final DeferredItem<Item> MYSTERY_ORE = block(JimsmineshaftModBlocks.MYSTERY_ORE);
+	public static final DeferredItem<Item> ELEVATORLIGHT = block(JimsmineshaftModBlocks.ELEVATORLIGHT);
+	public static final DeferredItem<Item> ELEVATOR_CROSSBAR_SUPPORT = block(JimsmineshaftModBlocks.ELEVATOR_CROSSBAR_SUPPORT);
+	public static final DeferredItem<Item> FLASHLIGHTB_1 = block(JimsmineshaftModBlocks.FLASHLIGHTB_1);
+	public static final DeferredItem<Item> BOTTLE = block(JimsmineshaftModBlocks.BOTTLE);
+	public static final DeferredItem<Item> GREASE_GUN = register("grease_gun", GreaseGunItem::new);
+	public static final DeferredItem<Item> ELEVATOR_LINING_CORNER_RIGHT = block(JimsmineshaftModBlocks.ELEVATOR_LINING_CORNER_RIGHT);
+	public static final DeferredItem<Item> ELEVATOR_LINING_CORNER_LEFT = block(JimsmineshaftModBlocks.ELEVATOR_LINING_CORNER_LEFT);
+	public static final DeferredItem<Item> ELEVATOR_BRACE = block(JimsmineshaftModBlocks.ELEVATOR_BRACE);
+	public static final DeferredItem<Item> ELEVATOR_WHEEL = block(JimsmineshaftModBlocks.ELEVATOR_WHEEL);
+	public static final DeferredItem<Item> CART_RAIL_BROKE_1 = block(JimsmineshaftModBlocks.CART_RAIL_BROKE_1);
+	public static final DeferredItem<Item> ELEVATORLIGHTMIDBLOCK = block(JimsmineshaftModBlocks.ELEVATORLIGHTMIDBLOCK);
+	public static final DeferredItem<Item> CART_RAIL_BROKE_2 = block(JimsmineshaftModBlocks.CART_RAIL_BROKE_2);
+	public static final DeferredItem<Item> CART_RAIL_BROKE_3 = block(JimsmineshaftModBlocks.CART_RAIL_BROKE_3);
+	public static final DeferredItem<Item> ELEVATOR_PIPES = block(JimsmineshaftModBlocks.ELEVATOR_PIPES);
+	public static final DeferredItem<Item> ELEVATOR_LINING_CORNER_MIDDLE = block(JimsmineshaftModBlocks.ELEVATOR_LINING_CORNER_MIDDLE);
+	public static final DeferredItem<Item> CART_RAIL_BROKE_4 = block(JimsmineshaftModBlocks.CART_RAIL_BROKE_4);
+	public static final DeferredItem<Item> CART_RAIL_BROKE_5 = block(JimsmineshaftModBlocks.CART_RAIL_BROKE_5);
+	public static final DeferredItem<Item> CART_RAIL_BROKE_6 = block(JimsmineshaftModBlocks.CART_RAIL_BROKE_6);
+	public static final DeferredItem<Item> ELEVATOR_LINING = block(JimsmineshaftModBlocks.ELEVATOR_LINING);
 
 	// Start of user code block custom items
 	// End of user code block custom items

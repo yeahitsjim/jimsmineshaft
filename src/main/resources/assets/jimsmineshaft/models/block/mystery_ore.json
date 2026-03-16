@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "jimsmineshaft:block/orespawnpoint",
+    "up": "jimsmineshaft:block/orespawnpoint",
+    "north": "jimsmineshaft:block/orespawnpoint",
+    "east": "jimsmineshaft:block/orespawnpoint",
+    "south": "jimsmineshaft:block/orespawnpoint",
+    "west": "jimsmineshaft:block/orespawnpoint",
+    "particle": "jimsmineshaft:block/orespawnpoint"
+  },
+  "render_type": "solid"
+}

@@ -1,8 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.jimsmineshaft.entity.SmallSlideUpGateEntityEntity;
+import net.neoforged.bus.api.Event;
 
 public class SmallSlideUpGateEntityPlaybaqckConditionProcedure {
 	public static boolean execute(Entity entity) {

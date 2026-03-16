@@ -1,15 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.AABB;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.jimsmineshaft.entity.SmallSlideUpGateEntityEntity;
-import net.mcreator.jimsmineshaft.entity.SmallSideOpenGateEntityEntity;
-import net.mcreator.jimsmineshaft.entity.BigGateEntity;
-
-import java.util.Comparator;
+import net.neoforged.bus.api.Event;
 
 public class InteractdisplayProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {

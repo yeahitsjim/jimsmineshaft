@@ -1,17 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.component.CustomData;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.network.chat.Component;
-import net.minecraft.core.component.DataComponents;
-
-import net.mcreator.jimsmineshaft.init.JimsmineshaftModItems;
-import net.mcreator.jimsmineshaft.JimsmineshaftMod;
+import net.neoforged.bus.api.Event;
 
 public class DetonatorBlockItemRightclickedProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
@@ -27,6 +16,15 @@ public class DetonatorBlockItemRightclickedProcedure {
 		double coord3y = 0;
 		double coord3z = 0;
 		if (JimsmineshaftModItems.DETONATOR_BLOCK_ITEM.get() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) {
+			if (entity instanceof Player) {
+				if (entity.level().isClientSide()) {
+					CompoundTag data = entity.getPersistentData();
+					data.putString("PlayerCurrentAnimation", "jimsmineshaft:boomRight");
+					data.putBoolean("OverrideCurrentAnimation", true);
+				} else {
+					PacketDistributor.sendToPlayersInDimension((ServerLevel) entity.level(), new PlayPlayerAnimationMessage(entity.getId(), "jimsmineshaft:boomRight", true));
+				}
+			}
 			if (!world.isClientSide() && world.getServer() != null)
 				world.getServer().getPlayerList()
 						.broadcastSystemMessage(
@@ -53,6 +51,15 @@ public class DetonatorBlockItemRightclickedProcedure {
 			});
 		}
 		if (JimsmineshaftModItems.DETONATOR_BLOCK_ITEM.get() == (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem()) {
+			if (entity instanceof Player) {
+				if (entity.level().isClientSide()) {
+					CompoundTag data = entity.getPersistentData();
+					data.putString("PlayerCurrentAnimation", "jimsmineshaft:boomLeft");
+					data.putBoolean("OverrideCurrentAnimation", true);
+				} else {
+					PacketDistributor.sendToPlayersInDimension((ServerLevel) entity.level(), new PlayPlayerAnimationMessage(entity.getId(), "jimsmineshaft:boomLeft", true));
+				}
+			}
 			DetonatorExplosionProcProcedure.execute(world, entity, entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
 			JimsmineshaftMod.queueServerWork(20, () -> {
 				if (entity instanceof LivingEntity _entity) {

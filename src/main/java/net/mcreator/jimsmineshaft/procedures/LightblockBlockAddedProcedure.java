@@ -9,7 +9,7 @@ import net.minecraft.core.BlockPos;
 
 public class LightblockBlockAddedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (getBlockNBTLogic(world, BlockPos.containing(x, y, z), "poof")) {
+		if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "pace") <= 0) {
 			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 		}
 		if (!world.isClientSide()) {
@@ -17,16 +17,16 @@ public class LightblockBlockAddedProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putBoolean("poof", true);
+				_blockEntity.getPersistentData().putDouble("pace", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "pace") - 1));
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
 	}
 
-	private static boolean getBlockNBTLogic(LevelAccessor world, BlockPos pos, String tag) {
+	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
 		BlockEntity blockEntity = world.getBlockEntity(pos);
 		if (blockEntity != null)
-			return blockEntity.getPersistentData().getBoolean(tag);
-		return false;
+			return blockEntity.getPersistentData().getDouble(tag);
+		return -1;
 	}
 }

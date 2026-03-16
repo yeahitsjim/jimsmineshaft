@@ -1,18 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.component.CustomData;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.component.DataComponents;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.jimsmineshaft.init.JimsmineshaftModBlocks;
+import net.neoforged.bus.api.Event;
 
 public class FlashlightItemInInventoryTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
@@ -25,12 +13,12 @@ public class FlashlightItemInInventoryTickProcedure {
 		if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("newitem") == 0) {
 			{
 				final String _tagName = "batterylife";
-				final double _tagValue = 1000;
+				final double _tagValue = 400;
 				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			{
 				final String _tagName = "maxbattery";
-				final double _tagValue = 1000;
+				final double _tagValue = 400;
 				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			{
@@ -55,13 +43,11 @@ public class FlashlightItemInInventoryTickProcedure {
 							CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
 						}
 					} else {
-						if (world.isClientSide()) {
-							if (world instanceof Level _level) {
-								if (!_level.isClientSide()) {
-									_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:lighton")), SoundSource.PLAYERS, (float) 0.1, 1);
-								} else {
-									_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:lighton")), SoundSource.PLAYERS, (float) 0.1, 1, false);
-								}
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:lighton")), SoundSource.PLAYERS, (float) 0.1, 1);
+							} else {
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:lighton")), SoundSource.PLAYERS, (float) 0.1, 1, false);
 							}
 						}
 						{
@@ -80,42 +66,55 @@ public class FlashlightItemInInventoryTickProcedure {
 						lightX = entity.getX() + entity.getLookAngle().x * lightA;
 						lightY = entity.getY() + entity.getBbHeight() * 0.7 + entity.getLookAngle().y * lightA;
 						lightZ = entity.getZ() + entity.getLookAngle().z * lightA;
+						if ((world.getBlockState(BlockPos.containing(lightX, lightY, lightZ))).getBlock() == JimsmineshaftModBlocks.LIGHTBLOCK.get()) {
+							if (!world.isClientSide()) {
+								BlockPos _bp = BlockPos.containing(lightX, lightY, lightZ);
+								BlockEntity _blockEntity = world.getBlockEntity(_bp);
+								BlockState _bs = world.getBlockState(_bp);
+								if (_blockEntity != null)
+									_blockEntity.getPersistentData().putDouble("pace", 5);
+								if (world instanceof Level _level)
+									_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+							}
+						}
 						if (world.getBlockState(BlockPos.containing(lightX, lightY, lightZ)).canOcclude()) {
+							if ((world.getBlockState(BlockPos.containing(lightX, lightY, lightZ))).getBlock() == JimsmineshaftModBlocks.LIGHTBLOCK.get()) {
+								if (!world.isClientSide()) {
+									BlockPos _bp = BlockPos.containing(lightX, lightY, lightZ);
+									BlockEntity _blockEntity = world.getBlockEntity(_bp);
+									BlockState _bs = world.getBlockState(_bp);
+									if (_blockEntity != null)
+										_blockEntity.getPersistentData().putDouble("pace", 5);
+									if (world instanceof Level _level)
+										_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+								}
+							}
 							break;
 						}
 						if (world.isEmptyBlock(BlockPos.containing(lightX, lightY, lightZ))) {
 							if (!world.isClientSide()) {
-								world.setBlock(BlockPos.containing(lightX, lightY, lightZ), JimsmineshaftModBlocks.LIGHTBLOCK.get().defaultBlockState(), 3);
-							}
-						}
-						if (world.isEmptyBlock(BlockPos.containing(lightX, lightY + 1, lightZ))) {
-							if (!world.isClientSide()) {
-								world.setBlock(BlockPos.containing(lightX, lightY + 1, lightZ), JimsmineshaftModBlocks.LIGHTBLOCK.get().defaultBlockState(), 3);
-							}
-						}
-						if (world.isEmptyBlock(BlockPos.containing(lightX, lightY - 1, lightZ))) {
-							if (!world.isClientSide()) {
-								world.setBlock(BlockPos.containing(lightX, lightY - 1, lightZ), JimsmineshaftModBlocks.LIGHTBLOCK.get().defaultBlockState(), 3);
-							}
-						}
-						if (world.isEmptyBlock(BlockPos.containing(lightX, lightY, lightZ - 1))) {
-							if (!world.isClientSide()) {
-								world.setBlock(BlockPos.containing(lightX, lightY, lightZ - 1), JimsmineshaftModBlocks.LIGHTBLOCK.get().defaultBlockState(), 3);
-							}
-						}
-						if (world.isEmptyBlock(BlockPos.containing(lightX, lightY, lightZ + 1))) {
-							if (!world.isClientSide()) {
-								world.setBlock(BlockPos.containing(lightX, lightY, lightZ + 1), JimsmineshaftModBlocks.LIGHTBLOCK.get().defaultBlockState(), 3);
-							}
-						}
-						if (world.isEmptyBlock(BlockPos.containing(lightX + 1, lightY, lightZ))) {
-							if (!world.isClientSide()) {
-								world.setBlock(BlockPos.containing(lightX + 1, lightY, lightZ), JimsmineshaftModBlocks.LIGHTBLOCK.get().defaultBlockState(), 3);
-							}
-						}
-						if (world.isEmptyBlock(BlockPos.containing(lightX - 1, lightY, lightZ))) {
-							if (!world.isClientSide()) {
-								world.setBlock(BlockPos.containing(lightX - 1, lightY, lightZ), JimsmineshaftModBlocks.LIGHTBLOCK.get().defaultBlockState(), 3);
+								if ((world.getBlockState(BlockPos.containing(lightX, lightY, lightZ))).getBlock() == JimsmineshaftModBlocks.LIGHTBLOCK.get()) {
+									if (!world.isClientSide()) {
+										BlockPos _bp = BlockPos.containing(lightX, lightY, lightZ);
+										BlockEntity _blockEntity = world.getBlockEntity(_bp);
+										BlockState _bs = world.getBlockState(_bp);
+										if (_blockEntity != null)
+											_blockEntity.getPersistentData().putDouble("pace", 5);
+										if (world instanceof Level _level)
+											_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+									}
+								} else {
+									world.setBlock(BlockPos.containing(lightX, lightY, lightZ), JimsmineshaftModBlocks.LIGHTBLOCK.get().defaultBlockState(), 3);
+									if (!world.isClientSide()) {
+										BlockPos _bp = BlockPos.containing(lightX, lightY, lightZ);
+										BlockEntity _blockEntity = world.getBlockEntity(_bp);
+										BlockState _bs = world.getBlockState(_bp);
+										if (_blockEntity != null)
+											_blockEntity.getPersistentData().putDouble("pace", 5);
+										if (world instanceof Level _level)
+											_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+									}
+								}
 							}
 						}
 						lightA = lightA + 1;
@@ -146,17 +145,6 @@ public class FlashlightItemInInventoryTickProcedure {
 						}
 					} else {
 						if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("batterylife") > itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("maxbattery") * 0.6) {
-							if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("flashlightstate") == 1) {
-								if (world.isClientSide()) {
-									if (world instanceof Level _level) {
-										if (!_level.isClientSide()) {
-											_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, (float) 1.2);
-										} else {
-											_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, (float) 1.2, false);
-										}
-									}
-								}
-							}
 							{
 								final String _tagName = "flashlightstate";
 								final double _tagValue = 2;
@@ -164,17 +152,6 @@ public class FlashlightItemInInventoryTickProcedure {
 							}
 						} else {
 							if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("batterylife") > itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("maxbattery") * 0.4) {
-								if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("flashlightstate") == 2) {
-									if (world.isClientSide()) {
-										if (world instanceof Level _level) {
-											if (!_level.isClientSide()) {
-												_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, 1);
-											} else {
-												_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, 1, false);
-											}
-										}
-									}
-								}
 								{
 									final String _tagName = "flashlightstate";
 									final double _tagValue = 3;
@@ -183,17 +160,6 @@ public class FlashlightItemInInventoryTickProcedure {
 							} else {
 								if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("batterylife") > itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("maxbattery")
 										* 0.2) {
-									if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("flashlightstate") == 3) {
-										if (world.isClientSide()) {
-											if (world instanceof Level _level) {
-												if (!_level.isClientSide()) {
-													_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, (float) 0.8);
-												} else {
-													_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, (float) 0.8, false);
-												}
-											}
-										}
-									}
 									{
 										final String _tagName = "flashlightstate";
 										final double _tagValue = 4;
@@ -202,34 +168,12 @@ public class FlashlightItemInInventoryTickProcedure {
 								} else {
 									if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("batterylife") > itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("maxbattery")
 											* 0.1) {
-										if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("flashlightstate") == 4) {
-											if (world.isClientSide()) {
-												if (world instanceof Level _level) {
-													if (!_level.isClientSide()) {
-														_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, (float) 0.6);
-													} else {
-														_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, (float) 0.6, false);
-													}
-												}
-											}
-										}
 										{
 											final String _tagName = "flashlightstate";
 											final double _tagValue = 5;
 											CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
 										}
 									} else {
-										if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("flashlightstate") == 5) {
-											if (world.isClientSide()) {
-												if (world instanceof Level _level) {
-													if (!_level.isClientSide()) {
-														_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, (float) 0.4);
-													} else {
-														_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:batterylevelbeep")), SoundSource.PLAYERS, 1, (float) 0.4, false);
-													}
-												}
-											}
-										}
 										{
 											final String _tagName = "flashlightstate";
 											final double _tagValue = 6;

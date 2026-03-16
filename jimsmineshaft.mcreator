@@ -8968,6 +8968,1108 @@
         ]
       },
       "path": "~/Gates"
+    },
+    {
+      "name": "MysteryOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystery_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/mystery_ore.json",
+          "src/main/resources/assets/jimsmineshaft/items/mystery_ore.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/MysteryOreBlockEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/block/MysteryOreBlock.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/mystery_ore.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/mystery_ore.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/mystery_ore.json"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "BigIronGateFrameOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_iron_gate_frame_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/BigIronGateFrameOnEntityTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Elevatorlight",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevatorlight",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/blockstates/elevatorlight.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/elevatorlight.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/elevatorlight.json",
+          "src/main/resources/assets/jimsmineshaft/items/elevatorlight.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/elevatorlight.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/ElevatorlightBlock.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "ElevatorCrossbarSupport",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_crossbar_support",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/elevator_crossbar_support.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/elevator_crossbar_support.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/elevator_crossbar_support.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/elevator_crossbar_support.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/ElevatorCrossbarSupportBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/elevator_crossbar_support.json"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "Dark6",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_6",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/Dark6Overlay.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "GreaseGunEntitySwingsItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grease_gun_entity_swings_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/GreaseGunEntitySwingsItemProcedure.java"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "GreaseGunRangedItemShootsProjectile",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grease_gun_ranged_item_shoots_projectile",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/GreaseGunRangedItemShootsProjectileProcedure.java"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "Dark7",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_7",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/Dark7Overlay.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Dark8",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_8",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/Dark8Overlay.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "BigIronGateLeft",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_iron_gate_left",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/BigIronGateLeftRenderer.java",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/BigIronGateLeftEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/big_iron_gate_left_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "Dark9",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_9",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/Dark9Overlay.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Flashlightb1",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlightb_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/flashlightb_1.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/flashlightb_1.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/flashlightb_1.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/Flashlightb1Block.java",
+          "src/main/resources/assets/jimsmineshaft/items/flashlightb_1.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/flashlightb_1.json"
+        ]
+      },
+      "path": "~/Flashlight Work"
+    },
+    {
+      "name": "Dark6DisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_6_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Dark6DisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Bottle",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bottle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/bottle.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/bottle.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/bottle.json",
+          "src/main/resources/assets/jimsmineshaft/items/bottle.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/BottleBlock.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/bottle.json"
+        ]
+      },
+      "path": "~/Artifacts"
+    },
+    {
+      "name": "GreaseGun",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grease_gun",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/item/GreaseGunItem.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/grease_gun.json",
+          "src/main/resources/assets/jimsmineshaft/items/grease_gun.json"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "Dark1DisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_1_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Dark1DisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "BigIronGateRight",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_iron_gate_right",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/entity/BigIronGateRightEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/BigIronGateRightRenderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/big_iron_gate_right_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "Dark10",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_10",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/Dark10Overlay.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "ElevatorLiningCornerRight",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_lining_corner_right",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/elevator_lining_corner_right.json",
+          "src/main/resources/assets/jimsmineshaft/items/elevator_lining_corner_right.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/elevator_lining_corner_right.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/ElevatorLiningCornerRightBlock.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/elevator_lining_corner_right.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/elevator_lining_corner_right.json"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "Lvl1DisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lvl_1_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Lvl1DisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Dark4DisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_4_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Dark4DisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "ElevatorStage1START",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_stage_1_start",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ElevatorStage1STARTProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "Dark9DisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_9_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Dark9DisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "BulletProjectileWhileProjectileFlyingTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet_projectile_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/BulletProjectileWhileProjectileFlyingTickProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ElevatorLiningCornerLeft",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_lining_corner_left",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/elevator_lining_corner_left.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/elevator_lining_corner_left.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/elevator_lining_corner_left.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/elevator_lining_corner_left.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/elevator_lining_corner_left.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/ElevatorLiningCornerLeftBlock.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "Dark2",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/Dark2Overlay.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Dark3",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/Dark3Overlay.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Dark4",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/Dark4Overlay.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Dark5",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/Dark5Overlay.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "MysteryOreOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystery_ore_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/MysteryOreOnBlockRightClickedProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Dark1",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/Dark1Overlay.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Dark5DisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_5_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Dark5DisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "StalkerOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerOnInitialEntitySpawnProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CopperVeinSpawnerOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_vein_spawner_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CopperVeinSpawnerOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Dark10DisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_10_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Dark10DisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "TommyGunEntitySwingsItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tommy_gun_entity_swings_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/TommyGunEntitySwingsItemProcedure.java"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "ElevatorBrace",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_brace",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/elevator_brace.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/elevator_brace.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/elevator_brace.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/ElevatorBraceBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/block/elevator_brace.json",
+          "src/main/resources/assets/jimsmineshaft/items/elevator_brace.json"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "Level1Overlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_1_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/Level1OverlayOverlay.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "ElevatorWheel",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_wheel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/elevator_wheel.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/elevator_wheel.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/ElevatorWheelBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/block/elevator_wheel.json",
+          "src/main/resources/assets/jimsmineshaft/items/elevator_wheel.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/elevator_wheel.json"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "Dark3DisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_3_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Dark3DisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Dark8DisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_8_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Dark8DisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "LightblockBlockAdded2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightblock_block_added_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/LightblockBlockAdded2Procedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CartRailBroke1",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cart_rail_broke_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/CartRailBroke1Block.java",
+          "src/main/resources/assets/jimsmineshaft/items/cart_rail_broke_1.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/cart_rail_broke_1.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/cart_rail_broke_1.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/cart_rail_broke_1.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/cart_rail_broke_1.json"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Elevatorlightmidblock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevatorlightmidblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/elevatorlightmidblock.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/elevatorlightmidblock.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/ElevatorlightmidblockBlock.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/elevatorlightmidblock.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/elevatorlightmidblock.json",
+          "src/main/resources/assets/jimsmineshaft/items/elevatorlightmidblock.json"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "CartRailBroke2",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cart_rail_broke_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/blockstates/cart_rail_broke_2.json",
+          "src/main/resources/assets/jimsmineshaft/items/cart_rail_broke_2.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CartRailBroke2Block.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/cart_rail_broke_2.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/cart_rail_broke_2.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/cart_rail_broke_2.json"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "CartRailBroke3",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cart_rail_broke_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/cart_rail_broke_3.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CartRailBroke3Block.java",
+          "src/main/resources/assets/jimsmineshaft/items/cart_rail_broke_3.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/cart_rail_broke_3.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/cart_rail_broke_3.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/cart_rail_broke_3.json"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "ElevatorPipes",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_pipes",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/elevator_pipes.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/elevator_pipes.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/elevator_pipes.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/elevator_pipes.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/elevator_pipes.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/ElevatorPipesBlock.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "ElevatorLiningCornerMiddle",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_lining_corner_middle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/blockstates/elevator_lining_corner_middle.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/elevator_lining_corner_middle.json",
+          "src/main/resources/assets/jimsmineshaft/items/elevator_lining_corner_middle.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/ElevatorLiningCornerMiddleBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/elevator_lining_corner_middle.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/elevator_lining_corner_middle.json"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "CartRailBroke4",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cart_rail_broke_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/cart_rail_broke_4.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/cart_rail_broke_4.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/cart_rail_broke_4.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/cart_rail_broke_4.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/cart_rail_broke_4.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CartRailBroke4Block.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "CartRailBroke5",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cart_rail_broke_5",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/cart_rail_broke_5.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CartRailBroke5Block.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/cart_rail_broke_5.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/cart_rail_broke_5.json",
+          "src/main/resources/assets/jimsmineshaft/items/cart_rail_broke_5.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/cart_rail_broke_5.json"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "CartRailBroke6",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cart_rail_broke_6",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/cart_rail_broke_6.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CartRailBroke6Block.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/cart_rail_broke_6.json",
+          "src/main/resources/assets/jimsmineshaft/items/cart_rail_broke_6.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/cart_rail_broke_6.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/cart_rail_broke_6.json"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "ElevatorLining",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_lining",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/elevator_lining.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/elevator_lining.json",
+          "src/main/resources/assets/jimsmineshaft/items/elevator_lining.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/elevator_lining.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/elevator_lining.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/ElevatorLiningBlock.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "CheckElevatorSpawning",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_elevator_spawning",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CheckElevatorSpawningProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "TommyGunCanUseRangedItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tommy_gun_can_use_ranged_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/TommyGunCanUseRangedItemProcedure.java"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "TommyGunRangedItemShootsProjectile",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tommy_gun_ranged_item_shoots_projectile",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/TommyGunRangedItemShootsProjectileProcedure.java"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "Dark2DisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_2_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Dark2DisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "BigIronGateFrame",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_iron_gate_frame",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/entity/BigIronGateFrameEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/BigIronGateFrameRenderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/big_iron_gate_frame_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "Dark7DisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_7_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Dark7DisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "TeleportElevator",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleport_elevator",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/TeleportElevatorProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
     }
   ],
   "variable_elements": [
@@ -9180,6 +10282,18 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "100.0"
+    },
+    {
+      "name": "darknessOverlay",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "elevatorSeatNumber",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -9599,6 +10713,102 @@
       ],
       "category": "player",
       "subtitle": "bigdoor"
+    },
+    {
+      "name": "elevator7",
+      "files": [
+        "elevator7"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "elevatoractivatemain",
+      "files": [
+        "elevatoractivate"
+      ],
+      "category": "neutral",
+      "subtitle": "Elevator starting up"
+    },
+    {
+      "name": "elevator6",
+      "files": [
+        "elevator6"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "elevator8",
+      "files": [
+        "elevator8"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "elevator3",
+      "files": [
+        "elevator3"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "elevator2",
+      "files": [
+        "elevator2"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "elevator5",
+      "files": [
+        "elevator5"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "elevator4",
+      "files": [
+        "elevator4"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "entity.tommy_gun.shoot",
+      "files": [
+        "tommy_gun"
+      ],
+      "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "elevatorfinished",
+      "files": [
+        "elevatordone"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "elevatoractivatealt",
+      "files": [
+        "elevatoractivatealternate"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "elevator1",
+      "files": [
+        "elevator1"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
@@ -9681,6 +10891,9 @@
       "~CUSTOM:MiningVeteranSet.boots",
       "~CUSTOM:MiningEliteSet.boots",
       "~CUSTOM:MiningGoonSet.boots"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:Flashlightb1"
     ]
   },
   "tab_element_order": {},
@@ -9883,23 +11096,12 @@
       "item.jimsmineshaft.new_gravel": "Gravel",
       "gui.jimsmineshaft.drill_mode_overlay.label_press_p_to_place_drill": "Press shift to exit",
       "gui.jimsmineshaft.drill_mode_overlay.label_right_click_to_drill": "Right click to drill",
-      "item.jimsmineshaft.vision_spawn_egg": "Vision Spawn Egg",
-      "entity.jimsmineshaft.vision": "Vision",
-      "subtitles.vision_stare_calm": "",
-      "subtitles.vision_stare_angry": "",
-      "subtitles.vision_glitch": "",
-      "biome.jimsmineshaft.paradise_fields": "Paradise Fields",
-      "gui.jimsmineshaft.mainoverlay.label_c_to_interact": " to interact",
       "entity.jimsmineshaft.stalker_insides": "Stalker Insides",
       "item.jimsmineshaft.stalker_insides_spawn_egg": "Stalker Insides Spawn Egg",
-      "item.jimsmineshaft.small_side_open_gate_entity_spawn_egg": "Small Slide Up Gate Spawn Egg",
-      "entity.jimsmineshaft.small_side_open_gate_entity": "Small Slide Up Gate",
       "item.jimsmineshaft.rusted_iron_cross_support": "Rusted Iron Cross Support",
-      "key.jimsmineshaft.interact": "Interact",
       "entity.jimsmineshaft.player_stalkier": "Player Stalker",
       "item.jimsmineshaft.player_stalkier_spawn_egg": "Player Stalker Spawn Egg",
       "item.jimsmineshaft.rusted_iron_catwalk_wall_support": "Rusted Iron Catwalk Wall Support",
-      "item.jimsmineshaft.large_gate": "Large Gate",
       "item.jimsmineshaft.rusted_iron_stairs": "Rusted Iron Stairs",
       "item.jimsmineshaft.rusted_iron_support_cool": "Rusted Iron Support",
       "entity.jimsmineshaft.stalker_insides_2": "Stalker Insides 2",
@@ -9907,25 +11109,30 @@
       "item.jimsmineshaft.skin_stealer_entity_spawn_egg": "Skin Stealer Entity Spawn Egg",
       "entity.jimsmineshaft.skin_stealer_entity": "Skin Stealer Entity",
       "biome.jimsmineshaft.level_1_test_biome": "Level 1  Biome",
-      "item.jimsmineshaft.small_side_open_gate": "Small Side Open Gate",
       "item.jimsmineshaft.level_1_dimension": "Level 1 Dimension Portal Igniter",
-      "entity.jimsmineshaft.small_slide_up_gate_entity": "Small Slide Up Gate",
-      "item.jimsmineshaft.small_slide_up_gate_entity_spawn_egg": "Small Slide Up Gate Spawn Egg",
       "item.jimsmineshaft.rusted_iron_railing": "Rusted Iron Railing",
       "item.jimsmineshaft.rusted_iron_catwalk": "Rusted Iron Catwalk",
-      "item.jimsmineshaft.mining_elite_set_leggings": "Mining Elite Set Cargo Pants",
-      "item.jimsmineshaft.mining_elite_set_boots": "Mining Elite Set Steel Toe Boots",
-      "item.jimsmineshaft.mining_elite_set_chestplate": "Mining Elite Set Plate Vest",
-      "item.jimsmineshaft.mining_elite_set_helmet": "Mining Elite Set Brodie Helmet",
       "item.jimsmineshaft.rusted_iron_catwalk_supported": "Rusted Iron Catwalk Supported",
       "item.jimsmineshaft.tommy_gun": "Tommy Gun",
-      "item.jimsmineshaft.mining_veteran_set_chestplate": "Mining Veteran Set Heavy Chestplate",
-      "item.jimsmineshaft.mining_veteran_set_helmet": "Mining Veteran Set Heavy CBRN Mask",
-      "item.jimsmineshaft.mining_veteran_set_boots": "Mining Veteran Set Heavy Sabatons",
-      "item.jimsmineshaft.mining_veteran_set_leggings": "Mining Veteran Set Heavy Greaves",
       "item.jimsmineshaft.rusted_iron_railing_corner": "Rusted Iron Railing Corner",
-      "item.jimsmineshaft.small_slide_up_gate": "Small Slide Up Gate",
-      "subtitles.bigdoor3x3": "bigdoor"
+      "subtitles.bigdoor3x3": "bigdoor",
+      "subtitles.stalkerscream1": "Stalker Screams",
+      "subtitles.elevator5": "",
+      "subtitles.elevator6": "",
+      "subtitles.elevator7": "",
+      "subtitles.elevatorfinished": "",
+      "subtitles.elevator8": "",
+      "subtitles.elevator1": "",
+      "subtitles.stalkerrip2": "Flesh Rips",
+      "subtitles.elevator2": "",
+      "subtitles.stalkerrip1": "Flesh rips",
+      "subtitles.elevator3": "",
+      "subtitles.elevatoractivatemain": "Elevator starting up",
+      "subtitles.elevator4": "",
+      "subtitles.elevatoractivatealt": "",
+      "subtitles.stalkercrack": "Skin tears",
+      "gui.jimsmineshaft.mainoverlay.label_proc_return_inv_value2": "",
+      "gui.jimsmineshaft.mainoverlay.label_proc_return_inv_value1": ""
     }
   },
   "metadata": {
@@ -9962,6 +11169,10 @@
     "children": [
       {
         "name": "Cart and Rail",
+        "children": []
+      },
+      {
+        "name": "Flashlight Work",
         "children": []
       },
       {

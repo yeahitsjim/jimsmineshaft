@@ -1,8 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.jimsmineshaft.entity.LeftgateEntity;
+import net.neoforged.bus.api.Event;
 
 public class LeftgateBoundingBoxScaleProcedure {
 	public static double execute(Entity entity) {

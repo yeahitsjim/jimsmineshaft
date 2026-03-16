@@ -1,27 +1,5 @@
 package net.mcreator.jimsmineshaft.client.renderer;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
-import net.minecraft.client.renderer.entity.layers.RenderLayer;
-import net.minecraft.client.renderer.entity.MobRenderer;
-import net.minecraft.client.renderer.entity.LivingEntityRenderer;
-import net.minecraft.client.renderer.entity.EntityRendererProvider;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.MultiBufferSource;
-import net.minecraft.client.model.geom.ModelPart;
-import net.minecraft.client.model.EntityModel;
-import net.minecraft.client.Minecraft;
-
-import net.mcreator.jimsmineshaft.procedures.StalkerInsidesDisplayConditionProcedure;
-import net.mcreator.jimsmineshaft.procedures.InsidesWalkAnimationPlaybackConditionProcedure;
-import net.mcreator.jimsmineshaft.entity.StalkerInsidesEntity;
-import net.mcreator.jimsmineshaft.client.model.animations.stalkerInsidesAnimation;
-import net.mcreator.jimsmineshaft.client.model.ModelstalkerInsides;
-
-import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.blaze3d.vertex.PoseStack;
-
 public class StalkerInsidesRenderer extends MobRenderer<StalkerInsidesEntity, LivingEntityRenderState, ModelstalkerInsides> {
 	private StalkerInsidesEntity entity = null;
 
