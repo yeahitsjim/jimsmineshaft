@@ -1,5 +1,16 @@
 package net.mcreator.jimsmineshaft.client.renderer;
 
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
+import net.minecraft.client.renderer.entity.MobRenderer;
+import net.minecraft.client.renderer.entity.EntityRendererProvider;
+import net.minecraft.client.model.geom.ModelPart;
+
+import net.mcreator.jimsmineshaft.procedures.SkinStealerEntityWalkPlaybackConditionProcedure;
+import net.mcreator.jimsmineshaft.entity.SkinStealerEntityEntity;
+import net.mcreator.jimsmineshaft.client.model.animations.playerStalkerAnimations2;
+import net.mcreator.jimsmineshaft.client.model.ModelplayerStalker3;
+
 public class SkinStealerEntityRenderer extends MobRenderer<SkinStealerEntityEntity, LivingEntityRenderState, ModelplayerStalker3> {
 	private SkinStealerEntityEntity entity = null;
 
@@ -41,7 +52,8 @@ public class SkinStealerEntityRenderer extends MobRenderer<SkinStealerEntityEnti
 		public void setupAnim(LivingEntityRenderState state) {
 			this.root().getAllParts().forEach(ModelPart::resetPose);
 			this.animate(entity.animationState0, playerStalkerAnimations2.snap, state.ageInTicks, 1f);
-			this.animateWalk(playerStalkerAnimations2.walk3, state.walkAnimationPos, state.walkAnimationSpeed, 1f, 1f);
+			if (SkinStealerEntityWalkPlaybackConditionProcedure.execute(entity))
+				this.animateWalk(playerStalkerAnimations2.walk3, state.walkAnimationPos, state.walkAnimationSpeed, 1f, 1f);
 			super.setupAnim(state);
 		}
 	}

@@ -1,6 +1,12 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
+import net.minecraft.network.chat.Component;
+import net.minecraft.core.Direction;
+
+import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
 
 public class GSMP2callableProcedure {
 	public static void execute(LevelAccessor world, double levelTokens, double totalTokens, double variantTokensPass, double xPass, double yPass, double zPass, String LGSPass, String currentDirectionPass, String currentVariantPass,

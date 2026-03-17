@@ -1,6 +1,20 @@
 package net.mcreator.jimsmineshaft.procedures;
 
+import net.neoforged.neoforge.event.entity.player.ItemEntityPickupEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
+
+import net.minecraft.world.item.component.CustomData;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
+import net.minecraft.network.chat.Component;
+import net.minecraft.core.component.DataComponents;
+
+import net.mcreator.jimsmineshaft.init.JimsmineshaftModBlocks;
+
+import javax.annotation.Nullable;
 
 @EventBusSubscriber
 public class PlayerPickUpBlockProcedure {

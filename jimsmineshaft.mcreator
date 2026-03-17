@@ -1412,6 +1412,22 @@
             "type": "number"
           },
           {
+            "name": "x_pass2",
+            "type": "number"
+          },
+          {
+            "name": "y_pass2",
+            "type": "number"
+          },
+          {
+            "name": "z_pass2",
+            "type": "number"
+          },
+          {
+            "name": "CBP_direction",
+            "type": "string"
+          },
+          {
             "name": "pr_localCurrentVariantpass",
             "type": "string"
           },
@@ -1612,28 +1628,6 @@
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerPlaybackConditionImpaleFailProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "BulletProjectileWhileProjectileFlyingTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bullet_projectile_while_projectile_flying_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "immediatesourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/BulletProjectileWhileProjectileFlyingTickProcedure.java"
         ]
       }
     },
@@ -2829,20 +2823,6 @@
       "path": "~/Loot Work"
     },
     {
-      "name": "BigIronGateFrame",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "big_iron_gate_frame",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/jimsmineshaft/items/big_iron_gate_frame_spawn_egg.json",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/BigIronGateFrameRenderer.java",
-          "src/main/java/net/mcreator/jimsmineshaft/entity/BigIronGateFrameEntity.java"
-        ]
-      }
-    },
-    {
       "name": "CopperChunkTypeDOnBlockRightClicked",
       "type": "procedure",
       "compiles": true,
@@ -2939,40 +2919,6 @@
         ]
       },
       "path": "~/Cart and Rail"
-    },
-    {
-      "name": "BigIronGateFrameOnEntityTickUpdate",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "big_iron_gate_frame_on_entity_tick_update",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/BigIronGateFrameOnEntityTickUpdateProcedure.java"
-        ]
-      }
     },
     {
       "name": "Thecart7DisplayCondition",
@@ -4252,20 +4198,6 @@
         ]
       },
       "path": "~/Cart and Rail"
-    },
-    {
-      "name": "BigIronGateLeft",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "big_iron_gate_left",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/entity/BigIronGateLeftEntity.java",
-          "src/main/resources/assets/jimsmineshaft/items/big_iron_gate_left_spawn_egg.json",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/BigIronGateLeftRenderer.java"
-        ]
-      }
     },
     {
       "name": "CopperShardBlockDestroyedByExplosion",
@@ -6079,20 +6011,6 @@
       "path": "~/Procedures"
     },
     {
-      "name": "BigIronGateRight",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "big_iron_gate_right",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/jimsmineshaft/items/big_iron_gate_right_spawn_egg.json",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/BigIronGateRightRenderer.java",
-          "src/main/java/net/mcreator/jimsmineshaft/entity/BigIronGateRightEntity.java"
-        ]
-      }
-    },
-    {
       "name": "SetShaftCbit2",
       "type": "procedure",
       "compiles": true,
@@ -7480,7 +7398,12 @@
       "locked_code": false,
       "registry_name": "vision_overlay_display_overlay_ingame",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/VisionOverlayDisplayOverlayIngameProcedure.java"
@@ -7752,7 +7675,12 @@
       "locked_code": false,
       "registry_name": "staminabar_10",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar10Procedure.java"
@@ -7997,7 +7925,12 @@
       "locked_code": false,
       "registry_name": "staminabar_3",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar3Procedure.java"
@@ -8026,7 +7959,12 @@
       "locked_code": false,
       "registry_name": "staminabar_2",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar2Procedure.java"
@@ -8041,7 +7979,12 @@
       "locked_code": false,
       "registry_name": "staminabar_1",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar1Procedure.java"
@@ -8074,7 +8017,12 @@
       "locked_code": false,
       "registry_name": "staminabar_7",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar7Procedure.java"
@@ -8127,7 +8075,12 @@
       "locked_code": false,
       "registry_name": "staminabar_6",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar6Procedure.java"
@@ -8181,7 +8134,12 @@
       "locked_code": false,
       "registry_name": "staminabar_5",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar5Procedure.java"
@@ -8196,7 +8154,12 @@
       "locked_code": false,
       "registry_name": "staminabar_4",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar4Procedure.java"
@@ -8246,7 +8209,12 @@
       "locked_code": false,
       "registry_name": "staminabar_9",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar9Procedure.java"
@@ -8261,7 +8229,12 @@
       "locked_code": false,
       "registry_name": "staminabar_8",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar8Procedure.java"
@@ -8995,6 +8968,20 @@
         ]
       },
       "path": "~/Gates"
+    },
+    {
+      "name": "ParadiseLava",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "paradise_lava",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/worldgen/configured_feature/paradise_lava.json",
+          "src/main/resources/data/jimsmineshaft/neoforge/biome_modifier/paradise_lava_biome_modifier.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/paradise_lava.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -9618,6 +9605,14 @@
       ],
       "category": "neutral",
       "subtitle": "Skin tears"
+    },
+    {
+      "name": "paradise_music",
+      "files": [
+        "paradise_mineshaft_music"
+      ],
+      "category": "music",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
@@ -9907,23 +9902,78 @@
       "subtitles.vision_stare_calm": "",
       "subtitles.vision_stare_angry": "",
       "subtitles.vision_glitch": "",
-      "biome.jimsmineshaft.paradise_fields": "Paradise Fields"
+      "biome.jimsmineshaft.paradise_fields": "Paradise Fields",
+      "gui.jimsmineshaft.mainoverlay.label_c_to_interact": " to interact",
+      "entity.jimsmineshaft.stalker_insides": "Stalker Insides",
+      "item.jimsmineshaft.stalker_insides_spawn_egg": "Stalker Insides Spawn Egg",
+      "item.jimsmineshaft.small_side_open_gate_entity_spawn_egg": "Small Slide Up Gate Spawn Egg",
+      "entity.jimsmineshaft.small_side_open_gate_entity": "Small Slide Up Gate",
+      "item.jimsmineshaft.rusted_iron_cross_support": "Rusted Iron Cross Support",
+      "key.jimsmineshaft.interact": "Interact",
+      "entity.jimsmineshaft.player_stalkier": "Player Stalker",
+      "item.jimsmineshaft.player_stalkier_spawn_egg": "Player Stalker Spawn Egg",
+      "item.jimsmineshaft.rusted_iron_catwalk_wall_support": "Rusted Iron Catwalk Wall Support",
+      "item.jimsmineshaft.large_gate": "Large Gate",
+      "item.jimsmineshaft.rusted_iron_stairs": "Rusted Iron Stairs",
+      "item.jimsmineshaft.rusted_iron_support_cool": "Rusted Iron Support",
+      "entity.jimsmineshaft.stalker_insides_2": "Stalker Insides 2",
+      "item.jimsmineshaft.stalker_insides_2_spawn_egg": "Stalker Insides 2 Spawn Egg",
+      "item.jimsmineshaft.skin_stealer_entity_spawn_egg": "Skin Stealer Entity Spawn Egg",
+      "entity.jimsmineshaft.skin_stealer_entity": "Skin Stealer Entity",
+      "biome.jimsmineshaft.level_1_test_biome": "Level 1  Biome",
+      "item.jimsmineshaft.small_side_open_gate": "Small Side Open Gate",
+      "item.jimsmineshaft.level_1_dimension": "Level 1 Dimension Portal Igniter",
+      "entity.jimsmineshaft.small_slide_up_gate_entity": "Small Slide Up Gate",
+      "item.jimsmineshaft.small_slide_up_gate_entity_spawn_egg": "Small Slide Up Gate Spawn Egg",
+      "item.jimsmineshaft.rusted_iron_railing": "Rusted Iron Railing",
+      "item.jimsmineshaft.rusted_iron_catwalk": "Rusted Iron Catwalk",
+      "item.jimsmineshaft.mining_elite_set_leggings": "Mining Elite Set Cargo Pants",
+      "item.jimsmineshaft.mining_elite_set_boots": "Mining Elite Set Steel Toe Boots",
+      "item.jimsmineshaft.mining_elite_set_chestplate": "Mining Elite Set Plate Vest",
+      "item.jimsmineshaft.mining_elite_set_helmet": "Mining Elite Set Brodie Helmet",
+      "item.jimsmineshaft.rusted_iron_catwalk_supported": "Rusted Iron Catwalk Supported",
+      "item.jimsmineshaft.tommy_gun": "Tommy Gun",
+      "item.jimsmineshaft.mining_veteran_set_chestplate": "Mining Veteran Set Heavy Chestplate",
+      "item.jimsmineshaft.mining_veteran_set_helmet": "Mining Veteran Set Heavy CBRN Mask",
+      "item.jimsmineshaft.mining_veteran_set_boots": "Mining Veteran Set Heavy Sabatons",
+      "item.jimsmineshaft.mining_veteran_set_leggings": "Mining Veteran Set Heavy Greaves",
+      "item.jimsmineshaft.rusted_iron_railing_corner": "Rusted Iron Railing Corner",
+      "item.jimsmineshaft.small_slide_up_gate": "Small Slide Up Gate",
+      "subtitles.paradise_music": ""
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModSounds.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModTabs.java",
-      "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationMixin.java",
       "src/main/java/net/mcreator/jimsmineshaft/network/LoadPlayerAnimationMessage.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/jimsmineshaft/network/PlayPlayerAnimationMessage.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/mcreator/jimsmineshaft/network/JimsmineshaftModVariables.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModModels.java",
       "src/main/resources/pack.mcmeta",
+      "src/main/resources/assets/jimsmineshaft/sounds.json",
+      "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationRendererMixin.java",
+      "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationMixin.java",
+      "src/main/java/net/mcreator/jimsmineshaft/network/PlayPlayerAnimationMessage.java",
       "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftModPlayerAnimationAPI.java",
       "src/main/resources/jimsmineshaft.mixins.json",
-      "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationRendererMixin.java",
       "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftMod.java",
+      "src/main/java/net/mcreator/jimsmineshaft/mixin/NoiseGeneratorSettingsMixin.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModBiomes.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModScreens.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModMenus.java",
+      "src/main/java/net/mcreator/jimsmineshaft/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/jimsmineshaft/client/renderer/item/LegacyOverrideSelectItemModel.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModKeyMappings.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModParticleTypes.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModParticles.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModMobEffects.java",
-      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModItems.java"
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModBlocks.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModBlockEntities.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModItems.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModEntityRenderers.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModEntities.java"
     ]
   },
   "foldersRoot": {

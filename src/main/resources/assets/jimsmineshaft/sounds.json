@@ -453,5 +453,13 @@
         "stream": false
       }
     ]
+  },
+  "paradise_music": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:paradise_mineshaft_music",
+        "stream": true
+      }
+    ]
   }
 }

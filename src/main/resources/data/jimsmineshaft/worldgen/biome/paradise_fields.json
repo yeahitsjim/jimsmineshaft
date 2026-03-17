@@ -3,9 +3,10 @@
   "temperature": 0.5,
   "downfall": 0.5,
   "effects": {
+    "ambient_sound": "jimsmineshaft:paradise_music",
     "foliage_color": 10387789,
     "grass_color": 9470285,
-    "sky_color": 7972607,
+    "sky_color": -65536,
     "fog_color": 12638463,
     "water_color": 4159204,
     "water_fog_color": 329011

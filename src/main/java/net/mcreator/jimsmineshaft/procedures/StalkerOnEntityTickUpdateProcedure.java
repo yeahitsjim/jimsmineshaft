@@ -33,8 +33,9 @@ public class StalkerOnEntityTickUpdateProcedure {
 		} else {
 			if (!((entity instanceof StalkerEntity _datEntS ? _datEntS.getEntityData().get(StalkerEntity.DATA_pose) : "").equals("transform"))) {
 				if ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof LivingEntity) {
-					if (Math.sqrt(Math.pow(entity.getX() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX(), 2) + Math.pow(entity.getY() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY(), 2)
-							+ Math.pow(entity.getZ() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ(), 2)) < 7) {
+					if (Math.sqrt(
+							Math.pow(entity.getX() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX(), 2) + Math.pow((entity.getY() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY()) * 1.8, 2)
+									+ Math.pow(entity.getZ() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ(), 2)) < 7) {
 						if (!world.isClientSide()) {
 							if (world instanceof Level _level) {
 								if (!_level.isClientSide()) {
@@ -46,7 +47,8 @@ public class StalkerOnEntityTickUpdateProcedure {
 						}
 						if (entity instanceof StalkerEntity _datEntSetS)
 							_datEntSetS.getEntityData().set(StalkerEntity.DATA_pose, "transform");
-						entity.getPersistentData().putDouble("FaceDir", (entity.getYRot()));
+						if (entity instanceof StalkerEntity _datEntSetI)
+							_datEntSetI.getEntityData().set(StalkerEntity.DATA_faceDir, (int) entity.getYRot());
 					}
 				}
 			} else {
@@ -56,7 +58,7 @@ public class StalkerOnEntityTickUpdateProcedure {
 		if ((entity instanceof StalkerEntity _datEntS ? _datEntS.getEntityData().get(StalkerEntity.DATA_pose) : "").equals("transform")) {
 			{
 				Entity _ent = entity;
-				_ent.setYRot((float) entity.getPersistentData().getDouble("FaceDir"));
+				_ent.setYRot((float) (entity instanceof StalkerEntity _datEntI ? _datEntI.getEntityData().get(StalkerEntity.DATA_faceDir) : 0));
 				_ent.setXRot(0);
 				_ent.setYBodyRot(_ent.getYRot());
 				_ent.setYHeadRot(_ent.getYRot());
@@ -116,9 +118,9 @@ public class StalkerOnEntityTickUpdateProcedure {
 								}
 							}
 						}
-						if (Math.sqrt(
-								Math.pow(entity.getX() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX(), 2) + Math.pow(entity.getY() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY(), 2)
-										+ Math.pow(entity.getZ() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ(), 2)) < 5) {
+						if (Math.sqrt(Math.pow(entity.getX() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX(), 2)
+								+ Math.pow((entity.getY() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY()) * 1.8, 2)
+								+ Math.pow(entity.getZ() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ(), 2)) < 5) {
 							if (!world.isClientSide()) {
 								if (world instanceof Level _level) {
 									if (!_level.isClientSide()) {
@@ -133,8 +135,9 @@ public class StalkerOnEntityTickUpdateProcedure {
 							if (entity instanceof StalkerEntity _datEntSetS)
 								_datEntSetS.getEntityData().set(StalkerEntity.DATA_pose, "impale_hit");
 							entity.getPersistentData().putString("ImpaleEntity", ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getStringUUID()));
-							entity.getPersistentData().putDouble("FaceDir",
-									Math.atan(((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX() - entity.getX()) / ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ() - entity.getZ())));
+							if (entity instanceof StalkerEntity _datEntSetI)
+								_datEntSetI.getEntityData().set(StalkerEntity.DATA_faceDir, (int) Math.toDegrees(
+										Math.atan2((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ() - entity.getZ(), (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX() - entity.getX())));
 							entity.getPersistentData().putDouble("ImpaleDistance",
 									Math.sqrt(Math.pow(entity.getX() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX(), 2)
 											+ Math.pow(entity.getY() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY(), 2)
@@ -152,7 +155,7 @@ public class StalkerOnEntityTickUpdateProcedure {
 						entity.setDeltaMovement(new Vec3(0, 0, 0));
 						{
 							Entity _ent = entity;
-							_ent.setYRot((float) entity.getPersistentData().getDouble("FaceDir"));
+							_ent.setYRot((float) ((entity instanceof StalkerEntity _datEntI ? _datEntI.getEntityData().get(StalkerEntity.DATA_faceDir) : 0) - 90));
 							_ent.setXRot(0);
 							_ent.setYBodyRot(_ent.getYRot());
 							_ent.setYHeadRot(_ent.getYRot());
@@ -165,13 +168,19 @@ public class StalkerOnEntityTickUpdateProcedure {
 						}
 						if ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof LivingEntity) {
 							(entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).setNoGravity(true);
+							if (!entity.isAlive()) {
+								(entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).setNoGravity(false);
+							}
 							{
 								Entity _ent = (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null);
-								_ent.teleportTo((x + Math.sin(Math.toRadians(entity.getPersistentData().getDouble("FaceDir"))) * entity.getPersistentData().getDouble("ImpaleDistance")),
-										(y + 0.15 * entity.getPersistentData().getDouble("ImpaleDistance")), (z + Math.cos(Math.toRadians(entity.getPersistentData().getDouble("FaceDir"))) * entity.getPersistentData().getDouble("ImpaleDistance")));
+								_ent.teleportTo((x + Math.cos(Math.toRadians(entity instanceof StalkerEntity _datEntI ? _datEntI.getEntityData().get(StalkerEntity.DATA_faceDir) : 0)) * entity.getPersistentData().getDouble("ImpaleDistance")),
+										(y + 0.15 * entity.getPersistentData().getDouble("ImpaleDistance")),
+										(z + Math.sin(Math.toRadians(entity instanceof StalkerEntity _datEntI ? _datEntI.getEntityData().get(StalkerEntity.DATA_faceDir) : 0)) * entity.getPersistentData().getDouble("ImpaleDistance")));
 								if (_ent instanceof ServerPlayer _serverPlayer)
-									_serverPlayer.connection.teleport((x + Math.sin(Math.toRadians(entity.getPersistentData().getDouble("FaceDir"))) * entity.getPersistentData().getDouble("ImpaleDistance")),
-											(y + 0.15 * entity.getPersistentData().getDouble("ImpaleDistance")), (z + Math.cos(Math.toRadians(entity.getPersistentData().getDouble("FaceDir"))) * entity.getPersistentData().getDouble("ImpaleDistance")),
+									_serverPlayer.connection.teleport(
+											(x + Math.cos(Math.toRadians(entity instanceof StalkerEntity _datEntI ? _datEntI.getEntityData().get(StalkerEntity.DATA_faceDir) : 0)) * entity.getPersistentData().getDouble("ImpaleDistance")),
+											(y + 0.15 * entity.getPersistentData().getDouble("ImpaleDistance")),
+											(z + Math.sin(Math.toRadians(entity instanceof StalkerEntity _datEntI ? _datEntI.getEntityData().get(StalkerEntity.DATA_faceDir) : 0)) * entity.getPersistentData().getDouble("ImpaleDistance")),
 											_ent.getYRot(), _ent.getXRot());
 							}
 							if ((entity instanceof StalkerEntity _datEntI ? _datEntI.getEntityData().get(StalkerEntity.DATA_attackTicks) : 0) == 45) {
@@ -213,8 +222,9 @@ public class StalkerOnEntityTickUpdateProcedure {
 						_datEntSetI.getEntityData().set(StalkerEntity.DATA_attackTicks, 0);
 				}
 				if ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof LivingEntity) {
-					if (Math.sqrt(Math.pow(entity.getX() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX(), 2) + Math.pow(entity.getY() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY(), 2)
-							+ Math.pow(entity.getZ() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ(), 2)) < 6) {
+					if (Math.sqrt(
+							Math.pow(entity.getX() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX(), 2) + Math.pow((entity.getY() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY()) * 1.8, 2)
+									+ Math.pow(entity.getZ() - (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ(), 2)) < 5.8) {
 						if (entity instanceof StalkerEntity _datEntSetS)
 							_datEntSetS.getEntityData().set(StalkerEntity.DATA_attack, "impale");
 					}

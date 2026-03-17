@@ -1,6 +1,15 @@
 package net.mcreator.jimsmineshaft.procedures;
 
+import net.neoforged.neoforge.event.tick.EntityTickEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
+
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.jimsmineshaft.entity.PressureDrillEntity;
+
+import javax.annotation.Nullable;
 
 @EventBusSubscriber
 public class PressureDrillPlaybackConditionProcedure {

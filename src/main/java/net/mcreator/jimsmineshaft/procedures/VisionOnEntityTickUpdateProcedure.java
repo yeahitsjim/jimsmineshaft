@@ -1,6 +1,32 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.neoforged.neoforge.network.PacketDistributor;
+
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.BlockPos;
+import net.minecraft.commands.arguments.EntityAnchorArgument;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
+
+import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
+import net.mcreator.jimsmineshaft.network.FreezeClientMessage;
+import net.mcreator.jimsmineshaft.entity.VisionEntity;
+
+import java.util.UUID;
+import java.util.ArrayList;
 
 public class VisionOnEntityTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -21,8 +47,18 @@ public class VisionOnEntityTickUpdateProcedure {
 						if (entity.getPersistentData().getDouble("ScareTicks") == 35) {
 							if (target instanceof ServerPlayer player15)
 								PacketDistributor.sendToPlayer(player15, new FreezeClientMessage(""));
+							{
+								JimsmineshaftModVariables.PlayerVariables _vars = target.getData(JimsmineshaftModVariables.PLAYER_VARIABLES);
+								_vars.analogScreenInx = "alea_iacta_est";
+								_vars.syncPlayerVariables(target);
+							}
 						}
 						if (entity.getPersistentData().getDouble("ScareTicks") <= 0) {
+							{
+								JimsmineshaftModVariables.PlayerVariables _vars = target.getData(JimsmineshaftModVariables.PLAYER_VARIABLES);
+								_vars.analogScreenInx = "";
+								_vars.syncPlayerVariables(target);
+							}
 							{
 								Entity _ent = target;
 								if (!_ent.level().isClientSide() && _ent.getServer() != null) {
@@ -41,24 +77,36 @@ public class VisionOnEntityTickUpdateProcedure {
 							if (entity instanceof VisionEntity _datEntSetI)
 								_datEntSetI.getEntityData().set(VisionEntity.DATA_anger, (int) ((entity instanceof VisionEntity _datEntI ? _datEntI.getEntityData().get(VisionEntity.DATA_anger) : 0) + 30));
 							entity.getPersistentData().putDouble("Cooldown", 0);
+							{
+								Entity _ent = entity;
+								_ent.teleportTo(x, (y + 200), z);
+								if (_ent instanceof ServerPlayer _serverPlayer)
+									_serverPlayer.connection.teleport(x, (y + 200), z, _ent.getYRot(), _ent.getXRot());
+							}
 						}
 						if (!IsEntityBeingLookedAtProcedure.execute(world, entity)) {
 							{
 								Entity _ent = target;
 								if (!_ent.level().isClientSide() && _ent.getServer() != null) {
 									_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null,
-											4, _ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "stopsound @a jimsmineshaft:vision_stare_calm");
+											4, _ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "stopsound @a * jimsmineshaft:vision_stare_calm");
 								}
 							}
 							{
 								Entity _ent = target;
 								if (!_ent.level().isClientSide() && _ent.getServer() != null) {
 									_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null,
-											4, _ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "stopsound @a jimsmineshaft:vision_stare_angry");
+											4, _ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "stopsound @a * jimsmineshaft:vision_stare_angry");
 								}
 							}
 							entity.getPersistentData().putDouble("ScareTicks", 0);
 							entity.getPersistentData().putDouble("Cooldown", 0);
+							{
+								Entity _ent = entity;
+								_ent.teleportTo(x, (y + 200), z);
+								if (_ent instanceof ServerPlayer _serverPlayer)
+									_serverPlayer.connection.teleport(x, (y + 200), z, _ent.getYRot(), _ent.getXRot());
+							}
 						}
 					}
 				} else {
@@ -114,7 +162,7 @@ public class VisionOnEntityTickUpdateProcedure {
 				if (entity instanceof VisionEntity _datEntSetL)
 					_datEntSetL.getEntityData().set(VisionEntity.DATA_gone, true);
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 3, 0, false, false));
+					_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 5, 0, false, false));
 				entity.getPersistentData().putDouble("Cooldown", (entity.getPersistentData().getDouble("Cooldown") + 1));
 				if (entity.getPersistentData().getDouble("Cooldown") > Mth.nextInt(RandomSource.create(), 50, 200)) {
 					testX = target.getX() + target.getLookAngle().x * (-10);

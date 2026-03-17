@@ -1,10 +1,27 @@
 package net.mcreator.jimsmineshaft.network;
 
+import net.neoforged.neoforge.network.handling.IPayloadContext;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.network.protocol.PacketFlow;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.jimsmineshaft.procedures.CartGUIWhileThisGUIIsOpenTickProcedure;
+import net.mcreator.jimsmineshaft.JimsmineshaftMod;
+
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record CartGUISlotMessage(int slotID, int x, int y, int z, int changeType, int meta) implements CustomPacketPayload {
 
 	public static final Type<CartGUISlotMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(JimsmineshaftMod.MODID, "cart_gui_slots"));
-
 	public static final StreamCodec<RegistryFriendlyByteBuf, CartGUISlotMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, CartGUISlotMessage message) -> {
 		buffer.writeInt(message.slotID);
 		buffer.writeInt(message.x);
@@ -13,7 +30,6 @@ public record CartGUISlotMessage(int slotID, int x, int y, int z, int changeType
 		buffer.writeInt(message.changeType);
 		buffer.writeInt(message.meta);
 	}, (RegistryFriendlyByteBuf buffer) -> new CartGUISlotMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
-
 	@Override
 	public Type<CartGUISlotMessage> type() {
 		return TYPE;
@@ -30,11 +46,9 @@ public record CartGUISlotMessage(int slotID, int x, int y, int z, int changeType
 
 	public static void handleSlotAction(Player entity, int slot, int changeType, int meta, int x, int y, int z) {
 		Level world = entity.level();
-
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
-
 		if (slot == 0 && changeType == 0) {
 
 			CartGUIWhileThisGUIIsOpenTickProcedure.execute(world, x, y, z, entity);
@@ -497,5 +511,4 @@ public record CartGUISlotMessage(int slotID, int x, int y, int z, int changeType
 	public static void registerMessage(FMLCommonSetupEvent event) {
 		JimsmineshaftMod.addNetworkMessage(CartGUISlotMessage.TYPE, CartGUISlotMessage.STREAM_CODEC, CartGUISlotMessage::handleData);
 	}
-
 }

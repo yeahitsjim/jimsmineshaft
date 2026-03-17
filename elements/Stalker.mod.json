@@ -259,6 +259,13 @@
         "name": "lastPose",
         "type": "string",
         "value": ""
+      },
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "faceDir",
+        "type": "integer",
+        "value": 0
       }
     ],
     "onMobTickUpdate": {

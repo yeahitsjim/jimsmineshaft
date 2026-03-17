@@ -6,7 +6,7 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "jimsmineshaft:deleted_mod_element",
+          "biome": "jimsmineshaft:level_1_test_biome",
           "parameters": {
             "temperature": 0,
             "humidity": 0,
@@ -383,7 +383,7 @@
             "if_true": {
               "type": "minecraft:biome",
               "biome_is": [
-                "jimsmineshaft:deleted_mod_element"
+                "jimsmineshaft:level_1_test_biome"
               ]
             },
             "then_run": {

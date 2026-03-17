@@ -1,6 +1,11 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.Direction;
+
+import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
 
 public class SBpickCoordsProcedure {
 	public static void execute(LevelAccessor world, double SB_x, double SB_y, double SB_z, String SB_currentDirection, String SB_lastGen, String SB_wDirection) {

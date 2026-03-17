@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "jimsmineshaft:paradise_fields",
+  "features": "jimsmineshaft:paradise_lava",
+  "step": "surface_structures"
+}

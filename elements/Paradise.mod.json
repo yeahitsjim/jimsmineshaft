@@ -9,10 +9,10 @@
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "Blocks.STONE#0"
+      "value": "Blocks.DIRT#0"
     },
     "fluidBlock": {
-      "value": "Blocks.WATER"
+      "value": "Blocks.AIR"
     },
     "seaLevel": 63,
     "generateOreVeins": false,
@@ -24,13 +24,17 @@
     "hasClouds": false,
     "cloudHeight": 192.0,
     "skyType": "NORMAL",
+    "airColor": {
+      "value": -65536,
+      "falpha": 0.0
+    },
     "sunHeightAffectsFog": false,
     "canRespawnHere": false,
     "hasFog": false,
     "ambientLight": 0.0,
     "doesWaterVaporize": false,
-    "hasFixedTime": false,
-    "fixedTimeValue": 0,
+    "hasFixedTime": true,
+    "fixedTimeValue": 1500,
     "coordinateScale": 1.0,
     "infiniburnTag": "minecraft:infiniburn_overworld",
     "bedWorks": false,

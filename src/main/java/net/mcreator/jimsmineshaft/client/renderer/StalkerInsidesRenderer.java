@@ -1,5 +1,27 @@
 package net.mcreator.jimsmineshaft.client.renderer;
 
+import net.minecraft.world.level.Level;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
+import net.minecraft.client.renderer.entity.layers.RenderLayer;
+import net.minecraft.client.renderer.entity.MobRenderer;
+import net.minecraft.client.renderer.entity.LivingEntityRenderer;
+import net.minecraft.client.renderer.entity.EntityRendererProvider;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.model.geom.ModelPart;
+import net.minecraft.client.model.EntityModel;
+import net.minecraft.client.Minecraft;
+
+import net.mcreator.jimsmineshaft.procedures.StalkerInsidesDisplayConditionProcedure;
+import net.mcreator.jimsmineshaft.procedures.InsidesWalkAnimationPlaybackConditionProcedure;
+import net.mcreator.jimsmineshaft.entity.StalkerInsidesEntity;
+import net.mcreator.jimsmineshaft.client.model.animations.stalkerInsidesAnimation;
+import net.mcreator.jimsmineshaft.client.model.ModelstalkerInsides;
+
+import com.mojang.blaze3d.vertex.VertexConsumer;
+import com.mojang.blaze3d.vertex.PoseStack;
+
 public class StalkerInsidesRenderer extends MobRenderer<StalkerInsidesEntity, LivingEntityRenderState, ModelstalkerInsides> {
 	private StalkerInsidesEntity entity = null;
 
@@ -10,10 +32,16 @@ public class StalkerInsidesRenderer extends MobRenderer<StalkerInsidesEntity, Li
 
 			@Override
 			public void render(PoseStack poseStack, MultiBufferSource bufferSource, int light, LivingEntityRenderState state, float headYaw, float headPitch) {
-				VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.entityCutoutNoCull(LAYER_TEXTURE));
-				EntityModel model = new ModelstalkerInsides(Minecraft.getInstance().getEntityModels().bakeLayer(ModelstalkerInsides.LAYER_LOCATION));
-				model.setupAnim(state);
-				model.renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(state, 0));
+				Level world = entity.level();
+				double x = entity.getX();
+				double y = entity.getY();
+				double z = entity.getZ();
+				if (StalkerInsidesDisplayConditionProcedure.execute(entity)) {
+					VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.entityCutoutNoCull(LAYER_TEXTURE));
+					EntityModel model = new ModelstalkerInsides(Minecraft.getInstance().getEntityModels().bakeLayer(ModelstalkerInsides.LAYER_LOCATION));
+					model.setupAnim(state);
+					model.renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(state, 0));
+				}
 			}
 		});
 	}
@@ -52,7 +80,8 @@ public class StalkerInsidesRenderer extends MobRenderer<StalkerInsidesEntity, Li
 		public void setupAnim(LivingEntityRenderState state) {
 			this.root().getAllParts().forEach(ModelPart::resetPose);
 			this.animate(entity.animationState0, stalkerInsidesAnimation.snap, state.ageInTicks, 1f);
-			this.animateWalk(stalkerInsidesAnimation.walk3, state.walkAnimationPos, state.walkAnimationSpeed, 1f, 1f);
+			if (InsidesWalkAnimationPlaybackConditionProcedure.execute(entity))
+				this.animateWalk(stalkerInsidesAnimation.walk3, state.walkAnimationPos, state.walkAnimationSpeed, 1f, 1f);
 			super.setupAnim(state);
 		}
 	}

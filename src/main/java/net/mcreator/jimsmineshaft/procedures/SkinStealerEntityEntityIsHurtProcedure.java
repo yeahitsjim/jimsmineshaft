@@ -1,6 +1,26 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.AABB;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.EntitySpawnReason;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.particles.SimpleParticleType;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.BlockPos;
+import net.minecraft.commands.arguments.EntityAnchorArgument;
+
+import net.mcreator.jimsmineshaft.init.JimsmineshaftModParticleTypes;
+import net.mcreator.jimsmineshaft.init.JimsmineshaftModEntities;
+import net.mcreator.jimsmineshaft.entity.SkinStealerEntityEntity;
+import net.mcreator.jimsmineshaft.JimsmineshaftMod;
+
+import java.util.Comparator;
 
 public class SkinStealerEntityEntityIsHurtProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
@@ -8,7 +28,7 @@ public class SkinStealerEntityEntityIsHurtProcedure {
 			return;
 		entity.lookAt(EntityAnchorArgument.Anchor.EYES, new Vec3((sourceentity.getX()), (sourceentity.getY()), (sourceentity.getZ())));
 		if (world instanceof ServerLevel _level) {
-			Entity entityToSpawn = JimsmineshaftModEntities.DELETED_MOD_ELEMENT.get().spawn(_level, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), EntitySpawnReason.MOB_SUMMONED);
+			Entity entityToSpawn = JimsmineshaftModEntities.STALKER_INSIDES_2.get().spawn(_level, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), EntitySpawnReason.MOB_SUMMONED);
 			if (entityToSpawn != null) {
 				entityToSpawn.setYRot(entity.getYRot());
 				entityToSpawn.setYBodyRot(entity.getYRot());
@@ -28,7 +48,7 @@ public class SkinStealerEntityEntityIsHurtProcedure {
 					if ((sourceentity.getDisplayName().getString()).equals(entityiterator.getDisplayName().getString())) {
 						entity.lookAt(EntityAnchorArgument.Anchor.EYES, new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ())));
 						if (world instanceof ServerLevel _level)
-							_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 1.3), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+							_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 1.3), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
 								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:stalkercrack")), SoundSource.NEUTRAL, 1, 1);
@@ -38,9 +58,9 @@ public class SkinStealerEntityEntityIsHurtProcedure {
 						}
 						JimsmineshaftMod.queueServerWork(20, () -> {
 							if (world instanceof ServerLevel _level)
-								_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 1.15), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+								_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 1.15), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 							if (world instanceof ServerLevel _level)
-								_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 1), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+								_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 1), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 							if (world instanceof Level _level) {
 								if (!_level.isClientSide()) {
 									_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:stalkerrip1")), SoundSource.NEUTRAL, 1, 1);
@@ -50,40 +70,40 @@ public class SkinStealerEntityEntityIsHurtProcedure {
 							}
 							JimsmineshaftMod.queueServerWork(4, () -> {
 								if (world instanceof ServerLevel _level)
-									_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 1.15), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+									_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 1.15), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 								if (world instanceof ServerLevel _level)
-									_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 1), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+									_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 1), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 								JimsmineshaftMod.queueServerWork(4, () -> {
 									if (world instanceof ServerLevel _level)
-										_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 1.15), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+										_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 1.15), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 									if (world instanceof ServerLevel _level)
-										_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 1), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+										_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 1), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 									JimsmineshaftMod.queueServerWork(4, () -> {
 										if (world instanceof ServerLevel _level)
-											_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 1.15), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+											_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 1.15), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 										if (world instanceof ServerLevel _level)
-											_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 1), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+											_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 1), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 										JimsmineshaftMod.queueServerWork(4, () -> {
 											if (world instanceof ServerLevel _level)
-												_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 1.15), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+												_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 1.15), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 											if (world instanceof ServerLevel _level)
-												_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 1), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+												_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 1), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 											JimsmineshaftMod.queueServerWork(4, () -> {
 												if (world instanceof ServerLevel _level)
-													_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 1.15), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+													_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 1.15), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 												JimsmineshaftMod.queueServerWork(4, () -> {
 													if (world instanceof ServerLevel _level)
-														_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 1.15), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+														_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 1.15), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 													if (world instanceof ServerLevel _level)
-														_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 1), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+														_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 1), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 												});
 												if (world instanceof ServerLevel _level)
-													_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 1), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+													_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 1), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 												JimsmineshaftMod.queueServerWork(4, () -> {
 													if (world instanceof ServerLevel _level)
-														_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 1.15), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+														_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 1.15), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 													if (world instanceof ServerLevel _level)
-														_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 1), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+														_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 1), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 												});
 											});
 										});
@@ -99,39 +119,39 @@ public class SkinStealerEntityEntityIsHurtProcedure {
 									}
 								}
 								if (world instanceof ServerLevel _level)
-									_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 0.9), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+									_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 0.9), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 								if (world instanceof ServerLevel _level)
-									_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 0.75), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+									_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 0.75), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 								JimsmineshaftMod.queueServerWork(4, () -> {
 									if (world instanceof ServerLevel _level)
-										_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 0.9), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+										_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 0.9), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 									if (world instanceof ServerLevel _level)
-										_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 0.75), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+										_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 0.75), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 									JimsmineshaftMod.queueServerWork(4, () -> {
 										if (world instanceof ServerLevel _level)
-											_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 0.9), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+											_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 0.9), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 										if (world instanceof ServerLevel _level)
-											_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 0.75), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+											_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 0.75), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 										JimsmineshaftMod.queueServerWork(4, () -> {
 											if (world instanceof ServerLevel _level)
-												_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 0.9), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+												_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 0.9), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 											if (world instanceof ServerLevel _level)
-												_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 0.75), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+												_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 0.75), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 											JimsmineshaftMod.queueServerWork(4, () -> {
 												if (world instanceof ServerLevel _level)
-													_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 0.9), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+													_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 0.9), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 												if (world instanceof ServerLevel _level)
-													_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 0.75), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+													_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 0.75), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 												JimsmineshaftMod.queueServerWork(4, () -> {
 													if (world instanceof ServerLevel _level)
-														_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 0.9), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+														_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 0.9), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 													if (world instanceof ServerLevel _level)
-														_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 0.75), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+														_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 0.75), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 													JimsmineshaftMod.queueServerWork(4, () -> {
 														if (world instanceof ServerLevel _level)
-															_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 0.9), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+															_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 0.9), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 														if (world instanceof ServerLevel _level)
-															_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.DELETED_MOD_ELEMENT.get()), (entity.getX()), (entity.getY() + 0.75), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
+															_level.sendParticles((SimpleParticleType) (JimsmineshaftModParticleTypes.BLOOD_PARTICLE.get()), (entity.getX()), (entity.getY() + 0.75), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 													});
 												});
 											});

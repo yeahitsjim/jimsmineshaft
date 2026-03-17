@@ -1,23 +1,55 @@
 package net.mcreator.jimsmineshaft.entity;
 
-import net.minecraft.nbt.Tag;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
+import net.neoforged.neoforge.common.NeoForgeMod;
+
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.ServerLevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.Explosion;
+import net.minecraft.world.entity.projectile.ThrownPotion;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.ai.navigation.PathNavigation;
+import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
+import net.minecraft.world.entity.ai.control.FlyingMoveControl;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.SpawnGroupData;
+import net.minecraft.world.entity.PathfinderMob;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EntitySpawnReason;
+import net.minecraft.world.entity.AreaEffectCloud;
+import net.minecraft.world.entity.AnimationState;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.DifficultyInstance;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.jimsmineshaft.procedures.CopperDrilledNorthPlaybackConditionProcedure;
+import net.mcreator.jimsmineshaft.procedures.CopperDrilledNorthOnInitialEntitySpawnProcedure;
+import net.mcreator.jimsmineshaft.procedures.CopperDrilledNorthOnEntityTickUpdateProcedure;
+
+import javax.annotation.Nullable;
 
 public class CopperDrilledNorthEntity extends PathfinderMob {
-
 	public static final EntityDataAccessor<Integer> DATA_SkinID = SynchedEntityData.defineId(CopperDrilledNorthEntity.class, EntityDataSerializers.INT);
-
 	public final AnimationState animationState0 = new AnimationState();
 
 	public CopperDrilledNorthEntity(EntityType<CopperDrilledNorthEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
-
 		setPersistenceRequired();
-
 		this.moveControl = new FlyingMoveControl(this, 10, true);
-
 	}
 
 	@Override
@@ -54,7 +86,6 @@ public class CopperDrilledNorthEntity extends PathfinderMob {
 
 	@Override
 	public boolean causeFallDamage(float l, float d, DamageSource source) {
-
 		return false;
 	}
 
@@ -120,7 +151,6 @@ public class CopperDrilledNorthEntity extends PathfinderMob {
 	@Override
 	public void tick() {
 		super.tick();
-
 		if (this.level().isClientSide()) {
 			this.animationState0.animateWhen(CopperDrilledNorthPlaybackConditionProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this), this.tickCount);
 		}
@@ -143,7 +173,6 @@ public class CopperDrilledNorthEntity extends PathfinderMob {
 
 	public void aiStep() {
 		super.aiStep();
-
 		this.setNoGravity(true);
 	}
 
@@ -157,12 +186,8 @@ public class CopperDrilledNorthEntity extends PathfinderMob {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
-
 		builder = builder.add(Attributes.STEP_HEIGHT, 0.6);
-
 		builder = builder.add(Attributes.FLYING_SPEED, 0.3);
-
 		return builder;
 	}
-
 }

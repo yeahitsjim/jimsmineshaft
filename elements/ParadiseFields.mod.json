@@ -12,8 +12,12 @@
     "underwaterBlock": {
       "value": "Blocks.GRAVEL"
     },
+    "airColor": {
+      "value": -65536,
+      "falpha": 0.0
+    },
     "ambientSound": {
-      "value": ""
+      "value": "CUSTOM:paradise_music"
     },
     "additionsSound": {
       "value": ""
