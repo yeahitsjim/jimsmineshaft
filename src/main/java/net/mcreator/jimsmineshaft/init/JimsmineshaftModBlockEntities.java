@@ -38,6 +38,7 @@ import net.mcreator.jimsmineshaft.block.entity.RawCopper24BlockEntity;
 import net.mcreator.jimsmineshaft.block.entity.RawCopper23BlockEntity;
 import net.mcreator.jimsmineshaft.block.entity.RawCopper22BlockEntity;
 import net.mcreator.jimsmineshaft.block.entity.RawCopper210BlockEntity;
+import net.mcreator.jimsmineshaft.block.entity.PlayerLightBlockEntity;
 import net.mcreator.jimsmineshaft.block.entity.NewSuspiciousGravelBlockEntity;
 import net.mcreator.jimsmineshaft.block.entity.NewStrippedDarkOakLogBlockEntity;
 import net.mcreator.jimsmineshaft.block.entity.NewStoneBlockEntity;
@@ -110,6 +111,7 @@ public class JimsmineshaftModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<LightblockBlockEntity>> LIGHTBLOCK = register("lightblock", JimsmineshaftModBlocks.LIGHTBLOCK, LightblockBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<NewGravelBlockEntity>> NEW_GRAVEL = register("new_gravel", JimsmineshaftModBlocks.NEW_GRAVEL, NewGravelBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<MysteryOreBlockEntity>> MYSTERY_ORE = register("mystery_ore", JimsmineshaftModBlocks.MYSTERY_ORE, MysteryOreBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PlayerLightBlockEntity>> PLAYER_LIGHT = register("player_light", JimsmineshaftModBlocks.PLAYER_LIGHT, PlayerLightBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -160,5 +162,6 @@ public class JimsmineshaftModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, LIGHTBLOCK.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, NEW_GRAVEL.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, MYSTERY_ORE.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, PLAYER_LIGHT.get(), SidedInvWrapper::new);
 	}
 }

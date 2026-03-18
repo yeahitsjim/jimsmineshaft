@@ -60,6 +60,7 @@ import net.mcreator.jimsmineshaft.block.RawCopper22Block;
 import net.mcreator.jimsmineshaft.block.RawCopper210Block;
 import net.mcreator.jimsmineshaft.block.PressureDrillHoldableBlock;
 import net.mcreator.jimsmineshaft.block.PressureDrillFoldedModelBlock;
+import net.mcreator.jimsmineshaft.block.PlayerLightBlock;
 import net.mcreator.jimsmineshaft.block.OldCabinetBlock;
 import net.mcreator.jimsmineshaft.block.NewSuspiciousGravelBlock;
 import net.mcreator.jimsmineshaft.block.NewStrippedDarkOakLogBlock;
@@ -225,6 +226,7 @@ public class JimsmineshaftModBlocks {
 	public static final DeferredBlock<Block> CART_RAIL_BROKE_5 = register("cart_rail_broke_5", CartRailBroke5Block::new);
 	public static final DeferredBlock<Block> CART_RAIL_BROKE_6 = register("cart_rail_broke_6", CartRailBroke6Block::new);
 	public static final DeferredBlock<Block> ELEVATOR_LINING = register("elevator_lining", ElevatorLiningBlock::new);
+	public static final DeferredBlock<Block> PLAYER_LIGHT = register("player_light", PlayerLightBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

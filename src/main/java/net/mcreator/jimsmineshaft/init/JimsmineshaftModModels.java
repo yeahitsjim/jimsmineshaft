@@ -69,6 +69,7 @@ import net.mcreator.jimsmineshaft.client.model.ModelMining_Elite_Set_Steel_Toe_B
 import net.mcreator.jimsmineshaft.client.model.ModelMining_Elite_Set_Chestplate;
 import net.mcreator.jimsmineshaft.client.model.ModelMining_Elite_Set_Cargo_Pants;
 import net.mcreator.jimsmineshaft.client.model.ModelMining_Elite_Set_Brodie_Helmet;
+import net.mcreator.jimsmineshaft.client.model.ModelLeech;
 import net.mcreator.jimsmineshaft.client.model.ModelElevator3;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
@@ -127,6 +128,7 @@ public class JimsmineshaftModModels {
 		event.registerLayerDefinition(ModelMining_Elite_Set_Cargo_Pants.LAYER_LOCATION, ModelMining_Elite_Set_Cargo_Pants::createBodyLayer);
 		event.registerLayerDefinition(ModelstalkerInsides.LAYER_LOCATION, ModelstalkerInsides::createBodyLayer);
 		event.registerLayerDefinition(ModelcartPhase10.LAYER_LOCATION, ModelcartPhase10::createBodyLayer);
+		event.registerLayerDefinition(ModelLeech.LAYER_LOCATION, ModelLeech::createBodyLayer);
 		event.registerLayerDefinition(ModelcartPhase7.LAYER_LOCATION, ModelcartPhase7::createBodyLayer);
 		event.registerLayerDefinition(Modelmining_gtrenchcoat.LAYER_LOCATION, Modelmining_gtrenchcoat::createBodyLayer);
 		event.registerLayerDefinition(ModelcartVariant2.LAYER_LOCATION, ModelcartVariant2::createBodyLayer);

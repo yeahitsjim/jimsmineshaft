@@ -454,31 +454,6 @@
       }
     ]
   },
-  "paradise_music": {
-    "sounds": [
-      {
-        "name": "jimsmineshaft:paradise_mineshaft_music",
-        "stream": true
-      }
-    ]
-  },
-  "elevatoractivatemain": {
-    "subtitle": "subtitles.elevatoractivatemain",
-    "sounds": [
-      {
-        "name": "jimsmineshaft:elevatoractivate",
-        "stream": false
-      }
-    ]
-  },
-  "entity.tommy_gun.shoot": {
-    "sounds": [
-      {
-        "name": "jimsmineshaft:tommy_gun",
-        "stream": false
-      }
-    ]
-  },
   "bigdoor3x3": {
     "subtitle": "subtitles.bigdoor3x3",
     "sounds": [
@@ -492,6 +467,15 @@
     "sounds": [
       {
         "name": "jimsmineshaft:elevator7",
+        "stream": false
+      }
+    ]
+  },
+  "elevatoractivatemain": {
+    "subtitle": "subtitles.elevatoractivatemain",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevatoractivate",
         "stream": false
       }
     ]
@@ -544,6 +528,14 @@
       }
     ]
   },
+  "entity.tommy_gun.shoot": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:tommy_gun",
+        "stream": false
+      }
+    ]
+  },
   "elevatorfinished": {
     "sounds": [
       {
@@ -564,6 +556,41 @@
     "sounds": [
       {
         "name": "jimsmineshaft:elevator1",
+        "stream": false
+      }
+    ]
+  },
+  "paradise_music": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:paradise_mineshaft_music",
+        "stream": true
+      }
+    ]
+  },
+  "squishwalk": {
+    "subtitle": "subtitles.squishwalk",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:squishblood",
+        "stream": false
+      }
+    ]
+  },
+  "splat": {
+    "subtitle": "subtitles.splat",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:splat",
+        "stream": false
+      }
+    ]
+  },
+  "slurp": {
+    "subtitle": "subtitles.slurp",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:slurp",
         "stream": false
       }
     ]

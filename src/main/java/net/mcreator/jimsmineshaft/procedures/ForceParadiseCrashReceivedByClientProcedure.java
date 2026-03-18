@@ -1,6 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.client.Minecraft;
+import net.neoforged.bus.api.Event;
 
 public class ForceParadiseCrashReceivedByClientProcedure {
 	public static void execute() {

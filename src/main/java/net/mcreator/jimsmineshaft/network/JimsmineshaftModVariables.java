@@ -88,9 +88,9 @@ public class JimsmineshaftModVariables {
 			clone.playerHoldingDrill = original.playerHoldingDrill;
 			clone.stamina = original.stamina;
 			clone.staminamax = original.staminamax;
-			clone.overlay = original.overlay;
 			clone.darknessOverlay = original.darknessOverlay;
 			clone.elevatorSeatNumber = original.elevatorSeatNumber;
+			clone.overlay = original.overlay;
 			if (!event.isWasDeath()) {
 				clone.analogScreenInx = original.analogScreenInx;
 				clone.paradise_ticks = original.paradise_ticks;
@@ -287,11 +287,11 @@ public class JimsmineshaftModVariables {
 		public double elevatorPlace = 0;
 		public boolean playerHoldingDrill = false;
 		public String analogScreenInx = "\"\"";
-		public double stamina = 100.0;
-		public double staminamax = 100.0;
-		public boolean overlay = true;
+		public double stamina = 300.0;
+		public double staminamax = 300.0;
 		public double darknessOverlay = 0;
 		public double elevatorSeatNumber = 0;
+		public boolean overlay = true;
 		public double paradise_ticks = 0;
 		public boolean sentencedToDeath = false;
 
@@ -318,9 +318,9 @@ public class JimsmineshaftModVariables {
 			nbt.putString("analogScreenInx", analogScreenInx);
 			nbt.putDouble("stamina", stamina);
 			nbt.putDouble("staminamax", staminamax);
-			nbt.putBoolean("overlay", overlay);
 			nbt.putDouble("darknessOverlay", darknessOverlay);
 			nbt.putDouble("elevatorSeatNumber", elevatorSeatNumber);
+			nbt.putBoolean("overlay", overlay);
 			nbt.putDouble("paradise_ticks", paradise_ticks);
 			nbt.putBoolean("sentencedToDeath", sentencedToDeath);
 			return nbt;
@@ -348,9 +348,9 @@ public class JimsmineshaftModVariables {
 			analogScreenInx = nbt.getString("analogScreenInx");
 			stamina = nbt.getDouble("stamina");
 			staminamax = nbt.getDouble("staminamax");
-			overlay = nbt.getBoolean("overlay");
 			darknessOverlay = nbt.getDouble("darknessOverlay");
 			elevatorSeatNumber = nbt.getDouble("elevatorSeatNumber");
+			overlay = nbt.getBoolean("overlay");
 			paradise_ticks = nbt.getDouble("paradise_ticks");
 			sentencedToDeath = nbt.getBoolean("sentencedToDeath");
 		}
