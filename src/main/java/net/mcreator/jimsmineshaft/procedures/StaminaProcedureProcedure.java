@@ -57,7 +57,7 @@ public class StaminaProcedureProcedure {
 					if (entity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES).stamina < entity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES).staminamax) {
 						{
 							JimsmineshaftModVariables.PlayerVariables _vars = entity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES);
-							_vars.stamina = entity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES).stamina + 1;
+							_vars.stamina = entity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES).stamina + entity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES).staminamax * 0.02;
 							_vars.syncPlayerVariables(entity);
 						}
 					}

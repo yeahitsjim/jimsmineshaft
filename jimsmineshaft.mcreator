@@ -10132,6 +10132,229 @@
         ]
       },
       "path": "~/SprintSystem"
+    },
+    {
+      "name": "Leech",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leech",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/LeechRenderer.java",
+          "src/main/resources/data/jimsmineshaft/neoforge/biome_modifier/leech_biome_modifier.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/LeechEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/leech_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "LeechOnCeiling",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leech_on_ceiling",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeechOnCeilingProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "LeechGrab",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leech_grab",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeechGrabProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "LeechAttack",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leech_attack",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeechAttackProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "LeechWalk",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leech_walk",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeechWalkProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Leechfalling",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leechfalling",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeechfallingProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "LeechOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leech_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeechOnEntityTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "LeechAttackcondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leech_attackcondition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeechAttackconditionProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "NoKB",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_kb",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/damage_type/no_kb.json"
+        ]
+      }
+    },
+    {
+      "name": "PlayerLight",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_light",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/player_light.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/player_light.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/player_light.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/PlayerLightBlock.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/player_light.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/PlayerLightBlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/player_light.json"
+        ]
+      }
+    },
+    {
+      "name": "PlayerLightTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_light_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PlayerLightTickProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -10877,6 +11100,30 @@
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "splat",
+      "files": [
+        "splat"
+      ],
+      "category": "player",
+      "subtitle": "splat balls"
+    },
+    {
+      "name": "slurp",
+      "files": [
+        "slurp"
+      ],
+      "category": "player",
+      "subtitle": "gargling balls"
+    },
+    {
+      "name": "squishwalk",
+      "files": [
+        "squishblood"
+      ],
+      "category": "player",
+      "subtitle": "squishy walk "
     }
   ],
   "tag_elements": {
@@ -10962,6 +11209,9 @@
     ],
     "BLOCKS:minecraft:replaceable": [
       "~CUSTOM:Flashlightb1"
+    ],
+    "DAMAGE_TYPES:minecraft:no_knockback": [
+      "CUSTOM:NoKB"
     ]
   },
   "tab_element_order": {},
@@ -11244,7 +11494,16 @@
       "item.jimsmineshaft.cart_rail_broke_5": "Cart Rail Broken 5",
       "item.jimsmineshaft.cart_rail_broke_6": "Cart Rail Broken 6",
       "item.jimsmineshaft.elevator_lining": "Elevator Lining",
-      "gui.jimsmineshaft.interactive_overlay.label_to_open": "to interact"
+      "gui.jimsmineshaft.interactive_overlay.label_to_open": "to interact",
+      "item.jimsmineshaft.leech_spawn_egg": "Leech Spawn Egg",
+      "entity.jimsmineshaft.leech": "Leech",
+      "death.attack.no_kb": "%1$s\u0027s blood was drained by a leech",
+      "death.attack.no_kb.player": "%1$s\u0027s blood was drained while trying to escape %2$s",
+      "death.attack.no_kb.item": "%1$s\u0027s blood was drained with %2$s using %3$s",
+      "subtitles.splat": "splat balls",
+      "subtitles.slurp": "gargling balls",
+      "subtitles.squishwalk": "squishy walk ",
+      "item.jimsmineshaft.player_light": "Lightblock"
     }
   },
   "metadata": {
@@ -11356,8 +11615,11 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "nexus_compiler"
+    ],
     "currentGenerator": "neoforge-1.21.4",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.jimsmineshaft"
   },
   "mcreatorVersion": 202500228610

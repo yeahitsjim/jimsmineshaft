@@ -219,6 +219,8 @@ public class JimsmineshaftModItems {
 	public static final DeferredItem<Item> CART_RAIL_BROKE_5 = block(JimsmineshaftModBlocks.CART_RAIL_BROKE_5);
 	public static final DeferredItem<Item> CART_RAIL_BROKE_6 = block(JimsmineshaftModBlocks.CART_RAIL_BROKE_6);
 	public static final DeferredItem<Item> ELEVATOR_LINING = block(JimsmineshaftModBlocks.ELEVATOR_LINING);
+	public static final DeferredItem<Item> LEECH_SPAWN_EGG = register("leech_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.LEECH.get(), properties));
+	public static final DeferredItem<Item> PLAYER_LIGHT = block(JimsmineshaftModBlocks.PLAYER_LIGHT);
 
 	// Start of user code block custom items
 	// End of user code block custom items

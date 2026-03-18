@@ -276,5 +276,14 @@
   "item.jimsmineshaft.cart_rail_broke_5": "Cart Rail Broken 5",
   "item.jimsmineshaft.cart_rail_broke_6": "Cart Rail Broken 6",
   "item.jimsmineshaft.elevator_lining": "Elevator Lining",
-  "gui.jimsmineshaft.interactive_overlay.label_to_open": "to interact"
+  "gui.jimsmineshaft.interactive_overlay.label_to_open": "to interact",
+  "item.jimsmineshaft.leech_spawn_egg": "Leech Spawn Egg",
+  "entity.jimsmineshaft.leech": "Leech",
+  "death.attack.no_kb": "%1$s\u0027s blood was drained by a leech",
+  "death.attack.no_kb.player": "%1$s\u0027s blood was drained while trying to escape %2$s",
+  "death.attack.no_kb.item": "%1$s\u0027s blood was drained with %2$s using %3$s",
+  "subtitles.splat": "splat balls",
+  "subtitles.slurp": "gargling balls",
+  "subtitles.squishwalk": "squishy walk ",
+  "item.jimsmineshaft.player_light": "Lightblock"
 }

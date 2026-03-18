@@ -82,4 +82,7 @@ public class JimsmineshaftModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> ELEVATORFINISHED = REGISTRY.register("elevatorfinished", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "elevatorfinished")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> ELEVATORACTIVATEALT = REGISTRY.register("elevatoractivatealt", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "elevatoractivatealt")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> ELEVATOR1 = REGISTRY.register("elevator1", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "elevator1")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> SPLAT = REGISTRY.register("splat", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "splat")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> SLURP = REGISTRY.register("slurp", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "slurp")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> SQUISHWALK = REGISTRY.register("squishwalk", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "squishwalk")));
 }

@@ -23,6 +23,7 @@ import net.mcreator.jimsmineshaft.client.renderer.PressureDrillRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.PressureDrillFoldedRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.PlayerStalkierRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.LeftgateRenderer;
+import net.mcreator.jimsmineshaft.client.renderer.LeechRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.HoleEntityRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.FlashlightentityRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.ElevatorSeat8Renderer;
@@ -78,5 +79,6 @@ public class JimsmineshaftModEntityRenderers {
 		event.registerEntityRenderer(JimsmineshaftModEntities.STALKER_INSIDES_2.get(), StalkerInsides2Renderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.SKIN_STEALER_ENTITY.get(), SkinStealerEntityRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.SMALL_SLIDE_UP_GATE_ENTITY.get(), SmallSlideUpGateEntityRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.LEECH.get(), LeechRenderer::new);
 	}
 }

@@ -559,5 +559,32 @@
         "stream": false
       }
     ]
+  },
+  "splat": {
+    "subtitle": "subtitles.splat",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:splat",
+        "stream": false
+      }
+    ]
+  },
+  "slurp": {
+    "subtitle": "subtitles.slurp",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:slurp",
+        "stream": false
+      }
+    ]
+  },
+  "squishwalk": {
+    "subtitle": "subtitles.squishwalk",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:squishblood",
+        "stream": false
+      }
+    ]
   }
 }

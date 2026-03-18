@@ -33,6 +33,7 @@ import net.mcreator.jimsmineshaft.entity.PressureDrillFoldedEntity;
 import net.mcreator.jimsmineshaft.entity.PressureDrillEntity;
 import net.mcreator.jimsmineshaft.entity.PlayerStalkierEntity;
 import net.mcreator.jimsmineshaft.entity.LeftgateEntity;
+import net.mcreator.jimsmineshaft.entity.LeechEntity;
 import net.mcreator.jimsmineshaft.entity.HoleEntityEntity;
 import net.mcreator.jimsmineshaft.entity.FlashlightentityEntity;
 import net.mcreator.jimsmineshaft.entity.ElevatorSeat8Entity;
@@ -177,6 +178,10 @@ public class JimsmineshaftModEntities {
 			EntityType.Builder.<SmallSlideUpGateEntityEntity>of(SmallSlideUpGateEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
 					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<LeechEntity>> LEECH = register("leech",
+			EntityType.Builder.<LeechEntity>of(LeechEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(1f, 1f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -225,6 +230,7 @@ public class JimsmineshaftModEntities {
 		StalkerInsides2Entity.init(event);
 		SkinStealerEntityEntity.init(event);
 		SmallSlideUpGateEntityEntity.init(event);
+		LeechEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -260,5 +266,6 @@ public class JimsmineshaftModEntities {
 		event.put(STALKER_INSIDES_2.get(), StalkerInsides2Entity.createAttributes().build());
 		event.put(SKIN_STEALER_ENTITY.get(), SkinStealerEntityEntity.createAttributes().build());
 		event.put(SMALL_SLIDE_UP_GATE_ENTITY.get(), SmallSlideUpGateEntityEntity.createAttributes().build());
+		event.put(LEECH.get(), LeechEntity.createAttributes().build());
 	}
 }
