@@ -127,7 +127,7 @@ public class ElevatorEntity extends PathfinderMob {
 	@Override
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, EntitySpawnReason reason, @Nullable SpawnGroupData livingdata) {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata);
-		ElevatorOnInitialEntitySpawnProcedure.execute(world, this.getX(), this.getY(), this.getZ());
+		ElevatorOnInitialEntitySpawnProcedure.execute(world, this.getX(), this.getY(), this.getZ(), this);
 		return retval;
 	}
 
@@ -158,7 +158,7 @@ public class ElevatorEntity extends PathfinderMob {
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		ElevatorOnEntityTickUpdateProcedure.execute(this);
+		ElevatorOnEntityTickUpdateProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	@Override

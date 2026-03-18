@@ -70,7 +70,7 @@ public class StalkerInsidesEntity extends PathfinderMob {
 	@Override
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, EntitySpawnReason reason, @Nullable SpawnGroupData livingdata) {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata);
-		StalkerInsides2OnInitialEntitySpawnProcedure.execute(this);
+		StalkerInsides2OnInitialEntitySpawnProcedure.execute(world, this);
 		return retval;
 	}
 

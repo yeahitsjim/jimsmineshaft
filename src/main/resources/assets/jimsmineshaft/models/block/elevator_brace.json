@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/elevatorbrace2",
+  "textures": {
+    "all": "jimsmineshaft:block/textureelevatorbracedone",
+    "particle": "jimsmineshaft:block/textureelevatorbracedone",
+    "0": "jimsmineshaft:block/textureelevatorbracedone"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/bottle",
+  "textures": {
+    "all": "jimsmineshaft:block/bottle",
+    "particle": "jimsmineshaft:block/bottle",
+    "0": "jimsmineshaft:block/bottle"
+  },
+  "render_type": "translucent"
+}

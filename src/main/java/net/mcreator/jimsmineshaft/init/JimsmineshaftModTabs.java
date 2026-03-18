@@ -140,6 +140,26 @@ public class JimsmineshaftModTabs {
 				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_CATWALK_SUPPORTED.get().asItem());
 				tabData.accept(JimsmineshaftModItems.TOMMY_GUN.get());
 				tabData.accept(JimsmineshaftModBlocks.RUSTED_IRON_RAILING_CORNER.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.MYSTERY_ORE.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.ELEVATORLIGHT.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.ELEVATOR_CROSSBAR_SUPPORT.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.FLASHLIGHTB_1.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.BOTTLE.get().asItem());
+				tabData.accept(JimsmineshaftModItems.GREASE_GUN.get());
+				tabData.accept(JimsmineshaftModBlocks.ELEVATOR_LINING_CORNER_RIGHT.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.ELEVATOR_LINING_CORNER_LEFT.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.ELEVATOR_BRACE.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.ELEVATOR_WHEEL.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.CART_RAIL_BROKE_1.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.ELEVATORLIGHTMIDBLOCK.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.CART_RAIL_BROKE_2.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.CART_RAIL_BROKE_3.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.ELEVATOR_PIPES.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.ELEVATOR_LINING_CORNER_MIDDLE.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.CART_RAIL_BROKE_4.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.CART_RAIL_BROKE_5.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.CART_RAIL_BROKE_6.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.ELEVATOR_LINING.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

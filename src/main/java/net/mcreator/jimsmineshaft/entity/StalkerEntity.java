@@ -2,6 +2,7 @@ package net.mcreator.jimsmineshaft.entity;
 
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 
+import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.npc.Villager;
@@ -14,12 +15,15 @@ import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.SpawnGroupData;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EntitySpawnReason;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.AnimationState;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.DifficultyInstance;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.syncher.SynchedEntityData;
@@ -33,8 +37,11 @@ import net.mcreator.jimsmineshaft.procedures.StalkerPlaybackConditionTransformAn
 import net.mcreator.jimsmineshaft.procedures.StalkerPlaybackConditionImpaleSuccessProcedure;
 import net.mcreator.jimsmineshaft.procedures.StalkerPlaybackConditionImpaleStartPoseProcedure;
 import net.mcreator.jimsmineshaft.procedures.StalkerPlaybackConditionImpaleFailProcedure;
+import net.mcreator.jimsmineshaft.procedures.StalkerOnInitialEntitySpawnProcedure;
 import net.mcreator.jimsmineshaft.procedures.StalkerOnEntityTickUpdateProcedure;
 import net.mcreator.jimsmineshaft.procedures.StalkerDisplayCondition0Procedure;
+
+import javax.annotation.Nullable;
 
 public class StalkerEntity extends Monster {
 	public static final EntityDataAccessor<Integer> DATA_transition = SynchedEntityData.defineId(StalkerEntity.class, EntityDataSerializers.INT);
@@ -147,6 +154,13 @@ public class StalkerEntity extends Monster {
 	@Override
 	public SoundEvent getDeathSound() {
 		return BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("entity.villager.death"));
+	}
+
+	@Override
+	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, EntitySpawnReason reason, @Nullable SpawnGroupData livingdata) {
+		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata);
+		StalkerOnInitialEntitySpawnProcedure.execute(world, this.getX(), this.getY(), this.getZ(), this);
+		return retval;
 	}
 
 	@Override

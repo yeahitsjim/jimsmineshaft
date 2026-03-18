@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jimsmineshaft:block/elevator_lining_corner_right"
+    },
+    "facing=east": {
+      "model": "jimsmineshaft:block/elevator_lining_corner_right",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jimsmineshaft:block/elevator_lining_corner_right",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jimsmineshaft:block/elevator_lining_corner_right",
+      "y": 270
+    }
+  }
+}

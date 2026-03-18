@@ -88,8 +88,13 @@ public class JimsmineshaftModVariables {
 			clone.playerHoldingDrill = original.playerHoldingDrill;
 			clone.stamina = original.stamina;
 			clone.staminamax = original.staminamax;
+			clone.overlay = original.overlay;
+			clone.darknessOverlay = original.darknessOverlay;
+			clone.elevatorSeatNumber = original.elevatorSeatNumber;
 			if (!event.isWasDeath()) {
 				clone.analogScreenInx = original.analogScreenInx;
+				clone.paradise_ticks = original.paradise_ticks;
+				clone.sentencedToDeath = original.sentencedToDeath;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -284,6 +289,11 @@ public class JimsmineshaftModVariables {
 		public String analogScreenInx = "\"\"";
 		public double stamina = 100.0;
 		public double staminamax = 100.0;
+		public boolean overlay = true;
+		public double darknessOverlay = 0;
+		public double elevatorSeatNumber = 0;
+		public double paradise_ticks = 0;
+		public boolean sentencedToDeath = false;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -308,6 +318,11 @@ public class JimsmineshaftModVariables {
 			nbt.putString("analogScreenInx", analogScreenInx);
 			nbt.putDouble("stamina", stamina);
 			nbt.putDouble("staminamax", staminamax);
+			nbt.putBoolean("overlay", overlay);
+			nbt.putDouble("darknessOverlay", darknessOverlay);
+			nbt.putDouble("elevatorSeatNumber", elevatorSeatNumber);
+			nbt.putDouble("paradise_ticks", paradise_ticks);
+			nbt.putBoolean("sentencedToDeath", sentencedToDeath);
 			return nbt;
 		}
 
@@ -333,6 +348,11 @@ public class JimsmineshaftModVariables {
 			analogScreenInx = nbt.getString("analogScreenInx");
 			stamina = nbt.getDouble("stamina");
 			staminamax = nbt.getDouble("staminamax");
+			overlay = nbt.getBoolean("overlay");
+			darknessOverlay = nbt.getDouble("darknessOverlay");
+			elevatorSeatNumber = nbt.getDouble("elevatorSeatNumber");
+			paradise_ticks = nbt.getDouble("paradise_ticks");
+			sentencedToDeath = nbt.getBoolean("sentencedToDeath");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

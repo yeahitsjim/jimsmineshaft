@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/elevatorbracecorner",
+  "textures": {
+    "all": "jimsmineshaft:block/textureliningcornertextures",
+    "particle": "jimsmineshaft:block/textureliningcornertextures",
+    "0": "jimsmineshaft:block/textureliningcornertextures"
+  },
+  "render_type": "solid"
+}

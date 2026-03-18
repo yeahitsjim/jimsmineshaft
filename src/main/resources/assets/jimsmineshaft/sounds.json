@@ -461,5 +461,111 @@
         "stream": true
       }
     ]
+  },
+  "elevatoractivatemain": {
+    "subtitle": "subtitles.elevatoractivatemain",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevatoractivate",
+        "stream": false
+      }
+    ]
+  },
+  "entity.tommy_gun.shoot": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:tommy_gun",
+        "stream": false
+      }
+    ]
+  },
+  "bigdoor3x3": {
+    "subtitle": "subtitles.bigdoor3x3",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:3x3doormono",
+        "stream": false
+      }
+    ]
+  },
+  "elevator7": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevator7",
+        "stream": false
+      }
+    ]
+  },
+  "elevator6": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevator6",
+        "stream": false
+      }
+    ]
+  },
+  "elevator8": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevator8",
+        "stream": false
+      }
+    ]
+  },
+  "elevator3": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevator3",
+        "stream": false
+      }
+    ]
+  },
+  "elevator2": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevator2",
+        "stream": false
+      }
+    ]
+  },
+  "elevator5": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevator5",
+        "stream": false
+      }
+    ]
+  },
+  "elevator4": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevator4",
+        "stream": false
+      }
+    ]
+  },
+  "elevatorfinished": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevatordone",
+        "stream": false
+      }
+    ]
+  },
+  "elevatoractivatealt": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevatoractivatealternate",
+        "stream": false
+      }
+    ]
+  },
+  "elevator1": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevator1",
+        "stream": false
+      }
+    ]
   }
 }

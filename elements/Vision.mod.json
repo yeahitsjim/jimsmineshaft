@@ -224,6 +224,9 @@
         "value": 0
       }
     ],
+    "whenMobIsHurt": {
+      "name": "VisionEntityIsHurt"
+    },
     "onMobTickUpdate": {
       "name": "VisionOnEntityTickUpdate"
     },

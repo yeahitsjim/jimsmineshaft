@@ -17,7 +17,7 @@
     ],
     "stackSize": 1,
     "enchantability": 0,
-    "useDuration": 0,
+    "useDuration": 8,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -30,20 +30,32 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "Crouch+Left Click to reload",
+        "Hold Right Click to shoot"
+      ]
     },
     "glowCondition": {
       "fixedValue": false
     },
-    "inventorySize": 9,
-    "inventoryStackSize": 99,
-    "enableRanged": false,
-    "shootConstantly": false,
+    "inventorySize": 1,
+    "inventoryStackSize": 60,
+    "onEntitySwing": {
+      "name": "TommyGunEntitySwingsItem"
+    },
+    "enableRanged": true,
+    "shootConstantly": true,
     "rangedItemChargesPower": false,
     "projectile": {
-      "value": "Arrow"
+      "value": "CUSTOM:BulletProjectile"
     },
-    "projectileDisableAmmoCheck": false,
+    "projectileDisableAmmoCheck": true,
+    "onRangedItemUsed": {
+      "name": "TommyGunRangedItemShootsProjectile"
+    },
+    "rangedUseCondition": {
+      "name": "TommyGunCanUseRangedItem"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

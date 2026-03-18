@@ -39,6 +39,7 @@ import net.mcreator.jimsmineshaft.procedures.VisionPlaybackConditionTweak1Proced
 import net.mcreator.jimsmineshaft.procedures.VisionPlaybackConditionSpasm2Procedure;
 import net.mcreator.jimsmineshaft.procedures.VisionPlaybackConditionSpasm1Procedure;
 import net.mcreator.jimsmineshaft.procedures.VisionOnEntityTickUpdateProcedure;
+import net.mcreator.jimsmineshaft.procedures.VisionEntityIsHurtProcedure;
 
 public class VisionEntity extends Monster {
 	public static final EntityDataAccessor<Integer> DATA_tweakPose = SynchedEntityData.defineId(VisionEntity.class, EntityDataSerializers.INT);
@@ -102,6 +103,15 @@ public class VisionEntity extends Monster {
 
 	@Override
 	public boolean hurtServer(ServerLevel level, DamageSource damagesource, float amount) {
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Level world = this.level();
+		Entity entity = this;
+		Entity sourceentity = damagesource.getEntity();
+		Entity immediatesourceentity = damagesource.getDirectEntity();
+		if (!VisionEntityIsHurtProcedure.execute(damagesource))
+			return false;
 		if (damagesource.is(DamageTypes.IN_FIRE))
 			return false;
 		if (damagesource.getDirectEntity() instanceof AbstractArrow)

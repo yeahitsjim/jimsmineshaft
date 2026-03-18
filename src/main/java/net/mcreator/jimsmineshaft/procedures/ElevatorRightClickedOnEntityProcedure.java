@@ -8,7 +8,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
@@ -43,41 +42,81 @@ public class ElevatorRightClickedOnEntityProcedure {
 						if (entityiterator instanceof ElevatorSeat1Entity) {
 							if (!entityiterator.isVehicle()) {
 								sourceentity.startRiding(entityiterator);
+								{
+									JimsmineshaftModVariables.PlayerVariables _vars = sourceentity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES);
+									_vars.elevatorSeatNumber = 1;
+									_vars.syncPlayerVariables(sourceentity);
+								}
 							}
 						}
 						if (entityiterator instanceof ElevatorSeat2Entity) {
 							if (!entityiterator.isVehicle()) {
 								sourceentity.startRiding(entityiterator);
+								{
+									JimsmineshaftModVariables.PlayerVariables _vars = sourceentity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES);
+									_vars.elevatorSeatNumber = 2;
+									_vars.syncPlayerVariables(sourceentity);
+								}
 							}
 						}
 						if (entityiterator instanceof ElevatorSeat3Entity) {
 							if (!entityiterator.isVehicle()) {
 								sourceentity.startRiding(entityiterator);
+								{
+									JimsmineshaftModVariables.PlayerVariables _vars = sourceentity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES);
+									_vars.elevatorSeatNumber = 3;
+									_vars.syncPlayerVariables(sourceentity);
+								}
 							}
 						}
 						if (entityiterator instanceof ElevatorSeat4Entity) {
 							if (!entityiterator.isVehicle()) {
 								sourceentity.startRiding(entityiterator);
+								{
+									JimsmineshaftModVariables.PlayerVariables _vars = sourceentity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES);
+									_vars.elevatorSeatNumber = 4;
+									_vars.syncPlayerVariables(sourceentity);
+								}
 							}
 						}
 						if (entityiterator instanceof ElevatorSeat5Entity) {
 							if (!entityiterator.isVehicle()) {
 								sourceentity.startRiding(entityiterator);
+								{
+									JimsmineshaftModVariables.PlayerVariables _vars = sourceentity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES);
+									_vars.elevatorSeatNumber = 5;
+									_vars.syncPlayerVariables(sourceentity);
+								}
 							}
 						}
 						if (entityiterator instanceof ElevatorSeat6Entity) {
 							if (!entityiterator.isVehicle()) {
 								sourceentity.startRiding(entityiterator);
+								{
+									JimsmineshaftModVariables.PlayerVariables _vars = sourceentity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES);
+									_vars.elevatorSeatNumber = 6;
+									_vars.syncPlayerVariables(sourceentity);
+								}
 							}
 						}
 						if (entityiterator instanceof ElevatorSeat7Entity) {
 							if (!entityiterator.isVehicle()) {
 								sourceentity.startRiding(entityiterator);
+								{
+									JimsmineshaftModVariables.PlayerVariables _vars = sourceentity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES);
+									_vars.elevatorSeatNumber = 7;
+									_vars.syncPlayerVariables(sourceentity);
+								}
 							}
 						}
 						if (entityiterator instanceof ElevatorSeat8Entity) {
 							if (!entityiterator.isVehicle()) {
 								sourceentity.startRiding(entityiterator);
+								{
+									JimsmineshaftModVariables.PlayerVariables _vars = sourceentity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES);
+									_vars.elevatorSeatNumber = 8;
+									_vars.syncPlayerVariables(sourceentity);
+								}
 							}
 						}
 					}
@@ -92,7 +131,7 @@ public class ElevatorRightClickedOnEntityProcedure {
 						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:elevatoropen")), SoundSource.NEUTRAL, 1, 1, false);
 					}
 				}
-				JimsmineshaftMod.queueServerWork(30, () -> {
+				JimsmineshaftMod.queueServerWork(60, () -> {
 					sourceentity.getPersistentData().putBoolean("inElevator", true);
 					{
 						JimsmineshaftModVariables.PlayerVariables _vars = sourceentity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES);
@@ -106,41 +145,81 @@ public class ElevatorRightClickedOnEntityProcedure {
 							if (entityiterator instanceof ElevatorSeat1Entity) {
 								if (!entityiterator.isVehicle()) {
 									sourceentity.startRiding(entityiterator);
+									{
+										JimsmineshaftModVariables.PlayerVariables _vars = sourceentity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES);
+										_vars.elevatorSeatNumber = 1;
+										_vars.syncPlayerVariables(sourceentity);
+									}
 								}
 							}
 							if (entityiterator instanceof ElevatorSeat2Entity) {
 								if (!entityiterator.isVehicle()) {
 									sourceentity.startRiding(entityiterator);
+									{
+										JimsmineshaftModVariables.PlayerVariables _vars = sourceentity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES);
+										_vars.elevatorSeatNumber = 2;
+										_vars.syncPlayerVariables(sourceentity);
+									}
 								}
 							}
 							if (entityiterator instanceof ElevatorSeat3Entity) {
 								if (!entityiterator.isVehicle()) {
 									sourceentity.startRiding(entityiterator);
+									{
+										JimsmineshaftModVariables.PlayerVariables _vars = sourceentity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES);
+										_vars.elevatorSeatNumber = 3;
+										_vars.syncPlayerVariables(sourceentity);
+									}
 								}
 							}
 							if (entityiterator instanceof ElevatorSeat4Entity) {
 								if (!entityiterator.isVehicle()) {
 									sourceentity.startRiding(entityiterator);
+									{
+										JimsmineshaftModVariables.PlayerVariables _vars = sourceentity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES);
+										_vars.elevatorSeatNumber = 4;
+										_vars.syncPlayerVariables(sourceentity);
+									}
 								}
 							}
 							if (entityiterator instanceof ElevatorSeat5Entity) {
 								if (!entityiterator.isVehicle()) {
 									sourceentity.startRiding(entityiterator);
+									{
+										JimsmineshaftModVariables.PlayerVariables _vars = sourceentity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES);
+										_vars.elevatorSeatNumber = 5;
+										_vars.syncPlayerVariables(sourceentity);
+									}
 								}
 							}
 							if (entityiterator instanceof ElevatorSeat6Entity) {
 								if (!entityiterator.isVehicle()) {
 									sourceentity.startRiding(entityiterator);
+									{
+										JimsmineshaftModVariables.PlayerVariables _vars = sourceentity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES);
+										_vars.elevatorSeatNumber = 6;
+										_vars.syncPlayerVariables(sourceentity);
+									}
 								}
 							}
 							if (entityiterator instanceof ElevatorSeat7Entity) {
 								if (!entityiterator.isVehicle()) {
 									sourceentity.startRiding(entityiterator);
+									{
+										JimsmineshaftModVariables.PlayerVariables _vars = sourceentity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES);
+										_vars.elevatorSeatNumber = 7;
+										_vars.syncPlayerVariables(sourceentity);
+									}
 								}
 							}
 							if (entityiterator instanceof ElevatorSeat8Entity) {
 								if (!entityiterator.isVehicle()) {
 									sourceentity.startRiding(entityiterator);
+									{
+										JimsmineshaftModVariables.PlayerVariables _vars = sourceentity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES);
+										_vars.elevatorSeatNumber = 8;
+										_vars.syncPlayerVariables(sourceentity);
+									}
 								}
 							}
 						}
@@ -160,8 +239,6 @@ public class ElevatorRightClickedOnEntityProcedure {
 				_vars.elevatorPlace = entity.getPersistentData().getDouble("playerCount");
 				_vars.syncPlayerVariables(sourceentity);
 			}
-			if (!world.isClientSide() && world.getServer() != null)
-				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("Message"), false);
 		}
 	}
 }

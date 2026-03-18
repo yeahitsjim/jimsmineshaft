@@ -59,6 +59,9 @@ public class VisionOnEntityTickUpdateProcedure {
 								_vars.analogScreenInx = "";
 								_vars.syncPlayerVariables(target);
 							}
+							entity.getPersistentData().putDouble("ReturnX", (target.getX()));
+							entity.getPersistentData().putDouble("ReturnY", (target.getY()));
+							entity.getPersistentData().putDouble("ReturnZ", (target.getZ()));
 							{
 								Entity _ent = target;
 								if (!_ent.level().isClientSide() && _ent.getServer() != null) {
@@ -164,7 +167,7 @@ public class VisionOnEntityTickUpdateProcedure {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 5, 0, false, false));
 				entity.getPersistentData().putDouble("Cooldown", (entity.getPersistentData().getDouble("Cooldown") + 1));
-				if (entity.getPersistentData().getDouble("Cooldown") > Mth.nextInt(RandomSource.create(), 50, 200)) {
+				if (entity.getPersistentData().getDouble("Cooldown") > Mth.nextInt(RandomSource.create(), 600, 10000)) {
 					testX = target.getX() + target.getLookAngle().x * (-10);
 					testY = Math.floor(target.getY() + target.getLookAngle().y * (-10));
 					testZ = target.getZ() + target.getLookAngle().z * (-10);

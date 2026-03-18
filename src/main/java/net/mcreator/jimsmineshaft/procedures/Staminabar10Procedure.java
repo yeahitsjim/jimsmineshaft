@@ -8,7 +8,7 @@ public class Staminabar10Procedure {
 	public static boolean execute(Entity entity) {
 		if (entity == null)
 			return false;
-		if (entity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES).stamina > 0.5 && entity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES).stamina > entity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES).staminamax * 1) {
+		if (entity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES).stamina > 0.5 && entity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES).stamina == entity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES).staminamax * 1) {
 			return true;
 		}
 		return false;

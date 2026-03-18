@@ -119,9 +119,9 @@ public class BigGateOnEntityTickUpdateProcedure {
 			if ((entity instanceof BigGateEntity _datEntL26 && _datEntL26.getEntityData().get(BigGateEntity.DATA_opening)) == false) {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:bigdoor")), SoundSource.NEUTRAL, (float) 0.7, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:bigdoor3x3")), SoundSource.NEUTRAL, (float) 0.7, 1);
 					} else {
-						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:bigdoor")), SoundSource.NEUTRAL, (float) 0.7, 1, false);
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:bigdoor3x3")), SoundSource.NEUTRAL, (float) 0.7, 1, false);
 					}
 				}
 				if (entity instanceof BigGateEntity _datEntSetL)
@@ -135,9 +135,9 @@ public class BigGateOnEntityTickUpdateProcedure {
 			if ((entity instanceof BigGateEntity _datEntL31 && _datEntL31.getEntityData().get(BigGateEntity.DATA_opening2)) == false) {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:bigdoor")), SoundSource.NEUTRAL, (float) 0.7, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:bigdoor3x3")), SoundSource.NEUTRAL, (float) 0.7, 1);
 					} else {
-						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:bigdoor")), SoundSource.NEUTRAL, (float) 0.7, 1, false);
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:bigdoor3x3")), SoundSource.NEUTRAL, (float) 0.7, 1, false);
 					}
 				}
 				if (entity instanceof BigGateEntity _datEntSetL)

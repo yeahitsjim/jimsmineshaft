@@ -21,6 +21,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.jimsmineshaft.procedures.LightblockBlockAddedProcedure;
+import net.mcreator.jimsmineshaft.procedures.LightblockBlockAdded2Procedure;
 import net.mcreator.jimsmineshaft.block.entity.LightblockBlockEntity;
 
 public class LightblockBlock extends Block implements EntityBlock {
@@ -47,6 +48,7 @@ public class LightblockBlock extends Block implements EntityBlock {
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
 		world.scheduleTick(pos, this, 1);
+		LightblockBlockAdded2Procedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

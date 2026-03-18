@@ -178,25 +178,29 @@ public class SkinStealerEntityEntityIsHurtProcedure {
 									if (world instanceof ServerLevel _level)
 										_level.sendParticles(ParticleTypes.CLOUD, (entity.getX()), (entity.getY() + 0.9), (entity.getZ()), 25, 0.2, 0.4, 0.2, 0.2);
 									JimsmineshaftMod.queueServerWork(4, () -> {
+										if (world instanceof ServerLevel _level) {
+											Entity entityToSpawn = JimsmineshaftModEntities.STALKER.get().spawn(_level, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), EntitySpawnReason.MOB_SUMMONED);
+											if (entityToSpawn != null) {
+												entityToSpawn.setYRot(entity.getYRot() + 0);
+												entityToSpawn.setYBodyRot(entity.getYRot() + 0);
+												entityToSpawn.setYHeadRot(entity.getYRot() + 0);
+												entityToSpawn.setXRot(entity.getXRot());
+												entityToSpawn.setDeltaMovement(0, 0, 0);
+											}
+										}
 										if (world instanceof ServerLevel _level)
 											_level.sendParticles(ParticleTypes.ASH, (entity.getX()), (entity.getY() + 0.9), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 										if (world instanceof ServerLevel _level)
 											_level.sendParticles(ParticleTypes.CLOUD, (entity.getX()), (entity.getY() + 0.75), (entity.getZ()), 25, 0.2, 0.4, 0.2, 0.2);
+										if (world instanceof ServerLevel _level)
+											_level.sendParticles(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, (entity.getX()), (entity.getY() + 0.75), (entity.getZ()), 50, 0.2, 0.4, 0.2, 1);
+										if (!entity.level().isClientSide())
+											entity.discard();
 										JimsmineshaftMod.queueServerWork(4, () -> {
 											if (world instanceof ServerLevel _level)
 												_level.sendParticles(ParticleTypes.ASH, (entity.getX()), (entity.getY() + 0.9), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
 											if (world instanceof ServerLevel _level)
 												_level.sendParticles(ParticleTypes.CLOUD, (entity.getX()), (entity.getY() + 0.75), (entity.getZ()), 25, 0.2, 0.4, 0.2, 0.2);
-											if (world instanceof ServerLevel _level) {
-												Entity entityToSpawn = JimsmineshaftModEntities.STALKER.get().spawn(_level, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), EntitySpawnReason.MOB_SUMMONED);
-												if (entityToSpawn != null) {
-													entityToSpawn.setYRot(entity.getYRot() + 180);
-													entityToSpawn.setYBodyRot(entity.getYRot() + 180);
-													entityToSpawn.setYHeadRot(entity.getYRot() + 180);
-													entityToSpawn.setXRot(entity.getXRot());
-													entityToSpawn.setDeltaMovement(0, 0, 0);
-												}
-											}
 											JimsmineshaftMod.queueServerWork(4, () -> {
 												if (world instanceof ServerLevel _level)
 													_level.sendParticles(ParticleTypes.ASH, (entity.getX()), (entity.getY() + 0.9), (entity.getZ()), 50, 0.2, 0.4, 0.2, 0.2);
