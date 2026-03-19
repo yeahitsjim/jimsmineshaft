@@ -268,5 +268,11 @@
   "subtitles.paradise_music": "",
   "subtitles.slurp": "gargling balls",
   "subtitles.squishwalk": "squishy walk ",
-  "subtitles.splat": "splat balls"
+  "subtitles.splat": "splat balls",
+  "item.jimsmineshaft.player_light": "Lightblock",
+  "death.attack.no_kb": "%1$s\u0027s blood was drained by a leech",
+  "death.attack.no_kb.player": "%1$s\u0027s blood was drained while trying to escape %2$s",
+  "death.attack.no_kb.item": "%1$s\u0027s blood was drained with %2$s using %3$s",
+  "item.jimsmineshaft.leech_spawn_egg": "Leech Spawn Egg",
+  "entity.jimsmineshaft.leech": "Leech"
 }

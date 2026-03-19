@@ -1,6 +1,9 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.tags.TagKey;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
 
 public class VisionEntityIsHurtProcedure {
 	public static boolean execute(DamageSource damagesource) {

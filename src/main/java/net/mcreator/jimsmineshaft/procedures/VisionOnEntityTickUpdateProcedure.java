@@ -5,6 +5,7 @@ import net.neoforged.neoforge.network.PacketDistributor;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.GameRules;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
@@ -24,6 +25,7 @@ import net.minecraft.commands.CommandSource;
 import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
 import net.mcreator.jimsmineshaft.network.FreezeClientMessage;
 import net.mcreator.jimsmineshaft.entity.VisionEntity;
+import net.mcreator.jimsmineshaft.JimsmineshaftMod;
 
 import java.util.UUID;
 import java.util.ArrayList;
@@ -59,26 +61,41 @@ public class VisionOnEntityTickUpdateProcedure {
 								_vars.analogScreenInx = "";
 								_vars.syncPlayerVariables(target);
 							}
-							entity.getPersistentData().putDouble("ReturnX", (target.getX()));
-							entity.getPersistentData().putDouble("ReturnY", (target.getY()));
-							entity.getPersistentData().putDouble("ReturnZ", (target.getZ()));
+							if (world instanceof ServerLevel _serverLevel)
+								_serverLevel.getGameRules().getRule(GameRules.RULE_DO_IMMEDIATE_RESPAWN).set(true, world.getServer());
+							{
+								JimsmineshaftModVariables.PlayerVariables _vars = target.getData(JimsmineshaftModVariables.PLAYER_VARIABLES);
+								_vars.banishedToParadise = true;
+								_vars.syncPlayerVariables(target);
+							}
 							{
 								Entity _ent = target;
 								if (!_ent.level().isClientSide() && _ent.getServer() != null) {
 									_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null,
-											4, _ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "execute in jimsmineshaft:paradise run spreadplayers 0 0 0 50 false @s");
+											4, _ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "kill");
 								}
 							}
-							if (!entity.level().isClientSide())
-								entity.discard();
+							entity.getPersistentData().putDouble("Cooldown", 0);
+							{
+								Entity _ent = entity;
+								_ent.teleportTo(x, (y + 200), z);
+								if (_ent instanceof ServerPlayer _serverPlayer)
+									_serverPlayer.connection.teleport(x, (y + 200), z, _ent.getYRot(), _ent.getXRot());
+							}
+							JimsmineshaftMod.queueServerWork(1, () -> {
+								if (world instanceof ServerLevel _serverLevel)
+									_serverLevel.getGameRules().getRule(GameRules.RULE_DO_IMMEDIATE_RESPAWN).set(false, world.getServer());
+								if (!entity.level().isClientSide())
+									entity.discard();
+							});
 						}
 					} else {
 						if (entity instanceof VisionEntity _datEntSetI)
-							_datEntSetI.getEntityData().set(VisionEntity.DATA_anger, (int) ((entity instanceof VisionEntity _datEntI ? _datEntI.getEntityData().get(VisionEntity.DATA_anger) : 0) + 0.25));
+							_datEntSetI.getEntityData().set(VisionEntity.DATA_anger, (int) ((entity instanceof VisionEntity _datEntI ? _datEntI.getEntityData().get(VisionEntity.DATA_anger) : 0) + 0.5));
 						entity.getPersistentData().putDouble("ScareTicks", (entity.getPersistentData().getDouble("ScareTicks") - 1));
 						if (entity.getPersistentData().getDouble("ScareTicks") <= 0) {
 							if (entity instanceof VisionEntity _datEntSetI)
-								_datEntSetI.getEntityData().set(VisionEntity.DATA_anger, (int) ((entity instanceof VisionEntity _datEntI ? _datEntI.getEntityData().get(VisionEntity.DATA_anger) : 0) + 30));
+								_datEntSetI.getEntityData().set(VisionEntity.DATA_anger, (int) ((entity instanceof VisionEntity _datEntI ? _datEntI.getEntityData().get(VisionEntity.DATA_anger) : 0) + 130));
 							entity.getPersistentData().putDouble("Cooldown", 0);
 							{
 								Entity _ent = entity;
@@ -110,6 +127,31 @@ public class VisionOnEntityTickUpdateProcedure {
 								if (_ent instanceof ServerPlayer _serverPlayer)
 									_serverPlayer.connection.teleport(x, (y + 200), z, _ent.getYRot(), _ent.getXRot());
 							}
+						}
+					}
+					entity.getPersistentData().putDouble("DespawnTicks", (entity.getPersistentData().getDouble("DespawnTicks") + 1));
+					if (entity.getPersistentData().getDouble("DespawnTicks") > 600) {
+						{
+							Entity _ent = target;
+							if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+								_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+										_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "stopsound @a * jimsmineshaft:vision_stare_calm");
+							}
+						}
+						{
+							Entity _ent = target;
+							if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+								_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+										_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "stopsound @a * jimsmineshaft:vision_stare_angry");
+							}
+						}
+						entity.getPersistentData().putDouble("ScareTicks", 0);
+						entity.getPersistentData().putDouble("Cooldown", 400);
+						{
+							Entity _ent = entity;
+							_ent.teleportTo(x, (y + 200), z);
+							if (_ent instanceof ServerPlayer _serverPlayer)
+								_serverPlayer.connection.teleport(x, (y + 200), z, _ent.getYRot(), _ent.getXRot());
 						}
 					}
 				} else {
@@ -171,11 +213,12 @@ public class VisionOnEntityTickUpdateProcedure {
 					testX = target.getX() + target.getLookAngle().x * (-10);
 					testY = Math.floor(target.getY() + target.getLookAngle().y * (-10));
 					testZ = target.getZ() + target.getLookAngle().z * (-10);
-					while (world.getBlockState(BlockPos.containing(testX, testY, testZ)).canOcclude() || !world.getBlockState(BlockPos.containing(testX, testY + -1, testZ)).canOcclude()) {
-						if (world.getBlockState(BlockPos.containing(testX, testY, testZ)).canOcclude()) {
-							testY = testY + 1;
-						} else {
+					while (world.getBlockState(BlockPos.containing(testX, testY, testZ)).canOcclude() || !world.getBlockState(BlockPos.containing(testX, testY + -1, testZ)).canOcclude()
+							|| world.getBlockState(BlockPos.containing(testX, testY + 1, testZ)).canOcclude() || world.getBlockState(BlockPos.containing(testX, testY + 2, testZ)).canOcclude()) {
+						if (!world.getBlockState(BlockPos.containing(testX, testY + -1, testZ)).canOcclude()) {
 							testY = testY + -1;
+						} else {
+							testY = testY + 1;
 						}
 					}
 					if (UnobstructedLineProcedure.execute(world, target.getX(), target.getY() + 1.3, target.getZ(), testX, testY + 1.3, testZ)) {
