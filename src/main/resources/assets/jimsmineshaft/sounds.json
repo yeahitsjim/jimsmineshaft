@@ -682,5 +682,14 @@
         "stream": false
       }
     ]
+  },
+  "thudd": {
+    "subtitle": "subtitles.thudd",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:thud",
+        "stream": false
+      }
+    ]
   }
 }

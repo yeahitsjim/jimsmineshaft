@@ -10438,36 +10438,6 @@
       }
     },
     {
-      "name": "PlayerLightTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "player_light_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/PlayerLightTickProcedure.java"
-        ]
-      }
-    },
-    {
       "name": "NoKB",
       "type": "damagetype",
       "compiles": true,
@@ -10663,6 +10633,36 @@
         "return_type": "number",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/LeechModelVisualScaleProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PlayerLightTick2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_light_tick_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PlayerLightTick2Procedure.java"
         ]
       }
     }
@@ -11512,6 +11512,14 @@
       ],
       "category": "ambient",
       "subtitle": ""
+    },
+    {
+      "name": "thudd",
+      "files": [
+        "thud"
+      ],
+      "category": "player",
+      "subtitle": "thudddd"
     }
   ],
   "tag_elements": {
@@ -11879,7 +11887,8 @@
       "item.jimsmineshaft.leech_spawn_egg": "Leech Spawn Egg",
       "entity.jimsmineshaft.leech": "Leech",
       "entity.jimsmineshaft.amalgamation": "Amalgamation",
-      "item.jimsmineshaft.amalgamation_spawn_egg": "Amalgamation Spawn Egg"
+      "item.jimsmineshaft.amalgamation_spawn_egg": "Amalgamation Spawn Egg",
+      "subtitles.thudd": "thudddd"
     }
   },
   "metadata": {
