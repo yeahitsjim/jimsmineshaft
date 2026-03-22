@@ -91,6 +91,7 @@ public class JimsmineshaftModVariables {
 			clone.darknessOverlay = original.darknessOverlay;
 			clone.elevatorSeatNumber = original.elevatorSeatNumber;
 			clone.overlay = original.overlay;
+			clone.banishedToParadise = original.banishedToParadise;
 			if (!event.isWasDeath()) {
 				clone.analogScreenInx = original.analogScreenInx;
 				clone.paradise_ticks = original.paradise_ticks;
@@ -294,6 +295,7 @@ public class JimsmineshaftModVariables {
 		public boolean overlay = true;
 		public double paradise_ticks = 0;
 		public boolean sentencedToDeath = false;
+		public boolean banishedToParadise = false;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -323,6 +325,7 @@ public class JimsmineshaftModVariables {
 			nbt.putBoolean("overlay", overlay);
 			nbt.putDouble("paradise_ticks", paradise_ticks);
 			nbt.putBoolean("sentencedToDeath", sentencedToDeath);
+			nbt.putBoolean("banishedToParadise", banishedToParadise);
 			return nbt;
 		}
 
@@ -353,6 +356,7 @@ public class JimsmineshaftModVariables {
 			overlay = nbt.getBoolean("overlay");
 			paradise_ticks = nbt.getDouble("paradise_ticks");
 			sentencedToDeath = nbt.getBoolean("sentencedToDeath");
+			banishedToParadise = nbt.getBoolean("banishedToParadise");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

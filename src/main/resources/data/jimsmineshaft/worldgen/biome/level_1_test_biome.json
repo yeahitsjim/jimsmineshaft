@@ -3,6 +3,10 @@
   "temperature": 0.5,
   "downfall": 0.5,
   "effects": {
+    "additions_sound": {
+      "sound": "jimsmineshaft:mines_additions_1",
+      "tick_chance": 0.0111
+    },
     "particle": {
       "options": {
         "type": "ash"

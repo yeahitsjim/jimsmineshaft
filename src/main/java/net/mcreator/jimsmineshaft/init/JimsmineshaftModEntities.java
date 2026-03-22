@@ -53,6 +53,7 @@ import net.mcreator.jimsmineshaft.entity.Cart3Entity;
 import net.mcreator.jimsmineshaft.entity.Cart2Entity;
 import net.mcreator.jimsmineshaft.entity.BulletProjectileEntity;
 import net.mcreator.jimsmineshaft.entity.BigGateEntity;
+import net.mcreator.jimsmineshaft.entity.AmalgamationEntity;
 import net.mcreator.jimsmineshaft.JimsmineshaftMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
@@ -182,6 +183,10 @@ public class JimsmineshaftModEntities {
 			EntityType.Builder.<LeechEntity>of(LeechEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(1f, 1f));
+	public static final DeferredHolder<EntityType<?>, EntityType<AmalgamationEntity>> AMALGAMATION = register("amalgamation",
+			EntityType.Builder.<AmalgamationEntity>of(AmalgamationEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(1f, 2.5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -231,6 +236,7 @@ public class JimsmineshaftModEntities {
 		SkinStealerEntityEntity.init(event);
 		SmallSlideUpGateEntityEntity.init(event);
 		LeechEntity.init(event);
+		AmalgamationEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -267,5 +273,6 @@ public class JimsmineshaftModEntities {
 		event.put(SKIN_STEALER_ENTITY.get(), SkinStealerEntityEntity.createAttributes().build());
 		event.put(SMALL_SLIDE_UP_GATE_ENTITY.get(), SmallSlideUpGateEntityEntity.createAttributes().build());
 		event.put(LEECH.get(), LeechEntity.createAttributes().build());
+		event.put(AMALGAMATION.get(), AmalgamationEntity.createAttributes().build());
 	}
 }

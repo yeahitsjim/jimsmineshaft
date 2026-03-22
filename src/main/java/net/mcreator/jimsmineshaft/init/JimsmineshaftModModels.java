@@ -55,6 +55,7 @@ import net.mcreator.jimsmineshaft.client.model.Modelbigirongateright;
 import net.mcreator.jimsmineshaft.client.model.Modelbigirongateleft;
 import net.mcreator.jimsmineshaft.client.model.Modelbigirongateframe;
 import net.mcreator.jimsmineshaft.client.model.Modelbiggate;
+import net.mcreator.jimsmineshaft.client.model.Modelanimal_amalgamation;
 import net.mcreator.jimsmineshaft.client.model.ModelPressureDrillBlockModel;
 import net.mcreator.jimsmineshaft.client.model.ModelPressureDrillBlockFolded4;
 import net.mcreator.jimsmineshaft.client.model.ModelPressureDrillBlockFolded3;
@@ -112,6 +113,7 @@ public class JimsmineshaftModModels {
 		event.registerLayerDefinition(ModelcartRocks5.LAYER_LOCATION, ModelcartRocks5::createBodyLayer);
 		event.registerLayerDefinition(Modelmining_goon_hat.LAYER_LOCATION, Modelmining_goon_hat::createBodyLayer);
 		event.registerLayerDefinition(Modelbigirongateleft.LAYER_LOCATION, Modelbigirongateleft::createBodyLayer);
+		event.registerLayerDefinition(Modelanimal_amalgamation.LAYER_LOCATION, Modelanimal_amalgamation::createBodyLayer);
 		event.registerLayerDefinition(ModelPressureDrillBlockModel.LAYER_LOCATION, ModelPressureDrillBlockModel::createBodyLayer);
 		event.registerLayerDefinition(ModelcartPhase4.LAYER_LOCATION, ModelcartPhase4::createBodyLayer);
 		event.registerLayerDefinition(ModelMining_Elite_Set_Chestplate.LAYER_LOCATION, ModelMining_Elite_Set_Chestplate::createBodyLayer);

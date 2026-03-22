@@ -10178,8 +10178,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/jimsmineshaft/worldgen/configured_feature/paradise_lava.json",
-          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/paradise_lava.json",
-          "src/main/resources/data/jimsmineshaft/neoforge/biome_modifier/paradise_lava_biome_modifier.json"
+          "src/main/resources/data/jimsmineshaft/neoforge/biome_modifier/paradise_lava_biome_modifier.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/paradise_lava.json"
         ]
       }
     },
@@ -10393,13 +10393,13 @@
       "registry_name": "player_light",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/block/player_light.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/player_light.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/player_light.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/PlayerLightBlock.java",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/player_light.json",
+          "src/main/resources/assets/jimsmineshaft/items/player_light.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/player_light.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/entity/PlayerLightBlockEntity.java",
-          "src/main/resources/assets/jimsmineshaft/items/player_light.json"
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/player_light.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/player_light.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/player_light.json"
         ]
       }
     },
@@ -10507,9 +10507,143 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/client/renderer/LeechRenderer.java",
-          "src/main/resources/data/jimsmineshaft/neoforge/biome_modifier/leech_biome_modifier.json",
           "src/main/java/net/mcreator/jimsmineshaft/entity/LeechEntity.java",
           "src/main/resources/assets/jimsmineshaft/items/leech_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "AmalgamationDisplayConditionLightOn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amalgamation_display_condition_light_on",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/AmalgamationDisplayConditionLightOnProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Amalgamation",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amalgamation",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/amalgamation_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/AmalgamationEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/AmalgamationRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "RespawnInParadise",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "respawn_in_paradise",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RespawnInParadiseProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "AmalgamationPlaybackConditionShoot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amalgamation_playback_condition_shoot",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/AmalgamationPlaybackConditionShootProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "AmalgamationOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amalgamation_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/AmalgamationOnEntityTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "AmalgamationLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amalgamation_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/loot_table/entities/amalgamation.json"
+        ]
+      }
+    },
+    {
+      "name": "AmalgamationPlaybackConditionSlice",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amalgamation_playback_condition_slice",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/AmalgamationPlaybackConditionSliceProcedure.java"
         ]
       }
     }
@@ -10753,6 +10887,12 @@
       "name": "sentencedToDeath",
       "type": "logic",
       "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "banishedToParadise",
+      "type": "logic",
+      "scope": "player_persistent",
       "value": "false"
     }
   ],
@@ -11301,6 +11441,58 @@
       ],
       "category": "player",
       "subtitle": "gargling balls"
+    },
+    {
+      "name": "amalgamation.hurt",
+      "files": [
+        "amalgamation_hurt_1",
+        "amalgamation_hurt_2",
+        "amalgamation_hurt_3"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "amalgamation.slice",
+      "files": [
+        "amalgamation_slice"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "amalgamation.death",
+      "files": [
+        "amalgamation_death_1",
+        "amalgamation_death_2"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "amalgamation.melee",
+      "files": [
+        "amalgamation_melee_1",
+        "amalgamation_melee_2"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "mines_additions_1",
+      "files": [
+        "mines_additions_1",
+        "mines_additions_2",
+        "mines_additions_3",
+        "mines_additions_4",
+        "mines_additions_5",
+        "mines_additions_6",
+        "mines_additions_7",
+        "mines_additions_8",
+        "mines_additions_9"
+      ],
+      "category": "ambient",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
