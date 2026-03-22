@@ -86,4 +86,8 @@ public class JimsmineshaftModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> SQUISHWALK = REGISTRY.register("squishwalk", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "squishwalk")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> SPLAT = REGISTRY.register("splat", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "splat")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> SLURP = REGISTRY.register("slurp", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "slurp")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> AMALGAMATION_HURT = REGISTRY.register("amalgamation.hurt", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "amalgamation.hurt")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> AMALGAMATION_SLICE = REGISTRY.register("amalgamation.slice", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "amalgamation.slice")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> AMALGAMATION_MELEE = REGISTRY.register("amalgamation.melee", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "amalgamation.melee")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> AMALGAMATION_DEATH = REGISTRY.register("amalgamation.death", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "amalgamation.death")));
 }

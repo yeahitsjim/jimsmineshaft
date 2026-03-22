@@ -194,6 +194,7 @@ public class JimsmineshaftModTabs {
 			tabData.accept(JimsmineshaftModItems.VISION_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.PLAYER_STALKIER_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.LEECH_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.AMALGAMATION_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(JimsmineshaftModItems.MINING_GOON_SET_HELMET.get());
 			tabData.accept(JimsmineshaftModItems.MINING_GOON_SET_CHESTPLATE.get());

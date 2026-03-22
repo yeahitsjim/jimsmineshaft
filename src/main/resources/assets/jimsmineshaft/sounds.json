@@ -594,5 +594,53 @@
         "stream": false
       }
     ]
+  },
+  "amalgamation.hurt": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:amalgamation_hurt_1",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:amalgamation_hurt_2",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:amalgamation_hurt_3",
+        "stream": false
+      }
+    ]
+  },
+  "amalgamation.slice": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:amalgamation_slice",
+        "stream": false
+      }
+    ]
+  },
+  "amalgamation.melee": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:amalgamation_melee_1",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:amalgamation_melee_2",
+        "stream": false
+      }
+    ]
+  },
+  "amalgamation.death": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:amalgamation_death_1",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:amalgamation_death_2",
+        "stream": false
+      }
+    ]
   }
 }

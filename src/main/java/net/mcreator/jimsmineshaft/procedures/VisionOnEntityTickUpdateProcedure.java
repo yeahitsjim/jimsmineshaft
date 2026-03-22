@@ -95,7 +95,7 @@ public class VisionOnEntityTickUpdateProcedure {
 						entity.getPersistentData().putDouble("ScareTicks", (entity.getPersistentData().getDouble("ScareTicks") - 1));
 						if (entity.getPersistentData().getDouble("ScareTicks") <= 0) {
 							if (entity instanceof VisionEntity _datEntSetI)
-								_datEntSetI.getEntityData().set(VisionEntity.DATA_anger, (int) ((entity instanceof VisionEntity _datEntI ? _datEntI.getEntityData().get(VisionEntity.DATA_anger) : 0) + 130));
+								_datEntSetI.getEntityData().set(VisionEntity.DATA_anger, (int) ((entity instanceof VisionEntity _datEntI ? _datEntI.getEntityData().get(VisionEntity.DATA_anger) : 0) + 35));
 							entity.getPersistentData().putDouble("Cooldown", 0);
 							{
 								Entity _ent = entity;

@@ -10530,6 +10530,104 @@
           "src/main/java/net/mcreator/jimsmineshaft/procedures/RespawnInParadiseProcedure.java"
         ]
       }
+    },
+    {
+      "name": "Amalgamation",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amalgamation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/entity/AmalgamationEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/amalgamation_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/AmalgamationRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "AmalgamationPlaybackConditionSlice",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amalgamation_playback_condition_slice",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/AmalgamationPlaybackConditionSliceProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "AmalgamationPlaybackConditionShoot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amalgamation_playback_condition_shoot",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/AmalgamationPlaybackConditionShootProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "AmalgamationOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amalgamation_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/AmalgamationOnEntityTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "AmalgamationLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amalgamation_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/loot_table/entities/amalgamation.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -11325,6 +11423,42 @@
       ],
       "category": "player",
       "subtitle": "gargling balls"
+    },
+    {
+      "name": "amalgamation.hurt",
+      "files": [
+        "amalgamation_hurt_1",
+        "amalgamation_hurt_2",
+        "amalgamation_hurt_3"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "amalgamation.slice",
+      "files": [
+        "amalgamation_slice"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "amalgamation.melee",
+      "files": [
+        "amalgamation_melee_1",
+        "amalgamation_melee_2"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "amalgamation.death",
+      "files": [
+        "amalgamation_death_1",
+        "amalgamation_death_2"
+      ],
+      "category": "block",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
@@ -11690,7 +11824,13 @@
       "death.attack.no_kb.player": "%1$s\u0027s blood was drained while trying to escape %2$s",
       "death.attack.no_kb.item": "%1$s\u0027s blood was drained with %2$s using %3$s",
       "item.jimsmineshaft.leech_spawn_egg": "Leech Spawn Egg",
-      "entity.jimsmineshaft.leech": "Leech"
+      "entity.jimsmineshaft.leech": "Leech",
+      "subtitles.amalgamation.hurt": "",
+      "subtitles.amalgamation.slice": "",
+      "subtitles.amalgamation.melee": "",
+      "subtitles.amalgamation.death": "",
+      "entity.jimsmineshaft.amalgamation": "Amalgamation",
+      "item.jimsmineshaft.amalgamation_spawn_egg": "Amalgamation Spawn Egg"
     }
   },
   "metadata": {

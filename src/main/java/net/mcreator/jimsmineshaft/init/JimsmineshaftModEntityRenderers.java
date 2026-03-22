@@ -42,6 +42,7 @@ import net.mcreator.jimsmineshaft.client.renderer.Cart4Renderer;
 import net.mcreator.jimsmineshaft.client.renderer.Cart3Renderer;
 import net.mcreator.jimsmineshaft.client.renderer.Cart2Renderer;
 import net.mcreator.jimsmineshaft.client.renderer.BigGateRenderer;
+import net.mcreator.jimsmineshaft.client.renderer.AmalgamationRenderer;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class JimsmineshaftModEntityRenderers {
@@ -80,5 +81,6 @@ public class JimsmineshaftModEntityRenderers {
 		event.registerEntityRenderer(JimsmineshaftModEntities.SKIN_STEALER_ENTITY.get(), SkinStealerEntityRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.SMALL_SLIDE_UP_GATE_ENTITY.get(), SmallSlideUpGateEntityRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.LEECH.get(), LeechRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.AMALGAMATION.get(), AmalgamationRenderer::new);
 	}
 }
