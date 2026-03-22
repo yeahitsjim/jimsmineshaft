@@ -182,7 +182,7 @@ public class JimsmineshaftModEntities {
 	public static final DeferredHolder<EntityType<?>, EntityType<LeechEntity>> LEECH = register("leech",
 			EntityType.Builder.<LeechEntity>of(LeechEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
-					.sized(1f, 1f));
+					.sized(0.1f, 0.1f));
 	public static final DeferredHolder<EntityType<?>, EntityType<AmalgamationEntity>> AMALGAMATION = register("amalgamation",
 			EntityType.Builder.<AmalgamationEntity>of(AmalgamationEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 

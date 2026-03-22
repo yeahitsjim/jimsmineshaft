@@ -1,5 +1,24 @@
 package net.mcreator.jimsmineshaft.client.renderer;
 
+import net.minecraft.world.level.Level;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
+import net.minecraft.client.renderer.entity.layers.RenderLayer;
+import net.minecraft.client.renderer.entity.MobRenderer;
+import net.minecraft.client.renderer.entity.LivingEntityRenderer;
+import net.minecraft.client.renderer.entity.EntityRendererProvider;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.model.geom.ModelPart;
+
+import net.mcreator.jimsmineshaft.procedures.AmalgamationDisplayConditionLightOnProcedure;
+import net.mcreator.jimsmineshaft.entity.AmalgamationEntity;
+import net.mcreator.jimsmineshaft.client.model.animations.animal_amalgamationAnimation;
+import net.mcreator.jimsmineshaft.client.model.Modelanimal_amalgamation;
+
+import com.mojang.blaze3d.vertex.VertexConsumer;
+import com.mojang.blaze3d.vertex.PoseStack;
+
 public class AmalgamationRenderer extends MobRenderer<AmalgamationEntity, LivingEntityRenderState, Modelanimal_amalgamation> {
 	private AmalgamationEntity entity = null;
 

@@ -10178,8 +10178,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/jimsmineshaft/worldgen/configured_feature/paradise_lava.json",
-          "src/main/resources/data/jimsmineshaft/neoforge/biome_modifier/paradise_lava_biome_modifier.json",
-          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/paradise_lava.json"
+          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/paradise_lava.json",
+          "src/main/resources/data/jimsmineshaft/neoforge/biome_modifier/paradise_lava_biome_modifier.json"
         ]
       }
     },
@@ -10393,13 +10393,13 @@
       "registry_name": "player_light",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/PlayerLightBlock.java",
-          "src/main/resources/assets/jimsmineshaft/items/player_light.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/player_light.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/PlayerLightBlockEntity.java",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/player_light.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/player_light.json",
           "src/main/resources/assets/jimsmineshaft/models/item/player_light.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/player_light.json"
+          "src/main/resources/assets/jimsmineshaft/blockstates/player_light.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/PlayerLightBlock.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/player_light.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/PlayerLightBlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/player_light.json"
         ]
       }
     },
@@ -10644,6 +10644,25 @@
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/AmalgamationPlaybackConditionSliceProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "LeechModelVisualScale",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leech_model_visual_scale",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeechModelVisualScaleProcedure.java"
         ]
       }
     }
@@ -11858,7 +11877,9 @@
       "death.attack.no_kb.player": "%1$s\u0027s blood was drained while trying to escape %2$s",
       "death.attack.no_kb.item": "%1$s\u0027s blood was drained with %2$s using %3$s",
       "item.jimsmineshaft.leech_spawn_egg": "Leech Spawn Egg",
-      "entity.jimsmineshaft.leech": "Leech"
+      "entity.jimsmineshaft.leech": "Leech",
+      "entity.jimsmineshaft.amalgamation": "Amalgamation",
+      "item.jimsmineshaft.amalgamation_spawn_egg": "Amalgamation Spawn Egg"
     }
   },
   "metadata": {

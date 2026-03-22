@@ -35,6 +35,8 @@ public class LeechOnEntityTickUpdateProcedure {
 		if (entity.getPersistentData().getBoolean("target") == false) {
 			if (entity instanceof LeechEntity _datEntSetI)
 				_datEntSetI.getEntityData().set(LeechEntity.DATA_animationcycle, 1);
+			if (entity instanceof LeechEntity _datEntSetI)
+				_datEntSetI.getEntityData().set(LeechEntity.DATA_size, 1);
 			entity.getPersistentData().putDouble("grabID", (Mth.nextInt(RandomSource.create(), 1, 10000)));
 			entity.setDeltaMovement(new Vec3(0, 1, 0));
 			entity.getPersistentData().putBoolean("falling", false);
@@ -51,10 +53,12 @@ public class LeechOnEntityTickUpdateProcedure {
 			}
 			ycheck = 0;
 		} else {
+			if (entity instanceof LeechEntity _datEntSetI)
+				_datEntSetI.getEntityData().set(LeechEntity.DATA_size, 6);
 			if (entity.getPersistentData().getBoolean("falling") == false) {
 				if (entity instanceof LeechEntity _datEntSetI)
 					_datEntSetI.getEntityData().set(LeechEntity.DATA_animationcycle, 2);
-				entity.setDeltaMovement(new Vec3(0, (-2), 0));
+				entity.setDeltaMovement(new Vec3(0, (-0.7), 0));
 				if (world.getBlockState(BlockPos.containing(x, y - 1, z)).canOcclude()) {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {

@@ -1,6 +1,14 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.level.WorldGenLevel;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
+
+import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
 
 public class ItsNotRealOverlayDisplayOverlayIngameProcedure {
 	public static boolean execute(LevelAccessor world, Entity entity) {

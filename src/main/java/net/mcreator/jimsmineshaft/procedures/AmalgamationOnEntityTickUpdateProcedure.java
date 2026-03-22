@@ -1,6 +1,31 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.neoforged.neoforge.network.PacketDistributor;
+
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.projectile.Projectile;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.jimsmineshaft.network.StalkerPoseSetPacketMessage;
+import net.mcreator.jimsmineshaft.init.JimsmineshaftModEntities;
+import net.mcreator.jimsmineshaft.init.JimsmineshaftModBlocks;
+import net.mcreator.jimsmineshaft.entity.BulletProjectileEntity;
+import net.mcreator.jimsmineshaft.entity.AmalgamationEntity;
 
 public class AmalgamationOnEntityTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {

@@ -1,6 +1,33 @@
 package net.mcreator.jimsmineshaft.procedures;
 
+import net.neoforged.neoforge.network.PacketDistributor;
+import net.neoforged.neoforge.event.tick.EntityTickEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
+
+import net.minecraft.world.level.WorldGenLevel;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.GameRules;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
+
+import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
+import net.mcreator.jimsmineshaft.network.ForceParadiseCrashMessage;
+import net.mcreator.jimsmineshaft.JimsmineshaftMod;
+
+import javax.annotation.Nullable;
 
 @EventBusSubscriber
 public class ParadiseTicksProcedure {

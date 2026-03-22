@@ -1,16 +1,46 @@
 package net.mcreator.jimsmineshaft.entity;
 
-import net.minecraft.nbt.Tag;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
+
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.npc.Villager;
+import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.animal.IronGolem;
+import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
+import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
+import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
+import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.AnimationState;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.jimsmineshaft.procedures.AmalgamationPlaybackConditionSliceProcedure;
+import net.mcreator.jimsmineshaft.procedures.AmalgamationPlaybackConditionShootProcedure;
+import net.mcreator.jimsmineshaft.procedures.AmalgamationOnEntityTickUpdateProcedure;
 
 public class AmalgamationEntity extends Monster {
-
 	public static final EntityDataAccessor<String> DATA_pose = SynchedEntityData.defineId(AmalgamationEntity.class, EntityDataSerializers.STRING);
 	public static final EntityDataAccessor<String> DATA_lastPose = SynchedEntityData.defineId(AmalgamationEntity.class, EntityDataSerializers.STRING);
 	public static final EntityDataAccessor<String> DATA_attack = SynchedEntityData.defineId(AmalgamationEntity.class, EntityDataSerializers.STRING);
 	public static final EntityDataAccessor<Integer> DATA_attackTicks = SynchedEntityData.defineId(AmalgamationEntity.class, EntityDataSerializers.INT);
 	public static final EntityDataAccessor<Boolean> DATA_lightOn = SynchedEntityData.defineId(AmalgamationEntity.class, EntityDataSerializers.BOOLEAN);
-
 	public final AnimationState animationState0 = new AnimationState();
 	public final AnimationState animationState1 = new AnimationState();
 	public final AnimationState animationState2 = new AnimationState();
@@ -19,9 +49,7 @@ public class AmalgamationEntity extends Monster {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
-
 		setPersistenceRequired();
-
 	}
 
 	@Override
@@ -37,14 +65,11 @@ public class AmalgamationEntity extends Monster {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-
 		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
-
 			@Override
 			protected boolean canPerformAttack(LivingEntity entity) {
 				return this.isTimeToAttack() && this.mob.distanceToSqr(entity) < (this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth()) && this.mob.getSensing().hasLineOfSight(entity);
 			}
-
 		});
 		this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.8));
@@ -52,7 +77,6 @@ public class AmalgamationEntity extends Monster {
 		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Player.class, false, false));
 		this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, IronGolem.class, false, false));
 		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, Villager.class, false, false));
-
 	}
 
 	@Override
@@ -110,12 +134,17 @@ public class AmalgamationEntity extends Monster {
 	@Override
 	public void tick() {
 		super.tick();
-
 		if (this.level().isClientSide()) {
-			this.animationState0.animateWhen(true, this.tickCount);
-			this.animationState1.animateWhen(true, this.tickCount);
+			this.animationState0.animateWhen(AmalgamationPlaybackConditionShootProcedure.execute(this), this.tickCount);
+			this.animationState1.animateWhen(AmalgamationPlaybackConditionSliceProcedure.execute(this), this.tickCount);
 			this.animationState2.animateWhen(true, this.tickCount);
 		}
+	}
+
+	@Override
+	public void baseTick() {
+		super.baseTick();
+		AmalgamationOnEntityTickUpdateProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	public static void init(RegisterSpawnPlacementsEvent event) {
@@ -128,10 +157,7 @@ public class AmalgamationEntity extends Monster {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 0);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 32);
-
 		builder = builder.add(Attributes.STEP_HEIGHT, 1);
-
 		return builder;
 	}
-
 }

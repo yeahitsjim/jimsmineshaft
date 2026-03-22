@@ -19,7 +19,8 @@
       "fixedValue": 1.0
     },
     "boundingBoxScale": {
-      "fixedValue": 1.0
+      "fixedValue": 1.0,
+      "name": "LeechModelVisualScale"
     },
     "modelLayers": [],
     "animations": [
@@ -79,9 +80,9 @@
         "amplitude": 1.0
       }
     ],
-    "modelWidth": 1.0,
-    "modelHeight": 1.0,
-    "modelShadowSize": 0.5,
+    "modelWidth": 0.1,
+    "modelHeight": 0.1,
+    "modelShadowSize": 0.2,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
@@ -180,6 +181,13 @@
         "min": -2147483648,
         "max": 2147483647,
         "name": "animationcycle",
+        "type": "integer",
+        "value": 0
+      },
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "size",
         "type": "integer",
         "value": 0
       }
