@@ -23,6 +23,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.jimsmineshaft.network.StalkerPoseSetPacketMessage;
 import net.mcreator.jimsmineshaft.init.JimsmineshaftModEntities;
+import net.mcreator.jimsmineshaft.init.JimsmineshaftModBlocks;
 import net.mcreator.jimsmineshaft.entity.BulletProjectileEntity;
 import net.mcreator.jimsmineshaft.entity.AmalgamationEntity;
 
@@ -39,6 +40,8 @@ public class AmalgamationOnEntityTickUpdateProcedure {
 				if (entity instanceof AmalgamationEntity _datEntSetI)
 					_datEntSetI.getEntityData().set(AmalgamationEntity.DATA_attackTicks, (int) ((entity instanceof AmalgamationEntity _datEntI ? _datEntI.getEntityData().get(AmalgamationEntity.DATA_attackTicks) : 0) + 1));
 				if ((entity instanceof AmalgamationEntity _datEntS ? _datEntS.getEntityData().get(AmalgamationEntity.DATA_attack) : "").equals("slice")) {
+					if (entity instanceof AmalgamationEntity _datEntSetL)
+						_datEntSetL.getEntityData().set(AmalgamationEntity.DATA_lightOn, true);
 					if (entity instanceof AmalgamationEntity _datEntSetS)
 						_datEntSetS.getEntityData().set(AmalgamationEntity.DATA_pose, "slice");
 					if ((entity instanceof AmalgamationEntity _datEntI ? _datEntI.getEntityData().get(AmalgamationEntity.DATA_attackTicks) : 0) == 9) {
@@ -72,6 +75,8 @@ public class AmalgamationOnEntityTickUpdateProcedure {
 					}
 				}
 				if ((entity instanceof AmalgamationEntity _datEntS ? _datEntS.getEntityData().get(AmalgamationEntity.DATA_attack) : "").equals("shoot")) {
+					if (entity instanceof AmalgamationEntity _datEntSetL)
+						_datEntSetL.getEntityData().set(AmalgamationEntity.DATA_lightOn, true);
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 3, 0, false, false));
 					if (entity instanceof AmalgamationEntity _datEntSetS)
@@ -104,6 +109,8 @@ public class AmalgamationOnEntityTickUpdateProcedure {
 					}
 				}
 				if ((entity instanceof AmalgamationEntity _datEntS ? _datEntS.getEntityData().get(AmalgamationEntity.DATA_attack) : "").equals("")) {
+					if (entity instanceof AmalgamationEntity _datEntSetL)
+						_datEntSetL.getEntityData().set(AmalgamationEntity.DATA_lightOn, false);
 					if (entity instanceof AmalgamationEntity _datEntSetS)
 						_datEntSetS.getEntityData().set(AmalgamationEntity.DATA_pose, "none");
 					if (entity instanceof AmalgamationEntity _datEntSetI)
@@ -127,6 +134,11 @@ public class AmalgamationOnEntityTickUpdateProcedure {
 					_datEntSetS.getEntityData().set(AmalgamationEntity.DATA_attack, "");
 				if (entity instanceof AmalgamationEntity _datEntSetS)
 					_datEntSetS.getEntityData().set(AmalgamationEntity.DATA_pose, "none");
+			}
+			if (entity instanceof AmalgamationEntity _datEntL78 && _datEntL78.getEntityData().get(AmalgamationEntity.DATA_lightOn)) {
+				if (world.isEmptyBlock(BlockPos.containing(x, y + 3, z))) {
+					world.setBlock(BlockPos.containing(x, y + 3, z), JimsmineshaftModBlocks.PLAYER_LIGHT.get().defaultBlockState(), 3);
+				}
 			}
 		}
 		if (!((entity instanceof AmalgamationEntity _datEntS ? _datEntS.getEntityData().get(AmalgamationEntity.DATA_pose) : "")

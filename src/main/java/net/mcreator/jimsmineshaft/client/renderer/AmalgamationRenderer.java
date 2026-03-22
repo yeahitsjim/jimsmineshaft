@@ -1,5 +1,6 @@
 package net.mcreator.jimsmineshaft.client.renderer;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
 import net.minecraft.client.renderer.entity.layers.RenderLayer;
@@ -10,6 +11,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.model.geom.ModelPart;
 
+import net.mcreator.jimsmineshaft.procedures.AmalgamationDisplayConditionLightOnProcedure;
 import net.mcreator.jimsmineshaft.entity.AmalgamationEntity;
 import net.mcreator.jimsmineshaft.client.model.animations.animal_amalgamationAnimation;
 import net.mcreator.jimsmineshaft.client.model.Modelanimal_amalgamation;
@@ -29,6 +31,21 @@ public class AmalgamationRenderer extends MobRenderer<AmalgamationEntity, Living
 			public void render(PoseStack poseStack, MultiBufferSource bufferSource, int light, LivingEntityRenderState state, float headYaw, float headPitch) {
 				VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.eyes(LAYER_TEXTURE));
 				this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(state, 0));
+			}
+		});
+		this.addLayer(new RenderLayer<>(this) {
+			final ResourceLocation LAYER_TEXTURE = ResourceLocation.parse("jimsmineshaft:textures/entities/animal_amalgamation_flightlight_glow.png");
+
+			@Override
+			public void render(PoseStack poseStack, MultiBufferSource bufferSource, int light, LivingEntityRenderState state, float headYaw, float headPitch) {
+				Level world = entity.level();
+				double x = entity.getX();
+				double y = entity.getY();
+				double z = entity.getZ();
+				if (AmalgamationDisplayConditionLightOnProcedure.execute(entity)) {
+					VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.eyes(LAYER_TEXTURE));
+					this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(state, 0));
+				}
 			}
 		});
 	}

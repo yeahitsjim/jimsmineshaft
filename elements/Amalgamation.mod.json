@@ -27,6 +27,15 @@
         "texture": "animal_amalgamation_glow_texture.png",
         "disableHurtOverlay": false,
         "glow": true
+      },
+      {
+        "model": "Default",
+        "texture": "animal_amalgamation_flightlight_glow.png",
+        "disableHurtOverlay": false,
+        "glow": true,
+        "condition": {
+          "name": "AmalgamationDisplayConditionLightOn"
+        }
       }
     ],
     "animations": [
@@ -187,6 +196,11 @@
         "name": "attackTicks",
         "type": "integer",
         "value": 0
+      },
+      {
+        "name": "lightOn",
+        "type": "logic",
+        "value": false
       }
     ],
     "onMobTickUpdate": {

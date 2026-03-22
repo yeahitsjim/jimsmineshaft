@@ -90,4 +90,5 @@ public class JimsmineshaftModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> AMALGAMATION_SLICE = REGISTRY.register("amalgamation.slice", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "amalgamation.slice")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> AMALGAMATION_MELEE = REGISTRY.register("amalgamation.melee", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "amalgamation.melee")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> AMALGAMATION_DEATH = REGISTRY.register("amalgamation.death", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "amalgamation.death")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> MINES_ADDITIONS_1 = REGISTRY.register("mines_additions_1", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "mines_additions_1")));
 }

@@ -642,5 +642,45 @@
         "stream": false
       }
     ]
+  },
+  "mines_additions_1": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:mines_additions_1",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:mines_additions_2",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:mines_additions_3",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:mines_additions_4",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:mines_additions_5",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:mines_additions_6",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:mines_additions_7",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:mines_additions_8",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:mines_additions_9",
+        "stream": false
+      }
+    ]
   }
 }

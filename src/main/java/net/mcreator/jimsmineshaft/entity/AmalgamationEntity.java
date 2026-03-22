@@ -40,6 +40,7 @@ public class AmalgamationEntity extends Monster {
 	public static final EntityDataAccessor<String> DATA_lastPose = SynchedEntityData.defineId(AmalgamationEntity.class, EntityDataSerializers.STRING);
 	public static final EntityDataAccessor<String> DATA_attack = SynchedEntityData.defineId(AmalgamationEntity.class, EntityDataSerializers.STRING);
 	public static final EntityDataAccessor<Integer> DATA_attackTicks = SynchedEntityData.defineId(AmalgamationEntity.class, EntityDataSerializers.INT);
+	public static final EntityDataAccessor<Boolean> DATA_lightOn = SynchedEntityData.defineId(AmalgamationEntity.class, EntityDataSerializers.BOOLEAN);
 	public final AnimationState animationState0 = new AnimationState();
 	public final AnimationState animationState1 = new AnimationState();
 	public final AnimationState animationState2 = new AnimationState();
@@ -58,6 +59,7 @@ public class AmalgamationEntity extends Monster {
 		builder.define(DATA_lastPose, "");
 		builder.define(DATA_attack, "");
 		builder.define(DATA_attackTicks, 0);
+		builder.define(DATA_lightOn, false);
 	}
 
 	@Override
@@ -111,6 +113,7 @@ public class AmalgamationEntity extends Monster {
 		compound.putString("DatalastPose", this.entityData.get(DATA_lastPose));
 		compound.putString("Dataattack", this.entityData.get(DATA_attack));
 		compound.putInt("DataattackTicks", this.entityData.get(DATA_attackTicks));
+		compound.putBoolean("DatalightOn", this.entityData.get(DATA_lightOn));
 	}
 
 	@Override
@@ -124,6 +127,8 @@ public class AmalgamationEntity extends Monster {
 			this.entityData.set(DATA_attack, compound.getString("Dataattack"));
 		if (compound.contains("DataattackTicks"))
 			this.entityData.set(DATA_attackTicks, compound.getInt("DataattackTicks"));
+		if (compound.contains("DatalightOn"))
+			this.entityData.set(DATA_lightOn, compound.getBoolean("DatalightOn"));
 	}
 
 	@Override

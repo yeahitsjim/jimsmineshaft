@@ -24,8 +24,10 @@ public class PlayerLightTickProcedure {
 	}
 
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z) {
-		if (world.isEmptyBlock(BlockPos.containing(x, y + 2, z)) || (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == JimsmineshaftModBlocks.PLAYER_LIGHT.get()) {
-			world.setBlock(BlockPos.containing(x, y + 2, z), JimsmineshaftModBlocks.PLAYER_LIGHT.get().defaultBlockState(), 3);
+		if (world.isEmptyBlock(BlockPos.containing(x, y + 2, z))) {
+			if (!world.isClientSide()) {
+				world.setBlock(BlockPos.containing(x, y + 2, z), JimsmineshaftModBlocks.PLAYER_LIGHT.get().defaultBlockState(), 3);
+			}
 		}
 	}
 }

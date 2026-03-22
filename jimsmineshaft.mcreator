@@ -10506,7 +10506,6 @@
       "registry_name": "leech",
       "metadata": {
         "files": [
-          "src/main/resources/data/jimsmineshaft/neoforge/biome_modifier/leech_biome_modifier.json",
           "src/main/java/net/mcreator/jimsmineshaft/entity/LeechEntity.java",
           "src/main/java/net/mcreator/jimsmineshaft/client/renderer/LeechRenderer.java",
           "src/main/resources/assets/jimsmineshaft/items/leech_spawn_egg.json"
@@ -10626,6 +10625,25 @@
       "metadata": {
         "files": [
           "src/main/resources/data/jimsmineshaft/loot_table/entities/amalgamation.json"
+        ]
+      }
+    },
+    {
+      "name": "AmalgamationDisplayConditionLightOn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amalgamation_display_condition_light_on",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/AmalgamationDisplayConditionLightOnProcedure.java"
         ]
       }
     }
@@ -11459,6 +11477,22 @@
       ],
       "category": "block",
       "subtitle": ""
+    },
+    {
+      "name": "mines_additions_1",
+      "files": [
+        "mines_additions_1",
+        "mines_additions_2",
+        "mines_additions_3",
+        "mines_additions_4",
+        "mines_additions_5",
+        "mines_additions_6",
+        "mines_additions_7",
+        "mines_additions_8",
+        "mines_additions_9"
+      ],
+      "category": "ambient",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
@@ -11830,7 +11864,8 @@
       "subtitles.amalgamation.melee": "",
       "subtitles.amalgamation.death": "",
       "entity.jimsmineshaft.amalgamation": "Amalgamation",
-      "item.jimsmineshaft.amalgamation_spawn_egg": "Amalgamation Spawn Egg"
+      "item.jimsmineshaft.amalgamation_spawn_egg": "Amalgamation Spawn Egg",
+      "subtitles.mines_additions_1": ""
     }
   },
   "metadata": {

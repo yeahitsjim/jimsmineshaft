@@ -280,5 +280,6 @@
   "subtitles.amalgamation.melee": "",
   "subtitles.amalgamation.death": "",
   "entity.jimsmineshaft.amalgamation": "Amalgamation",
-  "item.jimsmineshaft.amalgamation_spawn_egg": "Amalgamation Spawn Egg"
+  "item.jimsmineshaft.amalgamation_spawn_egg": "Amalgamation Spawn Egg",
+  "subtitles.mines_additions_1": ""
 }
