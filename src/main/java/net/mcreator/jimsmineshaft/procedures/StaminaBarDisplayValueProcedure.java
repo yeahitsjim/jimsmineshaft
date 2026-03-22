@@ -1,6 +1,8 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
 
 public class StaminaBarDisplayValueProcedure {
 	public static double execute(Entity entity) {

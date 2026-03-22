@@ -10142,6 +10142,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -10174,8 +10178,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/jimsmineshaft/worldgen/configured_feature/paradise_lava.json",
-          "src/main/resources/data/jimsmineshaft/neoforge/biome_modifier/paradise_lava_biome_modifier.json",
-          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/paradise_lava.json"
+          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/paradise_lava.json",
+          "src/main/resources/data/jimsmineshaft/neoforge/biome_modifier/paradise_lava_biome_modifier.json"
         ]
       }
     },
@@ -10209,6 +10213,10 @@
       "registry_name": "its_not_real_overlay_display_overlay_ingame",
       "metadata": {
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "world",
             "type": "world"
@@ -10385,13 +10393,13 @@
       "registry_name": "player_light",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/PlayerLightBlock.java",
-          "src/main/resources/assets/jimsmineshaft/items/player_light.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/player_light.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/PlayerLightBlockEntity.java",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/player_light.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/player_light.json",
           "src/main/resources/assets/jimsmineshaft/models/item/player_light.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/player_light.json"
+          "src/main/resources/assets/jimsmineshaft/blockstates/player_light.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/PlayerLightBlock.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/player_light.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/PlayerLightBlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/player_light.json"
         ]
       }
     },
@@ -10498,9 +10506,9 @@
       "registry_name": "leech",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/LeechRenderer.java",
           "src/main/resources/data/jimsmineshaft/neoforge/biome_modifier/leech_biome_modifier.json",
           "src/main/java/net/mcreator/jimsmineshaft/entity/LeechEntity.java",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/LeechRenderer.java",
           "src/main/resources/assets/jimsmineshaft/items/leech_spawn_egg.json"
         ]
       }
@@ -11652,7 +11660,13 @@
       "subtitles.paradise_music": "",
       "subtitles.slurp": "gargling balls",
       "subtitles.squishwalk": "squishy walk ",
-      "subtitles.splat": "splat balls"
+      "subtitles.splat": "splat balls",
+      "item.jimsmineshaft.player_light": "Lightblock",
+      "death.attack.no_kb": "%1$s\u0027s blood was drained by a leech",
+      "death.attack.no_kb.player": "%1$s\u0027s blood was drained while trying to escape %2$s",
+      "death.attack.no_kb.item": "%1$s\u0027s blood was drained with %2$s using %3$s",
+      "item.jimsmineshaft.leech_spawn_egg": "Leech Spawn Egg",
+      "entity.jimsmineshaft.leech": "Leech"
     }
   },
   "metadata": {

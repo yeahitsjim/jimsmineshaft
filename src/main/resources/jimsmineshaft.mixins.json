@@ -5,10 +5,7 @@
   "mixins": [
     "NoiseGeneratorSettingsMixin"
   ],
-  "client": [
-    "PlayerAnimationMixin",
-    "PlayerAnimationRendererMixin"
-  ],
+  "client": [],
   "injectors": {
     "defaultRequire": 1
   },
