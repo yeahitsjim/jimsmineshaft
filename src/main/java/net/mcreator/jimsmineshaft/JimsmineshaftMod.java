@@ -19,6 +19,7 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
+import net.mcreator.jimsmineshaft.init.JimsmineshaftModVillagerProfessions;
 import net.mcreator.jimsmineshaft.init.JimsmineshaftModTabs;
 import net.mcreator.jimsmineshaft.init.JimsmineshaftModSounds;
 import net.mcreator.jimsmineshaft.init.JimsmineshaftModParticleTypes;
@@ -57,6 +58,7 @@ public class JimsmineshaftMod {
 		JimsmineshaftModMobEffects.REGISTRY.register(modEventBus);
 		JimsmineshaftModMenus.REGISTRY.register(modEventBus);
 		JimsmineshaftModParticleTypes.REGISTRY.register(modEventBus);
+		JimsmineshaftModVillagerProfessions.PROFESSIONS.register(modEventBus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

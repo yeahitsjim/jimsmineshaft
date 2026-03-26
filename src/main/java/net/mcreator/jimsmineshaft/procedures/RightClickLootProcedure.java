@@ -6,6 +6,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
@@ -295,6 +296,298 @@ public class RightClickLootProcedure {
 			}
 		}
 		if (blockstate.getBlock() == JimsmineshaftModBlocks.COPPER_CHUNK_TYPE_E.get()) {
+			{
+				BlockPos _pos = BlockPos.containing(x, y, z);
+				Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
+				world.destroyBlock(_pos, false);
+			}
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.SNOWFLAKE, x, y, z, 10, 0.2, 0.2, 0.2, 0.05);
+			letsgogambling = Mth.nextInt(RandomSource.create(), 1, 6);
+			if (letsgogambling == 1) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit1")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit1")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
+			if (letsgogambling == 2) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit2")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit2")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
+			if (letsgogambling == 3) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit3")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit3")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
+			if (letsgogambling == 4) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit4")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit4")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
+			if (letsgogambling == 5) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickup5")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickup5")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
+			if (letsgogambling == 6) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickup6")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickup6")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
+		}
+		if (blockstate.getBlock() == JimsmineshaftModBlocks.BOTTLE.get()) {
+			if (!world.isClientSide()) {
+				BlockPos _bp = BlockPos.containing(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getPersistentData().putDouble("value", 7.91);
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+			{
+				BlockPos _pos = BlockPos.containing(x, y, z);
+				Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
+				world.destroyBlock(_pos, false);
+			}
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.SNOWFLAKE, x, y, z, 10, 0.2, 0.2, 0.2, 0.05);
+			letsgogambling = Mth.nextInt(RandomSource.create(), 1, 6);
+			if (letsgogambling == 1) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit1")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit1")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
+			if (letsgogambling == 2) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit2")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit2")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
+			if (letsgogambling == 3) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit3")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit3")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
+			if (letsgogambling == 4) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit4")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit4")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
+			if (letsgogambling == 5) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickup5")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickup5")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
+			if (letsgogambling == 6) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickup6")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickup6")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
+		}
+		if (blockstate.getBlock() == JimsmineshaftModBlocks.CANTEEN.get()) {
+			if (!world.isClientSide()) {
+				BlockPos _bp = BlockPos.containing(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getPersistentData().putDouble("value", 9.55);
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+			{
+				BlockPos _pos = BlockPos.containing(x, y, z);
+				Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
+				world.destroyBlock(_pos, false);
+			}
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.SNOWFLAKE, x, y, z, 10, 0.2, 0.2, 0.2, 0.05);
+			letsgogambling = Mth.nextInt(RandomSource.create(), 1, 6);
+			if (letsgogambling == 1) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit1")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit1")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
+			if (letsgogambling == 2) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit2")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit2")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
+			if (letsgogambling == 3) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit3")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit3")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
+			if (letsgogambling == 4) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit4")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit4")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
+			if (letsgogambling == 5) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickup5")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickup5")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
+			if (letsgogambling == 6) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickup6")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickup6")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
+		}
+		if (blockstate.getBlock() == JimsmineshaftModBlocks.CANDLE_HOLDER.get()) {
+			if (!world.isClientSide()) {
+				BlockPos _bp = BlockPos.containing(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getPersistentData().putDouble("value", 33.8);
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+			{
+				BlockPos _pos = BlockPos.containing(x, y, z);
+				Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
+				world.destroyBlock(_pos, false);
+			}
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.SNOWFLAKE, x, y, z, 10, 0.2, 0.2, 0.2, 0.05);
+			letsgogambling = Mth.nextInt(RandomSource.create(), 1, 6);
+			if (letsgogambling == 1) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit1")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit1")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
+			if (letsgogambling == 2) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit2")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit2")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
+			if (letsgogambling == 3) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit3")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit3")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
+			if (letsgogambling == 4) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit4")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit4")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
+			if (letsgogambling == 5) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickup5")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickup5")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
+			if (letsgogambling == 6) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickup6")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickup6")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
+		}
+		if (blockstate.getBlock() == JimsmineshaftModBlocks.CANARY_CAGE.get()) {
+			if (!world.isClientSide()) {
+				BlockPos _bp = BlockPos.containing(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getPersistentData().putDouble("value", 19.12);
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
 			{
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);

@@ -24,7 +24,89 @@
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
-    "boundingBoxes": [],
+    "boundingBoxes": [
+      {
+        "mx": 2.0,
+        "my": 1.0,
+        "mz": 0.0,
+        "Mx": 14.0,
+        "My": 2.0,
+        "Mz": 16.0,
+        "subtract": false
+      },
+      {
+        "mx": 2.0,
+        "my": 2.0,
+        "mz": 0.0,
+        "Mx": 14.0,
+        "My": 10.0,
+        "Mz": 2.0,
+        "subtract": false
+      },
+      {
+        "mx": 2.0,
+        "my": 2.0,
+        "mz": 14.0,
+        "Mx": 14.0,
+        "My": 10.0,
+        "Mz": 16.0,
+        "subtract": false
+      },
+      {
+        "mx": 2.0,
+        "my": 2.0,
+        "mz": 2.0,
+        "Mx": 4.0,
+        "My": 10.0,
+        "Mz": 14.0,
+        "subtract": false
+      },
+      {
+        "mx": 12.0,
+        "my": 2.0,
+        "mz": 2.0,
+        "Mx": 14.0,
+        "My": 10.0,
+        "Mz": 14.0,
+        "subtract": false
+      },
+      {
+        "mx": 1.0,
+        "my": 0.0,
+        "mz": 1.0,
+        "Mx": 2.0,
+        "My": 3.0,
+        "Mz": 4.0,
+        "subtract": false
+      },
+      {
+        "mx": 1.0,
+        "my": 0.0,
+        "mz": 12.0,
+        "Mx": 2.0,
+        "My": 3.0,
+        "Mz": 15.0,
+        "subtract": false
+      },
+      {
+        "mx": 14.0,
+        "my": 1.0,
+        "mz": 1.0,
+        "Mx": 15.0,
+        "My": 4.0,
+        "Mz": 4.0,
+        "subtract": false
+      },
+      {
+        "mx": 14.0,
+        "my": 0.0,
+        "mz": 12.0,
+        "Mx": 15.0,
+        "My": 3.0,
+        "Mz": 15.0,
+        "subtract": false
+      }
+    ],
     "customProperties": [],
     "name": "Rusted Minecart",
     "specialInformation": {

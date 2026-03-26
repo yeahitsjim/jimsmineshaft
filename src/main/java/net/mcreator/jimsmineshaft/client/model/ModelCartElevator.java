@@ -1,0 +1,251 @@
+package net.mcreator.jimsmineshaft.client.model;
+
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
+import net.minecraft.client.model.geom.builders.PartDefinition;
+import net.minecraft.client.model.geom.builders.MeshDefinition;
+import net.minecraft.client.model.geom.builders.LayerDefinition;
+import net.minecraft.client.model.geom.builders.CubeListBuilder;
+import net.minecraft.client.model.geom.builders.CubeDeformation;
+import net.minecraft.client.model.geom.PartPose;
+import net.minecraft.client.model.geom.ModelPart;
+import net.minecraft.client.model.geom.ModelLayerLocation;
+import net.minecraft.client.model.EntityModel;
+
+// Made with Blockbench 4.12.6
+// Exported for Minecraft version 1.17 or later with Mojang mappings
+// Paste this class into your mod and generate all required imports
+public class ModelCartElevator extends EntityModel<LivingEntityRenderState> {
+	// This layer location should be baked with EntityRendererProvider.Context in
+	// the entity renderer and passed into this model's constructor
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "model_cart_elevator"), "main");
+	public final ModelPart mainstructure;
+	public final ModelPart bone;
+	public final ModelPart leftside;
+	public final ModelPart rightside;
+	public final ModelPart backside;
+
+	public ModelCartElevator(ModelPart root) {
+		super(root);
+		this.mainstructure = root.getChild("mainstructure");
+		this.bone = this.mainstructure.getChild("bone");
+		this.leftside = this.bone.getChild("leftside");
+		this.rightside = this.bone.getChild("rightside");
+		this.backside = this.bone.getChild("backside");
+	}
+
+	public static LayerDefinition createBodyLayer() {
+		MeshDefinition meshdefinition = new MeshDefinition();
+		PartDefinition partdefinition = meshdefinition.getRoot();
+		PartDefinition mainstructure = partdefinition.addOrReplaceChild("mainstructure",
+				CubeListBuilder.create().texOffs(20, 0).addBox(-22.0F, -2.0F, -35.0F, 48.0F, 3.0F, 64.0F, new CubeDeformation(0.0F)).texOffs(20, 67).addBox(-22.0F, -41.0F, -35.0F, 48.0F, 3.0F, 64.0F, new CubeDeformation(0.0F)).texOffs(244, 20)
+						.addBox(-20.0F, -42.0F, -7.0F, 43.0F, 1.0F, 7.0F, new CubeDeformation(0.0F)).texOffs(20, 214).addBox(-22.0F, -44.0F, -35.0F, 3.0F, 3.0F, 64.0F, new CubeDeformation(0.0F)).texOffs(154, 214)
+						.addBox(23.0F, -44.0F, -35.0F, 3.0F, 3.0F, 64.0F, new CubeDeformation(0.0F)).texOffs(244, 91).addBox(23.0F, -52.0F, -13.0F, 3.0F, 8.0F, 17.0F, new CubeDeformation(0.0F)).texOffs(244, 40)
+						.addBox(23.0F, -96.0F, -8.0F, 3.0F, 44.0F, 7.0F, new CubeDeformation(0.0F)).texOffs(244, 28).addBox(-19.0F, -96.0F, -7.0F, 42.0F, 7.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(244, 116)
+						.addBox(-1.0F, -100.0F, -7.0F, 7.0F, 4.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(0, 0).addBox(0.0F, -420.0F, -7.0F, 5.0F, 320.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(264, 40)
+						.addBox(-22.0F, -96.0F, -8.0F, 3.0F, 44.0F, 7.0F, new CubeDeformation(0.0F)).texOffs(280, 116).addBox(-22.0F, -52.0F, -13.0F, 3.0F, 8.0F, 17.0F, new CubeDeformation(0.0F)).texOffs(244, 0)
+						.addBox(-22.0F, -20.0F, 27.0F, 48.0F, 18.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(20, 134).addBox(23.0F, -20.0F, -35.0F, 3.0F, 18.0F, 62.0F, new CubeDeformation(0.0F)).texOffs(280, 141)
+						.addBox(23.0F, -38.0F, 26.0F, 3.0F, 18.0F, 3.0F, new CubeDeformation(0.0F)).texOffs(280, 162).addBox(-22.0F, -38.0F, 26.0F, 3.0F, 18.0F, 3.0F, new CubeDeformation(0.0F)).texOffs(20, 281)
+						.addBox(-22.0F, -38.0F, -35.0F, 3.0F, 18.0F, 3.0F, new CubeDeformation(0.0F)).texOffs(280, 183).addBox(23.0F, -38.0F, -35.0F, 3.0F, 18.0F, 3.0F, new CubeDeformation(0.0F)).texOffs(150, 134)
+						.addBox(-22.0F, -20.0F, -35.0F, 3.0F, 18.0F, 62.0F, new CubeDeformation(0.0F)),
+				PartPose.offset(0.0F, 24.0F, 0.0F));
+		PartDefinition bone = mainstructure.addOrReplaceChild("bone", CubeListBuilder.create(), PartPose.offset(-45.0F, -2.0F, 2.0F));
+		PartDefinition leftside = bone.addOrReplaceChild("leftside",
+				CubeListBuilder.create().texOffs(160, 281).addBox(1.0F, -2.0F, -5.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(244, 125).addBox(1.0F, 10.0F, 39.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(244, 129)
+						.addBox(1.0F, 10.0F, 35.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(248, 125).addBox(1.0F, 8.0F, 37.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(252, 129)
+						.addBox(1.0F, 8.0F, 29.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(256, 125).addBox(1.0F, 8.0F, 33.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(252, 125)
+						.addBox(1.0F, 10.0F, 31.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(248, 129).addBox(1.0F, 10.0F, 27.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(268, 120)
+						.addBox(1.0F, 10.0F, 23.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(268, 116).addBox(1.0F, 10.0F, 19.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(264, 129)
+						.addBox(1.0F, 8.0F, 21.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(264, 125).addBox(1.0F, 8.0F, 13.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(260, 129)
+						.addBox(1.0F, 8.0F, 17.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(260, 125).addBox(1.0F, 10.0F, 15.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(256, 129)
+						.addBox(1.0F, 10.0F, 11.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(276, 116).addBox(1.0F, 10.0F, 7.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(272, 128)
+						.addBox(1.0F, 10.0F, 3.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(272, 124).addBox(1.0F, 8.0F, 5.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(276, 120)
+						.addBox(1.0F, 8.0F, 9.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(276, 124).addBox(1.0F, 8.0F, 25.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(276, 128)
+						.addBox(1.0F, 8.0F, -7.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(280, 204).addBox(1.0F, 8.0F, -11.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(280, 208)
+						.addBox(1.0F, 8.0F, -15.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(32, 281).addBox(1.0F, 10.0F, -17.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(36, 281)
+						.addBox(1.0F, 10.0F, -13.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(40, 281).addBox(1.0F, 10.0F, -9.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(272, 120)
+						.addBox(1.0F, 8.0F, -3.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(272, 116).addBox(1.0F, 8.0F, 1.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(268, 128)
+						.addBox(1.0F, 10.0F, -1.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(268, 124).addBox(1.0F, 10.0F, -5.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(156, 281)
+						.addBox(1.0F, 6.0F, 39.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(152, 281).addBox(1.0F, 6.0F, 35.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(148, 281)
+						.addBox(1.0F, 4.0F, 37.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(144, 281).addBox(1.0F, 4.0F, 29.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(140, 281)
+						.addBox(1.0F, 4.0F, 33.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(136, 281).addBox(1.0F, 6.0F, 31.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(132, 281)
+						.addBox(1.0F, 6.0F, 27.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(128, 281).addBox(1.0F, 6.0F, 23.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(124, 281)
+						.addBox(1.0F, 6.0F, 19.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(120, 281).addBox(1.0F, 4.0F, 21.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(116, 281)
+						.addBox(1.0F, 4.0F, 13.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(112, 281).addBox(1.0F, 4.0F, 17.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(108, 281)
+						.addBox(1.0F, 6.0F, 15.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(104, 281).addBox(1.0F, 6.0F, 11.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(100, 281)
+						.addBox(1.0F, 6.0F, 7.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(96, 281).addBox(1.0F, 6.0F, 3.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(92, 281)
+						.addBox(1.0F, 4.0F, 5.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(88, 281).addBox(1.0F, 4.0F, 9.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(84, 281)
+						.addBox(1.0F, 4.0F, 25.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(80, 281).addBox(1.0F, 4.0F, -7.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(76, 281)
+						.addBox(1.0F, 4.0F, -11.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(72, 281).addBox(1.0F, 4.0F, -15.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(68, 281)
+						.addBox(1.0F, 6.0F, -17.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(64, 281).addBox(1.0F, 6.0F, -13.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(60, 281)
+						.addBox(1.0F, 6.0F, -9.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 281).addBox(1.0F, 4.0F, -3.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(52, 281)
+						.addBox(1.0F, 4.0F, 1.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(48, 281).addBox(1.0F, 6.0F, -1.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(44, 281)
+						.addBox(1.0F, 6.0F, -5.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(48, 285).addBox(1.0F, 2.0F, 39.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(44, 285)
+						.addBox(1.0F, 2.0F, 35.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(40, 285).addBox(1.0F, 0.0F, 37.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(36, 285)
+						.addBox(1.0F, 0.0F, 29.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(32, 285).addBox(1.0F, 0.0F, 33.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(284, 281)
+						.addBox(1.0F, 2.0F, 31.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(284, 208).addBox(1.0F, 2.0F, 27.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(284, 204)
+						.addBox(1.0F, 2.0F, 23.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(284, 112).addBox(1.0F, 2.0F, 19.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(284, 108)
+						.addBox(1.0F, 0.0F, 21.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(284, 104).addBox(1.0F, 0.0F, 13.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(284, 100)
+						.addBox(1.0F, 0.0F, 17.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(284, 96).addBox(1.0F, 2.0F, 15.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(284, 92)
+						.addBox(1.0F, 2.0F, 11.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(284, 88).addBox(1.0F, 2.0F, 7.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(284, 84)
+						.addBox(1.0F, 2.0F, 3.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(284, 80).addBox(1.0F, 0.0F, 5.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(284, 76)
+						.addBox(1.0F, 0.0F, 9.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(284, 72).addBox(1.0F, 0.0F, 25.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(284, 68)
+						.addBox(1.0F, 0.0F, -7.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(284, 64).addBox(1.0F, 0.0F, -11.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(284, 60)
+						.addBox(1.0F, 0.0F, -15.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(284, 56).addBox(1.0F, 2.0F, -17.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(284, 52)
+						.addBox(1.0F, 2.0F, -13.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(284, 48).addBox(1.0F, 2.0F, -9.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(284, 44)
+						.addBox(1.0F, 0.0F, -3.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(284, 40).addBox(1.0F, 0.0F, 1.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(280, 281)
+						.addBox(1.0F, 2.0F, -1.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(276, 281).addBox(1.0F, 2.0F, -5.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(272, 281)
+						.addBox(1.0F, -2.0F, 39.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(268, 281).addBox(1.0F, -2.0F, 35.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(264, 281)
+						.addBox(1.0F, -4.0F, 37.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(260, 281).addBox(1.0F, -4.0F, 29.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(256, 281)
+						.addBox(1.0F, -4.0F, 33.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(252, 281).addBox(1.0F, -2.0F, 31.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(248, 281)
+						.addBox(1.0F, -2.0F, 27.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(244, 281).addBox(1.0F, -2.0F, 23.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(240, 281)
+						.addBox(1.0F, -2.0F, 19.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(236, 281).addBox(1.0F, -4.0F, 21.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(232, 281)
+						.addBox(1.0F, -4.0F, 13.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(228, 281).addBox(1.0F, -4.0F, 17.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(224, 281)
+						.addBox(1.0F, -2.0F, 15.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(220, 281).addBox(1.0F, -2.0F, 11.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(216, 281)
+						.addBox(1.0F, -2.0F, 7.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(212, 281).addBox(1.0F, -2.0F, 3.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(208, 281)
+						.addBox(1.0F, -4.0F, 5.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(204, 281).addBox(1.0F, -4.0F, 9.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(200, 281)
+						.addBox(1.0F, -4.0F, 25.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(196, 281).addBox(1.0F, -4.0F, -7.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(192, 281)
+						.addBox(1.0F, -4.0F, -11.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(188, 281).addBox(1.0F, -4.0F, -15.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(52, 285)
+						.addBox(1.0F, -6.0F, -17.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 285).addBox(1.0F, -6.0F, -13.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(60, 285)
+						.addBox(1.0F, -6.0F, -9.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(64, 285).addBox(1.0F, -6.0F, -5.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(68, 285)
+						.addBox(1.0F, -6.0F, -1.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(72, 285).addBox(1.0F, -6.0F, 3.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(76, 285)
+						.addBox(1.0F, -6.0F, 7.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(80, 285).addBox(1.0F, -6.0F, 11.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(84, 285)
+						.addBox(1.0F, -6.0F, 15.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(88, 285).addBox(1.0F, -6.0F, 19.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(92, 285)
+						.addBox(1.0F, -6.0F, 23.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(96, 285).addBox(1.0F, -6.0F, 27.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(100, 285)
+						.addBox(1.0F, -6.0F, 31.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(104, 285).addBox(1.0F, -6.0F, 35.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(108, 285)
+						.addBox(1.0F, -6.0F, 39.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(184, 281).addBox(1.0F, -2.0F, -17.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(180, 281)
+						.addBox(1.0F, -2.0F, -13.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(176, 281).addBox(1.0F, -2.0F, -9.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(172, 281)
+						.addBox(1.0F, -4.0F, -3.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(168, 281).addBox(1.0F, -4.0F, 1.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(164, 281)
+						.addBox(1.0F, -2.0F, -1.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)),
+				PartPose.offset(24.0F, -30.0F, -17.0F));
+		PartDefinition rightside = bone.addOrReplaceChild("rightside",
+				CubeListBuilder.create().texOffs(212, 289).addBox(1.0F, -2.0F, -5.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(208, 289).addBox(1.0F, 10.0F, 39.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(204, 289)
+						.addBox(1.0F, 10.0F, 35.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(200, 289).addBox(1.0F, 8.0F, 37.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(196, 289)
+						.addBox(1.0F, 8.0F, 29.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(192, 289).addBox(1.0F, 8.0F, 33.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(188, 289)
+						.addBox(1.0F, 10.0F, 31.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(184, 289).addBox(1.0F, 10.0F, 27.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(180, 289)
+						.addBox(1.0F, 10.0F, 23.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(176, 289).addBox(1.0F, 10.0F, 19.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(172, 289)
+						.addBox(1.0F, 8.0F, 21.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(168, 289).addBox(1.0F, 8.0F, 13.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(164, 289)
+						.addBox(1.0F, 8.0F, 17.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(160, 289).addBox(1.0F, 10.0F, 15.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(156, 289)
+						.addBox(1.0F, 10.0F, 11.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(152, 289).addBox(1.0F, 10.0F, 7.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(148, 289)
+						.addBox(1.0F, 10.0F, 3.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(144, 289).addBox(1.0F, 8.0F, 5.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(140, 289)
+						.addBox(1.0F, 8.0F, 9.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(136, 289).addBox(1.0F, 8.0F, 25.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(132, 289)
+						.addBox(1.0F, 8.0F, -7.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(128, 289).addBox(1.0F, 8.0F, -11.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(124, 289)
+						.addBox(1.0F, 8.0F, -15.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(120, 289).addBox(1.0F, 10.0F, -17.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(116, 289)
+						.addBox(1.0F, 10.0F, -13.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(112, 289).addBox(1.0F, 10.0F, -9.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(108, 289)
+						.addBox(1.0F, 8.0F, -3.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(104, 289).addBox(1.0F, 8.0F, 1.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(100, 289)
+						.addBox(1.0F, 10.0F, -1.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(96, 289).addBox(1.0F, 10.0F, -5.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(92, 289)
+						.addBox(1.0F, 6.0F, 39.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(88, 289).addBox(1.0F, 6.0F, 35.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(84, 289)
+						.addBox(1.0F, 4.0F, 37.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(80, 289).addBox(1.0F, 4.0F, 29.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(76, 289)
+						.addBox(1.0F, 4.0F, 33.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(72, 289).addBox(1.0F, 6.0F, 31.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(68, 289)
+						.addBox(1.0F, 6.0F, 27.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(64, 289).addBox(1.0F, 6.0F, 23.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(60, 289)
+						.addBox(1.0F, 6.0F, 19.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 289).addBox(1.0F, 4.0F, 21.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(52, 289)
+						.addBox(1.0F, 4.0F, 13.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(48, 289).addBox(1.0F, 4.0F, 17.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(44, 289)
+						.addBox(1.0F, 6.0F, 15.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(40, 289).addBox(1.0F, 6.0F, 11.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(36, 289)
+						.addBox(1.0F, 6.0F, 7.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(32, 289).addBox(1.0F, 6.0F, 3.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 288)
+						.addBox(1.0F, 4.0F, 5.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 284).addBox(1.0F, 4.0F, 9.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 280)
+						.addBox(1.0F, 4.0F, 25.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 276).addBox(1.0F, 4.0F, -7.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 272)
+						.addBox(1.0F, 4.0F, -11.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 268).addBox(1.0F, 4.0F, -15.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 264)
+						.addBox(1.0F, 6.0F, -17.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 260).addBox(1.0F, 6.0F, -13.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 256)
+						.addBox(1.0F, 6.0F, -9.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 252).addBox(1.0F, 4.0F, -3.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 248)
+						.addBox(1.0F, 4.0F, 1.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 244).addBox(1.0F, 6.0F, -1.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 240)
+						.addBox(1.0F, 6.0F, -5.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 236).addBox(1.0F, 2.0F, 39.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 232)
+						.addBox(1.0F, 2.0F, 35.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 228).addBox(1.0F, 0.0F, 37.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 224)
+						.addBox(1.0F, 0.0F, 29.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 220).addBox(1.0F, 0.0F, 33.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 216)
+						.addBox(1.0F, 2.0F, 31.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 212).addBox(1.0F, 2.0F, 27.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 208)
+						.addBox(1.0F, 2.0F, 23.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 204).addBox(1.0F, 2.0F, 19.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 112)
+						.addBox(1.0F, 0.0F, 21.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 108).addBox(1.0F, 0.0F, 13.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 104)
+						.addBox(1.0F, 0.0F, 17.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 100).addBox(1.0F, 2.0F, 15.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 96)
+						.addBox(1.0F, 2.0F, 11.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 92).addBox(1.0F, 2.0F, 7.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 88)
+						.addBox(1.0F, 2.0F, 3.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 84).addBox(1.0F, 0.0F, 5.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 80)
+						.addBox(1.0F, 0.0F, 9.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 76).addBox(1.0F, 0.0F, 25.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 72)
+						.addBox(1.0F, 0.0F, -7.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 68).addBox(1.0F, 0.0F, -11.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 64)
+						.addBox(1.0F, 0.0F, -15.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 60).addBox(1.0F, 2.0F, -17.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 56)
+						.addBox(1.0F, 2.0F, -13.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 52).addBox(1.0F, 2.0F, -9.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 48)
+						.addBox(1.0F, 0.0F, -3.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 44).addBox(1.0F, 0.0F, 1.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(288, 40)
+						.addBox(1.0F, 2.0F, -1.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(284, 285).addBox(1.0F, 2.0F, -5.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(280, 285)
+						.addBox(1.0F, -2.0F, 39.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(276, 285).addBox(1.0F, -2.0F, 35.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(272, 285)
+						.addBox(1.0F, -4.0F, 37.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(268, 285).addBox(1.0F, -4.0F, 29.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(264, 285)
+						.addBox(1.0F, -4.0F, 33.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(260, 285).addBox(1.0F, -2.0F, 31.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(256, 285)
+						.addBox(1.0F, -2.0F, 27.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(252, 285).addBox(1.0F, -2.0F, 23.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(248, 285)
+						.addBox(1.0F, -2.0F, 19.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(244, 285).addBox(1.0F, -4.0F, 21.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(240, 285)
+						.addBox(1.0F, -4.0F, 13.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(236, 285).addBox(1.0F, -4.0F, 17.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(232, 285)
+						.addBox(1.0F, -2.0F, 15.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(228, 285).addBox(1.0F, -2.0F, 11.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(224, 285)
+						.addBox(1.0F, -2.0F, 7.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(220, 285).addBox(1.0F, -2.0F, 3.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(216, 285)
+						.addBox(1.0F, -4.0F, 5.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(212, 285).addBox(1.0F, -4.0F, 9.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(208, 285)
+						.addBox(1.0F, -4.0F, 25.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(204, 285).addBox(1.0F, -4.0F, -7.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(200, 285)
+						.addBox(1.0F, -4.0F, -11.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(196, 285).addBox(1.0F, -4.0F, -15.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(192, 285)
+						.addBox(1.0F, -6.0F, -17.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(188, 285).addBox(1.0F, -6.0F, -13.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(184, 285)
+						.addBox(1.0F, -6.0F, -9.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(180, 285).addBox(1.0F, -6.0F, -5.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(176, 285)
+						.addBox(1.0F, -6.0F, -1.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(172, 285).addBox(1.0F, -6.0F, 3.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(168, 285)
+						.addBox(1.0F, -6.0F, 7.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(164, 285).addBox(1.0F, -6.0F, 11.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(160, 285)
+						.addBox(1.0F, -6.0F, 15.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(156, 285).addBox(1.0F, -6.0F, 19.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(152, 285)
+						.addBox(1.0F, -6.0F, 23.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(148, 285).addBox(1.0F, -6.0F, 27.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(144, 285)
+						.addBox(1.0F, -6.0F, 31.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(140, 285).addBox(1.0F, -6.0F, 35.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(136, 285)
+						.addBox(1.0F, -6.0F, 39.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(132, 285).addBox(1.0F, -2.0F, -17.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(128, 285)
+						.addBox(1.0F, -2.0F, -13.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(124, 285).addBox(1.0F, -2.0F, -9.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(120, 285)
+						.addBox(1.0F, -4.0F, -3.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(116, 285).addBox(1.0F, -4.0F, 1.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(112, 285)
+						.addBox(1.0F, -2.0F, -1.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)),
+				PartPose.offset(68.0F, -30.0F, -17.0F));
+		PartDefinition backside = bone.addOrReplaceChild("backside",
+				CubeListBuilder.create().texOffs(268, 132).addBox(21.0F, -18.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(272, 132).addBox(17.0F, -18.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(276, 132)
+						.addBox(15.0F, -20.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(280, 212).addBox(19.0F, -20.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(260, 289)
+						.addBox(-11.0F, -18.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(264, 289).addBox(-15.0F, -18.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(276, 289)
+						.addBox(-19.0F, -18.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(268, 289).addBox(-17.0F, -20.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(272, 289)
+						.addBox(-13.0F, -20.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(244, 289).addBox(-3.0F, -18.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(248, 289)
+						.addBox(-7.0F, -18.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(252, 289).addBox(-9.0F, -20.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(256, 289)
+						.addBox(-5.0F, -20.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(228, 289).addBox(5.0F, -18.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(232, 289)
+						.addBox(1.0F, -18.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(236, 289).addBox(-1.0F, -20.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(240, 289)
+						.addBox(3.0F, -20.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(284, 212).addBox(13.0F, -18.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(216, 289)
+						.addBox(9.0F, -18.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(220, 289).addBox(7.0F, -20.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(224, 289)
+						.addBox(11.0F, -20.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 40).addBox(21.0F, -22.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(284, 291)
+						.addBox(17.0F, -22.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(280, 291).addBox(15.0F, -24.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(276, 291)
+						.addBox(19.0F, -24.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(272, 291).addBox(-11.0F, -22.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(268, 291)
+						.addBox(-15.0F, -22.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(264, 291).addBox(-19.0F, -22.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(260, 291)
+						.addBox(-17.0F, -24.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(256, 291).addBox(-13.0F, -24.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(252, 291)
+						.addBox(-3.0F, -22.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(248, 291).addBox(-7.0F, -22.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(244, 291)
+						.addBox(-9.0F, -24.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(240, 291).addBox(-5.0F, -24.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(236, 291)
+						.addBox(5.0F, -22.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(232, 291).addBox(1.0F, -22.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(228, 291)
+						.addBox(-1.0F, -24.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(224, 291).addBox(3.0F, -24.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(220, 291)
+						.addBox(13.0F, -22.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(216, 291).addBox(9.0F, -22.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(284, 289)
+						.addBox(7.0F, -24.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(280, 289).addBox(11.0F, -24.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 82)
+						.addBox(21.0F, -26.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 80).addBox(17.0F, -26.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 78)
+						.addBox(15.0F, -28.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 76).addBox(19.0F, -28.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 74)
+						.addBox(-11.0F, -26.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 72).addBox(-15.0F, -26.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 70)
+						.addBox(-19.0F, -26.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 68).addBox(-17.0F, -28.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 66)
+						.addBox(-13.0F, -28.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 64).addBox(-3.0F, -26.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 62)
+						.addBox(-7.0F, -26.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 60).addBox(-9.0F, -28.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 58)
+						.addBox(-5.0F, -28.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 56).addBox(5.0F, -26.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 54)
+						.addBox(1.0F, -26.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 52).addBox(-1.0F, -28.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 50)
+						.addBox(3.0F, -28.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 48).addBox(13.0F, -26.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 46)
+						.addBox(9.0F, -26.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 44).addBox(7.0F, -28.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 42)
+						.addBox(11.0F, -28.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 149).addBox(21.0F, -30.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 147)
+						.addBox(17.0F, -30.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 145).addBox(15.0F, -32.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 143)
+						.addBox(19.0F, -32.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 141).addBox(-11.0F, -30.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 114)
+						.addBox(-15.0F, -30.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 112).addBox(-19.0F, -30.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 110)
+						.addBox(-17.0F, -32.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 151).addBox(-19.0F, -34.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 153)
+						.addBox(-15.0F, -34.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 155).addBox(-11.0F, -34.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 157)
+						.addBox(-7.0F, -34.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 159).addBox(-3.0F, -34.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 161)
+						.addBox(1.0F, -34.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 163).addBox(5.0F, -34.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 165)
+						.addBox(9.0F, -34.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 167).addBox(13.0F, -34.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 169)
+						.addBox(17.0F, -34.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 171).addBox(21.0F, -34.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 108)
+						.addBox(-13.0F, -32.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 106).addBox(-3.0F, -30.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 104)
+						.addBox(-7.0F, -30.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 102).addBox(-9.0F, -32.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 100)
+						.addBox(-5.0F, -32.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 98).addBox(5.0F, -30.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 96)
+						.addBox(1.0F, -30.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 94).addBox(-1.0F, -32.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 92)
+						.addBox(3.0F, -32.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 90).addBox(13.0F, -30.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 88)
+						.addBox(9.0F, -30.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 86).addBox(7.0F, -32.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(292, 84)
+						.addBox(11.0F, -32.0F, 25.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)),
+				PartPose.offset(45.0F, -2.0F, 0.0F));
+		return LayerDefinition.create(meshdefinition, 512, 512);
+	}
+
+	public void setupAnim(LivingEntityRenderState state) {
+		float limbSwing = state.walkAnimationPos;
+		float limbSwingAmount = state.walkAnimationSpeed;
+		float ageInTicks = state.ageInTicks;
+		float netHeadYaw = state.yRot;
+		float headPitch = state.xRot;
+
+	}
+
+}

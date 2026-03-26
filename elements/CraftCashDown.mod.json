@@ -1,0 +1,49 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CashStackRegular"
+      },
+      {
+        "value": "CUSTOM:CashStackRegular"
+      },
+      {
+        "value": "CUSTOM:CashStackRegular"
+      },
+      {
+        "value": "CUSTOM:CashStackRegular"
+      },
+      {
+        "value": "CUSTOM:CashStackRegular"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CashStackHundreds"
+    },
+    "name": "craft_cash_down",
+    "namespace": "mod"
+  }
+}

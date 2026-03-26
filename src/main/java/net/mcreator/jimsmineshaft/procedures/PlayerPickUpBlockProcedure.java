@@ -145,5 +145,38 @@ public class PlayerPickUpBlockProcedure {
 			itemstack.set(DataComponents.CUSTOM_NAME,
 					Component.literal(("Mined Copper Chunk \u00A72\u00A7l$" + new java.text.DecimalFormat("##.##").format(itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("value")))));
 		}
+		if (JimsmineshaftModBlocks.BOTTLE.get().asItem() == itemstack.getItem()) {
+			{
+				final String _tagName = "value";
+				final double _tagValue = (Mth.nextDouble(RandomSource.create(), 3, 4));
+				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
+			}
+			itemstack.set(DataComponents.CUSTOM_NAME, Component.literal(("Old Bottle \u00A72\u00A7l$" + new java.text.DecimalFormat("##.##").format(itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("value")))));
+		}
+		if (JimsmineshaftModBlocks.CANTEEN.get().asItem() == itemstack.getItem()) {
+			{
+				final String _tagName = "value";
+				final double _tagValue = (Mth.nextDouble(RandomSource.create(), 10, 13));
+				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
+			}
+			itemstack.set(DataComponents.CUSTOM_NAME, Component.literal(("Canteen \u00A72\u00A7l$" + new java.text.DecimalFormat("##.##").format(itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("value")))));
+		}
+		if (JimsmineshaftModBlocks.CANARY_CAGE.get().asItem() == itemstack.getItem()) {
+			{
+				final String _tagName = "value";
+				final double _tagValue = (Mth.nextDouble(RandomSource.create(), 28, 36));
+				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
+			}
+			itemstack.set(DataComponents.CUSTOM_NAME, Component.literal(("Bird Cage \u00A72\u00A7l$" + new java.text.DecimalFormat("##.##").format(itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("value")))));
+		}
+		if (JimsmineshaftModBlocks.CANDLE_HOLDER.get().asItem() == itemstack.getItem()) {
+			{
+				final String _tagName = "value";
+				final double _tagValue = (Mth.nextDouble(RandomSource.create(), 24, 28));
+				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
+			}
+			itemstack.set(DataComponents.CUSTOM_NAME,
+					Component.literal(("Candle Holder \u00A72\u00A7l$" + new java.text.DecimalFormat("##.##").format(itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("value")))));
+		}
 	}
 }

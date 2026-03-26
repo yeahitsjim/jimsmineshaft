@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "G",
+    "keyBindingName": "Open Lvl 2 Spawner GUI",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "OpenSpawnerLvl2GUIOnKeyPressed"
+    }
+  }
+}

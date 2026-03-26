@@ -1,0 +1,7 @@
+{
+  "parent": "jimsmineshaft:custom/cashstack",
+  "textures": {
+    "0": "jimsmineshaft:block/texturecash2",
+    "particle": "jimsmineshaft:item/texturecash2"
+  }
+}

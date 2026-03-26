@@ -160,6 +160,26 @@ public class JimsmineshaftModTabs {
 				tabData.accept(JimsmineshaftModBlocks.BOTTLE.get().asItem());
 				tabData.accept(JimsmineshaftModItems.GREASE_GUN.get());
 				tabData.accept(JimsmineshaftModItems.STALKER_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModItems.CASH_STACK_REGULAR.get());
+				tabData.accept(JimsmineshaftModItems.CASH_STACK_HUNDREDS.get());
+				tabData.accept(JimsmineshaftModBlocks.CLERK_BASIC_BLOCK.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.CLERK_TOOLS_BLOCK.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.CLERK_WEAPONS_BLOCK.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.CLERK_WEAPONS_HEAVY_BLOCK.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.CLERK_AMMO_BLOCK.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.CLOTHES_BAG.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.BASIC_CLOTHES_BAG.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.VETERAN_ARMOR_BAG.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.CLERK_ARMOR_BLOCK.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.ELEVATOR_LIGHT_3.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.CORRUPTED_ROOF_SUPPORT.get().asItem());
+				tabData.accept(JimsmineshaftModItems.CARTELEVATOR_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModItems.CART_ELEVATOR_BOUNDING_BOX_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModBlocks.DRILLING_BLOCK.get().asItem());
+				tabData.accept(JimsmineshaftModItems.ELEVATOR_FAILSAF_EBOX_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModItems.SPAWN_STRUCTURE_SHAFT_ENTITY_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModItems.CARTELEVATOR_EAST_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModItems.CARTELEVATOR_WEST_SPAWN_EGG.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
@@ -171,6 +191,12 @@ public class JimsmineshaftModTabs {
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(JimsmineshaftModItems.JIMSMINEDIMENSION.get());
 			tabData.accept(JimsmineshaftModItems.LEVEL_1_DIMENSION.get());
+			tabData.accept(JimsmineshaftModItems.SHOPDIMENSION.get());
+			tabData.accept(JimsmineshaftModItems.LEVEL_2_DIMENSION.get());
+			tabData.accept(JimsmineshaftModItems.LEVEL_3_DIMENSION.get());
+			tabData.accept(JimsmineshaftModItems.LEVEL_4_DIMENSION.get());
+			tabData.accept(JimsmineshaftModItems.LEVEL_5_DIMENSION.get());
+			tabData.accept(JimsmineshaftModItems.LEVEL_6_DIMENSION.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(JimsmineshaftModItems.THECART_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.PRESSURE_DRILL_SPAWN_EGG.get());
@@ -193,6 +219,12 @@ public class JimsmineshaftModTabs {
 			tabData.accept(JimsmineshaftModItems.COPPER_DRILLED_NORTH_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.PLAYER_STALKIER_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.VISION_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.CARTELEVATOR_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.CART_ELEVATOR_BOUNDING_BOX_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.ELEVATOR_FAILSAF_EBOX_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.SPAWN_STRUCTURE_SHAFT_ENTITY_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.CARTELEVATOR_EAST_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.CARTELEVATOR_WEST_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(JimsmineshaftModItems.MINING_GOON_SET_HELMET.get());
 			tabData.accept(JimsmineshaftModItems.MINING_GOON_SET_CHESTPLATE.get());

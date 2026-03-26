@@ -17,7 +17,14 @@
     "water_fog_color": -13755370
   },
   "spawners": {
-    "monster": [],
+    "monster": [
+      {
+        "type": "jimsmineshaft:stalker",
+        "weight": 20,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ],
     "creature": [],
     "ambient": [],
     "axolotls": [],

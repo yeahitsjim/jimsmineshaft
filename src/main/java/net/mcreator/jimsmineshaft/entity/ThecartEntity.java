@@ -18,6 +18,9 @@ import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.ai.navigation.PathNavigation;
+import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
+import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.PathfinderMob;
@@ -55,6 +58,12 @@ public class ThecartEntity extends PathfinderMob {
 		xpReward = 0;
 		setNoAi(false);
 		setPersistenceRequired();
+		this.moveControl = new FlyingMoveControl(this, 10, true);
+	}
+
+	@Override
+	protected PathNavigation createNavigation(Level world) {
+		return new FlyingPathNavigation(this, world);
 	}
 
 	@Override
@@ -71,6 +80,11 @@ public class ThecartEntity extends PathfinderMob {
 	@Override
 	public void playStepSound(BlockPos pos, BlockState blockIn) {
 		this.playSound(BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:cartstep1")), 0.15f, 1);
+	}
+
+	@Override
+	public boolean causeFallDamage(float l, float d, DamageSource source) {
+		return false;
 	}
 
 	@Override
@@ -215,6 +229,20 @@ public class ThecartEntity extends PathfinderMob {
 	protected void pushEntities() {
 	}
 
+	@Override
+	protected void checkFallDamage(double y, boolean onGroundIn, BlockState state, BlockPos pos) {
+	}
+
+	@Override
+	public void setNoGravity(boolean ignored) {
+		super.setNoGravity(true);
+	}
+
+	public void aiStep() {
+		super.aiStep();
+		this.setNoGravity(true);
+	}
+
 	public static void init(RegisterSpawnPlacementsEvent event) {
 	}
 
@@ -226,6 +254,7 @@ public class ThecartEntity extends PathfinderMob {
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		builder = builder.add(Attributes.STEP_HEIGHT, 0.6);
+		builder = builder.add(Attributes.FLYING_SPEED, 0.3);
 		return builder;
 	}
 }

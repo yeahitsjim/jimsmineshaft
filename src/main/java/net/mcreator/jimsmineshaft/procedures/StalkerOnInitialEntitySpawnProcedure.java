@@ -1,6 +1,17 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.AABB;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerPlayer;
+
+import net.mcreator.jimsmineshaft.entity.StalkerEntity;
+import net.mcreator.jimsmineshaft.entity.SkinStealerEntityEntity;
+import net.mcreator.jimsmineshaft.JimsmineshaftMod;
+
+import java.util.Comparator;
 
 public class StalkerOnInitialEntitySpawnProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {

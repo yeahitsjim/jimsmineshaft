@@ -1,0 +1,16 @@
+{
+  "_fv": 79,
+  "_type": "villagerprofession",
+  "definition": {
+    "displayName": "Basic Goods Clerk",
+    "pointOfInterest": {
+      "value": "CUSTOM:ClerkBasicBlock"
+    },
+    "actionSound": {
+      "value": "CUSTOM:pickupbit2"
+    },
+    "hat": "Full",
+    "professionTextureFile": "companystoreclerk6.png",
+    "zombifiedProfessionTextureFile": "companystoreclerk6.png"
+  }
+}

@@ -1,5 +1,28 @@
 package net.mcreator.jimsmineshaft.item;
 
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.network.chat.Component;
+
+import net.mcreator.jimsmineshaft.procedures.TommyGunRangedItemShootsProjectileProcedure;
+import net.mcreator.jimsmineshaft.procedures.TommyGunEntitySwingsItemProcedure;
+import net.mcreator.jimsmineshaft.procedures.TommyGunCanUseRangedItemProcedure;
+import net.mcreator.jimsmineshaft.entity.BulletProjectileEntity;
+
+import java.util.List;
+
 public class TommyGunItem extends Item {
 	public TommyGunItem(Item.Properties properties) {
 		super(properties.stacksTo(1));

@@ -1,6 +1,7 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.core.BlockPos;
 
 public class UnobstructedLineProcedure {
 	public static boolean execute(LevelAccessor world, double endX, double endY, double endZ, double startX, double startY, double startZ) {

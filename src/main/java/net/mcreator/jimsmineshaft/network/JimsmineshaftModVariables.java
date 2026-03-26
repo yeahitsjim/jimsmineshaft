@@ -90,6 +90,12 @@ public class JimsmineshaftModVariables {
 			clone.elevatorSeatNumber = original.elevatorSeatNumber;
 			clone.stamina = original.stamina;
 			clone.staminamax = original.staminamax;
+			clone.nearCartElevator = original.nearCartElevator;
+			clone.hadDiedInMatch = original.hadDiedInMatch;
+			clone.deathLevel = original.deathLevel;
+			clone.deathX = original.deathX;
+			clone.deathY = original.deathY;
+			clone.deathZ = original.deathZ;
 			if (!event.isWasDeath()) {
 				clone.analogScreenInx = original.analogScreenInx;
 			}
@@ -164,9 +170,14 @@ public class JimsmineshaftModVariables {
 		public String SBselectedShaft = "\"\"";
 		public double totalPlayers = 0;
 		public double SB_z = 0;
-		public double SB_x = 0;
+		public double SB_x = 0.0;
 		public double SB_y = 0;
 		public boolean doBlockSpawning = false;
+		public double cashReturnedFromLevel = 0;
+		public double currentLevel = 0;
+		public double levelDurationTick = 0;
+		public boolean matchInProgress = false;
+		public boolean hasBeenPaid = false;
 
 		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			MapVariables data = new MapVariables();
@@ -188,6 +199,11 @@ public class JimsmineshaftModVariables {
 			SB_x = nbt.getDouble("SB_x");
 			SB_y = nbt.getDouble("SB_y");
 			doBlockSpawning = nbt.getBoolean("doBlockSpawning");
+			cashReturnedFromLevel = nbt.getDouble("cashReturnedFromLevel");
+			currentLevel = nbt.getDouble("currentLevel");
+			levelDurationTick = nbt.getDouble("levelDurationTick");
+			matchInProgress = nbt.getBoolean("matchInProgress");
+			hasBeenPaid = nbt.getBoolean("hasBeenPaid");
 		}
 
 		@Override
@@ -205,6 +221,11 @@ public class JimsmineshaftModVariables {
 			nbt.putDouble("SB_x", SB_x);
 			nbt.putDouble("SB_y", SB_y);
 			nbt.putBoolean("doBlockSpawning", doBlockSpawning);
+			nbt.putDouble("cashReturnedFromLevel", cashReturnedFromLevel);
+			nbt.putDouble("currentLevel", currentLevel);
+			nbt.putDouble("levelDurationTick", levelDurationTick);
+			nbt.putBoolean("matchInProgress", matchInProgress);
+			nbt.putBoolean("hasBeenPaid", hasBeenPaid);
 			return nbt;
 		}
 
@@ -284,10 +305,16 @@ public class JimsmineshaftModVariables {
 		public double maxbattery = 100.0;
 		public double batterylife = 100.0;
 		public double darknessOverlay = 0;
-		public double elevatorSeatNumber = 0;
+		public double elevatorSeatNumber = 0.0;
 		public String analogScreenInx = "\"\"";
 		public double stamina = 100.0;
 		public double staminamax = 100.0;
+		public boolean nearCartElevator = false;
+		public boolean hadDiedInMatch = false;
+		public String deathLevel = "\"\"";
+		public double deathX = 0;
+		public double deathY = 0;
+		public double deathZ = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -314,6 +341,12 @@ public class JimsmineshaftModVariables {
 			nbt.putString("analogScreenInx", analogScreenInx);
 			nbt.putDouble("stamina", stamina);
 			nbt.putDouble("staminamax", staminamax);
+			nbt.putBoolean("nearCartElevator", nearCartElevator);
+			nbt.putBoolean("hadDiedInMatch", hadDiedInMatch);
+			nbt.putString("deathLevel", deathLevel);
+			nbt.putDouble("deathX", deathX);
+			nbt.putDouble("deathY", deathY);
+			nbt.putDouble("deathZ", deathZ);
 			return nbt;
 		}
 
@@ -341,6 +374,12 @@ public class JimsmineshaftModVariables {
 			analogScreenInx = nbt.getString("analogScreenInx");
 			stamina = nbt.getDouble("stamina");
 			staminamax = nbt.getDouble("staminamax");
+			nearCartElevator = nbt.getBoolean("nearCartElevator");
+			hadDiedInMatch = nbt.getBoolean("hadDiedInMatch");
+			deathLevel = nbt.getString("deathLevel");
+			deathX = nbt.getDouble("deathX");
+			deathY = nbt.getDouble("deathY");
+			deathZ = nbt.getDouble("deathZ");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

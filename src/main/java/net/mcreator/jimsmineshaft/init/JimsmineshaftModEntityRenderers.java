@@ -15,6 +15,7 @@ import net.mcreator.jimsmineshaft.client.renderer.ThecartRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.StalkerRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.StalkerInsidesRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.StalkerInsides2Renderer;
+import net.mcreator.jimsmineshaft.client.renderer.SpawnStructureShaftEntityRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.SmallSlideUpGateEntityRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.SmallSideOpenGateEntityRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.SkinStealerEntityRenderer;
@@ -34,9 +35,14 @@ import net.mcreator.jimsmineshaft.client.renderer.ElevatorSeat3Renderer;
 import net.mcreator.jimsmineshaft.client.renderer.ElevatorSeat2Renderer;
 import net.mcreator.jimsmineshaft.client.renderer.ElevatorSeat1Renderer;
 import net.mcreator.jimsmineshaft.client.renderer.ElevatorRenderer;
+import net.mcreator.jimsmineshaft.client.renderer.ElevatorFAILSAFEboxRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.ElevatorBoundingBoxRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.CopperDrilledNorthRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.CopperDrilledEastRenderer;
+import net.mcreator.jimsmineshaft.client.renderer.CartelevatorWestRenderer;
+import net.mcreator.jimsmineshaft.client.renderer.CartelevatorRenderer;
+import net.mcreator.jimsmineshaft.client.renderer.CartelevatorEastRenderer;
+import net.mcreator.jimsmineshaft.client.renderer.CartElevatorBoundingBoxRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.Cart4Renderer;
 import net.mcreator.jimsmineshaft.client.renderer.Cart3Renderer;
 import net.mcreator.jimsmineshaft.client.renderer.Cart2Renderer;
@@ -78,5 +84,11 @@ public class JimsmineshaftModEntityRenderers {
 		event.registerEntityRenderer(JimsmineshaftModEntities.SMALL_SIDE_OPEN_GATE_ENTITY.get(), SmallSideOpenGateEntityRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.VISION.get(), VisionRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.SMALL_SLIDE_UP_GATE_ENTITY.get(), SmallSlideUpGateEntityRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.CARTELEVATOR.get(), CartelevatorRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.CART_ELEVATOR_BOUNDING_BOX.get(), CartElevatorBoundingBoxRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.ELEVATOR_FAILSAF_EBOX.get(), ElevatorFAILSAFEboxRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.SPAWN_STRUCTURE_SHAFT_ENTITY.get(), SpawnStructureShaftEntityRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.CARTELEVATOR_EAST.get(), CartelevatorEastRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.CARTELEVATOR_WEST.get(), CartelevatorWestRenderer::new);
 	}
 }

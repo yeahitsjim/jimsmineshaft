@@ -1,12 +1,41 @@
 package net.mcreator.jimsmineshaft.item;
 
-import java.util.Map;
-import java.util.function.Consumer;
+import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
+import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
+import net.minecraft.world.item.equipment.EquipmentAssets;
+import net.minecraft.world.item.equipment.ArmorType;
+import net.minecraft.world.item.equipment.ArmorMaterial;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.tags.TagKey;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.client.resources.model.EquipmentClientInfo;
+import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.Model;
+import net.minecraft.client.model.HumanoidModel;
+import net.minecraft.client.Minecraft;
+
+import net.mcreator.jimsmineshaft.init.JimsmineshaftModItems;
+import net.mcreator.jimsmineshaft.client.model.ModelMining_Veteran_Heavy_Sabatons;
+import net.mcreator.jimsmineshaft.client.model.ModelMining_Veteran_Heavy_Greaves;
+import net.mcreator.jimsmineshaft.client.model.ModelMining_Veteran_Heavy_Chestplate;
+import net.mcreator.jimsmineshaft.client.model.ModelMining_Veteran_Heavy_CBRN_Mask;
+
+import java.util.Map;
+import java.util.Collections;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public abstract class MiningVeteranSetItem extends ArmorItem {
-
 	public static ArmorMaterial ARMOR_MATERIAL = new ArmorMaterial(33, Map.of(ArmorType.BOOTS, 4, ArmorType.LEGGINGS, 8, ArmorType.CHESTPLATE, 12, ArmorType.HELMET, 6, ArmorType.BODY, 12), 9,
 			BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.EMPTY), 2f, 0.2f, TagKey.create(Registries.ITEM, ResourceLocation.parse("jimsmineshaft:mining_veteran_set_repair_items")),
 			ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.parse("jimsmineshaft:mining_veteran_set")));
@@ -32,7 +61,6 @@ public abstract class MiningVeteranSetItem extends ArmorItem {
 				return ResourceLocation.parse("jimsmineshaft:textures/entities/mining_veteran.png");
 			}
 		}, JimsmineshaftModItems.MINING_VETERAN_SET_HELMET.get());
-
 		event.registerItem(new IClientItemExtensions() {
 			@Override
 			@OnlyIn(Dist.CLIENT)
@@ -50,7 +78,6 @@ public abstract class MiningVeteranSetItem extends ArmorItem {
 				return ResourceLocation.parse("jimsmineshaft:textures/entities/mining_veteran.png");
 			}
 		}, JimsmineshaftModItems.MINING_VETERAN_SET_CHESTPLATE.get());
-
 		event.registerItem(new IClientItemExtensions() {
 			@Override
 			@OnlyIn(Dist.CLIENT)
@@ -67,7 +94,6 @@ public abstract class MiningVeteranSetItem extends ArmorItem {
 				return ResourceLocation.parse("jimsmineshaft:textures/entities/mining_veteran.png");
 			}
 		}, JimsmineshaftModItems.MINING_VETERAN_SET_LEGGINGS.get());
-
 		event.registerItem(new IClientItemExtensions() {
 			@Override
 			@OnlyIn(Dist.CLIENT)
@@ -91,35 +117,26 @@ public abstract class MiningVeteranSetItem extends ArmorItem {
 	}
 
 	public static class Helmet extends MiningVeteranSetItem {
-
 		public Helmet(Item.Properties properties) {
 			super(ArmorType.HELMET, properties);
 		}
-
 	}
 
 	public static class Chestplate extends MiningVeteranSetItem {
-
 		public Chestplate(Item.Properties properties) {
 			super(ArmorType.CHESTPLATE, properties);
 		}
-
 	}
 
 	public static class Leggings extends MiningVeteranSetItem {
-
 		public Leggings(Item.Properties properties) {
 			super(ArmorType.LEGGINGS, properties);
 		}
-
 	}
 
 	public static class Boots extends MiningVeteranSetItem {
-
 		public Boots(Item.Properties properties) {
 			super(ArmorType.BOOTS, properties);
 		}
-
 	}
-
 }

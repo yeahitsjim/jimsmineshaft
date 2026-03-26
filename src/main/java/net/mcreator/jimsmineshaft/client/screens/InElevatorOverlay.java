@@ -33,7 +33,7 @@ public class InElevatorOverlay {
 			z = entity.getZ();
 		}
 		if (InElevatorDisplayOverlayIngameProcedure.execute(entity)) {
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.jimsmineshaft.in_elevator.label_press_p_to_start_elevator"), w / 2 + -64, h / 2 + 60, -26368, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.jimsmineshaft.in_elevator.label_press_p_to_start_elevator"), w / 2 + -71, h / 2 + 75, -26368, false);
 		}
 	}
 }

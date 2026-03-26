@@ -1,6 +1,17 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.AABB;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.jimsmineshaft.entity.SmallSlideUpGateEntityEntity;
+import net.mcreator.jimsmineshaft.entity.SmallSideOpenGateEntityEntity;
+import net.mcreator.jimsmineshaft.entity.RightgateEntity;
+import net.mcreator.jimsmineshaft.entity.LeftgateEntity;
+import net.mcreator.jimsmineshaft.entity.BigGateEntity;
+import net.mcreator.jimsmineshaft.JimsmineshaftMod;
 
 public class BigIronGateRightOnEntityTickUpdateProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z, Entity entity) {

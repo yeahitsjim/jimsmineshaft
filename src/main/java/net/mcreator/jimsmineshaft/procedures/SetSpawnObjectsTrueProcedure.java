@@ -1,6 +1,9 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.network.chat.Component;
+
+import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
 
 public class SetSpawnObjectsTrueProcedure {
 	public static void execute(LevelAccessor world) {

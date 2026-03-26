@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jimsmineshaft:block/basic_clothes_bag"
+    },
+    "facing=east": {
+      "model": "jimsmineshaft:block/basic_clothes_bag",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jimsmineshaft:block/basic_clothes_bag",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jimsmineshaft:block/basic_clothes_bag",
+      "y": 270
+    }
+  }
+}

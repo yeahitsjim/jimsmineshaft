@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "jimsmineshaft:shafthouse",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 190,
+    "separation": 90,
+    "salt": 1693364711
+  }
+}

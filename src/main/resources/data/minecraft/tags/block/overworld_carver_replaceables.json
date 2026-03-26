@@ -3,6 +3,8 @@
   "values": [
     "minecraft:grass_block",
     "minecraft:dirt",
+    "minecraft:deepslate",
+    "minecraft:blackstone",
     "minecraft:stone"
   ]
 }

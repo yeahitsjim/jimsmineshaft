@@ -1,8 +1,6 @@
 {
   "type": "neoforge:add_features",
-  "biomes": {
-    "type": "neoforge:any"
-  },
+  "biomes": "jimsmineshaft:paradise_fields",
   "features": "jimsmineshaft:paradise_trees",
   "step": "vegetal_decoration"
 }

@@ -37,6 +37,9 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 99,
+    "onRightClickedInAir": {
+      "name": "RightClickSpawner4"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,

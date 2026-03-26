@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/veteranpack",
+  "textures": {
+    "all": "jimsmineshaft:block/textureveteranarmorpack",
+    "particle": "jimsmineshaft:block/textureveteranarmorpack",
+    "0": "jimsmineshaft:block/textureveteranarmorpack"
+  },
+  "render_type": "solid"
+}

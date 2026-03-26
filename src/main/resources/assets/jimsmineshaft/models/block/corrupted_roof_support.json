@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/corruptedroofsupportb",
+  "textures": {
+    "all": "jimsmineshaft:block/texturecorruptedroofsupport",
+    "particle": "jimsmineshaft:block/texturecorruptedroofsupport",
+    "0": "jimsmineshaft:block/texturecorruptedroofsupport"
+  },
+  "render_type": "solid"
+}

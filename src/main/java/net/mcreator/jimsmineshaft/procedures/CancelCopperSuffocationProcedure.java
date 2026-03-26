@@ -6,10 +6,17 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.ICancellableEvent;
 import net.neoforged.bus.api.Event;
 
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
 
+import net.mcreator.jimsmineshaft.entity.RightgateEntity;
+import net.mcreator.jimsmineshaft.entity.LeftgateEntity;
+import net.mcreator.jimsmineshaft.entity.ElevatorEntity;
 import net.mcreator.jimsmineshaft.entity.CopperDrilledNorthEntity;
 import net.mcreator.jimsmineshaft.entity.CopperDrilledEastEntity;
 
@@ -39,6 +46,105 @@ public class CancelCopperSuffocationProcedure {
 			}
 		}
 		if (entity instanceof CopperDrilledEastEntity) {
+			if (damagesource.is(DamageTypes.IN_WALL)) {
+				if (event instanceof ICancellableEvent _cancellable) {
+					_cancellable.setCanceled(true);
+				}
+			}
+		}
+		if (entity instanceof LeftgateEntity) {
+			if (damagesource.is(DamageTypes.IN_WALL)) {
+				if (event instanceof ICancellableEvent _cancellable) {
+					_cancellable.setCanceled(true);
+				}
+			}
+		}
+		if (entity instanceof RightgateEntity) {
+			if (damagesource.is(DamageTypes.IN_WALL)) {
+				if (event instanceof ICancellableEvent _cancellable) {
+					_cancellable.setCanceled(true);
+				}
+			}
+		}
+		if (entity instanceof Player) {
+			if (damagesource.is(DamageTypes.IN_WALL)) {
+				if (ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("jimsmineshaft:shopdimension")) == (entity.level().dimension())) {
+					if (event instanceof ICancellableEvent _cancellable) {
+						_cancellable.setCanceled(true);
+					}
+				}
+				if (ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("jimsmineshaft:level_1_dimension")) == (entity.level().dimension())) {
+					if (event instanceof ICancellableEvent _cancellable) {
+						_cancellable.setCanceled(true);
+					}
+				}
+				if (ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("jimsmineshaft:level_2_dimension")) == (entity.level().dimension())) {
+					if (event instanceof ICancellableEvent _cancellable) {
+						_cancellable.setCanceled(true);
+					}
+				}
+				if (ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("jimsmineshaft:level_3_dimension")) == (entity.level().dimension())) {
+					if (event instanceof ICancellableEvent _cancellable) {
+						_cancellable.setCanceled(true);
+					}
+				}
+				if (ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("jimsmineshaft:level_4_dimension")) == (entity.level().dimension())) {
+					if (event instanceof ICancellableEvent _cancellable) {
+						_cancellable.setCanceled(true);
+					}
+				}
+				if (ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("jimsmineshaft:level_5_dimension")) == (entity.level().dimension())) {
+					if (event instanceof ICancellableEvent _cancellable) {
+						_cancellable.setCanceled(true);
+					}
+				}
+				if (ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("jimsmineshaft:level_6_dimension")) == (entity.level().dimension())) {
+					if (event instanceof ICancellableEvent _cancellable) {
+						_cancellable.setCanceled(true);
+					}
+				}
+			}
+		}
+		if (entity instanceof Player) {
+			if (damagesource.is(DamageTypes.FALL)) {
+				if (ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("jimsmineshaft:level_1_dimension")) == (entity.level().dimension())) {
+					if (event instanceof ICancellableEvent _cancellable) {
+						_cancellable.setCanceled(true);
+					}
+				}
+				if (ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("jimsmineshaft:shopdimension")) == (entity.level().dimension())) {
+					if (event instanceof ICancellableEvent _cancellable) {
+						_cancellable.setCanceled(true);
+					}
+				}
+				if (ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("jimsmineshaft:level_2_dimension")) == (entity.level().dimension())) {
+					if (event instanceof ICancellableEvent _cancellable) {
+						_cancellable.setCanceled(true);
+					}
+				}
+				if (ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("jimsmineshaft:level_3_dimension")) == (entity.level().dimension())) {
+					if (event instanceof ICancellableEvent _cancellable) {
+						_cancellable.setCanceled(true);
+					}
+				}
+				if (ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("jimsmineshaft:level_4_dimension")) == (entity.level().dimension())) {
+					if (event instanceof ICancellableEvent _cancellable) {
+						_cancellable.setCanceled(true);
+					}
+				}
+				if (ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("jimsmineshaft:level_5_dimension")) == (entity.level().dimension())) {
+					if (event instanceof ICancellableEvent _cancellable) {
+						_cancellable.setCanceled(true);
+					}
+				}
+				if (ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("jimsmineshaft:level_6_dimension")) == (entity.level().dimension())) {
+					if (event instanceof ICancellableEvent _cancellable) {
+						_cancellable.setCanceled(true);
+					}
+				}
+			}
+		}
+		if (entity instanceof ElevatorEntity) {
 			if (damagesource.is(DamageTypes.IN_WALL)) {
 				if (event instanceof ICancellableEvent _cancellable) {
 					_cancellable.setCanceled(true);

@@ -1,6 +1,8 @@
 package net.mcreator.jimsmineshaft.procedures;
 
 import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.component.CustomData;
@@ -13,10 +15,12 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.jimsmineshaft.init.JimsmineshaftModItems;
 import net.mcreator.jimsmineshaft.init.JimsmineshaftModBlocks;
+import net.mcreator.jimsmineshaft.JimsmineshaftMod;
 
 public class RawCopperDrilledEastOnBlockRightClickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -38,19 +42,173 @@ public class RawCopperDrilledEastOnBlockRightClickedProcedure {
 					final double _tagValue = ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("coordCount") - 1);
 					CustomData.update(DataComponents.CUSTOM_DATA, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 				}
-				{
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockState _bs = JimsmineshaftModBlocks.RAW_COPPER_DRILLED_NORTH_DYNAMITE.get().defaultBlockState();
-					BlockState _bso = world.getBlockState(_bp);
-					for (Property<?> _propertyOld : _bso.getProperties()) {
-						Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
-						if (_propertyNew != null && _bs.getValue(_propertyNew) != null)
-							try {
-								_bs = _bs.setValue(_propertyNew, _bso.getValue(_propertyOld));
-							} catch (Exception e) {
-							}
+				if (Direction.NORTH == (getBlockDirection(world, BlockPos.containing(x, y, z)))) {
+					{
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockState _bs = JimsmineshaftModBlocks.RAW_COPPER_DRILLED_NORTH_DYNAMITE.get().defaultBlockState();
+						BlockState _bso = world.getBlockState(_bp);
+						for (Property<?> _propertyOld : _bso.getProperties()) {
+							Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
+							if (_propertyNew != null && _bs.getValue(_propertyNew) != null)
+								try {
+									_bs = _bs.setValue(_propertyNew, _bso.getValue(_propertyOld));
+								} catch (Exception e) {
+								}
+						}
+						world.setBlock(_bp, _bs, 3);
 					}
-					world.setBlock(_bp, _bs, 3);
+					JimsmineshaftMod.queueServerWork(2, () -> {
+						{
+							Direction _dir = Direction.WEST;
+							BlockPos _pos = BlockPos.containing(x, y, z);
+							BlockState _bs = world.getBlockState(_pos);
+							if (_bs.getBlock().getStateDefinition().getProperty("facing") instanceof EnumProperty _dp && _dp.getPossibleValues().contains(_dir)) {
+								world.setBlock(_pos, _bs.setValue(_dp, _dir), 3);
+							} else if (_bs.getBlock().getStateDefinition().getProperty("axis") instanceof EnumProperty _ap && _ap.getPossibleValues().contains(_dir.getAxis())) {
+								world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
+							}
+						}
+					});
+				}
+				if (Direction.SOUTH == (getBlockDirection(world, BlockPos.containing(x, y, z)))) {
+					{
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockState _bs = JimsmineshaftModBlocks.RAW_COPPER_DRILLED_NORTH_DYNAMITE.get().defaultBlockState();
+						BlockState _bso = world.getBlockState(_bp);
+						for (Property<?> _propertyOld : _bso.getProperties()) {
+							Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
+							if (_propertyNew != null && _bs.getValue(_propertyNew) != null)
+								try {
+									_bs = _bs.setValue(_propertyNew, _bso.getValue(_propertyOld));
+								} catch (Exception e) {
+								}
+						}
+						world.setBlock(_bp, _bs, 3);
+					}
+					JimsmineshaftMod.queueServerWork(2, () -> {
+						{
+							Direction _dir = Direction.WEST;
+							BlockPos _pos = BlockPos.containing(x, y, z);
+							BlockState _bs = world.getBlockState(_pos);
+							if (_bs.getBlock().getStateDefinition().getProperty("facing") instanceof EnumProperty _dp && _dp.getPossibleValues().contains(_dir)) {
+								world.setBlock(_pos, _bs.setValue(_dp, _dir), 3);
+							} else if (_bs.getBlock().getStateDefinition().getProperty("axis") instanceof EnumProperty _ap && _ap.getPossibleValues().contains(_dir.getAxis())) {
+								world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
+							}
+						}
+					});
+				}
+				if (Direction.WEST == (getBlockDirection(world, BlockPos.containing(x, y, z)))) {
+					{
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockState _bs = JimsmineshaftModBlocks.RAW_COPPER_DRILLED_NORTH_DYNAMITE.get().defaultBlockState();
+						BlockState _bso = world.getBlockState(_bp);
+						for (Property<?> _propertyOld : _bso.getProperties()) {
+							Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
+							if (_propertyNew != null && _bs.getValue(_propertyNew) != null)
+								try {
+									_bs = _bs.setValue(_propertyNew, _bso.getValue(_propertyOld));
+								} catch (Exception e) {
+								}
+						}
+						world.setBlock(_bp, _bs, 3);
+					}
+					JimsmineshaftMod.queueServerWork(2, () -> {
+						{
+							Direction _dir = Direction.NORTH;
+							BlockPos _pos = BlockPos.containing(x, y, z);
+							BlockState _bs = world.getBlockState(_pos);
+							if (_bs.getBlock().getStateDefinition().getProperty("facing") instanceof EnumProperty _dp && _dp.getPossibleValues().contains(_dir)) {
+								world.setBlock(_pos, _bs.setValue(_dp, _dir), 3);
+							} else if (_bs.getBlock().getStateDefinition().getProperty("axis") instanceof EnumProperty _ap && _ap.getPossibleValues().contains(_dir.getAxis())) {
+								world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
+							}
+						}
+					});
+				}
+				if (Direction.EAST == (getBlockDirection(world, BlockPos.containing(x, y, z)))) {
+					{
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockState _bs = JimsmineshaftModBlocks.RAW_COPPER_DRILLED_NORTH_DYNAMITE.get().defaultBlockState();
+						BlockState _bso = world.getBlockState(_bp);
+						for (Property<?> _propertyOld : _bso.getProperties()) {
+							Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
+							if (_propertyNew != null && _bs.getValue(_propertyNew) != null)
+								try {
+									_bs = _bs.setValue(_propertyNew, _bso.getValue(_propertyOld));
+								} catch (Exception e) {
+								}
+						}
+						world.setBlock(_bp, _bs, 3);
+					}
+					JimsmineshaftMod.queueServerWork(2, () -> {
+						{
+							Direction _dir = Direction.NORTH;
+							BlockPos _pos = BlockPos.containing(x, y, z);
+							BlockState _bs = world.getBlockState(_pos);
+							if (_bs.getBlock().getStateDefinition().getProperty("facing") instanceof EnumProperty _dp && _dp.getPossibleValues().contains(_dir)) {
+								world.setBlock(_pos, _bs.setValue(_dp, _dir), 3);
+							} else if (_bs.getBlock().getStateDefinition().getProperty("axis") instanceof EnumProperty _ap && _ap.getPossibleValues().contains(_dir.getAxis())) {
+								world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
+							}
+						}
+					});
+				}
+				if (Direction.DOWN == (getBlockDirection(world, BlockPos.containing(x, y, z)))) {
+					{
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockState _bs = JimsmineshaftModBlocks.RAW_COPPER_DRILLED_NORTH_DYNAMITE.get().defaultBlockState();
+						BlockState _bso = world.getBlockState(_bp);
+						for (Property<?> _propertyOld : _bso.getProperties()) {
+							Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
+							if (_propertyNew != null && _bs.getValue(_propertyNew) != null)
+								try {
+									_bs = _bs.setValue(_propertyNew, _bso.getValue(_propertyOld));
+								} catch (Exception e) {
+								}
+						}
+						world.setBlock(_bp, _bs, 3);
+					}
+					JimsmineshaftMod.queueServerWork(2, () -> {
+						{
+							Direction _dir = Direction.DOWN;
+							BlockPos _pos = BlockPos.containing(x, y, z);
+							BlockState _bs = world.getBlockState(_pos);
+							if (_bs.getBlock().getStateDefinition().getProperty("facing") instanceof EnumProperty _dp && _dp.getPossibleValues().contains(_dir)) {
+								world.setBlock(_pos, _bs.setValue(_dp, _dir), 3);
+							} else if (_bs.getBlock().getStateDefinition().getProperty("axis") instanceof EnumProperty _ap && _ap.getPossibleValues().contains(_dir.getAxis())) {
+								world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
+							}
+						}
+					});
+				}
+				if (Direction.UP == (getBlockDirection(world, BlockPos.containing(x, y, z)))) {
+					{
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockState _bs = JimsmineshaftModBlocks.RAW_COPPER_DRILLED_NORTH_DYNAMITE.get().defaultBlockState();
+						BlockState _bso = world.getBlockState(_bp);
+						for (Property<?> _propertyOld : _bso.getProperties()) {
+							Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
+							if (_propertyNew != null && _bs.getValue(_propertyNew) != null)
+								try {
+									_bs = _bs.setValue(_propertyNew, _bso.getValue(_propertyOld));
+								} catch (Exception e) {
+								}
+						}
+						world.setBlock(_bp, _bs, 3);
+					}
+					JimsmineshaftMod.queueServerWork(2, () -> {
+						{
+							Direction _dir = Direction.UP;
+							BlockPos _pos = BlockPos.containing(x, y, z);
+							BlockState _bs = world.getBlockState(_pos);
+							if (_bs.getBlock().getStateDefinition().getProperty("facing") instanceof EnumProperty _dp && _dp.getPossibleValues().contains(_dir)) {
+								world.setBlock(_pos, _bs.setValue(_dp, _dir), 3);
+							} else if (_bs.getBlock().getStateDefinition().getProperty("axis") instanceof EnumProperty _ap && _ap.getPossibleValues().contains(_dir.getAxis())) {
+								world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
+							}
+						}
+					});
 				}
 				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).set(DataComponents.CUSTOM_NAME, Component.literal(("Dynamite Box:\u00A76 "
 						+ (((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("coordCount")) + " sticks remaining"))));
@@ -178,5 +336,17 @@ public class RawCopperDrilledEastOnBlockRightClickedProcedure {
 					_level.sendParticles(ParticleTypes.ANGRY_VILLAGER, x, y, z, 10, 1, 1, 1, 1);
 			}
 		}
+	}
+
+	private static Direction getBlockDirection(LevelAccessor world, BlockPos pos) {
+		BlockState blockState = world.getBlockState(pos);
+		Property<?> property = blockState.getBlock().getStateDefinition().getProperty("facing");
+		if (property != null && blockState.getValue(property) instanceof Direction direction)
+			return direction;
+		else if (blockState.hasProperty(BlockStateProperties.AXIS))
+			return Direction.fromAxisAndDirection(blockState.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
+		else if (blockState.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
+			return Direction.fromAxisAndDirection(blockState.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
+		return Direction.NORTH;
 	}
 }

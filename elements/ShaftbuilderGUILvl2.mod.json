@@ -1,0 +1,502 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 350,
+    "height": 190,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_main_lit",
+          "text": "D Shaft 1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftD1"
+          },
+          "width": 66,
+          "height": 20,
+          "x": 15,
+          "y": 25,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_a_non_lit",
+          "text": "D Shaft 2",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftD2"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 15,
+          "y": 49,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_a_bit",
+          "text": "D Shaft 3",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftD3"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 15,
+          "y": 73,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_shaft1",
+          "text": "D Room 2",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRoomD2"
+          },
+          "width": 66,
+          "height": 20,
+          "x": 107,
+          "y": 25,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_shaft_2",
+          "text": "D Room 3",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRoomD3"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 107,
+          "y": 49,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_shaft_3",
+          "text": "D Room 4",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRoomD4"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 107,
+          "y": 73,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_shaft_4",
+          "text": "D Bit 5 1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetBitD31"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 107,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_shaft_5",
+          "text": "D Bit 5 2",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetBitD32"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 107,
+          "y": 123,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_bit_1",
+          "text": "D Shaft 4 (L)",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftD4"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 15,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_bit_2",
+          "text": "D Shaft 5 (L)",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftD5"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 15,
+          "y": 123,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_bit_3",
+          "text": "D Shaft 6 (L)",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftD6"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 15,
+          "y": 146,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_bit_4",
+          "text": "D Room 1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRoomD1"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 18,
+          "y": 167,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_c_shaft_1",
+          "text": "D Bit 5 3",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetBitD33"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 107,
+          "y": 146,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_c_shaft_2",
+          "text": "D Bit 5 4",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetBitD34"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 107,
+          "y": 171,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_c_shaft_3",
+          "text": "D Bit 4 1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetBitD41"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 203,
+          "y": 25,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_c_shaft_4",
+          "text": "D Bit 4 2",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetBitD42"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 203,
+          "y": 49,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_c_shaft_5",
+          "text": "D bit 7 1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetBitD71"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 203,
+          "y": 73,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_c_bit_1",
+          "text": "D Bit 7 2",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetBitD72"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 203,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_c_bit_2",
+          "text": "E Shaft 1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftE1"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 204,
+          "y": 123,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_c_bit_3",
+          "text": "E Shaft 2",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftE2"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 204,
+          "y": 147,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_c_bit_4",
+          "text": "E Shaft 3",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftE3"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 204,
+          "y": 168,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_resetpos",
+          "text": "ResetPos",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "LeftClickSpawner"
+          },
+          "width": 67,
+          "height": 20,
+          "x": 302,
+          "y": 208,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_room_1",
+          "text": "E Shaft 4",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftE4"
+          },
+          "width": 66,
+          "height": 20,
+          "x": 302,
+          "y": 25,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_room_2",
+          "text": "E Shaft 5",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftE4"
+          },
+          "width": 66,
+          "height": 20,
+          "x": 302,
+          "y": 49,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_g_room_1",
+          "text": "E Room 1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRoomE1"
+          },
+          "width": 66,
+          "height": 20,
+          "x": 302,
+          "y": 73,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_g_room_2",
+          "text": "E Room 2",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRoomE2"
+          },
+          "width": 66,
+          "height": 20,
+          "x": 302,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_g_bit_1",
+          "text": "E Bit 1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetBitE1"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 302,
+          "y": 122,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_g_bit_2",
+          "text": "E Bit 2",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetBitE2"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 303,
+          "y": 143,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_g_bit_3",
+          "text": "E Bit 3",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetBitE3"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 303,
+          "y": 164,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_g_bit_4",
+          "text": "E Bit 4",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetBitE4"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 303,
+          "y": 184,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

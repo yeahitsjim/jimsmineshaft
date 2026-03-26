@@ -7,7 +7,6 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.EntitySpawnReason;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 
@@ -38,8 +37,6 @@ public class PressureDrillFoldedModelOnBlockRightClickedProcedure {
 				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(3 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 					if (entityiterator instanceof PressureDrillFoldedEntity) {
 						entityiterator.getPersistentData().putString("ownedBy", (entity.getDisplayName().getString()));
-						if (!world.isClientSide() && world.getServer() != null)
-							world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((entity.getDisplayName().getString())), false);
 					}
 				}
 			}

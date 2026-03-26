@@ -1,6 +1,17 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.AABB;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.InteractionHand;
+
+import net.mcreator.jimsmineshaft.entity.SmallSlideUpGateEntityEntity;
+import net.mcreator.jimsmineshaft.entity.SmallSideOpenGateEntityEntity;
+import net.mcreator.jimsmineshaft.entity.BigGateEntity;
+
+import java.util.Comparator;
 
 public class Rightclicks2Procedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {

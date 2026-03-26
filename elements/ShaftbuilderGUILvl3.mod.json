@@ -1,0 +1,262 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 350,
+    "height": 190,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_main_lit",
+          "text": "F Shaft 1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftF1"
+          },
+          "width": 66,
+          "height": 20,
+          "x": 15,
+          "y": 25,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_a_non_lit",
+          "text": "F Shaft 2",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftF2"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 15,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_a_bit",
+          "text": "F Shaft 3",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftF3"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 15,
+          "y": 81,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_shaft1",
+          "text": "F Room 2",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRoomF2"
+          },
+          "width": 66,
+          "height": 20,
+          "x": 107,
+          "y": 25,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_shaft_2",
+          "text": "F Room 3",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRoomF3"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 107,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_shaft_3",
+          "text": "F Room 4",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRoomF4"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 108,
+          "y": 80,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_shaft_4",
+          "text": "G Shaft 1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftG1"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 107,
+          "y": 109,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_shaft_5",
+          "text": "G Shaft 2",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftG2"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 107,
+          "y": 138,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_bit_1",
+          "text": "F Shaft 4",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftF4"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 15,
+          "y": 109,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_bit_2",
+          "text": "F Shaft 5",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftF5"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 15,
+          "y": 139,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_bit_3",
+          "text": "F Shaft 6",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftF6"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 15,
+          "y": 170,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b_bit_4",
+          "text": "F Room 1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRoomF1"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 15,
+          "y": 201,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_c_shaft_1",
+          "text": "G Shaft 3 (L)",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetShaftG3Big"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 107,
+          "y": 170,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_c_shaft_2",
+          "text": "G Room 1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRoomG1"
+          },
+          "width": 71,
+          "height": 20,
+          "x": 107,
+          "y": 201,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_resetpos",
+          "text": "ResetPos",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "LeftClickSpawner"
+          },
+          "width": 67,
+          "height": 20,
+          "x": 302,
+          "y": 201,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

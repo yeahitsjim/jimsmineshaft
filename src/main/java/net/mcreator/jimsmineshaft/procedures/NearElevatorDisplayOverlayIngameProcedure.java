@@ -9,7 +9,9 @@ public class NearElevatorDisplayOverlayIngameProcedure {
 		if (entity == null)
 			return false;
 		if (!entity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES).inElevator) {
-			return entity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES).nearElevator;
+			if (!entity.isPassenger()) {
+				return entity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES).nearElevator;
+			}
 		}
 		return false;
 	}

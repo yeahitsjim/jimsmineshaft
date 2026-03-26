@@ -52,7 +52,16 @@ public class RustedMinecartBlock extends Block {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return Shapes.empty();
+		return switch (state.getValue(FACING)) {
+			default -> Shapes.or(box(2, 1, 0, 14, 2, 16), box(2, 2, 14, 14, 10, 16), box(2, 2, 0, 14, 10, 2), box(12, 2, 2, 14, 10, 14), box(2, 2, 2, 4, 10, 14), box(14, 0, 12, 15, 3, 15), box(14, 0, 1, 15, 3, 4), box(1, 1, 12, 2, 4, 15),
+					box(1, 0, 1, 2, 3, 4));
+			case NORTH -> Shapes.or(box(2, 1, 0, 14, 2, 16), box(2, 2, 0, 14, 10, 2), box(2, 2, 14, 14, 10, 16), box(2, 2, 2, 4, 10, 14), box(12, 2, 2, 14, 10, 14), box(1, 0, 1, 2, 3, 4), box(1, 0, 12, 2, 3, 15), box(14, 1, 1, 15, 4, 4),
+					box(14, 0, 12, 15, 3, 15));
+			case EAST -> Shapes.or(box(0, 1, 2, 16, 2, 14), box(14, 2, 2, 16, 10, 14), box(0, 2, 2, 2, 10, 14), box(2, 2, 2, 14, 10, 4), box(2, 2, 12, 14, 10, 14), box(12, 0, 1, 15, 3, 2), box(1, 0, 1, 4, 3, 2), box(12, 1, 14, 15, 4, 15),
+					box(1, 0, 14, 4, 3, 15));
+			case WEST -> Shapes.or(box(0, 1, 2, 16, 2, 14), box(0, 2, 2, 2, 10, 14), box(14, 2, 2, 16, 10, 14), box(2, 2, 12, 14, 10, 14), box(2, 2, 2, 14, 10, 4), box(1, 0, 14, 4, 3, 15), box(12, 0, 14, 15, 3, 15), box(1, 1, 1, 4, 4, 2),
+					box(12, 0, 1, 15, 3, 2));
+		};
 	}
 
 	@Override

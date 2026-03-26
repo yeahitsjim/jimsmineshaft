@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "jimsmineshaft:cash_stack_hundreds"
+  ],
+  "result": {
+    "id": "jimsmineshaft:cash_stack_regular",
+    "count": 5
+  }
+}

@@ -7,7 +7,7 @@
       {
         "type": "image",
         "data": {
-          "image": "level1overlay.png",
+          "image": "level1overlayloading.png",
           "use1Xscale": true,
           "anchorPoint": "CENTER",
           "x": 92,

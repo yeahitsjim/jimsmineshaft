@@ -1,0 +1,16 @@
+{
+  "_fv": 79,
+  "_type": "villagerprofession",
+  "definition": {
+    "displayName": "Light Weapons Clerk",
+    "pointOfInterest": {
+      "value": "CUSTOM:ClerkWeaponsBlock"
+    },
+    "actionSound": {
+      "value": "CUSTOM:pickupbit2"
+    },
+    "hat": "Full",
+    "professionTextureFile": "companystoreclerk6.png",
+    "zombifiedProfessionTextureFile": "companystoreclerk6.png"
+  }
+}

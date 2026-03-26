@@ -1,0 +1,408 @@
+{
+  "_fv": 79,
+  "_type": "villagertrade",
+  "definition": {
+    "tradeEntries": [
+      {
+        "villagerProfession": {
+          "value": "CUSTOM:CompanyStoreClerkWeaponsLight"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "CUSTOM:CashStackRegular"
+            },
+            "countPrice1": 2,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:OldKnife"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          }
+        ]
+      },
+      {
+        "villagerProfession": {
+          "value": "CUSTOM:CompanyStoreClerkWeaponsLight"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "CUSTOM:CashStackRegular"
+            },
+            "countPrice1": 5,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:FireAxe"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          }
+        ]
+      },
+      {
+        "villagerProfession": {
+          "value": "CUSTOM:CompanyStoreClerkWeaponsHeavy"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "CUSTOM:CashStackRegular"
+            },
+            "countPrice1": 15,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:FlintlockPistol"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 10,
+            "xp": 25,
+            "priceMultiplier": 0.05
+          }
+        ]
+      },
+      {
+        "villagerProfession": {
+          "value": "CUSTOM:CompanyStoreClerkWeaponsHeavy"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "CUSTOM:CashStackRegular"
+            },
+            "countPrice1": 60,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:TommyGun"
+            },
+            "countOffer": 1,
+            "level": 2,
+            "maxTrades": 10,
+            "xp": 25,
+            "priceMultiplier": 0.05
+          }
+        ]
+      },
+      {
+        "villagerProfession": {
+          "value": "CUSTOM:CompanyStoreClerkWeaponsHeavy"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "CUSTOM:CashStackRegular"
+            },
+            "countPrice1": 64,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:GreaseGun"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 10,
+            "xp": 25,
+            "priceMultiplier": 0.05
+          }
+        ]
+      },
+      {
+        "villagerProfession": {
+          "value": "CUSTOM:CompanyStoreClerkAmmo"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "CUSTOM:CashStackRegular"
+            },
+            "countPrice1": 2,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:IronBullet"
+            },
+            "countOffer": 30,
+            "level": 1,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          }
+        ]
+      },
+      {
+        "villagerProfession": {
+          "value": "CUSTOM:CompanyStoreClerkBasic"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "CUSTOM:CashStackRegular"
+            },
+            "countPrice1": 2,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "Items.WOODEN_PICKAXE"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 16,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          }
+        ]
+      },
+      {
+        "villagerProfession": {
+          "value": "CUSTOM:CompanyStoreClerkBasic"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "CUSTOM:CashStackRegular"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "Items.BREAD"
+            },
+            "countOffer": 8,
+            "level": 1,
+            "maxTrades": 256,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          }
+        ]
+      },
+      {
+        "villagerProfession": {
+          "value": "CUSTOM:CompanyStoreClerkTools"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "CUSTOM:CashStackRegular"
+            },
+            "countPrice1": 20,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:SmallPickaxe"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          }
+        ]
+      },
+      {
+        "villagerProfession": {
+          "value": "CUSTOM:CompanyStoreClerkTools"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "CUSTOM:CashStackRegular"
+            },
+            "countPrice1": 60,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:RustyPickaxe"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          }
+        ]
+      },
+      {
+        "villagerProfession": {
+          "value": "CUSTOM:CompanyStoreClerk"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "CUSTOM:CashStackHundreds"
+            },
+            "countPrice1": 25,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:VeteranArmorBag"
+            },
+            "countOffer": 1,
+            "level": 2,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          }
+        ]
+      },
+      {
+        "villagerProfession": {
+          "value": "CUSTOM:CompanyStoreClerk"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "CUSTOM:CashStackRegular"
+            },
+            "countPrice1": 60,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:ClothesBag"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          }
+        ]
+      },
+      {
+        "villagerProfession": {
+          "value": "CUSTOM:CompanyStoreClerk"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "CUSTOM:CashStackRegular"
+            },
+            "countPrice1": 20,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:BasicClothesBag"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          }
+        ]
+      },
+      {
+        "villagerProfession": {
+          "value": "CUSTOM:CompanyStoreClerkDriller"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "CUSTOM:CashStackRegular"
+            },
+            "countPrice1": 16,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:PressureDrillHoldable"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          }
+        ]
+      },
+      {
+        "villagerProfession": {
+          "value": "CUSTOM:CompanyStoreClerkDriller"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "CUSTOM:CashStackRegular"
+            },
+            "countPrice1": 4,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:DynamiteBox"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          }
+        ]
+      },
+      {
+        "villagerProfession": {
+          "value": "CUSTOM:CompanyStoreClerkAmmo"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "CUSTOM:CashStackRegular"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:Battery"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          }
+        ]
+      }
+    ]
+  }
+}

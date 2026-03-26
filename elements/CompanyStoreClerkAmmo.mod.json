@@ -1,0 +1,16 @@
+{
+  "_fv": 79,
+  "_type": "villagerprofession",
+  "definition": {
+    "displayName": "Ammunition Clerk",
+    "pointOfInterest": {
+      "value": "CUSTOM:ClerkAmmoBlock"
+    },
+    "actionSound": {
+      "value": "CUSTOM:pickupbit2"
+    },
+    "hat": "Full",
+    "professionTextureFile": "companystoreclerk6.png",
+    "zombifiedProfessionTextureFile": "companystoreclerk6.png"
+  }
+}

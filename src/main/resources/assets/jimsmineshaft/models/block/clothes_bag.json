@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/clothesbag1",
+  "textures": {
+    "all": "jimsmineshaft:block/textureclothesbagadone",
+    "particle": "jimsmineshaft:block/textureclothesbagadone",
+    "0": "jimsmineshaft:block/textureclothesbaga"
+  },
+  "render_type": "solid"
+}

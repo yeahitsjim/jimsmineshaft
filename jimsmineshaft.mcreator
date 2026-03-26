@@ -1361,16 +1361,7 @@
       "locked_code": false,
       "registry_name": "right_click_spawner_2",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
+        "dependencies": [],
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/RightClickSpawner2Procedure.java"
         ]
@@ -4580,28 +4571,7 @@
       "locked_code": false,
       "registry_name": "elevator_on_entity_tick_update",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
+        "dependencies": [],
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/ElevatorOnEntityTickUpdateProcedure.java"
         ]
@@ -6306,6 +6276,7 @@
       "registry_name": "stalker",
       "metadata": {
         "files": [
+          "src/main/resources/data/jimsmineshaft/neoforge/biome_modifier/stalker_biome_modifier.json",
           "src/main/java/net/mcreator/jimsmineshaft/entity/StalkerEntity.java",
           "src/main/java/net/mcreator/jimsmineshaft/client/renderer/StalkerRenderer.java",
           "src/main/resources/assets/jimsmineshaft/items/stalker_spawn_egg.json"
@@ -6619,7 +6590,12 @@
       "locked_code": false,
       "registry_name": "level_1_dimension_player_enters_dimension",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Level1DimensionPlayerEntersDimensionProcedure.java"
         ]
@@ -6932,60 +6908,6 @@
       }
     },
     {
-      "name": "GunDisplayOverlayIngame",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gun_display_overlay_ingame",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/GunDisplayOverlayIngameProcedure.java"
-        ]
-      },
-      "path": "~/Weapons"
-    },
-    {
-      "name": "BigIronGateFrameOnEntityTickUpdate",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "big_iron_gate_frame_on_entity_tick_update",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/BigIronGateFrameOnEntityTickUpdateProcedure.java"
-        ]
-      }
-    },
-    {
       "name": "FlintlockPistolPlayerFinishesUsingItem",
       "type": "procedure",
       "compiles": true,
@@ -7187,20 +7109,6 @@
       }
     },
     {
-      "name": "BigIronGateLeft",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "big_iron_gate_left",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/BigIronGateLeftRenderer.java",
-          "src/main/java/net/mcreator/jimsmineshaft/entity/BigIronGateLeftEntity.java",
-          "src/main/resources/assets/jimsmineshaft/items/big_iron_gate_left_spawn_egg.json"
-        ]
-      }
-    },
-    {
       "name": "RustedIronRailing",
       "type": "block",
       "compiles": true,
@@ -7338,20 +7246,6 @@
       }
     },
     {
-      "name": "BigIronGateRight",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "big_iron_gate_right",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/entity/BigIronGateRightEntity.java",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/BigIronGateRightRenderer.java",
-          "src/main/resources/assets/jimsmineshaft/items/big_iron_gate_right_spawn_egg.json"
-        ]
-      }
-    },
-    {
       "name": "Lightblock",
       "type": "block",
       "compiles": true,
@@ -7418,19 +7312,6 @@
         ]
       },
       "path": "~/Tumbler Room"
-    },
-    {
-      "name": "Gun",
-      "type": "overlay",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gun",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/client/screens/GunOverlay.java"
-        ]
-      },
-      "path": "~/Weapons"
     },
     {
       "name": "RustedIronCatwalkSupported",
@@ -7540,28 +7421,6 @@
         ]
       },
       "path": "~/Weapons"
-    },
-    {
-      "name": "BulletProjectileWhileProjectileFlyingTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bullet_projectile_while_projectile_flying_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "immediatesourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/BulletProjectileWhileProjectileFlyingTickProcedure.java"
-        ]
-      }
     },
     {
       "name": "BigGatePlaybackCondition",
@@ -7679,20 +7538,6 @@
           "src/main/java/net/mcreator/jimsmineshaft/entity/RightgateEntity.java",
           "src/main/java/net/mcreator/jimsmineshaft/client/renderer/RightgateRenderer.java",
           "src/main/resources/assets/jimsmineshaft/items/rightgate_spawn_egg.json"
-        ]
-      }
-    },
-    {
-      "name": "BigIronGateFrame",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "big_iron_gate_frame",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/entity/BigIronGateFrameEntity.java",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/BigIronGateFrameRenderer.java",
-          "src/main/resources/assets/jimsmineshaft/items/big_iron_gate_frame_spawn_egg.json"
         ]
       }
     },
@@ -8052,7 +7897,12 @@
       "locked_code": false,
       "registry_name": "dark_3_display_overlay_ingame",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Dark3DisplayOverlayIngameProcedure.java"
@@ -8067,7 +7917,12 @@
       "locked_code": false,
       "registry_name": "dark_8_display_overlay_ingame",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Dark8DisplayOverlayIngameProcedure.java"
@@ -8174,7 +8029,12 @@
       "locked_code": false,
       "registry_name": "dark_6_display_overlay_ingame",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Dark6DisplayOverlayIngameProcedure.java"
@@ -8333,7 +8193,12 @@
       "locked_code": false,
       "registry_name": "dark_1_display_overlay_ingame",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Dark1DisplayOverlayIngameProcedure.java"
@@ -8379,7 +8244,16 @@
       "locked_code": false,
       "registry_name": "lvl_1_display_overlay_ingame",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Lvl1DisplayOverlayIngameProcedure.java"
@@ -8412,7 +8286,12 @@
       "locked_code": false,
       "registry_name": "dark_4_display_overlay_ingame",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Dark4DisplayOverlayIngameProcedure.java"
@@ -8472,7 +8351,12 @@
       "locked_code": false,
       "registry_name": "dark_9_display_overlay_ingame",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Dark9DisplayOverlayIngameProcedure.java"
@@ -8531,7 +8415,12 @@
       "locked_code": false,
       "registry_name": "dark_2_display_overlay_ingame",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Dark2DisplayOverlayIngameProcedure.java"
@@ -8603,7 +8492,12 @@
       "locked_code": false,
       "registry_name": "dark_7_display_overlay_ingame",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Dark7DisplayOverlayIngameProcedure.java"
@@ -8654,7 +8548,12 @@
       "locked_code": false,
       "registry_name": "dark_5_display_overlay_ingame",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Dark5DisplayOverlayIngameProcedure.java"
@@ -8734,7 +8633,12 @@
       "locked_code": false,
       "registry_name": "dark_10_display_overlay_ingame",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Dark10DisplayOverlayIngameProcedure.java"
@@ -8831,6 +8735,22 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -8949,7 +8869,12 @@
       "locked_code": false,
       "registry_name": "staminabar_10",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar10Procedure.java"
@@ -8964,7 +8889,12 @@
       "locked_code": false,
       "registry_name": "vision_overlay_display_overlay_ingame",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/VisionOverlayDisplayOverlayIngameProcedure.java"
@@ -9211,7 +9141,12 @@
       "locked_code": false,
       "registry_name": "staminabar_3",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar3Procedure.java"
@@ -9226,7 +9161,12 @@
       "locked_code": false,
       "registry_name": "staminabar_2",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar2Procedure.java"
@@ -9241,7 +9181,12 @@
       "locked_code": false,
       "registry_name": "staminabar_1",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar1Procedure.java"
@@ -9256,7 +9201,12 @@
       "locked_code": false,
       "registry_name": "staminabar_7",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar7Procedure.java"
@@ -9291,7 +9241,12 @@
       "locked_code": false,
       "registry_name": "staminabar_6",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar6Procedure.java"
@@ -9345,7 +9300,12 @@
       "locked_code": false,
       "registry_name": "staminabar_5",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar5Procedure.java"
@@ -9360,7 +9320,12 @@
       "locked_code": false,
       "registry_name": "staminabar_4",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar4Procedure.java"
@@ -9375,7 +9340,12 @@
       "locked_code": false,
       "registry_name": "staminabar_9",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar9Procedure.java"
@@ -9404,7 +9374,12 @@
       "locked_code": false,
       "registry_name": "staminabar_8",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/Staminabar8Procedure.java"
@@ -10038,6 +10013,2598 @@
         ]
       },
       "path": "~/Gates"
+    },
+    {
+      "name": "StoreGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "store_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/gui/StoreGUIScreen.java",
+          "src/main/java/net/mcreator/jimsmineshaft/world/inventory/StoreGUIMenu.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "StoreGUIWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "store_gui_while_this_gui_is_open_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StoreGUIWhileThisGUIIsOpenTickProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "CompanyStoreClerk",
+      "type": "villagerprofession",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "company_store_clerk",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/textures/entity/villager/profession/company_store_clerk.png.mcmeta"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "KnifeTrade",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knife_trade",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "CashStackRegular",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cash_stack_regular",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/cash_stack_regular.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/CashStackRegularItem.java",
+          "src/main/resources/assets/jimsmineshaft/items/cash_stack_regular.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "CashStackHundreds",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cash_stack_hundreds",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/cash_stack_hundreds.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/CashStackHundredsItem.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/cash_stack_hundreds.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "CraftCash",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_cash",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/recipe/craft_cash.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "CompanyStoreClerkWeaponsLight",
+      "type": "villagerprofession",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "company_store_clerk_weapons_light",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/textures/entity/villager/profession/company_store_clerk_weapons_light.png.mcmeta"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "CompanyStoreClerkWeaponsHeavy",
+      "type": "villagerprofession",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "company_store_clerk_weapons_heavy",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/textures/entity/villager/profession/company_store_clerk_weapons_heavy.png.mcmeta"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "CompanyStoreClerkAmmo",
+      "type": "villagerprofession",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "company_store_clerk_ammo",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/textures/entity/villager/profession/company_store_clerk_ammo.png.mcmeta"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "CompanyStoreClerkBasic",
+      "type": "villagerprofession",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "company_store_clerk_basic",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/textures/entity/villager/profession/company_store_clerk_basic.png.mcmeta"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "CompanyStoreClerkTools",
+      "type": "villagerprofession",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "company_store_clerk_tools",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/textures/entity/villager/profession/company_store_clerk_tools.png.mcmeta"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "ClerkBasicBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clerk_basic_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/clerk_basic_block.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/clerk_basic_block.json",
+          "src/main/resources/assets/jimsmineshaft/items/clerk_basic_block.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/ClerkBasicBlockBlock.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/clerk_basic_block.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/clerk_basic_block.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "ClerkToolsBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clerk_tools_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/clerk_tools_block.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/clerk_tools_block.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/clerk_tools_block.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/ClerkToolsBlockBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/block/clerk_tools_block.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/clerk_tools_block.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "ClerkWeaponsBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clerk_weapons_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/clerk_weapons_block.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/clerk_weapons_block.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/clerk_weapons_block.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/ClerkWeaponsBlockBlock.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/clerk_weapons_block.json",
+          "src/main/resources/assets/jimsmineshaft/items/clerk_weapons_block.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "ClerkWeaponsHeavyBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clerk_weapons_heavy_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/ClerkWeaponsHeavyBlockBlock.java",
+          "src/main/resources/assets/jimsmineshaft/items/clerk_weapons_heavy_block.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/clerk_weapons_heavy_block.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/clerk_weapons_heavy_block.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/clerk_weapons_heavy_block.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/clerk_weapons_heavy_block.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "ClerkAmmoBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clerk_ammo_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/blockstates/clerk_ammo_block.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/clerk_ammo_block.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/clerk_ammo_block.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/clerk_ammo_block.json",
+          "src/main/resources/assets/jimsmineshaft/items/clerk_ammo_block.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/ClerkAmmoBlockBlock.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "CraftCashDown",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_cash_down",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/recipe/craft_cash_down.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "ClothesBag",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clothes_bag",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/blockstates/clothes_bag.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/clothes_bag.json",
+          "src/main/resources/assets/jimsmineshaft/items/clothes_bag.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/ClothesBagBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/clothes_bag.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/clothes_bag.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "BasicClothesBag",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_clothes_bag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/basic_clothes_bag.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/BasicClothesBagBlock.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/basic_clothes_bag.json",
+          "src/main/resources/assets/jimsmineshaft/items/basic_clothes_bag.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/basic_clothes_bag.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/basic_clothes_bag.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "VeteranArmorBag",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "veteran_armor_bag",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/veteran_armor_bag.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/veteran_armor_bag.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/veteran_armor_bag.json",
+          "src/main/resources/assets/jimsmineshaft/items/veteran_armor_bag.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/VeteranArmorBagBlock.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/veteran_armor_bag.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "ClerkArmorBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clerk_armor_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/blockstates/clerk_armor_block.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/clerk_armor_block.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/ClerkArmorBlockBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/clerk_armor_block.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/clerk_armor_block.json",
+          "src/main/resources/assets/jimsmineshaft/items/clerk_armor_block.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "ArmorBagPickedUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_bag_picked_up",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ArmorBagPickedUpProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Shopdimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shopdimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/ShopdimensionTeleporter.java",
+          "src/main/resources/data/jimsmineshaft/dimension_type/shopdimension.json",
+          "src/main/java/net/mcreator/jimsmineshaft/world/dimension/ShopdimensionDimension.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/shopdimension_portal.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/ShopdimensionItem.java",
+          "src/main/resources/assets/jimsmineshaft/models/block/shopdimension_portal_ew.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/shopdimension_portal_ns.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/shopdimension.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/ShopdimensionPortalBlock.java",
+          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/ShopdimensionPortalShape.java",
+          "src/main/resources/data/jimsmineshaft/dimension/shopdimension.json",
+          "src/main/resources/assets/jimsmineshaft/items/shopdimension.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "ElevatorLight3",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_light_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/elevator_light_3.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/elevator_light_3.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/ElevatorLight3Block.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/elevator_light_3.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/elevator_light_3.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/elevator_light_3.json"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "ElevatorTickEvent2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_tick_event_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ElevatorTickEvent2Procedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "CorruptedRoofSupport",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corrupted_roof_support",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/CorruptedRoofSupportBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/corrupted_roof_support.json",
+          "src/main/resources/assets/jimsmineshaft/items/corrupted_roof_support.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/corrupted_roof_support.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/corrupted_roof_support.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/corrupted_roof_support.json"
+        ]
+      },
+      "path": "~/Level 2 Blocks"
+    },
+    {
+      "name": "ShaftbuilderGUILvl2",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shaftbuilder_gui_lvl_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/world/inventory/ShaftbuilderGUILvl2Menu.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/gui/ShaftbuilderGUILvl2Screen.java",
+          "src/main/java/net/mcreator/jimsmineshaft/network/ShaftbuilderGUILvl2ButtonMessage.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetShaftD1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_d_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftD1Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetShaftD2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_d_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftD2Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetShaftD3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_d_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftD3Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetShaftD4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_d_4",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftD4Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetShaftD5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_d_5",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftD5Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetShaftD6",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_d_6",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftD6Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetRoomD1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_room_d_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetRoomD1Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetRoomD2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_room_d_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetRoomD2Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetRoomD3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_room_d_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetRoomD3Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetRoomD4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_room_d_4",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetRoomD4Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetBitD31",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_bit_d_31",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetBitD31Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetBitD32",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_bit_d_32",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetBitD32Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetBitD33",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_bit_d_33",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetBitD33Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetBitD34",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_bit_d_34",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetBitD34Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetBitD41",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_bit_d_41",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetBitD41Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetBitD42",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_bit_d_42",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetBitD42Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetBitD71",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_bit_d_71",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetBitD71Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetBitD72",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_bit_d_72",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetBitD72Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetShaftE1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_e_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftE1Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetShaftE2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_e_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftE2Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetShaftE3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_e_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftE3Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetShaftE4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_e_4",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftE4Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetRoom1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_room_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetRoom1Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetRoomE1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_room_e_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetRoomE1Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetRoomE2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_room_e_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetRoomE2Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetShaftF1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_f_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftF1Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetShaftF2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_f_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftF2Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetShaftF3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_f_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftF3Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetShaftF4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_f_4",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftF4Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetShaftF5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_f_5",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftF5Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetShaftF6",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_f_6",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftF6Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetRoomF1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_room_f_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetRoomF1Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetRoomF2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_room_f_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetRoomF2Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetRoomF3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_room_f_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetRoomF3Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetRoomF4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_room_f_4",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetRoomF4Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetShaftG1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_g_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftG1Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetShaftG2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_g_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftG2Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetShaftG3Big",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_g_3_big",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftG3BigProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetRoomG1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_room_g_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetRoomG1Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "OpenLvl2SpawnerGUI",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_lvl_2_spawner_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/network/OpenLvl2SpawnerGUIMessage.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "RightClickSpawner4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "right_click_spawner_4",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RightClickSpawner4Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "OpenSpawnerLvl2GUIOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_spawner_lvl_2_gui_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/OpenSpawnerLvl2GUIOnKeyPressedProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "ShaftbuilderGUILvl3",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shaftbuilder_gui_lvl_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/network/ShaftbuilderGUILvl3ButtonMessage.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/gui/ShaftbuilderGUILvl3Screen.java",
+          "src/main/java/net/mcreator/jimsmineshaft/world/inventory/ShaftbuilderGUILvl3Menu.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "OpenLvl3SpawnerGUI",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_lvl_3_spawner_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/network/OpenLvl3SpawnerGUIMessage.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "OpenLvl3SpawnerGUIOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_lvl_3_spawner_gui_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/OpenLvl3SpawnerGUIOnKeyPressedProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetBitE1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_bit_e_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetBitE1Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetBitE2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_bit_e_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetBitE2Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetBitE3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_bit_e_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetBitE3Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetBitE4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_bit_e_4",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetBitE4Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "MysteryLOOTOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystery_loot_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/MysteryLOOTOnTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PlayerJoinGameResetDarknessoverlay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_join_game_reset_darknessoverlay",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PlayerJoinGameResetDarknessoverlayProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "ProtecVillager",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "protec_villager",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "CartelevatorOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cartelevator_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CartelevatorOnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "Cartelevator",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cartelevator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/entity/CartelevatorEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/CartelevatorRenderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/cartelevator_spawn_egg.json"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "SendCartOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "send_cart_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SendCartOnKeyPressedProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "SendCart",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "send_cart",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/network/SendCartMessage.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "CalculateTotalCashReturned",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calculate_total_cash_returned",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CalculateTotalCashReturnedProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "CartElevatorBoundingBox",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cart_elevator_bounding_box",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/CartElevatorBoundingBoxRenderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/cart_elevator_bounding_box_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/CartElevatorBoundingBoxEntity.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "CartElevatorBoundingBoxOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cart_elevator_bounding_box_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CartElevatorBoundingBoxOnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "CartelevatorOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cartelevator_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CartelevatorOnInitialEntitySpawnProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "SubmitCartOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "submit_cart_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/SubmitCartOverlayOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "CanSubmitCartReturnTrue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "can_submit_cart_return_true",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CanSubmitCartReturnTrueProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CompanyStoreClerkDriller",
+      "type": "villagerprofession",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "company_store_clerk_driller",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/textures/entity/villager/profession/company_store_clerk_driller.png.mcmeta"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "DrillingBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drilling_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/blockstates/drilling_block.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/drilling_block.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/DrillingBlockBlock.java",
+          "src/main/resources/assets/jimsmineshaft/items/drilling_block.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/drilling_block.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/drilling_block.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "StalkerNaturalEntitySpawningCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_natural_entity_spawning_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerNaturalEntitySpawningConditionProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "MatchTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "match_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/MatchTickEventProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Level2Biomje",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_2_biomje",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/worldgen/biome/level_2_biomje.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/configured_feature/level_2_biomje_tree.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/level_2_biomje_tree.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Level3Biome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_3_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/worldgen/configured_feature/level_3_biome_tree.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/level_3_biome_tree.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/biome/level_3_biome.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Level4Biome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_4_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/worldgen/biome/level_4_biome.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/configured_feature/level_4_biome_tree.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/level_4_biome_tree.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Level5Biome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_5_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/worldgen/biome/level_5_biome.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/configured_feature/level_5_biome_tree.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/level_5_biome_tree.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Level6Biome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_6_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/worldgen/biome/level_6_biome.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/level_6_biome_tree.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/configured_feature/level_6_biome_tree.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Level2Dimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_2_dimension",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/level_2_dimension.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/level_2_dimension_portal.json",
+          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level2DimensionPortalShape.java",
+          "src/main/resources/data/jimsmineshaft/dimension_type/level_2_dimension.json",
+          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level2DimensionTeleporter.java",
+          "src/main/resources/assets/jimsmineshaft/models/block/level_2_dimension_portal_ew.json",
+          "src/main/java/net/mcreator/jimsmineshaft/world/dimension/Level2DimensionDimension.java",
+          "src/main/java/net/mcreator/jimsmineshaft/block/Level2DimensionPortalBlock.java",
+          "src/main/java/net/mcreator/jimsmineshaft/item/Level2DimensionItem.java",
+          "src/main/resources/data/jimsmineshaft/dimension/level_2_dimension.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/level_2_dimension_portal_ns.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/level_2_dimension.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Level3Dimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_3_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/Level3DimensionPortalBlock.java",
+          "src/main/resources/data/jimsmineshaft/dimension_type/level_3_dimension.json",
+          "src/main/resources/assets/jimsmineshaft/items/level_3_dimension.json",
+          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level3DimensionPortalShape.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/level_3_dimension_portal.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/level_3_dimension_portal_ns.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/level_3_dimension_portal_ew.json",
+          "src/main/java/net/mcreator/jimsmineshaft/world/dimension/Level3DimensionDimension.java",
+          "src/main/resources/data/jimsmineshaft/dimension/level_3_dimension.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/level_3_dimension.json",
+          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level3DimensionTeleporter.java",
+          "src/main/java/net/mcreator/jimsmineshaft/item/Level3DimensionItem.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Level4Dimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_4_dimension",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/level_4_dimension.json",
+          "src/main/resources/data/jimsmineshaft/dimension/level_4_dimension.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/level_4_dimension_portal.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/level_4_dimension_portal_ew.json",
+          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level4DimensionPortalShape.java",
+          "src/main/java/net/mcreator/jimsmineshaft/item/Level4DimensionItem.java",
+          "src/main/java/net/mcreator/jimsmineshaft/block/Level4DimensionPortalBlock.java",
+          "src/main/resources/data/jimsmineshaft/dimension_type/level_4_dimension.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/level_4_dimension_portal_ns.json",
+          "src/main/java/net/mcreator/jimsmineshaft/world/dimension/Level4DimensionDimension.java",
+          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level4DimensionTeleporter.java",
+          "src/main/resources/assets/jimsmineshaft/items/level_4_dimension.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Level5Dimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_5_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/item/Level5DimensionItem.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/level_5_dimension_portal.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/level_5_dimension_portal_ns.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/Level5DimensionPortalBlock.java",
+          "src/main/resources/data/jimsmineshaft/dimension_type/level_5_dimension.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/level_5_dimension_portal_ew.json",
+          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level5DimensionPortalShape.java",
+          "src/main/resources/assets/jimsmineshaft/items/level_5_dimension.json",
+          "src/main/java/net/mcreator/jimsmineshaft/world/dimension/Level5DimensionDimension.java",
+          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level5DimensionTeleporter.java",
+          "src/main/resources/data/jimsmineshaft/dimension/level_5_dimension.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/level_5_dimension.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Level6Dimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_6_dimension",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/blockstates/level_6_dimension_portal.json",
+          "src/main/java/net/mcreator/jimsmineshaft/world/dimension/Level6DimensionDimension.java",
+          "src/main/java/net/mcreator/jimsmineshaft/block/Level6DimensionPortalBlock.java",
+          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level6DimensionPortalShape.java",
+          "src/main/resources/data/jimsmineshaft/dimension_type/level_6_dimension.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/level_6_dimension.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/Level6DimensionItem.java",
+          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level6DimensionTeleporter.java",
+          "src/main/resources/assets/jimsmineshaft/items/level_6_dimension.json",
+          "src/main/resources/data/jimsmineshaft/dimension/level_6_dimension.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/level_6_dimension_portal_ew.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/level_6_dimension_portal_ns.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "StopMatch",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stop_match",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/command/StopMatchCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "StopmatchProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stopmatch_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StopmatchProcedureProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PlayerEnterDimensionTick2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_enter_dimension_tick_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PlayerEnterDimensionTick2Procedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "ResetSeatProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_seat_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ResetSeatProcProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "ResetSeatPosition",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_seat_position",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/command/ResetSeatPositionCommand.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "ElevatorFAILSAFEbox",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_failsaf_ebox",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/elevator_failsaf_ebox_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/ElevatorFAILSAFEboxEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/ElevatorFAILSAFEboxRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "ElevatorFAILSAFEboxOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_failsaf_ebox_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ElevatorFAILSAFEboxOnEntityTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ShopDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shop_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ShopDisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Lvl2DisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lvl_2_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Lvl2DisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Lvl3DisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lvl_3_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Lvl3DisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Lvl4DisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lvl_4_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Lvl4DisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Lvl5DisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lvl_5_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Lvl5DisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Lvl6DisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lvl_6_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Lvl6DisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "ShopOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shop_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/ShopOverlayOverlay.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Level2Overlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_2_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/Level2OverlayOverlay.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Level3Overlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_3_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/Level3OverlayOverlay.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Level4Overlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_4_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/Level4OverlayOverlay.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Level5Overlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_5_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/Level5OverlayOverlay.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Level6Overlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_6_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/Level6OverlayOverlay.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Shafthouse",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shafthouse",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/worldgen/structure_set/shafthouse.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/structure/shafthouse.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/template_pool/shafthouse.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "SpawnStructureShaftEntity",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_structure_shaft_entity",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/spawn_structure_shaft_entity_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/SpawnStructureShaftEntityRenderer.java",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/SpawnStructureShaftEntityEntity.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "SpawnStructureShaftEntityOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_structure_shaft_entity_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SpawnStructureShaftEntityOnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "CartelevatorEast",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cartelevator_east",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/cartelevator_east_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/CartelevatorEastEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/CartelevatorEastRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "CartelevatorEASTOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cartelevator_east_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CartelevatorEASTOnEntityTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CartelevatorWest",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cartelevator_west",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/CartelevatorWestRenderer.java",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/CartelevatorWestEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/cartelevator_west_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "CartelevatorWESTOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cartelevator_west_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CartelevatorWESTOnEntityTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PlayerDiesInLevel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_dies_in_level",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PlayerDiesInLevelProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "PlayerRespawnsAfterDeath",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_respawns_after_death",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PlayerRespawnsAfterDeathProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
     }
   ],
   "variable_elements": [
@@ -10189,7 +12756,7 @@
       "name": "SB_x",
       "type": "number",
       "scope": "map",
-      "value": "0"
+      "value": "0.0"
     },
     {
       "name": "SB_y",
@@ -10243,7 +12810,7 @@
       "name": "elevatorSeatNumber",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "0.0"
     },
     {
       "name": "analogScreenInx",
@@ -10262,6 +12829,72 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "100.0"
+    },
+    {
+      "name": "nearCartElevator",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "cashReturnedFromLevel",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "currentLevel",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "levelDurationTick",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "matchInProgress",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "hadDiedInMatch",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "deathLevel",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "deathX",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "deathY",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "deathZ",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "hasBeenPaid",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -10769,6 +13402,38 @@
       ],
       "category": "master",
       "subtitle": ""
+    },
+    {
+      "name": "greasegunshoot",
+      "files": [
+        "greasegunshot"
+      ],
+      "category": "neutral",
+      "subtitle": "Grease Gun Shot"
+    },
+    {
+      "name": "flintlockreload",
+      "files": [
+        "flintlockreload"
+      ],
+      "category": "neutral",
+      "subtitle": "Flintlock gun fires"
+    },
+    {
+      "name": "greasegunreload",
+      "files": [
+        "greasegunreload2"
+      ],
+      "category": "neutral",
+      "subtitle": "Grease Gun Reloads"
+    },
+    {
+      "name": "unzip",
+      "files": [
+        "unzipsfx"
+      ],
+      "category": "neutral",
+      "subtitle": "Armor bag is unzipped"
     }
   ],
   "tag_elements": {
@@ -10806,6 +13471,8 @@
       "~CUSTOM:IronSiding"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.BLACKSTONE",
+      "~Blocks.DEEPSLATE",
       "~Blocks.DIRT#0",
       "~Blocks.GRASS",
       "~Blocks.STONE#0"
@@ -10995,7 +13662,27 @@
       "ElevatorLiningCornerLeft",
       "Bottle",
       "GreaseGun",
-      "Stalker"
+      "Stalker",
+      "CashStackRegular",
+      "CashStackHundreds",
+      "ClerkBasicBlock",
+      "ClerkToolsBlock",
+      "ClerkWeaponsBlock",
+      "ClerkWeaponsHeavyBlock",
+      "ClerkAmmoBlock",
+      "ClothesBag",
+      "BasicClothesBag",
+      "VeteranArmorBag",
+      "ClerkArmorBlock",
+      "ElevatorLight3",
+      "CorruptedRoofSupport",
+      "Cartelevator",
+      "CartElevatorBoundingBox",
+      "DrillingBlock",
+      "ElevatorFAILSAFEbox",
+      "SpawnStructureShaftEntity",
+      "CartelevatorEast",
+      "CartelevatorWest"
     ]
   },
   "language_map": {
@@ -11250,7 +13937,144 @@
       "item.jimsmineshaft.cart_rail_broke_3": "Cart Rail Broken 3",
       "item.jimsmineshaft.cart_rail_broke_4": "Cart Rail Broken 4",
       "item.jimsmineshaft.cart_rail_broke_5": "Cart Rail Broken 5",
-      "item.jimsmineshaft.cart_rail_broke_6": "Cart Rail Broken 6"
+      "item.jimsmineshaft.cart_rail_broke_6": "Cart Rail Broken 6",
+      "item.jimsmineshaft.tommy_gun.description_0": "Crouch+Left Click to reload",
+      "item.jimsmineshaft.tommy_gun.description_1": "Hold Right Click to shoot",
+      "item.jimsmineshaft.small_side_open_gate_entity_spawn_egg": "Small Slide Up Gate Spawn Egg",
+      "entity.jimsmineshaft.small_side_open_gate_entity": "Small Slide Up Gate",
+      "key.jimsmineshaft.interact": "Interact",
+      "item.jimsmineshaft.bottle": "Bottle",
+      "item.jimsmineshaft.grease_gun": "Grease Gun",
+      "item.jimsmineshaft.grease_gun.description_0": "Crouch + Left Click to reload",
+      "item.jimsmineshaft.grease_gun.description_1": "Hold Right Click to shoot",
+      "item.jimsmineshaft.large_gate": "Large Gate",
+      "item.jimsmineshaft.vision_spawn_egg": "Vision Spawn Egg",
+      "entity.jimsmineshaft.vision": "Vision",
+      "item.jimsmineshaft.small_side_open_gate": "Small Side Open Gate",
+      "biome.jimsmineshaft.paradise_fields": "Paradise Fields",
+      "entity.jimsmineshaft.small_slide_up_gate_entity": "Small Slide Up Gate",
+      "item.jimsmineshaft.small_slide_up_gate_entity_spawn_egg": "Small Slide Up Gate Spawn Egg",
+      "item.jimsmineshaft.mining_elite_set_leggings": "Mining Elite Set Cargo Pants",
+      "item.jimsmineshaft.mining_elite_set_boots": "Mining Elite Set Steel Toe Boots",
+      "item.jimsmineshaft.mining_elite_set_chestplate": "Mining Elite Set Plate Vest",
+      "item.jimsmineshaft.mining_elite_set_helmet": "Mining Elite Set Brodie Helmet",
+      "item.jimsmineshaft.mining_veteran_set_chestplate": "Mining Veteran Set Heavy Chestplate",
+      "item.jimsmineshaft.mining_veteran_set_helmet": "Mining Veteran Set Heavy CBRN Mask",
+      "item.jimsmineshaft.mining_veteran_set_boots": "Mining Veteran Set Heavy Sabatons",
+      "item.jimsmineshaft.mining_veteran_set_leggings": "Mining Veteran Set Heavy Greaves",
+      "item.jimsmineshaft.small_slide_up_gate": "Small Slide Up Gate",
+      "subtitles.greasegunshoot": "Grease Gun Shot",
+      "subtitles.flintlockreload": "Flintlock gun fires",
+      "subtitles.greasegunreload": "Grease Gun Reloads",
+      "gui.jimsmineshaft.store_gui.label_tools": "Tools",
+      "gui.jimsmineshaft.store_gui.label_weapons": "Weapons",
+      "gui.jimsmineshaft.store_gui.label_tools1": "Tools",
+      "gui.jimsmineshaft.store_gui.label_weapons1": "Weapons",
+      "gui.jimsmineshaft.store_gui.label_armor1": "Armor",
+      "gui.jimsmineshaft.store_gui.label_armor": "Armor",
+      "entity.minecraft.villager.jimsmineshaft.company_store_clerk": "Armor Clerk",
+      "item.jimsmineshaft.cash_stack_regular": "§a§l$10 §fbills",
+      "item.jimsmineshaft.cash_stack_hundreds": "§a§l$50 §fbills",
+      "entity.minecraft.villager.jimsmineshaft.company_store_clerk_weapons_light": "Light Weapons Clerk",
+      "entity.minecraft.villager.jimsmineshaft.company_store_clerk_weapons_heavy": "Heavy Weapons Clerk",
+      "entity.minecraft.villager.jimsmineshaft.company_store_clerk_ammo": "Ammunition Clerk",
+      "entity.minecraft.villager.jimsmineshaft.company_store_clerk_basic": "Basic Goods Clerk",
+      "entity.minecraft.villager.jimsmineshaft.company_store_clerk_tools": "Tools Clerk",
+      "item.jimsmineshaft.clerk_basic_block": "Clerk Basic Profession Block",
+      "item.jimsmineshaft.clerk_tools_block": "Clerk Tools Profession Block",
+      "item.jimsmineshaft.clerk_weapons_block": "Clerk Weapons Light Profession Block",
+      "item.jimsmineshaft.clerk_weapons_heavy_block": "Clerk Weapons Heavy Profession Block",
+      "item.jimsmineshaft.clerk_ammo_block": "Clerk Ammo Profession Block",
+      "item.jimsmineshaft.clothes_bag": "Hardened Armor",
+      "item.jimsmineshaft.basic_clothes_bag": "Basic Armor",
+      "item.jimsmineshaft.veteran_armor_bag": "Veteran Armor",
+      "item.jimsmineshaft.clerk_armor_block": "Clerk Armor Profession Block",
+      "subtitles.unzip": "Armor bag is unzipped",
+      "item.jimsmineshaft.shopdimension": "Shop Dimension Portal Igniter",
+      "item.jimsmineshaft.elevator_light_3": "Elevator Light 3",
+      "item.jimsmineshaft.corrupted_roof_support": "Corrupted Roof Support",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_b_bit_2": "D Shaft 5 (L)",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_main_lit": "D Shaft 1",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_b_bit_3": "D Shaft 6 (L)",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_b_room_1": "E Shaft 4",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_b_shaft1": "D Room 2",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_b_bit_1": "D Shaft 4 (L)",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_b_bit_4": "D Room 1",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_b_room_2": "E Shaft 5",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_b_shaft_3": "D Room 4",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_b_shaft_4": "D Bit 5 1",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_b_shaft_5": "D Bit 5 2",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_c_bit_1": "D Bit 7 2",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_c_bit_2": "E Shaft 1",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_resetpos": "ResetPos",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_c_shaft_2": "D Bit 5 4",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_c_bit_3": "E Shaft 2",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_c_shaft_3": "D Bit 4 1",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_c_bit_4": "E Shaft 3",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_c_shaft_4": "D Bit 4 2",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_c_shaft_5": "D bit 7 1",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_c_shaft_1": "D Bit 5 3",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_b_shaft_2": "D Room 3",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_a_non_lit": "D Shaft 2",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_a_bit": "D Shaft 3",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_g_bit_2": "E Bit 2",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_g_bit_1": "E Bit 1",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_g_bit_4": "E Bit 4",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_g_bit_3": "E Bit 3",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_g_room_1": "E Room 1",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_2.button_g_room_2": "E Room 2",
+      "key.jimsmineshaft.open_lvl_2_spawner_gui": "Open Lvl 2 Spawner GUI",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_3.button_c_shaft_1": "G Shaft 3 (L)",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_3.button_c_shaft_2": "G Room 1",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_3.button_b_shaft_3": "F Room 4",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_3.button_b_shaft_2": "F Room 3",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_3.button_a_non_lit": "F Shaft 2",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_3.button_main_lit": "F Shaft 1",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_3.button_resetpos": "ResetPos",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_3.button_b_bit_1": "F Shaft 4",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_3.button_b_bit_2": "F Shaft 5",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_3.button_b_shaft1": "F Room 2",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_3.button_b_bit_3": "F Shaft 6",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_3.button_b_bit_4": "F Room 1",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_3.button_b_shaft_5": "G Shaft 2",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_3.button_c_bit_2": "C Bit 2",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_3.button_b_room_1": "B Room 1",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_3.button_b_shaft_4": "G Shaft 1",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_3.button_c_bit_3": "C Bit 3",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_3.button_b_room_2": "B Room 2",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_3.button_c_bit_1": "C Bit 1",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_3.button_a_bit": "F Shaft 3",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_3.button_c_shaft_5": "C Shaft 5",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_3.button_c_shaft_3": "C Shaft 3",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_3.button_c_bit_4": "C Bit 4",
+      "gui.jimsmineshaft.shaftbuilder_gui_lvl_3.button_c_shaft_4": "C Shaft 4",
+      "key.jimsmineshaft.open_lvl_3_spawner_gui": "Open Lvl 2 Spawner GUI",
+      "item.jimsmineshaft.cartelevator_spawn_egg": "Cart Elevator Spawn Egg",
+      "entity.jimsmineshaft.cartelevator": "Cart Elevator",
+      "key.jimsmineshaft.send_cart": "Send Cart",
+      "item.jimsmineshaft.cart_elevator_bounding_box_spawn_egg": "Elevator Floor Box Spawn Egg",
+      "entity.jimsmineshaft.cart_elevator_bounding_box": "Elevator Floor Box",
+      "gui.jimsmineshaft.submit_cart_overlay.label_press_p_to_start_elevator": "PRESS O TO SEND CART",
+      "entity.minecraft.villager.jimsmineshaft.company_store_clerk_driller": "Drilling Clerk",
+      "item.jimsmineshaft.drilling_block": "Clerk Armor Profession Block",
+      "biome.jimsmineshaft.level_2_biomje": "Level 2  Biome",
+      "biome.jimsmineshaft.level_3_biome": "Level 3 Biome",
+      "biome.jimsmineshaft.level_4_biome": "Level 4 Biome",
+      "biome.jimsmineshaft.level_5_biome": "Level 5 Biome",
+      "biome.jimsmineshaft.level_6_biome": "Level 6 Biome",
+      "item.jimsmineshaft.level_2_dimension": "Level 2 Dimension Portal Igniter",
+      "item.jimsmineshaft.level_3_dimension": "Level 3 Dimension Portal Igniter",
+      "item.jimsmineshaft.level_4_dimension": "Level 1 Dimension Portal Igniter",
+      "item.jimsmineshaft.level_5_dimension": "Level 1 Dimension Portal Igniter",
+      "item.jimsmineshaft.level_6_dimension": "Level 1 Dimension Portal Igniter",
+      "item.jimsmineshaft.elevator_failsaf_ebox_spawn_egg": "Elevator Floor Box Spawn Egg",
+      "entity.jimsmineshaft.elevator_failsaf_ebox": "Elevator Floor Box",
+      "entity.jimsmineshaft.spawn_structure_shaft_entity": "Spawn Structure Shaft Entity DO NOT PLACE!!!!!",
+      "item.jimsmineshaft.spawn_structure_shaft_entity_spawn_egg": "Spawn Structure Shaft Entity DO NOT PLACE!!!!! Spawn Egg",
+      "entity.jimsmineshaft.cartelevator_east": "Cart Elevator",
+      "item.jimsmineshaft.cartelevator_east_spawn_egg": "Cart Elevator Spawn Egg",
+      "entity.jimsmineshaft.cartelevator_west": "Cart Elevator",
+      "item.jimsmineshaft.cartelevator_west_spawn_egg": "Cart Elevator Spawn Egg"
     }
   },
   "metadata": {
@@ -11263,17 +14087,26 @@
       "src/main/java/net/mcreator/jimsmineshaft/network/PlayPlayerAnimationMessage.java",
       "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationMixin.java",
       "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftModPlayerAnimationAPI.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/jimsmineshaft/network/JimsmineshaftModVariables.java",
       "src/main/resources/assets/jimsmineshaft/sounds.json",
       "src/main/java/net/mcreator/jimsmineshaft/network/LoadPlayerAnimationMessage.java",
       "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftMod.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModTabs.java",
       "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationRendererMixin.java",
+      "src/main/java/net/mcreator/jimsmineshaft/mixin/NoiseGeneratorSettingsMixin.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModBiomes.java",
       "src/main/java/net/mcreator/jimsmineshaft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModScreens.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModMenus.java",
+      "src/main/java/net/mcreator/jimsmineshaft/client/renderer/item/LegacyOverrideSelectItemModel.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModKeyMappings.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModParticleTypes.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModParticles.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModMobEffects.java",
+      "src/main/resources/data/minecraft/tags/point_of_interest_type/acquirable_job_site.json",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModVillagerProfessions.java",
+      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModTrades.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModBlocks.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModBlockEntities.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModItems.java",

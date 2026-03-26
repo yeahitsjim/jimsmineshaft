@@ -25,6 +25,7 @@ import net.mcreator.jimsmineshaft.entity.ThecartEntity;
 import net.mcreator.jimsmineshaft.entity.StalkerInsidesEntity;
 import net.mcreator.jimsmineshaft.entity.StalkerInsides2Entity;
 import net.mcreator.jimsmineshaft.entity.StalkerEntity;
+import net.mcreator.jimsmineshaft.entity.SpawnStructureShaftEntityEntity;
 import net.mcreator.jimsmineshaft.entity.SmallSlideUpGateEntityEntity;
 import net.mcreator.jimsmineshaft.entity.SmallSideOpenGateEntityEntity;
 import net.mcreator.jimsmineshaft.entity.SkinStealerEntityEntity;
@@ -43,10 +44,15 @@ import net.mcreator.jimsmineshaft.entity.ElevatorSeat4Entity;
 import net.mcreator.jimsmineshaft.entity.ElevatorSeat3Entity;
 import net.mcreator.jimsmineshaft.entity.ElevatorSeat2Entity;
 import net.mcreator.jimsmineshaft.entity.ElevatorSeat1Entity;
+import net.mcreator.jimsmineshaft.entity.ElevatorFAILSAFEboxEntity;
 import net.mcreator.jimsmineshaft.entity.ElevatorEntity;
 import net.mcreator.jimsmineshaft.entity.ElevatorBoundingBoxEntity;
 import net.mcreator.jimsmineshaft.entity.CopperDrilledNorthEntity;
 import net.mcreator.jimsmineshaft.entity.CopperDrilledEastEntity;
+import net.mcreator.jimsmineshaft.entity.CartelevatorWestEntity;
+import net.mcreator.jimsmineshaft.entity.CartelevatorEntity;
+import net.mcreator.jimsmineshaft.entity.CartelevatorEastEntity;
+import net.mcreator.jimsmineshaft.entity.CartElevatorBoundingBoxEntity;
 import net.mcreator.jimsmineshaft.entity.Cart4Entity;
 import net.mcreator.jimsmineshaft.entity.Cart3Entity;
 import net.mcreator.jimsmineshaft.entity.Cart2Entity;
@@ -177,6 +183,24 @@ public class JimsmineshaftModEntities {
 			EntityType.Builder.<SmallSlideUpGateEntityEntity>of(SmallSlideUpGateEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
 					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<CartelevatorEntity>> CARTELEVATOR = register("cartelevator",
+			EntityType.Builder.<CartelevatorEntity>of(CartelevatorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<CartElevatorBoundingBoxEntity>> CART_ELEVATOR_BOUNDING_BOX = register("cart_elevator_bounding_box", EntityType.Builder
+			.<CartElevatorBoundingBoxEntity>of(CartElevatorBoundingBoxEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().ridingOffset(-0.6f).sized(4f, 0.2f));
+	public static final DeferredHolder<EntityType<?>, EntityType<ElevatorFAILSAFEboxEntity>> ELEVATOR_FAILSAF_EBOX = register("elevator_failsaf_ebox",
+			EntityType.Builder.<ElevatorFAILSAFEboxEntity>of(ElevatorFAILSAFEboxEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().ridingOffset(-0.6f).sized(5f, 0.2f));
+	public static final DeferredHolder<EntityType<?>, EntityType<SpawnStructureShaftEntityEntity>> SPAWN_STRUCTURE_SHAFT_ENTITY = register("spawn_structure_shaft_entity", EntityType.Builder
+			.<SpawnStructureShaftEntityEntity>of(SpawnStructureShaftEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().ridingOffset(-0.6f).sized(0.2f, 0.2f));
+	public static final DeferredHolder<EntityType<?>, EntityType<CartelevatorEastEntity>> CARTELEVATOR_EAST = register("cartelevator_east",
+			EntityType.Builder.<CartelevatorEastEntity>of(CartelevatorEastEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<CartelevatorWestEntity>> CARTELEVATOR_WEST = register("cartelevator_west",
+			EntityType.Builder.<CartelevatorWestEntity>of(CartelevatorWestEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -225,6 +249,12 @@ public class JimsmineshaftModEntities {
 		SmallSideOpenGateEntityEntity.init(event);
 		VisionEntity.init(event);
 		SmallSlideUpGateEntityEntity.init(event);
+		CartelevatorEntity.init(event);
+		CartElevatorBoundingBoxEntity.init(event);
+		ElevatorFAILSAFEboxEntity.init(event);
+		SpawnStructureShaftEntityEntity.init(event);
+		CartelevatorEastEntity.init(event);
+		CartelevatorWestEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -260,5 +290,11 @@ public class JimsmineshaftModEntities {
 		event.put(SMALL_SIDE_OPEN_GATE_ENTITY.get(), SmallSideOpenGateEntityEntity.createAttributes().build());
 		event.put(VISION.get(), VisionEntity.createAttributes().build());
 		event.put(SMALL_SLIDE_UP_GATE_ENTITY.get(), SmallSlideUpGateEntityEntity.createAttributes().build());
+		event.put(CARTELEVATOR.get(), CartelevatorEntity.createAttributes().build());
+		event.put(CART_ELEVATOR_BOUNDING_BOX.get(), CartElevatorBoundingBoxEntity.createAttributes().build());
+		event.put(ELEVATOR_FAILSAF_EBOX.get(), ElevatorFAILSAFEboxEntity.createAttributes().build());
+		event.put(SPAWN_STRUCTURE_SHAFT_ENTITY.get(), SpawnStructureShaftEntityEntity.createAttributes().build());
+		event.put(CARTELEVATOR_EAST.get(), CartelevatorEastEntity.createAttributes().build());
+		event.put(CARTELEVATOR_WEST.get(), CartelevatorWestEntity.createAttributes().build());
 	}
 }

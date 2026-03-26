@@ -70,6 +70,7 @@ import net.mcreator.jimsmineshaft.client.model.ModelMining_Elite_Set_Chestplate;
 import net.mcreator.jimsmineshaft.client.model.ModelMining_Elite_Set_Cargo_Pants;
 import net.mcreator.jimsmineshaft.client.model.ModelMining_Elite_Set_Brodie_Helmet;
 import net.mcreator.jimsmineshaft.client.model.ModelElevator3;
+import net.mcreator.jimsmineshaft.client.model.ModelCartElevator;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class JimsmineshaftModModels {
@@ -114,6 +115,7 @@ public class JimsmineshaftModModels {
 		event.registerLayerDefinition(ModelPressureDrillBlockModel.LAYER_LOCATION, ModelPressureDrillBlockModel::createBodyLayer);
 		event.registerLayerDefinition(ModelcartPhase4.LAYER_LOCATION, ModelcartPhase4::createBodyLayer);
 		event.registerLayerDefinition(ModelMining_Elite_Set_Chestplate.LAYER_LOCATION, ModelMining_Elite_Set_Chestplate::createBodyLayer);
+		event.registerLayerDefinition(ModelCartElevator.LAYER_LOCATION, ModelCartElevator::createBodyLayer);
 		event.registerLayerDefinition(ModelcartRocks3.LAYER_LOCATION, ModelcartRocks3::createBodyLayer);
 		event.registerLayerDefinition(ModelcartPhase5.LAYER_LOCATION, ModelcartPhase5::createBodyLayer);
 		event.registerLayerDefinition(Modelslideupgate.LAYER_LOCATION, Modelslideupgate::createBodyLayer);

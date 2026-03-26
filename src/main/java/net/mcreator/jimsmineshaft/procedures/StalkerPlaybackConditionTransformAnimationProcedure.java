@@ -1,6 +1,8 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.jimsmineshaft.entity.StalkerEntity;
 
 public class StalkerPlaybackConditionTransformAnimationProcedure {
 	public static boolean execute(Entity entity) {

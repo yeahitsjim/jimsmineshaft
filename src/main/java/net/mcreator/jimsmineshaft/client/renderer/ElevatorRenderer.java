@@ -1,5 +1,15 @@
 package net.mcreator.jimsmineshaft.client.renderer;
 
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
+import net.minecraft.client.renderer.entity.MobRenderer;
+import net.minecraft.client.renderer.entity.EntityRendererProvider;
+import net.minecraft.client.model.geom.ModelPart;
+
+import net.mcreator.jimsmineshaft.entity.ElevatorEntity;
+import net.mcreator.jimsmineshaft.client.model.animations.theElevator1Animation;
+import net.mcreator.jimsmineshaft.client.model.ModelElevator3;
+
 public class ElevatorRenderer extends MobRenderer<ElevatorEntity, LivingEntityRenderState, ModelElevator3> {
 	private ElevatorEntity entity = null;
 

@@ -9,6 +9,8 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 
+import net.mcreator.jimsmineshaft.procedures.RightClickSpawner4Procedure;
+
 public class StructureSpawnerItem extends Item {
 	public StructureSpawnerItem(Item.Properties properties) {
 		super(properties);
@@ -28,6 +30,7 @@ public class StructureSpawnerItem extends Item {
 	public InteractionResult use(Level world, Player entity, InteractionHand hand) {
 		InteractionResult ar = super.use(world, entity, hand);
 		entity.startUsingItem(hand);
+		RightClickSpawner4Procedure.execute(world, entity);
 		return ar;
 	}
 }

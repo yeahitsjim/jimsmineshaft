@@ -11,7 +11,7 @@
     },
     "igniteFire": false,
     "disableGravity": false,
-    "power": 1.0,
+    "power": 3.0,
     "damage": 5.0,
     "knockback": 5,
     "entityModel": "Default",
@@ -20,9 +20,6 @@
     "modelHeight": 0.5,
     "onHitsEntity": {
       "name": "BulletProjectileProjectileHitsLivingEntity"
-    },
-    "onFlyingTick": {
-      "name": "BulletProjectileWhileProjectileFlyingTick"
     }
   }
 }

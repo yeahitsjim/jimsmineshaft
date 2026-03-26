@@ -10,8 +10,11 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.Containers;
+import net.minecraft.util.RandomSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.jimsmineshaft.procedures.MysteryLOOTOnTickUpdateProcedure;
 import net.mcreator.jimsmineshaft.block.entity.MysteryItemBlockEntity;
 
 public class MysteryItemBlock extends Block implements EntityBlock {
@@ -22,6 +25,19 @@ public class MysteryItemBlock extends Block implements EntityBlock {
 	@Override
 	public int getLightBlock(BlockState state) {
 		return 15;
+	}
+
+	@Override
+	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+		super.onPlace(blockstate, world, pos, oldState, moving);
+		world.scheduleTick(pos, this, 1);
+	}
+
+	@Override
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
+		super.tick(blockstate, world, pos, random);
+		MysteryLOOTOnTickUpdateProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		world.scheduleTick(pos, this, 1);
 	}
 
 	@Override

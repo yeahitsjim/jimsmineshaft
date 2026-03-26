@@ -15,7 +15,10 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.jimsmineshaft.world.inventory.StoreGUIMenu;
 import net.mcreator.jimsmineshaft.world.inventory.ShaftbuilderGUIMenu;
+import net.mcreator.jimsmineshaft.world.inventory.ShaftbuilderGUILvl3Menu;
+import net.mcreator.jimsmineshaft.world.inventory.ShaftbuilderGUILvl2Menu;
 import net.mcreator.jimsmineshaft.world.inventory.CartGUIMenu;
 import net.mcreator.jimsmineshaft.network.MenuStateUpdateMessage;
 import net.mcreator.jimsmineshaft.JimsmineshaftMod;
@@ -26,6 +29,9 @@ public class JimsmineshaftModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(Registries.MENU, JimsmineshaftMod.MODID);
 	public static final DeferredHolder<MenuType<?>, MenuType<CartGUIMenu>> CART_GUI = REGISTRY.register("cart_gui", () -> IMenuTypeExtension.create(CartGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<ShaftbuilderGUIMenu>> SHAFTBUILDER_GUI = REGISTRY.register("shaftbuilder_gui", () -> IMenuTypeExtension.create(ShaftbuilderGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<StoreGUIMenu>> STORE_GUI = REGISTRY.register("store_gui", () -> IMenuTypeExtension.create(StoreGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<ShaftbuilderGUILvl2Menu>> SHAFTBUILDER_GUI_LVL_2 = REGISTRY.register("shaftbuilder_gui_lvl_2", () -> IMenuTypeExtension.create(ShaftbuilderGUILvl2Menu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<ShaftbuilderGUILvl3Menu>> SHAFTBUILDER_GUI_LVL_3 = REGISTRY.register("shaftbuilder_gui_lvl_3", () -> IMenuTypeExtension.create(ShaftbuilderGUILvl3Menu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

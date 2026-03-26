@@ -31,7 +31,7 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "Crouch+Left Click to reload",
+        "Crouch + Left Click to reload",
         "Hold Right Click to shoot"
       ]
     },

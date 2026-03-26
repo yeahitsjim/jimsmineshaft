@@ -39,9 +39,9 @@ public class FlintlockPistolPlayerFinishesUsingItemProcedure {
 				if (!world.isClientSide()) {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("item.crossbow.loading_end")), SoundSource.PLAYERS, (float) 0.5, 2);
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:flintlockreload")), SoundSource.PLAYERS, (float) 0.5, 2);
 						} else {
-							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("item.crossbow.loading_end")), SoundSource.PLAYERS, (float) 0.5, 2, false);
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:flintlockreload")), SoundSource.PLAYERS, (float) 0.5, 2, false);
 						}
 					}
 				}

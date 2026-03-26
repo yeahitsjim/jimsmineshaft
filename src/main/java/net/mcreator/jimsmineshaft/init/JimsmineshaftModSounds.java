@@ -81,4 +81,8 @@ public class JimsmineshaftModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> ENTITY_TOMMY_GUN_SHOOT = REGISTRY.register("entity.tommy_gun.shoot",
 			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "entity.tommy_gun.shoot")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> VISION_GLITCH = REGISTRY.register("vision_glitch", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "vision_glitch")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> GREASEGUNSHOOT = REGISTRY.register("greasegunshoot", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "greasegunshoot")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> FLINTLOCKRELOAD = REGISTRY.register("flintlockreload", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "flintlockreload")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> GREASEGUNRELOAD = REGISTRY.register("greasegunreload", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "greasegunreload")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> UNZIP = REGISTRY.register("unzip", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "unzip")));
 }

@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "O",
+    "keyBindingName": "Send Cart",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "SendCartOnKeyPressed"
+    }
+  }
+}

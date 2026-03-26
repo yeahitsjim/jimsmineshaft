@@ -213,7 +213,7 @@
     "pushedByFluids": {
       "fixedValue": true
     },
-    "flyingMob": false,
+    "flyingMob": true,
     "guiBoundTo": "CartGUI",
     "inventorySize": 114,
     "inventoryStackSize": 1,

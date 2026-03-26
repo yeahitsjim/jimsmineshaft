@@ -550,5 +550,41 @@
         "stream": false
       }
     ]
+  },
+  "greasegunshoot": {
+    "subtitle": "subtitles.greasegunshoot",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:greasegunshot",
+        "stream": false
+      }
+    ]
+  },
+  "flintlockreload": {
+    "subtitle": "subtitles.flintlockreload",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:flintlockreload",
+        "stream": false
+      }
+    ]
+  },
+  "greasegunreload": {
+    "subtitle": "subtitles.greasegunreload",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:greasegunreload2",
+        "stream": false
+      }
+    ]
+  },
+  "unzip": {
+    "subtitle": "subtitles.unzip",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:unzipsfx",
+        "stream": false
+      }
+    ]
   }
 }

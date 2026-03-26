@@ -33,7 +33,7 @@ public class NearElevatorOverlay {
 			z = entity.getZ();
 		}
 		if (NearElevatorDisplayOverlayIngameProcedure.execute(entity)) {
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.jimsmineshaft.near_elevator.label_right_click_in_elevator_to_join"), w / 2 + -68, h / 2 + 62, -3355444, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.jimsmineshaft.near_elevator.label_right_click_in_elevator_to_join"), w / 2 + -75, h / 2 + 62, -3355444, false);
 		}
 	}
 }
