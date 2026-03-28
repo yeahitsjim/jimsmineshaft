@@ -1,14 +1,28 @@
 {
   "replace": false,
   "values": [
+    "jimsmineshaft:raw_copper_22",
     "jimsmineshaft:rusted_iron_railing",
+    "jimsmineshaft:raw_copper_23",
     "jimsmineshaft:rusted_iron_stairs",
-    "jimsmineshaft:rusted_iron_catwalk",
-    "jimsmineshaft:rusted_iron_cross_support",
-    "jimsmineshaft:rusted_iron_support_cool",
-    "jimsmineshaft:rusted_iron_railing_corner",
+    "jimsmineshaft:raw_copper_drilled_north",
+    "jimsmineshaft:raw_copper_24",
+    "jimsmineshaft:raw_copper_25",
+    "jimsmineshaft:raw_copper_26",
+    "jimsmineshaft:raw_copper_27",
+    "jimsmineshaft:raw_copper_28",
+    "jimsmineshaft:raw_copper_drilled_east",
+    "jimsmineshaft:raw_copper_29",
     "jimsmineshaft:iron_siding",
     "jimsmineshaft:rusted_iron_catwalk_wall_support",
-    "jimsmineshaft:rusted_iron_catwalk_supported"
+    "jimsmineshaft:raw_copper_drilled_east_dynamite",
+    "jimsmineshaft:raw_copper_210",
+    "jimsmineshaft:rusted_iron_catwalk",
+    "jimsmineshaft:rusted_iron_cross_support",
+    "jimsmineshaft:rusted_iron_railing_corner",
+    "jimsmineshaft:rusted_iron_support_cool",
+    "jimsmineshaft:raw_copper_drilled_north_dynamite",
+    "jimsmineshaft:rusted_iron_catwalk_supported",
+    "jimsmineshaft:raw_copper_2"
   ]
 }

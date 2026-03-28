@@ -8,6 +8,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
+import net.mcreator.jimsmineshaft.client.model.Modeltumbler;
 import net.mcreator.jimsmineshaft.client.model.ModeltheCart;
 import net.mcreator.jimsmineshaft.client.model.Modelstalker;
 import net.mcreator.jimsmineshaft.client.model.ModelrawCopperDrilledNorth_Converted;
@@ -93,6 +94,7 @@ public class JimsmineshaftModModels {
 		event.registerLayerDefinition(ModelcartPhase4.LAYER_LOCATION, ModelcartPhase4::createBodyLayer);
 		event.registerLayerDefinition(ModelcartRocks3.LAYER_LOCATION, ModelcartRocks3::createBodyLayer);
 		event.registerLayerDefinition(ModelcartPhase5.LAYER_LOCATION, ModelcartPhase5::createBodyLayer);
+		event.registerLayerDefinition(Modeltumbler.LAYER_LOCATION, Modeltumbler::createBodyLayer);
 		event.registerLayerDefinition(ModelPressureDrill.LAYER_LOCATION, ModelPressureDrill::createBodyLayer);
 		event.registerLayerDefinition(ModeltheCart.LAYER_LOCATION, ModeltheCart::createBodyLayer);
 		event.registerLayerDefinition(Modelmining_ghat.LAYER_LOCATION, Modelmining_ghat::createBodyLayer);

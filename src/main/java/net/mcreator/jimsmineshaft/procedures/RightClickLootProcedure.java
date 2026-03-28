@@ -1,6 +1,27 @@
 package net.mcreator.jimsmineshaft.procedures;
 
+import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
+
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.jimsmineshaft.init.JimsmineshaftModBlocks;
+
+import javax.annotation.Nullable;
 
 @EventBusSubscriber
 public class RightClickLootProcedure {
@@ -17,7 +38,7 @@ public class RightClickLootProcedure {
 
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, BlockState blockstate) {
 		double letsgogambling = 0;
-		if (blockstate.getBlock() == JimsmineshaftModItems.DELETED_MOD_ELEMENT.get()) {
+		if (blockstate.getBlock() == JimsmineshaftModBlocks.COPPER_CHUNK_TYPE_A.get()) {
 			{
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
@@ -81,7 +102,7 @@ public class RightClickLootProcedure {
 				}
 			}
 		}
-		if (blockstate.getBlock() == JimsmineshaftModItems.DELETED_MOD_ELEMENT.get()) {
+		if (blockstate.getBlock() == JimsmineshaftModBlocks.COPPER_CHUNK_TYPE_B.get()) {
 			{
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
@@ -145,7 +166,7 @@ public class RightClickLootProcedure {
 				}
 			}
 		}
-		if (blockstate.getBlock() == JimsmineshaftModItems.DELETED_MOD_ELEMENT.get()) {
+		if (blockstate.getBlock() == JimsmineshaftModBlocks.COPPER_CHUNK_TYPE_C.get()) {
 			{
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
@@ -209,7 +230,7 @@ public class RightClickLootProcedure {
 				}
 			}
 		}
-		if (blockstate.getBlock() == JimsmineshaftModItems.DELETED_MOD_ELEMENT.get()) {
+		if (blockstate.getBlock() == JimsmineshaftModBlocks.COPPER_CHUNK_TYPE_D.get()) {
 			{
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
@@ -273,7 +294,7 @@ public class RightClickLootProcedure {
 				}
 			}
 		}
-		if (blockstate.getBlock() == JimsmineshaftModItems.DELETED_MOD_ELEMENT.get()) {
+		if (blockstate.getBlock() == JimsmineshaftModBlocks.COPPER_CHUNK_TYPE_E.get()) {
 			{
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);

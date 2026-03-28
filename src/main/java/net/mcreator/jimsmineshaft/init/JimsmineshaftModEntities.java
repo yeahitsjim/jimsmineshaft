@@ -22,6 +22,7 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.jimsmineshaft.entity.ThecartEntity;
 import net.mcreator.jimsmineshaft.entity.StalkerEntity;
+import net.mcreator.jimsmineshaft.entity.RustedTumblerEntity;
 import net.mcreator.jimsmineshaft.entity.RightgateEntity;
 import net.mcreator.jimsmineshaft.entity.PressureDrillFoldedEntity;
 import net.mcreator.jimsmineshaft.entity.PressureDrillEntity;
@@ -157,6 +158,10 @@ public class JimsmineshaftModEntities {
 			EntityType.Builder.<FlashlightentityEntity>of(FlashlightentityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.ridingOffset(-0.6f).sized(0.1f, 0.1f));
+	public static final DeferredHolder<EntityType<?>, EntityType<RustedTumblerEntity>> RUSTED_TUMBLER = register("rusted_tumbler",
+			EntityType.Builder.<RustedTumblerEntity>of(RustedTumblerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(1.8f, 5.4f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -201,6 +206,7 @@ public class JimsmineshaftModEntities {
 		BigGateEntity.init(event);
 		CopperDrilledNorthEntity.init(event);
 		FlashlightentityEntity.init(event);
+		RustedTumblerEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -232,5 +238,6 @@ public class JimsmineshaftModEntities {
 		event.put(BIG_GATE.get(), BigGateEntity.createAttributes().build());
 		event.put(COPPER_DRILLED_NORTH.get(), CopperDrilledNorthEntity.createAttributes().build());
 		event.put(FLASHLIGHTENTITY.get(), FlashlightentityEntity.createAttributes().build());
+		event.put(RUSTED_TUMBLER.get(), RustedTumblerEntity.createAttributes().build());
 	}
 }

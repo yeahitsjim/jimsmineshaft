@@ -1,19 +1,40 @@
 package net.mcreator.jimsmineshaft.entity;
 
-import net.minecraft.nbt.Tag;
-import net.minecraft.network.syncher.EntityDataAccessor;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
+import net.neoforged.neoforge.common.NeoForgeMod;
+
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.Explosion;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.projectile.ThrownPotion;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.ai.navigation.PathNavigation;
+import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
+import net.minecraft.world.entity.ai.control.FlyingMoveControl;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.PathfinderMob;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.AreaEffectCloud;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.jimsmineshaft.procedures.ElevatorSeat8OnEntityTickUpdateProcedure;
 
 public class ElevatorSeat8Entity extends PathfinderMob {
-
 	public ElevatorSeat8Entity(EntityType<ElevatorSeat8Entity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
-
 		setPersistenceRequired();
-
 		this.moveControl = new FlyingMoveControl(this, 10, true);
-
 	}
 
 	@Override
@@ -34,7 +55,6 @@ public class ElevatorSeat8Entity extends PathfinderMob {
 
 	@Override
 	public boolean causeFallDamage(float l, float d, DamageSource source) {
-
 		return false;
 	}
 
@@ -83,11 +103,8 @@ public class ElevatorSeat8Entity extends PathfinderMob {
 	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
 		ItemStack itemstack = sourceentity.getItemInHand(hand);
 		InteractionResult retval = InteractionResult.SUCCESS;
-
 		super.mobInteract(sourceentity, hand);
-
 		sourceentity.startRiding(this);
-
 		return retval;
 	}
 
@@ -108,7 +125,6 @@ public class ElevatorSeat8Entity extends PathfinderMob {
 
 	public void aiStep() {
 		super.aiStep();
-
 		this.setNoGravity(true);
 	}
 
@@ -122,12 +138,8 @@ public class ElevatorSeat8Entity extends PathfinderMob {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
-
 		builder = builder.add(Attributes.STEP_HEIGHT, 0.6);
-
 		builder = builder.add(Attributes.FLYING_SPEED, 0.3);
-
 		return builder;
 	}
-
 }

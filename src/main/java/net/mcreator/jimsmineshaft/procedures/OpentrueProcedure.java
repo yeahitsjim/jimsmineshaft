@@ -1,6 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.entity.Entity;
 
 public class OpentrueProcedure {
 	public static double execute(Entity entity) {

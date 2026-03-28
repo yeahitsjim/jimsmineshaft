@@ -137,6 +137,7 @@ public class JimsmineshaftModTabs {
 				tabData.accept(JimsmineshaftModBlocks.RAW_COPPER_DRILLED_NORTH.get().asItem());
 				tabData.accept(JimsmineshaftModItems.TOMMY_GUN.get());
 				tabData.accept(JimsmineshaftModBlocks.NEW_GRAVEL.get().asItem());
+				tabData.accept(JimsmineshaftModItems.RUSTED_TUMBLER_SPAWN_EGG.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

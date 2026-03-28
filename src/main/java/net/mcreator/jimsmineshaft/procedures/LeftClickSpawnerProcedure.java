@@ -1,6 +1,25 @@
 package net.mcreator.jimsmineshaft.procedures;
 
+import net.neoforged.neoforge.network.handling.IPayloadContext;
+import net.neoforged.neoforge.network.PacketDistributor;
+import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
+import net.neoforged.api.distmarker.Dist;
+
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.network.protocol.PacketFlow;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.core.Direction;
+
+import net.mcreator.jimsmineshaft.JimsmineshaftMod;
+
+import javax.annotation.Nullable;
 
 @EventBusSubscriber(value = {Dist.CLIENT})
 public class LeftClickSpawnerProcedure {

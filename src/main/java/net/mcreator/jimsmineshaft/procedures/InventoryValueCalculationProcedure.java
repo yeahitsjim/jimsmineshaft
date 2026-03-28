@@ -1,6 +1,20 @@
 package net.mcreator.jimsmineshaft.procedures;
 
+import net.neoforged.neoforge.items.IItemHandlerModifiable;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
+import net.neoforged.neoforge.capabilities.Capabilities;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
+
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
+import net.mcreator.jimsmineshaft.init.JimsmineshaftModBlocks;
+
+import javax.annotation.Nullable;
 
 @EventBusSubscriber
 public class InventoryValueCalculationProcedure {
@@ -38,6 +52,11 @@ public class InventoryValueCalculationProcedure {
 					localInvCalculation = localInvCalculation + 38.1;
 				}
 			}
+		}
+		{
+			JimsmineshaftModVariables.PlayerVariables _vars = entity.getData(JimsmineshaftModVariables.PLAYER_VARIABLES);
+			_vars.playerInvValue = localInvCalculation;
+			_vars.syncPlayerVariables(entity);
 		}
 	}
 }

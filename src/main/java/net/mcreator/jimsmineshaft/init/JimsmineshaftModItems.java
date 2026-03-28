@@ -176,6 +176,7 @@ public class JimsmineshaftModItems {
 	public static final DeferredItem<Item> LIGHTBLOCK = block(JimsmineshaftModBlocks.LIGHTBLOCK);
 	public static final DeferredItem<Item> TOMMY_GUN = register("tommy_gun", TommyGunItem::new);
 	public static final DeferredItem<Item> NEW_GRAVEL = block(JimsmineshaftModBlocks.NEW_GRAVEL);
+	public static final DeferredItem<Item> RUSTED_TUMBLER_SPAWN_EGG = register("rusted_tumbler_spawn_egg", properties -> new SpawnEggItem(JimsmineshaftModEntities.RUSTED_TUMBLER.get(), properties));
 
 	// Start of user code block custom items
 	// End of user code block custom items

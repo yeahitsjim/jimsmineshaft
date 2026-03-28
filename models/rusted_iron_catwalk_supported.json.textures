@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "4": "rusted_iron_catwalk_wall_support"
+        "2": "rusted_iron_catwalk_support"
       },
       "name": "default"
     }

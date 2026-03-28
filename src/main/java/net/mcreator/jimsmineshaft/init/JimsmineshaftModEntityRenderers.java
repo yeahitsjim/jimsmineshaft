@@ -12,6 +12,7 @@ import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import net.mcreator.jimsmineshaft.client.renderer.ThecartRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.StalkerRenderer;
+import net.mcreator.jimsmineshaft.client.renderer.RustedTumblerRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.RightgateRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.PressureDrillRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.PressureDrillFoldedRenderer;
@@ -70,5 +71,6 @@ public class JimsmineshaftModEntityRenderers {
 		event.registerEntityRenderer(JimsmineshaftModEntities.BIG_GATE.get(), BigGateRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.COPPER_DRILLED_NORTH.get(), CopperDrilledNorthRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.FLASHLIGHTENTITY.get(), FlashlightentityRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.RUSTED_TUMBLER.get(), RustedTumblerRenderer::new);
 	}
 }
