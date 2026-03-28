@@ -1,14 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.AABB;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.jimsmineshaft.entity.StalkerEntity;
-
-import java.util.regex.Pattern;
-import java.util.Comparator;
+import net.neoforged.bus.api.Event;
 
 public class StalkerPoseSetPacketReceivedByClientProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, String inboundString) {
@@ -34,9 +26,7 @@ public class StalkerPoseSetPacketReceivedByClientProcedure {
 						}
 					}
 					if (pose_a == 1) {
-						if (stalker instanceof StalkerEntity) {
-							stalker.getPersistentData().putString("ClientPose", stringiterator);
-						}
+						stalker.getPersistentData().putString("ClientPose", stringiterator);
 					}
 					pose_a = pose_a + 1;
 				}
@@ -56,9 +46,7 @@ public class StalkerPoseSetPacketReceivedByClientProcedure {
 						}
 					}
 					if (pose_a == 1) {
-						if (stalker instanceof StalkerEntity) {
-							stalker.getPersistentData().putString("ClientPose", stringiterator);
-						}
+						stalker.getPersistentData().putString("ClientPose", stringiterator);
 					}
 					pose_a = pose_a + 1;
 				}

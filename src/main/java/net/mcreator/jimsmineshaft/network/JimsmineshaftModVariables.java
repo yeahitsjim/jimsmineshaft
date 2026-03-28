@@ -86,7 +86,16 @@ public class JimsmineshaftModVariables {
 			clone.playerInvValue = original.playerInvValue;
 			clone.elevatorPlace = original.elevatorPlace;
 			clone.playerHoldingDrill = original.playerHoldingDrill;
+			clone.overlay = original.overlay;
+			clone.stamina = original.stamina;
+			clone.staminamax = original.staminamax;
+			clone.banishedToParadise = original.banishedToParadise;
+			clone.darknessOverlay = original.darknessOverlay;
+			clone.elevatorSeatNumber = original.elevatorSeatNumber;
 			if (!event.isWasDeath()) {
+				clone.paradise_ticks = original.paradise_ticks;
+				clone.analogScreenInx = original.analogScreenInx;
+				clone.sentencedToDeath = original.sentencedToDeath;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -278,6 +287,15 @@ public class JimsmineshaftModVariables {
 		public double playerInvValue = 0;
 		public double elevatorPlace = 0;
 		public boolean playerHoldingDrill = false;
+		public double paradise_ticks = 0;
+		public String analogScreenInx = "\"\"";
+		public boolean overlay = true;
+		public boolean sentencedToDeath = false;
+		public double stamina = 300.0;
+		public double staminamax = 300.0;
+		public boolean banishedToParadise = false;
+		public double darknessOverlay = 0;
+		public double elevatorSeatNumber = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -299,6 +317,15 @@ public class JimsmineshaftModVariables {
 			nbt.putDouble("playerInvValue", playerInvValue);
 			nbt.putDouble("elevatorPlace", elevatorPlace);
 			nbt.putBoolean("playerHoldingDrill", playerHoldingDrill);
+			nbt.putDouble("paradise_ticks", paradise_ticks);
+			nbt.putString("analogScreenInx", analogScreenInx);
+			nbt.putBoolean("overlay", overlay);
+			nbt.putBoolean("sentencedToDeath", sentencedToDeath);
+			nbt.putDouble("stamina", stamina);
+			nbt.putDouble("staminamax", staminamax);
+			nbt.putBoolean("banishedToParadise", banishedToParadise);
+			nbt.putDouble("darknessOverlay", darknessOverlay);
+			nbt.putDouble("elevatorSeatNumber", elevatorSeatNumber);
 			return nbt;
 		}
 
@@ -321,6 +348,15 @@ public class JimsmineshaftModVariables {
 			playerInvValue = nbt.getDouble("playerInvValue");
 			elevatorPlace = nbt.getDouble("elevatorPlace");
 			playerHoldingDrill = nbt.getBoolean("playerHoldingDrill");
+			paradise_ticks = nbt.getDouble("paradise_ticks");
+			analogScreenInx = nbt.getString("analogScreenInx");
+			overlay = nbt.getBoolean("overlay");
+			sentencedToDeath = nbt.getBoolean("sentencedToDeath");
+			stamina = nbt.getDouble("stamina");
+			staminamax = nbt.getDouble("staminamax");
+			banishedToParadise = nbt.getBoolean("banishedToParadise");
+			darknessOverlay = nbt.getDouble("darknessOverlay");
+			elevatorSeatNumber = nbt.getDouble("elevatorSeatNumber");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

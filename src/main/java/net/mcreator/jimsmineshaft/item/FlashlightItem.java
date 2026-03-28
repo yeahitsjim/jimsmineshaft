@@ -1,27 +1,8 @@
 package net.mcreator.jimsmineshaft.item;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.client.renderer.item.properties.numeric.RangeSelectItemModelProperty;
-import net.minecraft.client.multiplayer.ClientLevel;
-
-import net.mcreator.jimsmineshaft.procedures.FlashlightRightclickedProcedure;
-import net.mcreator.jimsmineshaft.procedures.FlashlightPropertyValueProviderProcedure;
-import net.mcreator.jimsmineshaft.procedures.FlashlightItemInInventoryTickProcedure;
-
-import javax.annotation.Nullable;
-
-import com.mojang.serialization.MapCodec;
-
 public class FlashlightItem extends Item {
 	public FlashlightItem(Item.Properties properties) {
-		super(properties);
+		super(properties.stacksTo(1));
 	}
 
 	@Override

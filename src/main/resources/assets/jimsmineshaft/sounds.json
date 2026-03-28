@@ -380,5 +380,316 @@
         "stream": false
       }
     ]
+  },
+  "stalkerscream1": {
+    "subtitle": "subtitles.stalkerscream1",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:stalkerscream1",
+        "stream": false
+      }
+    ]
+  },
+  "amalgamation.hurt": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:amalgamation_hurt_1",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:amalgamation_hurt_2",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:amalgamation_hurt_3",
+        "stream": false
+      }
+    ]
+  },
+  "stalkerrip1": {
+    "subtitle": "subtitles.stalkerrip1",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:rip1",
+        "stream": false
+      }
+    ]
+  },
+  "vision_stare_calm": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:shadow_guy_stare_calm",
+        "stream": false
+      }
+    ]
+  },
+  "stalkerrip2": {
+    "subtitle": "subtitles.stalkerrip2",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:rip2",
+        "stream": false
+      }
+    ]
+  },
+  "elevatoractivatemain": {
+    "subtitle": "subtitles.elevatoractivatemain",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevatoractivate",
+        "stream": false
+      }
+    ]
+  },
+  "vision_glitch": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:shadow_guy_glitch",
+        "stream": false
+      }
+    ]
+  },
+  "thudd": {
+    "subtitle": "subtitles.thudd",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:thud",
+        "stream": false
+      }
+    ]
+  },
+  "vision_stare_angry": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:shadow_guy_stare_angry_1",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:shadow_guy_stare_angry_2",
+        "stream": false
+      }
+    ]
+  },
+  "mines_additions_1": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:mines_additions_1",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:mines_additions_2",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:mines_additions_3",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:mines_additions_4",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:mines_additions_5",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:mines_additions_6",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:mines_additions_7",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:mines_additions_8",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:mines_additions_9",
+        "stream": false
+      }
+    ]
+  },
+  "elevatoractivatealt": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevatoractivatealternate",
+        "stream": false
+      }
+    ]
+  },
+  "paradise_music": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:paradise_mineshaft_music",
+        "stream": true
+      }
+    ]
+  },
+  "squishwalk": {
+    "subtitle": "subtitles.squishwalk",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:squishblood",
+        "stream": false
+      }
+    ]
+  },
+  "stalkercrack": {
+    "subtitle": "subtitles.stalkercrack",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:crack",
+        "stream": false
+      }
+    ]
+  },
+  "amalgamation.death": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:amalgamation_death_1",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:amalgamation_death_2",
+        "stream": false
+      }
+    ]
+  },
+  "entity.tommy_gun.shoot": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:tommy_gun",
+        "stream": false
+      }
+    ]
+  },
+  "splat": {
+    "subtitle": "subtitles.splat",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:splat",
+        "stream": false
+      }
+    ]
+  },
+  "amalgamation.melee": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:amalgamation_melee_1",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:amalgamation_melee_2",
+        "stream": false
+      }
+    ]
+  },
+  "bigdoor3x3": {
+    "subtitle": "subtitles.bigdoor3x3",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:3x3doormono",
+        "stream": false
+      }
+    ]
+  },
+  "smalldoor": {
+    "subtitle": "subtitles.smalldoor",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:smalldoormono",
+        "stream": false
+      }
+    ]
+  },
+  "elevator7": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevator7",
+        "stream": false
+      }
+    ]
+  },
+  "elevator6": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevator6",
+        "stream": false
+      }
+    ]
+  },
+  "amalgamation.slice": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:amalgamation_slice",
+        "stream": false
+      }
+    ]
+  },
+  "elevator8": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevator8",
+        "stream": false
+      }
+    ]
+  },
+  "elevator3": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevator3",
+        "stream": false
+      }
+    ]
+  },
+  "elevator2": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevator2",
+        "stream": false
+      }
+    ]
+  },
+  "elevator5": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevator5",
+        "stream": false
+      }
+    ]
+  },
+  "elevator4": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevator4",
+        "stream": false
+      }
+    ]
+  },
+  "elevatorfinished": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevatordone",
+        "stream": false
+      }
+    ]
+  },
+  "slurp": {
+    "subtitle": "subtitles.slurp",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:slurp",
+        "stream": false
+      }
+    ]
+  },
+  "elevator1": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:elevator1",
+        "stream": false
+      }
+    ]
   }
 }

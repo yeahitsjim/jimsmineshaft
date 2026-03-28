@@ -15,4 +15,5 @@ import net.mcreator.jimsmineshaft.JimsmineshaftMod;
 public class JimsmineshaftModParticleTypes {
 	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(Registries.PARTICLE_TYPE, JimsmineshaftMod.MODID);
 	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> LIGHTPARTICLE = REGISTRY.register("lightparticle", () -> new SimpleParticleType(true));
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> BLOOD_PARTICLE = REGISTRY.register("blood_particle", () -> new SimpleParticleType(false));
 }

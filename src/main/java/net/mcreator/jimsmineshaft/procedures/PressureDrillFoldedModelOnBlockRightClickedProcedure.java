@@ -1,21 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.AABB;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.EntitySpawnReason;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.Component;
-import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
-import net.mcreator.jimsmineshaft.init.JimsmineshaftModEntities;
-import net.mcreator.jimsmineshaft.entity.PressureDrillFoldedEntity;
-
-import java.util.Comparator;
+import net.neoforged.bus.api.Event;
 
 public class PressureDrillFoldedModelOnBlockRightClickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {

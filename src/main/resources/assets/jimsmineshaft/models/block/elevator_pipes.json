@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/elevatorpipes",
+  "textures": {
+    "all": "jimsmineshaft:block/textureelevatorpipes2",
+    "particle": "jimsmineshaft:block/textureelevatorpipes2",
+    "0": "jimsmineshaft:block/textureelevatorpipes2"
+  },
+  "render_type": "solid"
+}

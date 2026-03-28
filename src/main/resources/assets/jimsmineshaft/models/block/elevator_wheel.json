@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/elevatorwheel",
+  "textures": {
+    "all": "jimsmineshaft:block/textureelevatorwheel2",
+    "particle": "jimsmineshaft:block/textureelevatorwheel2",
+    "0": "jimsmineshaft:block/textureelevatorwheel2"
+  },
+  "render_type": "solid"
+}

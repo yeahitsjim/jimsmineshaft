@@ -18,6 +18,7 @@ import net.minecraft.client.KeyMapping;
 import net.mcreator.jimsmineshaft.network.ShiftKeyMessage;
 import net.mcreator.jimsmineshaft.network.PlaceDrillMessage;
 import net.mcreator.jimsmineshaft.network.OpenSpawnerGUIMessage;
+import net.mcreator.jimsmineshaft.network.InteractMessage;
 import net.mcreator.jimsmineshaft.network.ActivateElevatoreMessage;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
@@ -74,6 +75,19 @@ public class JimsmineshaftModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping INTERACT = new KeyMapping("key.jimsmineshaft.interact", GLFW.GLFW_KEY_C, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				PacketDistributor.sendToServer(new InteractMessage(0, 0));
+				InteractMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
@@ -81,6 +95,7 @@ public class JimsmineshaftModKeyMappings {
 		event.register(SHIFT_KEY);
 		event.register(PLACE_DRILL);
 		event.register(ACTIVATE_ELEVATORE);
+		event.register(INTERACT);
 	}
 
 	@EventBusSubscriber({Dist.CLIENT})
@@ -92,6 +107,7 @@ public class JimsmineshaftModKeyMappings {
 				SHIFT_KEY.consumeClick();
 				PLACE_DRILL.consumeClick();
 				ACTIVATE_ELEVATORE.consumeClick();
+				INTERACT.consumeClick();
 			}
 		}
 	}

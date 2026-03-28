@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "jimsmineshaft:mining_elite_set_leggings",
+    "jimsmineshaft:mining_veteran_set_leggings",
     "jimsmineshaft:mining_goon_set_leggings"
   ]
 }

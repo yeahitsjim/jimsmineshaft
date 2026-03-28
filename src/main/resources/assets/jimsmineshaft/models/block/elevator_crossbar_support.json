@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/elevatorsupport1",
+  "textures": {
+    "all": "jimsmineshaft:block/texturecrossbarsupportwip2",
+    "particle": "jimsmineshaft:block/texturecrossbarsupportwip2",
+    "missing": "jimsmineshaft:block/texturecrossbarsupportwip2"
+  },
+  "render_type": "solid"
+}

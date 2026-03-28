@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/elevatorlight5",
+  "textures": {
+    "all": "jimsmineshaft:block/textureelevatorlight2",
+    "particle": "jimsmineshaft:block/textureelevatorlight2",
+    "0": "jimsmineshaft:block/textureelevatorlight2"
+  },
+  "render_type": "solid"
+}

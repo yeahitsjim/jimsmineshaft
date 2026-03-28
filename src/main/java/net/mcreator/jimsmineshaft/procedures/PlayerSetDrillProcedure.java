@@ -1,19 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.neoforge.event.tick.PlayerTickEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
-
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.effect.MobEffectInstance;
-
-import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
-
-import javax.annotation.Nullable;
 
 @EventBusSubscriber
 public class PlayerSetDrillProcedure {

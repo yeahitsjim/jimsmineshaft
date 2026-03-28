@@ -1,18 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
-
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
-import net.mcreator.jimsmineshaft.JimsmineshaftMod;
-
-import javax.annotation.Nullable;
 
 @EventBusSubscriber
 public class ThecartEntityIsHurtProcedure {

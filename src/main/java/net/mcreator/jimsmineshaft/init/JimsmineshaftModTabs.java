@@ -138,6 +138,29 @@ public class JimsmineshaftModTabs {
 				tabData.accept(JimsmineshaftModItems.TOMMY_GUN.get());
 				tabData.accept(JimsmineshaftModBlocks.NEW_GRAVEL.get().asItem());
 				tabData.accept(JimsmineshaftModItems.RUSTED_TUMBLER_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModBlocks.ELEVATORLIGHT.get().asItem());
+				tabData.accept(JimsmineshaftModItems.STALKER_INSIDES_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModBlocks.ELEVATOR_CROSSBAR_SUPPORT.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.BOTTLE.get().asItem());
+				tabData.accept(JimsmineshaftModItems.GREASE_GUN.get());
+				tabData.accept(JimsmineshaftModBlocks.ELEVATOR_LINING_CORNER_LEFT.get().asItem());
+				tabData.accept(JimsmineshaftModItems.STALKER_INSIDES_2_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModItems.SKIN_STEALER_ENTITY_SPAWN_EGG.get());
+				tabData.accept(JimsmineshaftModBlocks.ELEVATOR_BRACE.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.ELEVATOR_WHEEL.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.CART_RAIL_BROKE_1.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.CART_RAIL_BROKE_2.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.CART_RAIL_BROKE_3.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.ELEVATOR_PIPES.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.CART_RAIL_BROKE_4.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.CART_RAIL_BROKE_5.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.CART_RAIL_BROKE_6.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.ELEVATOR_LINING.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.MYSTERY_ORE.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.FLASHLIGHTB_1.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.ELEVATOR_LINING_CORNER_RIGHT.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.ELEVATORLIGHTMIDBLOCK.get().asItem());
+				tabData.accept(JimsmineshaftModBlocks.ELEVATOR_LINING_CORNER_MIDDLE.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
@@ -148,11 +171,11 @@ public class JimsmineshaftModTabs {
 			}
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(JimsmineshaftModItems.JIMSMINEDIMENSION.get());
+			tabData.accept(JimsmineshaftModItems.LEVEL_1_DIMENSION.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(JimsmineshaftModItems.THECART_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.PRESSURE_DRILL_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.PRESSURE_DRILL_FOLDED_SPAWN_EGG.get());
-			tabData.accept(JimsmineshaftModItems.BIG_IRON_GATE_FRAME_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.COPPER_DRILLED_EAST_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.HOLE_ENTITY_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.ELEVATOR_SPAWN_EGG.get());
@@ -162,23 +185,34 @@ public class JimsmineshaftModTabs {
 			tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_3_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_4_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_7_SPAWN_EGG.get());
-			tabData.accept(JimsmineshaftModItems.BIG_IRON_GATE_LEFT_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_8_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.CART_4_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.CART_3_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.CART_2_SPAWN_EGG.get());
-			tabData.accept(JimsmineshaftModItems.RIGHTGATE_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_1_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.ELEVATOR_SEAT_2_SPAWN_EGG.get());
-			tabData.accept(JimsmineshaftModItems.LEFTGATE_SPAWN_EGG.get());
-			tabData.accept(JimsmineshaftModItems.BIG_IRON_GATE_RIGHT_SPAWN_EGG.get());
-			tabData.accept(JimsmineshaftModItems.BIG_GATE_SPAWN_EGG.get());
 			tabData.accept(JimsmineshaftModItems.COPPER_DRILLED_NORTH_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.LEECH_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.PLAYER_STALKIER_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.VISION_SPAWN_EGG.get());
+			tabData.accept(JimsmineshaftModItems.AMALGAMATION_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(JimsmineshaftModItems.MINING_GOON_SET_HELMET.get());
 			tabData.accept(JimsmineshaftModItems.MINING_GOON_SET_CHESTPLATE.get());
 			tabData.accept(JimsmineshaftModItems.MINING_GOON_SET_LEGGINGS.get());
 			tabData.accept(JimsmineshaftModItems.MINING_GOON_SET_BOOTS.get());
+			tabData.accept(JimsmineshaftModItems.MINING_ELITE_SET_HELMET.get());
+			tabData.accept(JimsmineshaftModItems.MINING_ELITE_SET_CHESTPLATE.get());
+			tabData.accept(JimsmineshaftModItems.MINING_ELITE_SET_LEGGINGS.get());
+			tabData.accept(JimsmineshaftModItems.MINING_ELITE_SET_BOOTS.get());
+			tabData.accept(JimsmineshaftModItems.MINING_VETERAN_SET_HELMET.get());
+			tabData.accept(JimsmineshaftModItems.MINING_VETERAN_SET_CHESTPLATE.get());
+			tabData.accept(JimsmineshaftModItems.MINING_VETERAN_SET_LEGGINGS.get());
+			tabData.accept(JimsmineshaftModItems.MINING_VETERAN_SET_BOOTS.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+			tabData.accept(JimsmineshaftModItems.LARGE_GATE.get());
+			tabData.accept(JimsmineshaftModItems.SMALL_SIDE_OPEN_GATE.get());
+			tabData.accept(JimsmineshaftModItems.SMALL_SLIDE_UP_GATE.get());
 		}
 	}
 }

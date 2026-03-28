@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "jimsmineshaft:block/blankltexture",
+    "up": "jimsmineshaft:block/blankltexture",
+    "north": "jimsmineshaft:block/blankltexture",
+    "east": "jimsmineshaft:block/blankltexture",
+    "south": "jimsmineshaft:block/blankltexture",
+    "west": "jimsmineshaft:block/blankltexture",
+    "particle": "jimsmineshaft:block/blankltexture"
+  },
+  "render_type": "translucent"
+}

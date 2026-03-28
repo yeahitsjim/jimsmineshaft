@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jimsmineshaft:block/mystery_ore"
+    },
+    "facing=east": {
+      "model": "jimsmineshaft:block/mystery_ore",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jimsmineshaft:block/mystery_ore",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jimsmineshaft:block/mystery_ore",
+      "y": 270
+    }
+  }
+}

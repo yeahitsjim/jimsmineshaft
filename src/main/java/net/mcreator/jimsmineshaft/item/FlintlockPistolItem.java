@@ -1,25 +1,5 @@
 package net.mcreator.jimsmineshaft.item;
 
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
-
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ItemUseAnimation;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.network.chat.Component;
-
-import net.mcreator.jimsmineshaft.procedures.FlintlockPistolPlayerFinishesUsingItemProcedure;
-import net.mcreator.jimsmineshaft.procedures.FlintlockPistolEntitySwingsItemProcedure;
-
-import java.util.List;
-
 public class FlintlockPistolItem extends Item {
 	public FlintlockPistolItem(Item.Properties properties) {
 		super(properties.rarity(Rarity.UNCOMMON).stacksTo(1));

@@ -1,0 +1,9 @@
+{
+  "parent": "jimsmineshaft:custom/railforcartbroke2",
+  "textures": {
+    "all": "jimsmineshaft:block/texturerail2",
+    "particle": "jimsmineshaft:block/texturerail2",
+    "0": "jimsmineshaft:block/texturerail2"
+  },
+  "render_type": "solid"
+}

@@ -1,18 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.commands.arguments.EntityAnchorArgument;
-
-import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
-import net.mcreator.jimsmineshaft.init.JimsmineshaftModBlocks;
-import net.mcreator.jimsmineshaft.JimsmineshaftMod;
+import net.neoforged.bus.api.Event;
 
 public class PressureDrillRightClickedOnEntityProcedure {
 	public static void execute(LevelAccessor world, Entity entity, Entity sourceentity) {

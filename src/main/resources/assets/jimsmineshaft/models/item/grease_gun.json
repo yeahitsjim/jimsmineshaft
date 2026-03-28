@@ -1,0 +1,7 @@
+{
+  "parent": "jimsmineshaft:custom/grease_gun",
+  "textures": {
+    "0": "jimsmineshaft:block/greese_gun",
+    "particle": "jimsmineshaft:item/greese_gun"
+  }
+}

@@ -1,9 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.core.Direction;
+import net.neoforged.bus.api.Event;
 
 public class RustedTumblerOnInitialEntitySpawnProcedure {
 	public static void execute(double x, double y, double z, Entity entity) {

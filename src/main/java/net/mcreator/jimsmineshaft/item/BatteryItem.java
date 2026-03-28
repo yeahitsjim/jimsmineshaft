@@ -1,24 +1,8 @@
 package net.mcreator.jimsmineshaft.item;
 
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
-
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.network.chat.Component;
-
-import net.mcreator.jimsmineshaft.procedures.BatteryRightclickedProcedure;
-
-import java.util.List;
-
 public class BatteryItem extends Item {
 	public BatteryItem(Item.Properties properties) {
-		super(properties);
+		super(properties.stacksTo(1));
 	}
 
 	@Override
