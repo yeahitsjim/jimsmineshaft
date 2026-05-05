@@ -1,12 +1,14 @@
 {
   "replace": false,
   "values": [
-    "jimsmineshaft:company_store_clerk",
     "jimsmineshaft:company_store_clerk_weapons_light",
-    "jimsmineshaft:company_store_clerk_weapons_heavy",
     "jimsmineshaft:company_store_clerk_ammo",
-    "jimsmineshaft:company_store_clerk_basic",
+    "jimsmineshaft:company_store_clerk_weapons_heavy",
+    "jimsmineshaft:company_store_clerk",
     "jimsmineshaft:company_store_clerk_tools",
-    "jimsmineshaft:company_store_clerk_driller"
+    "jimsmineshaft:company_store_clerk_basic",
+    "jimsmineshaft:company_store_clerk_driller",
+    "jimsmineshaft:company_store_clerk_reviver",
+    "jimsmineshaft:company_store_clerk_basic_goods_2"
   ]
 }

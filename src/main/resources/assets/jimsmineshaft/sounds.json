@@ -560,15 +560,6 @@
       }
     ]
   },
-  "flintlockreload": {
-    "subtitle": "subtitles.flintlockreload",
-    "sounds": [
-      {
-        "name": "jimsmineshaft:flintlockreload",
-        "stream": false
-      }
-    ]
-  },
   "greasegunreload": {
     "subtitle": "subtitles.greasegunreload",
     "sounds": [
@@ -583,6 +574,174 @@
     "sounds": [
       {
         "name": "jimsmineshaft:unzipsfx",
+        "stream": false
+      }
+    ]
+  },
+  "flintlockreload": {
+    "subtitle": "subtitles.flintlockreload",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:flintlockreload",
+        "stream": false
+      }
+    ]
+  },
+  "bigdoor3x3": {
+    "subtitle": "subtitles.bigdoor3x3",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:3x3doormono",
+        "stream": false
+      }
+    ]
+  },
+  "thudd": {
+    "subtitle": "subtitles.thudd",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:thud",
+        "stream": false
+      }
+    ]
+  },
+  "amalgamation.hurt": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:amalgamation_hurt_1",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:amalgamation_hurt_2",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:amalgamation_hurt_3",
+        "stream": false
+      }
+    ]
+  },
+  "amalgamation.slice": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:amalgamation_slice",
+        "stream": false
+      }
+    ]
+  },
+  "squishwalk": {
+    "subtitle": "subtitles.squishwalk",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:squishblood",
+        "stream": false
+      }
+    ]
+  },
+  "amalgamation.death": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:amalgamation_death_1",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:amalgamation_death_2",
+        "stream": false
+      }
+    ]
+  },
+  "splat": {
+    "subtitle": "subtitles.splat",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:splat",
+        "stream": false
+      }
+    ]
+  },
+  "amalgamation.melee": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:amalgamation_melee_1",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:amalgamation_melee_2",
+        "stream": false
+      }
+    ]
+  },
+  "mines_additions_1": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:mines_additions_1",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:mines_additions_2",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:mines_additions_3",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:mines_additions_4",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:mines_additions_5",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:mines_additions_6",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:mines_additions_7",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:mines_additions_8",
+        "stream": false
+      },
+      {
+        "name": "jimsmineshaft:mines_additions_9",
+        "stream": false
+      }
+    ]
+  },
+  "slurp": {
+    "subtitle": "subtitles.slurp",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:slurp",
+        "stream": false
+      }
+    ]
+  },
+  "paradise_music": {
+    "sounds": [
+      {
+        "name": "jimsmineshaft:paradise_mineshaft_music",
+        "stream": true
+      }
+    ]
+  },
+  "cartsubmitted": {
+    "subtitle": "subtitles.cartsubmitted",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:cartsubmitted",
+        "stream": false
+      }
+    ]
+  },
+  "flintlockmono": {
+    "subtitle": "subtitles.flintlockmono",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:flintlocksfxmono",
         "stream": false
       }
     ]

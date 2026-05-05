@@ -20,9 +20,9 @@ public class JimsmineshaftModScreens {
 	public static void clientLoad(RegisterMenuScreensEvent event) {
 		event.register(JimsmineshaftModMenus.CART_GUI.get(), CartGUIScreen::new);
 		event.register(JimsmineshaftModMenus.SHAFTBUILDER_GUI.get(), ShaftbuilderGUIScreen::new);
-		event.register(JimsmineshaftModMenus.STORE_GUI.get(), StoreGUIScreen::new);
-		event.register(JimsmineshaftModMenus.SHAFTBUILDER_GUI_LVL_2.get(), ShaftbuilderGUILvl2Screen::new);
 		event.register(JimsmineshaftModMenus.SHAFTBUILDER_GUI_LVL_3.get(), ShaftbuilderGUILvl3Screen::new);
+		event.register(JimsmineshaftModMenus.SHAFTBUILDER_GUI_LVL_2.get(), ShaftbuilderGUILvl2Screen::new);
+		event.register(JimsmineshaftModMenus.STORE_GUI.get(), StoreGUIScreen::new);
 	}
 
 	public interface ScreenAccessor {

@@ -66,7 +66,7 @@ public class JimsmineshaftModEntities {
 	public static final DeferredHolder<EntityType<?>, EntityType<ThecartEntity>> THECART = register("thecart",
 			EntityType.Builder.<ThecartEntity>of(ThecartEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1.2f));
 	public static final DeferredHolder<EntityType<?>, EntityType<PressureDrillEntity>> PRESSURE_DRILL = register("pressure_drill",
 			EntityType.Builder.<PressureDrillEntity>of(PressureDrillEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
@@ -183,12 +183,6 @@ public class JimsmineshaftModEntities {
 			EntityType.Builder.<SmallSlideUpGateEntityEntity>of(SmallSlideUpGateEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
 					.sized(0.6f, 1.8f));
-	public static final DeferredHolder<EntityType<?>, EntityType<CartelevatorEntity>> CARTELEVATOR = register("cartelevator",
-			EntityType.Builder.<CartelevatorEntity>of(CartelevatorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
-
-					.sized(0.6f, 5f));
-	public static final DeferredHolder<EntityType<?>, EntityType<CartElevatorBoundingBoxEntity>> CART_ELEVATOR_BOUNDING_BOX = register("cart_elevator_bounding_box", EntityType.Builder
-			.<CartElevatorBoundingBoxEntity>of(CartElevatorBoundingBoxEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().ridingOffset(-0.6f).sized(4f, 0.2f));
 	public static final DeferredHolder<EntityType<?>, EntityType<ElevatorFAILSAFEboxEntity>> ELEVATOR_FAILSAF_EBOX = register("elevator_failsaf_ebox",
 			EntityType.Builder.<ElevatorFAILSAFEboxEntity>of(ElevatorFAILSAFEboxEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().ridingOffset(-0.6f).sized(5f, 0.2f));
 	public static final DeferredHolder<EntityType<?>, EntityType<SpawnStructureShaftEntityEntity>> SPAWN_STRUCTURE_SHAFT_ENTITY = register("spawn_structure_shaft_entity", EntityType.Builder
@@ -197,10 +191,64 @@ public class JimsmineshaftModEntities {
 			EntityType.Builder.<CartelevatorEastEntity>of(CartelevatorEastEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
 					.sized(0.6f, 5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<CartElevatorBoundingBoxEntity>> CART_ELEVATOR_BOUNDING_BOX = register("cart_elevator_bounding_box", EntityType.Builder
+			.<CartElevatorBoundingBoxEntity>of(CartElevatorBoundingBoxEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().ridingOffset(-0.6f).sized(4f, 0.2f));
+	public static final DeferredHolder<EntityType<?>, EntityType<CartelevatorEntity>> CARTELEVATOR = register("cartelevator",
+			EntityType.Builder.<CartelevatorEntity>of(CartelevatorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 5f));
 	public static final DeferredHolder<EntityType<?>, EntityType<CartelevatorWestEntity>> CARTELEVATOR_WEST = register("cartelevator_west",
 			EntityType.Builder.<CartelevatorWestEntity>of(CartelevatorWestEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
 					.sized(0.6f, 5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<LeechEntity>> LEECH = register("leech",
+			EntityType.Builder.<LeechEntity>of(LeechEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.1f, 0.1f));
+	public static final DeferredHolder<EntityType<?>, EntityType<AmalgamationEntity>> AMALGAMATION = register("amalgamation",
+			EntityType.Builder.<AmalgamationEntity>of(AmalgamationEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.7f, 1.6f));
+	public static final DeferredHolder<EntityType<?>, EntityType<SkinStealerChickenNuggetACEntity>> SKIN_STEALER_CHICKEN_NUGGET_AC = register("skin_stealer_chicken_nugget_ac",
+			EntityType.Builder.<SkinStealerChickenNuggetACEntity>of(SkinStealerChickenNuggetACEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<SkinStealerGooberEntity>> SKIN_STEALER_GOOBER = register("skin_stealer_goober",
+			EntityType.Builder.<SkinStealerGooberEntity>of(SkinStealerGooberEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<SkinStealerGigoEntity>> SKIN_STEALER_GIGO = register("skin_stealer_gigo",
+			EntityType.Builder.<SkinStealerGigoEntity>of(SkinStealerGigoEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<SkinStealerGoshiggyEntity>> SKIN_STEALER_GOSHIGGY = register("skin_stealer_goshiggy",
+			EntityType.Builder.<SkinStealerGoshiggyEntity>of(SkinStealerGoshiggyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<SkinStealerKunzyEntity>> SKIN_STEALER_KUNZY = register("skin_stealer_kunzy",
+			EntityType.Builder.<SkinStealerKunzyEntity>of(SkinStealerKunzyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<SkinStealerWylanEntity>> SKIN_STEALER_WYLAN = register("skin_stealer_wylan",
+			EntityType.Builder.<SkinStealerWylanEntity>of(SkinStealerWylanEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<SkinStealerYourNotLuisEntity>> SKIN_STEALER_YOUR_NOT_LUIS = register("skin_stealer_your_not_luis",
+			EntityType.Builder.<SkinStealerYourNotLuisEntity>of(SkinStealerYourNotLuisEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<SkinStealerCowMan5000Entity>> SKIN_STEALER_COW_MAN_5000 = register("skin_stealer_cow_man_5000",
+			EntityType.Builder.<SkinStealerCowMan5000Entity>of(SkinStealerCowMan5000Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<PlayerStalkierChickenNuggetACEntity>> PLAYER_STALKIER_CHICKEN_NUGGET_AC = register("player_stalkier_chicken_nugget_ac",
+			EntityType.Builder.<PlayerStalkierChickenNuggetACEntity>of(PlayerStalkierChickenNuggetACEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<SkinStealerEntity2Entity>> SKIN_STEALER_ENTITY_2 = register("skin_stealer_entity_2",
+			EntityType.Builder.<SkinStealerEntity2Entity>of(SkinStealerEntity2Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.ridingOffset(-0.6f).sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -249,12 +297,24 @@ public class JimsmineshaftModEntities {
 		SmallSideOpenGateEntityEntity.init(event);
 		VisionEntity.init(event);
 		SmallSlideUpGateEntityEntity.init(event);
-		CartelevatorEntity.init(event);
-		CartElevatorBoundingBoxEntity.init(event);
 		ElevatorFAILSAFEboxEntity.init(event);
 		SpawnStructureShaftEntityEntity.init(event);
 		CartelevatorEastEntity.init(event);
+		CartElevatorBoundingBoxEntity.init(event);
+		CartelevatorEntity.init(event);
 		CartelevatorWestEntity.init(event);
+		LeechEntity.init(event);
+		AmalgamationEntity.init(event);
+		SkinStealerChickenNuggetACEntity.init(event);
+		SkinStealerGooberEntity.init(event);
+		SkinStealerGigoEntity.init(event);
+		SkinStealerGoshiggyEntity.init(event);
+		SkinStealerKunzyEntity.init(event);
+		SkinStealerWylanEntity.init(event);
+		SkinStealerYourNotLuisEntity.init(event);
+		SkinStealerCowMan5000Entity.init(event);
+		PlayerStalkierChickenNuggetACEntity.init(event);
+		SkinStealerEntity2Entity.init(event);
 	}
 
 	@SubscribeEvent
@@ -290,11 +350,23 @@ public class JimsmineshaftModEntities {
 		event.put(SMALL_SIDE_OPEN_GATE_ENTITY.get(), SmallSideOpenGateEntityEntity.createAttributes().build());
 		event.put(VISION.get(), VisionEntity.createAttributes().build());
 		event.put(SMALL_SLIDE_UP_GATE_ENTITY.get(), SmallSlideUpGateEntityEntity.createAttributes().build());
-		event.put(CARTELEVATOR.get(), CartelevatorEntity.createAttributes().build());
-		event.put(CART_ELEVATOR_BOUNDING_BOX.get(), CartElevatorBoundingBoxEntity.createAttributes().build());
 		event.put(ELEVATOR_FAILSAF_EBOX.get(), ElevatorFAILSAFEboxEntity.createAttributes().build());
 		event.put(SPAWN_STRUCTURE_SHAFT_ENTITY.get(), SpawnStructureShaftEntityEntity.createAttributes().build());
 		event.put(CARTELEVATOR_EAST.get(), CartelevatorEastEntity.createAttributes().build());
+		event.put(CART_ELEVATOR_BOUNDING_BOX.get(), CartElevatorBoundingBoxEntity.createAttributes().build());
+		event.put(CARTELEVATOR.get(), CartelevatorEntity.createAttributes().build());
 		event.put(CARTELEVATOR_WEST.get(), CartelevatorWestEntity.createAttributes().build());
+		event.put(LEECH.get(), LeechEntity.createAttributes().build());
+		event.put(AMALGAMATION.get(), AmalgamationEntity.createAttributes().build());
+		event.put(SKIN_STEALER_CHICKEN_NUGGET_AC.get(), SkinStealerChickenNuggetACEntity.createAttributes().build());
+		event.put(SKIN_STEALER_GOOBER.get(), SkinStealerGooberEntity.createAttributes().build());
+		event.put(SKIN_STEALER_GIGO.get(), SkinStealerGigoEntity.createAttributes().build());
+		event.put(SKIN_STEALER_GOSHIGGY.get(), SkinStealerGoshiggyEntity.createAttributes().build());
+		event.put(SKIN_STEALER_KUNZY.get(), SkinStealerKunzyEntity.createAttributes().build());
+		event.put(SKIN_STEALER_WYLAN.get(), SkinStealerWylanEntity.createAttributes().build());
+		event.put(SKIN_STEALER_YOUR_NOT_LUIS.get(), SkinStealerYourNotLuisEntity.createAttributes().build());
+		event.put(SKIN_STEALER_COW_MAN_5000.get(), SkinStealerCowMan5000Entity.createAttributes().build());
+		event.put(PLAYER_STALKIER_CHICKEN_NUGGET_AC.get(), PlayerStalkierChickenNuggetACEntity.createAttributes().build());
+		event.put(SKIN_STEALER_ENTITY_2.get(), SkinStealerEntity2Entity.createAttributes().build());
 	}
 }

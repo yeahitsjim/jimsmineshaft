@@ -26,7 +26,7 @@ import net.mcreator.jimsmineshaft.network.ActivateElevatoreMessage;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class JimsmineshaftModKeyMappings {
-	public static final KeyMapping OPEN_SPAWNER_GUI = new KeyMapping("key.jimsmineshaft.open_spawner_gui", GLFW.GLFW_KEY_F, "key.categories.misc") {
+	public static final KeyMapping OPEN_SPAWNER_GUI = new KeyMapping("key.jimsmineshaft.open_spawner_gui", GLFW.GLFW_KEY_UNKNOWN, "key.categories.misc") {
 		private boolean isDownOld = false;
 
 		@Override
@@ -91,20 +91,7 @@ public class JimsmineshaftModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping OPEN_LVL_2_SPAWNER_GUI = new KeyMapping("key.jimsmineshaft.open_lvl_2_spawner_gui", GLFW.GLFW_KEY_G, "key.categories.misc") {
-		private boolean isDownOld = false;
-
-		@Override
-		public void setDown(boolean isDown) {
-			super.setDown(isDown);
-			if (isDownOld != isDown && isDown) {
-				PacketDistributor.sendToServer(new OpenLvl2SpawnerGUIMessage(0, 0));
-				OpenLvl2SpawnerGUIMessage.pressAction(Minecraft.getInstance().player, 0, 0);
-			}
-			isDownOld = isDown;
-		}
-	};
-	public static final KeyMapping OPEN_LVL_3_SPAWNER_GUI = new KeyMapping("key.jimsmineshaft.open_lvl_3_spawner_gui", GLFW.GLFW_KEY_R, "key.categories.misc") {
+	public static final KeyMapping OPEN_LVL_3_SPAWNER_GUI = new KeyMapping("key.jimsmineshaft.open_lvl_3_spawner_gui", GLFW.GLFW_KEY_UNKNOWN, "key.categories.misc") {
 		private boolean isDownOld = false;
 
 		@Override
@@ -113,6 +100,19 @@ public class JimsmineshaftModKeyMappings {
 			if (isDownOld != isDown && isDown) {
 				PacketDistributor.sendToServer(new OpenLvl3SpawnerGUIMessage(0, 0));
 				OpenLvl3SpawnerGUIMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
+	public static final KeyMapping OPEN_LVL_2_SPAWNER_GUI = new KeyMapping("key.jimsmineshaft.open_lvl_2_spawner_gui", GLFW.GLFW_KEY_UNKNOWN, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				PacketDistributor.sendToServer(new OpenLvl2SpawnerGUIMessage(0, 0));
+				OpenLvl2SpawnerGUIMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 			}
 			isDownOld = isDown;
 		}
@@ -138,8 +138,8 @@ public class JimsmineshaftModKeyMappings {
 		event.register(PLACE_DRILL);
 		event.register(ACTIVATE_ELEVATORE);
 		event.register(INTERACT);
-		event.register(OPEN_LVL_2_SPAWNER_GUI);
 		event.register(OPEN_LVL_3_SPAWNER_GUI);
+		event.register(OPEN_LVL_2_SPAWNER_GUI);
 		event.register(SEND_CART);
 	}
 
@@ -153,8 +153,8 @@ public class JimsmineshaftModKeyMappings {
 				PLACE_DRILL.consumeClick();
 				ACTIVATE_ELEVATORE.consumeClick();
 				INTERACT.consumeClick();
-				OPEN_LVL_2_SPAWNER_GUI.consumeClick();
 				OPEN_LVL_3_SPAWNER_GUI.consumeClick();
+				OPEN_LVL_2_SPAWNER_GUI.consumeClick();
 				SEND_CART.consumeClick();
 			}
 		}
