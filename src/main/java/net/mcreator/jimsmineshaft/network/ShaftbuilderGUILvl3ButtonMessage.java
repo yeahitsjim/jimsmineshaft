@@ -1,47 +1,17 @@
 package net.mcreator.jimsmineshaft.network;
 
-import net.neoforged.neoforge.network.handling.IPayloadContext;
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
-
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
-import net.minecraft.network.protocol.PacketFlow;
-import net.minecraft.network.codec.StreamCodec;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.RegistryFriendlyByteBuf;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.jimsmineshaft.procedures.SetShaftG3BigProcedure;
-import net.mcreator.jimsmineshaft.procedures.SetShaftG2Procedure;
-import net.mcreator.jimsmineshaft.procedures.SetShaftG1Procedure;
-import net.mcreator.jimsmineshaft.procedures.SetShaftF6Procedure;
-import net.mcreator.jimsmineshaft.procedures.SetShaftF5Procedure;
-import net.mcreator.jimsmineshaft.procedures.SetShaftF4Procedure;
-import net.mcreator.jimsmineshaft.procedures.SetShaftF3Procedure;
-import net.mcreator.jimsmineshaft.procedures.SetShaftF2Procedure;
-import net.mcreator.jimsmineshaft.procedures.SetShaftF1Procedure;
-import net.mcreator.jimsmineshaft.procedures.SetRoomG1Procedure;
-import net.mcreator.jimsmineshaft.procedures.SetRoomF4Procedure;
-import net.mcreator.jimsmineshaft.procedures.SetRoomF3Procedure;
-import net.mcreator.jimsmineshaft.procedures.SetRoomF2Procedure;
-import net.mcreator.jimsmineshaft.procedures.SetRoomF1Procedure;
-import net.mcreator.jimsmineshaft.procedures.LeftClickSpawnerProcedure;
-import net.mcreator.jimsmineshaft.JimsmineshaftMod;
-
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record ShaftbuilderGUILvl3ButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
 	public static final Type<ShaftbuilderGUILvl3ButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(JimsmineshaftMod.MODID, "shaftbuilder_gui_lvl_3_buttons"));
+
 	public static final StreamCodec<RegistryFriendlyByteBuf, ShaftbuilderGUILvl3ButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, ShaftbuilderGUILvl3ButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
 	}, (RegistryFriendlyByteBuf buffer) -> new ShaftbuilderGUILvl3ButtonMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
+
 	@Override
 	public Type<ShaftbuilderGUILvl3ButtonMessage> type() {
 		return TYPE;
@@ -58,9 +28,11 @@ public record ShaftbuilderGUILvl3ButtonMessage(int buttonID, int x, int y, int z
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level();
+
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
+
 		if (buttonID == 0) {
 
 			SetShaftF1Procedure.execute(world);
@@ -127,4 +99,5 @@ public record ShaftbuilderGUILvl3ButtonMessage(int buttonID, int x, int y, int z
 	public static void registerMessage(FMLCommonSetupEvent event) {
 		JimsmineshaftMod.addNetworkMessage(ShaftbuilderGUILvl3ButtonMessage.TYPE, ShaftbuilderGUILvl3ButtonMessage.STREAM_CODEC, ShaftbuilderGUILvl3ButtonMessage::handleData);
 	}
+
 }

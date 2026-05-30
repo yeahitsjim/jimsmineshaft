@@ -1,13 +1,5 @@
 package net.mcreator.jimsmineshaft.client.renderer;
 
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
-import net.minecraft.client.renderer.entity.MobRenderer;
-import net.minecraft.client.renderer.entity.EntityRendererProvider;
-
-import net.mcreator.jimsmineshaft.entity.CartelevatorEastEntity;
-import net.mcreator.jimsmineshaft.client.model.ModelCartElevator;
-
 public class CartelevatorEastRenderer extends MobRenderer<CartelevatorEastEntity, LivingEntityRenderState, ModelCartElevator> {
 	private CartelevatorEastEntity entity = null;
 

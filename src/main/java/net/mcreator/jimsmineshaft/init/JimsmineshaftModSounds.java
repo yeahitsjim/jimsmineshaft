@@ -82,8 +82,10 @@ public class JimsmineshaftModSounds {
 			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "entity.tommy_gun.shoot")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> VISION_GLITCH = REGISTRY.register("vision_glitch", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "vision_glitch")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> GREASEGUNSHOOT = REGISTRY.register("greasegunshoot", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "greasegunshoot")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> FLINTLOCKMONO = REGISTRY.register("flintlockmono", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "flintlockmono")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> GREASEGUNRELOAD = REGISTRY.register("greasegunreload", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "greasegunreload")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> UNZIP = REGISTRY.register("unzip", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "unzip")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> CARTSUBMITTED = REGISTRY.register("cartsubmitted", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "cartsubmitted")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> FLINTLOCKRELOAD = REGISTRY.register("flintlockreload", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "flintlockreload")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> BIGDOOR3X3 = REGISTRY.register("bigdoor3x3", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "bigdoor3x3")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> THUDD = REGISTRY.register("thudd", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "thudd")));
@@ -96,6 +98,4 @@ public class JimsmineshaftModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> MINES_ADDITIONS_1 = REGISTRY.register("mines_additions_1", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "mines_additions_1")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> SLURP = REGISTRY.register("slurp", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "slurp")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> PARADISE_MUSIC = REGISTRY.register("paradise_music", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "paradise_music")));
-	public static final DeferredHolder<SoundEvent, SoundEvent> CARTSUBMITTED = REGISTRY.register("cartsubmitted", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "cartsubmitted")));
-	public static final DeferredHolder<SoundEvent, SoundEvent> FLINTLOCKMONO = REGISTRY.register("flintlockmono", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("jimsmineshaft", "flintlockmono")));
 }

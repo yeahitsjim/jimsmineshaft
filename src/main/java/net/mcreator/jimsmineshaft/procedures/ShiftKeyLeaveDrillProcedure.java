@@ -1,16 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.EntitySpawnReason;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
-import net.mcreator.jimsmineshaft.init.JimsmineshaftModEntities;
-import net.mcreator.jimsmineshaft.init.JimsmineshaftModBlocks;
+import net.neoforged.bus.api.Event;
 
 public class ShiftKeyLeaveDrillProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {

@@ -1,22 +1,6 @@
 package net.mcreator.jimsmineshaft.block;
 
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
-import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.EntityBlock;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.MenuProvider;
-import net.minecraft.world.Containers;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.jimsmineshaft.procedures.NewStoneBlockAddedProcedure;
-import net.mcreator.jimsmineshaft.block.entity.NewSuspiciousGravelBlockEntity;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
 public class NewSuspiciousGravelBlock extends Block implements EntityBlock {
 	public static final BooleanProperty PLACED = BooleanProperty.create("placed");

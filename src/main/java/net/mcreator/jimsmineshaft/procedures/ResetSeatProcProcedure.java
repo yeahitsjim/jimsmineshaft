@@ -1,11 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
-
-import java.util.ArrayList;
+import net.neoforged.bus.api.Event;
 
 public class ResetSeatProcProcedure {
 	public static void execute(LevelAccessor world) {

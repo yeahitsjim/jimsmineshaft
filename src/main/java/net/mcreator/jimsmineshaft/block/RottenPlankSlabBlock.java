@@ -1,8 +1,6 @@
 package net.mcreator.jimsmineshaft.block;
 
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
 public class RottenPlankSlabBlock extends SlabBlock {
 	public RottenPlankSlabBlock(BlockBehaviour.Properties properties) {

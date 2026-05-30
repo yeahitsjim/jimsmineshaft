@@ -1,25 +1,12 @@
 package net.mcreator.jimsmineshaft.network;
 
-import net.neoforged.neoforge.network.handling.IPayloadContext;
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
-
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
-import net.minecraft.network.protocol.PacketFlow;
-import net.minecraft.network.codec.StreamCodec;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.RegistryFriendlyByteBuf;
-
-import net.mcreator.jimsmineshaft.procedures.OpenLvl3SpawnerGUIOnKeyPressedProcedure;
 import net.mcreator.jimsmineshaft.JimsmineshaftMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record OpenLvl3SpawnerGUIMessage(int eventType, int pressedms) implements CustomPacketPayload {
+
 	public static final Type<OpenLvl3SpawnerGUIMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(JimsmineshaftMod.MODID, "key_open_lvl_3_spawner_gui"));
+
 	public static final StreamCodec<RegistryFriendlyByteBuf, OpenLvl3SpawnerGUIMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, OpenLvl3SpawnerGUIMessage message) -> {
 		buffer.writeInt(message.eventType);
 		buffer.writeInt(message.pressedms);
@@ -46,17 +33,21 @@ public record OpenLvl3SpawnerGUIMessage(int eventType, int pressedms) implements
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
+
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(entity.blockPosition()))
 			return;
+
 		if (type == 0) {
 
 			OpenLvl3SpawnerGUIOnKeyPressedProcedure.execute(world, x, y, z, entity);
 		}
+
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
 		JimsmineshaftMod.addNetworkMessage(OpenLvl3SpawnerGUIMessage.TYPE, OpenLvl3SpawnerGUIMessage.STREAM_CODEC, OpenLvl3SpawnerGUIMessage::handleData);
 	}
+
 }

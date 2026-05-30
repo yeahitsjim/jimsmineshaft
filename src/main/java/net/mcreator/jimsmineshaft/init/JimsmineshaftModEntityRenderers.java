@@ -19,11 +19,13 @@ import net.mcreator.jimsmineshaft.client.renderer.SpawnStructureShaftEntityRende
 import net.mcreator.jimsmineshaft.client.renderer.SmallSlideUpGateEntityRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.SmallSideOpenGateEntityRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.SkinStealerEntityRenderer;
+import net.mcreator.jimsmineshaft.client.renderer.RustedTumblerRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.RightgateRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.PressureDrillRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.PressureDrillFoldedRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.PlayerStalkierRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.LeftgateRenderer;
+import net.mcreator.jimsmineshaft.client.renderer.LeechRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.HoleEntityRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.FlashlightentityRenderer;
 import net.mcreator.jimsmineshaft.client.renderer.ElevatorSeat8Renderer;
@@ -47,6 +49,7 @@ import net.mcreator.jimsmineshaft.client.renderer.Cart4Renderer;
 import net.mcreator.jimsmineshaft.client.renderer.Cart3Renderer;
 import net.mcreator.jimsmineshaft.client.renderer.Cart2Renderer;
 import net.mcreator.jimsmineshaft.client.renderer.BigGateRenderer;
+import net.mcreator.jimsmineshaft.client.renderer.AmalgamationRenderer;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class JimsmineshaftModEntityRenderers {
@@ -85,22 +88,13 @@ public class JimsmineshaftModEntityRenderers {
 		event.registerEntityRenderer(JimsmineshaftModEntities.VISION.get(), VisionRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.SMALL_SLIDE_UP_GATE_ENTITY.get(), SmallSlideUpGateEntityRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.ELEVATOR_FAILSAF_EBOX.get(), ElevatorFAILSAFEboxRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.SPAWN_STRUCTURE_SHAFT_ENTITY.get(), SpawnStructureShaftEntityRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.CARTELEVATOR_EAST.get(), CartelevatorEastRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.CART_ELEVATOR_BOUNDING_BOX.get(), CartElevatorBoundingBoxRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.CARTELEVATOR.get(), CartelevatorRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.CARTELEVATOR_WEST.get(), CartelevatorWestRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.LEECH.get(), LeechRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.SPAWN_STRUCTURE_SHAFT_ENTITY.get(), SpawnStructureShaftEntityRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.CARTELEVATOR.get(), CartelevatorRenderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.RUSTED_TUMBLER.get(), RustedTumblerRenderer::new);
 		event.registerEntityRenderer(JimsmineshaftModEntities.AMALGAMATION.get(), AmalgamationRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.SKIN_STEALER_CHICKEN_NUGGET_AC.get(), SkinStealerChickenNuggetACRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.SKIN_STEALER_GOOBER.get(), SkinStealerGooberRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.SKIN_STEALER_GIGO.get(), SkinStealerGigoRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.SKIN_STEALER_GOSHIGGY.get(), SkinStealerGoshiggyRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.SKIN_STEALER_KUNZY.get(), SkinStealerKunzyRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.SKIN_STEALER_WYLAN.get(), SkinStealerWylanRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.SKIN_STEALER_YOUR_NOT_LUIS.get(), SkinStealerYourNotLuisRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.SKIN_STEALER_COW_MAN_5000.get(), SkinStealerCowMan5000Renderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.PLAYER_STALKIER_CHICKEN_NUGGET_AC.get(), PlayerStalkierChickenNuggetACRenderer::new);
-		event.registerEntityRenderer(JimsmineshaftModEntities.SKIN_STEALER_ENTITY_2.get(), SkinStealerEntity2Renderer::new);
+		event.registerEntityRenderer(JimsmineshaftModEntities.LEECH.get(), LeechRenderer::new);
 	}
 }

@@ -560,6 +560,15 @@
       }
     ]
   },
+  "flintlockmono": {
+    "subtitle": "subtitles.flintlockmono",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:flintlocksfxmono",
+        "stream": false
+      }
+    ]
+  },
   "greasegunreload": {
     "subtitle": "subtitles.greasegunreload",
     "sounds": [
@@ -574,6 +583,15 @@
     "sounds": [
       {
         "name": "jimsmineshaft:unzipsfx",
+        "stream": false
+      }
+    ]
+  },
+  "cartsubmitted": {
+    "subtitle": "subtitles.cartsubmitted",
+    "sounds": [
+      {
+        "name": "jimsmineshaft:cartsubmitted",
         "stream": false
       }
     ]
@@ -725,24 +743,6 @@
       {
         "name": "jimsmineshaft:paradise_mineshaft_music",
         "stream": true
-      }
-    ]
-  },
-  "cartsubmitted": {
-    "subtitle": "subtitles.cartsubmitted",
-    "sounds": [
-      {
-        "name": "jimsmineshaft:cartsubmitted",
-        "stream": false
-      }
-    ]
-  },
-  "flintlockmono": {
-    "subtitle": "subtitles.flintlockmono",
-    "sounds": [
-      {
-        "name": "jimsmineshaft:flintlocksfxmono",
-        "stream": false
       }
     ]
   }

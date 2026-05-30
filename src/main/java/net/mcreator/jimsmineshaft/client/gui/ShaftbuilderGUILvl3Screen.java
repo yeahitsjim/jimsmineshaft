@@ -1,21 +1,5 @@
 package net.mcreator.jimsmineshaft.client.gui;
 
-import net.neoforged.neoforge.network.PacketDistributor;
-
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.Button;
-import net.minecraft.client.gui.GuiGraphics;
-
-import net.mcreator.jimsmineshaft.world.inventory.ShaftbuilderGUILvl3Menu;
-import net.mcreator.jimsmineshaft.network.ShaftbuilderGUILvl3ButtonMessage;
-import net.mcreator.jimsmineshaft.init.JimsmineshaftModScreens;
-
-import com.mojang.blaze3d.systems.RenderSystem;
-
 public class ShaftbuilderGUILvl3Screen extends AbstractContainerScreen<ShaftbuilderGUILvl3Menu> implements JimsmineshaftModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;

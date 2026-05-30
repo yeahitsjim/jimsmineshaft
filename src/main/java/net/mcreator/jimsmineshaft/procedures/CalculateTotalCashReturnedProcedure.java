@@ -1,15 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.AABB;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.Component;
-
-import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
-import net.mcreator.jimsmineshaft.entity.ThecartEntity;
-
-import java.util.Comparator;
+import net.neoforged.bus.api.Event;
 
 public class CalculateTotalCashReturnedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -24,7 +15,5 @@ public class CalculateTotalCashReturnedProcedure {
 		}
 		if (!world.isClientSide() && world.getServer() != null)
 			world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u00A7c\u00A7lAMOUNT RETURNED: \u00A7a\u00A7l$" + new java.text.DecimalFormat("##.##").format(totalCashReturned))), false);
-		JimsmineshaftModVariables.MapVariables.get(world).cashReturnedFromLevel = totalCashReturned;
-		JimsmineshaftModVariables.MapVariables.get(world).syncData(world);
 	}
 }

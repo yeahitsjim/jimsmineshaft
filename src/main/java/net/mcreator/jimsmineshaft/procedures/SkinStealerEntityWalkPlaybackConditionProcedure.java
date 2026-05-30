@@ -1,8 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.jimsmineshaft.entity.SkinStealerEntityEntity;
+import net.neoforged.bus.api.Event;
 
 public class SkinStealerEntityWalkPlaybackConditionProcedure {
 	public static boolean execute(Entity entity) {

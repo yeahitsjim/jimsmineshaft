@@ -62,6 +62,7 @@ import net.mcreator.jimsmineshaft.block.RawCopper22Block;
 import net.mcreator.jimsmineshaft.block.RawCopper210Block;
 import net.mcreator.jimsmineshaft.block.PressureDrillHoldableBlock;
 import net.mcreator.jimsmineshaft.block.PressureDrillFoldedModelBlock;
+import net.mcreator.jimsmineshaft.block.PlayerLightBlock;
 import net.mcreator.jimsmineshaft.block.OldCabinetBlock;
 import net.mcreator.jimsmineshaft.block.NewSuspiciousGravelBlock;
 import net.mcreator.jimsmineshaft.block.NewStrippedDarkOakLogBlock;
@@ -245,25 +246,23 @@ public class JimsmineshaftModBlocks {
 	public static final DeferredBlock<Block> BOTTLE = register("bottle", BottleBlock::new);
 	public static final DeferredBlock<Block> CLERK_ARMOR_BLOCK = register("clerk_armor_block", ClerkArmorBlockBlock::new);
 	public static final DeferredBlock<Block> BASIC_CLOTHES_BAG = register("basic_clothes_bag", BasicClothesBagBlock::new);
-	public static final DeferredBlock<Block> LEVEL_4_DIMENSION_PORTAL = register("level_4_dimension_portal", Level4DimensionPortalBlock::new);
 	public static final DeferredBlock<Block> CORRUPTED_ROOF_SUPPORT = register("corrupted_roof_support", CorruptedRoofSupportBlock::new);
-	public static final DeferredBlock<Block> LEVEL_6_DIMENSION_PORTAL = register("level_6_dimension_portal", Level6DimensionPortalBlock::new);
 	public static final DeferredBlock<Block> DRILLING_BLOCK = register("drilling_block", DrillingBlockBlock::new);
 	public static final DeferredBlock<Block> CLERK_TOOLS_BLOCK = register("clerk_tools_block", ClerkToolsBlockBlock::new);
-	public static final DeferredBlock<Block> CLERK_WEAPONS_HEAVY_BLOCK = register("clerk_weapons_heavy_block", ClerkWeaponsHeavyBlockBlock::new);
 	public static final DeferredBlock<Block> CLOTHES_BAG = register("clothes_bag", ClothesBagBlock::new);
-	public static final DeferredBlock<Block> CLERK_BASIC_BLOCK = register("clerk_basic_block", ClerkBasicBlockBlock::new);
-	public static final DeferredBlock<Block> LEVEL_2_DIMENSION_PORTAL = register("level_2_dimension_portal", Level2DimensionPortalBlock::new);
-	public static final DeferredBlock<Block> SHOPDIMENSION_PORTAL = register("shopdimension_portal", ShopdimensionPortalBlock::new);
 	public static final DeferredBlock<Block> ELEVATOR_LIGHT_3 = register("elevator_light_3", ElevatorLight3Block::new);
 	public static final DeferredBlock<Block> LEVEL_3_DIMENSION_PORTAL = register("level_3_dimension_portal", Level3DimensionPortalBlock::new);
 	public static final DeferredBlock<Block> VETERAN_ARMOR_BAG = register("veteran_armor_bag", VeteranArmorBagBlock::new);
 	public static final DeferredBlock<Block> CLERK_AMMO_BLOCK = register("clerk_ammo_block", ClerkAmmoBlockBlock::new);
+	public static final DeferredBlock<Block> LEVEL_4_DIMENSION_PORTAL = register("level_4_dimension_portal", Level4DimensionPortalBlock::new);
+	public static final DeferredBlock<Block> LEVEL_6_DIMENSION_PORTAL = register("level_6_dimension_portal", Level6DimensionPortalBlock::new);
+	public static final DeferredBlock<Block> CLERK_WEAPONS_HEAVY_BLOCK = register("clerk_weapons_heavy_block", ClerkWeaponsHeavyBlockBlock::new);
+	public static final DeferredBlock<Block> CLERK_BASIC_BLOCK = register("clerk_basic_block", ClerkBasicBlockBlock::new);
+	public static final DeferredBlock<Block> LEVEL_2_DIMENSION_PORTAL = register("level_2_dimension_portal", Level2DimensionPortalBlock::new);
+	public static final DeferredBlock<Block> SHOPDIMENSION_PORTAL = register("shopdimension_portal", ShopdimensionPortalBlock::new);
 	public static final DeferredBlock<Block> CLERK_WEAPONS_BLOCK = register("clerk_weapons_block", ClerkWeaponsBlockBlock::new);
 	public static final DeferredBlock<Block> LEVEL_5_DIMENSION_PORTAL = register("level_5_dimension_portal", Level5DimensionPortalBlock::new);
 	public static final DeferredBlock<Block> PLAYER_LIGHT = register("player_light", PlayerLightBlock::new);
-	public static final DeferredBlock<Block> COPPER_ORE_ENTITY_BOTTOM_BLOCK = register("copper_ore_entity_bottom_block", CopperOreEntityBottomBlockBlock::new);
-	public static final DeferredBlock<Block> CLERK_BASIC_GOODS_2_BLOCK = register("clerk_basic_goods_2_block", ClerkBasicGoods2BlockBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

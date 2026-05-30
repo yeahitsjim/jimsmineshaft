@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.049999999999999996,
+    "scaling": "never",
+    "effects": "drowning",
+    "normalDeathMessage": "%1$s's blood was drained by a leech",
+    "itemDeathMessage": "%1$s's blood was drained with %2$s using %3$s",
+    "playerDeathMessage": "%1$s's blood was drained while trying to escape %2$s"
+  }
+}

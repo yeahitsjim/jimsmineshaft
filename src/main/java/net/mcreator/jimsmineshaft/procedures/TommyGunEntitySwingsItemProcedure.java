@@ -1,13 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.item.component.CustomData;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.Component;
-import net.minecraft.core.component.DataComponents;
-
-import net.mcreator.jimsmineshaft.init.JimsmineshaftModItems;
+import net.neoforged.bus.api.Event;
 
 public class TommyGunEntitySwingsItemProcedure {
 	public static void execute(Entity entity, ItemStack itemstack) {

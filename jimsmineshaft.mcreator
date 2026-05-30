@@ -1355,20 +1355,6 @@
       "path": "~/Cart and Rail"
     },
     {
-      "name": "RightClickSpawner2",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "right_click_spawner_2",
-      "metadata": {
-        "dependencies": [],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/RightClickSpawner2Procedure.java"
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
       "name": "CopperChunkTypeB",
       "type": "block",
       "compiles": true,
@@ -1681,6 +1667,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -1966,7 +1956,12 @@
       "locked_code": false,
       "registry_name": "near_elevator_display_overlay_ingame",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/NearElevatorDisplayOverlayIngameProcedure.java"
@@ -2652,10 +2647,6 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "blockstate",
-            "type": "blockstate"
-          },
-          {
             "name": "entity",
             "type": "entity"
           },
@@ -2976,10 +2967,6 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -3013,18 +3000,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
           },
           {
             "name": "world",
@@ -4513,6 +4488,7 @@
         "files": [
           "src/main/resources/assets/jimsmineshaft/models/block/new_suspicious_gravel.json",
           "src/main/resources/assets/jimsmineshaft/items/new_suspicious_gravel.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/NewSuspiciousGravelBlockEntity.java",
           "src/main/resources/data/jimsmineshaft/loot_table/blocks/new_suspicious_gravel.json",
           "src/main/resources/assets/jimsmineshaft/models/item/new_suspicious_gravel.json",
           "src/main/java/net/mcreator/jimsmineshaft/block/NewSuspiciousGravelBlock.java",
@@ -5895,7 +5871,8 @@
           "src/main/resources/assets/jimsmineshaft/blockstates/new_gravel.json",
           "src/main/resources/assets/jimsmineshaft/models/item/new_gravel.json",
           "src/main/resources/assets/jimsmineshaft/models/block/new_gravel.json",
-          "src/main/resources/assets/jimsmineshaft/items/new_gravel.json"
+          "src/main/resources/assets/jimsmineshaft/items/new_gravel.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/NewGravelBlockEntity.java"
         ]
       },
       "path": "~/Level 1 Blocks"
@@ -6589,10 +6566,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ],
         "files": [
@@ -6605,10 +6578,14 @@
       "name": "SkinStealerEntityOnEntityTickUpdate",
       "type": "procedure",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "skin_stealer_entity_on_entity_tick_update",
       "metadata": {
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "number"
@@ -6857,7 +6834,7 @@
       "name": "SkinStealerEntity",
       "type": "livingentity",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "skin_stealer_entity",
       "metadata": {
         "files": [
@@ -10023,30 +10000,13 @@
       "path": "~/Dimensions and Biomes"
     },
     {
-      "name": "CraftCashDown",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "craft_cash_down",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/jimsmineshaft/recipe/craft_cash_down.json"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "PlayerDiesInLevel",
+      "name": "LeftBehindProc",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "player_dies_in_level",
+      "registry_name": "left_behind_proc",
       "metadata": {
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
@@ -10058,13 +10018,17 @@
           {
             "name": "z",
             "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/PlayerDiesInLevelProcedure.java"
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeftBehindProcProcedure.java"
         ]
       },
-      "path": "~/Dimensions and Biomes"
+      "path": "~/Mod setup"
     },
     {
       "name": "SetRoom1",
@@ -10140,59 +10104,6 @@
       "path": "~/Dimensions and Biomes"
     },
     {
-      "name": "CashStackHundreds",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cash_stack_hundreds",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/jimsmineshaft/items/cash_stack_hundreds.json",
-          "src/main/java/net/mcreator/jimsmineshaft/item/CashStackHundredsItem.java",
-          "src/main/resources/assets/jimsmineshaft/models/item/cash_stack_hundreds.json"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "SetRoomE2",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_room_e_2",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetRoomE2Procedure.java"
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "SetRoomE1",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_room_e_1",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetRoomE1Procedure.java"
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
       "name": "RightClickSpawner4",
       "type": "procedure",
       "compiles": true,
@@ -10214,30 +10125,6 @@
         ]
       },
       "path": "~/Procedures"
-    },
-    {
-      "name": "Lvl2DisplayOverlayIngame",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lvl_2_display_overlay_ingame",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/Lvl2DisplayOverlayIngameProcedure.java"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
     },
     {
       "name": "PlayerEnterDimensionTick2",
@@ -10294,30 +10181,17 @@
       "path": "~/Procedures"
     },
     {
-      "name": "CompanyStoreClerkWeaponsLight",
-      "type": "villagerprofession",
+      "name": "Regeneratelevelcommand",
+      "type": "command",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "company_store_clerk_weapons_light",
+      "registry_name": "regeneratelevelcommand",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/textures/entity/villager/profession/company_store_clerk_weapons_light.png.mcmeta"
+          "src/main/java/net/mcreator/jimsmineshaft/command/RegeneratelevelcommandCommand.java"
         ]
       },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "CompanyStoreClerkAmmo",
-      "type": "villagerprofession",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "company_store_clerk_ammo",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/jimsmineshaft/textures/entity/villager/profession/company_store_clerk_ammo.png.mcmeta"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
+      "path": "~/Mod setup"
     },
     {
       "name": "SetBitD71",
@@ -10374,19 +10248,19 @@
       "path": "~/Procedures"
     },
     {
-      "name": "Level2Biomje",
-      "type": "biome",
+      "name": "SkinStealerCowMan5000",
+      "type": "livingentity",
       "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_2_biomje",
+      "locked_code": true,
+      "registry_name": "skin_stealer_cow_man_5000",
       "metadata": {
         "files": [
-          "src/main/resources/data/jimsmineshaft/worldgen/biome/level_2_biomje.json",
-          "src/main/resources/data/jimsmineshaft/worldgen/configured_feature/level_2_biomje_tree.json",
-          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/level_2_biomje_tree.json"
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/SkinStealerCowMan5000Renderer.java",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/SkinStealerCowMan5000Entity.java",
+          "src/main/resources/assets/jimsmineshaft/items/skin_stealer_cow_man_5000_spawn_egg.json"
         ]
       },
-      "path": "~/Dimensions and Biomes"
+      "path": "~/Skin Stealer Mechanic"
     },
     {
       "name": "CashStackRegular",
@@ -10402,6 +10276,26 @@
         ]
       },
       "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "SkinStealerCowMan5000PlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skin_stealer_cow_man_5000_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealerCowMan5000PlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
     },
     {
       "name": "ElevatorFAILSAFEbox",
@@ -10442,12 +10336,7 @@
       "locked_code": false,
       "registry_name": "can_submit_cart_return_true",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
+        "dependencies": [],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/CanSubmitCartReturnTrueProcedure.java"
@@ -10478,115 +10367,46 @@
       "path": "~/Cart and Rail"
     },
     {
-      "name": "Level6Biome",
-      "type": "biome",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_6_biome",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/jimsmineshaft/worldgen/biome/level_6_biome.json",
-          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/level_6_biome_tree.json",
-          "src/main/resources/data/jimsmineshaft/worldgen/configured_feature/level_6_biome_tree.json"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "CompanyStoreClerkWeaponsHeavy",
-      "type": "villagerprofession",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "company_store_clerk_weapons_heavy",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/jimsmineshaft/textures/entity/villager/profession/company_store_clerk_weapons_heavy.png.mcmeta"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "SetRoomF4",
+      "name": "RegenerateLevel",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "set_room_f_4",
+      "registry_name": "regenerate_level",
       "metadata": {
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
           {
             "name": "world",
             "type": "world"
           }
         ],
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetRoomF4Procedure.java"
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RegenerateLevelProcedure.java"
         ]
       },
-      "path": "~/Procedures"
+      "path": "~/Mod setup"
     },
     {
-      "name": "SetRoomF3",
+      "name": "SkinStealerGoobanimationPlaybackCondition",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "set_room_f_3",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetRoomF3Procedure.java"
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "SetRoomF2",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_room_f_2",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetRoomF2Procedure.java"
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "SetRoomF1",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_room_f_1",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetRoomF1Procedure.java"
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "ShopDisplayOverlayIngame",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "shop_display_overlay_ingame",
+      "registry_name": "skin_stealer_goobanimation_playback_condition",
       "metadata": {
         "dependencies": [
           {
@@ -10596,10 +10416,10 @@
         ],
         "return_type": "logic",
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/ShopDisplayOverlayIngameProcedure.java"
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealerGoobanimationPlaybackConditionProcedure.java"
         ]
       },
-      "path": "~/Dimensions and Biomes"
+      "path": "~/Skin Stealer Mechanic"
     },
     {
       "name": "CompanyStoreClerk",
@@ -10646,116 +10466,11 @@
       "path": "~/Dimensions and Biomes"
     },
     {
-      "name": "Level4Dimension",
-      "type": "dimension",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_4_dimension",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/jimsmineshaft/models/item/level_4_dimension.json",
-          "src/main/resources/data/jimsmineshaft/dimension/level_4_dimension.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/level_4_dimension_portal.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/level_4_dimension_portal_ew.json",
-          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level4DimensionPortalShape.java",
-          "src/main/java/net/mcreator/jimsmineshaft/item/Level4DimensionItem.java",
-          "src/main/java/net/mcreator/jimsmineshaft/block/Level4DimensionPortalBlock.java",
-          "src/main/resources/data/jimsmineshaft/dimension_type/level_4_dimension.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/level_4_dimension_portal_ns.json",
-          "src/main/java/net/mcreator/jimsmineshaft/world/dimension/Level4DimensionDimension.java",
-          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level4DimensionTeleporter.java",
-          "src/main/resources/assets/jimsmineshaft/items/level_4_dimension.json"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "Level3Overlay",
-      "type": "overlay",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_3_overlay",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/client/screens/Level3OverlayOverlay.java"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "MatchTickEvent",
+      "name": "SkinStealerActivateCallable",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "match_tick_event",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/MatchTickEventProcedure.java"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "SetRoomG1",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_room_g_1",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetRoomG1Procedure.java"
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "CorruptedRoofSupport",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "corrupted_roof_support",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/CorruptedRoofSupportBlock.java",
-          "src/main/resources/assets/jimsmineshaft/models/item/corrupted_roof_support.json",
-          "src/main/resources/assets/jimsmineshaft/items/corrupted_roof_support.json",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/corrupted_roof_support.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/corrupted_roof_support.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/corrupted_roof_support.json"
-        ]
-      },
-      "path": "~/Level 2 Blocks"
-    },
-    {
-      "name": "StopMatch",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stop_match",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/command/StopMatchCommand.java"
-        ]
-      }
-    },
-    {
-      "name": "ElevatorTickEvent2",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "elevator_tick_event_2",
+      "registry_name": "skin_stealer_activate_callable",
       "metadata": {
         "dependencies": [
           {
@@ -10780,10 +10495,44 @@
           }
         ],
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/ElevatorTickEvent2Procedure.java"
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealerActivateCallableProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ClerkBasicGoods2Block",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clerk_basic_goods_2_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/clerk_basic_goods_2_block.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/ClerkBasicGoods2BlockBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/block/clerk_basic_goods_2_block.json",
+          "src/main/resources/assets/jimsmineshaft/items/clerk_basic_goods_2_block.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/clerk_basic_goods_2_block.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/clerk_basic_goods_2_block.json"
+        ]
+      }
+    },
+    {
+      "name": "CorruptedRoofSupport",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corrupted_roof_support",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/CorruptedRoofSupportBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/corrupted_roof_support.json",
+          "src/main/resources/assets/jimsmineshaft/items/corrupted_roof_support.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/corrupted_roof_support.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/corrupted_roof_support.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/corrupted_roof_support.json"
         ]
       },
-      "path": "~/Cart and Rail"
+      "path": "~/Level 2 Blocks"
     },
     {
       "name": "SetShaftG1",
@@ -10824,64 +10573,6 @@
       "path": "~/Procedures"
     },
     {
-      "name": "ResetSeatPosition",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "reset_seat_position",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/command/ResetSeatPositionCommand.java"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "SpawnStructureShaftEntity",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "spawn_structure_shaft_entity",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/jimsmineshaft/items/spawn_structure_shaft_entity_spawn_egg.json",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/SpawnStructureShaftEntityRenderer.java",
-          "src/main/java/net/mcreator/jimsmineshaft/entity/SpawnStructureShaftEntityEntity.java"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "ShaftbuilderGUILvl3",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "shaftbuilder_gui_lvl_3",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/network/ShaftbuilderGUILvl3ButtonMessage.java",
-          "src/main/java/net/mcreator/jimsmineshaft/client/gui/ShaftbuilderGUILvl3Screen.java",
-          "src/main/java/net/mcreator/jimsmineshaft/world/inventory/ShaftbuilderGUILvl3Menu.java"
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "ShaftbuilderGUILvl2",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "shaftbuilder_gui_lvl_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/world/inventory/ShaftbuilderGUILvl2Menu.java",
-          "src/main/java/net/mcreator/jimsmineshaft/client/gui/ShaftbuilderGUILvl2Screen.java",
-          "src/main/java/net/mcreator/jimsmineshaft/network/ShaftbuilderGUILvl2ButtonMessage.java"
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
       "name": "OpenLvl3SpawnerGUIOnKeyPressed",
       "type": "procedure",
       "compiles": true,
@@ -10917,26 +10608,11 @@
       "path": "~/Procedures"
     },
     {
-      "name": "Level5Biome",
-      "type": "biome",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_5_biome",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/jimsmineshaft/worldgen/biome/level_5_biome.json",
-          "src/main/resources/data/jimsmineshaft/worldgen/configured_feature/level_5_biome_tree.json",
-          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/level_5_biome_tree.json"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "StalkerNaturalEntitySpawningCondition",
+      "name": "CopperOreEntityBottomBlockBlockAdded",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "stalker_natural_entity_spawning_condition",
+      "registry_name": "copper_ore_entity_bottom_block_block_added",
       "metadata": {
         "dependencies": [
           {
@@ -10956,11 +10632,26 @@
             "type": "world"
           }
         ],
-        "return_type": "logic",
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerNaturalEntitySpawningConditionProcedure.java"
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CopperOreEntityBottomBlockBlockAddedProcedure.java"
         ]
-      }
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "Level5Biome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_5_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/worldgen/biome/level_5_biome.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/configured_feature/level_5_biome_tree.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/level_5_biome_tree.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
     },
     {
       "name": "CartelevatorOnInitialEntitySpawn",
@@ -10992,30 +10683,6 @@
         ]
       },
       "path": "~/Cart and Rail"
-    },
-    {
-      "name": "Level6Dimension",
-      "type": "dimension",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_6_dimension",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/jimsmineshaft/blockstates/level_6_dimension_portal.json",
-          "src/main/java/net/mcreator/jimsmineshaft/world/dimension/Level6DimensionDimension.java",
-          "src/main/java/net/mcreator/jimsmineshaft/block/Level6DimensionPortalBlock.java",
-          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level6DimensionPortalShape.java",
-          "src/main/resources/data/jimsmineshaft/dimension_type/level_6_dimension.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/level_6_dimension.json",
-          "src/main/java/net/mcreator/jimsmineshaft/item/Level6DimensionItem.java",
-          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level6DimensionTeleporter.java",
-          "src/main/resources/assets/jimsmineshaft/items/level_6_dimension.json",
-          "src/main/resources/data/jimsmineshaft/dimension/level_6_dimension.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/level_6_dimension_portal_ew.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/level_6_dimension_portal_ns.json"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
     },
     {
       "name": "SetShaftF6",
@@ -11066,6 +10733,21 @@
         ]
       },
       "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "SkinStealerGoober",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "skin_stealer_goober",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/skin_stealer_goober_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/SkinStealerGooberEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/SkinStealerGooberRenderer.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
     },
     {
       "name": "SetShaftF2",
@@ -11125,6 +10807,21 @@
       "path": "~/Procedures"
     },
     {
+      "name": "PlayerReviveTotem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_revive_totem",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/item/PlayerReviveTotemItem.java",
+          "src/main/resources/assets/jimsmineshaft/items/player_revive_totem.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/player_revive_totem.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
       "name": "ClerkToolsBlock",
       "type": "block",
       "compiles": true,
@@ -11160,67 +10857,6 @@
         ]
       },
       "path": "~/Procedures"
-    },
-    {
-      "name": "SubmitCartOverlay",
-      "type": "overlay",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "submit_cart_overlay",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/client/screens/SubmitCartOverlayOverlay.java"
-        ]
-      }
-    },
-    {
-      "name": "ClerkWeaponsHeavyBlock",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "clerk_weapons_heavy_block",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/ClerkWeaponsHeavyBlockBlock.java",
-          "src/main/resources/assets/jimsmineshaft/items/clerk_weapons_heavy_block.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/clerk_weapons_heavy_block.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/clerk_weapons_heavy_block.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/clerk_weapons_heavy_block.json",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/clerk_weapons_heavy_block.json"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "SendCartOnKeyPressed",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "send_cart_on_key_pressed",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SendCartOnKeyPressedProcedure.java"
-        ]
-      },
-      "path": "~/Cart and Rail"
     },
     {
       "name": "SetShaftF1",
@@ -11358,6 +10994,1724 @@
       "path": "~/Dimensions and Biomes"
     },
     {
+      "name": "MatchTickSet",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "match_tick_set",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/command/MatchTickSetCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "MatchSetPlayer1",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "match_set_player_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/command/MatchSetPlayer1Command.java"
+        ]
+      },
+      "path": "~/Mod setup"
+    },
+    {
+      "name": "Setup",
+      "type": "config",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setup",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/configuration/SetupConfiguration.java"
+        ]
+      },
+      "path": "~/Mod setup"
+    },
+    {
+      "name": "SetBitD31",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_bit_d_31",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetBitD31Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SkinStealerEntityEntityIsHurtChickenNugget",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skin_stealer_entity_entity_is_hurt_chicken_nugget",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealerEntityEntityIsHurtChickenNuggetProcedure.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "SetBitD34",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_bit_d_34",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetBitD34Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Level3Biome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_3_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/worldgen/configured_feature/level_3_biome_tree.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/level_3_biome_tree.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/biome/level_3_biome.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Matchclearentities",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "matchclearentities",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/command/MatchclearentitiesCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "SetBitD32",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_bit_d_32",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetBitD32Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "CraftCash",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_cash",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/recipe/craft_cash.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "SetBitD33",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_bit_d_33",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetBitD33Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "MicCapture2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "mic_capture_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/MicCapture2Procedure.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "CartelevatorEast",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cartelevator_east",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/cartelevator_east_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/CartelevatorEastEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/CartelevatorEastRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "Level5Overlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_5_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/Level5OverlayOverlay.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Lvl6DisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lvl_6_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Lvl6DisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "SkinStealerChickanimationPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skin_stealer_chickanimation_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealerChickanimationPlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "OpenLvl2SpawnerGUI",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_lvl_2_spawner_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/network/OpenLvl2SpawnerGUIMessage.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "ElevatorLight3",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_light_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/elevator_light_3.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/elevator_light_3.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/ElevatorLight3Block.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/elevator_light_3.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/elevator_light_3.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/elevator_light_3.json"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "Level3Dimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_3_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/Level3DimensionPortalBlock.java",
+          "src/main/resources/data/jimsmineshaft/dimension_type/level_3_dimension.json",
+          "src/main/resources/assets/jimsmineshaft/items/level_3_dimension.json",
+          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level3DimensionPortalShape.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/level_3_dimension_portal.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/level_3_dimension_portal_ns.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/level_3_dimension_portal_ew.json",
+          "src/main/java/net/mcreator/jimsmineshaft/world/dimension/Level3DimensionDimension.java",
+          "src/main/resources/data/jimsmineshaft/dimension/level_3_dimension.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/level_3_dimension.json",
+          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level3DimensionTeleporter.java",
+          "src/main/java/net/mcreator/jimsmineshaft/item/Level3DimensionItem.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Level4Biome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_4_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/worldgen/biome/level_4_biome.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/configured_feature/level_4_biome_tree.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/level_4_biome_tree.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "SpawnStructureShaftEntityOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_structure_shaft_entity_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SpawnStructureShaftEntityOnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "SendCart",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "send_cart",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/network/SendCartMessage.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "GiveStarterItems",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_starter_items",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/command/GiveStarterItemsCommand.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "CartElevatorBoundingBox",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cart_elevator_bounding_box",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/CartElevatorBoundingBoxRenderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/cart_elevator_bounding_box_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/CartElevatorBoundingBoxEntity.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "VeteranArmorBag",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "veteran_armor_bag",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/block/veteran_armor_bag.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/veteran_armor_bag.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/veteran_armor_bag.json",
+          "src/main/resources/assets/jimsmineshaft/items/veteran_armor_bag.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/VeteranArmorBagBlock.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/veteran_armor_bag.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "CartelevatorWESTOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cartelevator_west_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CartelevatorWESTOnEntityTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Lvl5DisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lvl_5_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Lvl5DisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "SkinStealerKunzyanimationPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skin_stealer_kunzyanimation_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealerKunzyanimationPlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "ClerkAmmoBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clerk_ammo_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/blockstates/clerk_ammo_block.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/clerk_ammo_block.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/clerk_ammo_block.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/clerk_ammo_block.json",
+          "src/main/resources/assets/jimsmineshaft/items/clerk_ammo_block.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/ClerkAmmoBlockBlock.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "ResetMatchTime",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_match_time",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "cmdparams",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ResetMatchTimeProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Matchtick",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "matchtick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/command/MatchtickCommand.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "CartelevatorOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cartelevator_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/CartelevatorOnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "SkinStealerYourNotLuis",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "skin_stealer_your_not_luis",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/SkinStealerYourNotLuisRenderer.java",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/SkinStealerYourNotLuisEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/skin_stealer_your_not_luis_spawn_egg.json"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "ArmorBagRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_bag_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ArmorBagRightClickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Lvl4DisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lvl_4_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Lvl4DisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "SkinStealerEntityEntityIsHurtGoober",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skin_stealer_entity_entity_is_hurt_goober",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealerEntityEntityIsHurtGooberProcedure.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "CompanyStoreClerkDriller",
+      "type": "villagerprofession",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "company_store_clerk_driller",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/textures/entity/villager/profession/company_store_clerk_driller.png.mcmeta"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "KnifeTrade",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knife_trade",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "SetShaftG3Big",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_shaft_g_3_big",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftG3BigProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Lvl3DisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lvl_3_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Lvl3DisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "CartelevatorWest",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cartelevator_west",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/CartelevatorWestRenderer.java",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/CartelevatorWestEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/cartelevator_west_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "SkinStealerChickenNuggetAC",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "skin_stealer_chicken_nugget_ac",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/entity/SkinStealerChickenNuggetACEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/skin_stealer_chicken_nugget_ac_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/SkinStealerChickenNuggetACRenderer.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "SkinStealerKunzy",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "skin_stealer_kunzy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/entity/SkinStealerKunzyEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/SkinStealerKunzyRenderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/skin_stealer_kunzy_spawn_egg.json"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "SkinStealerGigoanimationPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skin_stealer_gigoanimation_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealerGigoanimationPlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "CraftCashDown",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_cash_down",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/recipe/craft_cash_down.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "SendToDimension",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "send_to_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/command/SendToDimensionCommand.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "PlayerDiesInLevel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_dies_in_level",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PlayerDiesInLevelProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "SkinStealerWylananimationPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skin_stealer_wylananimation_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealerWylananimationPlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "CompanyStoreClerkReviver",
+      "type": "villagerprofession",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "company_store_clerk_reviver",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/textures/entity/villager/profession/company_store_clerk_reviver.png.mcmeta"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "PlayerkilledbyStalker",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "playerkilledby_stalker",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PlayerkilledbyStalkerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CashStackHundreds",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cash_stack_hundreds",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/cash_stack_hundreds.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/CashStackHundredsItem.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/cash_stack_hundreds.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "SendToLevel2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "send_to_level_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "cmdparams",
+            "type": "map"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SendToLevel2Procedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "SetRoomE2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_room_e_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetRoomE2Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SkinStealerWylan",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "skin_stealer_wylan",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/entity/SkinStealerWylanEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/skin_stealer_wylan_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/SkinStealerWylanRenderer.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "SetRoomE1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_room_e_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetRoomE1Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Lvl2DisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lvl_2_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Lvl2DisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "CompanyStoreClerkWeaponsLight",
+      "type": "villagerprofession",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "company_store_clerk_weapons_light",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/textures/entity/villager/profession/company_store_clerk_weapons_light.png.mcmeta"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "CompanyStoreClerkAmmo",
+      "type": "villagerprofession",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "company_store_clerk_ammo",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/textures/entity/villager/profession/company_store_clerk_ammo.png.mcmeta"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "PrepFunction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "prep_function",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PrepFunctionProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Level2Biomje",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_2_biomje",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/worldgen/biome/level_2_biomje.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/configured_feature/level_2_biomje_tree.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/level_2_biomje_tree.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Level6Biome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_6_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/worldgen/biome/level_6_biome.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/level_6_biome_tree.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/configured_feature/level_6_biome_tree.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "CompanyStoreClerkWeaponsHeavy",
+      "type": "villagerprofession",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "company_store_clerk_weapons_heavy",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/textures/entity/villager/profession/company_store_clerk_weapons_heavy.png.mcmeta"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "SetRoomF4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_room_f_4",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetRoomF4Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetRoomF3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_room_f_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetRoomF3Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetRoomF2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_room_f_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetRoomF2Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetRoomF1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_room_f_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetRoomF1Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "ShopDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shop_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ShopDisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "SkinStealerGigo",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "skin_stealer_gigo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/entity/SkinStealerGigoEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/SkinStealerGigoRenderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/skin_stealer_gigo_spawn_egg.json"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "Level4Dimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_4_dimension",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/models/item/level_4_dimension.json",
+          "src/main/resources/data/jimsmineshaft/dimension/level_4_dimension.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/level_4_dimension_portal.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/level_4_dimension_portal_ew.json",
+          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level4DimensionPortalShape.java",
+          "src/main/java/net/mcreator/jimsmineshaft/item/Level4DimensionItem.java",
+          "src/main/java/net/mcreator/jimsmineshaft/block/Level4DimensionPortalBlock.java",
+          "src/main/resources/data/jimsmineshaft/dimension_type/level_4_dimension.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/level_4_dimension_portal_ns.json",
+          "src/main/java/net/mcreator/jimsmineshaft/world/dimension/Level4DimensionDimension.java",
+          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level4DimensionTeleporter.java",
+          "src/main/resources/assets/jimsmineshaft/items/level_4_dimension.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "Level3Overlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_3_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/Level3OverlayOverlay.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "MatchTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "match_tick_event",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/MatchTickEventProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "SetRoomG1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_room_g_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetRoomG1Procedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "RedstoneSpawnStuff",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_spawn_stuff",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RedstoneSpawnStuffProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "StopMatch",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stop_match",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/command/StopMatchCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "ShopBiome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shop_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/worldgen/configured_feature/shop_biome_tree.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/shop_biome_tree.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/biome/shop_biome.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "ElevatorTickEvent2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_tick_event_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ElevatorTickEvent2Procedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "ResetSeatPosition",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_seat_position",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/command/ResetSeatPositionCommand.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "SpawnStructureShaftEntity",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_structure_shaft_entity",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/spawn_structure_shaft_entity_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/SpawnStructureShaftEntityRenderer.java",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/SpawnStructureShaftEntityEntity.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "ShaftbuilderGUILvl3",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shaftbuilder_gui_lvl_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/network/ShaftbuilderGUILvl3ButtonMessage.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/gui/ShaftbuilderGUILvl3Screen.java",
+          "src/main/java/net/mcreator/jimsmineshaft/world/inventory/ShaftbuilderGUILvl3Menu.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "ShaftbuilderGUILvl2",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shaftbuilder_gui_lvl_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/world/inventory/ShaftbuilderGUILvl2Menu.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/gui/ShaftbuilderGUILvl2Screen.java",
+          "src/main/java/net/mcreator/jimsmineshaft/network/ShaftbuilderGUILvl2ButtonMessage.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Preparelevel",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "preparelevel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/command/PreparelevelCommand.java"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "VisionNaturalEntitySpawningCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vision_natural_entity_spawning_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/VisionNaturalEntitySpawningConditionProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "StalkerNaturalEntitySpawningCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_natural_entity_spawning_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StalkerNaturalEntitySpawningConditionProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Level6Dimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_6_dimension",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/blockstates/level_6_dimension_portal.json",
+          "src/main/java/net/mcreator/jimsmineshaft/world/dimension/Level6DimensionDimension.java",
+          "src/main/java/net/mcreator/jimsmineshaft/block/Level6DimensionPortalBlock.java",
+          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level6DimensionPortalShape.java",
+          "src/main/resources/data/jimsmineshaft/dimension_type/level_6_dimension.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/level_6_dimension.json",
+          "src/main/java/net/mcreator/jimsmineshaft/item/Level6DimensionItem.java",
+          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level6DimensionTeleporter.java",
+          "src/main/resources/assets/jimsmineshaft/items/level_6_dimension.json",
+          "src/main/resources/data/jimsmineshaft/dimension/level_6_dimension.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/level_6_dimension_portal_ew.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/level_6_dimension_portal_ns.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "CopperOreEntityBottomBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_ore_entity_bottom_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/copper_ore_entity_bottom_block.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/copper_ore_entity_bottom_block.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/CopperOreEntityBottomBlockBlock.java",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_ore_entity_bottom_block.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/copper_ore_entity_bottom_block.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/copper_ore_entity_bottom_block.json"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "MicCapture",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "mic_capture",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/MicCaptureProcedure.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "SubmitCartOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "submit_cart_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/SubmitCartOverlayOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "ClerkWeaponsHeavyBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clerk_weapons_heavy_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/ClerkWeaponsHeavyBlockBlock.java",
+          "src/main/resources/assets/jimsmineshaft/items/clerk_weapons_heavy_block.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/clerk_weapons_heavy_block.json",
+          "src/main/resources/assets/jimsmineshaft/models/block/clerk_weapons_heavy_block.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/clerk_weapons_heavy_block.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/clerk_weapons_heavy_block.json"
+        ]
+      },
+      "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "SendCartOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "send_cart_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SendCartOnKeyPressedProcedure.java"
+        ]
+      },
+      "path": "~/Cart and Rail"
+    },
+    {
+      "name": "Setplayer1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setplayer_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "cmdparams",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/Setplayer1Procedure.java"
+        ]
+      },
+      "path": "~/Mod setup"
+    },
+    {
       "name": "ClerkBasicBlock",
       "type": "block",
       "compiles": true,
@@ -11374,6 +12728,21 @@
         ]
       },
       "path": "~/Dimensions and Biomes"
+    },
+    {
+      "name": "PlayerStalkierChickenNuggetAC",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_stalkier_chicken_nugget_ac",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/entity/PlayerStalkierChickenNuggetACEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/player_stalkier_chicken_nugget_ac_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/PlayerStalkierChickenNuggetACRenderer.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
     },
     {
       "name": "OpenLvl3SpawnerGUI",
@@ -11489,23 +12858,24 @@
       "path": "~/Procedures"
     },
     {
-      "name": "SetBitD31",
+      "name": "JumpscareImageAleaIactaEstDisplayOverlayIngame",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "set_bit_d_31",
+      "registry_name": "jumpscare_image_alea_iacta_est_display_overlay_ingame",
       "metadata": {
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ],
+        "return_type": "logic",
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetBitD31Procedure.java"
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/JumpscareImageAleaIactaEstDisplayOverlayIngameProcedure.java"
         ]
       },
-      "path": "~/Procedures"
+      "path": "~/Mod setup"
     },
     {
       "name": "SetBitE2",
@@ -11565,6 +12935,26 @@
       "path": "~/Procedures"
     },
     {
+      "name": "SkinStealerGoshiggyanimationPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skin_stealer_goshiggyanimation_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealerGoshiggyanimationPlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
       "name": "SetBitE1",
       "type": "procedure",
       "compiles": true,
@@ -11598,40 +12988,6 @@
         ],
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/StoreGUIWhileThisGUIIsOpenTickProcedure.java"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "SetBitD34",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_bit_d_34",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetBitD34Procedure.java"
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "Level3Biome",
-      "type": "biome",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_3_biome",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/jimsmineshaft/worldgen/configured_feature/level_3_biome_tree.json",
-          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/level_3_biome_tree.json",
-          "src/main/resources/data/jimsmineshaft/worldgen/biome/level_3_biome.json"
         ]
       },
       "path": "~/Dimensions and Biomes"
@@ -11671,57 +13027,6 @@
       }
     },
     {
-      "name": "SetBitD32",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_bit_d_32",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetBitD32Procedure.java"
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "CraftCash",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "craft_cash",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/jimsmineshaft/recipe/craft_cash.json"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "SetBitD33",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_bit_d_33",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetBitD33Procedure.java"
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
       "name": "SetShaftD4",
       "type": "procedure",
       "compiles": true,
@@ -11741,20 +13046,6 @@
       "path": "~/Procedures"
     },
     {
-      "name": "CartelevatorEast",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cartelevator_east",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/jimsmineshaft/items/cartelevator_east_spawn_egg.json",
-          "src/main/java/net/mcreator/jimsmineshaft/entity/CartelevatorEastEntity.java",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/CartelevatorEastRenderer.java"
-        ]
-      }
-    },
-    {
       "name": "SetShaftD5",
       "type": "procedure",
       "compiles": true,
@@ -11772,19 +13063,6 @@
         ]
       },
       "path": "~/Procedures"
-    },
-    {
-      "name": "Level5Overlay",
-      "type": "overlay",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_5_overlay",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/client/screens/Level5OverlayOverlay.java"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
     },
     {
       "name": "SetShaftD6",
@@ -11824,30 +13102,6 @@
       }
     },
     {
-      "name": "Lvl6DisplayOverlayIngame",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lvl_6_display_overlay_ingame",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/Lvl6DisplayOverlayIngameProcedure.java"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
       "name": "SetShaftD1",
       "type": "procedure",
       "compiles": true,
@@ -11862,19 +13116,6 @@
         ],
         "files": [
           "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftD1Procedure.java"
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "OpenLvl2SpawnerGUI",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "open_lvl_2_spawner_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/network/OpenLvl2SpawnerGUIMessage.java"
         ]
       },
       "path": "~/Procedures"
@@ -11897,6 +13138,36 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "Matchclearentitiesproc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "matchclearentitiesproc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/MatchclearentitiesprocProcedure.java"
+        ]
+      }
     },
     {
       "name": "SetShaftD3",
@@ -11942,124 +13213,23 @@
       "path": "~/Dimensions and Biomes"
     },
     {
-      "name": "ElevatorLight3",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "elevator_light_3",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/jimsmineshaft/items/elevator_light_3.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/elevator_light_3.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/ElevatorLight3Block.java",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/elevator_light_3.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/elevator_light_3.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/elevator_light_3.json"
-        ]
-      },
-      "path": "~/Cart and Rail"
-    },
-    {
-      "name": "Level3Dimension",
-      "type": "dimension",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_3_dimension",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/Level3DimensionPortalBlock.java",
-          "src/main/resources/data/jimsmineshaft/dimension_type/level_3_dimension.json",
-          "src/main/resources/assets/jimsmineshaft/items/level_3_dimension.json",
-          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level3DimensionPortalShape.java",
-          "src/main/resources/assets/jimsmineshaft/blockstates/level_3_dimension_portal.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/level_3_dimension_portal_ns.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/level_3_dimension_portal_ew.json",
-          "src/main/java/net/mcreator/jimsmineshaft/world/dimension/Level3DimensionDimension.java",
-          "src/main/resources/data/jimsmineshaft/dimension/level_3_dimension.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/level_3_dimension.json",
-          "src/main/java/net/mcreator/jimsmineshaft/world/teleporter/Level3DimensionTeleporter.java",
-          "src/main/java/net/mcreator/jimsmineshaft/item/Level3DimensionItem.java"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "Level4Biome",
-      "type": "biome",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_4_biome",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/jimsmineshaft/worldgen/biome/level_4_biome.json",
-          "src/main/resources/data/jimsmineshaft/worldgen/configured_feature/level_4_biome_tree.json",
-          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/level_4_biome_tree.json"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "SpawnStructureShaftEntityOnEntityTickUpdate",
+      "name": "GetMatchTick",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "spawn_structure_shaft_entity_on_entity_tick_update",
+      "registry_name": "get_match_tick",
       "metadata": {
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
           {
             "name": "world",
             "type": "world"
           }
         ],
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SpawnStructureShaftEntityOnEntityTickUpdateProcedure.java"
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/GetMatchTickProcedure.java"
         ]
       },
       "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "SendCart",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "send_cart",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/network/SendCartMessage.java"
-        ]
-      },
-      "path": "~/Cart and Rail"
-    },
-    {
-      "name": "CartElevatorBoundingBox",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cart_elevator_bounding_box",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/CartElevatorBoundingBoxRenderer.java",
-          "src/main/resources/assets/jimsmineshaft/items/cart_elevator_bounding_box_spawn_egg.json",
-          "src/main/java/net/mcreator/jimsmineshaft/entity/CartElevatorBoundingBoxEntity.java"
-        ]
-      },
-      "path": "~/Cart and Rail"
     },
     {
       "name": "Level4Overlay",
@@ -12075,29 +13245,85 @@
       "path": "~/Dimensions and Biomes"
     },
     {
-      "name": "VeteranArmorBag",
+      "name": "SkinStealerEntity2",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "skin_stealer_entity_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/entity/SkinStealerEntity2Entity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/SkinStealerEntity2Renderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/skin_stealer_entity_2_spawn_egg.json"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "DynamiteBoxRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dynamite_box_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/DynamiteBoxRightclickedOnBlockProcedure.java"
+        ]
+      },
+      "path": "~/Loot Work"
+    },
+    {
+      "name": "ClerkWeaponsBlock",
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "veteran_armor_bag",
+      "registry_name": "clerk_weapons_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jimsmineshaft/models/block/veteran_armor_bag.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/veteran_armor_bag.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/veteran_armor_bag.json",
-          "src/main/resources/assets/jimsmineshaft/items/veteran_armor_bag.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/VeteranArmorBagBlock.java",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/veteran_armor_bag.json"
+          "src/main/resources/assets/jimsmineshaft/models/block/clerk_weapons_block.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/clerk_weapons_block.json",
+          "src/main/resources/assets/jimsmineshaft/models/item/clerk_weapons_block.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/ClerkWeaponsBlockBlock.java",
+          "src/main/resources/assets/jimsmineshaft/blockstates/clerk_weapons_block.json",
+          "src/main/resources/assets/jimsmineshaft/items/clerk_weapons_block.json"
         ]
       },
       "path": "~/Dimensions and Biomes"
     },
     {
-      "name": "CartelevatorWESTOnEntityTickUpdate",
+      "name": "CompanyStoreClerkBasicGoods2",
+      "type": "villagerprofession",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "company_store_clerk_basic_goods_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/textures/entity/villager/profession/company_store_clerk_basic_goods_2.png.mcmeta"
+        ]
+      }
+    },
+    {
+      "name": "SkinStealerGoshiggy",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "skin_stealer_goshiggy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/SkinStealerGoshiggyRenderer.java",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/SkinStealerGoshiggyEntity.java",
+          "src/main/resources/assets/jimsmineshaft/items/skin_stealer_goshiggy_spawn_egg.json"
+        ]
+      },
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "PlayerReviveTotemRightclicked",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cartelevator_west_on_entity_tick_update",
+      "registry_name": "player_revive_totem_rightclicked",
       "metadata": {
         "dependencies": [
           {
@@ -12122,66 +13348,7 @@
           }
         ],
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/CartelevatorWESTOnEntityTickUpdateProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "Lvl5DisplayOverlayIngame",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lvl_5_display_overlay_ingame",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/Lvl5DisplayOverlayIngameProcedure.java"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "ClerkAmmoBlock",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "clerk_ammo_block",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/jimsmineshaft/blockstates/clerk_ammo_block.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/clerk_ammo_block.json",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/clerk_ammo_block.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/clerk_ammo_block.json",
-          "src/main/resources/assets/jimsmineshaft/items/clerk_ammo_block.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/ClerkAmmoBlockBlock.java"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "ClerkWeaponsBlock",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "clerk_weapons_block",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/jimsmineshaft/models/block/clerk_weapons_block.json",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/clerk_weapons_block.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/clerk_weapons_block.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/ClerkWeaponsBlockBlock.java",
-          "src/main/resources/assets/jimsmineshaft/blockstates/clerk_weapons_block.json",
-          "src/main/resources/assets/jimsmineshaft/items/clerk_weapons_block.json"
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PlayerReviveTotemRightclickedProcedure.java"
         ]
       },
       "path": "~/Dimensions and Biomes"
@@ -12230,41 +13397,6 @@
       "path": "~/Dimensions and Biomes"
     },
     {
-      "name": "CartelevatorOnEntityTickUpdate",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cartelevator_on_entity_tick_update",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/CartelevatorOnEntityTickUpdateProcedure.java"
-        ]
-      },
-      "path": "~/Cart and Rail"
-    },
-    {
       "name": "ResetSeatProc",
       "type": "procedure",
       "compiles": true,
@@ -12308,54 +13440,6 @@
       "path": "~/Dimensions and Biomes"
     },
     {
-      "name": "Lvl4DisplayOverlayIngame",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lvl_4_display_overlay_ingame",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/Lvl4DisplayOverlayIngameProcedure.java"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "CompanyStoreClerkDriller",
-      "type": "villagerprofession",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "company_store_clerk_driller",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/jimsmineshaft/textures/entity/villager/profession/company_store_clerk_driller.png.mcmeta"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "KnifeTrade",
-      "type": "villagertrade",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "knife_trade",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
       "name": "CartElevatorBoundingBoxOnEntityTickUpdate",
       "type": "procedure",
       "compiles": true,
@@ -12391,23 +13475,37 @@
       "path": "~/Cart and Rail"
     },
     {
-      "name": "SetShaftG3Big",
+      "name": "SkinStealerYourNotLuisPlaybackCondition",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "set_shaft_g_3_big",
+      "registry_name": "skin_stealer_your_not_luis_playback_condition",
       "metadata": {
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ],
+        "return_type": "logic",
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetShaftG3BigProcedure.java"
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealerYourNotLuisPlaybackConditionProcedure.java"
         ]
       },
-      "path": "~/Procedures"
+      "path": "~/Skin Stealer Mechanic"
+    },
+    {
+      "name": "JumpscareImageAleaIactaEst",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jumpscare_image_alea_iacta_est",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/JumpscareImageAleaIactaEstOverlay.java"
+        ]
+      },
+      "path": "~/Mod setup"
     },
     {
       "name": "Cartelevator",
@@ -12441,25 +13539,24 @@
       "path": "~/Dimensions and Biomes"
     },
     {
-      "name": "Lvl3DisplayOverlayIngame",
+      "name": "GiveStarterItemsCommand",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "lvl_3_display_overlay_ingame",
+      "registry_name": "give_starter_items_command",
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "cmdparams",
+            "type": "map"
           },
           {
             "name": "world",
             "type": "world"
           }
         ],
-        "return_type": "logic",
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/Lvl3DisplayOverlayIngameProcedure.java"
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/GiveStarterItemsCommandProcedure.java"
         ]
       },
       "path": "~/Dimensions and Biomes"
@@ -12482,20 +13579,6 @@
         ]
       },
       "path": "~/Procedures"
-    },
-    {
-      "name": "CartelevatorWest",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cartelevator_west",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/CartelevatorWestRenderer.java",
-          "src/main/java/net/mcreator/jimsmineshaft/entity/CartelevatorWestEntity.java",
-          "src/main/resources/assets/jimsmineshaft/items/cartelevator_west_spawn_egg.json"
-        ]
-      }
     },
     {
       "name": "SetRoomD3",
@@ -12594,29 +13677,11 @@
       "path": "~/Dimensions and Biomes"
     },
     {
-      "name": "DisableOverlayFalse",
+      "name": "RustedTumblerOnInitialEntitySpawn",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "disable_overlay_false",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/DisableOverlayFalseProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "WakeUpDisplay",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wake_up_display",
+      "registry_name": "rusted_tumbler_on_initial_entity_spawn",
       "metadata": {
         "dependencies": [
           {
@@ -12624,28 +13689,217 @@
             "type": "entity"
           },
           {
-            "name": "world",
-            "type": "world"
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RustedTumblerOnInitialEntitySpawnProcedure.java"
+        ]
+      },
+      "path": "~/Tumbler Room"
+    },
+    {
+      "name": "RustedTumblerRightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rusted_tumbler_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/RustedTumblerRightClickedOnEntityProcedure.java"
+        ]
+      },
+      "path": "~/Tumbler Room"
+    },
+    {
+      "name": "RustedTumbler",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rusted_tumbler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/entity/RustedTumblerEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/RustedTumblerRenderer.java",
+          "src/main/resources/assets/jimsmineshaft/items/rusted_tumbler_spawn_egg.json"
+        ]
+      },
+      "path": "~/Tumbler Room"
+    },
+    {
+      "name": "LeechAttack",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leech_attack",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
           }
         ],
         "return_type": "logic",
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/WakeUpDisplayProcedure.java"
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeechAttackProcedure.java"
         ]
       }
     },
     {
-      "name": "ForceParadiseCrashReceivedByClient",
+      "name": "AmalgamationOnEntityTickUpdate",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "force_paradise_crash_received_by_client",
+      "registry_name": "amalgamation_on_entity_tick_update",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/ForceParadiseCrashReceivedByClientProcedure.java"
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/AmalgamationOnEntityTickUpdateProcedure.java"
         ]
       }
+    },
+    {
+      "name": "StaminaBarDisplayValue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stamina_bar_display_value",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/StaminaBarDisplayValueProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ParadiseLava",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "paradise_lava",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/worldgen/configured_feature/paradise_lava.json",
+          "src/main/resources/data/jimsmineshaft/neoforge/biome_modifier/paradise_lava_biome_modifier.json",
+          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/paradise_lava.json"
+        ]
+      }
+    },
+    {
+      "name": "VisionEntityIsHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vision_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/VisionEntityIsHurtProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "LeechModelVisualScale",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leech_model_visual_scale",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeechModelVisualScaleProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "AmalgamationPlaybackConditionShoot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amalgamation_playback_condition_shoot",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/AmalgamationPlaybackConditionShootProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Stamina",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stamina",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/command/StaminaCommand.java"
+        ]
+      },
+      "path": "~/SprintSystem"
     },
     {
       "name": "InteractiveOverlay",
@@ -12701,11 +13955,53 @@
       }
     },
     {
-      "name": "LeechAttack",
+      "name": "ItsNotRealOverlayDisplayOverlayIngame",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "leech_attack",
+      "registry_name": "its_not_real_overlay_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ItsNotRealOverlayDisplayOverlayIngameProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SetSprint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_sprint",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetSprintProcedure.java"
+        ]
+      },
+      "path": "~/SprintSystem"
+    },
+    {
+      "name": "LeechOnCeiling",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leech_on_ceiling",
       "metadata": {
         "dependencies": [
           {
@@ -12715,26 +14011,298 @@
         ],
         "return_type": "logic",
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeechAttackProcedure.java"
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeechOnCeilingProcedure.java"
         ]
       }
     },
     {
-      "name": "VisionEntityIsHurt",
+      "name": "NoKB",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_kb",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jimsmineshaft/damage_type/no_kb.json"
+        ]
+      }
+    },
+    {
+      "name": "Amalgamation",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amalgamation",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/amalgamation_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/AmalgamationEntity.java",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/AmalgamationRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "ForceParadiseCrash",
+      "type": "packet",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "force_paradise_crash",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/network/ForceParadiseCrashMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "LeechGrab",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "vision_entity_is_hurt",
+      "registry_name": "leech_grab",
       "metadata": {
         "dependencies": [
           {
-            "name": "damagesource",
-            "type": "damagesource"
+            "name": "entity",
+            "type": "entity"
           }
         ],
         "return_type": "logic",
         "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/VisionEntityIsHurtProcedure.java"
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeechGrabProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ItsNotRealOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "its_not_real_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/client/screens/ItsNotRealOverlayOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "AmalgamationPlaybackConditionSlice",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amalgamation_playback_condition_slice",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/AmalgamationPlaybackConditionSliceProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Leech",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leech",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jimsmineshaft/items/leech_spawn_egg.json",
+          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/LeechRenderer.java",
+          "src/main/java/net/mcreator/jimsmineshaft/entity/LeechEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "PlayerLight",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_light",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/block/entity/PlayerLightBlockEntity.java",
+          "src/main/resources/assets/jimsmineshaft/models/item/player_light.json",
+          "src/main/resources/assets/jimsmineshaft/items/player_light.json",
+          "src/main/resources/data/jimsmineshaft/loot_table/blocks/player_light.json",
+          "src/main/resources/assets/jimsmineshaft/blockstates/player_light.json",
+          "src/main/java/net/mcreator/jimsmineshaft/block/PlayerLightBlock.java",
+          "src/main/resources/assets/jimsmineshaft/models/block/player_light.json"
+        ]
+      }
+    },
+    {
+      "name": "LeechAttackcondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leech_attackcondition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeechAttackconditionProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Leechfalling",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leechfalling",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeechfallingProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PlayerLightTick2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_light_tick_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/PlayerLightTick2Procedure.java"
+        ]
+      }
+    },
+    {
+      "name": "DisableOverlay",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disable_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/command/DisableOverlayCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "LeechWalk",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leech_walk",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeechWalkProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "OverlayDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "overlay_display",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/OverlayDisplayProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "DisableOverlayTrue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disable_overlay_true",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/DisableOverlayTrueProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "DisableOverlayFalse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disable_overlay_false",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/DisableOverlayFalseProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "WakeUpDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wake_up_display",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/WakeUpDisplayProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ForceParadiseCrashReceivedByClient",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "force_paradise_crash_received_by_client",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/jimsmineshaft/procedures/ForceParadiseCrashReceivedByClientProcedure.java"
         ]
       }
     },
@@ -12773,240 +14341,6 @@
       }
     },
     {
-      "name": "OverlayDisplay",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "overlay_display",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/OverlayDisplayProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "Leech",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "leech",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/jimsmineshaft/items/leech_spawn_egg.json",
-          "src/main/resources/data/jimsmineshaft/neoforge/biome_modifier/leech_biome_modifier.json",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/LeechRenderer.java",
-          "src/main/java/net/mcreator/jimsmineshaft/entity/LeechEntity.java"
-        ]
-      }
-    },
-    {
-      "name": "DisableOverlayTrue",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "disable_overlay_true",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/DisableOverlayTrueProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "ItsNotRealOverlayDisplayOverlayIngame",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "its_not_real_overlay_display_overlay_ingame",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/ItsNotRealOverlayDisplayOverlayIngameProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "LeechOnCeiling",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "leech_on_ceiling",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeechOnCeilingProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "PlayerLight",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "player_light",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/block/entity/PlayerLightBlockEntity.java",
-          "src/main/resources/assets/jimsmineshaft/models/item/player_light.json",
-          "src/main/resources/assets/jimsmineshaft/items/player_light.json",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/player_light.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/player_light.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/PlayerLightBlock.java",
-          "src/main/resources/assets/jimsmineshaft/models/block/player_light.json"
-        ]
-      }
-    },
-    {
-      "name": "AmalgamationOnEntityTickUpdate",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "amalgamation_on_entity_tick_update",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/AmalgamationOnEntityTickUpdateProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "NoKB",
-      "type": "damagetype",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "no_kb",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/jimsmineshaft/damage_type/no_kb.json"
-        ]
-      }
-    },
-    {
-      "name": "Leechfalling",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "leechfalling",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeechfallingProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "LeechModelVisualScale",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "leech_model_visual_scale",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "number",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeechModelVisualScaleProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "SetSprint",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_sprint",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SetSprintProcedure.java"
-        ]
-      },
-      "path": "~/SprintSystem"
-    },
-    {
-      "name": "Amalgamation",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "amalgamation",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/jimsmineshaft/neoforge/biome_modifier/amalgamation_biome_modifier.json",
-          "src/main/resources/assets/jimsmineshaft/items/amalgamation_spawn_egg.json",
-          "src/main/java/net/mcreator/jimsmineshaft/entity/AmalgamationEntity.java",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/AmalgamationRenderer.java"
-        ]
-      }
-    },
-    {
       "name": "RespawnInParadise",
       "type": "procedure",
       "compiles": true,
@@ -13025,56 +14359,6 @@
       }
     },
     {
-      "name": "AmalgamationPlaybackConditionShoot",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "amalgamation_playback_condition_shoot",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/AmalgamationPlaybackConditionShootProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "StaminaBarDisplayValue",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stamina_bar_display_value",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "number",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/StaminaBarDisplayValueProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "ForceParadiseCrash",
-      "type": "packet",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "force_paradise_crash",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/network/ForceParadiseCrashMessage.java"
-        ]
-      }
-    },
-    {
       "name": "AmalgamationLoot",
       "type": "loottable",
       "compiles": true,
@@ -13085,1311 +14369,6 @@
           "src/main/resources/data/jimsmineshaft/loot_table/entities/amalgamation.json"
         ]
       }
-    },
-    {
-      "name": "Stamina",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stamina",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/command/StaminaCommand.java"
-        ]
-      },
-      "path": "~/SprintSystem"
-    },
-    {
-      "name": "PlayerLightTick2",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "player_light_tick_2",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/PlayerLightTick2Procedure.java"
-        ]
-      }
-    },
-    {
-      "name": "DisableOverlay",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "disable_overlay",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/command/DisableOverlayCommand.java"
-        ]
-      }
-    },
-    {
-      "name": "LeechAttackcondition",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "leech_attackcondition",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeechAttackconditionProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "ParadiseLava",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "paradise_lava",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/jimsmineshaft/worldgen/configured_feature/paradise_lava.json",
-          "src/main/resources/data/jimsmineshaft/neoforge/biome_modifier/paradise_lava_biome_modifier.json",
-          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/paradise_lava.json"
-        ]
-      }
-    },
-    {
-      "name": "LeechGrab",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "leech_grab",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeechGrabProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "LeechWalk",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "leech_walk",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeechWalkProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "ItsNotRealOverlay",
-      "type": "overlay",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "its_not_real_overlay",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/client/screens/ItsNotRealOverlayOverlay.java"
-        ]
-      }
-    },
-    {
-      "name": "AmalgamationPlaybackConditionSlice",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "amalgamation_playback_condition_slice",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/AmalgamationPlaybackConditionSliceProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "VisionNaturalEntitySpawningCondition",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "vision_natural_entity_spawning_condition",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/VisionNaturalEntitySpawningConditionProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "RedstoneSpawnStuff",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "redstone_spawn_stuff",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/RedstoneSpawnStuffProcedure.java"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "PlayerkilledbyStalker",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "playerkilledby_stalker",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/PlayerkilledbyStalkerProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "PrepFunction",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "prep_function",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/PrepFunctionProcedure.java"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "Preparelevel",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "preparelevel",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/command/PreparelevelCommand.java"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "SendToLevel2",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "send_to_level_2",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "cmdparams",
-            "type": "map"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SendToLevel2Procedure.java"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "SendToDimension",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "send_to_dimension",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/command/SendToDimensionCommand.java"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "SkinStealerActivateCallable",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "skin_stealer_activate_callable",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealerActivateCallableProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "SkinStealerChickenNuggetAC",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "skin_stealer_chicken_nugget_ac",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/entity/SkinStealerChickenNuggetACEntity.java",
-          "src/main/resources/assets/jimsmineshaft/items/skin_stealer_chicken_nugget_ac_spawn_egg.json",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/SkinStealerChickenNuggetACRenderer.java"
-        ]
-      },
-      "path": "~/Skin Stealer Mechanic"
-    },
-    {
-      "name": "SkinStealerGoober",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "skin_stealer_goober",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/jimsmineshaft/items/skin_stealer_goober_spawn_egg.json",
-          "src/main/java/net/mcreator/jimsmineshaft/entity/SkinStealerGooberEntity.java",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/SkinStealerGooberRenderer.java"
-        ]
-      },
-      "path": "~/Skin Stealer Mechanic"
-    },
-    {
-      "name": "SkinStealerGigo",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "skin_stealer_gigo",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/entity/SkinStealerGigoEntity.java",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/SkinStealerGigoRenderer.java",
-          "src/main/resources/assets/jimsmineshaft/items/skin_stealer_gigo_spawn_egg.json"
-        ]
-      },
-      "path": "~/Skin Stealer Mechanic"
-    },
-    {
-      "name": "SkinStealerGoshiggy",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "skin_stealer_goshiggy",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/SkinStealerGoshiggyRenderer.java",
-          "src/main/java/net/mcreator/jimsmineshaft/entity/SkinStealerGoshiggyEntity.java",
-          "src/main/resources/assets/jimsmineshaft/items/skin_stealer_goshiggy_spawn_egg.json"
-        ]
-      },
-      "path": "~/Skin Stealer Mechanic"
-    },
-    {
-      "name": "SkinStealerKunzy",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "skin_stealer_kunzy",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/entity/SkinStealerKunzyEntity.java",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/SkinStealerKunzyRenderer.java",
-          "src/main/resources/assets/jimsmineshaft/items/skin_stealer_kunzy_spawn_egg.json"
-        ]
-      },
-      "path": "~/Skin Stealer Mechanic"
-    },
-    {
-      "name": "SkinStealerWylan",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "skin_stealer_wylan",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/entity/SkinStealerWylanEntity.java",
-          "src/main/resources/assets/jimsmineshaft/items/skin_stealer_wylan_spawn_egg.json",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/SkinStealerWylanRenderer.java"
-        ]
-      },
-      "path": "~/Skin Stealer Mechanic"
-    },
-    {
-      "name": "SkinStealerYourNotLuis",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "skin_stealer_your_not_luis",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/SkinStealerYourNotLuisRenderer.java",
-          "src/main/java/net/mcreator/jimsmineshaft/entity/SkinStealerYourNotLuisEntity.java",
-          "src/main/resources/assets/jimsmineshaft/items/skin_stealer_your_not_luis_spawn_egg.json"
-        ]
-      },
-      "path": "~/Skin Stealer Mechanic"
-    },
-    {
-      "name": "SkinStealerCowMan5000",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "skin_stealer_cow_man_5000",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/SkinStealerCowMan5000Renderer.java",
-          "src/main/java/net/mcreator/jimsmineshaft/entity/SkinStealerCowMan5000Entity.java",
-          "src/main/resources/assets/jimsmineshaft/items/skin_stealer_cow_man_5000_spawn_egg.json"
-        ]
-      },
-      "path": "~/Skin Stealer Mechanic"
-    },
-    {
-      "name": "SkinStealerEntityEntityIsHurtChickenNugget",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "skin_stealer_entity_entity_is_hurt_chicken_nugget",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealerEntityEntityIsHurtChickenNuggetProcedure.java"
-        ]
-      },
-      "path": "~/Skin Stealer Mechanic"
-    },
-    {
-      "name": "SkinStealerEntityEntityIsHurtGoober",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "skin_stealer_entity_entity_is_hurt_goober",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealerEntityEntityIsHurtGooberProcedure.java"
-        ]
-      },
-      "path": "~/Skin Stealer Mechanic"
-    },
-    {
-      "name": "PlayerStalkierChickenNuggetAC",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "player_stalkier_chicken_nugget_ac",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/entity/PlayerStalkierChickenNuggetACEntity.java",
-          "src/main/resources/assets/jimsmineshaft/items/player_stalkier_chicken_nugget_ac_spawn_egg.json",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/PlayerStalkierChickenNuggetACRenderer.java"
-        ]
-      },
-      "path": "~/Skin Stealer Mechanic"
-    },
-    {
-      "name": "SkinStealerChickanimationPlaybackCondition",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "skin_stealer_chickanimation_playback_condition",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealerChickanimationPlaybackConditionProcedure.java"
-        ]
-      },
-      "path": "~/Skin Stealer Mechanic"
-    },
-    {
-      "name": "SkinStealerGoobanimationPlaybackCondition",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "skin_stealer_goobanimation_playback_condition",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealerGoobanimationPlaybackConditionProcedure.java"
-        ]
-      },
-      "path": "~/Skin Stealer Mechanic"
-    },
-    {
-      "name": "SkinStealerGoshiggyanimationPlaybackCondition",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "skin_stealer_goshiggyanimation_playback_condition",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealerGoshiggyanimationPlaybackConditionProcedure.java"
-        ]
-      },
-      "path": "~/Skin Stealer Mechanic"
-    },
-    {
-      "name": "SkinStealerKunzyanimationPlaybackCondition",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "skin_stealer_kunzyanimation_playback_condition",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealerKunzyanimationPlaybackConditionProcedure.java"
-        ]
-      },
-      "path": "~/Skin Stealer Mechanic"
-    },
-    {
-      "name": "SkinStealerWylananimationPlaybackCondition",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "skin_stealer_wylananimation_playback_condition",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealerWylananimationPlaybackConditionProcedure.java"
-        ]
-      },
-      "path": "~/Skin Stealer Mechanic"
-    },
-    {
-      "name": "SkinStealerYourNotLuisPlaybackCondition",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "skin_stealer_your_not_luis_playback_condition",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealerYourNotLuisPlaybackConditionProcedure.java"
-        ]
-      },
-      "path": "~/Skin Stealer Mechanic"
-    },
-    {
-      "name": "SkinStealerGigoanimationPlaybackCondition",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "skin_stealer_gigoanimation_playback_condition",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealerGigoanimationPlaybackConditionProcedure.java"
-        ]
-      },
-      "path": "~/Skin Stealer Mechanic"
-    },
-    {
-      "name": "SkinStealerCowMan5000PlaybackCondition",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "skin_stealer_cow_man_5000_playback_condition",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/SkinStealerCowMan5000PlaybackConditionProcedure.java"
-        ]
-      },
-      "path": "~/Skin Stealer Mechanic"
-    },
-    {
-      "name": "DynamiteBoxRightclickedOnBlock",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dynamite_box_rightclicked_on_block",
-      "metadata": {
-        "dependencies": [],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/DynamiteBoxRightclickedOnBlockProcedure.java"
-        ]
-      },
-      "path": "~/Loot Work"
-    },
-    {
-      "name": "GiveStarterItemsCommand",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "give_starter_items_command",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "cmdparams",
-            "type": "map"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/GiveStarterItemsCommandProcedure.java"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "GiveStarterItems",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "give_starter_items",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/command/GiveStarterItemsCommand.java"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "ResetMatchTime",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "reset_match_time",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "cmdparams",
-            "type": "map"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/ResetMatchTimeProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "MatchTickSet",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "match_tick_set",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/command/MatchTickSetCommand.java"
-        ]
-      }
-    },
-    {
-      "name": "Matchclearentitiesproc",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "matchclearentitiesproc",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/MatchclearentitiesprocProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "Matchclearentities",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "matchclearentities",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/command/MatchclearentitiesCommand.java"
-        ]
-      }
-    },
-    {
-      "name": "CopperOreEntityBottomBlockBlockAdded",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "copper_ore_entity_bottom_block_block_added",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/CopperOreEntityBottomBlockBlockAddedProcedure.java"
-        ]
-      },
-      "path": "~/Loot Work"
-    },
-    {
-      "name": "CopperOreEntityBottomBlock",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "copper_ore_entity_bottom_block",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/jimsmineshaft/items/copper_ore_entity_bottom_block.json",
-          "src/main/resources/assets/jimsmineshaft/models/block/copper_ore_entity_bottom_block.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/CopperOreEntityBottomBlockBlock.java",
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/copper_ore_entity_bottom_block.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/copper_ore_entity_bottom_block.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/copper_ore_entity_bottom_block.json"
-        ]
-      },
-      "path": "~/Loot Work"
-    },
-    {
-      "name": "ArmorBagRightClicked",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "armor_bag_right_clicked",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "blockstate",
-            "type": "blockstate"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/ArmorBagRightClickedProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "PlayerReviveTotemRightclicked",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "player_revive_totem_rightclicked",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/PlayerReviveTotemRightclickedProcedure.java"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "PlayerReviveTotem",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "player_revive_totem",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/item/PlayerReviveTotemItem.java",
-          "src/main/resources/assets/jimsmineshaft/items/player_revive_totem.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/player_revive_totem.json"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "CompanyStoreClerkReviver",
-      "type": "villagerprofession",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "company_store_clerk_reviver",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/jimsmineshaft/textures/entity/villager/profession/company_store_clerk_reviver.png.mcmeta"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "GetMatchTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "get_match_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/GetMatchTickProcedure.java"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "Matchtick",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "matchtick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/command/MatchtickCommand.java"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "Setup",
-      "type": "config",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "setup",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/configuration/SetupConfiguration.java"
-        ]
-      },
-      "path": "~/Mod setup"
-    },
-    {
-      "name": "Setplayer1",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "setplayer_1",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "cmdparams",
-            "type": "map"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/Setplayer1Procedure.java"
-        ]
-      },
-      "path": "~/Mod setup"
-    },
-    {
-      "name": "MatchSetPlayer1",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "match_set_player_1",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/command/MatchSetPlayer1Command.java"
-        ]
-      },
-      "path": "~/Mod setup"
-    },
-    {
-      "name": "RegenerateLevel",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "regenerate_level",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/RegenerateLevelProcedure.java"
-        ]
-      },
-      "path": "~/Mod setup"
-    },
-    {
-      "name": "Regeneratelevelcommand",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "regeneratelevelcommand",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/command/RegeneratelevelcommandCommand.java"
-        ]
-      },
-      "path": "~/Mod setup"
-    },
-    {
-      "name": "ShopBiome",
-      "type": "biome",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "shop_biome",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/jimsmineshaft/worldgen/configured_feature/shop_biome_tree.json",
-          "src/main/resources/data/jimsmineshaft/worldgen/placed_feature/shop_biome_tree.json",
-          "src/main/resources/data/jimsmineshaft/worldgen/biome/shop_biome.json"
-        ]
-      },
-      "path": "~/Dimensions and Biomes"
-    },
-    {
-      "name": "CompanyStoreClerkBasicGoods2",
-      "type": "villagerprofession",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "company_store_clerk_basic_goods_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/jimsmineshaft/textures/entity/villager/profession/company_store_clerk_basic_goods_2.png.mcmeta"
-        ]
-      }
-    },
-    {
-      "name": "ClerkBasicGoods2Block",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "clerk_basic_goods_2_block",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/jimsmineshaft/loot_table/blocks/clerk_basic_goods_2_block.json",
-          "src/main/java/net/mcreator/jimsmineshaft/block/ClerkBasicGoods2BlockBlock.java",
-          "src/main/resources/assets/jimsmineshaft/models/block/clerk_basic_goods_2_block.json",
-          "src/main/resources/assets/jimsmineshaft/items/clerk_basic_goods_2_block.json",
-          "src/main/resources/assets/jimsmineshaft/blockstates/clerk_basic_goods_2_block.json",
-          "src/main/resources/assets/jimsmineshaft/models/item/clerk_basic_goods_2_block.json"
-        ]
-      }
-    },
-    {
-      "name": "JumpscareImageAleaIactaEstDisplayOverlayIngame",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "jumpscare_image_alea_iacta_est_display_overlay_ingame",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/JumpscareImageAleaIactaEstDisplayOverlayIngameProcedure.java"
-        ]
-      },
-      "path": "~/Mod setup"
-    },
-    {
-      "name": "JumpscareImageAleaIactaEst",
-      "type": "overlay",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "jumpscare_image_alea_iacta_est",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/client/screens/JumpscareImageAleaIactaEstOverlay.java"
-        ]
-      },
-      "path": "~/Mod setup"
-    },
-    {
-      "name": "LeftBehindProc",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "left_behind_proc",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/LeftBehindProcProcedure.java"
-        ]
-      },
-      "path": "~/Mod setup"
-    },
-    {
-      "name": "MicCapture",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "mic_capture",
-      "metadata": {
-        "dependencies": [],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/MicCaptureProcedure.java"
-        ]
-      },
-      "path": "~/Skin Stealer Mechanic"
-    },
-    {
-      "name": "MicCapture2",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "mic_capture_2",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/procedures/MicCapture2Procedure.java"
-        ]
-      },
-      "path": "~/Skin Stealer Mechanic"
-    },
-    {
-      "name": "SkinStealerEntity2",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "skin_stealer_entity_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jimsmineshaft/entity/SkinStealerEntity2Entity.java",
-          "src/main/java/net/mcreator/jimsmineshaft/client/renderer/SkinStealerEntity2Renderer.java",
-          "src/main/resources/assets/jimsmineshaft/items/skin_stealer_entity_2_spawn_egg.json"
-        ]
-      },
-      "path": "~/Skin Stealer Mechanic"
     }
   ],
   "variable_elements": [
@@ -14616,15 +14595,9 @@
       "value": "100.0"
     },
     {
-      "name": "currentLevel",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
-    {
-      "name": "nearCartElevator",
+      "name": "jumpscareEngaged",
       "type": "logic",
-      "scope": "player_persistent",
+      "scope": "map",
       "value": "false"
     },
     {
@@ -14634,21 +14607,135 @@
       "value": "0"
     },
     {
-      "name": "cashReturnedFromLevel",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
-    {
       "name": "deathX",
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
     },
     {
+      "name": "wasJustLeftBehind",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
       "name": "deathZ",
       "type": "number",
       "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "detecteElevatorForDimensionChange",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "leftBehindJumpscare",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "deathLevel",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "player5",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "player6",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "player7",
+      "type": "string",
+      "scope": "global",
+      "value": "\"\""
+    },
+    {
+      "name": "nearCartElevator",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "player8",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "player1",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "player2",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "player3",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "player4",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "levelIncreaseSafetyCheck",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "devMessages",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "hadDiedInMatch",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "matchInProgress",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "cartSubmitted",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "currentLevel",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "cashReturnedFromLevel",
+      "type": "number",
+      "scope": "map",
       "value": "0"
     },
     {
@@ -14662,24 +14749,6 @@
       "type": "number",
       "scope": "map",
       "value": "0"
-    },
-    {
-      "name": "deathLevel",
-      "type": "string",
-      "scope": "player_persistent",
-      "value": "\"\""
-    },
-    {
-      "name": "hadDiedInMatch",
-      "type": "logic",
-      "scope": "player_persistent",
-      "value": "false"
-    },
-    {
-      "name": "matchInProgress",
-      "type": "logic",
-      "scope": "map",
-      "value": "false"
     },
     {
       "name": "paradise_ticks",
@@ -14703,96 +14772,6 @@
       "name": "banishedToParadise",
       "type": "logic",
       "scope": "player_persistent",
-      "value": "false"
-    },
-    {
-      "name": "detecteElevatorForDimensionChange",
-      "type": "logic",
-      "scope": "player_persistent",
-      "value": "false"
-    },
-    {
-      "name": "player2",
-      "type": "string",
-      "scope": "map",
-      "value": "\"\""
-    },
-    {
-      "name": "player1",
-      "type": "string",
-      "scope": "map",
-      "value": "\"\""
-    },
-    {
-      "name": "player3",
-      "type": "string",
-      "scope": "map",
-      "value": "\"\""
-    },
-    {
-      "name": "player4",
-      "type": "string",
-      "scope": "map",
-      "value": "\"\""
-    },
-    {
-      "name": "player5",
-      "type": "string",
-      "scope": "map",
-      "value": "\"\""
-    },
-    {
-      "name": "player6",
-      "type": "string",
-      "scope": "map",
-      "value": "\"\""
-    },
-    {
-      "name": "player7",
-      "type": "string",
-      "scope": "global",
-      "value": "\"\""
-    },
-    {
-      "name": "player8",
-      "type": "string",
-      "scope": "map",
-      "value": "\"\""
-    },
-    {
-      "name": "levelIncreaseSafetyCheck",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
-    {
-      "name": "cartSubmitted",
-      "type": "logic",
-      "scope": "map",
-      "value": "false"
-    },
-    {
-      "name": "leftBehindJumpscare",
-      "type": "logic",
-      "scope": "player_persistent",
-      "value": "false"
-    },
-    {
-      "name": "jumpscareEngaged",
-      "type": "logic",
-      "scope": "map",
-      "value": "false"
-    },
-    {
-      "name": "wasJustLeftBehind",
-      "type": "logic",
-      "scope": "player_persistent",
-      "value": "false"
-    },
-    {
-      "name": "devMessages",
-      "type": "logic",
-      "scope": "map",
       "value": "false"
     }
   ],
@@ -15311,6 +15290,14 @@
       "subtitle": "Grease Gun Shot"
     },
     {
+      "name": "flintlockmono",
+      "files": [
+        "flintlocksfxmono"
+      ],
+      "category": "neutral",
+      "subtitle": "Flintlock Shoots"
+    },
+    {
       "name": "greasegunreload",
       "files": [
         "greasegunreload2"
@@ -15325,6 +15312,14 @@
       ],
       "category": "neutral",
       "subtitle": "Armor bag is unzipped"
+    },
+    {
+      "name": "cartsubmitted",
+      "files": [
+        "cartsubmitted"
+      ],
+      "category": "neutral",
+      "subtitle": "Eerie screech"
     },
     {
       "name": "flintlockreload",
@@ -15433,22 +15428,6 @@
       ],
       "category": "music",
       "subtitle": ""
-    },
-    {
-      "name": "cartsubmitted",
-      "files": [
-        "cartsubmitted"
-      ],
-      "category": "neutral",
-      "subtitle": "Eerie screech"
-    },
-    {
-      "name": "flintlockmono",
-      "files": [
-        "flintlocksfxmono"
-      ],
-      "category": "neutral",
-      "subtitle": "Flintlock Shoots"
     }
   ],
   "tag_elements": {
@@ -15486,8 +15465,8 @@
       "~CUSTOM:IronSiding"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
-      "~Blocks.DEEPSLATE",
       "~Blocks.BLACKSTONE",
+      "~Blocks.DEEPSLATE",
       "~Blocks.DIRT#0",
       "~Blocks.GRASS",
       "~Blocks.STONE#0"
@@ -15536,68 +15515,11 @@
     ],
     "BLOCKS:minecraft:replaceable": [
       "~CUSTOM:Flashlightb1"
-    ],
-    "ENTITIES:mod:mine": [
-      "CUSTOM:PressureDrill",
-      "CUSTOM:PressureDrillFolded",
-      "CUSTOM:CopperDrilledEast",
-      "CUSTOM:HoleEntity",
-      "CUSTOM:Elevator",
-      "CUSTOM:ElevatorBoundingBox",
-      "CUSTOM:ElevatorSeat5",
-      "CUSTOM:ElevatorSeat6",
-      "CUSTOM:ElevatorSeat3",
-      "CUSTOM:ElevatorSeat4",
-      "CUSTOM:ElevatorSeat7",
-      "CUSTOM:ElevatorSeat8",
-      "CUSTOM:Cart4",
-      "CUSTOM:Cart3",
-      "CUSTOM:Cart2",
-      "CUSTOM:ElevatorSeat1",
-      "CUSTOM:ElevatorSeat2",
-      "CUSTOM:CopperDrilledNorth",
-      "CUSTOM:Stalker",
-      "CUSTOM:StalkerInsides",
-      "CUSTOM:PlayerStalkier",
-      "CUSTOM:StalkerInsides2",
-      "CUSTOM:SkinStealerEntity",
-      "CUSTOM:BigGate",
-      "CUSTOM:BulletProjectile",
-      "CUSTOM:Rightgate",
-      "CUSTOM:Flashlightentity",
-      "CUSTOM:Leftgate",
-      "CUSTOM:SmallSideOpenGateEntity",
-      "CUSTOM:Vision",
-      "CUSTOM:SmallSlideUpGateEntity",
-      "CUSTOM:ElevatorFAILSAFEbox",
-      "CUSTOM:SpawnStructureShaftEntity",
-      "CUSTOM:CartElevatorBoundingBox",
-      "CUSTOM:Leech",
-      "CUSTOM:Amalgamation",
-      "CUSTOM:SkinStealerChickenNuggetAC",
-      "CUSTOM:SkinStealerGoober",
-      "CUSTOM:SkinStealerGigo",
-      "CUSTOM:SkinStealerGoshiggy",
-      "CUSTOM:SkinStealerKunzy",
-      "CUSTOM:SkinStealerWylan",
-      "CUSTOM:SkinStealerYourNotLuis",
-      "CUSTOM:SkinStealerCowMan5000",
-      "CUSTOM:PlayerStalkierChickenNuggetAC"
-    ],
-    "ENTITIES:mod:skinstealers": [
-      "CUSTOM:SkinStealerEntity",
-      "CUSTOM:SkinStealerChickenNuggetAC",
-      "CUSTOM:SkinStealerGoober",
-      "CUSTOM:SkinStealerGigo",
-      "CUSTOM:SkinStealerGoshiggy",
-      "CUSTOM:SkinStealerKunzy",
-      "CUSTOM:SkinStealerWylan",
-      "CUSTOM:SkinStealerYourNotLuis",
-      "CUSTOM:SkinStealerCowMan5000"
     ]
   },
   "tab_element_order": {
     "CUSTOM:JimsMineshaft": [
+      "WoeMineshaftBeUponThe2",
       "WoodenSupportTypeA",
       "WoodenRoofTypeA",
       "WoodenSupportTopTypeA",
@@ -15735,37 +15657,27 @@
       "Bottle",
       "GreaseGun",
       "Stalker",
-      "CashStackHundreds",
       "CashStackRegular",
       "ElevatorFAILSAFEbox",
       "ClerkArmorBlock",
       "BasicClothesBag",
       "CorruptedRoofSupport",
-      "SpawnStructureShaftEntity",
       "DrillingBlock",
       "ClerkToolsBlock",
-      "ClerkWeaponsHeavyBlock",
       "ClothesBag",
-      "ClerkBasicBlock",
       "CartelevatorEast",
       "ElevatorLight3",
       "CartElevatorBoundingBox",
       "VeteranArmorBag",
       "ClerkAmmoBlock",
+      "CartelevatorWest",
+      "CashStackHundreds",
+      "SpawnStructureShaftEntity",
+      "ClerkWeaponsHeavyBlock",
+      "ClerkBasicBlock",
       "ClerkWeaponsBlock",
       "Cartelevator",
-      "CartelevatorWest",
-      "SkinStealerChickenNuggetAC",
-      "SkinStealerGoober",
-      "SkinStealerGigo",
-      "SkinStealerGoshiggy",
-      "SkinStealerKunzy",
-      "SkinStealerWylan",
-      "SkinStealerYourNotLuis",
-      "CopperOreEntityBottomBlock",
-      "PlayerReviveTotem",
-      "ClerkBasicGoods2Block",
-      "SkinStealerEntity2"
+      "RustedTumbler"
     ]
   },
   "language_map": {
@@ -16208,27 +16120,17 @@
       "src/main/java/net/mcreator/jimsmineshaft/network/PlayPlayerAnimationMessage.java",
       "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationMixin.java",
       "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftModPlayerAnimationAPI.java",
-      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/jimsmineshaft/network/JimsmineshaftModVariables.java",
       "src/main/resources/assets/jimsmineshaft/sounds.json",
       "src/main/java/net/mcreator/jimsmineshaft/network/LoadPlayerAnimationMessage.java",
       "src/main/java/net/mcreator/jimsmineshaft/JimsmineshaftMod.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModTabs.java",
       "src/main/java/net/mcreator/jimsmineshaft/mixin/PlayerAnimationRendererMixin.java",
-      "src/main/java/net/mcreator/jimsmineshaft/mixin/NoiseGeneratorSettingsMixin.java",
-      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModBiomes.java",
-      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModConfigs.java",
       "src/main/java/net/mcreator/jimsmineshaft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModScreens.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModMenus.java",
-      "src/main/java/net/mcreator/jimsmineshaft/client/renderer/item/LegacyOverrideSelectItemModel.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModKeyMappings.java",
-      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModParticleTypes.java",
-      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModParticles.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModMobEffects.java",
-      "src/main/resources/data/minecraft/tags/point_of_interest_type/acquirable_job_site.json",
-      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModVillagerProfessions.java",
-      "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModTrades.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModBlocks.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModBlockEntities.java",
       "src/main/java/net/mcreator/jimsmineshaft/init/JimsmineshaftModItems.java",

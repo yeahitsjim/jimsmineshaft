@@ -22,16 +22,16 @@ public class JimsmineshaftModTrades {
 			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(JimsmineshaftModItems.CASH_STACK_REGULAR.get(), 5), new ItemStack(JimsmineshaftModItems.FIRE_AXE.get()), 10, 5, 0.05f));
 		}
 		if (event.getType() == JimsmineshaftModVillagerProfessions.COMPANY_STORE_CLERK_WEAPONS_HEAVY.get()) {
-			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(JimsmineshaftModItems.CASH_STACK_REGULAR.get(), 40), new ItemStack(JimsmineshaftModItems.FLINTLOCK_PISTOL.get()), 10, 25, 0.05f));
+			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(JimsmineshaftModItems.CASH_STACK_REGULAR.get(), 15), new ItemStack(JimsmineshaftModItems.FLINTLOCK_PISTOL.get()), 10, 25, 0.05f));
 		}
 		if (event.getType() == JimsmineshaftModVillagerProfessions.COMPANY_STORE_CLERK_WEAPONS_HEAVY.get()) {
-			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(JimsmineshaftModItems.CASH_STACK_HUNDREDS.get(), 64), new ItemStack(JimsmineshaftModItems.TOMMY_GUN.get()), 10, 25, 0.05f));
+			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(JimsmineshaftModItems.CASH_STACK_REGULAR.get(), 60), new ItemStack(JimsmineshaftModItems.TOMMY_GUN.get()), 10, 25, 0.05f));
 		}
 		if (event.getType() == JimsmineshaftModVillagerProfessions.COMPANY_STORE_CLERK_WEAPONS_HEAVY.get()) {
-			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(JimsmineshaftModItems.CASH_STACK_HUNDREDS.get(), 32), new ItemStack(JimsmineshaftModItems.GREASE_GUN.get()), 10, 25, 0.05f));
+			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(JimsmineshaftModItems.CASH_STACK_REGULAR.get(), 64), new ItemStack(JimsmineshaftModItems.GREASE_GUN.get()), 10, 25, 0.05f));
 		}
 		if (event.getType() == JimsmineshaftModVillagerProfessions.COMPANY_STORE_CLERK_AMMO.get()) {
-			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(JimsmineshaftModItems.CASH_STACK_REGULAR.get(), 30), new ItemStack(JimsmineshaftModItems.IRON_BULLET.get(), 30), 10, 5, 0.05f));
+			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(JimsmineshaftModItems.CASH_STACK_REGULAR.get(), 2), new ItemStack(JimsmineshaftModItems.IRON_BULLET.get(), 30), 10, 5, 0.05f));
 		}
 		if (event.getType() == JimsmineshaftModVillagerProfessions.COMPANY_STORE_CLERK_BASIC.get()) {
 			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(JimsmineshaftModItems.CASH_STACK_REGULAR.get(), 2), new ItemStack(Items.WOODEN_PICKAXE), 16, 5, 0.05f));
@@ -61,13 +61,7 @@ public class JimsmineshaftModTrades {
 			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(JimsmineshaftModItems.CASH_STACK_REGULAR.get(), 4), new ItemStack(JimsmineshaftModItems.DYNAMITE_BOX.get()), 10, 5, 0.05f));
 		}
 		if (event.getType() == JimsmineshaftModVillagerProfessions.COMPANY_STORE_CLERK_AMMO.get()) {
-			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(JimsmineshaftModItems.CASH_STACK_REGULAR.get(), 6), new ItemStack(JimsmineshaftModItems.BATTERY.get()), 10, 5, 0.05f));
-		}
-		if (event.getType() == JimsmineshaftModVillagerProfessions.COMPANY_STORE_CLERK_REVIVER.get()) {
-			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(JimsmineshaftModItems.CASH_STACK_REGULAR.get(), 30), new ItemStack(JimsmineshaftModItems.PLAYER_REVIVE_TOTEM.get()), 10, 5, 0.05f));
-		}
-		if (event.getType() == JimsmineshaftModVillagerProfessions.COMPANY_STORE_CLERK_BASIC_GOODS_2.get()) {
-			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(JimsmineshaftModItems.CASH_STACK_REGULAR.get(), 5), new ItemStack(JimsmineshaftModItems.FLASHLIGHT.get()), 10, 5, 0.05f));
+			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(JimsmineshaftModItems.CASH_STACK_REGULAR.get()), new ItemStack(JimsmineshaftModItems.BATTERY.get()), 10, 5, 0.05f));
 		}
 	}
 }

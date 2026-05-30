@@ -1,26 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.bus.api.ICancellableEvent;
 import net.neoforged.bus.api.Event;
-
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.damagesource.DamageTypes;
-import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.core.registries.Registries;
-
-import net.mcreator.jimsmineshaft.entity.RightgateEntity;
-import net.mcreator.jimsmineshaft.entity.LeftgateEntity;
-import net.mcreator.jimsmineshaft.entity.ElevatorEntity;
-import net.mcreator.jimsmineshaft.entity.CopperDrilledNorthEntity;
-import net.mcreator.jimsmineshaft.entity.CopperDrilledEastEntity;
-
-import javax.annotation.Nullable;
 
 @EventBusSubscriber
 public class CancelCopperSuffocationProcedure {

@@ -1,8 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.item.component.CustomData;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.core.component.DataComponents;
+import net.neoforged.bus.api.Event;
 
 public class FlashlightPropertyValueProviderProcedure {
 	public static double execute(ItemStack itemstack) {

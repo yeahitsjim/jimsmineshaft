@@ -1,8 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
+import net.neoforged.bus.api.Event;
 
 public class ReturnCartValueProcedure {
 	public static String execute(Entity entity) {

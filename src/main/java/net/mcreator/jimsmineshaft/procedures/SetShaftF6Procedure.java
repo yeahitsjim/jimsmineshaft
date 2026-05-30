@@ -1,8 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-
-import net.mcreator.jimsmineshaft.network.JimsmineshaftModVariables;
+import net.neoforged.bus.api.Event;
 
 public class SetShaftF6Procedure {
 	public static void execute(LevelAccessor world) {

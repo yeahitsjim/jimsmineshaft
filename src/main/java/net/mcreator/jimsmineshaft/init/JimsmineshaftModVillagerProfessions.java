@@ -9,7 +9,6 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.ai.village.poi.PoiTypes;
@@ -34,23 +33,19 @@ import com.google.common.collect.ImmutableSet;
 public class JimsmineshaftModVillagerProfessions {
 	private static final Map<String, ProfessionPoiType> POI_TYPES = new HashMap<>();
 	public static final DeferredRegister<VillagerProfession> PROFESSIONS = DeferredRegister.create(Registries.VILLAGER_PROFESSION, JimsmineshaftMod.MODID);
+	public static final DeferredHolder<VillagerProfession, VillagerProfession> COMPANY_STORE_CLERK = registerProfession("company_store_clerk", () -> JimsmineshaftModBlocks.CLERK_ARMOR_BLOCK.get(),
+			() -> BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit2")));
+	public static final DeferredHolder<VillagerProfession, VillagerProfession> COMPANY_STORE_CLERK_TOOLS = registerProfession("company_store_clerk_tools", () -> JimsmineshaftModBlocks.CLERK_TOOLS_BLOCK.get(),
+			() -> BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit2")));
+	public static final DeferredHolder<VillagerProfession, VillagerProfession> COMPANY_STORE_CLERK_DRILLER = registerProfession("company_store_clerk_driller", () -> JimsmineshaftModBlocks.DRILLING_BLOCK.get(),
+			() -> BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit2")));
 	public static final DeferredHolder<VillagerProfession, VillagerProfession> COMPANY_STORE_CLERK_WEAPONS_LIGHT = registerProfession("company_store_clerk_weapons_light", () -> JimsmineshaftModBlocks.CLERK_WEAPONS_BLOCK.get(),
 			() -> BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit2")));
 	public static final DeferredHolder<VillagerProfession, VillagerProfession> COMPANY_STORE_CLERK_AMMO = registerProfession("company_store_clerk_ammo", () -> JimsmineshaftModBlocks.CLERK_AMMO_BLOCK.get(),
 			() -> BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit2")));
 	public static final DeferredHolder<VillagerProfession, VillagerProfession> COMPANY_STORE_CLERK_WEAPONS_HEAVY = registerProfession("company_store_clerk_weapons_heavy", () -> JimsmineshaftModBlocks.CLERK_WEAPONS_HEAVY_BLOCK.get(),
 			() -> BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit2")));
-	public static final DeferredHolder<VillagerProfession, VillagerProfession> COMPANY_STORE_CLERK = registerProfession("company_store_clerk", () -> JimsmineshaftModBlocks.CLERK_ARMOR_BLOCK.get(),
-			() -> BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit2")));
-	public static final DeferredHolder<VillagerProfession, VillagerProfession> COMPANY_STORE_CLERK_TOOLS = registerProfession("company_store_clerk_tools", () -> JimsmineshaftModBlocks.CLERK_TOOLS_BLOCK.get(),
-			() -> BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit2")));
 	public static final DeferredHolder<VillagerProfession, VillagerProfession> COMPANY_STORE_CLERK_BASIC = registerProfession("company_store_clerk_basic", () -> JimsmineshaftModBlocks.CLERK_BASIC_BLOCK.get(),
-			() -> BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit2")));
-	public static final DeferredHolder<VillagerProfession, VillagerProfession> COMPANY_STORE_CLERK_DRILLER = registerProfession("company_store_clerk_driller", () -> JimsmineshaftModBlocks.DRILLING_BLOCK.get(),
-			() -> BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit2")));
-	public static final DeferredHolder<VillagerProfession, VillagerProfession> COMPANY_STORE_CLERK_REVIVER = registerProfession("company_store_clerk_reviver", () -> Blocks.NETHERRACK,
-			() -> BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit2")));
-	public static final DeferredHolder<VillagerProfession, VillagerProfession> COMPANY_STORE_CLERK_BASIC_GOODS_2 = registerProfession("company_store_clerk_basic_goods_2", () -> JimsmineshaftModBlocks.CLERK_BASIC_GOODS_2_BLOCK.get(),
 			() -> BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("jimsmineshaft:pickupbit2")));
 
 	private static DeferredHolder<VillagerProfession, VillagerProfession> registerProfession(String name, Supplier<Block> block, Supplier<SoundEvent> soundEvent) {

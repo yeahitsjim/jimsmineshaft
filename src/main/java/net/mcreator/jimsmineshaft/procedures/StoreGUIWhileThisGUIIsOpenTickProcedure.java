@@ -1,13 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.jimsmineshaft.world.inventory.StoreGUIMenu;
-import net.mcreator.jimsmineshaft.init.JimsmineshaftModMenus;
-import net.mcreator.jimsmineshaft.init.JimsmineshaftModItems;
+import net.neoforged.bus.api.Event;
 
 public class StoreGUIWhileThisGUIIsOpenTickProcedure {
 	public static void execute(Entity entity) {

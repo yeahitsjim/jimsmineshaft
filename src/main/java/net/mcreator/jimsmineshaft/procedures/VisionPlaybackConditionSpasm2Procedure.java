@@ -1,8 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.jimsmineshaft.entity.VisionEntity;
+import net.neoforged.bus.api.Event;
 
 public class VisionPlaybackConditionSpasm2Procedure {
 	public static boolean execute(Entity entity) {

@@ -1,13 +1,5 @@
 package net.mcreator.jimsmineshaft.client.renderer;
 
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
-import net.minecraft.client.renderer.entity.MobRenderer;
-import net.minecraft.client.renderer.entity.EntityRendererProvider;
-
-import net.mcreator.jimsmineshaft.entity.HoleEntityEntity;
-import net.mcreator.jimsmineshaft.client.model.ModelnorthHole;
-
 public class HoleEntityRenderer extends MobRenderer<HoleEntityEntity, LivingEntityRenderState, ModelnorthHole> {
 	private HoleEntityEntity entity = null;
 

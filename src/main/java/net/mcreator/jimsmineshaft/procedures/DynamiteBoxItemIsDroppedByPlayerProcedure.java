@@ -1,10 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.component.CustomData;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.network.chat.Component;
-import net.minecraft.core.component.DataComponents;
+import net.neoforged.bus.api.Event;
 
 public class DynamiteBoxItemIsDroppedByPlayerProcedure {
 	public static void execute(LevelAccessor world, ItemStack itemstack) {

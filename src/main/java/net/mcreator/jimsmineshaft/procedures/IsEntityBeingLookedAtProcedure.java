@@ -1,9 +1,6 @@
 package net.mcreator.jimsmineshaft.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.Entity;
-
-import java.util.ArrayList;
+import net.neoforged.bus.api.Event;
 
 public class IsEntityBeingLookedAtProcedure {
 	public static boolean execute(LevelAccessor world, Entity entity) {
